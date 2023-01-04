@@ -25,6 +25,11 @@ namespace hotel_app.Forms
             leftBorderBtn = new Panel();
             leftBorderBtn.Size = new Size(10, 70); //70 is the height of the buttons
             menuPanel.Controls.Add(leftBorderBtn);
+
+            //Form
+            this.Text = string.Empty;
+            this.ControlBox = false;
+            this.DoubleBuffered= true;
         }
         //Structs RGBcolours
         private struct RGBColors
@@ -87,8 +92,8 @@ namespace hotel_app.Forms
             childForm.Dock = DockStyle.Fill;
             childFormPanel.Controls.Add(childForm);
             childFormPanel.Tag = childForm;
-            childFormPanel.BringToFront();
-            childFormPanel.Show();
+            childForm.BringToFront();
+            childForm.Show();
         }
 
         private void poolButton_Click(object sender, EventArgs e)
