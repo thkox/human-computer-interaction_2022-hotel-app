@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace hotel_app.Forms
+namespace hotel_app.Forms.Trojan
 {
-    public partial class ClientForm : Form
+    public partial class TrojanMenuForm : Form
     {
-        public ClientForm()
+        public TrojanMenuForm()
         {
             InitializeComponent();
         }

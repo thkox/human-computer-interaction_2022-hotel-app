@@ -1,4 +1,4 @@
-namespace hotel_app
+﻿namespace hotel_app
 {
     public partial class SignIn : Form
     {
@@ -18,9 +18,17 @@ namespace hotel_app
             {
                 MessageBox.Show("You are an Employee");
             }
-            else if(username_richTextBox.Texts == "Client" && password_richTextBox.Texts == "pass1234")
+            else if(username_richTextBox.Texts == "ClientTrojan" && password_richTextBox.Texts == "pass1234")
             {
-                MessageBox.Show("You are a Client");
+                MessageBox.Show("You are a Client and you have closed a Trojan room");
+            }
+            else if (username_richTextBox.Texts == "ClientRoom" && password_richTextBox.Texts == "pass1234")
+            {
+                MessageBox.Show("You are a Client and you have closed room");
+            }
+            else
+            {
+                MessageBox.Show("Σε λάθος εφαρμογή βρίσκεσαι...😊");
             }
         }
     }
