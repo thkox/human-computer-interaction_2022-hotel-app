@@ -19,6 +19,7 @@ namespace hotel_app.Custom_Toolbox
         Left,
         Right,
         Center,
+        Sliding,
         None
     }
 
@@ -214,14 +215,14 @@ namespace hotel_app.Custom_Toolbox
                     //Painting
                     if (sliderWidth > 1) //Slider
                         graph.FillRectangle(brushSlider, rectSlider);
-                    /*if(showValue != TextPosition.None) //Text
-                        DrawValueText(graph, sliderWidth, rectSlider);*/
+                    if(showValue != TextPosition.None) //Text
+                        DrawValueText(graph, sliderWidth, rectSlider);
                 }
             }
         }
 
         //Paint value text
-        /*private void DrawValueText(Graphics graph, int sliderWidth, Rectangle rectSlider)
+        private void DrawValueText(Graphics graph, int sliderWidth, Rectangle rectSlider)
         {
             //Fields
             string text = this.Value.ToString() + "%";
@@ -235,10 +236,31 @@ namespace hotel_app.Custom_Toolbox
                 {
                     case TextPosition.Left:
                         rectText.X = 0;
-                        textFormat.Alignment stringAlignment.Near;
+                        textFormat.Alignment = StringAlignment.Near;
+                        break;
+
+                    case TextPosition.Right:
+                        rectText.X = this.Width - textSize.Width;
+                        textFormat.Alignment = StringAlignment.Far;
+                        break;
+
+                    case TextPosition.Sliding:
+                        rectText.X = sliderWidth - textSize.Width;
+                        textFormat.Alignment = StringAlignment.Center;
+                        //Clean previous text surface
+                        using (var brushClear = new SolidBrush(this.Parent.BackColor))
+                        {
+                            var rect = rectSlider;
+                            rect.Y = rectText.Y;
+                            rect.Height = rect.Height;
+                            graph.FillRectangle(brushClear, rect);
+                        }
                         break;
                 }
+                //Painting
+                graph.FillRectangle(brushTextBack, rectText);
+                graph.DrawString(text, this.Font, brushText, rectText, textFormat);
             }
-        }*/
+        }
     }
 }
