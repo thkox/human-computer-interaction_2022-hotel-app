@@ -1,3 +1,5 @@
+using hotel_app.Forms;
+
 namespace hotel_app
 {
     internal static class Program
@@ -11,7 +13,7 @@ namespace hotel_app
             // To customize application configuration such as set high DPI settings or default font,
             // see https://aka.ms/applicationconfiguration.
             ApplicationConfiguration.Initialize();
-            Application.Run(new SignIn());
+            Application.Run(new ClientForm());;
         }
     }
 }

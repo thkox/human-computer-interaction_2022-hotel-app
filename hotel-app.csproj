@@ -9,4 +9,11 @@
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Folder Include="Forms\Room\" />
+    <Folder Include="Forms\Trojan\" />
+    <Folder Include="Forms\Restaurant\" />
+    <Folder Include="Forms\Pool\" />
+  </ItemGroup>
+
 </Project>
