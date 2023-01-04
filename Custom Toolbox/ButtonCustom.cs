@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics;
 using System.Drawing;
 using System.Drawing.Drawing2D;
 using System.Linq;
@@ -11,12 +12,14 @@ using System.Windows.Forms;
 
 namespace hotel_app.Custom_Toolbox
 {
+    [DebuggerDisplay($"{{{nameof(GetDebuggerDisplay)}(),nq}}")]
     public partial class ButtonCustom : Button
     {
         private int borderSize = 0;
         private int borderRadius = 0;
         private Color borderColor = Color.Blue;
-
+        
+        //Constructor
         public ButtonCustom()
         {
             this.FlatStyle = FlatStyle.Flat;
@@ -24,20 +27,86 @@ namespace hotel_app.Custom_Toolbox
             this.Size = new Size(150, 40);
             this.BackColor = Color.MediumSlateBlue;
             this.ForeColor = Color.White;
-            InitializeComponent();
+            //InitializeComponent();
         }
 
-
+        //Methods
         private GraphicsPath GetFigurePath(RectangleF rect, float radius)
         {
             GraphicsPath path = new GraphicsPath();
             path.StartFigure();
             path.AddArc(rect.X, rect.Y, radius, radius, 180, 90);
-            path.AddArc(rect.Width - radius, rect.Height - radius, radius, radius, 90, 90);
+            path.AddArc(rect.Width - radius, rect.Y, radius, radius, 270, 90);
+            path.AddArc(rect.Width - radius, rect.Height - radius, radius, radius, 0, 90);
+            path.AddArc(rect.X, rect.Height - radius, radius, radius, 90, 90);
             path.CloseFigure();
 
             return path;
 
+        }
+
+        [Category("Hotel App ButtomCustom")]
+        public int BorderSize
+        {
+            get
+            {
+                return borderSize;
+            }
+            set 
+            { 
+                borderSize = value;
+                this.Invalidate();
+            }
+        }
+        [Category("Hotel App ButtomCustom")]
+        public int BorderRadius
+        {
+            get
+            {
+                return borderRadius;
+            }
+            set
+            {
+                borderRadius = value;
+                this.Invalidate();
+            }
+        }
+        [Category("Hotel App ButtomCustom")]
+        public Color BorderColor
+        {
+            get
+            {
+                return borderColor;
+            }
+            set
+            {
+                borderColor = value;
+                this.Invalidate();
+            }
+        }
+        [Category("Hotel App ButtomCustom")]
+        public Color BackgroundColor
+        {
+            get
+            {
+                return this.BackColor;
+            }
+            set
+            {
+                this.BackColor = value;
+            }
+        }
+        [Category("Hotel App ButtomCustom")]
+        public Color TextColor
+        {
+            get
+            {
+                return this.ForeColor;
+            }
+            set
+            {
+                this.ForeColor = value;
+            }
         }
 
         protected override void OnPaint(PaintEventArgs pevent)
@@ -95,6 +164,11 @@ namespace hotel_app.Custom_Toolbox
             {
                 this.Invalidate();
             }
+        }
+
+        private string GetDebuggerDisplay()
+        {
+            return ToString();
         }
     }
 }

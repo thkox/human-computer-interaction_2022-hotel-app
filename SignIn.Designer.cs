@@ -117,14 +117,19 @@
             // buttonCustom1
             // 
             this.buttonCustom1.BackColor = System.Drawing.Color.MediumSlateBlue;
+            this.buttonCustom1.BackgroundColor = System.Drawing.Color.MediumSlateBlue;
+            this.buttonCustom1.BorderColor = System.Drawing.Color.Blue;
+            this.buttonCustom1.BorderRadius = 40;
+            this.buttonCustom1.BorderSize = 0;
             this.buttonCustom1.FlatAppearance.BorderSize = 0;
             this.buttonCustom1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonCustom1.ForeColor = System.Drawing.Color.White;
-            this.buttonCustom1.Location = new System.Drawing.Point(237, 292);
+            this.buttonCustom1.Location = new System.Drawing.Point(1043, 401);
             this.buttonCustom1.Name = "buttonCustom1";
             this.buttonCustom1.Size = new System.Drawing.Size(150, 40);
             this.buttonCustom1.TabIndex = 6;
             this.buttonCustom1.Text = "buttonCustom1";
+            this.buttonCustom1.TextColor = System.Drawing.Color.White;
             this.buttonCustom1.UseVisualStyleBackColor = false;
             // 
             // SignIn
