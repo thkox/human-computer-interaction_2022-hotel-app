@@ -32,17 +32,32 @@ namespace hotel_app.Forms
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ClientForm));
             this.menuPanel = new System.Windows.Forms.Panel();
+            this.hotelTitle = new System.Windows.Forms.Label();
+            this.menuPanel.SuspendLayout();
             this.SuspendLayout();
             // 
             // menuPanel
             // 
             this.menuPanel.BackColor = System.Drawing.Color.Teal;
+            this.menuPanel.Controls.Add(this.hotelTitle);
             this.menuPanel.Dock = System.Windows.Forms.DockStyle.Left;
             this.menuPanel.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.menuPanel.Location = new System.Drawing.Point(0, 0);
             this.menuPanel.Name = "menuPanel";
             this.menuPanel.Size = new System.Drawing.Size(300, 761);
             this.menuPanel.TabIndex = 0;
+            // 
+            // hotelTitle
+            // 
+            this.hotelTitle.AutoSize = true;
+            this.hotelTitle.Font = new System.Drawing.Font("Edwardian Script ITC", 54.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.hotelTitle.ForeColor = System.Drawing.Color.Goldenrod;
+            this.hotelTitle.Location = new System.Drawing.Point(51, 10);
+            this.hotelTitle.Name = "hotelTitle";
+            this.hotelTitle.Size = new System.Drawing.Size(197, 172);
+            this.hotelTitle.TabIndex = 4;
+            this.hotelTitle.Text = "Zeus\r\nPalace";
+            this.hotelTitle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // ClientForm
             // 
@@ -59,6 +74,8 @@ namespace hotel_app.Forms
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Client Menu";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.menuPanel.ResumeLayout(false);
+            this.menuPanel.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -66,5 +83,6 @@ namespace hotel_app.Forms
         #endregion
 
         private Panel menuPanel;
+        private Label hotelTitle;
     }
 }
