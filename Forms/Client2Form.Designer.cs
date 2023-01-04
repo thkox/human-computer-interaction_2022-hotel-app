@@ -249,9 +249,9 @@ namespace hotel_app.Forms
             // childFormPanel
             // 
             this.childFormPanel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.childFormPanel.Location = new System.Drawing.Point(300, 0);
+            this.childFormPanel.Location = new System.Drawing.Point(300, 100);
             this.childFormPanel.Name = "childFormPanel";
-            this.childFormPanel.Size = new System.Drawing.Size(1084, 761);
+            this.childFormPanel.Size = new System.Drawing.Size(1084, 661);
             this.childFormPanel.TabIndex = 2;
             // 
             // Client2Form
@@ -260,8 +260,8 @@ namespace hotel_app.Forms
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(139)))), ((int)(((byte)(180)))));
             this.ClientSize = new System.Drawing.Size(1384, 761);
-            this.Controls.Add(this.titlelabel);
             this.Controls.Add(this.childFormPanel);
+            this.Controls.Add(this.titlelabel);
             this.Controls.Add(this.menuPanel);
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
