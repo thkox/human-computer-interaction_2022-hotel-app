@@ -141,6 +141,7 @@ namespace hotel_app
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.FormBorderStyle = FormBorderStyle.None;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(139)))), ((int)(((byte)(180)))));
             this.ClientSize = new System.Drawing.Size(1384, 761);
             this.Controls.Add(this.login_button);

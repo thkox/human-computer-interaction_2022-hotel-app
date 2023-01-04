@@ -24,7 +24,7 @@ namespace hotel_app.Custom_Toolbox
 
     public partial class ProgressBarCustom : UserControl
     {
-        //private Color channelColoer
+        //private Color channelColor - Color.Ligh
 
         public ProgressBarCustom()
         {

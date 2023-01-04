@@ -9,7 +9,7 @@ namespace hotel_app
 
         private void SignIn_Load(object sender, EventArgs e)
         {
-            this.FormBorderStyle = FormBorderStyle.None;
+            
         }
 
         private void login_button_Click(object sender, EventArgs e)
