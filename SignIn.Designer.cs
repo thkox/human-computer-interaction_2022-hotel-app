@@ -1,4 +1,6 @@
-﻿namespace hotel_app
+﻿using System.Windows.Forms.VisualStyles;
+
+namespace hotel_app
 {
     partial class SignIn
     {
@@ -126,13 +128,14 @@
             this.login_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.login_button.Font = new System.Drawing.Font("Comic Sans MS", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.login_button.ForeColor = System.Drawing.Color.White;
-            this.login_button.Location = new System.Drawing.Point(620, 500);
+            this.login_button.Location = new System.Drawing.Point(605, 506);
             this.login_button.Name = "login_button";
             this.login_button.Size = new System.Drawing.Size(190, 64);
             this.login_button.TabIndex = 6;
             this.login_button.Text = "Sign in";
             this.login_button.TextColor = System.Drawing.Color.White;
             this.login_button.UseVisualStyleBackColor = false;
+            this.login_button.Click += new System.EventHandler(this.login_button_Click);
             // 
             // SignIn
             // 
@@ -146,9 +149,13 @@
             this.Controls.Add(this.password_richTextBox);
             this.Controls.Add(this.username_richTextBox);
             this.Controls.Add(this.hotelTitle);
+            this.DoubleBuffered = true;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
             this.Name = "SignIn";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Sign In";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.SignIn_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
