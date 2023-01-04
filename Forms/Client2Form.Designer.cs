@@ -64,7 +64,7 @@ namespace hotel_app.Forms
             this.menuPanel.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.menuPanel.Location = new System.Drawing.Point(0, 0);
             this.menuPanel.Name = "menuPanel";
-            this.menuPanel.Size = new System.Drawing.Size(300, 761);
+            this.menuPanel.Size = new System.Drawing.Size(300, 800);
             this.menuPanel.TabIndex = 0;
             // 
             // radioButton
@@ -203,7 +203,7 @@ namespace hotel_app.Forms
             this.titlelabel.Dock = System.Windows.Forms.DockStyle.Top;
             this.titlelabel.Location = new System.Drawing.Point(300, 0);
             this.titlelabel.Name = "titlelabel";
-            this.titlelabel.Size = new System.Drawing.Size(1084, 100);
+            this.titlelabel.Size = new System.Drawing.Size(1100, 100);
             this.titlelabel.TabIndex = 1;
             // 
             // exitPicture
@@ -215,7 +215,7 @@ namespace hotel_app.Forms
             this.exitPicture.IconChar = FontAwesome.Sharp.IconChar.Multiply;
             this.exitPicture.IconColor = System.Drawing.SystemColors.ControlText;
             this.exitPicture.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.exitPicture.Location = new System.Drawing.Point(1049, 3);
+            this.exitPicture.Location = new System.Drawing.Point(1065, 3);
             this.exitPicture.Name = "exitPicture";
             this.exitPicture.Size = new System.Drawing.Size(32, 32);
             this.exitPicture.TabIndex = 2;
@@ -251,7 +251,7 @@ namespace hotel_app.Forms
             this.childFormPanel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.childFormPanel.Location = new System.Drawing.Point(300, 100);
             this.childFormPanel.Name = "childFormPanel";
-            this.childFormPanel.Size = new System.Drawing.Size(1084, 661);
+            this.childFormPanel.Size = new System.Drawing.Size(1100, 700);
             this.childFormPanel.TabIndex = 2;
             // 
             // Client2Form
@@ -259,14 +259,15 @@ namespace hotel_app.Forms
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(139)))), ((int)(((byte)(180)))));
-            this.ClientSize = new System.Drawing.Size(1384, 761);
+            this.ClientSize = new System.Drawing.Size(1400, 800);
             this.Controls.Add(this.childFormPanel);
             this.Controls.Add(this.titlelabel);
             this.Controls.Add(this.menuPanel);
             this.DoubleBuffered = true;
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "Client2Form";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Client Menu";
