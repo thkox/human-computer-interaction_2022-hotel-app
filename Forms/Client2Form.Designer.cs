@@ -271,7 +271,6 @@ namespace hotel_app.Forms
             this.Name = "Client2Form";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Client Menu";
-            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.menuPanel.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();

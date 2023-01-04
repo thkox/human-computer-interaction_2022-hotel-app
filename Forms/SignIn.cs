@@ -1,4 +1,6 @@
-﻿namespace hotel_app
+﻿using hotel_app.Forms;
+
+namespace hotel_app
 {
     public partial class SignIn : Form
     {
@@ -25,11 +27,18 @@
             else if (username_richTextBox.Texts == "ClientRoom" && password_richTextBox.Texts == "pass1234")
             {
                 MessageBox.Show("You are a Client and you have closed room");
+                Form menuForm = new Client2Form();
+                menuForm.ShowDialog();
             }
             else
             {
                 MessageBox.Show("Σε λάθος εφαρμογή βρίσκεσαι...😊");
             }
+        }
+
+        private void iconPictureBox1_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }
