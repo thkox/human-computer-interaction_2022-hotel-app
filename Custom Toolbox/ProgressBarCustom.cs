@@ -214,14 +214,14 @@ namespace hotel_app.Custom_Toolbox
                     //Painting
                     if (sliderWidth > 1) //Slider
                         graph.FillRectangle(brushSlider, rectSlider);
-                    if(showValue != TextPosition.None) //Text
-                        DrawValueText(graph, sliderWidth, rectSlider);
+                    /*if(showValue != TextPosition.None) //Text
+                        DrawValueText(graph, sliderWidth, rectSlider);*/
                 }
             }
         }
 
         //Paint value text
-        private void DrawValueText(Graphics graph, int sliderWidth, Rectangle rectSlider)
+        /*private void DrawValueText(Graphics graph, int sliderWidth, Rectangle rectSlider)
         {
             //Fields
             string text = this.Value.ToString() + "%";
@@ -239,6 +239,6 @@ namespace hotel_app.Custom_Toolbox
                         break;
                 }
             }
-        }
+        }*/
     }
 }
