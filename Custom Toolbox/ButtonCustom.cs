@@ -45,6 +45,50 @@ namespace hotel_app.Custom_Toolbox
 
         }
 
+        protected override void OnPaint(PaintEventArgs pevent)
+        {
+            base.OnPaint(pevent);
+            pevent.Graphics.SmoothingMode = SmoothingMode.AntiAlias;
+
+            RectangleF rectSurface = new RectangleF(0, 0, this.Width, this.Height);
+            RectangleF rectBorder = new RectangleF(1, 1, this.Width - 0.8F, this.Height - 1);
+
+            if (borderRadius > 2)
+            {
+                using (GraphicsPath pathSurface = GetFigurePath(rectSurface, borderRadius))
+                using (GraphicsPath pathBorder = GetFigurePath(rectBorder, borderRadius - 1F))
+                using (Pen penSurface = new Pen(this.Parent.BackColor, 2))
+                using (Pen penBorder = new Pen(borderColor, borderSize))
+                {
+                    penBorder.Alignment = PenAlignment.Inset;
+                    //Button Surface
+                    this.Region = new Region(pathSurface);
+                    //Draw Surface border for HD result
+                    pevent.Graphics.DrawPath(penSurface, pathSurface);
+
+                    //Button border
+                    if (borderSize >= 1)
+                    {
+                        pevent.Graphics.DrawPath(penBorder, pathBorder);
+                    }
+                }
+            }
+            else //Normal Button
+            {
+                //Button surface
+                this.Region = new Region(rectSurface);
+                //Button border
+                if (borderSize >= 1)
+                {
+                    using (Pen penBorder = new Pen(borderColor, borderSize))
+                    {
+                        penBorder.Alignment = PenAlignment.Inset;
+                        pevent.Graphics.DrawRectangle(penBorder, 0, 0, this.Width - 1, this.Height - 1);
+                    }
+                }
+            }
+        }
+
         [Category("Hotel App ButtomCustom")]
         public int BorderSize
         {
@@ -109,49 +153,6 @@ namespace hotel_app.Custom_Toolbox
             }
         }
 
-        protected override void OnPaint(PaintEventArgs pevent)
-        {
-            base.OnPaint(pevent);
-            pevent.Graphics.SmoothingMode = SmoothingMode.AntiAlias;
-
-            RectangleF rectSurface = new RectangleF(0, 0, this.Width, this.Height);
-            RectangleF rectBorder = new RectangleF(1, 1, this.Width - 0.8F, this.Height - 1);
-
-            if (borderRadius > 2)
-            {
-                using (GraphicsPath pathSurface = GetFigurePath(rectSurface, borderRadius))
-                using (GraphicsPath pathBorder = GetFigurePath(rectBorder, borderRadius - 1F))
-                using (Pen penSurface = new Pen(this.Parent.BackColor, 2))
-                using (Pen penBorder = new Pen(borderColor, borderSize))
-                {
-                    penBorder.Alignment = PenAlignment.Inset;
-                    //Button Surface
-                    this.Region = new Region(pathSurface);
-                    //Draw Surface border for HD result
-                    pevent.Graphics.DrawPath(penSurface, pathSurface);
-
-                    //Button border
-                    if (borderSize >= 1)
-                    {
-                        pevent.Graphics.DrawPath(penBorder, pathBorder);
-                    }
-                }
-            }
-            else //Normal Button
-            {
-                //Button surface
-                this.Region = new Region(rectSurface);
-                //Button border
-                if (borderSize >= 1)
-                {
-                    using (Pen penBorder = new Pen(borderColor, borderSize))
-                    {
-                        penBorder.Alignment = PenAlignment.Inset;
-                        pevent.Graphics.DrawRectangle(penBorder, 0, 0, this.Width - 1, this.Height - 1);
-                    }
-                }
-            }
-        }
         protected override void OnHandleCreated(EventArgs e)
         {
             base.OnHandleCreated(e);
