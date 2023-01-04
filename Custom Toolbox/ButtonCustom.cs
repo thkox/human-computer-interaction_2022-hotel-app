@@ -27,7 +27,7 @@ namespace hotel_app.Custom_Toolbox
             this.Size = new Size(150, 40);
             this.BackColor = Color.MediumSlateBlue;
             this.ForeColor = Color.White;
-            //InitializeComponent();
+            InitializeComponent();
         }
 
         //Methods
