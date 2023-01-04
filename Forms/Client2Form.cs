@@ -127,6 +127,7 @@ namespace hotel_app.Forms
 
         private void hotelTitle_Click(object sender, EventArgs e)
         {
+            currentChildForm.Close();
             Reset();
         }
 
@@ -137,6 +138,11 @@ namespace hotel_app.Forms
             currentChildFormIcon.IconChar = IconChar.Home;
             currentChildFormIcon.IconColor = System.Drawing.Color.MediumAquamarine;
             childFormLabel.Text = "Home";
+        }
+
+        private void exitPicture_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

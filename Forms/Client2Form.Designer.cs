@@ -40,12 +40,14 @@ namespace hotel_app.Forms
             this.panel1 = new System.Windows.Forms.Panel();
             this.hotelTitle = new System.Windows.Forms.Label();
             this.titlelabel = new System.Windows.Forms.Panel();
+            this.exitPicture = new FontAwesome.Sharp.IconPictureBox();
             this.childFormLabel = new System.Windows.Forms.Label();
             this.currentChildFormIcon = new FontAwesome.Sharp.IconPictureBox();
             this.childFormPanel = new System.Windows.Forms.Panel();
             this.menuPanel.SuspendLayout();
             this.panel1.SuspendLayout();
             this.titlelabel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.exitPicture)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.currentChildFormIcon)).BeginInit();
             this.SuspendLayout();
             // 
@@ -195,6 +197,7 @@ namespace hotel_app.Forms
             // titlelabel
             // 
             this.titlelabel.BackColor = System.Drawing.SystemColors.WindowFrame;
+            this.titlelabel.Controls.Add(this.exitPicture);
             this.titlelabel.Controls.Add(this.childFormLabel);
             this.titlelabel.Controls.Add(this.currentChildFormIcon);
             this.titlelabel.Dock = System.Windows.Forms.DockStyle.Top;
@@ -202,6 +205,22 @@ namespace hotel_app.Forms
             this.titlelabel.Name = "titlelabel";
             this.titlelabel.Size = new System.Drawing.Size(1084, 100);
             this.titlelabel.TabIndex = 1;
+            // 
+            // exitPicture
+            // 
+            this.exitPicture.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.exitPicture.BackColor = System.Drawing.SystemColors.WindowFrame;
+            this.exitPicture.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.exitPicture.IconChar = FontAwesome.Sharp.IconChar.Multiply;
+            this.exitPicture.IconColor = System.Drawing.SystemColors.ControlText;
+            this.exitPicture.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.exitPicture.Location = new System.Drawing.Point(1049, 3);
+            this.exitPicture.Name = "exitPicture";
+            this.exitPicture.Size = new System.Drawing.Size(32, 32);
+            this.exitPicture.TabIndex = 2;
+            this.exitPicture.TabStop = false;
+            this.exitPicture.Click += new System.EventHandler(this.exitPicture_Click);
             // 
             // childFormLabel
             // 
@@ -230,9 +249,9 @@ namespace hotel_app.Forms
             // childFormPanel
             // 
             this.childFormPanel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.childFormPanel.Location = new System.Drawing.Point(300, 100);
+            this.childFormPanel.Location = new System.Drawing.Point(300, 0);
             this.childFormPanel.Name = "childFormPanel";
-            this.childFormPanel.Size = new System.Drawing.Size(1084, 661);
+            this.childFormPanel.Size = new System.Drawing.Size(1084, 761);
             this.childFormPanel.TabIndex = 2;
             // 
             // Client2Form
@@ -241,8 +260,8 @@ namespace hotel_app.Forms
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(139)))), ((int)(((byte)(180)))));
             this.ClientSize = new System.Drawing.Size(1384, 761);
-            this.Controls.Add(this.childFormPanel);
             this.Controls.Add(this.titlelabel);
+            this.Controls.Add(this.childFormPanel);
             this.Controls.Add(this.menuPanel);
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -257,6 +276,7 @@ namespace hotel_app.Forms
             this.panel1.PerformLayout();
             this.titlelabel.ResumeLayout(false);
             this.titlelabel.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.exitPicture)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.currentChildFormIcon)).EndInit();
             this.ResumeLayout(false);
 
@@ -276,5 +296,6 @@ namespace hotel_app.Forms
         private FontAwesome.Sharp.IconPictureBox currentChildFormIcon;
         private Label childFormLabel;
         private Panel childFormPanel;
+        private FontAwesome.Sharp.IconPictureBox exitPicture;
     }
 }
