@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.thermostatUpButton = new FontAwesome.Sharp.IconButton();
-            this.thermostatDownButton = new FontAwesome.Sharp.IconButton();
+            this.radioDownButton = new FontAwesome.Sharp.IconButton();
             this.thermostatLabel = new System.Windows.Forms.Label();
             this.thermostatToggle = new hotel_app.Custom_Toolbox.ToggleButtonCustom();
             this.thermostatValueLabel = new System.Windows.Forms.Label();
@@ -46,20 +46,21 @@
             this.thermostatUpButton.Name = "thermostatUpButton";
             this.thermostatUpButton.Size = new System.Drawing.Size(175, 65);
             this.thermostatUpButton.TabIndex = 1;
+            this.thermostatUpButton.Text = "   ";
             this.thermostatUpButton.UseVisualStyleBackColor = true;
             this.thermostatUpButton.Click += new System.EventHandler(this.thermostatUpButton_Click);
             // 
-            // thermostatDownButton
+            // radioDownButton
             // 
-            this.thermostatDownButton.IconChar = FontAwesome.Sharp.IconChar.ArrowCircleDown;
-            this.thermostatDownButton.IconColor = System.Drawing.Color.Black;
-            this.thermostatDownButton.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.thermostatDownButton.Location = new System.Drawing.Point(564, 303);
-            this.thermostatDownButton.Name = "thermostatDownButton";
-            this.thermostatDownButton.Size = new System.Drawing.Size(175, 65);
-            this.thermostatDownButton.TabIndex = 2;
-            this.thermostatDownButton.UseVisualStyleBackColor = true;
-            this.thermostatDownButton.Click += new System.EventHandler(this.thermostatDownButton_Click);
+            this.radioDownButton.IconChar = FontAwesome.Sharp.IconChar.ArrowCircleDown;
+            this.radioDownButton.IconColor = System.Drawing.Color.Black;
+            this.radioDownButton.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.radioDownButton.Location = new System.Drawing.Point(564, 303);
+            this.radioDownButton.Name = "radioDownButton";
+            this.radioDownButton.Size = new System.Drawing.Size(175, 65);
+            this.radioDownButton.TabIndex = 2;
+            this.radioDownButton.UseVisualStyleBackColor = true;
+            this.radioDownButton.Click += new System.EventHandler(this.thermostatDownButton_Click);
             // 
             // thermostatLabel
             // 
@@ -112,7 +113,7 @@
             this.Controls.Add(this.thermostatPanel);
             this.Controls.Add(this.thermostatToggle);
             this.Controls.Add(this.thermostatLabel);
-            this.Controls.Add(this.thermostatDownButton);
+            this.Controls.Add(this.radioDownButton);
             this.Controls.Add(this.thermostatUpButton);
             this.Name = "ThermostatForm";
             this.Text = "Thermostat";
@@ -126,7 +127,7 @@
 
         #endregion
         private FontAwesome.Sharp.IconButton thermostatUpButton;
-        private FontAwesome.Sharp.IconButton thermostatDownButton;
+        private FontAwesome.Sharp.IconButton radioDownButton;
         private Label thermostatLabel;
         private Custom_Toolbox.ToggleButtonCustom thermostatToggle;
         private Label thermostatValueLabel;
