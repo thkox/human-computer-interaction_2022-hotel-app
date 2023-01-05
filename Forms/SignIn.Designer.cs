@@ -146,7 +146,7 @@ namespace hotel_app
             this.iconPictureBox1.IconChar = FontAwesome.Sharp.IconChar.Multiply;
             this.iconPictureBox1.IconColor = System.Drawing.SystemColors.ControlText;
             this.iconPictureBox1.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconPictureBox1.Location = new System.Drawing.Point(1357, 11);
+            this.iconPictureBox1.Location = new System.Drawing.Point(1367, 1);
             this.iconPictureBox1.Name = "iconPictureBox1";
             this.iconPictureBox1.Size = new System.Drawing.Size(32, 32);
             this.iconPictureBox1.TabIndex = 7;
