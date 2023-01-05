@@ -125,6 +125,7 @@ namespace hotel_app.Forms
         private void radioButton_Click(object sender, EventArgs e)
         {
             ActivateButton(sender, RGBColors.color2);
+            OpenChildForm(new RadioForm());
         }
 
         private void hotelTitle_Click(object sender, EventArgs e)
