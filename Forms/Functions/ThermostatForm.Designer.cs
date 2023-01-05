@@ -32,6 +32,7 @@
             this.thermostatUpButton = new FontAwesome.Sharp.IconButton();
             this.thermostatDownButton = new FontAwesome.Sharp.IconButton();
             this.thermostatLabel = new System.Windows.Forms.Label();
+            this.toggleButtonCustom1 = new hotel_app.Custom_Toolbox.ToggleButtonCustom();
             this.SuspendLayout();
             // 
             // richTextBox1
@@ -74,11 +75,26 @@
             this.thermostatLabel.TabIndex = 4;
             this.thermostatLabel.Text = "[Thermostat Place]";
             // 
+            // toggleButtonCustom1
+            // 
+            this.toggleButtonCustom1.AutoSize = true;
+            this.toggleButtonCustom1.Location = new System.Drawing.Point(380, 398);
+            this.toggleButtonCustom1.MinimumSize = new System.Drawing.Size(45, 22);
+            this.toggleButtonCustom1.Name = "toggleButtonCustom1";
+            this.toggleButtonCustom1.OffBackColor = System.Drawing.Color.DimGray;
+            this.toggleButtonCustom1.OffToggleColor = System.Drawing.Color.LightGray;
+            this.toggleButtonCustom1.OnBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.toggleButtonCustom1.OnToggleColor = System.Drawing.Color.Black;
+            this.toggleButtonCustom1.Size = new System.Drawing.Size(45, 22);
+            this.toggleButtonCustom1.TabIndex = 5;
+            this.toggleButtonCustom1.UseVisualStyleBackColor = true;
+            // 
             // ThermostatForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1084, 661);
+            this.Controls.Add(this.toggleButtonCustom1);
             this.Controls.Add(this.thermostatLabel);
             this.Controls.Add(this.thermostatDownButton);
             this.Controls.Add(this.thermostatUpButton);
@@ -97,5 +113,6 @@
         private FontAwesome.Sharp.IconButton thermostatUpButton;
         private FontAwesome.Sharp.IconButton thermostatDownButton;
         private Label thermostatLabel;
+        private Custom_Toolbox.ToggleButtonCustom toggleButtonCustom1;
     }
 }
