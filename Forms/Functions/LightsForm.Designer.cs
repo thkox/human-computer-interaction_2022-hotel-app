@@ -47,7 +47,7 @@
             this.iconButton1.Name = "iconButton1";
             this.iconButton1.Size = new System.Drawing.Size(123, 136);
             this.iconButton1.TabIndex = 0;
-            this.iconButton1.Text = "Lamp1";
+            this.iconButton1.Text = "Living Room";
             this.iconButton1.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.iconButton1.UseVisualStyleBackColor = false;
             this.iconButton1.Click += new System.EventHandler(this.iconButton1_Click);
@@ -66,7 +66,7 @@
             this.iconButton2.Name = "iconButton2";
             this.iconButton2.Size = new System.Drawing.Size(123, 136);
             this.iconButton2.TabIndex = 1;
-            this.iconButton2.Text = "Lamp2";
+            this.iconButton2.Text = "Bedroom";
             this.iconButton2.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.iconButton2.UseVisualStyleBackColor = false;
             this.iconButton2.Click += new System.EventHandler(this.iconButton2_Click);
@@ -85,7 +85,7 @@
             this.iconButton3.Name = "iconButton3";
             this.iconButton3.Size = new System.Drawing.Size(123, 136);
             this.iconButton3.TabIndex = 2;
-            this.iconButton3.Text = "Lamp3";
+            this.iconButton3.Text = "Bathroom";
             this.iconButton3.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.iconButton3.UseVisualStyleBackColor = false;
             this.iconButton3.Click += new System.EventHandler(this.iconButton3_Click);
