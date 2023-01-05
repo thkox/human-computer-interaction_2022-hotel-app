@@ -40,12 +40,20 @@
             this.userPictureBox = new FontAwesome.Sharp.IconPictureBox();
             this.userNameLabel = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.movie3PictureBox = new System.Windows.Forms.PictureBox();
+            this.movie2PictureBox = new System.Windows.Forms.PictureBox();
+            this.movie1PictureBox = new System.Windows.Forms.PictureBox();
             this.wathLaterLabel = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.userPictureBox)).BeginInit();
+            this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.movie3PictureBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.movie2PictureBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.movie1PictureBox)).BeginInit();
             this.SuspendLayout();
             // 
             // volumeDownButton
             // 
+            this.volumeDownButton.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.volumeDownButton.IconChar = FontAwesome.Sharp.IconChar.VolumeLow;
             this.volumeDownButton.IconColor = System.Drawing.Color.Black;
             this.volumeDownButton.IconFont = FontAwesome.Sharp.IconFont.Auto;
@@ -57,6 +65,7 @@
             // 
             // volumeUpButton
             // 
+            this.volumeUpButton.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.volumeUpButton.IconChar = FontAwesome.Sharp.IconChar.VolumeUp;
             this.volumeUpButton.IconColor = System.Drawing.Color.Black;
             this.volumeUpButton.IconFont = FontAwesome.Sharp.IconFont.Auto;
@@ -68,6 +77,7 @@
             // 
             // powerButton
             // 
+            this.powerButton.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.powerButton.IconChar = FontAwesome.Sharp.IconChar.PowerOff;
             this.powerButton.IconColor = System.Drawing.Color.Black;
             this.powerButton.IconFont = FontAwesome.Sharp.IconFont.Auto;
@@ -79,6 +89,7 @@
             // 
             // backButton
             // 
+            this.backButton.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.backButton.IconChar = FontAwesome.Sharp.IconChar.ChevronCircleLeft;
             this.backButton.IconColor = System.Drawing.Color.Black;
             this.backButton.IconFont = FontAwesome.Sharp.IconFont.Auto;
@@ -90,6 +101,7 @@
             // 
             // homeButton
             // 
+            this.homeButton.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.homeButton.IconChar = FontAwesome.Sharp.IconChar.Home;
             this.homeButton.IconColor = System.Drawing.Color.Black;
             this.homeButton.IconFont = FontAwesome.Sharp.IconFont.Auto;
@@ -101,10 +113,11 @@
             // 
             // rightButton
             // 
+            this.rightButton.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.rightButton.IconChar = FontAwesome.Sharp.IconChar.ArrowAltCircleRight;
             this.rightButton.IconColor = System.Drawing.Color.Black;
             this.rightButton.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.rightButton.Location = new System.Drawing.Point(686, 485);
+            this.rightButton.Location = new System.Drawing.Point(697, 486);
             this.rightButton.Name = "rightButton";
             this.rightButton.Size = new System.Drawing.Size(45, 48);
             this.rightButton.TabIndex = 5;
@@ -112,10 +125,11 @@
             // 
             // leftButton
             // 
+            this.leftButton.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.leftButton.IconChar = FontAwesome.Sharp.IconChar.ArrowAltCircleLeft;
             this.leftButton.IconColor = System.Drawing.Color.Black;
             this.leftButton.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.leftButton.Location = new System.Drawing.Point(584, 485);
+            this.leftButton.Location = new System.Drawing.Point(570, 486);
             this.leftButton.Name = "leftButton";
             this.leftButton.Size = new System.Drawing.Size(45, 48);
             this.leftButton.TabIndex = 6;
@@ -123,10 +137,11 @@
             // 
             // downButton
             // 
+            this.downButton.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.downButton.IconChar = FontAwesome.Sharp.IconChar.ArrowAltCircleDown;
             this.downButton.IconColor = System.Drawing.Color.Black;
             this.downButton.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.downButton.Location = new System.Drawing.Point(635, 529);
+            this.downButton.Location = new System.Drawing.Point(635, 548);
             this.downButton.Name = "downButton";
             this.downButton.Size = new System.Drawing.Size(45, 48);
             this.downButton.TabIndex = 7;
@@ -134,10 +149,11 @@
             // 
             // upButton
             // 
+            this.upButton.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.upButton.IconChar = FontAwesome.Sharp.IconChar.CircleUp;
             this.upButton.IconColor = System.Drawing.Color.Black;
             this.upButton.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.upButton.Location = new System.Drawing.Point(635, 439);
+            this.upButton.Location = new System.Drawing.Point(635, 424);
             this.upButton.Name = "upButton";
             this.upButton.Size = new System.Drawing.Size(45, 48);
             this.upButton.TabIndex = 8;
@@ -145,6 +161,7 @@
             // 
             // userPictureBox
             // 
+            this.userPictureBox.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.userPictureBox.BackColor = System.Drawing.SystemColors.Control;
             this.userPictureBox.ForeColor = System.Drawing.SystemColors.ControlText;
             this.userPictureBox.IconChar = FontAwesome.Sharp.IconChar.User;
@@ -158,6 +175,7 @@
             // 
             // userNameLabel
             // 
+            this.userNameLabel.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.userNameLabel.AutoSize = true;
             this.userNameLabel.Location = new System.Drawing.Point(62, 47);
             this.userNameLabel.Name = "userNameLabel";
@@ -167,20 +185,59 @@
             // 
             // panel1
             // 
+            this.panel1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.panel1.Controls.Add(this.movie3PictureBox);
+            this.panel1.Controls.Add(this.movie2PictureBox);
+            this.panel1.Controls.Add(this.movie1PictureBox);
             this.panel1.Location = new System.Drawing.Point(24, 122);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1033, 253);
+            this.panel1.Size = new System.Drawing.Size(1029, 253);
             this.panel1.TabIndex = 11;
+            // 
+            // movie3PictureBox
+            // 
+            this.movie3PictureBox.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.movie3PictureBox.Image = global::hotel_app.Properties.Resources.Python_movie;
+            this.movie3PictureBox.Location = new System.Drawing.Point(786, 14);
+            this.movie3PictureBox.Name = "movie3PictureBox";
+            this.movie3PictureBox.Size = new System.Drawing.Size(165, 217);
+            this.movie3PictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.movie3PictureBox.TabIndex = 2;
+            this.movie3PictureBox.TabStop = false;
+            // 
+            // movie2PictureBox
+            // 
+            this.movie2PictureBox.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.movie2PictureBox.Image = global::hotel_app.Properties.Resources.evolution_preview;
+            this.movie2PictureBox.Location = new System.Drawing.Point(272, 14);
+            this.movie2PictureBox.Name = "movie2PictureBox";
+            this.movie2PictureBox.Size = new System.Drawing.Size(484, 217);
+            this.movie2PictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.movie2PictureBox.TabIndex = 1;
+            this.movie2PictureBox.TabStop = false;
+            // 
+            // movie1PictureBox
+            // 
+            this.movie1PictureBox.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.movie1PictureBox.Image = global::hotel_app.Properties.Resources.csharp_movie;
+            this.movie1PictureBox.Location = new System.Drawing.Point(36, 14);
+            this.movie1PictureBox.Name = "movie1PictureBox";
+            this.movie1PictureBox.Size = new System.Drawing.Size(164, 217);
+            this.movie1PictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.movie1PictureBox.TabIndex = 0;
+            this.movie1PictureBox.TabStop = false;
             // 
             // wathLaterLabel
             // 
+            this.wathLaterLabel.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.wathLaterLabel.AutoSize = true;
             this.wathLaterLabel.Font = new System.Drawing.Font("Comic Sans MS", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.wathLaterLabel.Location = new System.Drawing.Point(209, 74);
             this.wathLaterLabel.Name = "wathLaterLabel";
-            this.wathLaterLabel.Size = new System.Drawing.Size(666, 35);
+            this.wathLaterLabel.Size = new System.Drawing.Size(697, 35);
             this.wathLaterLabel.TabIndex = 12;
-            this.wathLaterLabel.Text = "Recommended Movies and Shows of our Hotel Partners:";
+            this.wathLaterLabel.Text = "Recommended Movies and Shows from our Hotel Partners:";
             // 
             // TVForm
             // 
@@ -203,6 +260,10 @@
             this.Name = "TVForm";
             this.Text = "TVForm";
             ((System.ComponentModel.ISupportInitialize)(this.userPictureBox)).EndInit();
+            this.panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.movie3PictureBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.movie2PictureBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.movie1PictureBox)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -223,5 +284,8 @@
         private Label userNameLabel;
         private Panel panel1;
         private Label wathLaterLabel;
+        private PictureBox movie3PictureBox;
+        private PictureBox movie2PictureBox;
+        private PictureBox movie1PictureBox;
     }
 }
