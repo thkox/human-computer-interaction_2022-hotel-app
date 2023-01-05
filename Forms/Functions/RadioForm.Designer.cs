@@ -67,6 +67,7 @@
             // 
             // radioUpButton
             // 
+            this.radioUpButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.radioUpButton.Enabled = false;
             this.radioUpButton.IconChar = FontAwesome.Sharp.IconChar.ArrowCircleUp;
             this.radioUpButton.IconColor = System.Drawing.Color.Black;
@@ -80,6 +81,7 @@
             // 
             // radioDownButton
             // 
+            this.radioDownButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.radioDownButton.Enabled = false;
             this.radioDownButton.IconChar = FontAwesome.Sharp.IconChar.ArrowCircleDown;
             this.radioDownButton.IconColor = System.Drawing.Color.Black;
@@ -95,6 +97,7 @@
             // RadioToggle
             // 
             this.RadioToggle.AutoSize = true;
+            this.RadioToggle.Cursor = System.Windows.Forms.Cursors.Hand;
             this.RadioToggle.Location = new System.Drawing.Point(438, 388);
             this.RadioToggle.MinimumSize = new System.Drawing.Size(45, 22);
             this.RadioToggle.Name = "RadioToggle";
