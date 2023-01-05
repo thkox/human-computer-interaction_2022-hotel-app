@@ -101,7 +101,7 @@ namespace hotel_app.Forms
         private void poolButton_Click(object sender, EventArgs e)
         {
             ActivateButton(sender, RGBColors.color3);
-            //OpenChildForm(new SignIn());
+            OpenChildForm(new PoolMenuForm());
         }
 
         private void privateThermostatButton_Click(object sender, EventArgs e)
@@ -119,12 +119,13 @@ namespace hotel_app.Forms
         private void tvButton_Click(object sender, EventArgs e)
         {
             ActivateButton(sender, RGBColors.color3);
-
+            OpenChildForm(new TVForm());
         }
 
         private void radioButton_Click(object sender, EventArgs e)
         {
             ActivateButton(sender, RGBColors.color2);
+            OpenChildForm(new RadioForm());
         }
 
         private void hotelTitle_Click(object sender, EventArgs e)
