@@ -23,6 +23,7 @@ namespace hotel_app.Forms.Functions
             {
                 iconButton1.IconColor = System.Drawing.Color.Yellow;
             }
+            else iconButton1.IconColor = System.Drawing.Color.Black;
         }
     }
 }
