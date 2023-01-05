@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 //using System.Windows.Media;
 using FontAwesome.Sharp;
+using hotel_app.Forms.Functions;
 
 namespace hotel_app.Forms
 {
@@ -98,7 +99,7 @@ namespace hotel_app.Forms
         private void poolButton_Click(object sender, EventArgs e)
         {
             ActivateButton(sender, RGBColors.color3);
-            OpenChildForm(new SignIn());
+            //OpenChildForm(new SignIn());
         }
 
         private void privateThermostatButton_Click(object sender, EventArgs e)
@@ -109,7 +110,7 @@ namespace hotel_app.Forms
         private void lightsButton_Click(object sender, EventArgs e)
         {
             ActivateButton(sender, RGBColors.color1);
-
+            OpenChildForm(new LightsForm());
         }
 
         private void tvButton_Click(object sender, EventArgs e)

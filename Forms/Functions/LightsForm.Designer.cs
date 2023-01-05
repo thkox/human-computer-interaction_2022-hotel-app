@@ -35,6 +35,7 @@
             // 
             // iconButton1
             // 
+            this.iconButton1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.iconButton1.BackColor = System.Drawing.Color.Transparent;
             this.iconButton1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.iconButton1.FlatAppearance.BorderSize = 0;
@@ -43,7 +44,7 @@
             this.iconButton1.IconColor = System.Drawing.Color.Black;
             this.iconButton1.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconButton1.IconSize = 100;
-            this.iconButton1.Location = new System.Drawing.Point(201, 133);
+            this.iconButton1.Location = new System.Drawing.Point(145, 133);
             this.iconButton1.Name = "iconButton1";
             this.iconButton1.Size = new System.Drawing.Size(123, 136);
             this.iconButton1.TabIndex = 0;
@@ -54,6 +55,7 @@
             // 
             // iconButton2
             // 
+            this.iconButton2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.iconButton2.BackColor = System.Drawing.Color.Transparent;
             this.iconButton2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.iconButton2.FlatAppearance.BorderSize = 0;
@@ -62,7 +64,7 @@
             this.iconButton2.IconColor = System.Drawing.Color.Black;
             this.iconButton2.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconButton2.IconSize = 100;
-            this.iconButton2.Location = new System.Drawing.Point(330, 133);
+            this.iconButton2.Location = new System.Drawing.Point(341, 133);
             this.iconButton2.Name = "iconButton2";
             this.iconButton2.Size = new System.Drawing.Size(123, 136);
             this.iconButton2.TabIndex = 1;
@@ -73,6 +75,7 @@
             // 
             // iconButton3
             // 
+            this.iconButton3.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.iconButton3.BackColor = System.Drawing.Color.Transparent;
             this.iconButton3.Cursor = System.Windows.Forms.Cursors.Hand;
             this.iconButton3.FlatAppearance.BorderSize = 0;
@@ -81,7 +84,7 @@
             this.iconButton3.IconColor = System.Drawing.Color.Black;
             this.iconButton3.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconButton3.IconSize = 100;
-            this.iconButton3.Location = new System.Drawing.Point(459, 133);
+            this.iconButton3.Location = new System.Drawing.Point(543, 133);
             this.iconButton3.Name = "iconButton3";
             this.iconButton3.Size = new System.Drawing.Size(123, 136);
             this.iconButton3.TabIndex = 2;
