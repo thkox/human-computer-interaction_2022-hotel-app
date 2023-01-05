@@ -16,5 +16,13 @@ namespace hotel_app.Forms.Functions
         {
             InitializeComponent();
         }
+
+        private void iconButton1_Click(object sender, EventArgs e)
+        {
+            if (iconButton1.IconColor == System.Drawing.Color.Black) 
+            {
+                iconButton1.IconColor = System.Drawing.Color.Yellow;
+            }
+        }
     }
 }

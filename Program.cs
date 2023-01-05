@@ -1,4 +1,5 @@
 using hotel_app.Forms;
+using hotel_app.Forms.Functions;
 
 namespace hotel_app
 {
@@ -13,7 +14,7 @@ namespace hotel_app
             // To customize application configuration such as set high DPI settings or default font,
             // see https://aka.ms/applicationconfiguration.
             ApplicationConfiguration.Initialize();
-            Application.Run(new SignIn());;
+            Application.Run(new LightsForm());;
         }
     }
 }
