@@ -7,7 +7,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-//using System.Windows.Media;
 using FontAwesome.Sharp;
 using hotel_app.Forms.Functions;
 
@@ -18,6 +17,10 @@ namespace hotel_app.Forms
         private IconButton currentBtn;
         private Panel leftBorderBtn;
         private Form currentChildForm;
+
+        //forms that we can open now
+        ThermostatForm thermostat = new ThermostatForm();
+        LightsForm lights = new LightsForm();
 
         public Client2Form()
         {
@@ -37,7 +40,6 @@ namespace hotel_app.Forms
             public static Color color1 = Color.Blue;
             public static Color color2 = Color.Red;
             public static Color color3 = Color.Green;
-
         }
 
 
@@ -105,6 +107,7 @@ namespace hotel_app.Forms
         private void privateThermostatButton_Click(object sender, EventArgs e)
         {
             ActivateButton(sender, RGBColors.color2);
+            OpenChildForm(new ThermostatForm());
         }
 
         private void lightsButton_Click(object sender, EventArgs e)
@@ -122,7 +125,6 @@ namespace hotel_app.Forms
         private void radioButton_Click(object sender, EventArgs e)
         {
             ActivateButton(sender, RGBColors.color2);
-
         }
 
         private void hotelTitle_Click(object sender, EventArgs e)
