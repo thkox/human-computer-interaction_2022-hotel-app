@@ -12,9 +12,15 @@ namespace hotel_app.Forms.Functions
 {
     public partial class ThermostatForm : Form
     {
+        int thermostatValue = 10;
         public ThermostatForm()
         {
             InitializeComponent();
+        }
+
+        private void ThermostatForm_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
