@@ -12,7 +12,7 @@ namespace hotel_app.Forms.Functions
 {
     public partial class ThermostatForm : Form
     {
-        int thermostatValue = 10;
+        int thermostatValue = 15;
         bool thermostatState = false;
         public ThermostatForm()
         {
@@ -27,6 +27,8 @@ namespace hotel_app.Forms.Functions
         private void TurnOFFThermostat()
         {
             thermostatState = false;
+            thermostatUpButton.Enabled = false;
+            thermostatDownButton.Enabled = false;
             thermostatValueLabel.Text = "OFF";
             thermostatPanel.BackColor = Color.Red;
         }
@@ -34,9 +36,23 @@ namespace hotel_app.Forms.Functions
         private void TurnONThermostat()
         {
             thermostatState = true;
+            if (thermostatValue == 10)
+            {
+                thermostatUpButton.Enabled = true;
+                thermostatDownButton.Enabled = false;
+            }
+            else if (thermostatValue == 30)
+            {
+                thermostatUpButton.Enabled = false;
+                thermostatDownButton.Enabled = true;
+            }
+            else
+            {
+                thermostatUpButton.Enabled = true;
+                thermostatDownButton.Enabled = true;
+            }
             thermostatPanel.BackColor = Color.White;
-            thermostatValueLabel.Text = string.Format($"{thermostatValue.ToString().PadLeft(2, '0')}");
-
+            thermostatValueLabel.Text = string.Format($"{thermostatValue.ToString().PadLeft(2, '0')}°C");
         }
 
         private void richTextBox1_TextChanged(object sender, EventArgs e)
@@ -49,8 +65,15 @@ namespace hotel_app.Forms.Functions
         {
             if (thermostatState == true)
             {
+                if (thermostatValue >= 29)
+                    thermostatUpButton.Enabled = false;
+                else
+                {
+                    thermostatUpButton.Enabled = true;
+                    thermostatDownButton.Enabled = true;
+                }
                 thermostatValue += 1;
-                thermostatValueLabel.Text = string.Format($"{thermostatValue.ToString().PadLeft(2, '0')}");
+                thermostatValueLabel.Text = string.Format($"{thermostatValue.ToString().PadLeft(2, '0')}°C");
             }
         }
 
@@ -58,8 +81,15 @@ namespace hotel_app.Forms.Functions
         {
             if (thermostatState == true)
             {
+                if (thermostatValue <= 11)
+                    thermostatDownButton.Enabled = false;
+                else
+                {
+                    thermostatUpButton.Enabled = true;
+                    thermostatDownButton.Enabled = true;
+                }
                 thermostatValue -= 1;
-                thermostatValueLabel.Text = string.Format($"{thermostatValue.ToString().PadLeft(2, '0')}");
+                thermostatValueLabel.Text = string.Format($"{thermostatValue.ToString().PadLeft(2, '0')}°C");
             }
         }
 

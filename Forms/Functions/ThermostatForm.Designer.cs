@@ -39,6 +39,7 @@
             // 
             // thermostatUpButton
             // 
+            this.thermostatUpButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.thermostatUpButton.IconChar = FontAwesome.Sharp.IconChar.ArrowCircleUp;
             this.thermostatUpButton.IconColor = System.Drawing.Color.Black;
             this.thermostatUpButton.IconFont = FontAwesome.Sharp.IconFont.Auto;
@@ -46,11 +47,13 @@
             this.thermostatUpButton.Name = "thermostatUpButton";
             this.thermostatUpButton.Size = new System.Drawing.Size(175, 65);
             this.thermostatUpButton.TabIndex = 1;
+            this.thermostatUpButton.Text = "   ";
             this.thermostatUpButton.UseVisualStyleBackColor = true;
             this.thermostatUpButton.Click += new System.EventHandler(this.thermostatUpButton_Click);
             // 
             // thermostatDownButton
             // 
+            this.thermostatDownButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.thermostatDownButton.IconChar = FontAwesome.Sharp.IconChar.ArrowCircleDown;
             this.thermostatDownButton.IconColor = System.Drawing.Color.Black;
             this.thermostatDownButton.IconFont = FontAwesome.Sharp.IconFont.Auto;
@@ -74,6 +77,7 @@
             // thermostatToggle
             // 
             this.thermostatToggle.AutoSize = true;
+            this.thermostatToggle.Cursor = System.Windows.Forms.Cursors.Hand;
             this.thermostatToggle.Location = new System.Drawing.Point(438, 397);
             this.thermostatToggle.MinimumSize = new System.Drawing.Size(45, 22);
             this.thermostatToggle.Name = "thermostatToggle";
