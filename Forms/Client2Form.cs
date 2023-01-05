@@ -101,7 +101,7 @@ namespace hotel_app.Forms
         private void poolButton_Click(object sender, EventArgs e)
         {
             ActivateButton(sender, RGBColors.color3);
-            //OpenChildForm(new SignIn());
+            OpenChildForm(new PoolMenuForm());
         }
 
         private void privateThermostatButton_Click(object sender, EventArgs e)
