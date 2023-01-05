@@ -119,7 +119,7 @@ namespace hotel_app.Forms
         private void tvButton_Click(object sender, EventArgs e)
         {
             ActivateButton(sender, RGBColors.color3);
-
+            OpenChildForm(new TVForm());
         }
 
         private void radioButton_Click(object sender, EventArgs e)
