@@ -41,27 +41,32 @@ namespace hotel_app.Forms.Functions
         private void PoolMenuForm_Load(object sender, EventArgs e)
         {
             poolMenuTabs = poolLoadFormsPanel;
+            backPictureBox.Hide();
         }
 
         private void waterLevelButton_Click(object sender, EventArgs e)
         {
             OpenPoolFunctionForm(waterLevel);
+            backPictureBox.Show();
         }
 
         private void thermostatButton_Click(object sender, EventArgs e)
         {
             OpenPoolFunctionForm(poolThermostat);
+            backPictureBox.Show();
         }
 
         private void sensorButton_Click(object sender, EventArgs e)
         {
             OpenPoolFunctionForm(sensor);
+            backPictureBox.Show();
         }
 
         private void backPictureBox_Click(object sender, EventArgs e)
         {
             currentChildForm.Hide();
             poolLoadFormsPanel = poolMenuTabs;
+            backPictureBox.Hide();
         }
     }
 }

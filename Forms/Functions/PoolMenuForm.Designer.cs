@@ -104,7 +104,7 @@
             this.backPictureBox.IconColor = System.Drawing.SystemColors.ControlText;
             this.backPictureBox.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.backPictureBox.IconSize = 42;
-            this.backPictureBox.Location = new System.Drawing.Point(12, 3);
+            this.backPictureBox.Location = new System.Drawing.Point(12, 12);
             this.backPictureBox.Name = "backPictureBox";
             this.backPictureBox.Size = new System.Drawing.Size(42, 42);
             this.backPictureBox.TabIndex = 4;
