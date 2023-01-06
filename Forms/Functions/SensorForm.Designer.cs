@@ -67,10 +67,10 @@
             // 
             this.sensorPanelRichTextBox.BackColor = System.Drawing.SystemColors.InactiveBorder;
             this.sensorPanelRichTextBox.Font = new System.Drawing.Font("Comic Sans MS", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.sensorPanelRichTextBox.Location = new System.Drawing.Point(267, 155);
+            this.sensorPanelRichTextBox.Location = new System.Drawing.Point(259, 103);
             this.sensorPanelRichTextBox.Name = "sensorPanelRichTextBox";
             this.sensorPanelRichTextBox.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.None;
-            this.sensorPanelRichTextBox.Size = new System.Drawing.Size(551, 217);
+            this.sensorPanelRichTextBox.Size = new System.Drawing.Size(551, 258);
             this.sensorPanelRichTextBox.TabIndex = 2;
             this.sensorPanelRichTextBox.Text = "";
             // 

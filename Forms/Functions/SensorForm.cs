@@ -50,12 +50,17 @@ namespace hotel_app.Forms.Functions
             sensorPanelRichTextBox.DeselectAll();
             sensorPanelRichTextBox.BackColor = Color.Red;
             sensorPanelRichTextBox.ForeColor = Color.White;
+            alarmState = false;
             alarmButton.Enabled = false;
         }
 
         private void TurnOnSensor()
         {
             sensorPanelRichTextBox.Text = System.Environment.NewLine + "Sensor is ON";
+            if(!alarmState)
+            {
+                sensorPanelRichTextBox.Text += System.Environment.NewLine + "Alarm is OFF";
+            }
             if (humansState)
             {
                 sensorPanelRichTextBox.Text += System.Environment.NewLine + "Humans Detected";
@@ -93,8 +98,8 @@ namespace hotel_app.Forms.Functions
             if (humansState)
             {
                 sensorPanelRichTextBox.Text += System.Environment.NewLine + "Alarm is ON"
-                    + System.Environment.NewLine + "Humans Detected!"
-                    + System.Environment.NewLine + "Please Call Security!";
+                    + System.Environment.NewLine + "HUMANS DETECTED!"
+                    + System.Environment.NewLine + "Please CALL Security!";
             }
             else
             {
@@ -104,6 +109,7 @@ namespace hotel_app.Forms.Functions
             sensorPanelRichTextBox.SelectAll();
             sensorPanelRichTextBox.SelectionAlignment = HorizontalAlignment.Center;
             sensorPanelRichTextBox.DeselectAll();
+            sensorPanelRichTextBox.BackColor = Color.Orange;
         }
 
         private void TurnOffAlarm()
