@@ -131,7 +131,7 @@
             // waterLevelEmptyButton
             // 
             this.waterLevelEmptyButton.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.waterLevelEmptyButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(129)))), ((int)(((byte)(164)))), ((int)(((byte)(205)))));
+            this.waterLevelEmptyButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(79)))), ((int)(((byte)(134)))), ((int)(((byte)(184)))));
             this.waterLevelEmptyButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.waterLevelEmptyButton.IconChar = FontAwesome.Sharp.IconChar.TintSlash;
             this.waterLevelEmptyButton.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(241)))), ((int)(((byte)(246)))));
