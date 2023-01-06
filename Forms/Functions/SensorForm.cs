@@ -28,7 +28,7 @@ namespace hotel_app.Forms.Functions
         {
             TurnOffSensor();
         }
-        private void sernorButton_Click(object sender, EventArgs e)
+        private void sensorButton_Click(object sender, EventArgs e)
         {
             if(sensorState)
             {
@@ -119,26 +119,12 @@ namespace hotel_app.Forms.Functions
 
         private void sensorButton_EnabledChanged(object sender, EventArgs e)
         {
-            if (!sensorButton.Enabled)
-            {
-                sensorButton.BackColor = Color.FromArgb(236, 241, 246);
-            }
-            else
-            {
-                sensorButton.BackColor = Color.FromArgb(79, 134, 184);
-            }
+
         }
 
         private void alarmButton_EnabledChanged(object sender, EventArgs e)
         {
-            if (!alarmButton.Enabled)
-            {
-                alarmButton.BackColor = Color.FromArgb(236, 241, 246);
-            }
-            else
-            {
-                alarmButton.BackColor = Color.FromArgb(79, 134, 184);
-            }
+
         }
     }
 }

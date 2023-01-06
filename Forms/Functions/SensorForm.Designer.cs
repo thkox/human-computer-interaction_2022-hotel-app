@@ -49,6 +49,7 @@
             this.sensorButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.sensorButton.UseVisualStyleBackColor = false;
             this.sensorButton.EnabledChanged += new System.EventHandler(this.sensorButton_EnabledChanged);
+            this.sensorButton.Click += new System.EventHandler(this.sensorButton_Click);
             // 
             // alarmButton
             // 
