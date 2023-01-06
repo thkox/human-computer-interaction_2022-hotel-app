@@ -136,15 +136,6 @@ namespace hotel_app.Forms
             OpenChildForm(radio);
         }
 
-        private void hotelTitle_Click(object sender, EventArgs e)
-        {
-            if (currentChildForm != null)
-            {
-                currentChildForm.Hide();
-            }
-            Reset();
-        }
-
         private void Reset()
         {
             DisableButton();
@@ -152,6 +143,15 @@ namespace hotel_app.Forms
             currentChildFormIcon.IconChar = IconChar.Home;
             currentChildFormIcon.IconColor = System.Drawing.Color.MediumAquamarine;
             childFormLabel.Text = "Home";
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            if (currentChildForm != null)
+            {
+                currentChildForm.Hide();
+            }
+            Reset();
         }
     }
 }
