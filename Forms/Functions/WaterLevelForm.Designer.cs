@@ -34,6 +34,7 @@
             this.waterLevelDownButton = new FontAwesome.Sharp.IconButton();
             this.waterLevelPanel = new System.Windows.Forms.Panel();
             this.waterLevelValueLabel = new System.Windows.Forms.Label();
+            this.waterLevelLabel = new System.Windows.Forms.Label();
             this.waterLevelEmptyButton = new FontAwesome.Sharp.IconButton();
             ((System.ComponentModel.ISupportInitialize)(this.waterLevel)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.hideWaterLevel)).BeginInit();
@@ -84,6 +85,7 @@
             // 
             // waterLevelPanel
             // 
+            this.waterLevelPanel.BackColor = System.Drawing.Color.White;
             this.waterLevelPanel.Controls.Add(this.waterLevelValueLabel);
             this.waterLevelPanel.Location = new System.Drawing.Point(460, 173);
             this.waterLevelPanel.Name = "waterLevelPanel";
@@ -94,11 +96,21 @@
             // 
             this.waterLevelValueLabel.AutoSize = true;
             this.waterLevelValueLabel.Font = new System.Drawing.Font("Segoe UI", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.waterLevelValueLabel.Location = new System.Drawing.Point(92, 86);
+            this.waterLevelValueLabel.Location = new System.Drawing.Point(84, 77);
             this.waterLevelValueLabel.Name = "waterLevelValueLabel";
             this.waterLevelValueLabel.Size = new System.Drawing.Size(159, 86);
             this.waterLevelValueLabel.TabIndex = 0;
             this.waterLevelValueLabel.Text = "[Val]";
+            // 
+            // waterLevelLabel
+            // 
+            this.waterLevelLabel.AutoSize = true;
+            this.waterLevelLabel.Font = new System.Drawing.Font("Segoe UI", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.waterLevelLabel.Location = new System.Drawing.Point(460, 111);
+            this.waterLevelLabel.Name = "waterLevelLabel";
+            this.waterLevelLabel.Size = new System.Drawing.Size(199, 45);
+            this.waterLevelLabel.TabIndex = 1;
+            this.waterLevelLabel.Text = "[Pool Place]";
             // 
             // waterLevelEmptyButton
             // 
@@ -117,6 +129,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1084, 661);
+            this.Controls.Add(this.waterLevelLabel);
             this.Controls.Add(this.waterLevelEmptyButton);
             this.Controls.Add(this.waterLevelPanel);
             this.Controls.Add(this.waterLevelDownButton);
@@ -125,11 +138,13 @@
             this.Controls.Add(this.waterLevel);
             this.Name = "WaterLevelForm";
             this.Text = "WaterLevelForm";
+            this.Load += new System.EventHandler(this.WaterLevelForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.waterLevel)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.hideWaterLevel)).EndInit();
             this.waterLevelPanel.ResumeLayout(false);
             this.waterLevelPanel.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -142,5 +157,6 @@
         private Panel waterLevelPanel;
         private Label waterLevelValueLabel;
         private FontAwesome.Sharp.IconButton waterLevelEmptyButton;
+        private Label waterLevelLabel;
     }
 }
