@@ -28,14 +28,16 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.parkingPanel = new System.Windows.Forms.Panel();
-            this.parkingPictureBox = new System.Windows.Forms.PictureBox();
             this.drivingAreaPanel = new System.Windows.Forms.Panel();
             this.trojan1PictureBox = new System.Windows.Forms.PictureBox();
+            this.parkingPictureBox = new System.Windows.Forms.PictureBox();
+            this.moveTimer = new System.Windows.Forms.Timer(this.components);
             this.parkingPanel.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.parkingPictureBox)).BeginInit();
             this.drivingAreaPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.trojan1PictureBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.parkingPictureBox)).BeginInit();
             this.SuspendLayout();
             // 
             // parkingPanel
@@ -46,16 +48,6 @@
             this.parkingPanel.Name = "parkingPanel";
             this.parkingPanel.Size = new System.Drawing.Size(1083, 662);
             this.parkingPanel.TabIndex = 0;
-            // 
-            // parkingPictureBox
-            // 
-            this.parkingPictureBox.Image = global::hotel_app.Properties.Resources.parking;
-            this.parkingPictureBox.Location = new System.Drawing.Point(46, 30);
-            this.parkingPictureBox.Name = "parkingPictureBox";
-            this.parkingPictureBox.Size = new System.Drawing.Size(987, 619);
-            this.parkingPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.parkingPictureBox.TabIndex = 0;
-            this.parkingPictureBox.TabStop = false;
             // 
             // drivingAreaPanel
             // 
@@ -69,12 +61,28 @@
             // trojan1PictureBox
             // 
             this.trojan1PictureBox.Image = global::hotel_app.Properties.Resources.trojan;
-            this.trojan1PictureBox.Location = new System.Drawing.Point(289, 181);
+            this.trojan1PictureBox.Location = new System.Drawing.Point(102, 136);
             this.trojan1PictureBox.Name = "trojan1PictureBox";
-            this.trojan1PictureBox.Size = new System.Drawing.Size(159, 89);
+            this.trojan1PictureBox.Size = new System.Drawing.Size(88, 89);
             this.trojan1PictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.trojan1PictureBox.TabIndex = 0;
             this.trojan1PictureBox.TabStop = false;
+            // 
+            // parkingPictureBox
+            // 
+            this.parkingPictureBox.Image = global::hotel_app.Properties.Resources.parking;
+            this.parkingPictureBox.Location = new System.Drawing.Point(46, 30);
+            this.parkingPictureBox.Name = "parkingPictureBox";
+            this.parkingPictureBox.Size = new System.Drawing.Size(987, 619);
+            this.parkingPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.parkingPictureBox.TabIndex = 0;
+            this.parkingPictureBox.TabStop = false;
+            // 
+            // moveTimer
+            // 
+            this.moveTimer.Enabled = true;
+            this.moveTimer.Interval = 20;
+            this.moveTimer.Tick += new System.EventHandler(this.moveTimerEvent);
             // 
             // CourtyardZeusForm
             // 
@@ -84,10 +92,12 @@
             this.Controls.Add(this.parkingPanel);
             this.Name = "CourtyardZeusForm";
             this.Text = "CourtyardZeusForm";
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.keyIsDown);
+            this.KeyUp += new System.Windows.Forms.KeyEventHandler(this.keyIsUp);
             this.parkingPanel.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.parkingPictureBox)).EndInit();
             this.drivingAreaPanel.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.trojan1PictureBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.parkingPictureBox)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -98,5 +108,6 @@
         private Panel drivingAreaPanel;
         private PictureBox trojan1PictureBox;
         private PictureBox parkingPictureBox;
+        private System.Windows.Forms.Timer moveTimer;
     }
 }
