@@ -89,7 +89,7 @@ namespace hotel_app.Forms
         {
             if(currentChildForm != null)
             {
-                currentChildForm.Close();
+                //currentChildForm.Close();
             }
             currentChildForm = childForm;
             childForm.TopLevel = false;
@@ -104,31 +104,31 @@ namespace hotel_app.Forms
         private void poolButton_Click(object sender, EventArgs e)
         {
             ActivateButton(sender, RGBColors.color3);
-            OpenChildForm(new PoolMenuForm());
+            OpenChildForm(pool);
         }
 
         private void privateThermostatButton_Click(object sender, EventArgs e)
         {
             ActivateButton(sender, RGBColors.color2);
-            OpenChildForm(new ThermostatForm());
+            OpenChildForm(thermostat);
         }
 
         private void lightsButton_Click(object sender, EventArgs e)
         {
             ActivateButton(sender, RGBColors.color1);
-            OpenChildForm(new LightsForm());
+            OpenChildForm(lights);
         }
 
         private void tvButton_Click(object sender, EventArgs e)
         {
             ActivateButton(sender, RGBColors.color3);
-            OpenChildForm(new TVForm());
+            OpenChildForm(tv);
         }
 
         private void radioButton_Click(object sender, EventArgs e)
         {
             ActivateButton(sender, RGBColors.color2);
-            OpenChildForm(new RadioForm());
+            OpenChildForm(radio);
         }
 
         private void hotelTitle_Click(object sender, EventArgs e)
