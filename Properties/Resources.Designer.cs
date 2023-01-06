@@ -83,6 +83,16 @@ namespace hotel_app.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap parking {
+            get {
+                object obj = ResourceManager.GetObject("parking", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap powerIdle {
             get {
                 object obj = ResourceManager.GetObject("powerIdle", resourceCulture);
@@ -116,6 +126,16 @@ namespace hotel_app.Properties {
         internal static System.Drawing.Bitmap Python_movie {
             get {
                 object obj = ResourceManager.GetObject("Python movie", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap trojan {
+            get {
+                object obj = ResourceManager.GetObject("trojan", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
