@@ -131,7 +131,7 @@
         #endregion
         private FontAwesome.Sharp.IconButton thermostatUpButton;
         private FontAwesome.Sharp.IconButton thermostatDownButton;
-        private Label thermostatLabel;
+        public Label thermostatLabel;
         private Custom_Toolbox.ToggleButtonCustom thermostatToggle;
         private Label thermostatValueLabel;
         private Panel thermostatPanel;

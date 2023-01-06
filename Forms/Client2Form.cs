@@ -19,8 +19,11 @@ namespace hotel_app.Forms
         private Form currentChildForm;
 
         //forms that we can open now
+        PoolMenuForm pool = new PoolMenuForm();
         ThermostatForm thermostat = new ThermostatForm();
         LightsForm lights = new LightsForm();
+        TVForm tv = new TVForm();
+        RadioForm radio = new RadioForm();  
 
         public Client2Form()
         {
@@ -33,6 +36,11 @@ namespace hotel_app.Forms
             this.Text = string.Empty;
             this.ControlBox = false;
             this.DoubleBuffered= true;
+
+            //Parameters for Room Forms
+            thermostat.thermostatLabel.Text = "Living Room Thermostat";
+            pool.poolThermostat.thermostatLabel.Text = "Private Pool: Thermostat";
+            pool.waterLevel.waterLevelLabel.Text = "Private Pool: Water Level";
         }
         //Structs RGBcolours
         private struct RGBColors
@@ -86,7 +94,7 @@ namespace hotel_app.Forms
         {
             if(currentChildForm != null)
             {
-                currentChildForm.Close();
+                //currentChildForm.Close();
             }
             currentChildForm = childForm;
             childForm.TopLevel = false;
@@ -101,36 +109,36 @@ namespace hotel_app.Forms
         private void poolButton_Click(object sender, EventArgs e)
         {
             ActivateButton(sender, RGBColors.color3);
-            OpenChildForm(new PoolMenuForm());
+            OpenChildForm(pool);
         }
 
         private void privateThermostatButton_Click(object sender, EventArgs e)
         {
             ActivateButton(sender, RGBColors.color2);
-            OpenChildForm(new ThermostatForm());
+            OpenChildForm(thermostat);
         }
 
         private void lightsButton_Click(object sender, EventArgs e)
         {
             ActivateButton(sender, RGBColors.color1);
-            OpenChildForm(new LightsForm());
+            OpenChildForm(lights);
         }
 
         private void tvButton_Click(object sender, EventArgs e)
         {
             ActivateButton(sender, RGBColors.color3);
-            OpenChildForm(new TVForm());
+            OpenChildForm(tv);
         }
 
         private void radioButton_Click(object sender, EventArgs e)
         {
             ActivateButton(sender, RGBColors.color2);
-            OpenChildForm(new RadioForm());
+            OpenChildForm(radio);
         }
 
         private void hotelTitle_Click(object sender, EventArgs e)
         {
-            currentChildForm.Close();
+            currentChildForm.Hide();
             Reset();
         }
 
