@@ -57,23 +57,25 @@ namespace hotel_app.Forms
             {
                 DisableButton();
                 currentBtn = (IconButton)senderBtn;
-                currentBtn.BackColor = System.Drawing.Color.FromArgb(37, 36, 81);
-                currentBtn.ForeColor = color;
+                currentBtn.BackColor = Color.FromArgb(129, 164, 205);
+                currentBtn.ForeColor = Color.FromArgb(34, 99, 161);
                 currentBtn.TextAlign = ContentAlignment.MiddleCenter;
-                currentBtn.IconColor = color;
+                currentBtn.IconColor = Color.FromArgb(34, 99, 161);
                 currentBtn.TextImageRelation = TextImageRelation.TextBeforeImage;
                 currentBtn.ImageAlign = ContentAlignment.MiddleRight;
 
                 //leftBorder button
-                leftBorderBtn.BackColor = color;
+                leftBorderBtn.BackColor = Color.FromArgb(219, 228, 238);
                 leftBorderBtn.Location = new Point(0, currentBtn.Location.Y);
                 leftBorderBtn.Visible = true;
                 leftBorderBtn.BringToFront();
 
                 //icon Current Child Form
                 currentChildFormIcon.IconChar = currentBtn.IconChar;
-                currentChildFormIcon.IconColor = color;
+                currentChildFormIcon.IconColor = Color.FromArgb(219, 228, 238);
                 childFormLabel.Text = currentBtn.Text;
+                childFormLabel.ForeColor = Color.FromArgb(219, 228, 238);
+
             }
         }
 
@@ -81,10 +83,10 @@ namespace hotel_app.Forms
         {
             if (currentBtn != null)
             {
-                currentBtn.BackColor = Color.FromArgb(31, 60, 68);
-                currentBtn.ForeColor = Color.AliceBlue;
-                currentBtn.TextAlign = ContentAlignment.MiddleLeft;
-                currentBtn.IconColor = Color.Aquamarine;
+                currentBtn.BackColor = Color.FromArgb(34, 99, 161);
+                currentBtn.ForeColor = Color.FromArgb(219, 228, 238);
+                currentBtn.TextAlign = ContentAlignment.MiddleCenter;
+                currentBtn.IconColor = Color.FromArgb(219, 228, 238);
                 currentBtn.TextImageRelation = TextImageRelation.ImageBeforeText;
                 currentBtn.ImageAlign = ContentAlignment.MiddleLeft;
             }
@@ -141,7 +143,7 @@ namespace hotel_app.Forms
             DisableButton();
             leftBorderBtn.Visible = false;
             currentChildFormIcon.IconChar = IconChar.Home;
-            currentChildFormIcon.IconColor = System.Drawing.Color.MediumAquamarine;
+            currentChildFormIcon.IconColor = Color.FromArgb(219, 228, 238);
             childFormLabel.Text = "Home";
         }
 

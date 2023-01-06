@@ -56,7 +56,7 @@ namespace hotel_app.Forms
             // 
             // menuPanel
             // 
-            this.menuPanel.BackColor = System.Drawing.SystemColors.WindowFrame;
+            this.menuPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(99)))), ((int)(((byte)(161)))));
             this.menuPanel.Controls.Add(this.radioButton);
             this.menuPanel.Controls.Add(this.tvButton);
             this.menuPanel.Controls.Add(this.lightsButton);
@@ -76,9 +76,10 @@ namespace hotel_app.Forms
             this.radioButton.Dock = System.Windows.Forms.DockStyle.Top;
             this.radioButton.FlatAppearance.BorderSize = 0;
             this.radioButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.radioButton.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.radioButton.Font = new System.Drawing.Font("Cooper Black", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.radioButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(228)))), ((int)(((byte)(238)))));
             this.radioButton.IconChar = FontAwesome.Sharp.IconChar.Radio;
-            this.radioButton.IconColor = System.Drawing.Color.OrangeRed;
+            this.radioButton.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(228)))), ((int)(((byte)(238)))));
             this.radioButton.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.radioButton.IconSize = 50;
             this.radioButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -98,9 +99,10 @@ namespace hotel_app.Forms
             this.tvButton.Dock = System.Windows.Forms.DockStyle.Top;
             this.tvButton.FlatAppearance.BorderSize = 0;
             this.tvButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.tvButton.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.tvButton.Font = new System.Drawing.Font("Cooper Black", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.tvButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(228)))), ((int)(((byte)(238)))));
             this.tvButton.IconChar = FontAwesome.Sharp.IconChar.Television;
-            this.tvButton.IconColor = System.Drawing.Color.OrangeRed;
+            this.tvButton.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(228)))), ((int)(((byte)(238)))));
             this.tvButton.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.tvButton.IconSize = 50;
             this.tvButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -120,9 +122,10 @@ namespace hotel_app.Forms
             this.lightsButton.Dock = System.Windows.Forms.DockStyle.Top;
             this.lightsButton.FlatAppearance.BorderSize = 0;
             this.lightsButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.lightsButton.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.lightsButton.Font = new System.Drawing.Font("Cooper Black", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lightsButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(228)))), ((int)(((byte)(238)))));
             this.lightsButton.IconChar = FontAwesome.Sharp.IconChar.Lightbulb;
-            this.lightsButton.IconColor = System.Drawing.Color.OrangeRed;
+            this.lightsButton.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(228)))), ((int)(((byte)(238)))));
             this.lightsButton.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.lightsButton.IconSize = 50;
             this.lightsButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -142,9 +145,10 @@ namespace hotel_app.Forms
             this.privateThermostatButton.Dock = System.Windows.Forms.DockStyle.Top;
             this.privateThermostatButton.FlatAppearance.BorderSize = 0;
             this.privateThermostatButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.privateThermostatButton.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.privateThermostatButton.Font = new System.Drawing.Font("Cooper Black", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.privateThermostatButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(228)))), ((int)(((byte)(238)))));
             this.privateThermostatButton.IconChar = FontAwesome.Sharp.IconChar.Thermometer3;
-            this.privateThermostatButton.IconColor = System.Drawing.Color.OrangeRed;
+            this.privateThermostatButton.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(228)))), ((int)(((byte)(238)))));
             this.privateThermostatButton.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.privateThermostatButton.IconSize = 50;
             this.privateThermostatButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -164,9 +168,10 @@ namespace hotel_app.Forms
             this.poolButton.Dock = System.Windows.Forms.DockStyle.Top;
             this.poolButton.FlatAppearance.BorderSize = 0;
             this.poolButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.poolButton.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.poolButton.Font = new System.Drawing.Font("Cooper Black", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.poolButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(228)))), ((int)(((byte)(238)))));
             this.poolButton.IconChar = FontAwesome.Sharp.IconChar.WaterLadder;
-            this.poolButton.IconColor = System.Drawing.Color.OrangeRed;
+            this.poolButton.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(228)))), ((int)(((byte)(238)))));
             this.poolButton.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.poolButton.IconSize = 50;
             this.poolButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -203,7 +208,7 @@ namespace hotel_app.Forms
             // 
             // titlelabel
             // 
-            this.titlelabel.BackColor = System.Drawing.SystemColors.WindowFrame;
+            this.titlelabel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(124)))), ((int)(((byte)(177)))));
             this.titlelabel.Controls.Add(this.childFormLabel);
             this.titlelabel.Controls.Add(this.currentChildFormIcon);
             this.titlelabel.Dock = System.Windows.Forms.DockStyle.Top;
@@ -215,20 +220,20 @@ namespace hotel_app.Forms
             // childFormLabel
             // 
             this.childFormLabel.AutoSize = true;
-            this.childFormLabel.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.childFormLabel.ForeColor = System.Drawing.SystemColors.ActiveCaption;
-            this.childFormLabel.Location = new System.Drawing.Point(55, 39);
+            this.childFormLabel.Font = new System.Drawing.Font("Cooper Black", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.childFormLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(228)))), ((int)(((byte)(238)))));
+            this.childFormLabel.Location = new System.Drawing.Point(55, 50);
             this.childFormLabel.Name = "childFormLabel";
-            this.childFormLabel.Size = new System.Drawing.Size(79, 32);
+            this.childFormLabel.Size = new System.Drawing.Size(64, 21);
             this.childFormLabel.TabIndex = 1;
             this.childFormLabel.Text = "Home";
             // 
             // currentChildFormIcon
             // 
-            this.currentChildFormIcon.BackColor = System.Drawing.SystemColors.InactiveCaption;
-            this.currentChildFormIcon.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.currentChildFormIcon.BackColor = System.Drawing.Color.Transparent;
+            this.currentChildFormIcon.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(228)))), ((int)(((byte)(238)))));
             this.currentChildFormIcon.IconChar = FontAwesome.Sharp.IconChar.Home;
-            this.currentChildFormIcon.IconColor = System.Drawing.SystemColors.ControlText;
+            this.currentChildFormIcon.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(228)))), ((int)(((byte)(238)))));
             this.currentChildFormIcon.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.currentChildFormIcon.Location = new System.Drawing.Point(17, 39);
             this.currentChildFormIcon.Name = "currentChildFormIcon";
@@ -238,6 +243,7 @@ namespace hotel_app.Forms
             // 
             // childFormPanel
             // 
+            this.childFormPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(144)))), ((int)(((byte)(191)))));
             this.childFormPanel.Controls.Add(this.label3);
             this.childFormPanel.Controls.Add(this.label2);
             this.childFormPanel.Controls.Add(this.label1);
@@ -249,11 +255,12 @@ namespace hotel_app.Forms
             // 
             // label3
             // 
+            this.label3.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Comic Sans MS", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label3.Location = new System.Drawing.Point(255, 284);
+            this.label3.ForeColor = System.Drawing.Color.White;
+            this.label3.Location = new System.Drawing.Point(260, 270);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(692, 232);
             this.label3.TabIndex = 8;
