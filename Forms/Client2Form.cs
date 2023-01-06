@@ -19,8 +19,11 @@ namespace hotel_app.Forms
         private Form currentChildForm;
 
         //forms that we can open now
+        PoolMenuForm pool = new PoolMenuForm();
         ThermostatForm thermostat = new ThermostatForm();
         LightsForm lights = new LightsForm();
+        TVForm tv = new TVForm();
+        RadioForm radio = new RadioForm();  
 
         public Client2Form()
         {
