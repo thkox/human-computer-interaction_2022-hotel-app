@@ -70,22 +70,27 @@ namespace hotel_app.Forms.Functions
             if (trojan1PictureBox.Bounds.IntersectsWith(parkingSlot1.Bounds) == true)
             {
                 trojan1PictureBox.Location = new Point(882, 45);
+                moveTimer.Stop();
             }
             else if (trojan1PictureBox.Bounds.IntersectsWith(parkingSlot2.Bounds) == true)
             {
                 trojan1PictureBox.Location = new Point(882, 171);
+                moveTimer.Stop();
             }
             else if (trojan1PictureBox.Bounds.IntersectsWith(parkingSlot3.Bounds) == true)
             {
                 trojan1PictureBox.Location = new Point(882, 294);
+                moveTimer.Stop();
             }
             else if (trojan1PictureBox.Bounds.IntersectsWith(parkingSlot4.Bounds) == true)
             {
                 trojan1PictureBox.Location = new Point(882, 417);
+                moveTimer.Stop();
             }
             else if (trojan1PictureBox.Bounds.IntersectsWith(parkingSlot5.Bounds) == true)
             {
                 trojan1PictureBox.Location = new Point(882, 542);
+                moveTimer.Stop();
             }
         }
 
