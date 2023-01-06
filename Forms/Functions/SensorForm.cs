@@ -17,7 +17,7 @@ namespace hotel_app.Forms.Functions
     {
         private bool sensorState = false;
         private bool alarmState = false;
-        private int humans = 0;
+        private bool humansState = true;
 
         public SensorForm()
         {
@@ -26,9 +26,9 @@ namespace hotel_app.Forms.Functions
 
         private void SensorForm_Load(object sender, EventArgs e)
         {
-            TurnOffAlarm();
+            TurnOffSensor();
         }
-        private void sernsorButton_Click(object sender, EventArgs e)
+        private void sernorButton_Click(object sender, EventArgs e)
         {
             if(sensorState)
             {
@@ -55,8 +55,16 @@ namespace hotel_app.Forms.Functions
 
         private void TurnOnSensor()
         {
-            sensorPanelRichTextBox.Text = System.Environment.NewLine + "Sensor is On" +
-                System.Environment.NewLine + $"Detecting: {humans} humans";
+            sensorPanelRichTextBox.Text = System.Environment.NewLine + "Sensor is ON";
+            if (humansState)
+            {
+                sensorPanelRichTextBox.Text += System.Environment.NewLine + "Humans Detected";
+            }
+            else
+            {
+                sensorPanelRichTextBox.Text += System.Environment.NewLine + "DetectingHumans";
+            }
+                
             sensorPanelRichTextBox.SelectAll();
             sensorPanelRichTextBox.SelectionAlignment = HorizontalAlignment.Center;
             sensorPanelRichTextBox.DeselectAll();
@@ -67,21 +75,32 @@ namespace hotel_app.Forms.Functions
 
         private void alarmButton_Click(object sender, EventArgs e)
         {
-            if (sensorState)
+            if (alarmState)
             {
-                sensorState = false;
+                alarmState = false;
                 TurnOffAlarm();
             }
             else
             {
-                sensorState = true;
+                alarmState = true;
                 TurnOnAlarm();
             }
         }
 
         private void TurnOnAlarm()
         {
-            sensorPanelRichTextBox.Text += System.Environment.NewLine + "Alarm is on";
+            sensorPanelRichTextBox.Text = System.Environment.NewLine + "Sensor is ON";
+            if (humansState)
+            {
+                sensorPanelRichTextBox.Text += System.Environment.NewLine + "Alarm is ON"
+                    + System.Environment.NewLine + "Humans Detected!"
+                    + System.Environment.NewLine + "Please Call Security!";
+            }
+            else
+            {
+                sensorPanelRichTextBox.Text += System.Environment.NewLine + "Detecting humans"
+                    + System.Environment.NewLine + "Alarm is ON";
+            }
             sensorPanelRichTextBox.SelectAll();
             sensorPanelRichTextBox.SelectionAlignment = HorizontalAlignment.Center;
             sensorPanelRichTextBox.DeselectAll();

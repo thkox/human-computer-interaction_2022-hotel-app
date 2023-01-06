@@ -46,7 +46,7 @@
             this.sernsorButton.Text = "Sensor";
             this.sernsorButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.sernsorButton.UseVisualStyleBackColor = true;
-            this.sernsorButton.Click += new System.EventHandler(this.sernsorButton_Click);
+            this.sernsorButton.Click += new System.EventHandler(this.sernorButton_Click);
             // 
             // alarmButton
             // 
@@ -67,10 +67,10 @@
             // 
             this.sensorPanelRichTextBox.BackColor = System.Drawing.SystemColors.InactiveBorder;
             this.sensorPanelRichTextBox.Font = new System.Drawing.Font("Comic Sans MS", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.sensorPanelRichTextBox.Location = new System.Drawing.Point(334, 181);
+            this.sensorPanelRichTextBox.Location = new System.Drawing.Point(267, 155);
             this.sensorPanelRichTextBox.Name = "sensorPanelRichTextBox";
             this.sensorPanelRichTextBox.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.None;
-            this.sensorPanelRichTextBox.Size = new System.Drawing.Size(416, 183);
+            this.sensorPanelRichTextBox.Size = new System.Drawing.Size(551, 217);
             this.sensorPanelRichTextBox.TabIndex = 2;
             this.sensorPanelRichTextBox.Text = "";
             // 
