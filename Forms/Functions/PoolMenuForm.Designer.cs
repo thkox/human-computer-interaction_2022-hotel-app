@@ -47,7 +47,7 @@
             this.waterLevelButton.IconChar = FontAwesome.Sharp.IconChar.WaterLadder;
             this.waterLevelButton.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(241)))), ((int)(((byte)(246)))));
             this.waterLevelButton.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.waterLevelButton.Location = new System.Drawing.Point(207, 185);
+            this.waterLevelButton.Location = new System.Drawing.Point(205, 206);
             this.waterLevelButton.Name = "waterLevelButton";
             this.waterLevelButton.Size = new System.Drawing.Size(150, 96);
             this.waterLevelButton.TabIndex = 0;
@@ -66,7 +66,7 @@
             this.thermostatButton.IconChar = FontAwesome.Sharp.IconChar.Temperature1;
             this.thermostatButton.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(241)))), ((int)(((byte)(246)))));
             this.thermostatButton.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.thermostatButton.Location = new System.Drawing.Point(461, 185);
+            this.thermostatButton.Location = new System.Drawing.Point(459, 206);
             this.thermostatButton.Name = "thermostatButton";
             this.thermostatButton.Size = new System.Drawing.Size(150, 96);
             this.thermostatButton.TabIndex = 1;
@@ -85,7 +85,7 @@
             this.sensorButton.IconChar = FontAwesome.Sharp.IconChar.Eye;
             this.sensorButton.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(241)))), ((int)(((byte)(246)))));
             this.sensorButton.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.sensorButton.Location = new System.Drawing.Point(716, 185);
+            this.sensorButton.Location = new System.Drawing.Point(714, 206);
             this.sensorButton.Name = "sensorButton";
             this.sensorButton.Size = new System.Drawing.Size(150, 96);
             this.sensorButton.TabIndex = 2;
@@ -100,9 +100,9 @@
             this.poolLoadFormsPanel.Controls.Add(this.waterLevelButton);
             this.poolLoadFormsPanel.Controls.Add(this.sensorButton);
             this.poolLoadFormsPanel.Controls.Add(this.thermostatButton);
-            this.poolLoadFormsPanel.Location = new System.Drawing.Point(0, 36);
+            this.poolLoadFormsPanel.Location = new System.Drawing.Point(4, -6);
             this.poolLoadFormsPanel.Name = "poolLoadFormsPanel";
-            this.poolLoadFormsPanel.Size = new System.Drawing.Size(1083, 630);
+            this.poolLoadFormsPanel.Size = new System.Drawing.Size(1079, 672);
             this.poolLoadFormsPanel.TabIndex = 3;
             // 
             // backPictureBox
