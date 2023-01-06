@@ -1,0 +1,146 @@
+﻿namespace hotel_app.Forms.Functions
+{
+    partial class WaterLevelForm
+    {
+        /// <summary>
+        /// Required designer variable.
+        /// </summary>
+        private System.ComponentModel.IContainer components = null;
+
+        /// <summary>
+        /// Clean up any resources being used.
+        /// </summary>
+        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing && (components != null))
+            {
+                components.Dispose();
+            }
+            base.Dispose(disposing);
+        }
+
+        #region Windows Form Designer generated code
+
+        /// <summary>
+        /// Required method for Designer support - do not modify
+        /// the contents of this method with the code editor.
+        /// </summary>
+        private void InitializeComponent()
+        {
+            this.waterLevel = new System.Windows.Forms.PictureBox();
+            this.hideWaterLevel = new System.Windows.Forms.PictureBox();
+            this.waterLevelUpButton = new FontAwesome.Sharp.IconButton();
+            this.waterLevelDownButton = new FontAwesome.Sharp.IconButton();
+            this.waterLevelPanel = new System.Windows.Forms.Panel();
+            this.waterLevelValueLabel = new System.Windows.Forms.Label();
+            this.waterLevelEmptyButton = new FontAwesome.Sharp.IconButton();
+            ((System.ComponentModel.ISupportInitialize)(this.waterLevel)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.hideWaterLevel)).BeginInit();
+            this.waterLevelPanel.SuspendLayout();
+            this.SuspendLayout();
+            // 
+            // waterLevel
+            // 
+            this.waterLevel.BackColor = System.Drawing.Color.RoyalBlue;
+            this.waterLevel.Location = new System.Drawing.Point(374, 173);
+            this.waterLevel.Name = "waterLevel";
+            this.waterLevel.Size = new System.Drawing.Size(80, 250);
+            this.waterLevel.TabIndex = 0;
+            this.waterLevel.TabStop = false;
+            // 
+            // hideWaterLevel
+            // 
+            this.hideWaterLevel.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.hideWaterLevel.Location = new System.Drawing.Point(374, 173);
+            this.hideWaterLevel.Name = "hideWaterLevel";
+            this.hideWaterLevel.Size = new System.Drawing.Size(80, 250);
+            this.hideWaterLevel.TabIndex = 1;
+            this.hideWaterLevel.TabStop = false;
+            // 
+            // waterLevelUpButton
+            // 
+            this.waterLevelUpButton.IconChar = FontAwesome.Sharp.IconChar.ArrowCircleUp;
+            this.waterLevelUpButton.IconColor = System.Drawing.Color.Black;
+            this.waterLevelUpButton.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.waterLevelUpButton.Location = new System.Drawing.Point(641, 429);
+            this.waterLevelUpButton.Name = "waterLevelUpButton";
+            this.waterLevelUpButton.Size = new System.Drawing.Size(175, 65);
+            this.waterLevelUpButton.TabIndex = 2;
+            this.waterLevelUpButton.UseVisualStyleBackColor = true;
+            this.waterLevelUpButton.Click += new System.EventHandler(this.waterLevelUpButton_Click);
+            // 
+            // waterLevelDownButton
+            // 
+            this.waterLevelDownButton.IconChar = FontAwesome.Sharp.IconChar.ArrowCircleDown;
+            this.waterLevelDownButton.IconColor = System.Drawing.Color.Black;
+            this.waterLevelDownButton.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.waterLevelDownButton.Location = new System.Drawing.Point(460, 429);
+            this.waterLevelDownButton.Name = "waterLevelDownButton";
+            this.waterLevelDownButton.Size = new System.Drawing.Size(175, 65);
+            this.waterLevelDownButton.TabIndex = 3;
+            this.waterLevelDownButton.UseVisualStyleBackColor = true;
+            this.waterLevelDownButton.Click += new System.EventHandler(this.waterLevelDownButton_Click);
+            // 
+            // waterLevelPanel
+            // 
+            this.waterLevelPanel.Controls.Add(this.waterLevelValueLabel);
+            this.waterLevelPanel.Location = new System.Drawing.Point(460, 173);
+            this.waterLevelPanel.Name = "waterLevelPanel";
+            this.waterLevelPanel.Size = new System.Drawing.Size(356, 250);
+            this.waterLevelPanel.TabIndex = 4;
+            // 
+            // waterLevelValueLabel
+            // 
+            this.waterLevelValueLabel.AutoSize = true;
+            this.waterLevelValueLabel.Font = new System.Drawing.Font("Segoe UI", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.waterLevelValueLabel.Location = new System.Drawing.Point(92, 86);
+            this.waterLevelValueLabel.Name = "waterLevelValueLabel";
+            this.waterLevelValueLabel.Size = new System.Drawing.Size(159, 86);
+            this.waterLevelValueLabel.TabIndex = 0;
+            this.waterLevelValueLabel.Text = "[Val]";
+            // 
+            // waterLevelEmptyButton
+            // 
+            this.waterLevelEmptyButton.IconChar = FontAwesome.Sharp.IconChar.TintSlash;
+            this.waterLevelEmptyButton.IconColor = System.Drawing.Color.Black;
+            this.waterLevelEmptyButton.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.waterLevelEmptyButton.Location = new System.Drawing.Point(374, 429);
+            this.waterLevelEmptyButton.Name = "waterLevelEmptyButton";
+            this.waterLevelEmptyButton.Size = new System.Drawing.Size(80, 65);
+            this.waterLevelEmptyButton.TabIndex = 5;
+            this.waterLevelEmptyButton.UseVisualStyleBackColor = true;
+            this.waterLevelEmptyButton.Click += new System.EventHandler(this.waterLevelEmptyButton_Click);
+            // 
+            // WaterLevelForm
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(1084, 661);
+            this.Controls.Add(this.waterLevelEmptyButton);
+            this.Controls.Add(this.waterLevelPanel);
+            this.Controls.Add(this.waterLevelDownButton);
+            this.Controls.Add(this.waterLevelUpButton);
+            this.Controls.Add(this.hideWaterLevel);
+            this.Controls.Add(this.waterLevel);
+            this.Name = "WaterLevelForm";
+            this.Text = "WaterLevelForm";
+            ((System.ComponentModel.ISupportInitialize)(this.waterLevel)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.hideWaterLevel)).EndInit();
+            this.waterLevelPanel.ResumeLayout(false);
+            this.waterLevelPanel.PerformLayout();
+            this.ResumeLayout(false);
+
+        }
+
+        #endregion
+
+        private PictureBox waterLevel;
+        private PictureBox hideWaterLevel;
+        private FontAwesome.Sharp.IconButton waterLevelUpButton;
+        private FontAwesome.Sharp.IconButton waterLevelDownButton;
+        private Panel waterLevelPanel;
+        private Label waterLevelValueLabel;
+        private FontAwesome.Sharp.IconButton waterLevelEmptyButton;
+    }
+}
