@@ -164,6 +164,6 @@
         private Panel waterLevelPanel;
         private Label waterLevelValueLabel;
         private FontAwesome.Sharp.IconButton waterLevelEmptyButton;
-        private Label waterLevelLabel;
+        public Label waterLevelLabel;
     }
 }

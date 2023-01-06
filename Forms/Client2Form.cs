@@ -39,6 +39,8 @@ namespace hotel_app.Forms
 
             //Parameters for Room Forms
             thermostat.thermostatLabel.Text = "Living Room Thermostat";
+            pool.poolThermostat.thermostatLabel.Text = "Private Pool: Thermostat";
+            pool.waterLevel.waterLevelLabel.Text = "Private Pool: Water Level";
         }
         //Structs RGBcolours
         private struct RGBColors

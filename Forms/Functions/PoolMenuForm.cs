@@ -17,8 +17,8 @@ namespace hotel_app.Forms.Functions
 
         private Form currentChildForm;
 
-        private ThermostatForm poolThermostat = new ThermostatForm();
-        private WaterLevelForm waterLevel = new WaterLevelForm();
+        public ThermostatForm poolThermostat = new ThermostatForm();
+        public WaterLevelForm waterLevel = new WaterLevelForm();
         private SensorForm sensor = new SensorForm();
 
         public PoolMenuForm()
@@ -41,6 +41,8 @@ namespace hotel_app.Forms.Functions
         private void PoolMenuForm_Load(object sender, EventArgs e)
         {
             poolMenuTabs = poolLoadFormsPanel;
+            //poolThermostat.thermostatLabel.Text = "Private Pool: Thermostat";
+            //waterLevel.waterLevelLabel.Text = "Private Pool: Water Level";
             backPictureBox.Hide();
         }
 
