@@ -94,7 +94,7 @@ namespace hotel_app.Forms
         {
             if(currentChildForm != null)
             {
-                //currentChildForm.Close();
+                currentChildForm.Hide();
             }
             currentChildForm = childForm;
             childForm.TopLevel = false;
@@ -138,7 +138,10 @@ namespace hotel_app.Forms
 
         private void hotelTitle_Click(object sender, EventArgs e)
         {
-            currentChildForm.Hide();
+            if (currentChildForm != null)
+            {
+                currentChildForm.Hide();
+            }
             Reset();
         }
 

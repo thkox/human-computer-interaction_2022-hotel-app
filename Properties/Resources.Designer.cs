@@ -83,6 +83,16 @@ namespace hotel_app.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap logoMenuFinal {
+            get {
+                object obj = ResourceManager.GetObject("logoMenuFinal", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap parking {
             get {
                 object obj = ResourceManager.GetObject("parking", resourceCulture);
