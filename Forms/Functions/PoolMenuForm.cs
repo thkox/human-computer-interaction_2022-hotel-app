@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.VisualBasic.Devices;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -10,13 +11,57 @@ using System.Windows.Forms;
 
 namespace hotel_app.Forms.Functions
 {
-
-
     public partial class PoolMenuForm : Form
     {
+        private Panel poolMenuTabs;
+
+        private Form currentChildForm;
+
+        private ThermostatForm poolThermostat = new ThermostatForm();
+        private WaterLevelForm waterLevel = new WaterLevelForm();
+        private SensorForm sensor = new SensorForm();
+
         public PoolMenuForm()
         {
             InitializeComponent();
+        }
+
+        private void OpenPoolFunctionForm(Form childForm)
+        {
+            currentChildForm = childForm;
+            childForm.TopLevel = false;
+            childForm.FormBorderStyle = FormBorderStyle.None;
+            childForm.Dock = DockStyle.Fill;
+            poolLoadFormsPanel.Controls.Add(childForm);
+            poolLoadFormsPanel.Tag = childForm;
+            childForm.BringToFront();
+            childForm.Show();
+        }
+
+        private void PoolMenuForm_Load(object sender, EventArgs e)
+        {
+            poolMenuTabs = poolLoadFormsPanel;
+        }
+
+        private void waterLevelButton_Click(object sender, EventArgs e)
+        {
+            OpenPoolFunctionForm(waterLevel);
+        }
+
+        private void thermostatButton_Click(object sender, EventArgs e)
+        {
+            OpenPoolFunctionForm(poolThermostat);
+        }
+
+        private void sensorButton_Click(object sender, EventArgs e)
+        {
+            OpenPoolFunctionForm(sensor);
+        }
+
+        private void backPictureBox_Click(object sender, EventArgs e)
+        {
+            currentChildForm.Hide();
+            poolLoadFormsPanel = poolMenuTabs;
         }
     }
 }

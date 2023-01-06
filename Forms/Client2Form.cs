@@ -36,6 +36,9 @@ namespace hotel_app.Forms
             this.Text = string.Empty;
             this.ControlBox = false;
             this.DoubleBuffered= true;
+
+            //Parameters for Room Forms
+            thermostat.thermostatLabel.Text = "Living Room Thermostat";
         }
         //Structs RGBcolours
         private struct RGBColors
@@ -133,7 +136,7 @@ namespace hotel_app.Forms
 
         private void hotelTitle_Click(object sender, EventArgs e)
         {
-            currentChildForm.Close();
+            currentChildForm.Hide();
             Reset();
         }
 

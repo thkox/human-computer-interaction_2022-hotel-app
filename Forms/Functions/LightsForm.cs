@@ -19,29 +19,29 @@ namespace hotel_app.Forms.Functions
 
         private void iconButton1_Click(object sender, EventArgs e)
         {
-            if (iconButton1.IconColor == Color.Black) 
+            if (lightButton1.IconColor == Color.Black) 
             {
-                iconButton1.IconColor = Color.Yellow;
+                lightButton1.IconColor = Color.Yellow;
             }
-            else iconButton1.IconColor = Color.Black;
+            else lightButton1.IconColor = Color.Black;
         }
 
         private void iconButton2_Click(object sender, EventArgs e)
         {
-            if (iconButton2.IconColor == Color.Black)
+            if (lightButton2.IconColor == Color.Black)
             {
-                iconButton2.IconColor = Color.Yellow;
+                lightButton2.IconColor = Color.Yellow;
             }
-            else iconButton2.IconColor = Color.Black;
+            else lightButton2.IconColor = Color.Black;
         }
 
         private void iconButton3_Click(object sender, EventArgs e)
         {
-            if (iconButton3.IconColor == Color.Black)
+            if (lightButton3.IconColor == Color.Black)
             {
-                iconButton3.IconColor = Color.Yellow;
+                lightButton3.IconColor = Color.Yellow;
             }
-            else iconButton3.IconColor = Color.Black;
+            else lightButton3.IconColor = Color.Black;
         }
     }
 }
