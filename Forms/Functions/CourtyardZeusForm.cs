@@ -28,7 +28,7 @@ namespace hotel_app.Forms.Functions
             {
                 trojan1PictureBox.Left -= speed;
             }
-            if (moveRight == true && trojan1PictureBox.Left < 750)
+            if (moveRight == true && trojan1PictureBox.Left < 919)
             {
                 trojan1PictureBox.Left += speed;
             }
