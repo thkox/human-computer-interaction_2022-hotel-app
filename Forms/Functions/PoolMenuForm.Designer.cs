@@ -40,12 +40,12 @@
             // waterLevelButton
             // 
             this.waterLevelButton.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.waterLevelButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(129)))), ((int)(((byte)(164)))), ((int)(((byte)(205)))));
+            this.waterLevelButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(79)))), ((int)(((byte)(134)))), ((int)(((byte)(184)))));
             this.waterLevelButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.waterLevelButton.Font = new System.Drawing.Font("Comic Sans MS", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.waterLevelButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(228)))), ((int)(((byte)(238)))));
+            this.waterLevelButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(241)))), ((int)(((byte)(246)))));
             this.waterLevelButton.IconChar = FontAwesome.Sharp.IconChar.WaterLadder;
-            this.waterLevelButton.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(228)))), ((int)(((byte)(238)))));
+            this.waterLevelButton.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(241)))), ((int)(((byte)(246)))));
             this.waterLevelButton.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.waterLevelButton.Location = new System.Drawing.Point(207, 185);
             this.waterLevelButton.Name = "waterLevelButton";
@@ -59,12 +59,12 @@
             // thermostatButton
             // 
             this.thermostatButton.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.thermostatButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(129)))), ((int)(((byte)(164)))), ((int)(((byte)(205)))));
+            this.thermostatButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(79)))), ((int)(((byte)(134)))), ((int)(((byte)(184)))));
             this.thermostatButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.thermostatButton.Font = new System.Drawing.Font("Comic Sans MS", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.thermostatButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(228)))), ((int)(((byte)(238)))));
+            this.thermostatButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(241)))), ((int)(((byte)(246)))));
             this.thermostatButton.IconChar = FontAwesome.Sharp.IconChar.Temperature1;
-            this.thermostatButton.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(228)))), ((int)(((byte)(238)))));
+            this.thermostatButton.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(241)))), ((int)(((byte)(246)))));
             this.thermostatButton.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.thermostatButton.Location = new System.Drawing.Point(461, 185);
             this.thermostatButton.Name = "thermostatButton";
@@ -78,12 +78,12 @@
             // sensorButton
             // 
             this.sensorButton.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.sensorButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(129)))), ((int)(((byte)(164)))), ((int)(((byte)(205)))));
+            this.sensorButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(79)))), ((int)(((byte)(134)))), ((int)(((byte)(184)))));
             this.sensorButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.sensorButton.Font = new System.Drawing.Font("Comic Sans MS", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.sensorButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(228)))), ((int)(((byte)(238)))));
+            this.sensorButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(241)))), ((int)(((byte)(246)))));
             this.sensorButton.IconChar = FontAwesome.Sharp.IconChar.Eye;
-            this.sensorButton.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(228)))), ((int)(((byte)(238)))));
+            this.sensorButton.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(241)))), ((int)(((byte)(246)))));
             this.sensorButton.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.sensorButton.Location = new System.Drawing.Point(716, 185);
             this.sensorButton.Name = "sensorButton";
@@ -100,7 +100,7 @@
             this.poolLoadFormsPanel.Controls.Add(this.waterLevelButton);
             this.poolLoadFormsPanel.Controls.Add(this.sensorButton);
             this.poolLoadFormsPanel.Controls.Add(this.thermostatButton);
-            this.poolLoadFormsPanel.Location = new System.Drawing.Point(-4, 41);
+            this.poolLoadFormsPanel.Location = new System.Drawing.Point(0, 36);
             this.poolLoadFormsPanel.Name = "poolLoadFormsPanel";
             this.poolLoadFormsPanel.Size = new System.Drawing.Size(1083, 630);
             this.poolLoadFormsPanel.TabIndex = 3;
@@ -109,9 +109,9 @@
             // 
             this.backPictureBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(144)))), ((int)(((byte)(191)))));
             this.backPictureBox.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.backPictureBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(228)))), ((int)(((byte)(238)))));
+            this.backPictureBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(241)))), ((int)(((byte)(246)))));
             this.backPictureBox.IconChar = FontAwesome.Sharp.IconChar.CircleArrowLeft;
-            this.backPictureBox.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(228)))), ((int)(((byte)(238)))));
+            this.backPictureBox.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(241)))), ((int)(((byte)(246)))));
             this.backPictureBox.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.backPictureBox.IconSize = 42;
             this.backPictureBox.Location = new System.Drawing.Point(25, 12);
@@ -126,7 +126,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(144)))), ((int)(((byte)(191)))));
-            this.ClientSize = new System.Drawing.Size(1077, 670);
+            this.ClientSize = new System.Drawing.Size(1084, 661);
             this.Controls.Add(this.backPictureBox);
             this.Controls.Add(this.poolLoadFormsPanel);
             this.Name = "PoolMenuForm";

@@ -54,7 +54,7 @@
             // hideWaterLevel
             // 
             this.hideWaterLevel.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.hideWaterLevel.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.hideWaterLevel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(241)))), ((int)(((byte)(246)))));
             this.hideWaterLevel.Location = new System.Drawing.Point(309, 166);
             this.hideWaterLevel.Name = "hideWaterLevel";
             this.hideWaterLevel.Size = new System.Drawing.Size(80, 250);
@@ -64,33 +64,40 @@
             // waterLevelUpButton
             // 
             this.waterLevelUpButton.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.waterLevelUpButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(79)))), ((int)(((byte)(134)))), ((int)(((byte)(184)))));
+            this.waterLevelUpButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.waterLevelUpButton.IconChar = FontAwesome.Sharp.IconChar.ArrowCircleUp;
-            this.waterLevelUpButton.IconColor = System.Drawing.Color.Black;
+            this.waterLevelUpButton.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(241)))), ((int)(((byte)(246)))));
             this.waterLevelUpButton.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.waterLevelUpButton.Location = new System.Drawing.Point(576, 422);
             this.waterLevelUpButton.Name = "waterLevelUpButton";
             this.waterLevelUpButton.Size = new System.Drawing.Size(175, 65);
             this.waterLevelUpButton.TabIndex = 2;
-            this.waterLevelUpButton.UseVisualStyleBackColor = true;
+            this.waterLevelUpButton.UseVisualStyleBackColor = false;
+            this.waterLevelUpButton.EnabledChanged += new System.EventHandler(this.waterLevelUpButton_EnabledChanged);
             this.waterLevelUpButton.Click += new System.EventHandler(this.waterLevelUpButton_Click);
             // 
             // waterLevelDownButton
             // 
             this.waterLevelDownButton.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.waterLevelDownButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(79)))), ((int)(((byte)(134)))), ((int)(((byte)(184)))));
+            this.waterLevelDownButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.waterLevelDownButton.ForeColor = System.Drawing.Color.Transparent;
             this.waterLevelDownButton.IconChar = FontAwesome.Sharp.IconChar.ArrowCircleDown;
-            this.waterLevelDownButton.IconColor = System.Drawing.Color.Black;
+            this.waterLevelDownButton.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(241)))), ((int)(((byte)(246)))));
             this.waterLevelDownButton.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.waterLevelDownButton.Location = new System.Drawing.Point(395, 422);
             this.waterLevelDownButton.Name = "waterLevelDownButton";
             this.waterLevelDownButton.Size = new System.Drawing.Size(175, 65);
             this.waterLevelDownButton.TabIndex = 3;
-            this.waterLevelDownButton.UseVisualStyleBackColor = true;
+            this.waterLevelDownButton.UseVisualStyleBackColor = false;
+            this.waterLevelDownButton.EnabledChanged += new System.EventHandler(this.waterLevelDownButton_EnabledChanged);
             this.waterLevelDownButton.Click += new System.EventHandler(this.waterLevelDownButton_Click);
             // 
             // waterLevelPanel
             // 
             this.waterLevelPanel.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.waterLevelPanel.BackColor = System.Drawing.Color.White;
+            this.waterLevelPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(129)))), ((int)(((byte)(164)))), ((int)(((byte)(205)))));
             this.waterLevelPanel.Controls.Add(this.waterLevelValueLabel);
             this.waterLevelPanel.Location = new System.Drawing.Point(395, 166);
             this.waterLevelPanel.Name = "waterLevelPanel";
@@ -99,8 +106,10 @@
             // 
             // waterLevelValueLabel
             // 
+            this.waterLevelValueLabel.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.waterLevelValueLabel.AutoSize = true;
             this.waterLevelValueLabel.Font = new System.Drawing.Font("Segoe UI", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.waterLevelValueLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(241)))), ((int)(((byte)(246)))));
             this.waterLevelValueLabel.Location = new System.Drawing.Point(84, 77);
             this.waterLevelValueLabel.Name = "waterLevelValueLabel";
             this.waterLevelValueLabel.Size = new System.Drawing.Size(159, 86);
@@ -112,7 +121,8 @@
             this.waterLevelLabel.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.waterLevelLabel.AutoSize = true;
             this.waterLevelLabel.Font = new System.Drawing.Font("Segoe UI", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.waterLevelLabel.Location = new System.Drawing.Point(395, 104);
+            this.waterLevelLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(241)))), ((int)(((byte)(246)))));
+            this.waterLevelLabel.Location = new System.Drawing.Point(351, 102);
             this.waterLevelLabel.Name = "waterLevelLabel";
             this.waterLevelLabel.Size = new System.Drawing.Size(199, 45);
             this.waterLevelLabel.TabIndex = 1;
@@ -121,20 +131,24 @@
             // waterLevelEmptyButton
             // 
             this.waterLevelEmptyButton.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.waterLevelEmptyButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(129)))), ((int)(((byte)(164)))), ((int)(((byte)(205)))));
+            this.waterLevelEmptyButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.waterLevelEmptyButton.IconChar = FontAwesome.Sharp.IconChar.TintSlash;
-            this.waterLevelEmptyButton.IconColor = System.Drawing.Color.Black;
+            this.waterLevelEmptyButton.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(241)))), ((int)(((byte)(246)))));
             this.waterLevelEmptyButton.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.waterLevelEmptyButton.Location = new System.Drawing.Point(309, 422);
             this.waterLevelEmptyButton.Name = "waterLevelEmptyButton";
             this.waterLevelEmptyButton.Size = new System.Drawing.Size(80, 65);
             this.waterLevelEmptyButton.TabIndex = 5;
-            this.waterLevelEmptyButton.UseVisualStyleBackColor = true;
+            this.waterLevelEmptyButton.UseVisualStyleBackColor = false;
+            this.waterLevelEmptyButton.EnabledChanged += new System.EventHandler(this.waterLevelEmptyButton_EnabledChanged);
             this.waterLevelEmptyButton.Click += new System.EventHandler(this.waterLevelEmptyButton_Click);
             // 
             // WaterLevelForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(144)))), ((int)(((byte)(191)))));
             this.ClientSize = new System.Drawing.Size(1084, 661);
             this.Controls.Add(this.waterLevelLabel);
             this.Controls.Add(this.waterLevelEmptyButton);
