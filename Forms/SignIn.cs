@@ -35,10 +35,5 @@ namespace hotel_app
                 MessageBox.Show("Σε λάθος εφαρμογή βρίσκεσαι...😊");
             }
         }
-
-        private void iconPictureBox1_Click(object sender, EventArgs e)
-        {
-            Application.Exit();
-        }
     }
 }
