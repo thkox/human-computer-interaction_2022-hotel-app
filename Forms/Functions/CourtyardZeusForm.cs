@@ -65,6 +65,30 @@ namespace hotel_app.Forms.Functions
             else parkingButton.Enabled = false;
         }
 
+        private void parkingButton_Click(object sender, EventArgs e)
+        {
+            if (trojan1PictureBox.Bounds.IntersectsWith(parkingSlot1.Bounds) == true)
+            {
+                trojan1PictureBox.Location = new Point(882, 45);
+            }
+            else if (trojan1PictureBox.Bounds.IntersectsWith(parkingSlot2.Bounds) == true)
+            {
+                trojan1PictureBox.Location = new Point(882, 171);
+            }
+            else if (trojan1PictureBox.Bounds.IntersectsWith(parkingSlot3.Bounds) == true)
+            {
+                trojan1PictureBox.Location = new Point(882, 294);
+            }
+            else if (trojan1PictureBox.Bounds.IntersectsWith(parkingSlot4.Bounds) == true)
+            {
+                trojan1PictureBox.Location = new Point(882, 417);
+            }
+            else if (trojan1PictureBox.Bounds.IntersectsWith(parkingSlot5.Bounds) == true)
+            {
+                trojan1PictureBox.Location = new Point(882, 542);
+            }
+        }
+
         private void keyIsDown(object sender, KeyEventArgs e)
         {
             if (e.KeyCode == Keys.Left) 

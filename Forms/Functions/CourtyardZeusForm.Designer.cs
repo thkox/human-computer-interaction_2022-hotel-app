@@ -51,13 +51,13 @@
             // 
             // parkingPanel
             // 
+            this.parkingPanel.Controls.Add(this.trojan1PictureBox);
             this.parkingPanel.Controls.Add(this.parkingSlot5);
             this.parkingPanel.Controls.Add(this.parkingSlot4);
             this.parkingPanel.Controls.Add(this.parkingSlot3);
             this.parkingPanel.Controls.Add(this.parkingSlot2);
             this.parkingPanel.Controls.Add(this.parkingSlot1);
             this.parkingPanel.Controls.Add(this.parkingButton);
-            this.parkingPanel.Controls.Add(this.trojan1PictureBox);
             this.parkingPanel.Controls.Add(this.parkingPictureBox);
             this.parkingPanel.Location = new System.Drawing.Point(1, 0);
             this.parkingPanel.Name = "parkingPanel";
@@ -124,12 +124,13 @@
             this.parkingButton.Size = new System.Drawing.Size(64, 62);
             this.parkingButton.TabIndex = 1;
             this.parkingButton.UseVisualStyleBackColor = false;
+            this.parkingButton.Click += new System.EventHandler(this.parkingButton_Click);
             // 
             // trojan1PictureBox
             // 
             this.trojan1PictureBox.BackColor = System.Drawing.Color.Transparent;
             this.trojan1PictureBox.Image = global::hotel_app.Properties.Resources.trojan;
-            this.trojan1PictureBox.Location = new System.Drawing.Point(88, 204);
+            this.trojan1PictureBox.Location = new System.Drawing.Point(53, 224);
             this.trojan1PictureBox.Name = "trojan1PictureBox";
             this.trojan1PictureBox.Size = new System.Drawing.Size(88, 89);
             this.trojan1PictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
