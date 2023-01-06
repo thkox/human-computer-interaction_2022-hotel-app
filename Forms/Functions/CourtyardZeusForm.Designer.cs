@@ -30,23 +30,23 @@
         {
             this.components = new System.ComponentModel.Container();
             this.parkingPanel = new System.Windows.Forms.Panel();
+            this.parkingSlot5 = new System.Windows.Forms.PictureBox();
+            this.parkingSlot4 = new System.Windows.Forms.PictureBox();
+            this.parkingSlot3 = new System.Windows.Forms.PictureBox();
+            this.parkingSlot2 = new System.Windows.Forms.PictureBox();
             this.parkingSlot1 = new System.Windows.Forms.PictureBox();
             this.parkingButton = new FontAwesome.Sharp.IconButton();
             this.trojan1PictureBox = new System.Windows.Forms.PictureBox();
             this.parkingPictureBox = new System.Windows.Forms.PictureBox();
             this.moveTimer = new System.Windows.Forms.Timer(this.components);
-            this.parkingSlot2 = new System.Windows.Forms.PictureBox();
-            this.parkingSlot3 = new System.Windows.Forms.PictureBox();
-            this.parkingSlot4 = new System.Windows.Forms.PictureBox();
-            this.parkingSlot5 = new System.Windows.Forms.PictureBox();
             this.parkingPanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.parkingSlot5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.parkingSlot4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.parkingSlot3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.parkingSlot2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.parkingSlot1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.trojan1PictureBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.parkingPictureBox)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.parkingSlot2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.parkingSlot3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.parkingSlot4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.parkingSlot5)).BeginInit();
             this.SuspendLayout();
             // 
             // parkingPanel
@@ -63,6 +63,42 @@
             this.parkingPanel.Name = "parkingPanel";
             this.parkingPanel.Size = new System.Drawing.Size(1083, 662);
             this.parkingPanel.TabIndex = 0;
+            // 
+            // parkingSlot5
+            // 
+            this.parkingSlot5.BackColor = System.Drawing.Color.Silver;
+            this.parkingSlot5.Location = new System.Drawing.Point(848, 573);
+            this.parkingSlot5.Name = "parkingSlot5";
+            this.parkingSlot5.Size = new System.Drawing.Size(159, 13);
+            this.parkingSlot5.TabIndex = 6;
+            this.parkingSlot5.TabStop = false;
+            // 
+            // parkingSlot4
+            // 
+            this.parkingSlot4.BackColor = System.Drawing.Color.Silver;
+            this.parkingSlot4.Location = new System.Drawing.Point(848, 454);
+            this.parkingSlot4.Name = "parkingSlot4";
+            this.parkingSlot4.Size = new System.Drawing.Size(159, 13);
+            this.parkingSlot4.TabIndex = 5;
+            this.parkingSlot4.TabStop = false;
+            // 
+            // parkingSlot3
+            // 
+            this.parkingSlot3.BackColor = System.Drawing.Color.Silver;
+            this.parkingSlot3.Location = new System.Drawing.Point(848, 327);
+            this.parkingSlot3.Name = "parkingSlot3";
+            this.parkingSlot3.Size = new System.Drawing.Size(159, 13);
+            this.parkingSlot3.TabIndex = 4;
+            this.parkingSlot3.TabStop = false;
+            // 
+            // parkingSlot2
+            // 
+            this.parkingSlot2.BackColor = System.Drawing.Color.Silver;
+            this.parkingSlot2.Location = new System.Drawing.Point(848, 204);
+            this.parkingSlot2.Name = "parkingSlot2";
+            this.parkingSlot2.Size = new System.Drawing.Size(159, 13);
+            this.parkingSlot2.TabIndex = 3;
+            this.parkingSlot2.TabStop = false;
             // 
             // parkingSlot1
             // 
@@ -103,7 +139,7 @@
             // parkingPictureBox
             // 
             this.parkingPictureBox.Image = global::hotel_app.Properties.Resources.parking;
-            this.parkingPictureBox.Location = new System.Drawing.Point(46, 30);
+            this.parkingPictureBox.Location = new System.Drawing.Point(45, 30);
             this.parkingPictureBox.Name = "parkingPictureBox";
             this.parkingPictureBox.Size = new System.Drawing.Size(987, 619);
             this.parkingPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -116,42 +152,6 @@
             this.moveTimer.Interval = 20;
             this.moveTimer.Tick += new System.EventHandler(this.moveTimerEvent);
             // 
-            // parkingSlot2
-            // 
-            this.parkingSlot2.BackColor = System.Drawing.Color.Silver;
-            this.parkingSlot2.Location = new System.Drawing.Point(848, 204);
-            this.parkingSlot2.Name = "parkingSlot2";
-            this.parkingSlot2.Size = new System.Drawing.Size(159, 13);
-            this.parkingSlot2.TabIndex = 3;
-            this.parkingSlot2.TabStop = false;
-            // 
-            // parkingSlot3
-            // 
-            this.parkingSlot3.BackColor = System.Drawing.Color.Silver;
-            this.parkingSlot3.Location = new System.Drawing.Point(848, 327);
-            this.parkingSlot3.Name = "parkingSlot3";
-            this.parkingSlot3.Size = new System.Drawing.Size(159, 13);
-            this.parkingSlot3.TabIndex = 4;
-            this.parkingSlot3.TabStop = false;
-            // 
-            // parkingSlot4
-            // 
-            this.parkingSlot4.BackColor = System.Drawing.Color.Silver;
-            this.parkingSlot4.Location = new System.Drawing.Point(848, 454);
-            this.parkingSlot4.Name = "parkingSlot4";
-            this.parkingSlot4.Size = new System.Drawing.Size(159, 13);
-            this.parkingSlot4.TabIndex = 5;
-            this.parkingSlot4.TabStop = false;
-            // 
-            // parkingSlot5
-            // 
-            this.parkingSlot5.BackColor = System.Drawing.Color.Silver;
-            this.parkingSlot5.Location = new System.Drawing.Point(848, 573);
-            this.parkingSlot5.Name = "parkingSlot5";
-            this.parkingSlot5.Size = new System.Drawing.Size(159, 13);
-            this.parkingSlot5.TabIndex = 6;
-            this.parkingSlot5.TabStop = false;
-            // 
             // CourtyardZeusForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -163,13 +163,13 @@
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.keyIsDown);
             this.KeyUp += new System.Windows.Forms.KeyEventHandler(this.keyIsUp);
             this.parkingPanel.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.parkingSlot5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.parkingSlot4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.parkingSlot3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.parkingSlot2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.parkingSlot1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.trojan1PictureBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.parkingPictureBox)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.parkingSlot2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.parkingSlot3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.parkingSlot4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.parkingSlot5)).EndInit();
             this.ResumeLayout(false);
 
         }

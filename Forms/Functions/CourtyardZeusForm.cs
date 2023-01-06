@@ -42,7 +42,27 @@ namespace hotel_app.Forms.Functions
             }
 
             //Enable Auto Parking
-            
+            if (trojan1PictureBox.Bounds.IntersectsWith(parkingSlot1.Bounds) == true)
+            {
+                parkingButton.Enabled = true;
+            }
+            else if (trojan1PictureBox.Bounds.IntersectsWith(parkingSlot2.Bounds) == true)
+            {
+                parkingButton.Enabled = true;
+            }
+            else if (trojan1PictureBox.Bounds.IntersectsWith(parkingSlot3.Bounds) == true)
+            {
+                parkingButton.Enabled = true;
+            }
+            else if (trojan1PictureBox.Bounds.IntersectsWith(parkingSlot4.Bounds) == true)
+            {
+                parkingButton.Enabled = true;
+            }
+            else if (trojan1PictureBox.Bounds.IntersectsWith(parkingSlot5.Bounds) == true)
+            {
+                parkingButton.Enabled = true;
+            }
+            else parkingButton.Enabled = false;
         }
 
         private void keyIsDown(object sender, KeyEventArgs e)
