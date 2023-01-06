@@ -33,8 +33,8 @@ namespace hotel_app.Forms
             menuPanel.Controls.Add(leftBorderBtn);
 
             //Form
-            this.Text = string.Empty;
-            this.ControlBox = false;
+            this.Text = "Room App";
+            //this.ControlBox = false;
             this.DoubleBuffered= true;
 
             //Parameters for Room Forms
@@ -149,11 +149,6 @@ namespace hotel_app.Forms
             currentChildFormIcon.IconChar = IconChar.Home;
             currentChildFormIcon.IconColor = System.Drawing.Color.MediumAquamarine;
             childFormLabel.Text = "Home";
-        }
-
-        private void exitPicture_Click(object sender, EventArgs e)
-        {
-            Application.Exit();
         }
     }
 }

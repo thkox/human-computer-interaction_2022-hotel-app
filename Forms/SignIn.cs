@@ -16,17 +16,17 @@ namespace hotel_app
 
         private void login_button_Click(object sender, EventArgs e)
         {
-            if(username_richTextBox.Texts == "Employee" && password_richTextBox.Texts == "pass1234")
+            if(username_richTextBox.Texts == "3" && password_richTextBox.Texts == "3")
             {
                 //MessageBox.Show("You are an Employee");
                 this.Hide();
             }
-            else if(username_richTextBox.Texts == "ClientTrojan" && password_richTextBox.Texts == "pass1234")
+            else if(username_richTextBox.Texts == "2" && password_richTextBox.Texts == "2")
             {
                 //MessageBox.Show("You are a Client and you have closed a Trojan room");
                 this.Hide();
             }
-            else if (username_richTextBox.Texts == "ClientRoom" && password_richTextBox.Texts == "pass1234")
+            else if (username_richTextBox.Texts == "1" && password_richTextBox.Texts == "1")
             {
                 //MessageBox.Show("You are a Client and you have closed room");
                 this.Hide();
