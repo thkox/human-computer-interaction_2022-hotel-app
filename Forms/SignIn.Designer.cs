@@ -37,6 +37,7 @@ namespace hotel_app
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.login_button = new hotel_app.Custom_Toolbox.ButtonCustom();
+            this.errorLabel = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // hotelTitle
@@ -124,6 +125,7 @@ namespace hotel_app
             this.login_button.BorderColor = System.Drawing.Color.Blue;
             this.login_button.BorderRadius = 60;
             this.login_button.BorderSize = 0;
+            this.login_button.Cursor = System.Windows.Forms.Cursors.Hand;
             this.login_button.FlatAppearance.BorderSize = 0;
             this.login_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.login_button.Font = new System.Drawing.Font("Comic Sans MS", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
@@ -137,12 +139,27 @@ namespace hotel_app
             this.login_button.UseVisualStyleBackColor = false;
             this.login_button.Click += new System.EventHandler(this.login_button_Click);
             // 
+            // errorLabel
+            // 
+            this.errorLabel.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.errorLabel.AutoSize = true;
+            this.errorLabel.Font = new System.Drawing.Font("Comic Sans MS", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.errorLabel.ForeColor = System.Drawing.Color.OrangeRed;
+            this.errorLabel.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.errorLabel.Location = new System.Drawing.Point(469, 463);
+            this.errorLabel.Name = "errorLabel";
+            this.errorLabel.Size = new System.Drawing.Size(161, 27);
+            this.errorLabel.TabIndex = 7;
+            this.errorLabel.Text = "[Error Message]";
+            this.errorLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // SignIn
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(139)))), ((int)(((byte)(180)))));
             this.ClientSize = new System.Drawing.Size(1400, 800);
+            this.Controls.Add(this.errorLabel);
             this.Controls.Add(this.login_button);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -171,5 +188,6 @@ namespace hotel_app
         private Label label1;
         private Label label2;
         private Custom_Toolbox.ButtonCustom login_button;
+        private Label errorLabel;
     }
 }
