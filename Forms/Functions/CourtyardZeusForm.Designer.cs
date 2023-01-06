@@ -30,38 +30,45 @@
         {
             this.components = new System.ComponentModel.Container();
             this.parkingPanel = new System.Windows.Forms.Panel();
-            this.drivingAreaPanel = new System.Windows.Forms.Panel();
+            this.parkingButton = new FontAwesome.Sharp.IconButton();
             this.trojan1PictureBox = new System.Windows.Forms.PictureBox();
             this.parkingPictureBox = new System.Windows.Forms.PictureBox();
             this.moveTimer = new System.Windows.Forms.Timer(this.components);
             this.parkingPanel.SuspendLayout();
-            this.drivingAreaPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.trojan1PictureBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.parkingPictureBox)).BeginInit();
             this.SuspendLayout();
             // 
             // parkingPanel
             // 
-            this.parkingPanel.Controls.Add(this.drivingAreaPanel);
+            this.parkingPanel.Controls.Add(this.parkingButton);
+            this.parkingPanel.Controls.Add(this.trojan1PictureBox);
             this.parkingPanel.Controls.Add(this.parkingPictureBox);
             this.parkingPanel.Location = new System.Drawing.Point(1, 0);
             this.parkingPanel.Name = "parkingPanel";
             this.parkingPanel.Size = new System.Drawing.Size(1083, 662);
             this.parkingPanel.TabIndex = 0;
             // 
-            // drivingAreaPanel
+            // parkingButton
             // 
-            this.drivingAreaPanel.BackColor = System.Drawing.Color.Silver;
-            this.drivingAreaPanel.Controls.Add(this.trojan1PictureBox);
-            this.drivingAreaPanel.Location = new System.Drawing.Point(46, 30);
-            this.drivingAreaPanel.Name = "drivingAreaPanel";
-            this.drivingAreaPanel.Size = new System.Drawing.Size(786, 619);
-            this.drivingAreaPanel.TabIndex = 1;
+            this.parkingButton.BackColor = System.Drawing.Color.Silver;
+            this.parkingButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.parkingButton.FlatAppearance.BorderSize = 0;
+            this.parkingButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.parkingButton.IconChar = FontAwesome.Sharp.IconChar.Parking;
+            this.parkingButton.IconColor = System.Drawing.Color.Black;
+            this.parkingButton.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.parkingButton.IconSize = 68;
+            this.parkingButton.Location = new System.Drawing.Point(53, 587);
+            this.parkingButton.Name = "parkingButton";
+            this.parkingButton.Size = new System.Drawing.Size(64, 62);
+            this.parkingButton.TabIndex = 1;
+            this.parkingButton.UseVisualStyleBackColor = false;
             // 
             // trojan1PictureBox
             // 
             this.trojan1PictureBox.Image = global::hotel_app.Properties.Resources.trojan;
-            this.trojan1PictureBox.Location = new System.Drawing.Point(102, 136);
+            this.trojan1PictureBox.Location = new System.Drawing.Point(295, 252);
             this.trojan1PictureBox.Name = "trojan1PictureBox";
             this.trojan1PictureBox.Size = new System.Drawing.Size(88, 89);
             this.trojan1PictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -95,7 +102,6 @@
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.keyIsDown);
             this.KeyUp += new System.Windows.Forms.KeyEventHandler(this.keyIsUp);
             this.parkingPanel.ResumeLayout(false);
-            this.drivingAreaPanel.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.trojan1PictureBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.parkingPictureBox)).EndInit();
             this.ResumeLayout(false);
@@ -105,9 +111,9 @@
         #endregion
 
         private Panel parkingPanel;
-        private Panel drivingAreaPanel;
-        private PictureBox trojan1PictureBox;
         private PictureBox parkingPictureBox;
         private System.Windows.Forms.Timer moveTimer;
+        private FontAwesome.Sharp.IconButton parkingButton;
+        private PictureBox trojan1PictureBox;
     }
 }

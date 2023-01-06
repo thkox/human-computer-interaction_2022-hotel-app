@@ -18,26 +18,31 @@ namespace hotel_app.Forms.Functions
         public CourtyardZeusForm()
         {
             InitializeComponent();
+            parkingButton.Enabled = false;
         }
 
         private void moveTimerEvent(object sender, EventArgs e)
         {
-            if (moveLeft == true && trojan1PictureBox.Left > 0) 
+            //Movement Bounds
+            if (moveLeft == true && trojan1PictureBox.Left > 53) 
             {
                 trojan1PictureBox.Left -= speed;
             }
-            if (moveRight == true && trojan1PictureBox.Left < 698)
+            if (moveRight == true && trojan1PictureBox.Left < 750)
             {
                 trojan1PictureBox.Left += speed;
             }
-            if (moveUp == true && trojan1PictureBox.Top > 0)
+            if (moveUp == true && trojan1PictureBox.Top > 32)
             {
                 trojan1PictureBox.Top -= speed;
             }
-            if (moveDown == true && trojan1PictureBox.Top < 530)
+            if (moveDown == true && trojan1PictureBox.Top < 560)
             {
                 trojan1PictureBox.Top += speed;
             }
+
+            //Enable Auto Parking
+            
         }
 
         private void keyIsDown(object sender, KeyEventArgs e)
