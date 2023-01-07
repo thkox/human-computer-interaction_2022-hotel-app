@@ -28,13 +28,15 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.doorOpenButton = new System.Windows.Forms.Button();
             this.doorAlmostOpenButton = new System.Windows.Forms.Button();
-            this.DoorClosed = new System.Windows.Forms.Button();
+            this.doorClosed = new System.Windows.Forms.Button();
             this.stairsUpButton = new System.Windows.Forms.Button();
             this.stairsDownButton = new System.Windows.Forms.Button();
             this.doorStateLabel = new System.Windows.Forms.Label();
             this.stairsState = new System.Windows.Forms.Label();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.SuspendLayout();
             // 
             // doorOpenButton
@@ -48,6 +50,8 @@
             this.doorOpenButton.Size = new System.Drawing.Size(140, 140);
             this.doorOpenButton.TabIndex = 0;
             this.doorOpenButton.UseVisualStyleBackColor = false;
+            this.doorOpenButton.EnabledChanged += new System.EventHandler(this.Button_EnabledChanged);
+            this.doorOpenButton.Click += new System.EventHandler(this.doorOpenButton_Click);
             // 
             // doorAlmostOpenButton
             // 
@@ -60,18 +64,22 @@
             this.doorAlmostOpenButton.Size = new System.Drawing.Size(140, 140);
             this.doorAlmostOpenButton.TabIndex = 1;
             this.doorAlmostOpenButton.UseVisualStyleBackColor = false;
+            this.doorAlmostOpenButton.EnabledChanged += new System.EventHandler(this.Button_EnabledChanged);
+            this.doorAlmostOpenButton.Click += new System.EventHandler(this.doorAlmostOpenButton_Click);
             // 
-            // DoorClosed
+            // doorClosed
             // 
-            this.DoorClosed.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.DoorClosed.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(79)))), ((int)(((byte)(134)))), ((int)(((byte)(184)))));
-            this.DoorClosed.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.DoorClosed.Image = global::hotel_app.Properties.Resources.DoorClosed;
-            this.DoorClosed.Location = new System.Drawing.Point(280, 172);
-            this.DoorClosed.Name = "DoorClosed";
-            this.DoorClosed.Size = new System.Drawing.Size(140, 140);
-            this.DoorClosed.TabIndex = 2;
-            this.DoorClosed.UseVisualStyleBackColor = false;
+            this.doorClosed.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.doorClosed.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(79)))), ((int)(((byte)(134)))), ((int)(((byte)(184)))));
+            this.doorClosed.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.doorClosed.Image = global::hotel_app.Properties.Resources.DoorClosed;
+            this.doorClosed.Location = new System.Drawing.Point(280, 172);
+            this.doorClosed.Name = "doorClosed";
+            this.doorClosed.Size = new System.Drawing.Size(140, 140);
+            this.doorClosed.TabIndex = 2;
+            this.doorClosed.UseVisualStyleBackColor = false;
+            this.doorClosed.EnabledChanged += new System.EventHandler(this.Button_EnabledChanged);
+            this.doorClosed.Click += new System.EventHandler(this.doorClosed_Click);
             // 
             // stairsUpButton
             // 
@@ -84,6 +92,8 @@
             this.stairsUpButton.Size = new System.Drawing.Size(140, 140);
             this.stairsUpButton.TabIndex = 3;
             this.stairsUpButton.UseVisualStyleBackColor = false;
+            this.stairsUpButton.EnabledChanged += new System.EventHandler(this.Button_EnabledChanged);
+            this.stairsUpButton.Click += new System.EventHandler(this.stairsUpButton_Click);
             // 
             // stairsDownButton
             // 
@@ -96,6 +106,8 @@
             this.stairsDownButton.Size = new System.Drawing.Size(140, 140);
             this.stairsDownButton.TabIndex = 4;
             this.stairsDownButton.UseVisualStyleBackColor = false;
+            this.stairsDownButton.EnabledChanged += new System.EventHandler(this.Button_EnabledChanged);
+            this.stairsDownButton.Click += new System.EventHandler(this.stairsDownButton_Click);
             // 
             // doorStateLabel
             // 
@@ -129,7 +141,7 @@
             this.Controls.Add(this.doorStateLabel);
             this.Controls.Add(this.stairsDownButton);
             this.Controls.Add(this.stairsUpButton);
-            this.Controls.Add(this.DoorClosed);
+            this.Controls.Add(this.doorClosed);
             this.Controls.Add(this.doorAlmostOpenButton);
             this.Controls.Add(this.doorOpenButton);
             this.Name = "MainDoorForm";
@@ -143,10 +155,11 @@
 
         private Button doorOpenButton;
         private Button doorAlmostOpenButton;
-        private Button DoorClosed;
+        private Button doorClosed;
         private Button stairsUpButton;
         private Button stairsDownButton;
         private Label doorStateLabel;
         private Label stairsState;
+        private System.Windows.Forms.Timer timer1;
     }
 }
