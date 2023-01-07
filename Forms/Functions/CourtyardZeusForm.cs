@@ -106,10 +106,12 @@ namespace hotel_app.Forms.Functions
             if (e.KeyCode == Keys.Left) 
             {
                 moveLeft = true;
+                trojan1PictureBox.Image = hotel_app.Properties.Resources.trojan_horse_reversed;
             }
             if (e.KeyCode == Keys.Right) 
             {
                 moveRight = true;
+                trojan1PictureBox.Image = hotel_app.Properties.Resources.trojan;
             }
             if (e.KeyCode == Keys.Down) 
             {

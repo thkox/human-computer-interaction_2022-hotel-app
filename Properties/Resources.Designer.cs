@@ -139,5 +139,15 @@ namespace hotel_app.Properties {
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap trojan_horse_reversed {
+            get {
+                object obj = ResourceManager.GetObject("trojan-horse-reversed", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
     }
 }
