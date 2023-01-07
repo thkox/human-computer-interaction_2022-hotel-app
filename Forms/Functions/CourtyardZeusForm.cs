@@ -63,6 +63,12 @@ namespace hotel_app.Forms.Functions
                 parkingButton.Enabled = true;
             }
             else parkingButton.Enabled = false;
+
+            if (trojan1PictureBox.Bounds.IntersectsWith(LeftTransitionPictureBox.Bounds) == true)
+            {
+                
+            }
+
         }
 
         private void parkingButton_Click(object sender, EventArgs e)

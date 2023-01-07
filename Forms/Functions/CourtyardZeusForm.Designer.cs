@@ -30,28 +30,33 @@
         {
             this.components = new System.ComponentModel.Container();
             this.parkingPanel = new System.Windows.Forms.Panel();
+            this.CourtyardZeusLabel = new System.Windows.Forms.Label();
+            this.trojan1PictureBox = new System.Windows.Forms.PictureBox();
+            this.LeftTransitionPictureBox = new FontAwesome.Sharp.IconPictureBox();
             this.parkingSlot5 = new System.Windows.Forms.PictureBox();
             this.parkingSlot4 = new System.Windows.Forms.PictureBox();
             this.parkingSlot3 = new System.Windows.Forms.PictureBox();
             this.parkingSlot2 = new System.Windows.Forms.PictureBox();
             this.parkingSlot1 = new System.Windows.Forms.PictureBox();
             this.parkingButton = new FontAwesome.Sharp.IconButton();
-            this.trojan1PictureBox = new System.Windows.Forms.PictureBox();
             this.parkingPictureBox = new System.Windows.Forms.PictureBox();
             this.moveTimer = new System.Windows.Forms.Timer(this.components);
             this.parkingPanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.trojan1PictureBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.LeftTransitionPictureBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.parkingSlot5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.parkingSlot4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.parkingSlot3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.parkingSlot2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.parkingSlot1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.trojan1PictureBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.parkingPictureBox)).BeginInit();
             this.SuspendLayout();
             // 
             // parkingPanel
             // 
+            this.parkingPanel.Controls.Add(this.CourtyardZeusLabel);
             this.parkingPanel.Controls.Add(this.trojan1PictureBox);
+            this.parkingPanel.Controls.Add(this.LeftTransitionPictureBox);
             this.parkingPanel.Controls.Add(this.parkingSlot5);
             this.parkingPanel.Controls.Add(this.parkingSlot4);
             this.parkingPanel.Controls.Add(this.parkingSlot3);
@@ -63,6 +68,42 @@
             this.parkingPanel.Name = "parkingPanel";
             this.parkingPanel.Size = new System.Drawing.Size(1083, 662);
             this.parkingPanel.TabIndex = 0;
+            // 
+            // CourtyardZeusLabel
+            // 
+            this.CourtyardZeusLabel.AutoSize = true;
+            this.CourtyardZeusLabel.BackColor = System.Drawing.SystemColors.Control;
+            this.CourtyardZeusLabel.Font = new System.Drawing.Font("Comic Sans MS", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.CourtyardZeusLabel.Location = new System.Drawing.Point(456, 0);
+            this.CourtyardZeusLabel.Name = "CourtyardZeusLabel";
+            this.CourtyardZeusLabel.Size = new System.Drawing.Size(171, 30);
+            this.CourtyardZeusLabel.TabIndex = 8;
+            this.CourtyardZeusLabel.Text = "Zeus Courtyard";
+            // 
+            // trojan1PictureBox
+            // 
+            this.trojan1PictureBox.BackColor = System.Drawing.Color.Transparent;
+            this.trojan1PictureBox.Image = global::hotel_app.Properties.Resources.trojan;
+            this.trojan1PictureBox.Location = new System.Drawing.Point(280, 80);
+            this.trojan1PictureBox.Name = "trojan1PictureBox";
+            this.trojan1PictureBox.Size = new System.Drawing.Size(88, 89);
+            this.trojan1PictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.trojan1PictureBox.TabIndex = 0;
+            this.trojan1PictureBox.TabStop = false;
+            // 
+            // LeftTransitionPictureBox
+            // 
+            this.LeftTransitionPictureBox.BackColor = System.Drawing.Color.Silver;
+            this.LeftTransitionPictureBox.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.LeftTransitionPictureBox.IconChar = FontAwesome.Sharp.IconChar.LongArrowAltLeft;
+            this.LeftTransitionPictureBox.IconColor = System.Drawing.SystemColors.ControlText;
+            this.LeftTransitionPictureBox.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.LeftTransitionPictureBox.IconSize = 87;
+            this.LeftTransitionPictureBox.Location = new System.Drawing.Point(53, 263);
+            this.LeftTransitionPictureBox.Name = "LeftTransitionPictureBox";
+            this.LeftTransitionPictureBox.Size = new System.Drawing.Size(87, 89);
+            this.LeftTransitionPictureBox.TabIndex = 7;
+            this.LeftTransitionPictureBox.TabStop = false;
             // 
             // parkingSlot5
             // 
@@ -126,17 +167,6 @@
             this.parkingButton.UseVisualStyleBackColor = false;
             this.parkingButton.Click += new System.EventHandler(this.parkingButton_Click);
             // 
-            // trojan1PictureBox
-            // 
-            this.trojan1PictureBox.BackColor = System.Drawing.Color.Transparent;
-            this.trojan1PictureBox.Image = global::hotel_app.Properties.Resources.trojan;
-            this.trojan1PictureBox.Location = new System.Drawing.Point(53, 224);
-            this.trojan1PictureBox.Name = "trojan1PictureBox";
-            this.trojan1PictureBox.Size = new System.Drawing.Size(88, 89);
-            this.trojan1PictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.trojan1PictureBox.TabIndex = 0;
-            this.trojan1PictureBox.TabStop = false;
-            // 
             // parkingPictureBox
             // 
             this.parkingPictureBox.Image = global::hotel_app.Properties.Resources.parking;
@@ -164,12 +194,14 @@
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.keyIsDown);
             this.KeyUp += new System.Windows.Forms.KeyEventHandler(this.keyIsUp);
             this.parkingPanel.ResumeLayout(false);
+            this.parkingPanel.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.trojan1PictureBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.LeftTransitionPictureBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.parkingSlot5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.parkingSlot4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.parkingSlot3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.parkingSlot2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.parkingSlot1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.trojan1PictureBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.parkingPictureBox)).EndInit();
             this.ResumeLayout(false);
 
@@ -187,5 +219,7 @@
         private PictureBox parkingSlot4;
         private PictureBox parkingSlot3;
         private PictureBox parkingSlot2;
+        private FontAwesome.Sharp.IconPictureBox LeftTransitionPictureBox;
+        private Label CourtyardZeusLabel;
     }
 }
