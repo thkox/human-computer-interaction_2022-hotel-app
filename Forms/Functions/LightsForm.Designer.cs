@@ -126,8 +126,8 @@
 
         }
 
+        }
         #endregion
-
         private FontAwesome.Sharp.IconButton lightButton1;
         private FontAwesome.Sharp.IconButton lightButton2;
         private FontAwesome.Sharp.IconButton lightButton3;
