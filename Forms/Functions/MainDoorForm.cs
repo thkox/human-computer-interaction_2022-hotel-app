@@ -62,5 +62,15 @@ namespace hotel_app.Forms.Functions
             doorAlmostOpenButton.Enabled = true;
             doorOpenButton.Enabled = true;
         }
+
+        private void doorTimer_Tick(object sender, EventArgs e)
+        {
+
+        }
+
+        private void stairsTimer_Tick(object sender, EventArgs e)
+        {
+
+        }
     }
 }

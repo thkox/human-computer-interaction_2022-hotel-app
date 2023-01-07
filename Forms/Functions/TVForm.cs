@@ -13,7 +13,7 @@ namespace hotel_app.Forms.Functions
     public partial class TVForm : Form
     {
         private bool powerStatus = false;
-        private bool timerCounter = false;
+        private bool timerStatus = false;
         public TVForm()
         {
             InitializeComponent();
@@ -40,16 +40,16 @@ namespace hotel_app.Forms.Functions
 
         private void tvStatusTimer_Tick(object sender, EventArgs e)
         {
-            if(timerCounter)
+            if(timerStatus)
             {
                 tvStatusLabel.Text = "";
                 checkTVPictureBox.Image = Properties.Resources.powerIdle;
-                timerCounter = false;
+                timerStatus = false;
                 tvStatusTimer.Stop();
             }
             else
             {
-                timerCounter = true;
+                timerStatus = true;
             }
         }
 
@@ -122,6 +122,11 @@ namespace hotel_app.Forms.Functions
         {
             tvStatusLabel.Text = tvStatus;
             checkTVPictureBox.Image = Properties.Resources.powerOn;
+            if(timerStatus)
+            {
+                timerStatus = false;
+                tvStatusTimer.Stop();
+            }
             tvStatusTimer.Start();
         }
     }
