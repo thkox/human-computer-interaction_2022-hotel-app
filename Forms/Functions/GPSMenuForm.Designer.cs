@@ -28,43 +28,23 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.restaurantButton = new FontAwesome.Sharp.IconButton();
+            this.gpsLoadFormsPanel = new System.Windows.Forms.Panel();
             this.availableFacilitiesButton = new FontAwesome.Sharp.IconButton();
             this.changeParkingSlotButton = new FontAwesome.Sharp.IconButton();
             this.backPictureBox = new FontAwesome.Sharp.IconPictureBox();
-            this.panel1.SuspendLayout();
+            this.gpsLoadFormsPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.backPictureBox)).BeginInit();
             this.SuspendLayout();
             // 
-            // panel1
+            // gpsLoadFormsPanel
             // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(144)))), ((int)(((byte)(191)))));
-            this.panel1.Controls.Add(this.restaurantButton);
-            this.panel1.Controls.Add(this.availableFacilitiesButton);
-            this.panel1.Controls.Add(this.changeParkingSlotButton);
-            this.panel1.Location = new System.Drawing.Point(4, -6);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1079, 672);
-            this.panel1.TabIndex = 0;
-            // 
-            // restaurantButton
-            // 
-            this.restaurantButton.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.restaurantButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(79)))), ((int)(((byte)(134)))), ((int)(((byte)(184)))));
-            this.restaurantButton.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.restaurantButton.Font = new System.Drawing.Font("Comic Sans MS", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.restaurantButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(241)))), ((int)(((byte)(246)))));
-            this.restaurantButton.IconChar = FontAwesome.Sharp.IconChar.Utensils;
-            this.restaurantButton.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(241)))), ((int)(((byte)(246)))));
-            this.restaurantButton.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.restaurantButton.Location = new System.Drawing.Point(714, 206);
-            this.restaurantButton.Name = "restaurantButton";
-            this.restaurantButton.Size = new System.Drawing.Size(150, 131);
-            this.restaurantButton.TabIndex = 3;
-            this.restaurantButton.Text = "Restaurant";
-            this.restaurantButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.restaurantButton.UseVisualStyleBackColor = false;
+            this.gpsLoadFormsPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(144)))), ((int)(((byte)(191)))));
+            this.gpsLoadFormsPanel.Controls.Add(this.availableFacilitiesButton);
+            this.gpsLoadFormsPanel.Controls.Add(this.changeParkingSlotButton);
+            this.gpsLoadFormsPanel.Location = new System.Drawing.Point(4, -6);
+            this.gpsLoadFormsPanel.Name = "gpsLoadFormsPanel";
+            this.gpsLoadFormsPanel.Size = new System.Drawing.Size(1079, 672);
+            this.gpsLoadFormsPanel.TabIndex = 0;
             // 
             // availableFacilitiesButton
             // 
@@ -76,7 +56,7 @@
             this.availableFacilitiesButton.IconChar = FontAwesome.Sharp.IconChar.LocationDot;
             this.availableFacilitiesButton.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(241)))), ((int)(((byte)(246)))));
             this.availableFacilitiesButton.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.availableFacilitiesButton.Location = new System.Drawing.Point(459, 206);
+            this.availableFacilitiesButton.Location = new System.Drawing.Point(585, 248);
             this.availableFacilitiesButton.Name = "availableFacilitiesButton";
             this.availableFacilitiesButton.Size = new System.Drawing.Size(150, 131);
             this.availableFacilitiesButton.TabIndex = 2;
@@ -94,7 +74,7 @@
             this.changeParkingSlotButton.IconChar = FontAwesome.Sharp.IconChar.Parking;
             this.changeParkingSlotButton.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(241)))), ((int)(((byte)(246)))));
             this.changeParkingSlotButton.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.changeParkingSlotButton.Location = new System.Drawing.Point(205, 206);
+            this.changeParkingSlotButton.Location = new System.Drawing.Point(331, 248);
             this.changeParkingSlotButton.Name = "changeParkingSlotButton";
             this.changeParkingSlotButton.Size = new System.Drawing.Size(150, 131);
             this.changeParkingSlotButton.TabIndex = 1;
@@ -115,19 +95,22 @@
             this.backPictureBox.Location = new System.Drawing.Point(25, 12);
             this.backPictureBox.Name = "backPictureBox";
             this.backPictureBox.Size = new System.Drawing.Size(42, 42);
-            this.backPictureBox.TabIndex = 5;
+            this.backPictureBox.TabIndex = 4;
             this.backPictureBox.TabStop = false;
+            this.backPictureBox.Click += new System.EventHandler(this.backPictureBox_Click);
             // 
             // GPSMenuForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(144)))), ((int)(((byte)(191)))));
             this.ClientSize = new System.Drawing.Size(1084, 661);
             this.Controls.Add(this.backPictureBox);
-            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.gpsLoadFormsPanel);
             this.Name = "GPSMenuForm";
             this.Text = "GPSMenuForm";
-            this.panel1.ResumeLayout(false);
+            this.Load += new System.EventHandler(this.GPSMenuForm_Load);
+            this.gpsLoadFormsPanel.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.backPictureBox)).EndInit();
             this.ResumeLayout(false);
 
@@ -135,10 +118,9 @@
 
         #endregion
 
-        private Panel panel1;
+        private Panel gpsLoadFormsPanel;
         private FontAwesome.Sharp.IconPictureBox backPictureBox;
         private FontAwesome.Sharp.IconButton changeParkingSlotButton;
         private FontAwesome.Sharp.IconButton availableFacilitiesButton;
-        private FontAwesome.Sharp.IconButton restaurantButton;
     }
 }
