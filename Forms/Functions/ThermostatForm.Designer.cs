@@ -51,7 +51,7 @@
             this.thermostatUpButton.TabIndex = 1;
             this.thermostatUpButton.Text = "   ";
             this.thermostatUpButton.UseVisualStyleBackColor = false;
-            this.thermostatUpButton.EnabledChanged += new System.EventHandler(this.thermostatUpButton_EnabledChanged);
+            this.thermostatUpButton.EnabledChanged += new System.EventHandler(this.thermostatButtons_EnabledChanged);
             this.thermostatUpButton.Click += new System.EventHandler(this.thermostatUpButton_Click);
             // 
             // thermostatDownButton
@@ -67,7 +67,7 @@
             this.thermostatDownButton.Size = new System.Drawing.Size(175, 65);
             this.thermostatDownButton.TabIndex = 2;
             this.thermostatDownButton.UseVisualStyleBackColor = false;
-            this.thermostatDownButton.EnabledChanged += new System.EventHandler(this.thermostatDownButton_EnabledChanged);
+            this.thermostatDownButton.EnabledChanged += new System.EventHandler(this.thermostatButtons_EnabledChanged);
             this.thermostatDownButton.Click += new System.EventHandler(this.thermostatDownButton_Click);
             // 
             // thermostatLabel
@@ -76,7 +76,7 @@
             this.thermostatLabel.AutoSize = true;
             this.thermostatLabel.Font = new System.Drawing.Font("Segoe UI", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.thermostatLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(241)))), ((int)(((byte)(246)))));
-            this.thermostatLabel.Location = new System.Drawing.Point(370, 144);
+            this.thermostatLabel.Location = new System.Drawing.Point(350, 147);
             this.thermostatLabel.Name = "thermostatLabel";
             this.thermostatLabel.Size = new System.Drawing.Size(303, 45);
             this.thermostatLabel.TabIndex = 4;

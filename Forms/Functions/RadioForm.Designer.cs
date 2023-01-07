@@ -28,70 +28,76 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.Radiolabel = new System.Windows.Forms.Label();
-            this.RadioPanel = new System.Windows.Forms.Panel();
-            this.RadioValueLabel = new System.Windows.Forms.Label();
+            this.radioLabel = new System.Windows.Forms.Label();
+            this.radioPanel = new System.Windows.Forms.Panel();
+            this.radioValueLabel = new System.Windows.Forms.Label();
             this.radioUpButton = new FontAwesome.Sharp.IconButton();
             this.radioDownButton = new FontAwesome.Sharp.IconButton();
             this.RadioToggle = new hotel_app.Custom_Toolbox.ToggleButtonCustom();
-            this.RadioPanel.SuspendLayout();
+            this.radioPanel.SuspendLayout();
             this.SuspendLayout();
             // 
-            // Radiolabel
+            // radioLabel
             // 
-            this.Radiolabel.Font = new System.Drawing.Font("Segoe UI", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.Radiolabel.Location = new System.Drawing.Point(370, 144);
-            this.Radiolabel.Name = "Radiolabel";
-            this.Radiolabel.Size = new System.Drawing.Size(200, 45);
-            this.Radiolabel.TabIndex = 0;
-            this.Radiolabel.Text = "Radio";
-            this.Radiolabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.radioLabel.Font = new System.Drawing.Font("Segoe UI", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.radioLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(241)))), ((int)(((byte)(246)))));
+            this.radioLabel.Location = new System.Drawing.Point(370, 144);
+            this.radioLabel.Name = "radioLabel";
+            this.radioLabel.Size = new System.Drawing.Size(200, 45);
+            this.radioLabel.TabIndex = 0;
+            this.radioLabel.Text = "Radio";
+            this.radioLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // RadioPanel
+            // radioPanel
             // 
-            this.RadioPanel.Controls.Add(this.RadioValueLabel);
-            this.RadioPanel.Location = new System.Drawing.Point(300, 215);
-            this.RadioPanel.Name = "RadioPanel";
-            this.RadioPanel.Size = new System.Drawing.Size(317, 153);
-            this.RadioPanel.TabIndex = 1;
+            this.radioPanel.Controls.Add(this.radioValueLabel);
+            this.radioPanel.Location = new System.Drawing.Point(300, 215);
+            this.radioPanel.Name = "radioPanel";
+            this.radioPanel.Size = new System.Drawing.Size(317, 153);
+            this.radioPanel.TabIndex = 1;
             // 
-            // RadioValueLabel
+            // radioValueLabel
             // 
-            this.RadioValueLabel.AutoSize = true;
-            this.RadioValueLabel.Font = new System.Drawing.Font("Segoe UI", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.RadioValueLabel.Location = new System.Drawing.Point(0, 30);
-            this.RadioValueLabel.Name = "RadioValueLabel";
-            this.RadioValueLabel.Size = new System.Drawing.Size(159, 86);
-            this.RadioValueLabel.TabIndex = 0;
-            this.RadioValueLabel.Text = "[Val]";
+            this.radioValueLabel.AutoSize = true;
+            this.radioValueLabel.Font = new System.Drawing.Font("Segoe UI", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.radioValueLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(241)))), ((int)(((byte)(246)))));
+            this.radioValueLabel.Location = new System.Drawing.Point(0, 30);
+            this.radioValueLabel.Name = "radioValueLabel";
+            this.radioValueLabel.Size = new System.Drawing.Size(159, 86);
+            this.radioValueLabel.TabIndex = 0;
+            this.radioValueLabel.Text = "[Val]";
             // 
             // radioUpButton
             // 
+            this.radioUpButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(79)))), ((int)(((byte)(134)))), ((int)(((byte)(184)))));
             this.radioUpButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.radioUpButton.Enabled = false;
             this.radioUpButton.IconChar = FontAwesome.Sharp.IconChar.ArrowCircleUp;
-            this.radioUpButton.IconColor = System.Drawing.Color.Black;
+            this.radioUpButton.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(241)))), ((int)(((byte)(246)))));
             this.radioUpButton.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.radioUpButton.Location = new System.Drawing.Point(623, 215);
             this.radioUpButton.Name = "radioUpButton";
             this.radioUpButton.Size = new System.Drawing.Size(175, 65);
             this.radioUpButton.TabIndex = 2;
-            this.radioUpButton.UseVisualStyleBackColor = true;
+            this.radioUpButton.UseVisualStyleBackColor = false;
+            this.radioUpButton.EnabledChanged += new System.EventHandler(this.radioButtons_EnabledChanged);
             this.radioUpButton.Click += new System.EventHandler(this.radioUpButton_Click);
             // 
             // radioDownButton
             // 
+            this.radioDownButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(79)))), ((int)(((byte)(134)))), ((int)(((byte)(184)))));
             this.radioDownButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.radioDownButton.Enabled = false;
             this.radioDownButton.IconChar = FontAwesome.Sharp.IconChar.ArrowCircleDown;
-            this.radioDownButton.IconColor = System.Drawing.Color.Black;
+            this.radioDownButton.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(241)))), ((int)(((byte)(246)))));
             this.radioDownButton.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.radioDownButton.Location = new System.Drawing.Point(623, 303);
             this.radioDownButton.Name = "radioDownButton";
             this.radioDownButton.Size = new System.Drawing.Size(175, 65);
             this.radioDownButton.TabIndex = 3;
             this.radioDownButton.Text = " ";
-            this.radioDownButton.UseVisualStyleBackColor = true;
+            this.radioDownButton.UseVisualStyleBackColor = false;
+            this.radioDownButton.EnabledChanged += new System.EventHandler(this.radioButtons_EnabledChanged);
             this.radioDownButton.Click += new System.EventHandler(this.radioDownButton_Click);
             // 
             // RadioToggle
@@ -114,17 +120,18 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(144)))), ((int)(((byte)(191)))));
             this.ClientSize = new System.Drawing.Size(1084, 661);
             this.Controls.Add(this.RadioToggle);
             this.Controls.Add(this.radioDownButton);
             this.Controls.Add(this.radioUpButton);
-            this.Controls.Add(this.RadioPanel);
-            this.Controls.Add(this.Radiolabel);
+            this.Controls.Add(this.radioPanel);
+            this.Controls.Add(this.radioLabel);
             this.Name = "RadioForm";
             this.Text = "  ";
             this.Load += new System.EventHandler(this.RadioForm_Load);
-            this.RadioPanel.ResumeLayout(false);
-            this.RadioPanel.PerformLayout();
+            this.radioPanel.ResumeLayout(false);
+            this.radioPanel.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -132,11 +139,11 @@
 
         #endregion
 
-        private Label Radiolabel;
-        private Panel RadioPanel;
+        private Label radioLabel;
+        private Panel radioPanel;
         private FontAwesome.Sharp.IconButton radioUpButton;
         private FontAwesome.Sharp.IconButton radioDownButton;
-        private Label RadioValueLabel;
+        private Label radioValueLabel;
         private Custom_Toolbox.ToggleButtonCustom RadioToggle;
     }
 }
