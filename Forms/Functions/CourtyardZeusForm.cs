@@ -18,25 +18,86 @@ namespace hotel_app.Forms.Functions
         public CourtyardZeusForm()
         {
             InitializeComponent();
+            parkingButton.Enabled = false;
         }
 
         private void moveTimerEvent(object sender, EventArgs e)
         {
-            if (moveLeft == true && trojan1PictureBox.Left > 0) 
+            //Movement Bounds
+            if (moveLeft == true && trojan1PictureBox.Left > 60) 
             {
                 trojan1PictureBox.Left -= speed;
             }
-            if (moveRight == true && trojan1PictureBox.Left < 698)
+            if (moveRight == true && trojan1PictureBox.Left < 919)
             {
                 trojan1PictureBox.Left += speed;
             }
-            if (moveUp == true && trojan1PictureBox.Top > 0)
+            if (moveUp == true && trojan1PictureBox.Top > 32)
             {
                 trojan1PictureBox.Top -= speed;
             }
-            if (moveDown == true && trojan1PictureBox.Top < 530)
+            if (moveDown == true && trojan1PictureBox.Top < 560)
             {
                 trojan1PictureBox.Top += speed;
+            }
+
+            //Enable Auto Parking
+            if (trojan1PictureBox.Bounds.IntersectsWith(parkingSlot1.Bounds) == true)
+            {
+                parkingButton.Enabled = true;
+            }
+            else if (trojan1PictureBox.Bounds.IntersectsWith(parkingSlot2.Bounds) == true)
+            {
+                parkingButton.Enabled = true;
+            }
+            else if (trojan1PictureBox.Bounds.IntersectsWith(parkingSlot3.Bounds) == true)
+            {
+                parkingButton.Enabled = true;
+            }
+            else if (trojan1PictureBox.Bounds.IntersectsWith(parkingSlot4.Bounds) == true)
+            {
+                parkingButton.Enabled = true;
+            }
+            else if (trojan1PictureBox.Bounds.IntersectsWith(parkingSlot5.Bounds) == true)
+            {
+                parkingButton.Enabled = true;
+            }
+            else parkingButton.Enabled = false;
+
+            //Enable form transition
+            if (trojan1PictureBox.Bounds.IntersectsWith(LeftTransitionPictureBox.Bounds) == true)
+            {
+                
+            }
+
+        }
+
+        private void parkingButton_Click(object sender, EventArgs e)
+        {
+            if (trojan1PictureBox.Bounds.IntersectsWith(parkingSlot1.Bounds) == true)
+            {
+                trojan1PictureBox.Location = new Point(882, 45);
+                moveTimer.Stop();
+            }
+            else if (trojan1PictureBox.Bounds.IntersectsWith(parkingSlot2.Bounds) == true)
+            {
+                trojan1PictureBox.Location = new Point(882, 171);
+                moveTimer.Stop();
+            }
+            else if (trojan1PictureBox.Bounds.IntersectsWith(parkingSlot3.Bounds) == true)
+            {
+                trojan1PictureBox.Location = new Point(882, 294);
+                moveTimer.Stop();
+            }
+            else if (trojan1PictureBox.Bounds.IntersectsWith(parkingSlot4.Bounds) == true)
+            {
+                trojan1PictureBox.Location = new Point(882, 417);
+                moveTimer.Stop();
+            }
+            else if (trojan1PictureBox.Bounds.IntersectsWith(parkingSlot5.Bounds) == true)
+            {
+                trojan1PictureBox.Location = new Point(882, 542);
+                moveTimer.Stop();
             }
         }
 
@@ -45,10 +106,12 @@ namespace hotel_app.Forms.Functions
             if (e.KeyCode == Keys.Left) 
             {
                 moveLeft = true;
+                trojan1PictureBox.Image = hotel_app.Properties.Resources.trojan_horse_reversed;
             }
             if (e.KeyCode == Keys.Right) 
             {
                 moveRight = true;
+                trojan1PictureBox.Image = hotel_app.Properties.Resources.trojan;
             }
             if (e.KeyCode == Keys.Down) 
             {
