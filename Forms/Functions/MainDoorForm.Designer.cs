@@ -41,8 +41,9 @@
             // 
             this.doorOpenButton.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.doorOpenButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(79)))), ((int)(((byte)(134)))), ((int)(((byte)(184)))));
+            this.doorOpenButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.doorOpenButton.Image = global::hotel_app.Properties.Resources.DoorOpen;
-            this.doorOpenButton.Location = new System.Drawing.Point(700, 164);
+            this.doorOpenButton.Location = new System.Drawing.Point(682, 172);
             this.doorOpenButton.Name = "doorOpenButton";
             this.doorOpenButton.Size = new System.Drawing.Size(140, 140);
             this.doorOpenButton.TabIndex = 0;
@@ -52,8 +53,9 @@
             // 
             this.doorAlmostOpenButton.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.doorAlmostOpenButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(79)))), ((int)(((byte)(134)))), ((int)(((byte)(184)))));
+            this.doorAlmostOpenButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.doorAlmostOpenButton.Image = global::hotel_app.Properties.Resources.DoorAlmostOpen;
-            this.doorAlmostOpenButton.Location = new System.Drawing.Point(453, 164);
+            this.doorAlmostOpenButton.Location = new System.Drawing.Point(477, 172);
             this.doorAlmostOpenButton.Name = "doorAlmostOpenButton";
             this.doorAlmostOpenButton.Size = new System.Drawing.Size(140, 140);
             this.doorAlmostOpenButton.TabIndex = 1;
@@ -63,8 +65,9 @@
             // 
             this.DoorClosed.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.DoorClosed.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(79)))), ((int)(((byte)(134)))), ((int)(((byte)(184)))));
+            this.DoorClosed.Cursor = System.Windows.Forms.Cursors.Hand;
             this.DoorClosed.Image = global::hotel_app.Properties.Resources.DoorClosed;
-            this.DoorClosed.Location = new System.Drawing.Point(199, 164);
+            this.DoorClosed.Location = new System.Drawing.Point(280, 172);
             this.DoorClosed.Name = "DoorClosed";
             this.DoorClosed.Size = new System.Drawing.Size(140, 140);
             this.DoorClosed.TabIndex = 2;
@@ -74,8 +77,9 @@
             // 
             this.stairsUpButton.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.stairsUpButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(79)))), ((int)(((byte)(134)))), ((int)(((byte)(184)))));
+            this.stairsUpButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.stairsUpButton.Image = global::hotel_app.Properties.Resources.StairsUp;
-            this.stairsUpButton.Location = new System.Drawing.Point(322, 391);
+            this.stairsUpButton.Location = new System.Drawing.Point(373, 399);
             this.stairsUpButton.Name = "stairsUpButton";
             this.stairsUpButton.Size = new System.Drawing.Size(140, 140);
             this.stairsUpButton.TabIndex = 3;
@@ -85,8 +89,9 @@
             // 
             this.stairsDownButton.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.stairsDownButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(79)))), ((int)(((byte)(134)))), ((int)(((byte)(184)))));
+            this.stairsDownButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.stairsDownButton.Image = global::hotel_app.Properties.Resources.StairsDown;
-            this.stairsDownButton.Location = new System.Drawing.Point(579, 391);
+            this.stairsDownButton.Location = new System.Drawing.Point(566, 399);
             this.stairsDownButton.Name = "stairsDownButton";
             this.stairsDownButton.Size = new System.Drawing.Size(140, 140);
             this.stairsDownButton.TabIndex = 4;
@@ -95,18 +100,22 @@
             // doorStateLabel
             // 
             this.doorStateLabel.AutoSize = true;
-            this.doorStateLabel.Location = new System.Drawing.Point(200, 131);
+            this.doorStateLabel.Font = new System.Drawing.Font("Comic Sans MS", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point);
+            this.doorStateLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(241)))), ((int)(((byte)(246)))));
+            this.doorStateLabel.Location = new System.Drawing.Point(199, 113);
             this.doorStateLabel.Name = "doorStateLabel";
-            this.doorStateLabel.Size = new System.Drawing.Size(81, 15);
+            this.doorStateLabel.Size = new System.Drawing.Size(154, 30);
             this.doorStateLabel.TabIndex = 5;
             this.doorStateLabel.Text = "Door Options:";
             // 
             // stairsState
             // 
             this.stairsState.AutoSize = true;
-            this.stairsState.Location = new System.Drawing.Point(200, 362);
+            this.stairsState.Font = new System.Drawing.Font("Comic Sans MS", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point);
+            this.stairsState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(241)))), ((int)(((byte)(246)))));
+            this.stairsState.Location = new System.Drawing.Point(199, 347);
             this.stairsState.Name = "stairsState";
-            this.stairsState.Size = new System.Drawing.Size(83, 15);
+            this.stairsState.Size = new System.Drawing.Size(170, 30);
             this.stairsState.TabIndex = 6;
             this.stairsState.Text = "Stairs Options:";
             // 
