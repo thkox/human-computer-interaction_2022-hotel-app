@@ -46,7 +46,7 @@
             this.lightButton1.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(241)))), ((int)(((byte)(246)))));
             this.lightButton1.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.lightButton1.IconSize = 100;
-            this.lightButton1.Location = new System.Drawing.Point(111, 180);
+            this.lightButton1.Location = new System.Drawing.Point(266, 211);
             this.lightButton1.Name = "lightButton1";
             this.lightButton1.Size = new System.Drawing.Size(163, 188);
             this.lightButton1.TabIndex = 0;
@@ -69,7 +69,7 @@
             this.lightButton2.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(241)))), ((int)(((byte)(246)))));
             this.lightButton2.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.lightButton2.IconSize = 100;
-            this.lightButton2.Location = new System.Drawing.Point(315, 180);
+            this.lightButton2.Location = new System.Drawing.Point(470, 211);
             this.lightButton2.Name = "lightButton2";
             this.lightButton2.Size = new System.Drawing.Size(163, 188);
             this.lightButton2.TabIndex = 1;
@@ -92,7 +92,7 @@
             this.lightButton3.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(241)))), ((int)(((byte)(246)))));
             this.lightButton3.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.lightButton3.IconSize = 100;
-            this.lightButton3.Location = new System.Drawing.Point(523, 180);
+            this.lightButton3.Location = new System.Drawing.Point(678, 211);
             this.lightButton3.Name = "lightButton3";
             this.lightButton3.Size = new System.Drawing.Size(163, 188);
             this.lightButton3.TabIndex = 2;
@@ -107,7 +107,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(144)))), ((int)(((byte)(191)))));
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1084, 661);
             this.Controls.Add(this.lightButton3);
             this.Controls.Add(this.lightButton2);
             this.Controls.Add(this.lightButton1);
