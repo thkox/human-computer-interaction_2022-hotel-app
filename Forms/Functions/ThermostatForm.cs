@@ -30,7 +30,8 @@ namespace hotel_app.Forms.Functions
             thermostatUpButton.Enabled = false;
             thermostatDownButton.Enabled = false;
             thermostatValueLabel.Text = "OFF";
-            thermostatPanel.BackColor = Color.Red;
+            thermostatValueLabel.ForeColor = Color.Red;
+            thermostatPanel.BackColor = Color.FromArgb(129, 164, 205);
         }
 
         private void TurnONThermostat()
@@ -51,7 +52,8 @@ namespace hotel_app.Forms.Functions
                 thermostatUpButton.Enabled = true;
                 thermostatDownButton.Enabled = true;
             }
-            thermostatPanel.BackColor = Color.White;
+            thermostatPanel.BackColor = Color.FromArgb(129, 164, 205);
+            thermostatValueLabel.ForeColor = Color.FromArgb(236, 241, 246);
             thermostatValueLabel.Text = string.Format($"{thermostatValue.ToString().PadLeft(2, '0')}°C");
         }
 
@@ -102,6 +104,30 @@ namespace hotel_app.Forms.Functions
             else
             {
                 TurnOFFThermostat();
+            }
+        }
+
+        private void thermostatUpButton_EnabledChanged(object sender, EventArgs e)
+        {
+            if (!thermostatUpButton.Enabled)
+            {
+                thermostatUpButton.BackColor = Color.FromArgb(236, 241, 246);
+            }
+            else
+            {
+                thermostatUpButton.BackColor = Color.FromArgb(79, 134, 184);
+            }
+        }
+
+        private void thermostatDownButton_EnabledChanged(object sender, EventArgs e)
+        {
+            if (!thermostatDownButton.Enabled)
+            {
+                thermostatDownButton.BackColor = Color.FromArgb(236, 241, 246);
+            }
+            else
+            {
+                thermostatDownButton.BackColor = Color.FromArgb(79, 134, 184);
             }
         }
     }

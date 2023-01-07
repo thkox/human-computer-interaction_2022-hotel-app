@@ -75,5 +75,40 @@ namespace hotel_app.Forms.Functions
             waterLevelValueLabel.Text = string.Format($"{(10 - waterLevelValue) * 10}%");
         }
 
+        private void waterLevelDownButton_EnabledChanged(object sender, EventArgs e)
+        {
+            if (!waterLevelDownButton.Enabled)
+            {
+                waterLevelDownButton.BackColor = Color.FromArgb(236, 241, 246);
+            }
+            else
+            {
+                waterLevelDownButton.BackColor = Color.FromArgb(79, 134, 184);
+            }
+        }
+
+        private void waterLevelUpButton_EnabledChanged(object sender, EventArgs e)
+        {
+            if (!waterLevelUpButton.Enabled)
+            {
+                waterLevelUpButton.BackColor = Color.FromArgb(236, 241, 246);
+            }
+            else
+            {
+                waterLevelUpButton.BackColor = Color.FromArgb(79, 134, 184);
+            }
+        }
+
+        private void waterLevelEmptyButton_EnabledChanged(object sender, EventArgs e)
+        {
+            if (!waterLevelEmptyButton.Enabled)
+            {
+                waterLevelEmptyButton.BackColor = Color.FromArgb(236, 241, 246);
+            }
+            else
+            {
+                waterLevelEmptyButton.BackColor = Color.FromArgb(79, 134, 184);
+            }
+        }
     }
 }
