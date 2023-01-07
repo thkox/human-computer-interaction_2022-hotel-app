@@ -1,4 +1,5 @@
-﻿using System;
+﻿using FontAwesome.Sharp;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -19,29 +20,46 @@ namespace hotel_app.Forms.Functions
 
         private void iconButton1_Click(object sender, EventArgs e)
         {
-            if (lightButton1.IconColor == Color.Black) 
-            {
-                lightButton1.IconColor = Color.Yellow;
-            }
-            else lightButton1.IconColor = Color.Black;
+            changeStateOfLight((IconButton)sender);
         }
 
         private void iconButton2_Click(object sender, EventArgs e)
         {
-            if (lightButton2.IconColor == Color.Black)
-            {
-                lightButton2.IconColor = Color.Yellow;
-            }
-            else lightButton2.IconColor = Color.Black;
+            changeStateOfLight((IconButton)sender);
         }
 
         private void iconButton3_Click(object sender, EventArgs e)
         {
-            if (lightButton3.IconColor == Color.Black)
+            changeStateOfLight((IconButton)sender);
+        }
+
+        private void changeStateOfLight(IconButton light)
+        {
+            if (light.IconColor == Color.FromArgb(236, 241, 246))
             {
-                lightButton3.IconColor = Color.Yellow;
+                light.IconColor = Color.Yellow;
             }
-            else lightButton3.IconColor = Color.Black;
+            else light.IconColor = Color.FromArgb(236, 241, 246);
+        }
+
+        private void lightButton1_MouseHover(object sender, EventArgs e)
+        {
+            changeBackcolorOnMouseHover((IconButton)sender);
+        }
+
+        private void lightButton2_MouseHover(object sender, EventArgs e)
+        {
+            changeBackcolorOnMouseHover((IconButton)sender);
+        }
+
+        private void lightButton3_MouseHover(object sender, EventArgs e)
+        {
+            changeBackcolorOnMouseHover((IconButton)sender);
+        }
+
+        private void changeBackcolorOnMouseHover(IconButton light)
+        {
+            light.BackColor = Color.FromArgb(96, 144, 191);
         }
     }
 }

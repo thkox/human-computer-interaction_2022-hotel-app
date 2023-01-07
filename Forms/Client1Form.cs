@@ -19,8 +19,12 @@ namespace hotel_app.Forms
         private Form currentChildForm;
 
         //forms that we can open now
+        PoolMenuForm pool = new PoolMenuForm();
         ThermostatForm thermostat = new ThermostatForm();
         LightsForm lights = new LightsForm();
+        TVForm tv = new TVForm();
+        RadioForm radio = new RadioForm();  
+        GPSMenuForm gps = new GPSMenuForm();
 
         public Client1Form()
         {
@@ -30,9 +34,14 @@ namespace hotel_app.Forms
             menuPanel.Controls.Add(leftBorderBtn);
 
             //Form
-            this.Text = string.Empty;
-            this.ControlBox = false;
+            this.Text = "Room App";
+            //this.ControlBox = false;
             this.DoubleBuffered= true;
+
+            //Parameters for Room Forms
+            thermostat.thermostatLabel.Text = "Living Room Thermostat";
+            pool.poolThermostat.thermostatLabel.Text = "Private Pool: Thermostat";
+            pool.waterLevel.waterLevelLabel.Text = "Private Pool: Water Level";
         }
         //Structs RGBcolours
         private struct RGBColors
@@ -49,23 +58,25 @@ namespace hotel_app.Forms
             {
                 DisableButton();
                 currentBtn = (IconButton)senderBtn;
-                currentBtn.BackColor = System.Drawing.Color.FromArgb(37, 36, 81);
-                currentBtn.ForeColor = color;
+                currentBtn.BackColor = Color.FromArgb(129, 164, 205);
+                currentBtn.ForeColor = Color.FromArgb(34, 99, 161);
                 currentBtn.TextAlign = ContentAlignment.MiddleCenter;
-                currentBtn.IconColor = color;
+                currentBtn.IconColor = Color.FromArgb(34, 99, 161);
                 currentBtn.TextImageRelation = TextImageRelation.TextBeforeImage;
                 currentBtn.ImageAlign = ContentAlignment.MiddleRight;
 
                 //leftBorder button
-                leftBorderBtn.BackColor = color;
+                leftBorderBtn.BackColor = Color.FromArgb(219, 228, 238);
                 leftBorderBtn.Location = new Point(0, currentBtn.Location.Y);
                 leftBorderBtn.Visible = true;
                 leftBorderBtn.BringToFront();
 
                 //icon Current Child Form
                 currentChildFormIcon.IconChar = currentBtn.IconChar;
-                currentChildFormIcon.IconColor = color;
+                currentChildFormIcon.IconColor = Color.FromArgb(219, 228, 238);
                 childFormLabel.Text = currentBtn.Text;
+                childFormLabel.ForeColor = Color.FromArgb(219, 228, 238);
+
             }
         }
 
@@ -73,10 +84,10 @@ namespace hotel_app.Forms
         {
             if (currentBtn != null)
             {
-                currentBtn.BackColor = Color.FromArgb(31, 60, 68);
-                currentBtn.ForeColor = Color.AliceBlue;
-                currentBtn.TextAlign = ContentAlignment.MiddleLeft;
-                currentBtn.IconColor = Color.Aquamarine;
+                currentBtn.BackColor = Color.FromArgb(34, 99, 161);
+                currentBtn.ForeColor = Color.FromArgb(219, 228, 238);
+                currentBtn.TextAlign = ContentAlignment.MiddleCenter;
+                currentBtn.IconColor = Color.FromArgb(219, 228, 238);
                 currentBtn.TextImageRelation = TextImageRelation.ImageBeforeText;
                 currentBtn.ImageAlign = ContentAlignment.MiddleLeft;
             }
@@ -86,7 +97,7 @@ namespace hotel_app.Forms
         {
             if(currentChildForm != null)
             {
-                currentChildForm.Close();
+                currentChildForm.Hide();
             }
             currentChildForm = childForm;
             childForm.TopLevel = false;
@@ -101,37 +112,43 @@ namespace hotel_app.Forms
         private void poolButton_Click(object sender, EventArgs e)
         {
             ActivateButton(sender, RGBColors.color3);
-            OpenChildForm(new PoolMenuForm());
+            OpenChildForm(pool);
         }
 
         private void privateThermostatButton_Click(object sender, EventArgs e)
         {
             ActivateButton(sender, RGBColors.color2);
-            OpenChildForm(new ThermostatForm());
+            OpenChildForm(thermostat);
         }
 
         private void lightsButton_Click(object sender, EventArgs e)
         {
             ActivateButton(sender, RGBColors.color1);
-            OpenChildForm(new LightsForm());
+            OpenChildForm(lights);
         }
 
         private void tvButton_Click(object sender, EventArgs e)
         {
             ActivateButton(sender, RGBColors.color3);
-            OpenChildForm(new TVForm());
+            OpenChildForm(tv);
         }
 
         private void radioButton_Click(object sender, EventArgs e)
         {
             ActivateButton(sender, RGBColors.color2);
-            OpenChildForm(new RadioForm());
+            OpenChildForm(radio);
         }
 
-        private void hotelTitle_Click(object sender, EventArgs e)
+
+        private void mainDoorButton_Click(object sender, EventArgs e)
         {
-            currentChildForm.Close();
-            Reset();
+
+        }
+
+        private void gpsButton_Click(object sender, EventArgs e)
+        {
+            ActivateButton(sender, RGBColors.color2);
+            OpenChildForm(gps);
         }
 
         private void Reset()
@@ -139,13 +156,18 @@ namespace hotel_app.Forms
             DisableButton();
             leftBorderBtn.Visible = false;
             currentChildFormIcon.IconChar = IconChar.Home;
-            currentChildFormIcon.IconColor = System.Drawing.Color.MediumAquamarine;
+            currentChildFormIcon.IconColor = Color.FromArgb(219, 228, 238);
             childFormLabel.Text = "Home";
         }
 
-        private void exitPicture_Click(object sender, EventArgs e)
+        private void pictureBox1_Click(object sender, EventArgs e)
         {
-            Application.Exit();
+            if (currentChildForm != null)
+            {
+                currentChildForm.Hide();
+            }
+            Reset();
         }
+
     }
 }
