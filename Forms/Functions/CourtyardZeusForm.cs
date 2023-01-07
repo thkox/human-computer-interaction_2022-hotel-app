@@ -24,7 +24,7 @@ namespace hotel_app.Forms.Functions
         private void moveTimerEvent(object sender, EventArgs e)
         {
             //Movement Bounds
-            if (moveLeft == true && trojan1PictureBox.Left > 53) 
+            if (moveLeft == true && trojan1PictureBox.Left > 60) 
             {
                 trojan1PictureBox.Left -= speed;
             }
@@ -64,6 +64,7 @@ namespace hotel_app.Forms.Functions
             }
             else parkingButton.Enabled = false;
 
+            //Enable form transition
             if (trojan1PictureBox.Bounds.IntersectsWith(LeftTransitionPictureBox.Bounds) == true)
             {
                 

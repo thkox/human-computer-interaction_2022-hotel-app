@@ -30,8 +30,9 @@
         {
             this.components = new System.ComponentModel.Container();
             this.parkingPanel = new System.Windows.Forms.Panel();
-            this.CourtyardZeusLabel = new System.Windows.Forms.Label();
             this.trojan1PictureBox = new System.Windows.Forms.PictureBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.CourtyardZeusLabel = new System.Windows.Forms.Label();
             this.LeftTransitionPictureBox = new FontAwesome.Sharp.IconPictureBox();
             this.parkingSlot5 = new System.Windows.Forms.PictureBox();
             this.parkingSlot4 = new System.Windows.Forms.PictureBox();
@@ -54,8 +55,9 @@
             // 
             // parkingPanel
             // 
-            this.parkingPanel.Controls.Add(this.CourtyardZeusLabel);
             this.parkingPanel.Controls.Add(this.trojan1PictureBox);
+            this.parkingPanel.Controls.Add(this.label1);
+            this.parkingPanel.Controls.Add(this.CourtyardZeusLabel);
             this.parkingPanel.Controls.Add(this.LeftTransitionPictureBox);
             this.parkingPanel.Controls.Add(this.parkingSlot5);
             this.parkingPanel.Controls.Add(this.parkingSlot4);
@@ -69,6 +71,28 @@
             this.parkingPanel.Size = new System.Drawing.Size(1083, 662);
             this.parkingPanel.TabIndex = 0;
             // 
+            // trojan1PictureBox
+            // 
+            this.trojan1PictureBox.BackColor = System.Drawing.Color.Silver;
+            this.trojan1PictureBox.Image = global::hotel_app.Properties.Resources.trojan;
+            this.trojan1PictureBox.Location = new System.Drawing.Point(324, 44);
+            this.trojan1PictureBox.Name = "trojan1PictureBox";
+            this.trojan1PictureBox.Size = new System.Drawing.Size(88, 89);
+            this.trojan1PictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.trojan1PictureBox.TabIndex = 0;
+            this.trojan1PictureBox.TabStop = false;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Silver;
+            this.label1.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label1.Location = new System.Drawing.Point(53, 327);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(73, 46);
+            this.label1.TabIndex = 9;
+            this.label1.Text = "Olympos\r\nGardens";
+            // 
             // CourtyardZeusLabel
             // 
             this.CourtyardZeusLabel.AutoSize = true;
@@ -79,17 +103,6 @@
             this.CourtyardZeusLabel.Size = new System.Drawing.Size(171, 30);
             this.CourtyardZeusLabel.TabIndex = 8;
             this.CourtyardZeusLabel.Text = "Zeus Courtyard";
-            // 
-            // trojan1PictureBox
-            // 
-            this.trojan1PictureBox.BackColor = System.Drawing.Color.Transparent;
-            this.trojan1PictureBox.Image = global::hotel_app.Properties.Resources.trojan;
-            this.trojan1PictureBox.Location = new System.Drawing.Point(280, 80);
-            this.trojan1PictureBox.Name = "trojan1PictureBox";
-            this.trojan1PictureBox.Size = new System.Drawing.Size(88, 89);
-            this.trojan1PictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.trojan1PictureBox.TabIndex = 0;
-            this.trojan1PictureBox.TabStop = false;
             // 
             // LeftTransitionPictureBox
             // 
@@ -221,5 +234,6 @@
         private PictureBox parkingSlot2;
         private FontAwesome.Sharp.IconPictureBox LeftTransitionPictureBox;
         private Label CourtyardZeusLabel;
+        private Label label1;
     }
 }
