@@ -22,6 +22,76 @@ namespace hotel_app.Custom_Toolbox
         private Color offBackColor = Color.Gray;
         private Color offToggleColor = Color.Gainsboro;
         
+        //Properties
+        public Color OnBackColor
+        {
+            get 
+            {
+                return onBackColor;            
+            }
+
+            set 
+            {
+                onBackColor= value;
+                this.Invalidate();
+            }
+        }
+
+        public Color OnToggleColor
+        {
+            get
+            {
+                return onToggleColor;
+            }
+
+            set 
+            { 
+                onToggleColor= value;
+                this.Invalidate();
+            }  
+        }
+
+        public Color OffBackColor
+        {
+            get 
+            {
+                return offBackColor;
+            }
+
+            set
+            {
+                offBackColor = value;
+                this.Invalidate();
+            }
+        }
+
+        public Color OffToggleColor
+        {
+            get 
+            {
+                return offToggleColor;
+            }
+
+            set
+            {
+                offToggleColor= value;
+                this.Invalidate();
+            }
+        }
+
+        public override string Text
+        {
+            get 
+            {
+                return base.Text;
+            }
+
+            set 
+            {
+                
+            }
+        }
+
         //Constructor
         public ToggleButtonCustom()
         {

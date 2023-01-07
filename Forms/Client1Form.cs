@@ -12,7 +12,7 @@ using hotel_app.Forms.Functions;
 
 namespace hotel_app.Forms
 {
-    public partial class Client2Form : Form
+    public partial class Client1Form : Form
     {
         private IconButton currentBtn;
         private Panel leftBorderBtn;
@@ -24,8 +24,9 @@ namespace hotel_app.Forms
         LightsForm lights = new LightsForm();
         TVForm tv = new TVForm();
         RadioForm radio = new RadioForm();  
+        GPSMenuForm gps = new GPSMenuForm();
 
-        public Client2Form()
+        public Client1Form()
         {
             InitializeComponent();
             leftBorderBtn = new Panel();
@@ -138,6 +139,18 @@ namespace hotel_app.Forms
             OpenChildForm(radio);
         }
 
+
+        private void mainDoorButton_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void gpsButton_Click(object sender, EventArgs e)
+        {
+            ActivateButton(sender, RGBColors.color2);
+            OpenChildForm(gps);
+        }
+
         private void Reset()
         {
             DisableButton();
@@ -155,5 +168,6 @@ namespace hotel_app.Forms
             }
             Reset();
         }
+
     }
 }

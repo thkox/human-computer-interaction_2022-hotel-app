@@ -2,7 +2,7 @@
 
 namespace hotel_app.Forms
 {
-    partial class Client2Form
+    partial class Client1Form
     {
         /// <summary>
         /// Required designer variable.
@@ -30,13 +30,14 @@ namespace hotel_app.Forms
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Client2Form));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Client1Form));
             this.menuPanel = new System.Windows.Forms.Panel();
+            this.gpsButton = new FontAwesome.Sharp.IconButton();
+            this.mainDoorButton = new FontAwesome.Sharp.IconButton();
             this.radioButton = new FontAwesome.Sharp.IconButton();
             this.tvButton = new FontAwesome.Sharp.IconButton();
             this.lightsButton = new FontAwesome.Sharp.IconButton();
             this.privateThermostatButton = new FontAwesome.Sharp.IconButton();
-            this.poolButton = new FontAwesome.Sharp.IconButton();
             this.panel1 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.titlelabel = new System.Windows.Forms.Panel();
@@ -57,11 +58,12 @@ namespace hotel_app.Forms
             // menuPanel
             // 
             this.menuPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(99)))), ((int)(((byte)(161)))));
+            this.menuPanel.Controls.Add(this.gpsButton);
+            this.menuPanel.Controls.Add(this.mainDoorButton);
             this.menuPanel.Controls.Add(this.radioButton);
             this.menuPanel.Controls.Add(this.tvButton);
             this.menuPanel.Controls.Add(this.lightsButton);
             this.menuPanel.Controls.Add(this.privateThermostatButton);
-            this.menuPanel.Controls.Add(this.poolButton);
             this.menuPanel.Controls.Add(this.panel1);
             this.menuPanel.Dock = System.Windows.Forms.DockStyle.Left;
             this.menuPanel.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
@@ -69,6 +71,52 @@ namespace hotel_app.Forms
             this.menuPanel.Name = "menuPanel";
             this.menuPanel.Size = new System.Drawing.Size(300, 800);
             this.menuPanel.TabIndex = 0;
+            // 
+            // gpsButton
+            // 
+            this.gpsButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.gpsButton.Dock = System.Windows.Forms.DockStyle.Top;
+            this.gpsButton.FlatAppearance.BorderSize = 0;
+            this.gpsButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.gpsButton.Font = new System.Drawing.Font("Cooper Black", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.gpsButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(228)))), ((int)(((byte)(238)))));
+            this.gpsButton.IconChar = FontAwesome.Sharp.IconChar.MapLocationDot;
+            this.gpsButton.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(228)))), ((int)(((byte)(238)))));
+            this.gpsButton.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.gpsButton.IconSize = 50;
+            this.gpsButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.gpsButton.Location = new System.Drawing.Point(0, 550);
+            this.gpsButton.Name = "gpsButton";
+            this.gpsButton.Size = new System.Drawing.Size(300, 70);
+            this.gpsButton.TabIndex = 13;
+            this.gpsButton.Text = "GPS";
+            this.gpsButton.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.gpsButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.gpsButton.UseVisualStyleBackColor = true;
+            this.gpsButton.Click += new System.EventHandler(this.gpsButton_Click);
+            // 
+            // mainDoorButton
+            // 
+            this.mainDoorButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.mainDoorButton.Dock = System.Windows.Forms.DockStyle.Top;
+            this.mainDoorButton.FlatAppearance.BorderSize = 0;
+            this.mainDoorButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.mainDoorButton.Font = new System.Drawing.Font("Cooper Black", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.mainDoorButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(228)))), ((int)(((byte)(238)))));
+            this.mainDoorButton.IconChar = FontAwesome.Sharp.IconChar.DoorOpen;
+            this.mainDoorButton.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(228)))), ((int)(((byte)(238)))));
+            this.mainDoorButton.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.mainDoorButton.IconSize = 50;
+            this.mainDoorButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.mainDoorButton.Location = new System.Drawing.Point(0, 480);
+            this.mainDoorButton.Name = "mainDoorButton";
+            this.mainDoorButton.Size = new System.Drawing.Size(300, 70);
+            this.mainDoorButton.TabIndex = 12;
+            this.mainDoorButton.Text = "Main Door";
+            this.mainDoorButton.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.mainDoorButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.mainDoorButton.UseVisualStyleBackColor = true;
+            this.mainDoorButton.Click += new System.EventHandler(this.mainDoorButton_Click);
             // 
             // radioButton
             // 
@@ -83,7 +131,7 @@ namespace hotel_app.Forms
             this.radioButton.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.radioButton.IconSize = 50;
             this.radioButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.radioButton.Location = new System.Drawing.Point(0, 480);
+            this.radioButton.Location = new System.Drawing.Point(0, 410);
             this.radioButton.Name = "radioButton";
             this.radioButton.Size = new System.Drawing.Size(300, 70);
             this.radioButton.TabIndex = 10;
@@ -106,7 +154,7 @@ namespace hotel_app.Forms
             this.tvButton.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.tvButton.IconSize = 50;
             this.tvButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.tvButton.Location = new System.Drawing.Point(0, 410);
+            this.tvButton.Location = new System.Drawing.Point(0, 340);
             this.tvButton.Name = "tvButton";
             this.tvButton.Size = new System.Drawing.Size(300, 70);
             this.tvButton.TabIndex = 9;
@@ -129,7 +177,7 @@ namespace hotel_app.Forms
             this.lightsButton.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.lightsButton.IconSize = 50;
             this.lightsButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.lightsButton.Location = new System.Drawing.Point(0, 340);
+            this.lightsButton.Location = new System.Drawing.Point(0, 270);
             this.lightsButton.Name = "lightsButton";
             this.lightsButton.Size = new System.Drawing.Size(300, 70);
             this.lightsButton.TabIndex = 8;
@@ -152,7 +200,7 @@ namespace hotel_app.Forms
             this.privateThermostatButton.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.privateThermostatButton.IconSize = 50;
             this.privateThermostatButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.privateThermostatButton.Location = new System.Drawing.Point(0, 270);
+            this.privateThermostatButton.Location = new System.Drawing.Point(0, 200);
             this.privateThermostatButton.Name = "privateThermostatButton";
             this.privateThermostatButton.Size = new System.Drawing.Size(300, 70);
             this.privateThermostatButton.TabIndex = 7;
@@ -161,29 +209,6 @@ namespace hotel_app.Forms
             this.privateThermostatButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.privateThermostatButton.UseVisualStyleBackColor = true;
             this.privateThermostatButton.Click += new System.EventHandler(this.privateThermostatButton_Click);
-            // 
-            // poolButton
-            // 
-            this.poolButton.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.poolButton.Dock = System.Windows.Forms.DockStyle.Top;
-            this.poolButton.FlatAppearance.BorderSize = 0;
-            this.poolButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.poolButton.Font = new System.Drawing.Font("Cooper Black", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.poolButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(228)))), ((int)(((byte)(238)))));
-            this.poolButton.IconChar = FontAwesome.Sharp.IconChar.WaterLadder;
-            this.poolButton.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(228)))), ((int)(((byte)(238)))));
-            this.poolButton.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.poolButton.IconSize = 50;
-            this.poolButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.poolButton.Location = new System.Drawing.Point(0, 200);
-            this.poolButton.Name = "poolButton";
-            this.poolButton.Size = new System.Drawing.Size(300, 70);
-            this.poolButton.TabIndex = 6;
-            this.poolButton.Text = "Pool";
-            this.poolButton.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.poolButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.poolButton.UseVisualStyleBackColor = true;
-            this.poolButton.Click += new System.EventHandler(this.poolButton_Click);
             // 
             // panel1
             // 
@@ -292,7 +317,7 @@ namespace hotel_app.Forms
             this.label1.Text = "Zeus Palace\r\n";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // Client2Form
+            // Client1Form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -305,7 +330,7 @@ namespace hotel_app.Forms
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MinimizeBox = false;
-            this.Name = "Client2Form";
+            this.Name = "Client1Form";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Client Menu";
             this.menuPanel.ResumeLayout(false);
@@ -323,7 +348,6 @@ namespace hotel_app.Forms
         #endregion
 
         private Panel menuPanel;
-        private FontAwesome.Sharp.IconButton poolButton;
         private Panel panel1;
         private FontAwesome.Sharp.IconButton tvButton;
         private FontAwesome.Sharp.IconButton lightsButton;
@@ -337,5 +361,7 @@ namespace hotel_app.Forms
         private Label label2;
         private Label label1;
         private PictureBox pictureBox1;
+        private FontAwesome.Sharp.IconButton mainDoorButton;
+        private FontAwesome.Sharp.IconButton gpsButton;
     }
 }

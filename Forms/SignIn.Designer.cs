@@ -37,8 +37,7 @@ namespace hotel_app
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.login_button = new hotel_app.Custom_Toolbox.ButtonCustom();
-            this.iconPictureBox1 = new FontAwesome.Sharp.IconPictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox1)).BeginInit();
+            this.errorLabel = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // hotelTitle
@@ -126,6 +125,7 @@ namespace hotel_app
             this.login_button.BorderColor = System.Drawing.Color.Blue;
             this.login_button.BorderRadius = 60;
             this.login_button.BorderSize = 0;
+            this.login_button.Cursor = System.Windows.Forms.Cursors.Hand;
             this.login_button.FlatAppearance.BorderSize = 0;
             this.login_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.login_button.Font = new System.Drawing.Font("Comic Sans MS", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
@@ -139,19 +139,19 @@ namespace hotel_app
             this.login_button.UseVisualStyleBackColor = false;
             this.login_button.Click += new System.EventHandler(this.login_button_Click);
             // 
-            // iconPictureBox1
+            // errorLabel
             // 
-            this.iconPictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(139)))), ((int)(((byte)(180)))));
-            this.iconPictureBox1.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.iconPictureBox1.IconChar = FontAwesome.Sharp.IconChar.Multiply;
-            this.iconPictureBox1.IconColor = System.Drawing.SystemColors.ControlText;
-            this.iconPictureBox1.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconPictureBox1.Location = new System.Drawing.Point(1367, 1);
-            this.iconPictureBox1.Name = "iconPictureBox1";
-            this.iconPictureBox1.Size = new System.Drawing.Size(32, 32);
-            this.iconPictureBox1.TabIndex = 7;
-            this.iconPictureBox1.TabStop = false;
-            this.iconPictureBox1.Click += new System.EventHandler(this.iconPictureBox1_Click);
+            this.errorLabel.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.errorLabel.AutoSize = true;
+            this.errorLabel.Font = new System.Drawing.Font("Comic Sans MS", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.errorLabel.ForeColor = System.Drawing.Color.OrangeRed;
+            this.errorLabel.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.errorLabel.Location = new System.Drawing.Point(469, 463);
+            this.errorLabel.Name = "errorLabel";
+            this.errorLabel.Size = new System.Drawing.Size(161, 27);
+            this.errorLabel.TabIndex = 7;
+            this.errorLabel.Text = "[Error Message]";
+            this.errorLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // SignIn
             // 
@@ -159,7 +159,7 @@ namespace hotel_app
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(139)))), ((int)(((byte)(180)))));
             this.ClientSize = new System.Drawing.Size(1400, 800);
-            this.Controls.Add(this.iconPictureBox1);
+            this.Controls.Add(this.errorLabel);
             this.Controls.Add(this.login_button);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -167,15 +167,14 @@ namespace hotel_app
             this.Controls.Add(this.username_richTextBox);
             this.Controls.Add(this.hotelTitle);
             this.DoubleBuffered = true;
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "SignIn";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Sign In";
+            this.TopMost = true;
             this.Load += new System.EventHandler(this.SignIn_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -189,6 +188,6 @@ namespace hotel_app
         private Label label1;
         private Label label2;
         private Custom_Toolbox.ButtonCustom login_button;
-        private FontAwesome.Sharp.IconPictureBox iconPictureBox1;
+        private Label errorLabel;
     }
 }
