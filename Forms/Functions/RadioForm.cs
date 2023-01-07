@@ -1,4 +1,5 @@
-﻿using System;
+﻿using FontAwesome.Sharp;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -21,11 +22,13 @@ namespace hotel_app.Forms.Functions
 
         private void TurnOFFRadio()
         {
+            radioValueLabel.Location = new Point(90, radioValueLabel.Location.Y);
             radioState = false;
             radioUpButton.Enabled = false;
             radioDownButton.Enabled = false;
-            RadioValueLabel.Text = "OFF";
-            RadioPanel.BackColor = Color.Red;
+            radioValueLabel.Text = "OFF";
+            radioValueLabel.ForeColor = Color.Red;
+            radioPanel.BackColor = Color.FromArgb(129, 164, 205);
         }
 
         private void TurnONRadio() 
@@ -33,14 +36,15 @@ namespace hotel_app.Forms.Functions
             radioState = true;
             radioUpButton.Enabled = true;
             radioDownButton.Enabled = true;
-            RadioPanel.BackColor = Color.White;
-            RadioValueLabel.Text = string.Format($"{radioValue.ToString("0.0")}MHz");
+            radioPanel.BackColor = Color.FromArgb(129, 164, 205);
+            radioValueLabel.ForeColor = Color.FromArgb(236, 241, 246);
+            radioValueLabel.Text = string.Format($"{radioValue.ToString("0.0")}MHz");
         }
 
         private void RadioForm_Load(object sender, EventArgs e)
         {
             TurnOFFRadio();
-            RadioValueLabel.Location = new Point(90, RadioValueLabel.Location.Y);
+            
         }
 
         private void radioUpButton_Click(object sender, EventArgs e)
@@ -50,10 +54,10 @@ namespace hotel_app.Forms.Functions
                 if (radioValue >= 105.7)
                     radioValue = 87.7;
                 radioValue += 0.3;
-                RadioValueLabel.Text = string.Format($"{radioValue.ToString("0.0")}MHz");
+                radioValueLabel.Text = string.Format($"{radioValue.ToString("0.0")}MHz");
                 if (radioValue <= 99.7) 
-                    RadioValueLabel.Location = new Point(20, RadioValueLabel.Location.Y);
-                else RadioValueLabel.Location = new Point(0, RadioValueLabel.Location.Y);
+                    radioValueLabel.Location = new Point(20, radioValueLabel.Location.Y);
+                else radioValueLabel.Location = new Point(0, radioValueLabel.Location.Y);
                 
             }
         }
@@ -63,10 +67,10 @@ namespace hotel_app.Forms.Functions
             if (radioValue <= 88.3)
                 radioValue = 106.3;
             radioValue -= 0.3;
-            RadioValueLabel.Text = string.Format($"{radioValue.ToString("0.0")}MHz");
+            radioValueLabel.Text = string.Format($"{radioValue.ToString("0.0")}MHz");
             if (radioValue <= 100.0)
-                RadioValueLabel.Location = new Point(20, RadioValueLabel.Location.Y);
-            else RadioValueLabel.Location = new Point(0, RadioValueLabel.Location.Y);
+                radioValueLabel.Location = new Point(20, radioValueLabel.Location.Y);
+            else radioValueLabel.Location = new Point(0, radioValueLabel.Location.Y);
         }
 
         private void RadioToggle_CheckedChanged(object sender, EventArgs e)
@@ -75,13 +79,26 @@ namespace hotel_app.Forms.Functions
             {
                 TurnONRadio();
                 if (radioValue >= 99.7)
-                    RadioValueLabel.Location = new Point(0, RadioValueLabel.Location.Y);
-                else RadioValueLabel.Location = new Point(20, RadioValueLabel.Location.Y);
+                    radioValueLabel.Location = new Point(0, radioValueLabel.Location.Y);
+                else radioValueLabel.Location = new Point(20, radioValueLabel.Location.Y);
             }
             else
             {
                 TurnOFFRadio();
-                RadioValueLabel.Location = new Point(90, RadioValueLabel.Location.Y);
+                radioValueLabel.Location = new Point(90, radioValueLabel.Location.Y);
+            }
+        }
+
+        private void radioButtons_EnabledChanged(object sender, EventArgs e)
+        {
+            IconButton button = (IconButton)sender;
+            if (!button.Enabled)
+            {
+                button.BackColor = Color.FromArgb(236, 241, 246);
+            }
+            else
+            {
+                button.BackColor = Color.FromArgb(79, 134, 184);
             }
         }
     }

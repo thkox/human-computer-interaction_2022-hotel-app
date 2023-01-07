@@ -1,4 +1,5 @@
-﻿using System;
+﻿using FontAwesome.Sharp;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -57,12 +58,6 @@ namespace hotel_app.Forms.Functions
             thermostatValueLabel.Text = string.Format($"{thermostatValue.ToString().PadLeft(2, '0')}°C");
         }
 
-        private void richTextBox1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-
         private void thermostatUpButton_Click(object sender, EventArgs e)
         {
             if (thermostatState == true)
@@ -107,27 +102,16 @@ namespace hotel_app.Forms.Functions
             }
         }
 
-        private void thermostatUpButton_EnabledChanged(object sender, EventArgs e)
+        private void thermostatButtons_EnabledChanged(object sender, EventArgs e)
         {
-            if (!thermostatUpButton.Enabled)
+            IconButton button = (IconButton)sender; 
+            if (!button.Enabled)
             {
-                thermostatUpButton.BackColor = Color.FromArgb(236, 241, 246);
+                button.BackColor = Color.FromArgb(236, 241, 246);
             }
             else
             {
-                thermostatUpButton.BackColor = Color.FromArgb(79, 134, 184);
-            }
-        }
-
-        private void thermostatDownButton_EnabledChanged(object sender, EventArgs e)
-        {
-            if (!thermostatDownButton.Enabled)
-            {
-                thermostatDownButton.BackColor = Color.FromArgb(236, 241, 246);
-            }
-            else
-            {
-                thermostatDownButton.BackColor = Color.FromArgb(79, 134, 184);
+                button.BackColor = Color.FromArgb(79, 134, 184);
             }
         }
     }
