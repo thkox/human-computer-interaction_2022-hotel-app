@@ -60,17 +60,17 @@ namespace hotel_app.Forms.Functions
 
         private void movie1PictureBox_Click(object sender, EventArgs e)
         {
-            ChangeTvStatus("Casting the Movie");
+            ChangeTvStatus("Casting C# Movie");
         }
 
         private void movie2PictureBox_Click(object sender, EventArgs e)
         {
-            ChangeTvStatus("Casting the Season 3 Episode 1");
+            ChangeTvStatus("Casting Season 3 Episode 1");
         }
 
         private void movie3PictureBox_Click(object sender, EventArgs e)
         {
-            ChangeTvStatus("Casting a Movie");
+            ChangeTvStatus("Casting Python Movie");
         }
 
         private void backButton_Click(object sender, EventArgs e)
