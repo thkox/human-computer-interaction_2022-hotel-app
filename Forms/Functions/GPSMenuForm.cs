@@ -20,14 +20,29 @@ namespace hotel_app.Forms.Functions
         private Panel GPSMenuTabs;
 
         private Form currentChildForm;
+
+        private CourtyardZeusForm courtyardZeusParking = new CourtyardZeusForm();
         public GPSMenuForm()
         {
             InitializeComponent();
         }
 
+        private void  OpenGPSMenuFunctionForm(Form childForm) 
+        {
+            currentChildForm = childForm;
+            childForm.TopLevel = false;
+            childForm.FormBorderStyle = FormBorderStyle.None;
+            childForm.Dock = DockStyle.Fill;
+            gpsLoadFormsPanel.Controls.Add(childForm);
+            gpsLoadFormsPanel.Tag = childForm;
+            childForm.BringToFront();
+            childForm.Show();
+        }
+
         private void GPSMenuForm_Load(object sender, EventArgs e)
         {
-
+            GPSMenuTabs = gpsLoadFormsPanel;
+            backPictureBox.Hide();
         }
 
         private void backPictureBox_Click(object sender, EventArgs e)
@@ -35,6 +50,13 @@ namespace hotel_app.Forms.Functions
             currentChildForm.Hide();
             gpsLoadFormsPanel = GPSMenuTabs;
             backPictureBox.Hide();
+        }
+
+        private void changeParkingSlotButton_Click(object sender, EventArgs e)
+        {
+            OpenGPSMenuFunctionForm(courtyardZeusParking);
+            
+            backPictureBox.Show();
         }
     }
 }
