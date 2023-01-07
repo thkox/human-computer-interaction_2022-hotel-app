@@ -124,7 +124,14 @@ namespace hotel_app.Forms.Functions
 
         private void alarmButton_EnabledChanged(object sender, EventArgs e)
         {
-
+            if (!alarmButton.Enabled)
+            {
+                alarmButton.BackColor = Color.FromArgb(236, 241, 246);
+            }
+            else
+            {
+                alarmButton.BackColor = Color.FromArgb(79, 134, 184);
+            }
         }
     }
 }
