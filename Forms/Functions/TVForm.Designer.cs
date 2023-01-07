@@ -255,11 +255,14 @@
             this.movie3PictureBox.Cursor = System.Windows.Forms.Cursors.Hand;
             this.movie3PictureBox.Image = global::hotel_app.Properties.Resources.Python_movie;
             this.movie3PictureBox.Location = new System.Drawing.Point(807, 101);
+            this.movie3PictureBox.Margin = new System.Windows.Forms.Padding(10);
             this.movie3PictureBox.Name = "movie3PictureBox";
+            this.movie3PictureBox.Padding = new System.Windows.Forms.Padding(5);
             this.movie3PictureBox.Size = new System.Drawing.Size(165, 217);
             this.movie3PictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.movie3PictureBox.TabIndex = 2;
             this.movie3PictureBox.TabStop = false;
+            this.movie3PictureBox.WaitOnLoad = true;
             this.movie3PictureBox.Click += new System.EventHandler(this.movie3PictureBox_Click);
             // 
             // movie2PictureBox
@@ -269,11 +272,14 @@
             this.movie2PictureBox.Cursor = System.Windows.Forms.Cursors.Hand;
             this.movie2PictureBox.Image = global::hotel_app.Properties.Resources.evolution_preview;
             this.movie2PictureBox.Location = new System.Drawing.Point(293, 101);
+            this.movie2PictureBox.Margin = new System.Windows.Forms.Padding(10);
             this.movie2PictureBox.Name = "movie2PictureBox";
+            this.movie2PictureBox.Padding = new System.Windows.Forms.Padding(5);
             this.movie2PictureBox.Size = new System.Drawing.Size(484, 217);
             this.movie2PictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.movie2PictureBox.TabIndex = 1;
             this.movie2PictureBox.TabStop = false;
+            this.movie2PictureBox.WaitOnLoad = true;
             this.movie2PictureBox.Click += new System.EventHandler(this.movie2PictureBox_Click);
             // 
             // movie1PictureBox
@@ -283,11 +289,14 @@
             this.movie1PictureBox.Cursor = System.Windows.Forms.Cursors.Hand;
             this.movie1PictureBox.Image = global::hotel_app.Properties.Resources.csharp_movie;
             this.movie1PictureBox.Location = new System.Drawing.Point(101, 101);
+            this.movie1PictureBox.Margin = new System.Windows.Forms.Padding(10);
             this.movie1PictureBox.Name = "movie1PictureBox";
+            this.movie1PictureBox.Padding = new System.Windows.Forms.Padding(5);
             this.movie1PictureBox.Size = new System.Drawing.Size(164, 217);
             this.movie1PictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.movie1PictureBox.TabIndex = 0;
             this.movie1PictureBox.TabStop = false;
+            this.movie1PictureBox.WaitOnLoad = true;
             this.movie1PictureBox.Click += new System.EventHandler(this.movie1PictureBox_Click);
             // 
             // wathLaterLabel
