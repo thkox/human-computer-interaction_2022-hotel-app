@@ -69,7 +69,6 @@ namespace hotel_app.Forms
                 currentChildFormIcon.IconColor = Color.FromArgb(219, 228, 238);
                 childFormLabel.Text = currentBtn.Text;
                 childFormLabel.ForeColor = Color.FromArgb(219, 228, 238);
-
             }
         }
 
