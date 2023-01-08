@@ -22,6 +22,8 @@ namespace hotel_app.Forms.Functions
             doorClosed.Enabled = true;
             doorAlmostOpenButton.Enabled = false;
             doorOpenButton.Enabled = true;
+            doorStateLabel.Text = "Door will be half Opened";
+            doorStateListIndex = 1;
         }
 
         private void doorOpenButton_Click(object sender, EventArgs e)
@@ -29,18 +31,24 @@ namespace hotel_app.Forms.Functions
             doorClosed.Enabled = true;
             doorAlmostOpenButton.Enabled = true;
             doorOpenButton.Enabled = false;
+            doorStateLabel.Text = "Door will open";
+            doorStateListIndex = 2;
         }
 
         private void stairsUpButton_Click(object sender, EventArgs e)
         {
             stairsDownButton.Enabled = true;
             stairsUpButton.Enabled = false;
+            stairsStateLabel.Text = "Stairs will be closed";
+            stairsStateListIndex = 1;
         }
 
         private void stairsDownButton_Click(object sender, EventArgs e)
         {
             stairsDownButton.Enabled = false;
             stairsUpButton.Enabled = true;
+            stairsStateLabel.Text = "Stairs will open";
+            stairsStateListIndex = 0;
         }
 
         private void Button_EnabledChanged(object sender, EventArgs e)
@@ -61,16 +69,44 @@ namespace hotel_app.Forms.Functions
             doorClosed.Enabled = false;
             doorAlmostOpenButton.Enabled = true;
             doorOpenButton.Enabled = true;
+            doorTimer.Start();
+            doorStateLabel.Text = "Door will be closed";
+            doorStateListIndex = 0;
         }
 
+        private bool doorInterval = false;
+        private List<String> doorStateList = new List<String>();
+        private int doorStateListIndex = 0;
         private void doorTimer_Tick(object sender, EventArgs e)
         {
-
+            if (!doorInterval)
+            {
+                doorInterval= true;
+                doorStateLabel.Text = doorStateList[doorStateListIndex];
+            }
         }
+
+        private bool stairsInterval = false;
+        private List<String> stairsStateList = new List<String>();
+        private int stairsStateListIndex = 0;
 
         private void stairsTimer_Tick(object sender, EventArgs e)
         {
+            if (!stairsInterval)
+            {
+                stairsInterval = true;
+                stairsStateLabel.Text = doorStateList[doorStateListIndex];
+            }
+        }
 
+        private void MainDoorForm_Load(object sender, EventArgs e)
+        {
+            doorStateList.Add("Door is Closed");
+            doorStateList.Add("Door is half Opened");
+            doorStateList.Add("Door is opened");
+
+            stairsStateList.Add("Stairs are Opened");
+            stairsStateList.Add("Stairs are Closed");
         }
     }
 }

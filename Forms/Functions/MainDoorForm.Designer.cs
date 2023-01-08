@@ -38,7 +38,7 @@
             this.stairsState = new System.Windows.Forms.Label();
             this.doorTimer = new System.Windows.Forms.Timer(this.components);
             this.tvStatusLabel = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
+            this.stairsStateLabel = new System.Windows.Forms.Label();
             this.stairsTimer = new System.Windows.Forms.Timer(this.components);
             this.SuspendLayout();
             // 
@@ -136,6 +136,7 @@
             // 
             // doorTimer
             // 
+            this.doorTimer.Interval = 1000;
             this.doorTimer.Tick += new System.EventHandler(this.doorTimer_Tick);
             // 
             // tvStatusLabel
@@ -151,21 +152,22 @@
             this.tvStatusLabel.Text = "[Door Status]";
             this.tvStatusLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // label1
+            // stairsStateLabel
             // 
-            this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Tahoma", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
-            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(241)))), ((int)(((byte)(246)))));
-            this.label1.Location = new System.Drawing.Point(672, 354);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(150, 23);
-            this.label1.TabIndex = 17;
-            this.label1.Text = "[Stairs Status]";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.stairsStateLabel.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.stairsStateLabel.AutoSize = true;
+            this.stairsStateLabel.Font = new System.Drawing.Font("Tahoma", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
+            this.stairsStateLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(241)))), ((int)(((byte)(246)))));
+            this.stairsStateLabel.Location = new System.Drawing.Point(672, 354);
+            this.stairsStateLabel.Name = "stairsStateLabel";
+            this.stairsStateLabel.Size = new System.Drawing.Size(150, 23);
+            this.stairsStateLabel.TabIndex = 17;
+            this.stairsStateLabel.Text = "[Stairs Status]";
+            this.stairsStateLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // stairsTimer
             // 
+            this.stairsTimer.Interval = 1000;
             this.stairsTimer.Tick += new System.EventHandler(this.stairsTimer_Tick);
             // 
             // MainDoorForm
@@ -174,7 +176,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(144)))), ((int)(((byte)(191)))));
             this.ClientSize = new System.Drawing.Size(1084, 661);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.stairsStateLabel);
             this.Controls.Add(this.tvStatusLabel);
             this.Controls.Add(this.stairsState);
             this.Controls.Add(this.doorStateLabel);
@@ -185,6 +187,7 @@
             this.Controls.Add(this.doorOpenButton);
             this.Name = "MainDoorForm";
             this.Text = "MainDoorForm";
+            this.Load += new System.EventHandler(this.MainDoorForm_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -201,7 +204,7 @@
         private Label stairsState;
         private System.Windows.Forms.Timer doorTimer;
         private Label tvStatusLabel;
-        private Label label1;
+        private Label stairsStateLabel;
         private System.Windows.Forms.Timer stairsTimer;
     }
 }
