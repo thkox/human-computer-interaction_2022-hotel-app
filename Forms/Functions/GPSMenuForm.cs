@@ -20,6 +20,7 @@ namespace hotel_app.Forms.Functions
         private Panel GPSMenuTabs = new Panel();
 
         private CourtyardZeusForm courtyardZeusParking = new CourtyardZeusForm();
+        private FacilitiesForm facilities = new FacilitiesForm();
 
         private Form currentChildForm = new Form();
 
@@ -56,7 +57,12 @@ namespace hotel_app.Forms.Functions
         private void changeParkingSlotButton_Click(object sender, EventArgs e)
         {
             OpenGPSMenuFunctionForm(courtyardZeusParking);
-            
+            backPictureBox.Show();
+        }
+
+        private void availableFacilitiesButton_Click(object sender, EventArgs e)
+        {
+            OpenGPSMenuFunctionForm(facilities);
             backPictureBox.Show();
         }
     }

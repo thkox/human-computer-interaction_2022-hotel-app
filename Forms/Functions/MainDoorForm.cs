@@ -35,7 +35,7 @@ namespace hotel_app.Forms.Functions
 
             doorInterval = false;
             doorTimer.Start();
-            doorStateLabel.Text = "Door will be half Opened";
+            doorStateLabel.Text = "Door will be half opened";
             doorStateListIndex = 1;
         }
 
@@ -47,7 +47,7 @@ namespace hotel_app.Forms.Functions
 
             doorInterval = false;
             doorTimer.Start();
-            doorStateLabel.Text = "Door will open";
+            doorStateLabel.Text = "Door will be opened";
             doorStateListIndex = 2;
         }
 
@@ -69,7 +69,7 @@ namespace hotel_app.Forms.Functions
 
             stairsInterval = false;
             stairsTimer.Start();
-            stairsStateLabel.Text = "Stairs will open";
+            stairsStateLabel.Text = "Stairs will be opened";
             stairsStateListIndex = 0;
         }
 
