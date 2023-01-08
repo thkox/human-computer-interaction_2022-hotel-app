@@ -82,6 +82,7 @@
             this.changeParkingSlotButton.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.changeParkingSlotButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.changeParkingSlotButton.UseVisualStyleBackColor = false;
+            this.changeParkingSlotButton.Click += new System.EventHandler(this.changeParkingSlotButton_Click);
             // 
             // backPictureBox
             // 
@@ -92,7 +93,7 @@
             this.backPictureBox.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(241)))), ((int)(((byte)(246)))));
             this.backPictureBox.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.backPictureBox.IconSize = 42;
-            this.backPictureBox.Location = new System.Drawing.Point(25, 12);
+            this.backPictureBox.Location = new System.Drawing.Point(9, 12);
             this.backPictureBox.Name = "backPictureBox";
             this.backPictureBox.Size = new System.Drawing.Size(42, 42);
             this.backPictureBox.TabIndex = 4;

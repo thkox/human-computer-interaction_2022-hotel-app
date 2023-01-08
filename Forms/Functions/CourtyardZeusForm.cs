@@ -36,7 +36,7 @@ namespace hotel_app.Forms.Functions
             {
                 trojan1PictureBox.Top -= speed;
             }
-            if (moveDown == true && trojan1PictureBox.Top < 560)
+            if (moveDown == true && trojan1PictureBox.Top < 560)//maybe < 550
             {
                 trojan1PictureBox.Top += speed;
             }
@@ -70,6 +70,40 @@ namespace hotel_app.Forms.Functions
                 
             }
 
+        }
+        //Movement with joystick
+        private void upButton_Click(object sender, EventArgs e)
+        {
+            if (trojan1PictureBox.Top > 32)
+            {
+                trojan1PictureBox.Location = new Point(trojan1PictureBox.Location.X, trojan1PictureBox.Location.Y - speed);
+            }
+        }
+
+        private void downButton_Click(object sender, EventArgs e)
+        {
+            if (trojan1PictureBox.Top < 550)
+            {
+                trojan1PictureBox.Location = new Point(trojan1PictureBox.Location.X, trojan1PictureBox.Location.Y + speed);
+            }
+        }
+
+        private void rightButton_Click(object sender, EventArgs e)
+        {
+            if (trojan1PictureBox.Left < 919)
+            {
+                trojan1PictureBox.Location = new Point(trojan1PictureBox.Location.X + speed, trojan1PictureBox.Location.Y);
+                trojan1PictureBox.Image = hotel_app.Properties.Resources.trojan;
+            }
+        }
+
+        private void leftButton_Click(object sender, EventArgs e)
+        {
+            if (trojan1PictureBox.Left > 60)
+            {
+                trojan1PictureBox.Location = new Point(trojan1PictureBox.Location.X - speed, trojan1PictureBox.Location.Y);
+                trojan1PictureBox.Image = hotel_app.Properties.Resources.trojan_horse_reversed;
+            }
         }
 
         private void parkingButton_Click(object sender, EventArgs e)
