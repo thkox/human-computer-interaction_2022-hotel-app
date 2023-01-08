@@ -63,6 +63,7 @@
             this.roomButton.Text = "Room";
             this.roomButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.roomButton.UseVisualStyleBackColor = false;
+            this.roomButton.Click += new System.EventHandler(this.roomButton_Click);
             // 
             // generalPoolButton
             // 
