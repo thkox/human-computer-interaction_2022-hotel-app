@@ -31,8 +31,7 @@ namespace hotel_app.Forms
 
             //Form
             this.Text = "Staff App";
-            //this.ControlBox = false;
-            this.DoubleBuffered = true;
+            this.DoubleBuffered = true; //to avoid flickering
         }
 
         private void ActivateButton(object senderBtn)
@@ -90,14 +89,6 @@ namespace hotel_app.Forms
             childForm.BringToFront();
             childForm.Show();
         }
-
-        private void zeusPalaceButton_Click(object sender, EventArgs e)
-        {
-            ActivateButton(sender);
-            OpenChildForm(zeusPalaceMenu);
-
-        }
-
         private void courtyardZeusButton_Click(object sender, EventArgs e)
         {
             ActivateButton(sender);
@@ -143,6 +134,12 @@ namespace hotel_app.Forms
         private void EmployeeForm_Load(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+        private void zeusPalaceButton_Click(object sender, EventArgs e)
+        {
+            ActivateButton(sender);
+            OpenChildForm(zeusPalaceMenu);
+
         }
     }
 }

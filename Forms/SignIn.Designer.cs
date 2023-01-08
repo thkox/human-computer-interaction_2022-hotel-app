@@ -31,27 +31,15 @@ namespace hotel_app
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SignIn));
-            this.hotelTitle = new System.Windows.Forms.Label();
             this.username_richTextBox = new CustomControls.RichTextBox.RichTextBox();
             this.password_richTextBox = new CustomControls.RichTextBox.RichTextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.login_button = new hotel_app.Custom_Toolbox.ButtonCustom();
             this.errorLabel = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
-            // 
-            // hotelTitle
-            // 
-            this.hotelTitle.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.hotelTitle.AutoSize = true;
-            this.hotelTitle.Font = new System.Drawing.Font("Edwardian Script ITC", 72F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.hotelTitle.ForeColor = System.Drawing.Color.Goldenrod;
-            this.hotelTitle.Location = new System.Drawing.Point(493, 88);
-            this.hotelTitle.Name = "hotelTitle";
-            this.hotelTitle.Size = new System.Drawing.Size(414, 113);
-            this.hotelTitle.TabIndex = 0;
-            this.hotelTitle.Text = "Zeus Palace";
-            this.hotelTitle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // username_richTextBox
             // 
@@ -62,7 +50,7 @@ namespace hotel_app
             this.username_richTextBox.BorderSize = 3;
             this.username_richTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.username_richTextBox.ForeColor = System.Drawing.Color.Goldenrod;
-            this.username_richTextBox.Location = new System.Drawing.Point(550, 305);
+            this.username_richTextBox.Location = new System.Drawing.Point(552, 331);
             this.username_richTextBox.Margin = new System.Windows.Forms.Padding(4);
             this.username_richTextBox.Multiline = false;
             this.username_richTextBox.Name = "username_richTextBox";
@@ -82,7 +70,7 @@ namespace hotel_app
             this.password_richTextBox.BorderSize = 3;
             this.password_richTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.password_richTextBox.ForeColor = System.Drawing.Color.Goldenrod;
-            this.password_richTextBox.Location = new System.Drawing.Point(550, 406);
+            this.password_richTextBox.Location = new System.Drawing.Point(552, 432);
             this.password_richTextBox.Margin = new System.Windows.Forms.Padding(4);
             this.password_richTextBox.Multiline = false;
             this.password_richTextBox.Name = "password_richTextBox";
@@ -99,7 +87,7 @@ namespace hotel_app
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Comic Sans MS", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label1.ForeColor = System.Drawing.Color.Goldenrod;
-            this.label1.Location = new System.Drawing.Point(550, 274);
+            this.label1.Location = new System.Drawing.Point(552, 300);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(110, 27);
             this.label1.TabIndex = 4;
@@ -111,7 +99,7 @@ namespace hotel_app
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Comic Sans MS", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label2.ForeColor = System.Drawing.Color.Goldenrod;
-            this.label2.Location = new System.Drawing.Point(550, 375);
+            this.label2.Location = new System.Drawing.Point(552, 401);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(102, 27);
             this.label2.TabIndex = 5;
@@ -130,7 +118,7 @@ namespace hotel_app
             this.login_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.login_button.Font = new System.Drawing.Font("Comic Sans MS", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.login_button.ForeColor = System.Drawing.Color.White;
-            this.login_button.Location = new System.Drawing.Point(605, 506);
+            this.login_button.Location = new System.Drawing.Point(607, 532);
             this.login_button.Name = "login_button";
             this.login_button.Size = new System.Drawing.Size(190, 64);
             this.login_button.TabIndex = 6;
@@ -146,12 +134,22 @@ namespace hotel_app
             this.errorLabel.Font = new System.Drawing.Font("Comic Sans MS", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.errorLabel.ForeColor = System.Drawing.Color.OrangeRed;
             this.errorLabel.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.errorLabel.Location = new System.Drawing.Point(469, 463);
+            this.errorLabel.Location = new System.Drawing.Point(471, 489);
             this.errorLabel.Name = "errorLabel";
             this.errorLabel.Size = new System.Drawing.Size(161, 27);
             this.errorLabel.TabIndex = 7;
             this.errorLabel.Text = "[Error Message]";
             this.errorLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::hotel_app.Properties.Resources.MainLogo;
+            this.pictureBox1.Location = new System.Drawing.Point(453, 12);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(488, 244);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 8;
+            this.pictureBox1.TabStop = false;
             // 
             // SignIn
             // 
@@ -159,13 +157,13 @@ namespace hotel_app
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(139)))), ((int)(((byte)(180)))));
             this.ClientSize = new System.Drawing.Size(1400, 800);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.errorLabel);
             this.Controls.Add(this.login_button);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.password_richTextBox);
             this.Controls.Add(this.username_richTextBox);
-            this.Controls.Add(this.hotelTitle);
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -175,19 +173,19 @@ namespace hotel_app
             this.Text = "Sign In";
             this.TopMost = true;
             this.Load += new System.EventHandler(this.SignIn_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private Label hotelTitle;
         private CustomControls.RichTextBox.RichTextBox username_richTextBox;
         private CustomControls.RichTextBox.RichTextBox password_richTextBox;
         private Label label1;
         private Label label2;
         private Custom_Toolbox.ButtonCustom login_button;
         private Label errorLabel;
+        private PictureBox pictureBox1;
     }
 }

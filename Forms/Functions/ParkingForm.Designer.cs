@@ -207,6 +207,7 @@
             this.courtyardZeusLabel.AutoSize = true;
             this.courtyardZeusLabel.BackColor = System.Drawing.Color.Transparent;
             this.courtyardZeusLabel.Font = new System.Drawing.Font("Comic Sans MS", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.courtyardZeusLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(241)))), ((int)(((byte)(246)))));
             this.courtyardZeusLabel.Location = new System.Drawing.Point(456, 0);
             this.courtyardZeusLabel.Name = "courtyardZeusLabel";
             this.courtyardZeusLabel.Size = new System.Drawing.Size(171, 30);
@@ -584,6 +585,7 @@
             this.olymposGardensLabel.AutoSize = true;
             this.olymposGardensLabel.BackColor = System.Drawing.Color.Transparent;
             this.olymposGardensLabel.Font = new System.Drawing.Font("Comic Sans MS", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.olymposGardensLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(241)))), ((int)(((byte)(246)))));
             this.olymposGardensLabel.Location = new System.Drawing.Point(449, 0);
             this.olymposGardensLabel.Name = "olymposGardensLabel";
             this.olymposGardensLabel.Size = new System.Drawing.Size(186, 30);
