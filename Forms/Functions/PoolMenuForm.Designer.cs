@@ -139,11 +139,10 @@
         }
 
         #endregion
-
-        private FontAwesome.Sharp.IconButton waterLevelButton;
-        private FontAwesome.Sharp.IconButton thermostatButton;
-        private FontAwesome.Sharp.IconButton sensorButton;
         private Panel poolLoadFormsPanel;
-        private FontAwesome.Sharp.IconPictureBox backPictureBox;
+        public FontAwesome.Sharp.IconButton waterLevelButton;
+        public FontAwesome.Sharp.IconPictureBox backPictureBox;
+        public FontAwesome.Sharp.IconButton thermostatButton;
+        public FontAwesome.Sharp.IconButton sensorButton;
     }
 }

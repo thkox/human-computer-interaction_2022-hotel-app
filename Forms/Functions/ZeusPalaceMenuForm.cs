@@ -45,20 +45,36 @@ namespace hotel_app.Forms.Functions
         private void ZeusPalaceMenuForm_Load(object sender, EventArgs e)
         {
             ZeusPalaceMenuTabs = zeusPalaceLoadFormsPanel;
-            backPictureBox.Hide();
+            backPictureBox2.Hide();
+
+            poolMenu.waterLevelButton.Click += new EventHandler(poolMenuButton_Click);
+            poolMenu.thermostatButton.Click += new EventHandler(poolMenuButton_Click);
+            poolMenu.sensorButton.Click += new EventHandler(poolMenuButton_Click);
+            
+            poolMenu.backPictureBox.Click += new EventHandler(backButton_Click);
+        }
+
+        private void backButton_Click(object sender, EventArgs e)
+        {
+            backPictureBox2.Show();
+        }
+        
+        private void poolMenuButton_Click(object sender, EventArgs e)
+        {
+            backPictureBox2.Hide();
         }
 
         private void backPictureBox_Click(object sender, EventArgs e)
         {
             currentChildForm.Hide();
             zeusPalaceLoadFormsPanel = ZeusPalaceMenuTabs;
-            backPictureBox.Hide();
+            backPictureBox2.Hide();
         }
 
         private void publicPoolButton_Click(object sender, EventArgs e)
         {
             OpenZeusPalaceMenuFunctionForm(poolMenu);
-            backPictureBox.Show();
+            backPictureBox2.Show();
         }
 
         private void roomButton_Click(object sender, EventArgs e)

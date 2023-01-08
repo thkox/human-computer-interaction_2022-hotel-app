@@ -31,9 +31,9 @@
             this.zeusPalaceLoadFormsPanel = new System.Windows.Forms.Panel();
             this.roomButton = new FontAwesome.Sharp.IconButton();
             this.publicPoolButton = new FontAwesome.Sharp.IconButton();
-            this.backPictureBox = new FontAwesome.Sharp.IconPictureBox();
+            this.backPictureBox2 = new FontAwesome.Sharp.IconPictureBox();
             this.zeusPalaceLoadFormsPanel.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.backPictureBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.backPictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // zeusPalaceLoadFormsPanel
@@ -85,21 +85,21 @@
             this.publicPoolButton.UseVisualStyleBackColor = false;
             this.publicPoolButton.Click += new System.EventHandler(this.publicPoolButton_Click);
             // 
-            // backPictureBox
+            // backPictureBox2
             // 
-            this.backPictureBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(144)))), ((int)(((byte)(191)))));
-            this.backPictureBox.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.backPictureBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(241)))), ((int)(((byte)(246)))));
-            this.backPictureBox.IconChar = FontAwesome.Sharp.IconChar.CircleArrowLeft;
-            this.backPictureBox.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(241)))), ((int)(((byte)(246)))));
-            this.backPictureBox.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.backPictureBox.IconSize = 42;
-            this.backPictureBox.Location = new System.Drawing.Point(9, 12);
-            this.backPictureBox.Name = "backPictureBox";
-            this.backPictureBox.Size = new System.Drawing.Size(42, 42);
-            this.backPictureBox.TabIndex = 4;
-            this.backPictureBox.TabStop = false;
-            this.backPictureBox.Click += new System.EventHandler(this.backPictureBox_Click);
+            this.backPictureBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(144)))), ((int)(((byte)(191)))));
+            this.backPictureBox2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.backPictureBox2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(241)))), ((int)(((byte)(246)))));
+            this.backPictureBox2.IconChar = FontAwesome.Sharp.IconChar.CircleArrowLeft;
+            this.backPictureBox2.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(241)))), ((int)(((byte)(246)))));
+            this.backPictureBox2.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.backPictureBox2.IconSize = 42;
+            this.backPictureBox2.Location = new System.Drawing.Point(9, 12);
+            this.backPictureBox2.Name = "backPictureBox2";
+            this.backPictureBox2.Size = new System.Drawing.Size(42, 42);
+            this.backPictureBox2.TabIndex = 4;
+            this.backPictureBox2.TabStop = false;
+            this.backPictureBox2.Click += new System.EventHandler(this.backPictureBox_Click);
             // 
             // ZeusPalaceMenuForm
             // 
@@ -107,13 +107,13 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(144)))), ((int)(((byte)(191)))));
             this.ClientSize = new System.Drawing.Size(1084, 661);
-            this.Controls.Add(this.backPictureBox);
+            this.Controls.Add(this.backPictureBox2);
             this.Controls.Add(this.zeusPalaceLoadFormsPanel);
             this.Name = "ZeusPalaceMenuForm";
             this.Text = "GPSMenuForm";
             this.Load += new System.EventHandler(this.ZeusPalaceMenuForm_Load);
             this.zeusPalaceLoadFormsPanel.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.backPictureBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.backPictureBox2)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -121,7 +121,7 @@
         #endregion
 
         private Panel zeusPalaceLoadFormsPanel;
-        private FontAwesome.Sharp.IconPictureBox backPictureBox;
+        private FontAwesome.Sharp.IconPictureBox backPictureBox2;
         private FontAwesome.Sharp.IconButton publicPoolButton;
         private FontAwesome.Sharp.IconButton roomButton;
     }
