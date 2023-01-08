@@ -72,7 +72,7 @@ namespace hotel_app.Forms.Functions
 
         }
         //Movement with joystick
-        private void upButton_Click(object sender, EventArgs e)
+        public void upButton_Click(object sender, EventArgs e)
         {
             if (trojan1PictureBox.Top > 32)
             {
@@ -80,15 +80,15 @@ namespace hotel_app.Forms.Functions
             }
         }
 
-        private void downButton_Click(object sender, EventArgs e)
+        public void downButton_Click(object sender, EventArgs e)
         {
             if (trojan1PictureBox.Top < 550)
             {
                 trojan1PictureBox.Location = new Point(trojan1PictureBox.Location.X, trojan1PictureBox.Location.Y + speed);
             }
         }
-
-        private void rightButton_Click(object sender, EventArgs e)
+        
+        public void rightButton_Click(object sender, EventArgs e)
         {
             if (trojan1PictureBox.Left < 919)
             {
@@ -97,7 +97,7 @@ namespace hotel_app.Forms.Functions
             }
         }
 
-        private void leftButton_Click(object sender, EventArgs e)
+        public void leftButton_Click(object sender, EventArgs e)
         {
             if (trojan1PictureBox.Left > 60)
             {
@@ -106,7 +106,7 @@ namespace hotel_app.Forms.Functions
             }
         }
 
-        private void parkingButton_Click(object sender, EventArgs e)
+        public void parkingButton_Click(object sender, EventArgs e)
         {
             if (trojan1PictureBox.Bounds.IntersectsWith(parkingSlot1.Bounds) == true)
             {

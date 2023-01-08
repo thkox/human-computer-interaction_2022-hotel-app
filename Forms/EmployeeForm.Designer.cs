@@ -63,7 +63,7 @@ namespace hotel_app.Forms
             this.menuPanel.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.menuPanel.Location = new System.Drawing.Point(0, 0);
             this.menuPanel.Name = "menuPanel";
-            this.menuPanel.Size = new System.Drawing.Size(300, 939);
+            this.menuPanel.Size = new System.Drawing.Size(300, 800);
             this.menuPanel.TabIndex = 0;
             // 
             // olymposGardensButton
@@ -87,7 +87,7 @@ namespace hotel_app.Forms
             this.olymposGardensButton.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.olymposGardensButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.olymposGardensButton.UseVisualStyleBackColor = true;
-            this.olymposGardensButton.Click += new System.EventHandler(this.tvButton_Click);
+            this.olymposGardensButton.Click += new System.EventHandler(this.olymposGardensButton_Click);
             // 
             // courtyardZeusButton
             // 
@@ -110,7 +110,7 @@ namespace hotel_app.Forms
             this.courtyardZeusButton.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.courtyardZeusButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.courtyardZeusButton.UseVisualStyleBackColor = true;
-            this.courtyardZeusButton.Click += new System.EventHandler(this.lightsButton_Click);
+            this.courtyardZeusButton.Click += new System.EventHandler(this.courtyardZeusButton_Click);
             // 
             // zeusPalaceButton
             // 
@@ -133,7 +133,7 @@ namespace hotel_app.Forms
             this.zeusPalaceButton.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.zeusPalaceButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.zeusPalaceButton.UseVisualStyleBackColor = true;
-            this.zeusPalaceButton.Click += new System.EventHandler(this.privateThermostatButton_Click);
+            this.zeusPalaceButton.Click += new System.EventHandler(this.zeusPalaceButton_Click);
             // 
             // panel1
             // 
@@ -164,7 +164,7 @@ namespace hotel_app.Forms
             this.titlelabel.Dock = System.Windows.Forms.DockStyle.Top;
             this.titlelabel.Location = new System.Drawing.Point(300, 0);
             this.titlelabel.Name = "titlelabel";
-            this.titlelabel.Size = new System.Drawing.Size(1304, 100);
+            this.titlelabel.Size = new System.Drawing.Size(1100, 100);
             this.titlelabel.TabIndex = 1;
             // 
             // childFormLabel
@@ -200,7 +200,7 @@ namespace hotel_app.Forms
             this.childFormPanel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.childFormPanel.Location = new System.Drawing.Point(300, 100);
             this.childFormPanel.Name = "childFormPanel";
-            this.childFormPanel.Size = new System.Drawing.Size(1304, 839);
+            this.childFormPanel.Size = new System.Drawing.Size(1100, 700);
             this.childFormPanel.TabIndex = 2;
             // 
             // label3
@@ -210,7 +210,7 @@ namespace hotel_app.Forms
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Comic Sans MS", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(362, 339);
+            this.label3.Location = new System.Drawing.Point(260, 270);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(692, 232);
             this.label3.TabIndex = 8;
@@ -222,7 +222,7 @@ namespace hotel_app.Forms
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Edwardian Script ITC", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label2.ForeColor = System.Drawing.Color.Goldenrod;
-            this.label2.Location = new System.Drawing.Point(615, 238);
+            this.label2.Location = new System.Drawing.Point(513, 169);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(231, 57);
             this.label2.TabIndex = 7;
@@ -235,7 +235,7 @@ namespace hotel_app.Forms
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Edwardian Script ITC", 54.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label1.ForeColor = System.Drawing.Color.Goldenrod;
-            this.label1.Location = new System.Drawing.Point(473, 171);
+            this.label1.Location = new System.Drawing.Point(371, 102);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(318, 86);
             this.label1.TabIndex = 6;
@@ -247,7 +247,7 @@ namespace hotel_app.Forms
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(139)))), ((int)(((byte)(180)))));
-            this.ClientSize = new System.Drawing.Size(1604, 939);
+            this.ClientSize = new System.Drawing.Size(1400, 800);
             this.Controls.Add(this.childFormPanel);
             this.Controls.Add(this.titlelabel);
             this.Controls.Add(this.menuPanel);

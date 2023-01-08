@@ -19,13 +19,9 @@ namespace hotel_app.Forms
         private Form currentChildForm = new Form();
 
         //forms that we can open now
-        PoolMenuForm pool = new PoolMenuForm();
-        ThermostatForm thermostat = new ThermostatForm();
-        LightsForm lights = new LightsForm();
-        TVForm tv = new TVForm();
-        RadioForm radio = new RadioForm();  
-        GPSMenuForm gps = new GPSMenuForm();
-        MainDoorForm door = new MainDoorForm();
+        ZeusPalaceMenuForm zeusPalaceMenu = new ZeusPalaceMenuForm();
+        CourtyardZeusForm courtyardZeus = new CourtyardZeusForm();
+        OlymposGardensForm olymposGardens = new OlymposGardensForm();
 
         public EmployeeForm()
         {
@@ -35,14 +31,9 @@ namespace hotel_app.Forms
             menuPanel.Controls.Add(leftBorderBtn);
 
             //Form
-            this.Text = "Room App";
+            this.Text = "Staff App";
             //this.ControlBox = false;
             this.DoubleBuffered= true;
-
-            //Parameters for Room Forms
-            thermostat.thermostatLabel.Text = "Living Room Thermostat";
-            pool.poolThermostat.thermostatLabel.Text = "Private Pool: Thermostat";
-            pool.waterLevel.waterLevelLabel.Text = "Private Pool: Water Level";
         }
 
         private void ActivateButton(object senderBtn)
@@ -101,47 +92,23 @@ namespace hotel_app.Forms
             childForm.Show();
         }
 
-        private void poolButton_Click(object sender, EventArgs e)
+        private void zeusPalaceButton_Click(object sender, EventArgs e)
         {
             ActivateButton(sender);
-            OpenChildForm(pool);
+            OpenChildForm(zeusPalaceMenu);
+            
         }
 
-        private void privateThermostatButton_Click(object sender, EventArgs e)
+        private void courtyardZeusButton_Click(object sender, EventArgs e)
         {
             ActivateButton(sender);
-            OpenChildForm(thermostat);
+            OpenChildForm(courtyardZeus);
         }
 
-        private void lightsButton_Click(object sender, EventArgs e)
+        private void olymposGardensButton_Click(object sender, EventArgs e)
         {
             ActivateButton(sender);
-            OpenChildForm(lights);
-        }
-
-        private void tvButton_Click(object sender, EventArgs e)
-        {
-            ActivateButton(sender);
-            OpenChildForm(tv);
-        }
-
-        private void radioButton_Click(object sender, EventArgs e)
-        {
-            ActivateButton(sender);
-            OpenChildForm(radio);
-        }
-
-
-        private void mainDoorButton_Click(object sender, EventArgs e)
-        {
-            ActivateButton(sender);
-            OpenChildForm(door);
-        }
-
-        private void gpsButton_Click(object sender, EventArgs e)
-        {
-            ActivateButton(sender);
-            OpenChildForm(gps);
+            OpenChildForm(olymposGardens);
         }
 
         private void Reset()
@@ -161,6 +128,5 @@ namespace hotel_app.Forms
             }
             Reset();
         }
-
     }
 }
