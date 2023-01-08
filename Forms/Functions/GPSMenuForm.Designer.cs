@@ -63,6 +63,7 @@
             this.availableFacilitiesButton.Text = "Available Facilities";
             this.availableFacilitiesButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.availableFacilitiesButton.UseVisualStyleBackColor = false;
+            this.availableFacilitiesButton.Click += new System.EventHandler(this.availableFacilitiesButton_Click);
             // 
             // changeParkingSlotButton
             // 
