@@ -47,12 +47,15 @@ namespace hotel_app.Forms
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.userNameLabel = new System.Windows.Forms.Label();
             this.menuPanel.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.titlelabel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.currentChildFormIcon)).BeginInit();
             this.childFormPanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // menuPanel
@@ -234,6 +237,8 @@ namespace hotel_app.Forms
             // titlelabel
             // 
             this.titlelabel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(124)))), ((int)(((byte)(177)))));
+            this.titlelabel.Controls.Add(this.pictureBox2);
+            this.titlelabel.Controls.Add(this.userNameLabel);
             this.titlelabel.Controls.Add(this.childFormLabel);
             this.titlelabel.Controls.Add(this.currentChildFormIcon);
             this.titlelabel.Dock = System.Windows.Forms.DockStyle.Top;
@@ -317,6 +322,29 @@ namespace hotel_app.Forms
             this.label1.Text = "Zeus Palace\r\n";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = global::hotel_app.Properties.Resources.old_man;
+            this.pictureBox2.Location = new System.Drawing.Point(1022, 27);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(47, 44);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox2.TabIndex = 15;
+            this.pictureBox2.TabStop = false;
+            // 
+            // userNameLabel
+            // 
+            this.userNameLabel.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.userNameLabel.AutoSize = true;
+            this.userNameLabel.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.userNameLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(228)))), ((int)(((byte)(238)))));
+            this.userNameLabel.Location = new System.Drawing.Point(910, 29);
+            this.userNameLabel.Name = "userNameLabel";
+            this.userNameLabel.Size = new System.Drawing.Size(96, 42);
+            this.userNameLabel.TabIndex = 14;
+            this.userNameLabel.Text = "Odysseas\nTrojan User";
+            this.userNameLabel.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            // 
             // Client1Form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -342,6 +370,7 @@ namespace hotel_app.Forms
             ((System.ComponentModel.ISupportInitialize)(this.currentChildFormIcon)).EndInit();
             this.childFormPanel.ResumeLayout(false);
             this.childFormPanel.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -364,5 +393,7 @@ namespace hotel_app.Forms
         private PictureBox pictureBox1;
         private FontAwesome.Sharp.IconButton mainDoorButton;
         private FontAwesome.Sharp.IconButton gpsButton;
+        private PictureBox pictureBox2;
+        private Label userNameLabel;
     }
 }

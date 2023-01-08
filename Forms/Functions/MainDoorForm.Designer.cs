@@ -48,7 +48,7 @@
             this.doorOpenButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(79)))), ((int)(((byte)(134)))), ((int)(((byte)(184)))));
             this.doorOpenButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.doorOpenButton.Image = global::hotel_app.Properties.Resources.DoorOpen;
-            this.doorOpenButton.Location = new System.Drawing.Point(682, 172);
+            this.doorOpenButton.Location = new System.Drawing.Point(673, 142);
             this.doorOpenButton.Name = "doorOpenButton";
             this.doorOpenButton.Size = new System.Drawing.Size(140, 140);
             this.doorOpenButton.TabIndex = 0;
@@ -62,7 +62,7 @@
             this.doorAlmostOpenButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(79)))), ((int)(((byte)(134)))), ((int)(((byte)(184)))));
             this.doorAlmostOpenButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.doorAlmostOpenButton.Image = global::hotel_app.Properties.Resources.DoorAlmostOpen;
-            this.doorAlmostOpenButton.Location = new System.Drawing.Point(477, 172);
+            this.doorAlmostOpenButton.Location = new System.Drawing.Point(468, 142);
             this.doorAlmostOpenButton.Name = "doorAlmostOpenButton";
             this.doorAlmostOpenButton.Size = new System.Drawing.Size(140, 140);
             this.doorAlmostOpenButton.TabIndex = 1;
@@ -76,7 +76,7 @@
             this.doorClosed.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(79)))), ((int)(((byte)(134)))), ((int)(((byte)(184)))));
             this.doorClosed.Cursor = System.Windows.Forms.Cursors.Hand;
             this.doorClosed.Image = global::hotel_app.Properties.Resources.DoorClosed;
-            this.doorClosed.Location = new System.Drawing.Point(280, 172);
+            this.doorClosed.Location = new System.Drawing.Point(271, 142);
             this.doorClosed.Name = "doorClosed";
             this.doorClosed.Size = new System.Drawing.Size(140, 140);
             this.doorClosed.TabIndex = 2;
@@ -118,7 +118,7 @@
             this.doorState.AutoSize = true;
             this.doorState.Font = new System.Drawing.Font("Comic Sans MS", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point);
             this.doorState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(241)))), ((int)(((byte)(246)))));
-            this.doorState.Location = new System.Drawing.Point(199, 113);
+            this.doorState.Location = new System.Drawing.Point(190, 83);
             this.doorState.Name = "doorState";
             this.doorState.Size = new System.Drawing.Size(154, 30);
             this.doorState.TabIndex = 5;
@@ -147,7 +147,7 @@
             this.doorStateLabel.AutoSize = true;
             this.doorStateLabel.Font = new System.Drawing.Font("Tahoma", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
             this.doorStateLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(241)))), ((int)(((byte)(246)))));
-            this.doorStateLabel.Location = new System.Drawing.Point(681, 120);
+            this.doorStateLabel.Location = new System.Drawing.Point(450, 314);
             this.doorStateLabel.Name = "doorStateLabel";
             this.doorStateLabel.Size = new System.Drawing.Size(141, 23);
             this.doorStateLabel.TabIndex = 16;
@@ -160,7 +160,7 @@
             this.stairsStateLabel.AutoSize = true;
             this.stairsStateLabel.Font = new System.Drawing.Font("Tahoma", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
             this.stairsStateLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(241)))), ((int)(((byte)(246)))));
-            this.stairsStateLabel.Location = new System.Drawing.Point(672, 354);
+            this.stairsStateLabel.Location = new System.Drawing.Point(441, 573);
             this.stairsStateLabel.Name = "stairsStateLabel";
             this.stairsStateLabel.Size = new System.Drawing.Size(150, 23);
             this.stairsStateLabel.TabIndex = 17;
