@@ -18,14 +18,16 @@ namespace hotel_app.Forms.Functions
     {
 
         private Panel ZeusPalaceMenuTabs = new Panel();
-
         private PoolMenuForm poolMenu = new PoolMenuForm();
-
         private Form currentChildForm = new Form();
 
         public ZeusPalaceMenuForm()
         {
             InitializeComponent();
+
+            //Parameters for Room Forms
+            poolMenu.poolThermostat.thermostatLabel.Text = "Public Pool: Thermostat";
+            poolMenu.waterLevel.waterLevelLabel.Text = "Public Pool: Water Level";
         }
 
         private void  OpenZeusPalaceMenuFunctionForm(Form childForm) 
@@ -53,12 +55,17 @@ namespace hotel_app.Forms.Functions
             backPictureBox.Hide();
         }
 
-        private void generalPoolButton_Click(object sender, EventArgs e)
+        private void publicPoolButton_Click(object sender, EventArgs e)
         {
             OpenZeusPalaceMenuFunctionForm(poolMenu);
-            
             backPictureBox.Show();
         }
 
+        private void roomButton_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        //create an Event Listener to Hide the ZeusPalaceMenuForm.backPictureBox when the publicPoolButton_Click is triggered.
     }
 }

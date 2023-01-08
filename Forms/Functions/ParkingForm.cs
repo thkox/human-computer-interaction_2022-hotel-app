@@ -80,6 +80,7 @@ namespace hotel_app.Forms.Functions
                 trojan1PictureBox.Location = new Point(173, 263);
                  
                 trojan4PictureBox.Location = new Point(807, 251);
+                trojan4PictureBox.Image = Properties.Resources.trojan_horse_reversed;
                 olymbosGardensPanel.Show();
             }
 
@@ -89,6 +90,7 @@ namespace hotel_app.Forms.Functions
                 trojan4PictureBox.Location = new Point(807, 251);
 
                 trojan1PictureBox.Location = new Point(173, 263);
+                trojan1PictureBox.Image = Properties.Resources.trojan;
                 zeusCourtyardPanel.Show();               
             }
         }

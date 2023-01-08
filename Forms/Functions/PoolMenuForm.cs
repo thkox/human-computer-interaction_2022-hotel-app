@@ -41,8 +41,6 @@ namespace hotel_app.Forms.Functions
         private void PoolMenuForm_Load(object sender, EventArgs e)
         {
             poolMenuTabs = poolLoadFormsPanel;
-            //poolThermostat.thermostatLabel.Text = "Private Pool: Thermostat";
-            //waterLevel.waterLevelLabel.Text = "Private Pool: Water Level";
             backPictureBox.Hide();
         }
 
