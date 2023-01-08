@@ -20,6 +20,7 @@ namespace hotel_app.Forms.Functions
         private Panel ZeusPalaceMenuTabs = new Panel();
         private PoolMenuForm poolMenu = new PoolMenuForm();
         private Form currentChildForm = new Form();
+        private RoomsForm rooms = new RoomsForm();
 
         public ZeusPalaceMenuForm()
         {
@@ -52,6 +53,11 @@ namespace hotel_app.Forms.Functions
             poolMenu.sensorButton.Click += new EventHandler(poolMenuButton_Click);
             
             poolMenu.backPictureBox.Click += new EventHandler(backButton_Click);
+            
+            
+            //same actions for rooms button
+
+            
         }
 
         private void backButton_Click(object sender, EventArgs e)
@@ -79,7 +85,8 @@ namespace hotel_app.Forms.Functions
 
         private void roomButton_Click(object sender, EventArgs e)
         {
-
+            OpenZeusPalaceMenuFunctionForm(rooms);
+            backPictureBox2.Show();
         }
 
         //create an Event Listener to Hide the ZeusPalaceMenuForm.backPictureBox when the publicPoolButton_Click is triggered.
