@@ -42,16 +42,8 @@ namespace hotel_app.Forms
             pool.poolThermostat.thermostatLabel.Text = "Private Pool: Thermostat";
             pool.waterLevel.waterLevelLabel.Text = "Private Pool: Water Level";
         }
-        //Structs RGBcolours
-        private struct RGBColors
-        {
-            public static Color color1 = Color.Blue;
-            public static Color color2 = Color.Red;
-            public static Color color3 = Color.Green;
-        }
 
-
-        private void ActivateButton(object senderBtn, Color color)
+        private void ActivateButton(object senderBtn)
         {
             if (senderBtn != null)
             {
@@ -110,31 +102,31 @@ namespace hotel_app.Forms
 
         private void poolButton_Click(object sender, EventArgs e)
         {
-            ActivateButton(sender, RGBColors.color3);
+            ActivateButton(sender);
             OpenChildForm(pool);
         }
 
         private void privateThermostatButton_Click(object sender, EventArgs e)
         {
-            ActivateButton(sender, RGBColors.color2);
+            ActivateButton(sender);
             OpenChildForm(thermostat);
         }
 
         private void lightsButton_Click(object sender, EventArgs e)
         {
-            ActivateButton(sender, RGBColors.color1);
+            ActivateButton(sender);
             OpenChildForm(lights);
         }
 
         private void tvButton_Click(object sender, EventArgs e)
         {
-            ActivateButton(sender, RGBColors.color3);
+            ActivateButton(sender);
             OpenChildForm(tv);
         }
 
         private void radioButton_Click(object sender, EventArgs e)
         {
-            ActivateButton(sender, RGBColors.color2);
+            ActivateButton(sender);
             OpenChildForm(radio);
         }
 
