@@ -131,15 +131,16 @@ namespace hotel_app.Forms
             Reset();
         }
 
-        private void EmployeeForm_Load(object sender, EventArgs e)
-        {
-            Application.Exit();
-        }
         private void zeusPalaceButton_Click(object sender, EventArgs e)
         {
             ActivateButton(sender);
             OpenChildForm(zeusPalaceMenu);
 
+        }
+
+        private void EmployeeForm_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
         }
     }
 }
