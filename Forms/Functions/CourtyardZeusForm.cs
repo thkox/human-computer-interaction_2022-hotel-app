@@ -13,7 +13,7 @@ namespace hotel_app.Forms.Functions
 {
     public partial class CourtyardZeusForm : Form
     {
-        bool moveRight, moveLeft, moveUp, moveDown;
+        bool moveRight, moveLeft, moveUp, moveDown;//if we delete the timer then we can delete these bools
         int speed = 12;
         public CourtyardZeusForm()
         {
@@ -46,15 +46,7 @@ namespace hotel_app.Forms.Functions
             {
                 parkingButton.Enabled = true;
             }
-            else if (trojan1PictureBox.Bounds.IntersectsWith(parkingSlot2.Bounds) == true)
-            {
-                parkingButton.Enabled = true;
-            }
             else if (trojan1PictureBox.Bounds.IntersectsWith(parkingSlot3.Bounds) == true)
-            {
-                parkingButton.Enabled = true;
-            }
-            else if (trojan1PictureBox.Bounds.IntersectsWith(parkingSlot4.Bounds) == true)
             {
                 parkingButton.Enabled = true;
             }
@@ -111,27 +103,14 @@ namespace hotel_app.Forms.Functions
             if (trojan1PictureBox.Bounds.IntersectsWith(parkingSlot1.Bounds) == true)
             {
                 trojan1PictureBox.Location = new Point(882, 45);
-                moveTimer.Stop();
-            }
-            else if (trojan1PictureBox.Bounds.IntersectsWith(parkingSlot2.Bounds) == true)
-            {
-                trojan1PictureBox.Location = new Point(882, 171);
-                moveTimer.Stop();
             }
             else if (trojan1PictureBox.Bounds.IntersectsWith(parkingSlot3.Bounds) == true)
             {
                 trojan1PictureBox.Location = new Point(882, 294);
-                moveTimer.Stop();
-            }
-            else if (trojan1PictureBox.Bounds.IntersectsWith(parkingSlot4.Bounds) == true)
-            {
-                trojan1PictureBox.Location = new Point(882, 417);
-                moveTimer.Stop();
             }
             else if (trojan1PictureBox.Bounds.IntersectsWith(parkingSlot5.Bounds) == true)
             {
                 trojan1PictureBox.Location = new Point(882, 542);
-                moveTimer.Stop();
             }
         }
 

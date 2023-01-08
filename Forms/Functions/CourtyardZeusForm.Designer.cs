@@ -35,13 +35,13 @@
             this.rightButton = new FontAwesome.Sharp.IconButton();
             this.downButton = new FontAwesome.Sharp.IconButton();
             this.trojan1PictureBox = new System.Windows.Forms.PictureBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.CourtyardZeusLabel = new System.Windows.Forms.Label();
+            this.transitionLabel = new System.Windows.Forms.Label();
+            this.courtyardZeusLabel = new System.Windows.Forms.Label();
             this.LeftTransitionPictureBox = new FontAwesome.Sharp.IconPictureBox();
             this.parkingSlot5 = new System.Windows.Forms.PictureBox();
-            this.parkingSlot4 = new System.Windows.Forms.PictureBox();
+            this.trojan3PictureBox = new System.Windows.Forms.PictureBox();
             this.parkingSlot3 = new System.Windows.Forms.PictureBox();
-            this.parkingSlot2 = new System.Windows.Forms.PictureBox();
+            this.trojan2PictureBox = new System.Windows.Forms.PictureBox();
             this.parkingSlot1 = new System.Windows.Forms.PictureBox();
             this.parkingButton = new FontAwesome.Sharp.IconButton();
             this.parkingPictureBox = new System.Windows.Forms.PictureBox();
@@ -50,9 +50,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.trojan1PictureBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.LeftTransitionPictureBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.parkingSlot5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.parkingSlot4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.trojan3PictureBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.parkingSlot3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.parkingSlot2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.trojan2PictureBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.parkingSlot1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.parkingPictureBox)).BeginInit();
             this.SuspendLayout();
@@ -64,13 +64,13 @@
             this.parkingPanel.Controls.Add(this.rightButton);
             this.parkingPanel.Controls.Add(this.downButton);
             this.parkingPanel.Controls.Add(this.trojan1PictureBox);
-            this.parkingPanel.Controls.Add(this.label1);
-            this.parkingPanel.Controls.Add(this.CourtyardZeusLabel);
+            this.parkingPanel.Controls.Add(this.transitionLabel);
+            this.parkingPanel.Controls.Add(this.courtyardZeusLabel);
             this.parkingPanel.Controls.Add(this.LeftTransitionPictureBox);
             this.parkingPanel.Controls.Add(this.parkingSlot5);
-            this.parkingPanel.Controls.Add(this.parkingSlot4);
+            this.parkingPanel.Controls.Add(this.trojan3PictureBox);
             this.parkingPanel.Controls.Add(this.parkingSlot3);
-            this.parkingPanel.Controls.Add(this.parkingSlot2);
+            this.parkingPanel.Controls.Add(this.trojan2PictureBox);
             this.parkingPanel.Controls.Add(this.parkingSlot1);
             this.parkingPanel.Controls.Add(this.parkingButton);
             this.parkingPanel.Controls.Add(this.parkingPictureBox);
@@ -162,27 +162,27 @@
             this.trojan1PictureBox.TabIndex = 0;
             this.trojan1PictureBox.TabStop = false;
             // 
-            // label1
+            // transitionLabel
             // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Silver;
-            this.label1.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label1.Location = new System.Drawing.Point(53, 327);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(73, 46);
-            this.label1.TabIndex = 9;
-            this.label1.Text = "Olympos\r\nGardens";
+            this.transitionLabel.AutoSize = true;
+            this.transitionLabel.BackColor = System.Drawing.Color.Silver;
+            this.transitionLabel.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.transitionLabel.Location = new System.Drawing.Point(53, 327);
+            this.transitionLabel.Name = "transitionLabel";
+            this.transitionLabel.Size = new System.Drawing.Size(73, 46);
+            this.transitionLabel.TabIndex = 9;
+            this.transitionLabel.Text = "Olympos\r\nGardens";
             // 
-            // CourtyardZeusLabel
+            // courtyardZeusLabel
             // 
-            this.CourtyardZeusLabel.AutoSize = true;
-            this.CourtyardZeusLabel.BackColor = System.Drawing.Color.Transparent;
-            this.CourtyardZeusLabel.Font = new System.Drawing.Font("Comic Sans MS", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.CourtyardZeusLabel.Location = new System.Drawing.Point(456, 0);
-            this.CourtyardZeusLabel.Name = "CourtyardZeusLabel";
-            this.CourtyardZeusLabel.Size = new System.Drawing.Size(171, 30);
-            this.CourtyardZeusLabel.TabIndex = 8;
-            this.CourtyardZeusLabel.Text = "Zeus Courtyard";
+            this.courtyardZeusLabel.AutoSize = true;
+            this.courtyardZeusLabel.BackColor = System.Drawing.Color.Transparent;
+            this.courtyardZeusLabel.Font = new System.Drawing.Font("Comic Sans MS", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.courtyardZeusLabel.Location = new System.Drawing.Point(456, 0);
+            this.courtyardZeusLabel.Name = "courtyardZeusLabel";
+            this.courtyardZeusLabel.Size = new System.Drawing.Size(171, 30);
+            this.courtyardZeusLabel.TabIndex = 8;
+            this.courtyardZeusLabel.Text = "Zeus Courtyard";
             // 
             // LeftTransitionPictureBox
             // 
@@ -207,14 +207,16 @@
             this.parkingSlot5.TabIndex = 6;
             this.parkingSlot5.TabStop = false;
             // 
-            // parkingSlot4
+            // trojan3PictureBox
             // 
-            this.parkingSlot4.BackColor = System.Drawing.Color.Silver;
-            this.parkingSlot4.Location = new System.Drawing.Point(848, 454);
-            this.parkingSlot4.Name = "parkingSlot4";
-            this.parkingSlot4.Size = new System.Drawing.Size(159, 13);
-            this.parkingSlot4.TabIndex = 5;
-            this.parkingSlot4.TabStop = false;
+            this.trojan3PictureBox.BackColor = System.Drawing.Color.Silver;
+            this.trojan3PictureBox.Image = global::hotel_app.Properties.Resources.trojan_horse_reversed;
+            this.trojan3PictureBox.Location = new System.Drawing.Point(882, 417);
+            this.trojan3PictureBox.Name = "trojan3PictureBox";
+            this.trojan3PictureBox.Size = new System.Drawing.Size(88, 89);
+            this.trojan3PictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.trojan3PictureBox.TabIndex = 5;
+            this.trojan3PictureBox.TabStop = false;
             // 
             // parkingSlot3
             // 
@@ -225,14 +227,16 @@
             this.parkingSlot3.TabIndex = 4;
             this.parkingSlot3.TabStop = false;
             // 
-            // parkingSlot2
+            // trojan2PictureBox
             // 
-            this.parkingSlot2.BackColor = System.Drawing.Color.Silver;
-            this.parkingSlot2.Location = new System.Drawing.Point(848, 204);
-            this.parkingSlot2.Name = "parkingSlot2";
-            this.parkingSlot2.Size = new System.Drawing.Size(159, 13);
-            this.parkingSlot2.TabIndex = 3;
-            this.parkingSlot2.TabStop = false;
+            this.trojan2PictureBox.BackColor = System.Drawing.Color.Silver;
+            this.trojan2PictureBox.Image = global::hotel_app.Properties.Resources.trojan_horse_reversed;
+            this.trojan2PictureBox.Location = new System.Drawing.Point(882, 171);
+            this.trojan2PictureBox.Name = "trojan2PictureBox";
+            this.trojan2PictureBox.Size = new System.Drawing.Size(88, 89);
+            this.trojan2PictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.trojan2PictureBox.TabIndex = 3;
+            this.trojan2PictureBox.TabStop = false;
             // 
             // parkingSlot1
             // 
@@ -292,9 +296,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.trojan1PictureBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.LeftTransitionPictureBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.parkingSlot5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.parkingSlot4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.trojan3PictureBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.parkingSlot3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.parkingSlot2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.trojan2PictureBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.parkingSlot1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.parkingPictureBox)).EndInit();
             this.ResumeLayout(false);
@@ -310,12 +314,12 @@
         private PictureBox trojan1PictureBox;
         private PictureBox parkingSlot1;
         private PictureBox parkingSlot5;
-        private PictureBox parkingSlot4;
+        private PictureBox trojan3PictureBox;
         private PictureBox parkingSlot3;
-        private PictureBox parkingSlot2;
+        private PictureBox trojan2PictureBox;
         private FontAwesome.Sharp.IconPictureBox LeftTransitionPictureBox;
-        private Label CourtyardZeusLabel;
-        private Label label1;
+        private Label courtyardZeusLabel;
+        private Label transitionLabel;
         private FontAwesome.Sharp.IconButton downButton;
         private FontAwesome.Sharp.IconButton upButton;
         private FontAwesome.Sharp.IconButton leftButton;
