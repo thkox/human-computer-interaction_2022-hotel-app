@@ -15,6 +15,8 @@ namespace hotel_app.Forms.Functions
     {
         bool moveRight, moveLeft, moveUp, moveDown;//if we delete the timer then we can delete these bools
         int speed = 12;
+
+        private OlymposGardensForm olymposGardensForm = new OlymposGardensForm();
         public CourtyardZeusForm()
         {
             InitializeComponent();
@@ -56,11 +58,14 @@ namespace hotel_app.Forms.Functions
             }
             else parkingButton.Enabled = false;
 
+            
             //Enable form transition
             if (trojan1PictureBox.Bounds.IntersectsWith(LeftTransitionPictureBox.Bounds) == true)
             {
+                //this.Hide();
                 
             }
+            
 
         }
         //Movement with joystick

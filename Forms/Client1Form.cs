@@ -19,7 +19,6 @@ namespace hotel_app.Forms
         private Form currentChildForm = new Form();
 
         //forms that we can open now
-        PoolMenuForm pool = new PoolMenuForm();
         ThermostatForm thermostat = new ThermostatForm();
         LightsForm lights = new LightsForm();
         TVForm tv = new TVForm();
@@ -41,8 +40,6 @@ namespace hotel_app.Forms
 
             //Parameters for Room Forms
             thermostat.thermostatLabel.Text = "Living Room Thermostat";
-            pool.poolThermostat.thermostatLabel.Text = "Private Pool: Thermostat";
-            pool.waterLevel.waterLevelLabel.Text = "Private Pool: Water Level";
         }
 
         private void ActivateButton(object senderBtn)
@@ -99,12 +96,6 @@ namespace hotel_app.Forms
             childFormPanel.Tag = childForm;
             childForm.BringToFront();
             childForm.Show();
-        }
-
-        private void poolButton_Click(object sender, EventArgs e)
-        {
-            ActivateButton(sender);
-            OpenChildForm(pool);
         }
 
         private void privateThermostatButton_Click(object sender, EventArgs e)
