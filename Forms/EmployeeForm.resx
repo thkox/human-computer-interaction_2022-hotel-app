@@ -60,11 +60,10 @@
   <data name="label3.Text" xml:space="preserve">
     <value>Welcome to our Zeus Hotel!
 
-You can control the basic functions of your room from the left menu.
-If you have any question, do not hesitate to ask us as soon as possible.
+You can control the basic functions of the hotel from the left menu.
+If you have any question, do NOT hesitate to ask the supervisor as soon as possible.
 
-Have a wonderful visit,
-                           the stuff
+Have a wonderful day!
  </value>
   </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />

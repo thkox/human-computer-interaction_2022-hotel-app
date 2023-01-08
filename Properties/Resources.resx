@@ -124,9 +124,6 @@
   <data name="powerIdle" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\powerIdle.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="trojan" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\trojan.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="powerOn" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\powerOn.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -145,17 +142,23 @@
   <data name="powerOff" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\powerOff.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="MainLogo" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\MainLogo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="DoorClosed" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\DoorClosed.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="woman" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\woman.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="logoMenuFinal" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\logoMenuFinal.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="garden" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\garden.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="parking" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\parking.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MainLogo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainLogo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="evolution_preview" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\evolution_preview.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -166,10 +169,16 @@
   <data name="trojan-horse-reversed" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\trojan-horse-reversed.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="garden" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\garden.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="trojan" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\trojan.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="old-man1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\old-man1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="old-man" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\old-man.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="man" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\man.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

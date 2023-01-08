@@ -143,9 +143,29 @@ namespace hotel_app.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap man {
+            get {
+                object obj = ResourceManager.GetObject("man", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap old_man {
             get {
                 object obj = ResourceManager.GetObject("old-man", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap old_man1 {
+            get {
+                object obj = ResourceManager.GetObject("old-man1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -236,6 +256,16 @@ namespace hotel_app.Properties {
         internal static System.Drawing.Bitmap trojan_horse_reversed {
             get {
                 object obj = ResourceManager.GetObject("trojan-horse-reversed", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap woman {
+            get {
+                object obj = ResourceManager.GetObject("woman", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

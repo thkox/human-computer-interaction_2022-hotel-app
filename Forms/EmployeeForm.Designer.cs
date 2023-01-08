@@ -44,12 +44,15 @@ namespace hotel_app.Forms
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.label4 = new System.Windows.Forms.Label();
             this.menuPanel.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.titlelabel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.currentChildFormIcon)).BeginInit();
             this.childFormPanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.SuspendLayout();
             // 
             // menuPanel
@@ -159,6 +162,8 @@ namespace hotel_app.Forms
             // titlelabel
             // 
             this.titlelabel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(124)))), ((int)(((byte)(177)))));
+            this.titlelabel.Controls.Add(this.pictureBox3);
+            this.titlelabel.Controls.Add(this.label4);
             this.titlelabel.Controls.Add(this.childFormLabel);
             this.titlelabel.Controls.Add(this.currentChildFormIcon);
             this.titlelabel.Dock = System.Windows.Forms.DockStyle.Top;
@@ -210,9 +215,9 @@ namespace hotel_app.Forms
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Comic Sans MS", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(260, 270);
+            this.label3.Location = new System.Drawing.Point(174, 240);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(692, 232);
+            this.label3.Size = new System.Drawing.Size(825, 203);
             this.label3.TabIndex = 8;
             this.label3.Text = resources.GetString("label3.Text");
             // 
@@ -242,6 +247,29 @@ namespace hotel_app.Forms
             this.label1.Text = "Zeus Palace\r\n";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Image = global::hotel_app.Properties.Resources.man;
+            this.pictureBox3.Location = new System.Drawing.Point(1012, 27);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(47, 44);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox3.TabIndex = 21;
+            this.pictureBox3.TabStop = false;
+            // 
+            // label4
+            // 
+            this.label4.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(228)))), ((int)(((byte)(238)))));
+            this.label4.Location = new System.Drawing.Point(913, 27);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(86, 42);
+            this.label4.TabIndex = 20;
+            this.label4.Text = "Marios\r\nEmployee";
+            this.label4.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            // 
             // EmployeeForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -267,6 +295,7 @@ namespace hotel_app.Forms
             ((System.ComponentModel.ISupportInitialize)(this.currentChildFormIcon)).EndInit();
             this.childFormPanel.ResumeLayout(false);
             this.childFormPanel.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -286,5 +315,7 @@ namespace hotel_app.Forms
         private Label label2;
         private Label label1;
         private PictureBox pictureBox1;
+        private PictureBox pictureBox3;
+        private Label label4;
     }
 }
