@@ -55,7 +55,7 @@ namespace hotel_app.Forms.Functions
             backPictureBox.Hide();
         }
 
-        private void generalPoolButton_Click(object sender, EventArgs e)
+        private void publicPoolButton_Click(object sender, EventArgs e)
         {
             OpenZeusPalaceMenuFunctionForm(poolMenu);
             backPictureBox.Show();
@@ -65,5 +65,7 @@ namespace hotel_app.Forms.Functions
         {
 
         }
+
+        //create an Event Listener to Hide the ZeusPalaceMenuForm.backPictureBox when the publicPoolButton_Click is triggered.
     }
 }

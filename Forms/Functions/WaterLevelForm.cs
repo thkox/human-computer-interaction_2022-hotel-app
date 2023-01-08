@@ -14,6 +14,7 @@ namespace hotel_app.Forms.Functions
     {
         private int waterLevelValue = 10;
 
+        
         public WaterLevelForm()
         {
             InitializeComponent();
