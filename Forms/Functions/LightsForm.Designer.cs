@@ -49,7 +49,7 @@
             this.lightButton1.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(241)))), ((int)(((byte)(246)))));
             this.lightButton1.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.lightButton1.IconSize = 100;
-            this.lightButton1.Location = new System.Drawing.Point(266, 211);
+            this.lightButton1.Location = new System.Drawing.Point(459, 199);
             this.lightButton1.Name = "lightButton1";
             this.lightButton1.Size = new System.Drawing.Size(163, 188);
             this.lightButton1.TabIndex = 0;
@@ -75,7 +75,7 @@
             this.lightButton2.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(241)))), ((int)(((byte)(246)))));
             this.lightButton2.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.lightButton2.IconSize = 100;
-            this.lightButton2.Location = new System.Drawing.Point(470, 211);
+            this.lightButton2.Location = new System.Drawing.Point(277, 199);
             this.lightButton2.Name = "lightButton2";
             this.lightButton2.Size = new System.Drawing.Size(163, 188);
             this.lightButton2.TabIndex = 1;
@@ -101,7 +101,7 @@
             this.lightButton3.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(241)))), ((int)(((byte)(246)))));
             this.lightButton3.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.lightButton3.IconSize = 100;
-            this.lightButton3.Location = new System.Drawing.Point(678, 211);
+            this.lightButton3.Location = new System.Drawing.Point(628, 199);
             this.lightButton3.Name = "lightButton3";
             this.lightButton3.Size = new System.Drawing.Size(163, 188);
             this.lightButton3.TabIndex = 2;
