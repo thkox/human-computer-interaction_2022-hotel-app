@@ -639,11 +639,11 @@
 
         #endregion
 
-        private Panel zeusCourtyardPanel;
+        public Panel zeusCourtyardPanel;
         private PictureBox parkingPictureBox;
         private System.Windows.Forms.Timer moveTimer;
         private FontAwesome.Sharp.IconButton parkingButton;
-        private PictureBox trojan1PictureBox;
+        public PictureBox trojan1PictureBox;
         private PictureBox parkingSlot1;
         private PictureBox parkingSlot5;
         private PictureBox trojan3PictureBox;
@@ -656,12 +656,12 @@
         private FontAwesome.Sharp.IconButton upZButton;
         private FontAwesome.Sharp.IconButton leftZButton;
         private FontAwesome.Sharp.IconButton rightZButton;
-        private Panel olymbosGardensPanel;
+        public Panel olymbosGardensPanel;
         private PictureBox trojan6PictureBox;
         private PictureBox trojan5PictureBox;
         private Label label1;
         private FontAwesome.Sharp.IconPictureBox rightTransitionPictureBox;
-        private PictureBox trojan4PictureBox;
+        public PictureBox trojan4PictureBox;
         private FontAwesome.Sharp.IconButton iconButton1;
         private FontAwesome.Sharp.IconButton iconButton2;
         private FontAwesome.Sharp.IconButton iconButton3;

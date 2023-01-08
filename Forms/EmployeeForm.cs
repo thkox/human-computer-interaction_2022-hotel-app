@@ -102,12 +102,24 @@ namespace hotel_app.Forms
         {
             ActivateButton(sender);
             OpenChildForm(parking);
+            parking.olymbosGardensPanel.Hide();
+            parking.trojan4PictureBox.Location = new Point(807, 251);
+
+            parking.trojan1PictureBox.Location = new Point(173, 263);
+            parking.trojan1PictureBox.Image = Properties.Resources.trojan;
+            parking.zeusCourtyardPanel.Show();
         }
 
         private void olymposGardensButton_Click(object sender, EventArgs e)
         {
             ActivateButton(sender);
-            //OpenChildForm(olymposGardens);
+            OpenChildForm(parking);
+            parking.zeusCourtyardPanel.Hide();
+            parking.trojan1PictureBox.Location = new Point(173, 263);
+
+            parking.trojan4PictureBox.Location = new Point(807, 251);
+            parking.trojan4PictureBox.Image = Properties.Resources.trojan_horse_reversed;
+            parking.olymbosGardensPanel.Show();
         }
 
         private void Reset()
