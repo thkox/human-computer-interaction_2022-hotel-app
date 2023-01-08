@@ -14,9 +14,9 @@ namespace hotel_app.Forms
 {
     public partial class Client1Form : Form
     {
-        private IconButton currentBtn;
-        private Panel leftBorderBtn;
-        private Form currentChildForm;
+        private IconButton currentBtn = new IconButton();
+        private Panel leftBorderBtn = new Panel();
+        private Form currentChildForm = new Form();
 
         //forms that we can open now
         PoolMenuForm pool = new PoolMenuForm();
@@ -25,6 +25,7 @@ namespace hotel_app.Forms
         TVForm tv = new TVForm();
         RadioForm radio = new RadioForm();  
         GPSMenuForm gps = new GPSMenuForm();
+        MainDoorForm door = new MainDoorForm();
 
         public Client1Form()
         {
@@ -43,16 +44,8 @@ namespace hotel_app.Forms
             pool.poolThermostat.thermostatLabel.Text = "Private Pool: Thermostat";
             pool.waterLevel.waterLevelLabel.Text = "Private Pool: Water Level";
         }
-        //Structs RGBcolours
-        private struct RGBColors
-        {
-            public static Color color1 = Color.Blue;
-            public static Color color2 = Color.Red;
-            public static Color color3 = Color.Green;
-        }
 
-
-        private void ActivateButton(object senderBtn, Color color)
+        private void ActivateButton(object senderBtn)
         {
             if (senderBtn != null)
             {
@@ -76,7 +69,6 @@ namespace hotel_app.Forms
                 currentChildFormIcon.IconColor = Color.FromArgb(219, 228, 238);
                 childFormLabel.Text = currentBtn.Text;
                 childFormLabel.ForeColor = Color.FromArgb(219, 228, 238);
-
             }
         }
 
@@ -111,43 +103,44 @@ namespace hotel_app.Forms
 
         private void poolButton_Click(object sender, EventArgs e)
         {
-            ActivateButton(sender, RGBColors.color3);
+            ActivateButton(sender);
             OpenChildForm(pool);
         }
 
         private void privateThermostatButton_Click(object sender, EventArgs e)
         {
-            ActivateButton(sender, RGBColors.color2);
+            ActivateButton(sender);
             OpenChildForm(thermostat);
         }
 
         private void lightsButton_Click(object sender, EventArgs e)
         {
-            ActivateButton(sender, RGBColors.color1);
+            ActivateButton(sender);
             OpenChildForm(lights);
         }
 
         private void tvButton_Click(object sender, EventArgs e)
         {
-            ActivateButton(sender, RGBColors.color3);
+            ActivateButton(sender);
             OpenChildForm(tv);
         }
 
         private void radioButton_Click(object sender, EventArgs e)
         {
-            ActivateButton(sender, RGBColors.color2);
+            ActivateButton(sender);
             OpenChildForm(radio);
         }
 
 
         private void mainDoorButton_Click(object sender, EventArgs e)
         {
-
+            ActivateButton(sender);
+            OpenChildForm(door);
         }
 
         private void gpsButton_Click(object sender, EventArgs e)
         {
-            ActivateButton(sender, RGBColors.color2);
+            ActivateButton(sender);
             OpenChildForm(gps);
         }
 

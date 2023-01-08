@@ -17,11 +17,12 @@ namespace hotel_app.Forms.Functions
     public partial class GPSMenuForm : Form
     {
 
-        private Panel GPSMenuTabs;
-
-        private Form currentChildForm;
+        private Panel GPSMenuTabs = new Panel();
 
         private CourtyardZeusForm courtyardZeusParking = new CourtyardZeusForm();
+
+        private Form currentChildForm = new Form();
+
         public GPSMenuForm()
         {
             InitializeComponent();

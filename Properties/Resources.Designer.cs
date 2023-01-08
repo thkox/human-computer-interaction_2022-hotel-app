@@ -73,6 +73,36 @@ namespace hotel_app.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap DoorAlmostOpen {
+            get {
+                object obj = ResourceManager.GetObject("DoorAlmostOpen", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap DoorClosed {
+            get {
+                object obj = ResourceManager.GetObject("DoorClosed", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap DoorOpen {
+            get {
+                object obj = ResourceManager.GetObject("DoorOpen", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap evolution_preview {
             get {
                 object obj = ResourceManager.GetObject("evolution_preview", resourceCulture);
@@ -146,6 +176,26 @@ namespace hotel_app.Properties {
         internal static System.Drawing.Bitmap Python_movie {
             get {
                 object obj = ResourceManager.GetObject("Python movie", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap StairsDown {
+            get {
+                object obj = ResourceManager.GetObject("StairsDown", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap StairsUp {
+            get {
+                object obj = ResourceManager.GetObject("StairsUp", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
