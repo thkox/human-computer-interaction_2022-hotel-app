@@ -138,7 +138,7 @@
             // 
             // doorTimer
             // 
-            this.doorTimer.Interval = 1000;
+            this.doorTimer.Interval = 2000;
             this.doorTimer.Tick += new System.EventHandler(this.doorTimer_Tick);
             // 
             // doorStateLabel
@@ -169,7 +169,7 @@
             // 
             // stairsTimer
             // 
-            this.stairsTimer.Interval = 1000;
+            this.stairsTimer.Interval = 2000;
             this.stairsTimer.Tick += new System.EventHandler(this.stairsTimer_Tick);
             // 
             // MainDoorForm
