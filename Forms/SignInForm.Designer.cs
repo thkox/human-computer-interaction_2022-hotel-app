@@ -2,7 +2,7 @@
 
 namespace hotel_app
 {
-    partial class SignIn
+    partial class SignInForm
     {
         /// <summary>
         ///  Required designer variable.
@@ -30,7 +30,7 @@ namespace hotel_app
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SignIn));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SignInForm));
             this.username_richTextBox = new CustomControls.RichTextBox.RichTextBox();
             this.password_richTextBox = new CustomControls.RichTextBox.RichTextBox();
             this.label1 = new System.Windows.Forms.Label();
@@ -50,7 +50,7 @@ namespace hotel_app
             this.username_richTextBox.BorderSize = 3;
             this.username_richTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.username_richTextBox.ForeColor = System.Drawing.Color.Goldenrod;
-            this.username_richTextBox.Location = new System.Drawing.Point(552, 331);
+            this.username_richTextBox.Location = new System.Drawing.Point(553, 390);
             this.username_richTextBox.Margin = new System.Windows.Forms.Padding(4);
             this.username_richTextBox.Multiline = false;
             this.username_richTextBox.Name = "username_richTextBox";
@@ -70,7 +70,7 @@ namespace hotel_app
             this.password_richTextBox.BorderSize = 3;
             this.password_richTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.password_richTextBox.ForeColor = System.Drawing.Color.Goldenrod;
-            this.password_richTextBox.Location = new System.Drawing.Point(552, 432);
+            this.password_richTextBox.Location = new System.Drawing.Point(553, 491);
             this.password_richTextBox.Margin = new System.Windows.Forms.Padding(4);
             this.password_richTextBox.Multiline = false;
             this.password_richTextBox.Name = "password_richTextBox";
@@ -87,7 +87,7 @@ namespace hotel_app
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Comic Sans MS", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label1.ForeColor = System.Drawing.Color.Goldenrod;
-            this.label1.Location = new System.Drawing.Point(552, 300);
+            this.label1.Location = new System.Drawing.Point(553, 359);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(110, 27);
             this.label1.TabIndex = 4;
@@ -99,7 +99,7 @@ namespace hotel_app
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Comic Sans MS", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label2.ForeColor = System.Drawing.Color.Goldenrod;
-            this.label2.Location = new System.Drawing.Point(552, 401);
+            this.label2.Location = new System.Drawing.Point(553, 460);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(102, 27);
             this.label2.TabIndex = 5;
@@ -118,7 +118,7 @@ namespace hotel_app
             this.login_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.login_button.Font = new System.Drawing.Font("Comic Sans MS", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.login_button.ForeColor = System.Drawing.Color.White;
-            this.login_button.Location = new System.Drawing.Point(607, 532);
+            this.login_button.Location = new System.Drawing.Point(608, 591);
             this.login_button.Name = "login_button";
             this.login_button.Size = new System.Drawing.Size(190, 64);
             this.login_button.TabIndex = 6;
@@ -134,7 +134,7 @@ namespace hotel_app
             this.errorLabel.Font = new System.Drawing.Font("Comic Sans MS", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.errorLabel.ForeColor = System.Drawing.Color.OrangeRed;
             this.errorLabel.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.errorLabel.Location = new System.Drawing.Point(471, 489);
+            this.errorLabel.Location = new System.Drawing.Point(472, 548);
             this.errorLabel.Name = "errorLabel";
             this.errorLabel.Size = new System.Drawing.Size(161, 27);
             this.errorLabel.TabIndex = 7;
@@ -143,19 +143,20 @@ namespace hotel_app
             // 
             // pictureBox1
             // 
+            this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pictureBox1.Image = global::hotel_app.Properties.Resources.MainLogo;
-            this.pictureBox1.Location = new System.Drawing.Point(453, 12);
+            this.pictureBox1.Location = new System.Drawing.Point(454, 71);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(488, 244);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 8;
             this.pictureBox1.TabStop = false;
             // 
-            // SignIn
+            // SignInForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(139)))), ((int)(((byte)(180)))));
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(124)))), ((int)(((byte)(177)))));
             this.ClientSize = new System.Drawing.Size(1400, 800);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.errorLabel);
@@ -168,7 +169,7 @@ namespace hotel_app
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MinimizeBox = false;
-            this.Name = "SignIn";
+            this.Name = "SignInForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Sign In";
             this.TopMost = true;

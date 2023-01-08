@@ -2,9 +2,9 @@
 
 namespace hotel_app
 {
-    public partial class SignIn : Form
+    public partial class SignInForm : Form
     {
-        public SignIn()
+        public SignInForm()
         {
             InitializeComponent();
         }
