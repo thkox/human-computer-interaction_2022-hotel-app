@@ -11,13 +11,12 @@ using System.Windows.Media.Animation;
 
 namespace hotel_app.Forms.Functions
 {
-    public partial class CourtyardZeusForm : Form
+    public partial class ParkingForm : Form
     {
         bool moveRight, moveLeft, moveUp, moveDown;//if we delete the timer then we can delete these bools
         int speed = 12;
 
-        private OlymposGardensForm olymposGardensForm = new OlymposGardensForm();
-        public CourtyardZeusForm()
+        public ParkingForm()
         {
             InitializeComponent();
             parkingButton.Enabled = false;
@@ -25,7 +24,7 @@ namespace hotel_app.Forms.Functions
 
         private void moveTimerEvent(object sender, EventArgs e)
         {
-            //Movement Bounds
+            //Movement Bounds Zeus
             if (moveLeft == true && trojan1PictureBox.Left > 60) 
             {
                 trojan1PictureBox.Left -= speed;
@@ -41,7 +40,7 @@ namespace hotel_app.Forms.Functions
             if (moveDown == true && trojan1PictureBox.Top < 560)//maybe < 550
             {
                 trojan1PictureBox.Top += speed;
-            }
+            }            
 
             //Enable Auto Parking
             if (trojan1PictureBox.Bounds.IntersectsWith(parkingSlot1.Bounds) == true)
@@ -58,27 +57,40 @@ namespace hotel_app.Forms.Functions
             }
             else parkingButton.Enabled = false;
 
-            
-            //Enable form transition
-            if (trojan1PictureBox.Bounds.IntersectsWith(LeftTransitionPictureBox.Bounds) == true)
+            //Enable Auto parking
+            if (trojan4PictureBox.Bounds.IntersectsWith(parkingSlot6.Bounds) == true)
             {
-                //this.Hide();
-                
+                parkingButton2.Enabled = true;
             }
-            
+            else if (trojan4PictureBox.Bounds.IntersectsWith(parkingSlot7.Bounds) == true)
+            {
+                parkingButton2.Enabled = true;
+            }
+            else if (trojan4PictureBox.Bounds.IntersectsWith(parkingSlot8.Bounds) == true)
+            {
+                parkingButton2.Enabled = true;
+            }
+            else parkingButton2.Enabled = false;
 
-        }
 
-        private void ChangePark(Form childForm) 
-        {
-            this.AddOwnedForm(olymposGardensForm);
-            childForm.TopLevel = false;
-            childForm.FormBorderStyle = FormBorderStyle.None;
-            childForm.Dock = DockStyle.Fill;
-            //gpsLoadFormsPanel.Controls.Add(childForm);
-            //gpsLoadFormsPanel.Tag = childForm;
-            childForm.BringToFront();
-            childForm.Show();
+            //Enable form transition
+            if (trojan1PictureBox.Bounds.IntersectsWith(leftTransitionPictureBox.Bounds) == true)
+            {
+                zeusCourtyardPanel.Hide();
+                trojan1PictureBox.Location = new Point(173, 263);
+                 
+                trojan4PictureBox.Location = new Point(807, 251);
+                olymbosGardensPanel.Show();
+            }
+
+            if (trojan4PictureBox.Bounds.IntersectsWith(rightTransitionPictureBox.Bounds) == true)
+            {
+                olymbosGardensPanel.Hide();
+                trojan4PictureBox.Location = new Point(807, 251);
+
+                trojan1PictureBox.Location = new Point(173, 263);
+                zeusCourtyardPanel.Show();               
+            }
         }
 
         //Movement with joystick
@@ -116,6 +128,71 @@ namespace hotel_app.Forms.Functions
             }
         }
 
+        private void ParkingForm_Load(object sender, EventArgs e)
+        {
+            //center the parking panel 
+            int width = this.Width / 2 - zeusCourtyardPanel.Width / 2;
+            int height = this.Height / 2 - zeusCourtyardPanel.Height / 2;
+            zeusCourtyardPanel.Location = new Point(width, height);
+            zeusCourtyardPanel.Anchor = AnchorStyles.None;
+            zeusCourtyardPanel.Show();
+
+            olymbosGardensPanel.Location = new Point(width, height);
+            olymbosGardensPanel.Anchor = AnchorStyles.None;
+            olymbosGardensPanel.Hide();
+        }
+
+        private void downOButton_Click(object sender, EventArgs e)
+        {
+            if (trojan4PictureBox.Top < 550)
+            {
+                trojan4PictureBox.Location = new Point(trojan4PictureBox.Location.X, trojan4PictureBox.Location.Y + speed);
+            }
+        }
+
+        private void rightOButton_Click(object sender, EventArgs e)
+        {
+            if (trojan4PictureBox.Left < 919)
+            {
+                trojan4PictureBox.Location = new Point(trojan4PictureBox.Location.X + speed, trojan4PictureBox.Location.Y);
+                trojan4PictureBox.Image = hotel_app.Properties.Resources.trojan;
+            }
+        }
+
+        private void upOButton_Click(object sender, EventArgs e)
+        {
+            if (trojan4PictureBox.Top > 32)
+            {
+                trojan4PictureBox.Location = new Point(trojan4PictureBox.Location.X, trojan4PictureBox.Location.Y - speed);
+            }
+        }
+
+        private void leftOButton_Click(object sender, EventArgs e)
+        {
+            if (trojan4PictureBox.Left > 60)
+            {
+                trojan4PictureBox.Location = new Point(trojan4PictureBox.Location.X - speed, trojan4PictureBox.Location.Y);
+                trojan4PictureBox.Image = hotel_app.Properties.Resources.trojan_horse_reversed;
+            }
+        }
+
+        private void parkingButton2_Click(object sender, EventArgs e)
+        {
+            if (trojan4PictureBox.Bounds.IntersectsWith(parkingSlot6.Bounds) == true)
+            {
+                trojan4PictureBox.Location = new Point(467, 86);
+            }
+            else if (trojan4PictureBox.Bounds.IntersectsWith(parkingSlot7.Bounds) == true)
+            {
+                trojan4PictureBox.Location = new Point(149, 308);
+            }
+            else if (trojan4PictureBox.Bounds.IntersectsWith(parkingSlot8.Bounds) == true)
+            {
+                trojan4PictureBox.Location = new Point(467, 505);
+            }
+            this.Hide();
+        }
+
         private void parkingButton_Click(object sender, EventArgs e)
         {
             if (trojan1PictureBox.Bounds.IntersectsWith(parkingSlot1.Bounds) == true)
@@ -130,6 +207,7 @@ namespace hotel_app.Forms.Functions
             {
                 trojan1PictureBox.Location = new Point(882, 542);
             }
+            this.Hide();
         }
 
         private void keyIsDown(object sender, KeyEventArgs e)
