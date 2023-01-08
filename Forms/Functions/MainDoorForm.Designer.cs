@@ -34,10 +34,10 @@
             this.doorClosed = new System.Windows.Forms.Button();
             this.stairsUpButton = new System.Windows.Forms.Button();
             this.stairsDownButton = new System.Windows.Forms.Button();
-            this.doorStateLabel = new System.Windows.Forms.Label();
+            this.doorState = new System.Windows.Forms.Label();
             this.stairsState = new System.Windows.Forms.Label();
             this.doorTimer = new System.Windows.Forms.Timer(this.components);
-            this.tvStatusLabel = new System.Windows.Forms.Label();
+            this.doorStateLabel = new System.Windows.Forms.Label();
             this.stairsStateLabel = new System.Windows.Forms.Label();
             this.stairsTimer = new System.Windows.Forms.Timer(this.components);
             this.SuspendLayout();
@@ -112,19 +112,21 @@
             this.stairsDownButton.EnabledChanged += new System.EventHandler(this.Button_EnabledChanged);
             this.stairsDownButton.Click += new System.EventHandler(this.stairsDownButton_Click);
             // 
-            // doorStateLabel
+            // doorState
             // 
-            this.doorStateLabel.AutoSize = true;
-            this.doorStateLabel.Font = new System.Drawing.Font("Comic Sans MS", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point);
-            this.doorStateLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(241)))), ((int)(((byte)(246)))));
-            this.doorStateLabel.Location = new System.Drawing.Point(199, 113);
-            this.doorStateLabel.Name = "doorStateLabel";
-            this.doorStateLabel.Size = new System.Drawing.Size(154, 30);
-            this.doorStateLabel.TabIndex = 5;
-            this.doorStateLabel.Text = "Door Options:";
+            this.doorState.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.doorState.AutoSize = true;
+            this.doorState.Font = new System.Drawing.Font("Comic Sans MS", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point);
+            this.doorState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(241)))), ((int)(((byte)(246)))));
+            this.doorState.Location = new System.Drawing.Point(199, 113);
+            this.doorState.Name = "doorState";
+            this.doorState.Size = new System.Drawing.Size(154, 30);
+            this.doorState.TabIndex = 5;
+            this.doorState.Text = "Door Options:";
             // 
             // stairsState
             // 
+            this.stairsState.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.stairsState.AutoSize = true;
             this.stairsState.Font = new System.Drawing.Font("Comic Sans MS", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point);
             this.stairsState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(241)))), ((int)(((byte)(246)))));
@@ -139,18 +141,18 @@
             this.doorTimer.Interval = 1000;
             this.doorTimer.Tick += new System.EventHandler(this.doorTimer_Tick);
             // 
-            // tvStatusLabel
+            // doorStateLabel
             // 
-            this.tvStatusLabel.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.tvStatusLabel.AutoSize = true;
-            this.tvStatusLabel.Font = new System.Drawing.Font("Tahoma", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
-            this.tvStatusLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(241)))), ((int)(((byte)(246)))));
-            this.tvStatusLabel.Location = new System.Drawing.Point(681, 120);
-            this.tvStatusLabel.Name = "tvStatusLabel";
-            this.tvStatusLabel.Size = new System.Drawing.Size(141, 23);
-            this.tvStatusLabel.TabIndex = 16;
-            this.tvStatusLabel.Text = "[Door Status]";
-            this.tvStatusLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.doorStateLabel.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.doorStateLabel.AutoSize = true;
+            this.doorStateLabel.Font = new System.Drawing.Font("Tahoma", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
+            this.doorStateLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(241)))), ((int)(((byte)(246)))));
+            this.doorStateLabel.Location = new System.Drawing.Point(681, 120);
+            this.doorStateLabel.Name = "doorStateLabel";
+            this.doorStateLabel.Size = new System.Drawing.Size(141, 23);
+            this.doorStateLabel.TabIndex = 16;
+            this.doorStateLabel.Text = "[Door Status]";
+            this.doorStateLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // stairsStateLabel
             // 
@@ -177,9 +179,9 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(144)))), ((int)(((byte)(191)))));
             this.ClientSize = new System.Drawing.Size(1084, 661);
             this.Controls.Add(this.stairsStateLabel);
-            this.Controls.Add(this.tvStatusLabel);
-            this.Controls.Add(this.stairsState);
             this.Controls.Add(this.doorStateLabel);
+            this.Controls.Add(this.stairsState);
+            this.Controls.Add(this.doorState);
             this.Controls.Add(this.stairsDownButton);
             this.Controls.Add(this.stairsUpButton);
             this.Controls.Add(this.doorClosed);
@@ -200,10 +202,10 @@
         private Button doorClosed;
         private Button stairsUpButton;
         private Button stairsDownButton;
-        private Label doorStateLabel;
+        private Label doorState;
         private Label stairsState;
         private System.Windows.Forms.Timer doorTimer;
-        private Label tvStatusLabel;
+        private Label doorStateLabel;
         private Label stairsStateLabel;
         private System.Windows.Forms.Timer stairsTimer;
     }
