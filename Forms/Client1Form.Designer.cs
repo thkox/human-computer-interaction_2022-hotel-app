@@ -299,9 +299,9 @@ namespace hotel_app.Forms
             this.label2.ForeColor = System.Drawing.Color.Goldenrod;
             this.label2.Location = new System.Drawing.Point(513, 169);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(257, 57);
+            this.label2.Size = new System.Drawing.Size(259, 57);
             this.label2.TabIndex = 7;
-            this.label2.Text = "Room Services";
+            this.label2.Text = "Trojan Services";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label1

@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace hotel_app.Forms.Functions
 {
-    public partial class OlymposGardensForm : Form
+    public partial class FacilitiesForm : Form
     {
-        public OlymposGardensForm()
+        public FacilitiesForm()
         {
             InitializeComponent();
         }
