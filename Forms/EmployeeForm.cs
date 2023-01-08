@@ -14,13 +14,13 @@ namespace hotel_app.Forms
 {
     public partial class EmployeeForm : Form
     {
-        private IconButton currentBtn = new IconButton();
-        private Panel leftBorderBtn = new Panel();
-        private Form currentChildForm = new Form();
+        private IconButton currentBtn;
+        private Panel leftBorderBtn;
+        private Form currentChildForm;
 
         //forms that we can open now
         ZeusPalaceMenuForm zeusPalaceMenu = new ZeusPalaceMenuForm();
-        ParkingForm parking = new ParkingForm();
+        ParkingForm parking = new ParkingForm(); //Courtyard Zeus and Olympos Gardens different panels
 
         public EmployeeForm()
         {

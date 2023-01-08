@@ -78,7 +78,7 @@
             this.generalPoolButton.Name = "generalPoolButton";
             this.generalPoolButton.Size = new System.Drawing.Size(150, 131);
             this.generalPoolButton.TabIndex = 1;
-            this.generalPoolButton.Text = "General\r\nPool";
+            this.generalPoolButton.Text = "Public\r\nPool";
             this.generalPoolButton.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.generalPoolButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.generalPoolButton.UseVisualStyleBackColor = false;
