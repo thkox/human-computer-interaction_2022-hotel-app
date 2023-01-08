@@ -333,6 +333,7 @@ namespace hotel_app.Forms
             this.Name = "Client1Form";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Client Menu";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Client1Form_FormClosed);
             this.menuPanel.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

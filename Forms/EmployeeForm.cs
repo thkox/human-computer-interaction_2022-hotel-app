@@ -139,5 +139,10 @@ namespace hotel_app.Forms
             }
             Reset();
         }
+
+        private void EmployeeForm_Load(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

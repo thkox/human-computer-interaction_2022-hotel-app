@@ -153,5 +153,9 @@ namespace hotel_app.Forms
             Reset();
         }
 
+        private void Client1Form_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

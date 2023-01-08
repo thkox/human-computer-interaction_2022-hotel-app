@@ -12,6 +12,8 @@ namespace hotel_app
         private void SignIn_Load(object sender, EventArgs e)
         {
             errorLabel.Text = "";
+
+            
         }
 
         private void login_button_Click(object sender, EventArgs e)
@@ -42,6 +44,12 @@ namespace hotel_app
             {
                 errorLabel.Text = "Your credentials are incorrect, please try again.";
             }
+        }
+
+        //create an event handler for the exit button
+        private void exit_button_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

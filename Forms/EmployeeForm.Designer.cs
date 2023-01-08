@@ -258,6 +258,7 @@ namespace hotel_app.Forms
             this.Name = "EmployeeForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Staff Menu";
+            this.Load += new System.EventHandler(this.EmployeeForm_Load);
             this.menuPanel.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

@@ -147,5 +147,10 @@ namespace hotel_app.Forms
             }
             Reset();
         }
+
+        private void Client2Form_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }
