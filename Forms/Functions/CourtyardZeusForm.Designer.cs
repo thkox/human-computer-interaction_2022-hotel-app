@@ -85,6 +85,7 @@
             this.upButton.BackColor = System.Drawing.Color.Silver;
             this.upButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.upButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(79)))), ((int)(((byte)(134)))), ((int)(((byte)(184)))));
+            this.upButton.FlatAppearance.BorderSize = 0;
             this.upButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.upButton.IconChar = FontAwesome.Sharp.IconChar.CircleUp;
             this.upButton.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(241)))), ((int)(((byte)(246)))));
@@ -102,6 +103,7 @@
             this.leftButton.BackColor = System.Drawing.Color.Silver;
             this.leftButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.leftButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(79)))), ((int)(((byte)(134)))), ((int)(((byte)(184)))));
+            this.leftButton.FlatAppearance.BorderSize = 0;
             this.leftButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.leftButton.IconChar = FontAwesome.Sharp.IconChar.ArrowAltCircleLeft;
             this.leftButton.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(241)))), ((int)(((byte)(246)))));
@@ -119,6 +121,7 @@
             this.rightButton.BackColor = System.Drawing.Color.Silver;
             this.rightButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.rightButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(79)))), ((int)(((byte)(134)))), ((int)(((byte)(184)))));
+            this.rightButton.FlatAppearance.BorderSize = 0;
             this.rightButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.rightButton.IconChar = FontAwesome.Sharp.IconChar.ArrowAltCircleRight;
             this.rightButton.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(241)))), ((int)(((byte)(246)))));
@@ -136,6 +139,7 @@
             this.downButton.BackColor = System.Drawing.Color.Silver;
             this.downButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.downButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(79)))), ((int)(((byte)(134)))), ((int)(((byte)(184)))));
+            this.downButton.FlatAppearance.BorderSize = 0;
             this.downButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.downButton.IconChar = FontAwesome.Sharp.IconChar.ArrowAltCircleDown;
             this.downButton.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(241)))), ((int)(((byte)(246)))));
@@ -151,7 +155,7 @@
             // 
             this.trojan1PictureBox.BackColor = System.Drawing.Color.Silver;
             this.trojan1PictureBox.Image = global::hotel_app.Properties.Resources.trojan;
-            this.trojan1PictureBox.Location = new System.Drawing.Point(324, 44);
+            this.trojan1PictureBox.Location = new System.Drawing.Point(414, 46);
             this.trojan1PictureBox.Name = "trojan1PictureBox";
             this.trojan1PictureBox.Size = new System.Drawing.Size(88, 89);
             this.trojan1PictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
