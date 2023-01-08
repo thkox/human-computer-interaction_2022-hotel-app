@@ -74,7 +74,7 @@
             this.parkingPanel.Controls.Add(this.parkingSlot1);
             this.parkingPanel.Controls.Add(this.parkingButton);
             this.parkingPanel.Controls.Add(this.parkingPictureBox);
-            this.parkingPanel.Location = new System.Drawing.Point(1, 0);
+            this.parkingPanel.Location = new System.Drawing.Point(0, 0);
             this.parkingPanel.Name = "parkingPanel";
             this.parkingPanel.Size = new System.Drawing.Size(1083, 662);
             this.parkingPanel.TabIndex = 0;

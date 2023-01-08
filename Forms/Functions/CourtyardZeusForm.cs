@@ -68,6 +68,19 @@ namespace hotel_app.Forms.Functions
             
 
         }
+
+        private void ChangePark(Form childForm) 
+        {
+            this.AddOwnedForm(olymposGardensForm);
+            childForm.TopLevel = false;
+            childForm.FormBorderStyle = FormBorderStyle.None;
+            childForm.Dock = DockStyle.Fill;
+            //gpsLoadFormsPanel.Controls.Add(childForm);
+            //gpsLoadFormsPanel.Tag = childForm;
+            childForm.BringToFront();
+            childForm.Show();
+        }
+
         //Movement with joystick
         private void upButton_Click(object sender, EventArgs e)
         {
