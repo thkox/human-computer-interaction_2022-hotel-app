@@ -30,6 +30,10 @@
         {
             this.components = new System.ComponentModel.Container();
             this.parkingPanel = new System.Windows.Forms.Panel();
+            this.upButton = new FontAwesome.Sharp.IconButton();
+            this.leftButton = new FontAwesome.Sharp.IconButton();
+            this.rightButton = new FontAwesome.Sharp.IconButton();
+            this.downButton = new FontAwesome.Sharp.IconButton();
             this.trojan1PictureBox = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.CourtyardZeusLabel = new System.Windows.Forms.Label();
@@ -55,6 +59,10 @@
             // 
             // parkingPanel
             // 
+            this.parkingPanel.Controls.Add(this.upButton);
+            this.parkingPanel.Controls.Add(this.leftButton);
+            this.parkingPanel.Controls.Add(this.rightButton);
+            this.parkingPanel.Controls.Add(this.downButton);
             this.parkingPanel.Controls.Add(this.trojan1PictureBox);
             this.parkingPanel.Controls.Add(this.label1);
             this.parkingPanel.Controls.Add(this.CourtyardZeusLabel);
@@ -71,11 +79,83 @@
             this.parkingPanel.Size = new System.Drawing.Size(1083, 662);
             this.parkingPanel.TabIndex = 0;
             // 
+            // upButton
+            // 
+            this.upButton.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.upButton.BackColor = System.Drawing.Color.Silver;
+            this.upButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.upButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(79)))), ((int)(((byte)(134)))), ((int)(((byte)(184)))));
+            this.upButton.FlatAppearance.BorderSize = 0;
+            this.upButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.upButton.IconChar = FontAwesome.Sharp.IconChar.CircleUp;
+            this.upButton.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(241)))), ((int)(((byte)(246)))));
+            this.upButton.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.upButton.Location = new System.Drawing.Point(107, 484);
+            this.upButton.Name = "upButton";
+            this.upButton.Size = new System.Drawing.Size(48, 48);
+            this.upButton.TabIndex = 16;
+            this.upButton.UseVisualStyleBackColor = false;
+            this.upButton.Click += new System.EventHandler(this.upButton_Click);
+            // 
+            // leftButton
+            // 
+            this.leftButton.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.leftButton.BackColor = System.Drawing.Color.Silver;
+            this.leftButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.leftButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(79)))), ((int)(((byte)(134)))), ((int)(((byte)(184)))));
+            this.leftButton.FlatAppearance.BorderSize = 0;
+            this.leftButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.leftButton.IconChar = FontAwesome.Sharp.IconChar.ArrowAltCircleLeft;
+            this.leftButton.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(241)))), ((int)(((byte)(246)))));
+            this.leftButton.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.leftButton.Location = new System.Drawing.Point(53, 538);
+            this.leftButton.Name = "leftButton";
+            this.leftButton.Size = new System.Drawing.Size(48, 62);
+            this.leftButton.TabIndex = 15;
+            this.leftButton.UseVisualStyleBackColor = false;
+            this.leftButton.Click += new System.EventHandler(this.leftButton_Click);
+            // 
+            // rightButton
+            // 
+            this.rightButton.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.rightButton.BackColor = System.Drawing.Color.Silver;
+            this.rightButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.rightButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(79)))), ((int)(((byte)(134)))), ((int)(((byte)(184)))));
+            this.rightButton.FlatAppearance.BorderSize = 0;
+            this.rightButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.rightButton.IconChar = FontAwesome.Sharp.IconChar.ArrowAltCircleRight;
+            this.rightButton.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(241)))), ((int)(((byte)(246)))));
+            this.rightButton.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.rightButton.Location = new System.Drawing.Point(161, 538);
+            this.rightButton.Name = "rightButton";
+            this.rightButton.Size = new System.Drawing.Size(48, 62);
+            this.rightButton.TabIndex = 14;
+            this.rightButton.UseVisualStyleBackColor = false;
+            this.rightButton.Click += new System.EventHandler(this.rightButton_Click);
+            // 
+            // downButton
+            // 
+            this.downButton.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.downButton.BackColor = System.Drawing.Color.Silver;
+            this.downButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.downButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(79)))), ((int)(((byte)(134)))), ((int)(((byte)(184)))));
+            this.downButton.FlatAppearance.BorderSize = 0;
+            this.downButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.downButton.IconChar = FontAwesome.Sharp.IconChar.ArrowAltCircleDown;
+            this.downButton.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(241)))), ((int)(((byte)(246)))));
+            this.downButton.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.downButton.Location = new System.Drawing.Point(107, 601);
+            this.downButton.Name = "downButton";
+            this.downButton.Size = new System.Drawing.Size(48, 48);
+            this.downButton.TabIndex = 10;
+            this.downButton.UseVisualStyleBackColor = false;
+            this.downButton.Click += new System.EventHandler(this.downButton_Click);
+            // 
             // trojan1PictureBox
             // 
             this.trojan1PictureBox.BackColor = System.Drawing.Color.Silver;
             this.trojan1PictureBox.Image = global::hotel_app.Properties.Resources.trojan;
-            this.trojan1PictureBox.Location = new System.Drawing.Point(324, 44);
+            this.trojan1PictureBox.Location = new System.Drawing.Point(414, 46);
             this.trojan1PictureBox.Name = "trojan1PictureBox";
             this.trojan1PictureBox.Size = new System.Drawing.Size(88, 89);
             this.trojan1PictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -96,7 +176,7 @@
             // CourtyardZeusLabel
             // 
             this.CourtyardZeusLabel.AutoSize = true;
-            this.CourtyardZeusLabel.BackColor = System.Drawing.SystemColors.Control;
+            this.CourtyardZeusLabel.BackColor = System.Drawing.Color.Transparent;
             this.CourtyardZeusLabel.Font = new System.Drawing.Font("Comic Sans MS", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.CourtyardZeusLabel.Location = new System.Drawing.Point(456, 0);
             this.CourtyardZeusLabel.Name = "CourtyardZeusLabel";
@@ -173,9 +253,9 @@
             this.parkingButton.IconColor = System.Drawing.Color.Black;
             this.parkingButton.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.parkingButton.IconSize = 68;
-            this.parkingButton.Location = new System.Drawing.Point(53, 587);
+            this.parkingButton.Location = new System.Drawing.Point(107, 538);
             this.parkingButton.Name = "parkingButton";
-            this.parkingButton.Size = new System.Drawing.Size(64, 62);
+            this.parkingButton.Size = new System.Drawing.Size(48, 62);
             this.parkingButton.TabIndex = 1;
             this.parkingButton.UseVisualStyleBackColor = false;
             this.parkingButton.Click += new System.EventHandler(this.parkingButton_Click);
@@ -200,6 +280,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(144)))), ((int)(((byte)(191)))));
             this.ClientSize = new System.Drawing.Size(1084, 661);
             this.Controls.Add(this.parkingPanel);
             this.Name = "CourtyardZeusForm";
@@ -235,5 +316,9 @@
         private FontAwesome.Sharp.IconPictureBox LeftTransitionPictureBox;
         private Label CourtyardZeusLabel;
         private Label label1;
+        private FontAwesome.Sharp.IconButton downButton;
+        private FontAwesome.Sharp.IconButton upButton;
+        private FontAwesome.Sharp.IconButton leftButton;
+        private FontAwesome.Sharp.IconButton rightButton;
     }
 }
