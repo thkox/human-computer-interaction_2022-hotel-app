@@ -108,7 +108,7 @@ namespace hotel_app.Forms
         private void olymposGardensButton_Click(object sender, EventArgs e)
         {
             ActivateButton(sender);
-            OpenChildForm(olymposGardens);
+            //OpenChildForm(olymposGardens);
         }
 
         private void Reset()
