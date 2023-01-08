@@ -193,16 +193,6 @@ namespace hotel_app.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap program {
-            get {
-                object obj = ResourceManager.GetObject("program", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
         internal static System.Drawing.Bitmap Python_movie {
             get {
                 object obj = ResourceManager.GetObject("Python movie", resourceCulture);
