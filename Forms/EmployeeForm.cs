@@ -72,22 +72,34 @@ namespace hotel_app.Forms
 
         private void Trojan2PictureBox_Click(object sender, EventArgs e)
         {
-            OpenChildMenu(client1Form.menuPanel);
+            loadTrojanFunctions();
         }
 
         private void Trojan3PictureBox_Click(object sender, EventArgs e)
         {
-
+            loadTrojanFunctions();
         }
 
         private void Trojan5PictureBox_Click(object sender, EventArgs e)
         {
-
+            loadTrojanFunctions();
         }
 
         private void Trojan6PictureBox_Click(object sender, EventArgs e)
         {
+            loadTrojanFunctions();
+        }
 
+        private void loadTrojanFunctions()
+        {
+            OpenChildMenu(client1Form.menuPanel);
+
+            label1.Hide();
+            label2.Hide();
+            label3.Hide();
+
+            currentChildForm.Hide();
+            childFormPanel.Controls.Add(client1Form.childFormPanel);
         }
 
         private void ActivateButton(object senderBtn)
@@ -148,6 +160,7 @@ namespace hotel_app.Forms
                 
                 menuPanel.Controls.Add(clientMenuForm);
                 menuPanel.Tag = clientMenuForm;
+
                 clientMenuForm.BringToFront();
                 clientMenuForm.Show();
             }
@@ -201,6 +214,25 @@ namespace hotel_app.Forms
         private void pictureBox1_Click(object sender, EventArgs e)
         {
             currentChildForm?.Hide();
+            currentMenuPanel?.Hide();
+
+            zeusPalaceButton.Show();
+            olymposGardensButton.Show();
+            courtyardZeusButton.Show();
+
+            label1.Show();
+            label2.Show();
+            label3.Show();
+
+            if(childFormPanel.Controls.Contains(client1Form.childFormPanel))
+            {
+                childFormPanel.Controls.Remove(client1Form.childFormPanel);
+            }
+            else if (childFormPanel.Controls.Contains(client2Form.childFormPanel))
+            {
+                childFormPanel.Controls.Remove(client2Form.childFormPanel);
+            }
+
             Reset();
         }
 

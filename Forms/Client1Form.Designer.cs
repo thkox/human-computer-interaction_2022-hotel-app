@@ -401,7 +401,6 @@ namespace hotel_app.Forms
         private Panel titlelabel;
         private FontAwesome.Sharp.IconPictureBox currentChildFormIcon;
         private Label childFormLabel;
-        private Panel childFormPanel;
         private Label label3;
         private Label label2;
         private Label label1;
@@ -413,5 +412,6 @@ namespace hotel_app.Forms
         private FontAwesome.Sharp.IconButton logoutButton;
         public Panel menuPanel;
         public Panel panel1;
+        public Panel childFormPanel;
     }
 }
