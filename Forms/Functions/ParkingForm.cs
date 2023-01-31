@@ -142,6 +142,12 @@ namespace hotel_app.Forms.Functions
             olymbosGardensPanel.Location = new Point(width, height);
             olymbosGardensPanel.Anchor = AnchorStyles.None;
             olymbosGardensPanel.Hide();
+
+            label2.Visible = false;
+            label3.Visible = false;
+            label4.Visible = false;
+            label5.Visible = false;
+
         }
 
         private void downOButton_Click(object sender, EventArgs e)
