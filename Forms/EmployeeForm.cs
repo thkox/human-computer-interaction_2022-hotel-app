@@ -18,9 +18,20 @@ namespace hotel_app.Forms
         private IconButton currentBtn;
         private readonly Panel leftBorderBtn;
         private Form currentChildForm;
-        private readonly Client1Form client1Form = new();
-        private readonly Client2Form client2Form = new();
+
         private Panel currentMenuPanel;
+
+        private static Client1Form trojan1Form = new();
+        private static Client1Form trojan2Form = new();
+        private static Client1Form trojan3Form = new();
+        private static Client1Form trojan4Form = new();
+
+        private static Client2Form room1Form = new();
+
+       
+        private Client1Form[] trojanForms = new Client1Form[] { trojan1Form, trojan2Form, trojan3Form, trojan4Form };
+        private Client2Form[] roomForms = new Client2Form[] { room1Form };
+
 
         //forms that we can open now
         readonly ZeusPalaceMenuForm zeusPalaceMenu = new();
@@ -53,14 +64,21 @@ namespace hotel_app.Forms
             parking.parkingButton.Visible = false;
             parking.parkingButton2.Visible = false;
 
+            //reveal the names of the trojans
             parking.label2.Visible = true;
             parking.label3.Visible = true;
             parking.label4.Visible = true;
             parking.label5.Visible = true;
 
             //hide the logos for the clients menu
-            client1Form.panel1.Visible = false;
-            client2Form.panel1.Visible = false;
+            foreach (Client1Form trojanForm in trojanForms)
+            {
+                trojanForm.panel1.Visible = false;
+            }
+            foreach (Client2Form roomForm in roomForms)
+            {
+                roomForm.panel1.Visible = false;
+            }
 
             //add the click property for the pictureaboxes in the parking form
 
@@ -69,37 +87,37 @@ namespace hotel_app.Forms
             parking.trojan5PictureBox.Click += new EventHandler(Trojan5PictureBox_Click);
             parking.trojan6PictureBox.Click += new EventHandler(Trojan6PictureBox_Click);
         }
-
+        //activate a trojan
         private void Trojan2PictureBox_Click(object sender, EventArgs e)
         {
-            loadTrojanFunctions();
+            loadTrojanFunctions(trojan1Form);
         }
 
         private void Trojan3PictureBox_Click(object sender, EventArgs e)
         {
-            loadTrojanFunctions();
+            loadTrojanFunctions(trojan2Form);
         }
 
         private void Trojan5PictureBox_Click(object sender, EventArgs e)
         {
-            loadTrojanFunctions();
+            loadTrojanFunctions(trojan3Form);
         }
 
         private void Trojan6PictureBox_Click(object sender, EventArgs e)
         {
-            loadTrojanFunctions();
+            loadTrojanFunctions(trojan4Form);
         }
 
-        private void loadTrojanFunctions()
+        private void loadTrojanFunctions(Client1Form trojanForm)
         {
-            OpenChildMenu(client1Form.menuPanel);
+            OpenChildMenu(trojanForm.menuPanel);
 
             label1.Hide();
             label2.Hide();
             label3.Hide();
 
             currentChildForm.Hide();
-            childFormPanel.Controls.Add(client1Form.childFormPanel);
+            childFormPanel.Controls.Add(trojanForm.childFormPanel);
         }
 
         private void ActivateButton(object senderBtn)
@@ -141,29 +159,22 @@ namespace hotel_app.Forms
                 currentBtn.ImageAlign = ContentAlignment.MiddleLeft;
             }
         }
-        
+
         private void OpenChildMenu(Panel clientMenuForm)
         {
+            currentMenuPanel?.Hide();
+            currentMenuPanel = clientMenuForm;
+            clientMenuForm.Dock = DockStyle.Fill;
 
-            if (currentMenuPanel != null)
-            {
-                currentMenuPanel.Hide();
-            }
-            else
-            {
-                currentMenuPanel = clientMenuForm;
-                clientMenuForm.Dock = DockStyle.Fill;
-                
-                zeusPalaceButton.Hide();
-                olymposGardensButton.Hide();
-                courtyardZeusButton.Hide();
-                
-                menuPanel.Controls.Add(clientMenuForm);
-                menuPanel.Tag = clientMenuForm;
+            zeusPalaceButton.Hide();
+            olymposGardensButton.Hide();
+            courtyardZeusButton.Hide();
 
-                clientMenuForm.BringToFront();
-                clientMenuForm.Show();
-            }
+            menuPanel.Controls.Add(clientMenuForm);
+            menuPanel.Tag = clientMenuForm;
+
+            clientMenuForm.BringToFront();
+            clientMenuForm.Show();
         }
 
         private void OpenChildForm(Form childForm)
@@ -224,13 +235,20 @@ namespace hotel_app.Forms
             label2.Show();
             label3.Show();
 
-            if(childFormPanel.Controls.Contains(client1Form.childFormPanel))
+            //for every possible panel loaded inside the childFormPanel
+            foreach (Client1Form trojanForm in trojanForms)
             {
-                childFormPanel.Controls.Remove(client1Form.childFormPanel);
+                if (childFormPanel.Controls.Contains(trojanForm.childFormPanel))
+                {
+                    childFormPanel.Controls.Remove(trojanForm.childFormPanel);
+                }
             }
-            else if (childFormPanel.Controls.Contains(client2Form.childFormPanel))
+            foreach (Client2Form roomForm in roomForms)
             {
-                childFormPanel.Controls.Remove(client2Form.childFormPanel);
+                if (childFormPanel.Controls.Contains(roomForm.childFormPanel))
+                {
+                    childFormPanel.Controls.Remove(roomForm.childFormPanel);
+                }
             }
 
             Reset();
