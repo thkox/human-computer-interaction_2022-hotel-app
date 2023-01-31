@@ -140,6 +140,12 @@ namespace hotel_app.Forms
             else
             {
                 currentMenuPanel = clientMenuForm;
+                clientMenuForm.Dock = DockStyle.Fill;
+                
+                zeusPalaceButton.Hide();
+                olymposGardensButton.Hide();
+                courtyardZeusButton.Hide();
+                
                 menuPanel.Controls.Add(clientMenuForm);
                 menuPanel.Tag = clientMenuForm;
                 clientMenuForm.BringToFront();
