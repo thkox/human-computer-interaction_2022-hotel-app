@@ -16,6 +16,8 @@ namespace hotel_app.Forms.Functions
         int currentThermostatValue = 18;
         int setThermostatValue = 18;
         bool thermostatState = false;
+        bool upButtonClicked = false;
+        bool downButtonClicked = false;
         public ThermostatForm()
         {
             InitializeComponent();
@@ -31,6 +33,11 @@ namespace hotel_app.Forms.Functions
             thermostatState = false;
             thermostatUpButton.Enabled = false;
             thermostatDownButton.Enabled = false;
+
+            upButtonClicked = false;
+            downButtonClicked = false;
+            setValueTimer.Stop();
+
             currentTempValueLabel.Text = "Current Temperature: " + currentThermostatValue + "°C";
             setTempValueLabel.Text = "OFF";
             setTempValueLabel.Left = (thermostatPanel.Width - setTempValueLabel.Width) / 2;
@@ -41,6 +48,9 @@ namespace hotel_app.Forms.Functions
         private void TurnONThermostat()
         {
             thermostatState = true;
+
+            setValueTimer.Start();
+
             if (setThermostatValue == 10)
             {
                 thermostatUpButton.Enabled = true;
@@ -70,6 +80,10 @@ namespace hotel_app.Forms.Functions
 
         private void thermostatUpButton_Click(object sender, EventArgs e)
         {
+            upButtonClicked = true;
+            downButtonClicked = false;
+            setValueTimer.Start();
+
             if (thermostatState == true)
             {
                 if (setThermostatValue >= 29)
@@ -92,6 +106,10 @@ namespace hotel_app.Forms.Functions
 
         private void thermostatDownButton_Click(object sender, EventArgs e)
         {
+            upButtonClicked = false;
+            downButtonClicked = true;
+            setValueTimer.Start();
+
             if (thermostatState == true)
             {
                 if (setThermostatValue <= 11)
@@ -134,6 +152,23 @@ namespace hotel_app.Forms.Functions
             else
             {
                 button.BackColor = Color.FromArgb(79, 134, 184);
+            }
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            currentTempValueLabel.Text = "Current Temperature: " + currentThermostatValue + "°C";
+            if (currentThermostatValue == setThermostatValue)
+            {
+                setValueTimer.Stop();
+            }
+            if (downButtonClicked == true)
+            {
+                currentThermostatValue -= 1;
+            }
+            else if (upButtonClicked == true)
+            {
+                currentThermostatValue += 1;
             }
         }
     }

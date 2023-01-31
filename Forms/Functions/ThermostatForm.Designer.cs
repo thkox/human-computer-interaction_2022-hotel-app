@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.thermostatUpButton = new FontAwesome.Sharp.IconButton();
             this.thermostatDownButton = new FontAwesome.Sharp.IconButton();
             this.thermostatLabel = new System.Windows.Forms.Label();
@@ -36,6 +37,7 @@
             this.thermostatPanel = new System.Windows.Forms.Panel();
             this.leafPictureBox = new FontAwesome.Sharp.IconPictureBox();
             this.setTempValueLabel = new System.Windows.Forms.Label();
+            this.setValueTimer = new System.Windows.Forms.Timer(this.components);
             this.thermostatPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.leafPictureBox)).BeginInit();
             this.SuspendLayout();
@@ -151,6 +153,11 @@
             this.setTempValueLabel.TabIndex = 8;
             this.setTempValueLabel.Text = "label1";
             // 
+            // setValueTimer
+            // 
+            this.setValueTimer.Interval = 5000;
+            this.setValueTimer.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
             // ThermostatForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -182,5 +189,6 @@
         private Panel thermostatPanel;
         private Label setTempValueLabel;
         private FontAwesome.Sharp.IconPictureBox leafPictureBox;
+        private System.Windows.Forms.Timer setValueTimer;
     }
 }
