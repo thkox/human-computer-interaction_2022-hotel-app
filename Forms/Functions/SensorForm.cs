@@ -44,37 +44,30 @@ namespace hotel_app.Forms.Functions
 
         private void TurnOffSensor()
         {
-            sensorPanelRichTextBox.Text = System.Environment.NewLine + "Sensor is OFF";
-            sensorPanelRichTextBox.SelectAll();
-            sensorPanelRichTextBox.SelectionAlignment = HorizontalAlignment.Center;
-            sensorPanelRichTextBox.DeselectAll();
-            sensorPanelRichTextBox.BackColor = Color.Red;
-            sensorPanelRichTextBox.ForeColor = Color.White;
+            statusRichTextBox.Text = System.Environment.NewLine + "Sensor is OFF";
+            //statusRichTextBox.Left = ((this.Width - statusRichTextBox.Width) / 2) + 100;
+            statusPictureBox.IconColor = Color.Red;
             alarmState = false;
             alarmButton.Enabled = false;
         }
 
         private void TurnOnSensor()
         {
-            sensorPanelRichTextBox.Text = System.Environment.NewLine + "Sensor is ON";
+            statusRichTextBox.Text = System.Environment.NewLine + "Sensor is ON";
             if(!alarmState)
             {
-                sensorPanelRichTextBox.Text += System.Environment.NewLine + "Alarm is OFF";
+                statusRichTextBox.Text += System.Environment.NewLine + "Alarm is OFF";
             }
             if (humansState)
             {
-                sensorPanelRichTextBox.Text += System.Environment.NewLine + "Humans Detected";
+                statusRichTextBox.Text += System.Environment.NewLine + "Humans Detected";
             }
             else
             {
-                sensorPanelRichTextBox.Text += System.Environment.NewLine + "DetectingHumans";
+                statusRichTextBox.Text += System.Environment.NewLine + "DetectingHumans";
             }
-                
-            sensorPanelRichTextBox.SelectAll();
-            sensorPanelRichTextBox.SelectionAlignment = HorizontalAlignment.Center;
-            sensorPanelRichTextBox.DeselectAll();
-            sensorPanelRichTextBox.BackColor = Color.Green;
-            sensorPanelRichTextBox.ForeColor = Color.White;
+            //statusRichTextBox.Left = ((this.Width - statusRichTextBox.Width) / 2) + 130;
+            statusPictureBox.IconColor = Color.Green;
             alarmButton.Enabled = true;
         }
 
@@ -94,22 +87,20 @@ namespace hotel_app.Forms.Functions
 
         private void TurnOnAlarm()
         {
-            sensorPanelRichTextBox.Text = System.Environment.NewLine + "Sensor is ON";
+            statusRichTextBox.Text = System.Environment.NewLine + "Sensor is ON";
             if (humansState)
             {
-                sensorPanelRichTextBox.Text += System.Environment.NewLine + "Alarm is ON"
+                statusRichTextBox.Text += System.Environment.NewLine + "Alarm is Armed"
                     + System.Environment.NewLine + "HUMANS DETECTED!"
                     + System.Environment.NewLine + "Please CALL Security!";
             }
             else
             {
-                sensorPanelRichTextBox.Text += System.Environment.NewLine + "Detecting humans"
-                    + System.Environment.NewLine + "Alarm is ON";
+                statusRichTextBox.Text += System.Environment.NewLine + "Detecting humans"
+                    + System.Environment.NewLine + "Alarm is Armed";
             }
-            sensorPanelRichTextBox.SelectAll();
-            sensorPanelRichTextBox.SelectionAlignment = HorizontalAlignment.Center;
-            sensorPanelRichTextBox.DeselectAll();
-            sensorPanelRichTextBox.BackColor = Color.Orange;
+            //statusRichTextBox.Left = ((this.Width - statusRichTextBox.Width) / 2) + 150;
+            statusPictureBox.IconColor = Color.Orange;
         }
 
         private void TurnOffAlarm()
