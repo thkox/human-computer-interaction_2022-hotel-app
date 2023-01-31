@@ -41,6 +41,7 @@ namespace hotel_app.Forms
             this.panel1 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.titlelabel = new System.Windows.Forms.Panel();
+            this.logoutButton = new FontAwesome.Sharp.IconButton();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.userNameLabel = new System.Windows.Forms.Label();
             this.childFormLabel = new System.Windows.Forms.Label();
@@ -237,6 +238,7 @@ namespace hotel_app.Forms
             // titlelabel
             // 
             this.titlelabel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(124)))), ((int)(((byte)(177)))));
+            this.titlelabel.Controls.Add(this.logoutButton);
             this.titlelabel.Controls.Add(this.pictureBox2);
             this.titlelabel.Controls.Add(this.userNameLabel);
             this.titlelabel.Controls.Add(this.childFormLabel);
@@ -247,10 +249,26 @@ namespace hotel_app.Forms
             this.titlelabel.Size = new System.Drawing.Size(1100, 100);
             this.titlelabel.TabIndex = 1;
             // 
+            // logoutButton
+            // 
+            this.logoutButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.logoutButton.FlatAppearance.BorderSize = 0;
+            this.logoutButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.logoutButton.ForeColor = System.Drawing.Color.Cornsilk;
+            this.logoutButton.IconChar = FontAwesome.Sharp.IconChar.SignOutAlt;
+            this.logoutButton.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(228)))), ((int)(((byte)(238)))));
+            this.logoutButton.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.logoutButton.Location = new System.Drawing.Point(1041, 27);
+            this.logoutButton.Name = "logoutButton";
+            this.logoutButton.Size = new System.Drawing.Size(47, 44);
+            this.logoutButton.TabIndex = 23;
+            this.logoutButton.UseVisualStyleBackColor = true;
+            this.logoutButton.Click += new System.EventHandler(this.logoutButton_Click);
+            // 
             // pictureBox2
             // 
             this.pictureBox2.Image = global::hotel_app.Properties.Resources.old_man;
-            this.pictureBox2.Location = new System.Drawing.Point(1022, 27);
+            this.pictureBox2.Location = new System.Drawing.Point(977, 27);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(47, 44);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -263,7 +281,7 @@ namespace hotel_app.Forms
             this.userNameLabel.AutoSize = true;
             this.userNameLabel.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.userNameLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(228)))), ((int)(((byte)(238)))));
-            this.userNameLabel.Location = new System.Drawing.Point(910, 29);
+            this.userNameLabel.Location = new System.Drawing.Point(885, 27);
             this.userNameLabel.Name = "userNameLabel";
             this.userNameLabel.Size = new System.Drawing.Size(96, 42);
             this.userNameLabel.TabIndex = 14;
@@ -395,5 +413,6 @@ namespace hotel_app.Forms
         private FontAwesome.Sharp.IconButton gpsButton;
         private PictureBox pictureBox2;
         private Label userNameLabel;
+        private FontAwesome.Sharp.IconButton logoutButton;
     }
 }
