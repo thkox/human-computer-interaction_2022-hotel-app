@@ -32,9 +32,12 @@
             this.thermostatDownButton = new FontAwesome.Sharp.IconButton();
             this.thermostatLabel = new System.Windows.Forms.Label();
             this.thermostatToggle = new hotel_app.Custom_Toolbox.ToggleButtonCustom();
-            this.thermostatValueLabel = new System.Windows.Forms.Label();
+            this.currentTempValueLabel = new System.Windows.Forms.Label();
             this.thermostatPanel = new System.Windows.Forms.Panel();
+            this.iconPictureBox1 = new FontAwesome.Sharp.IconPictureBox();
+            this.setTempValueLabel = new System.Windows.Forms.Label();
             this.thermostatPanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // thermostatUpButton
@@ -99,26 +102,53 @@
             this.thermostatToggle.UseVisualStyleBackColor = true;
             this.thermostatToggle.CheckedChanged += new System.EventHandler(this.thermostatToggle_CheckedChanged);
             // 
-            // thermostatValueLabel
+            // currentTempValueLabel
             // 
-            this.thermostatValueLabel.AutoSize = true;
-            this.thermostatValueLabel.Font = new System.Drawing.Font("Segoe UI", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.thermostatValueLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(241)))), ((int)(((byte)(246)))));
-            this.thermostatValueLabel.Location = new System.Drawing.Point(36, 30);
-            this.thermostatValueLabel.Name = "thermostatValueLabel";
-            this.thermostatValueLabel.Size = new System.Drawing.Size(159, 86);
-            this.thermostatValueLabel.TabIndex = 7;
-            this.thermostatValueLabel.Text = "[Val]";
+            this.currentTempValueLabel.AutoSize = true;
+            this.currentTempValueLabel.Font = new System.Drawing.Font("Comic Sans MS", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.currentTempValueLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(241)))), ((int)(((byte)(246)))));
+            this.currentTempValueLabel.Location = new System.Drawing.Point(3, 110);
+            this.currentTempValueLabel.Name = "currentTempValueLabel";
+            this.currentTempValueLabel.Size = new System.Drawing.Size(76, 38);
+            this.currentTempValueLabel.TabIndex = 7;
+            this.currentTempValueLabel.Text = "[Val]";
             // 
             // thermostatPanel
             // 
             this.thermostatPanel.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.thermostatPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(129)))), ((int)(((byte)(164)))), ((int)(((byte)(205)))));
-            this.thermostatPanel.Controls.Add(this.thermostatValueLabel);
-            this.thermostatPanel.Location = new System.Drawing.Point(350, 215);
+            this.thermostatPanel.Controls.Add(this.iconPictureBox1);
+            this.thermostatPanel.Controls.Add(this.setTempValueLabel);
+            this.thermostatPanel.Controls.Add(this.currentTempValueLabel);
+            this.thermostatPanel.Location = new System.Drawing.Point(186, 215);
             this.thermostatPanel.Name = "thermostatPanel";
-            this.thermostatPanel.Size = new System.Drawing.Size(208, 153);
+            this.thermostatPanel.Size = new System.Drawing.Size(372, 153);
             this.thermostatPanel.TabIndex = 8;
+            // 
+            // iconPictureBox1
+            // 
+            this.iconPictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(129)))), ((int)(((byte)(164)))), ((int)(((byte)(205)))));
+            this.iconPictureBox1.ForeColor = System.Drawing.Color.Green;
+            this.iconPictureBox1.IconChar = FontAwesome.Sharp.IconChar.Leaf;
+            this.iconPictureBox1.IconColor = System.Drawing.Color.Green;
+            this.iconPictureBox1.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconPictureBox1.IconSize = 42;
+            this.iconPictureBox1.Location = new System.Drawing.Point(16, 22);
+            this.iconPictureBox1.Name = "iconPictureBox1";
+            this.iconPictureBox1.Size = new System.Drawing.Size(42, 43);
+            this.iconPictureBox1.TabIndex = 9;
+            this.iconPictureBox1.TabStop = false;
+            // 
+            // setTempValueLabel
+            // 
+            this.setTempValueLabel.AutoSize = true;
+            this.setTempValueLabel.Font = new System.Drawing.Font("Comic Sans MS", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.setTempValueLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(241)))), ((int)(((byte)(246)))));
+            this.setTempValueLabel.Location = new System.Drawing.Point(108, 10);
+            this.setTempValueLabel.Name = "setTempValueLabel";
+            this.setTempValueLabel.Size = new System.Drawing.Size(156, 67);
+            this.setTempValueLabel.TabIndex = 8;
+            this.setTempValueLabel.Text = "label1";
             // 
             // ThermostatForm
             // 
@@ -136,6 +166,7 @@
             this.Load += new System.EventHandler(this.ThermostatForm_Load);
             this.thermostatPanel.ResumeLayout(false);
             this.thermostatPanel.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -146,7 +177,9 @@
         private FontAwesome.Sharp.IconButton thermostatDownButton;
         public Label thermostatLabel;
         private Custom_Toolbox.ToggleButtonCustom thermostatToggle;
-        private Label thermostatValueLabel;
+        private Label currentTempValueLabel;
         private Panel thermostatPanel;
+        private Label setTempValueLabel;
+        private FontAwesome.Sharp.IconPictureBox iconPictureBox1;
     }
 }

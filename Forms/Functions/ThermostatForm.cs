@@ -13,7 +13,8 @@ namespace hotel_app.Forms.Functions
 {
     public partial class ThermostatForm : Form
     {
-        int thermostatValue = 15;
+        int currentThermostatValue = 18;
+        int setThermostatValue = 18;
         bool thermostatState = false;
         public ThermostatForm()
         {
@@ -30,20 +31,23 @@ namespace hotel_app.Forms.Functions
             thermostatState = false;
             thermostatUpButton.Enabled = false;
             thermostatDownButton.Enabled = false;
-            thermostatValueLabel.Text = "OFF";
-            thermostatValueLabel.ForeColor = Color.Red;
+            currentTempValueLabel.Text = "Current Temperature: " + currentThermostatValue + "°C";
+            currentTempValueLabel.ForeColor = Color.Red;
+            setTempValueLabel.Text = "OFF";
+            setTempValueLabel.Left = (thermostatPanel.Width - setTempValueLabel.Width) / 2;
+            setTempValueLabel.ForeColor = Color.Red;
             thermostatPanel.BackColor = Color.FromArgb(129, 164, 205);
         }
 
         private void TurnONThermostat()
         {
             thermostatState = true;
-            if (thermostatValue == 10)
+            if (setThermostatValue == 10)
             {
                 thermostatUpButton.Enabled = true;
                 thermostatDownButton.Enabled = false;
             }
-            else if (thermostatValue == 30)
+            else if (setThermostatValue == 30)
             {
                 thermostatUpButton.Enabled = false;
                 thermostatDownButton.Enabled = true;
@@ -54,23 +58,28 @@ namespace hotel_app.Forms.Functions
                 thermostatDownButton.Enabled = true;
             }
             thermostatPanel.BackColor = Color.FromArgb(129, 164, 205);
-            thermostatValueLabel.ForeColor = Color.FromArgb(236, 241, 246);
-            thermostatValueLabel.Text = string.Format($"{thermostatValue.ToString().PadLeft(2, '0')}°C");
+            currentTempValueLabel.ForeColor = Color.FromArgb(236, 241, 246);
+            currentTempValueLabel.Text = "Current Temperature: " + currentThermostatValue + "°C";
+            setTempValueLabel.ForeColor = Color.FromArgb(236, 241, 246);
+            setTempValueLabel.Text = string.Format($"{setThermostatValue.ToString().PadLeft(2, '0')}°C");
+            setTempValueLabel.Left = (thermostatPanel.Width - setTempValueLabel.Width) / 2;
         }
 
         private void thermostatUpButton_Click(object sender, EventArgs e)
         {
             if (thermostatState == true)
             {
-                if (thermostatValue >= 29)
+                if (setThermostatValue >= 29)
                     thermostatUpButton.Enabled = false;
                 else
                 {
                     thermostatUpButton.Enabled = true;
                     thermostatDownButton.Enabled = true;
                 }
-                thermostatValue += 1;
-                thermostatValueLabel.Text = string.Format($"{thermostatValue.ToString().PadLeft(2, '0')}°C");
+                setThermostatValue += 1;
+                currentTempValueLabel.Text = "Current Temperature: " + currentThermostatValue + "°C";
+                setTempValueLabel.Text = string.Format($"{setThermostatValue.ToString().PadLeft(2, '0')}°C");
+                setTempValueLabel.Left = (thermostatPanel.Width - setTempValueLabel.Width) / 2;
             }
         }
 
@@ -78,15 +87,17 @@ namespace hotel_app.Forms.Functions
         {
             if (thermostatState == true)
             {
-                if (thermostatValue <= 11)
+                if (setThermostatValue <= 11)
                     thermostatDownButton.Enabled = false;
                 else
                 {
                     thermostatUpButton.Enabled = true;
                     thermostatDownButton.Enabled = true;
                 }
-                thermostatValue -= 1;
-                thermostatValueLabel.Text = string.Format($"{thermostatValue.ToString().PadLeft(2, '0')}°C");
+                setThermostatValue -= 1;
+                currentTempValueLabel.Text = "Current Temperature: " + currentThermostatValue + "°C";
+                setTempValueLabel.Text = string.Format($"{setThermostatValue.ToString().PadLeft(2, '0')}°C");
+                setTempValueLabel.Left = (thermostatPanel.Width - setTempValueLabel.Width) / 2;
             }
         }
 
