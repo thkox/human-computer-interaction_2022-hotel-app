@@ -34,10 +34,10 @@
             this.thermostatToggle = new hotel_app.Custom_Toolbox.ToggleButtonCustom();
             this.currentTempValueLabel = new System.Windows.Forms.Label();
             this.thermostatPanel = new System.Windows.Forms.Panel();
-            this.iconPictureBox1 = new FontAwesome.Sharp.IconPictureBox();
+            this.leafPictureBox = new FontAwesome.Sharp.IconPictureBox();
             this.setTempValueLabel = new System.Windows.Forms.Label();
             this.thermostatPanel.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.leafPictureBox)).BeginInit();
             this.SuspendLayout();
             // 
             // thermostatUpButton
@@ -117,7 +117,7 @@
             // 
             this.thermostatPanel.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.thermostatPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(129)))), ((int)(((byte)(164)))), ((int)(((byte)(205)))));
-            this.thermostatPanel.Controls.Add(this.iconPictureBox1);
+            this.thermostatPanel.Controls.Add(this.leafPictureBox);
             this.thermostatPanel.Controls.Add(this.setTempValueLabel);
             this.thermostatPanel.Controls.Add(this.currentTempValueLabel);
             this.thermostatPanel.Location = new System.Drawing.Point(186, 215);
@@ -125,19 +125,20 @@
             this.thermostatPanel.Size = new System.Drawing.Size(372, 153);
             this.thermostatPanel.TabIndex = 8;
             // 
-            // iconPictureBox1
+            // leafPictureBox
             // 
-            this.iconPictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(129)))), ((int)(((byte)(164)))), ((int)(((byte)(205)))));
-            this.iconPictureBox1.ForeColor = System.Drawing.Color.Green;
-            this.iconPictureBox1.IconChar = FontAwesome.Sharp.IconChar.Leaf;
-            this.iconPictureBox1.IconColor = System.Drawing.Color.Green;
-            this.iconPictureBox1.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconPictureBox1.IconSize = 42;
-            this.iconPictureBox1.Location = new System.Drawing.Point(16, 22);
-            this.iconPictureBox1.Name = "iconPictureBox1";
-            this.iconPictureBox1.Size = new System.Drawing.Size(42, 43);
-            this.iconPictureBox1.TabIndex = 9;
-            this.iconPictureBox1.TabStop = false;
+            this.leafPictureBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(129)))), ((int)(((byte)(164)))), ((int)(((byte)(205)))));
+            this.leafPictureBox.ForeColor = System.Drawing.Color.Green;
+            this.leafPictureBox.IconChar = FontAwesome.Sharp.IconChar.Leaf;
+            this.leafPictureBox.IconColor = System.Drawing.Color.Green;
+            this.leafPictureBox.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.leafPictureBox.IconSize = 42;
+            this.leafPictureBox.Location = new System.Drawing.Point(16, 22);
+            this.leafPictureBox.Name = "leafPictureBox";
+            this.leafPictureBox.Size = new System.Drawing.Size(42, 43);
+            this.leafPictureBox.TabIndex = 9;
+            this.leafPictureBox.TabStop = false;
+            this.leafPictureBox.Visible = false;
             // 
             // setTempValueLabel
             // 
@@ -166,7 +167,7 @@
             this.Load += new System.EventHandler(this.ThermostatForm_Load);
             this.thermostatPanel.ResumeLayout(false);
             this.thermostatPanel.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.leafPictureBox)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -180,6 +181,6 @@
         private Label currentTempValueLabel;
         private Panel thermostatPanel;
         private Label setTempValueLabel;
-        private FontAwesome.Sharp.IconPictureBox iconPictureBox1;
+        private FontAwesome.Sharp.IconPictureBox leafPictureBox;
     }
 }

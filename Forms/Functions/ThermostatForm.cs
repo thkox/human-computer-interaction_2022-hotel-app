@@ -32,7 +32,6 @@ namespace hotel_app.Forms.Functions
             thermostatUpButton.Enabled = false;
             thermostatDownButton.Enabled = false;
             currentTempValueLabel.Text = "Current Temperature: " + currentThermostatValue + "°C";
-            currentTempValueLabel.ForeColor = Color.Red;
             setTempValueLabel.Text = "OFF";
             setTempValueLabel.Left = (thermostatPanel.Width - setTempValueLabel.Width) / 2;
             setTempValueLabel.ForeColor = Color.Red;
@@ -56,6 +55,10 @@ namespace hotel_app.Forms.Functions
             {
                 thermostatUpButton.Enabled = true;
                 thermostatDownButton.Enabled = true;
+                if (setThermostatValue <= 20)
+                {
+                    leafPictureBox.Visible = true;
+                }
             }
             thermostatPanel.BackColor = Color.FromArgb(129, 164, 205);
             currentTempValueLabel.ForeColor = Color.FromArgb(236, 241, 246);
@@ -76,6 +79,10 @@ namespace hotel_app.Forms.Functions
                     thermostatUpButton.Enabled = true;
                     thermostatDownButton.Enabled = true;
                 }
+                if (setThermostatValue > 19)
+                {
+                    leafPictureBox.Visible = false;
+                }
                 setThermostatValue += 1;
                 currentTempValueLabel.Text = "Current Temperature: " + currentThermostatValue + "°C";
                 setTempValueLabel.Text = string.Format($"{setThermostatValue.ToString().PadLeft(2, '0')}°C");
@@ -93,6 +100,10 @@ namespace hotel_app.Forms.Functions
                 {
                     thermostatUpButton.Enabled = true;
                     thermostatDownButton.Enabled = true;
+                }
+                if (setThermostatValue <= 21)
+                {
+                    leafPictureBox.Visible = true;
                 }
                 setThermostatValue -= 1;
                 currentTempValueLabel.Text = "Current Temperature: " + currentThermostatValue + "°C";
