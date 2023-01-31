@@ -32,6 +32,80 @@ namespace hotel_app.Forms
             //Form
             this.Text = "Staff App";
             this.DoubleBuffered = true; //to avoid flickering
+
+            //disable some properties for the parking form
+            parking.trojan1PictureBox.Visible = false;
+            parking.trojan4PictureBox.Visible = false;
+            parking.upOButton.Visible = false;
+            parking.upZButton.Visible = false;
+            parking.downOButton.Visible = false;
+            parking.downZButton.Visible = false;
+            parking.leftOButton.Visible = false;
+            parking.leftZButton.Visible = false;
+            parking.rightOButton.Visible = false;
+            parking.rightZButton.Visible = false;
+            parking.parkingButton.Visible = false;
+            parking.parkingButton2.Visible = false;
+
+            parking.label2.Visible = true;
+            parking.label3.Visible = true;
+            parking.label4.Visible = true;
+            parking.label5.Visible = true;
+
+            //add the click property for the pictureaboxes in the parking form
+            parking.leftTransitionPictureBox.Click += new EventHandler(leftTransitionPictureBox_Click);
+           
+            parking.rightTransitionPictureBox.Click += new EventHandler(rightTransitionPictureBox_Click);
+
+            parking.leftTransitionPictureBox.MouseHover += new System.EventHandler(LeftTransitionPictureBox_MouseHover);
+            parking.rightTransitionPictureBox.MouseHover += new System.EventHandler(RightTransitionPictureBox_MouseHover);
+
+            parking.trojan2PictureBox.Click += new EventHandler(Trojan2PictureBox_Click);
+            parking.trojan3PictureBox.Click += new EventHandler(Trojan3PictureBox_Click);
+            parking.trojan5PictureBox.Click += new EventHandler(Trojan5PictureBox_Click);
+            parking.trojan6PictureBox.Click += new EventHandler(Trojan6PictureBox_Click);
+        }
+
+        private void Trojan2PictureBox_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new Client2Form());
+        }
+
+        private void Trojan3PictureBox_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Trojan5PictureBox_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Trojan6PictureBox_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void LeftTransitionPictureBox_MouseHover(object sender, EventArgs e)
+        {
+            parking.leftTransitionPictureBox.Cursor = Cursors.Hand;
+        }
+
+        private void RightTransitionPictureBox_MouseHover(object sender, EventArgs e)
+        {
+            parking.rightTransitionPictureBox.Cursor = Cursors.Hand;
+        }
+
+        private void leftTransitionPictureBox_Click(object sender, EventArgs e)
+        {
+            parking.zeusCourtyardPanel.Hide();
+            parking.olymbosGardensPanel.Show();
+        }
+
+        private void rightTransitionPictureBox_Click(object sender, EventArgs e)
+        {
+            parking.zeusCourtyardPanel.Show();
+            parking.olymbosGardensPanel.Hide();
         }
 
         private void ActivateButton(object senderBtn)
@@ -135,7 +209,6 @@ namespace hotel_app.Forms
         {
             ActivateButton(sender);
             OpenChildForm(zeusPalaceMenu);
-
         }
 
         private void EmployeeForm_FormClosed(object sender, FormClosedEventArgs e)
