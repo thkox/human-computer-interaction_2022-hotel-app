@@ -53,12 +53,6 @@ namespace hotel_app.Forms
             parking.label5.Visible = true;
 
             //add the click property for the pictureaboxes in the parking form
-            parking.leftTransitionPictureBox.Click += new EventHandler(leftTransitionPictureBox_Click);
-           
-            parking.rightTransitionPictureBox.Click += new EventHandler(rightTransitionPictureBox_Click);
-
-            parking.leftTransitionPictureBox.MouseHover += new System.EventHandler(LeftTransitionPictureBox_MouseHover);
-            parking.rightTransitionPictureBox.MouseHover += new System.EventHandler(RightTransitionPictureBox_MouseHover);
 
             parking.trojan2PictureBox.Click += new EventHandler(Trojan2PictureBox_Click);
             parking.trojan3PictureBox.Click += new EventHandler(Trojan3PictureBox_Click);
@@ -84,28 +78,6 @@ namespace hotel_app.Forms
         private void Trojan6PictureBox_Click(object sender, EventArgs e)
         {
 
-        }
-
-        private void LeftTransitionPictureBox_MouseHover(object sender, EventArgs e)
-        {
-            parking.leftTransitionPictureBox.Cursor = Cursors.Hand;
-        }
-
-        private void RightTransitionPictureBox_MouseHover(object sender, EventArgs e)
-        {
-            parking.rightTransitionPictureBox.Cursor = Cursors.Hand;
-        }
-
-        private void leftTransitionPictureBox_Click(object sender, EventArgs e)
-        {
-            parking.zeusCourtyardPanel.Hide();
-            parking.olymbosGardensPanel.Show();
-        }
-
-        private void rightTransitionPictureBox_Click(object sender, EventArgs e)
-        {
-            parking.zeusCourtyardPanel.Show();
-            parking.olymbosGardensPanel.Hide();
         }
 
         private void ActivateButton(object senderBtn)
