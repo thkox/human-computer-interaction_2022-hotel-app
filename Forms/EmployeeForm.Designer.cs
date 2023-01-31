@@ -67,7 +67,7 @@ namespace hotel_app.Forms
             this.menuPanel.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.menuPanel.Location = new System.Drawing.Point(0, 0);
             this.menuPanel.Name = "menuPanel";
-            this.menuPanel.Size = new System.Drawing.Size(300, 861);
+            this.menuPanel.Size = new System.Drawing.Size(300, 761);
             this.menuPanel.TabIndex = 0;
             // 
             // olymposGardensButton
@@ -171,7 +171,7 @@ namespace hotel_app.Forms
             this.titlelabel.Dock = System.Windows.Forms.DockStyle.Top;
             this.titlelabel.Location = new System.Drawing.Point(300, 0);
             this.titlelabel.Name = "titlelabel";
-            this.titlelabel.Size = new System.Drawing.Size(1384, 100);
+            this.titlelabel.Size = new System.Drawing.Size(1084, 100);
             this.titlelabel.TabIndex = 1;
             // 
             // logoutButton
@@ -183,7 +183,7 @@ namespace hotel_app.Forms
             this.logoutButton.IconChar = FontAwesome.Sharp.IconChar.SignOutAlt;
             this.logoutButton.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(228)))), ((int)(((byte)(238)))));
             this.logoutButton.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.logoutButton.Location = new System.Drawing.Point(1041, 27);
+            this.logoutButton.Location = new System.Drawing.Point(1030, 27);
             this.logoutButton.Name = "logoutButton";
             this.logoutButton.Size = new System.Drawing.Size(47, 44);
             this.logoutButton.TabIndex = 22;
@@ -206,7 +206,7 @@ namespace hotel_app.Forms
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(228)))), ((int)(((byte)(238)))));
-            this.label4.Location = new System.Drawing.Point(885, 27);
+            this.label4.Location = new System.Drawing.Point(885, 29);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(86, 42);
             this.label4.TabIndex = 20;
@@ -246,7 +246,7 @@ namespace hotel_app.Forms
             this.childFormPanel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.childFormPanel.Location = new System.Drawing.Point(300, 100);
             this.childFormPanel.Name = "childFormPanel";
-            this.childFormPanel.Size = new System.Drawing.Size(1384, 761);
+            this.childFormPanel.Size = new System.Drawing.Size(1084, 661);
             this.childFormPanel.TabIndex = 2;
             // 
             // label3
@@ -256,7 +256,7 @@ namespace hotel_app.Forms
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Comic Sans MS", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(466, 320);
+            this.label3.Location = new System.Drawing.Point(189, 276);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(825, 203);
             this.label3.TabIndex = 8;
@@ -268,7 +268,7 @@ namespace hotel_app.Forms
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Edwardian Script ITC", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label2.ForeColor = System.Drawing.Color.Goldenrod;
-            this.label2.Location = new System.Drawing.Point(805, 249);
+            this.label2.Location = new System.Drawing.Point(464, 183);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(231, 57);
             this.label2.TabIndex = 7;
@@ -281,7 +281,7 @@ namespace hotel_app.Forms
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Edwardian Script ITC", 54.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label1.ForeColor = System.Drawing.Color.Goldenrod;
-            this.label1.Location = new System.Drawing.Point(663, 182);
+            this.label1.Location = new System.Drawing.Point(377, 113);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(318, 86);
             this.label1.TabIndex = 6;
@@ -293,7 +293,7 @@ namespace hotel_app.Forms
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(139)))), ((int)(((byte)(180)))));
-            this.ClientSize = new System.Drawing.Size(1684, 861);
+            this.ClientSize = new System.Drawing.Size(1384, 761);
             this.Controls.Add(this.childFormPanel);
             this.Controls.Add(this.titlelabel);
             this.Controls.Add(this.menuPanel);
