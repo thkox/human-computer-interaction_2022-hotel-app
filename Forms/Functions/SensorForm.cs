@@ -45,7 +45,6 @@ namespace hotel_app.Forms.Functions
         private void TurnOffSensor()
         {
             statusRichTextBox.Text = System.Environment.NewLine + "Sensor is OFF";
-            //statusRichTextBox.Left = ((this.Width - statusRichTextBox.Width) / 2) + 100;
             statusPictureBox.IconColor = Color.Red;
             alarmState = false;
             alarmButton.Enabled = false;
@@ -66,7 +65,6 @@ namespace hotel_app.Forms.Functions
             {
                 statusRichTextBox.Text += System.Environment.NewLine + "DetectingHumans";
             }
-            //statusRichTextBox.Left = ((this.Width - statusRichTextBox.Width) / 2) + 130;
             statusPictureBox.IconColor = Color.Green;
             alarmButton.Enabled = true;
         }
@@ -99,7 +97,6 @@ namespace hotel_app.Forms.Functions
                 statusRichTextBox.Text += System.Environment.NewLine + "Detecting humans"
                     + System.Environment.NewLine + "Alarm is Armed";
             }
-            //statusRichTextBox.Left = ((this.Width - statusRichTextBox.Width) / 2) + 150;
             statusPictureBox.IconColor = Color.Orange;
         }
 
