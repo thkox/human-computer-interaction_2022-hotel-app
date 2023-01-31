@@ -38,6 +38,7 @@ namespace hotel_app.Forms
             this.panel1 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.titlelabel = new System.Windows.Forms.Panel();
+            this.currentNameLabel = new System.Windows.Forms.Label();
             this.logoutButton = new FontAwesome.Sharp.IconButton();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.label4 = new System.Windows.Forms.Label();
@@ -158,11 +159,12 @@ namespace hotel_app.Forms
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
+            this.pictureBox1.Click += new System.EventHandler(this.logoPictureBox_Click);
             // 
             // titlelabel
             // 
             this.titlelabel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(124)))), ((int)(((byte)(177)))));
+            this.titlelabel.Controls.Add(this.currentNameLabel);
             this.titlelabel.Controls.Add(this.logoutButton);
             this.titlelabel.Controls.Add(this.pictureBox3);
             this.titlelabel.Controls.Add(this.label4);
@@ -173,6 +175,17 @@ namespace hotel_app.Forms
             this.titlelabel.Name = "titlelabel";
             this.titlelabel.Size = new System.Drawing.Size(1084, 100);
             this.titlelabel.TabIndex = 1;
+            // 
+            // currentNameLabel
+            // 
+            this.currentNameLabel.AutoSize = true;
+            this.currentNameLabel.Font = new System.Drawing.Font("Cooper Black", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.currentNameLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(228)))), ((int)(((byte)(238)))));
+            this.currentNameLabel.Location = new System.Drawing.Point(368, 42);
+            this.currentNameLabel.Name = "currentNameLabel";
+            this.currentNameLabel.Size = new System.Drawing.Size(356, 31);
+            this.currentNameLabel.TabIndex = 23;
+            this.currentNameLabel.Text = "[TROJAN/ROOM NAME]";
             // 
             // logoutButton
             // 
@@ -210,7 +223,7 @@ namespace hotel_app.Forms
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(86, 42);
             this.label4.TabIndex = 20;
-            this.label4.Text = "Marios\r\nEmployee";
+            this.label4.Text = "Mario\r\nEmployee";
             this.label4.TextAlign = System.Drawing.ContentAlignment.TopRight;
             // 
             // childFormLabel
@@ -336,5 +349,6 @@ namespace hotel_app.Forms
         private Label label2;
         private Label label3;
         private Panel childFormPanel;
+        private Label currentNameLabel;
     }
 }

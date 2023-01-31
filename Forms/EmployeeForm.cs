@@ -75,23 +75,23 @@ namespace hotel_app.Forms
                 roomForm.panel1.Visible = false;
             }
 
+            currentNameLabel.Visible = false;
+
             //add the click property for the pictureaboxes in the parking form
 
             parking.trojan2PictureBox.Click += new EventHandler(Trojan2PictureBox_Click);
             parking.trojan3PictureBox.Click += new EventHandler(Trojan3PictureBox_Click);
             parking.trojan5PictureBox.Click += new EventHandler(Trojan5PictureBox_Click);
             parking.trojan6PictureBox.Click += new EventHandler(Trojan6PictureBox_Click);
+
+            //load the names of the trojans
+
+            trojanForms[0].currentName = "Trojan A1";
+            trojanForms[1].currentName = "Trojan A2";
+            trojanForms[2].currentName = "Trojan C1";
+            trojanForms[3].currentName = "Trojan C2";
         }
 
-        private void EmployeeForm_Load(object sender, EventArgs e)
-        {
-
-            //reveal the names of the trojans
-            parking.label2.Visible = true;
-            parking.label3.Visible = true;
-            parking.label4.Visible = true;
-            parking.label5.Visible = true;
-        }
         //activate a trojan
         private void Trojan2PictureBox_Click(object sender, EventArgs e)
         {
@@ -121,8 +121,18 @@ namespace hotel_app.Forms
             label2.Hide();
             label3.Hide();
 
+            currentNameLabel.Text = trojanForm.currentName;
+            currentNameLabel.Left = (currentNameLabel.Parent.ClientSize.Width - currentNameLabel.Width) / 2;
+            currentNameLabel.Top = (currentNameLabel.Parent.ClientSize.Height - currentNameLabel.Height) / 2;
+            currentNameLabel.Visible = true;
+
             currentChildForm.Hide();
             childFormPanel.Controls.Add(trojanForm.childFormPanel);
+        }
+
+        private void loadRoomFunctions(Client2Form roomForm)
+        {
+
         }
 
         private void ActivateButton(object senderBtn)
@@ -194,6 +204,13 @@ namespace hotel_app.Forms
             childForm.BringToFront();
             childForm.Show();
         }
+
+        private void CloseFunctionsForm()
+        {
+            currentChildForm?.Hide();
+            currentMenuPanel?.Hide();
+            currentNameLabel?.Hide();
+        }
         private void courtyardZeusButton_Click(object sender, EventArgs e)
         {
             ActivateButton(sender);
@@ -227,10 +244,9 @@ namespace hotel_app.Forms
             childFormLabel.Text = "Home";
         }
 
-        private void pictureBox1_Click(object sender, EventArgs e)
+        private void logoPictureBox_Click(object sender, EventArgs e)
         {
-            currentChildForm?.Hide();
-            currentMenuPanel?.Hide();
+            CloseFunctionsForm();
 
             zeusPalaceButton.Show();
             olymposGardensButton.Show();
