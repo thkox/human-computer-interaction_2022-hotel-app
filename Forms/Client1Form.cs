@@ -14,16 +14,16 @@ namespace hotel_app.Forms
 {
     public partial class Client1Form : Form
     {
-        private IconButton currentBtn = new IconButton();
-        private Panel leftBorderBtn = new Panel(); 
-        private Form currentChildForm = new Form(); //the second form that is loaded inside the main form
+        private IconButton currentBtn = new();
+        private Panel leftBorderBtn = new(); 
+        private Form currentChildForm = new(); //the second form that is loaded inside the main form
 
-        ThermostatForm thermostat = new ThermostatForm();
-        LightsForm lights = new LightsForm();
-        TVForm tv = new TVForm();
-        RadioForm radio = new RadioForm();  
-        GPSMenuForm gps = new GPSMenuForm();
-        MainDoorForm door = new MainDoorForm();
+        ThermostatForm thermostat = new();
+        LightsForm lights = new();
+        TVForm tv = new();
+        RadioForm radio = new();  
+        GPSMenuForm gps = new();
+        MainDoorForm door = new();
 
         public Client1Form()
         {

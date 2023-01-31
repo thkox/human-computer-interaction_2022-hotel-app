@@ -58,7 +58,7 @@ namespace hotel_app.Forms
             // 
             // menuPanel
             // 
-            this.menuPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(68)))), ((int)(((byte)(110)))));
+            this.menuPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(99)))), ((int)(((byte)(161)))));
             this.menuPanel.Controls.Add(this.olymposGardensButton);
             this.menuPanel.Controls.Add(this.courtyardZeusButton);
             this.menuPanel.Controls.Add(this.zeusPalaceButton);

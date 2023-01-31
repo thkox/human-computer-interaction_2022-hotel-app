@@ -369,10 +369,7 @@ namespace hotel_app.Forms
         }
 
         #endregion
-
-        private Panel menuPanel;
         private FontAwesome.Sharp.IconButton poolButton;
-        private Panel panel1;
         private FontAwesome.Sharp.IconButton tvButton;
         private FontAwesome.Sharp.IconButton lightsButton;
         private FontAwesome.Sharp.IconButton privateThermostatButton;
@@ -388,5 +385,7 @@ namespace hotel_app.Forms
         private PictureBox pictureBox2;
         private Label userNameLabel;
         private FontAwesome.Sharp.IconButton logoutButton;
+        public Panel menuPanel;
+        public Panel panel1;
     }
 }

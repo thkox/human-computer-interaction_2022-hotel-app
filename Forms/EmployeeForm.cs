@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -15,18 +16,23 @@ namespace hotel_app.Forms
     public partial class EmployeeForm : Form
     {
         private IconButton currentBtn;
-        private Panel leftBorderBtn;
+        private readonly Panel leftBorderBtn;
         private Form currentChildForm;
+        private readonly Client1Form client1Form = new();
+        private readonly Client2Form client2Form = new();
+        private Panel currentMenuPanel;
 
         //forms that we can open now
-        ZeusPalaceMenuForm zeusPalaceMenu = new ZeusPalaceMenuForm();
-        ParkingForm parking = new ParkingForm(); //Courtyard Zeus and Olympos Gardens different panels
+        readonly ZeusPalaceMenuForm zeusPalaceMenu = new();
+        readonly ParkingForm parking = new(); //Courtyard Zeus and Olympos Gardens different panels
 
         public EmployeeForm()
         {
             InitializeComponent();
-            leftBorderBtn = new Panel();
-            leftBorderBtn.Size = new Size(10, 70); //70 is the height of the buttons
+            leftBorderBtn = new Panel
+            {
+                Size = new Size(10, 70) //70 is the height of the buttons
+            };
             menuPanel.Controls.Add(leftBorderBtn);
 
             //Form
@@ -52,6 +58,10 @@ namespace hotel_app.Forms
             parking.label4.Visible = true;
             parking.label5.Visible = true;
 
+            //hide the logos for the clients menu
+            client1Form.panel1.Visible = false;
+            client2Form.panel1.Visible = false;
+
             //add the click property for the pictureaboxes in the parking form
 
             parking.trojan2PictureBox.Click += new EventHandler(Trojan2PictureBox_Click);
@@ -62,7 +72,7 @@ namespace hotel_app.Forms
 
         private void Trojan2PictureBox_Click(object sender, EventArgs e)
         {
-            OpenChildForm(new Client2Form());
+            OpenChildMenu(client1Form.menuPanel);
         }
 
         private void Trojan3PictureBox_Click(object sender, EventArgs e)
@@ -119,13 +129,27 @@ namespace hotel_app.Forms
                 currentBtn.ImageAlign = ContentAlignment.MiddleLeft;
             }
         }
+        
+        private void OpenChildMenu(Panel clientMenuForm)
+        {
+
+            if (currentMenuPanel != null)
+            {
+                currentMenuPanel.Hide();
+            }
+            else
+            {
+                currentMenuPanel = clientMenuForm;
+                menuPanel.Controls.Add(clientMenuForm);
+                menuPanel.Tag = clientMenuForm;
+                clientMenuForm.BringToFront();
+                clientMenuForm.Show();
+            }
+        }
 
         private void OpenChildForm(Form childForm)
         {
-            if (currentChildForm != null)
-            {
-                currentChildForm.Hide();
-            }
+            currentChildForm?.Hide();
             currentChildForm = childForm;
             childForm.TopLevel = false;
             childForm.FormBorderStyle = FormBorderStyle.None;
@@ -170,10 +194,7 @@ namespace hotel_app.Forms
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
-            if (currentChildForm != null)
-            {
-                currentChildForm.Hide();
-            }
+            currentChildForm?.Hide();
             Reset();
         }
 
