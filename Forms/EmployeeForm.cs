@@ -122,8 +122,10 @@ namespace hotel_app.Forms
             label3.Hide();
 
             currentNameLabel.Text = trojanForm.currentName;
+            //center align the label
             currentNameLabel.Left = (currentNameLabel.Parent.ClientSize.Width - currentNameLabel.Width) / 2;
             currentNameLabel.Top = (currentNameLabel.Parent.ClientSize.Height - currentNameLabel.Height) / 2;
+
             currentNameLabel.Visible = true;
 
             currentChildForm.Hide();

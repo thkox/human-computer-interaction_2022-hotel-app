@@ -16,7 +16,6 @@ namespace hotel_app.Forms.Functions
 
         private Form currentChildForm;
 
-        private RoomFunctionsForm room = new RoomFunctionsForm();
         public RoomsForm()
         {
             InitializeComponent();
@@ -32,49 +31,6 @@ namespace hotel_app.Forms.Functions
             roomsLoadFormsPanel.Tag = childForm;
             childForm.BringToFront();
             childForm.Show();
-        }
-
-        private void RoomsForm_Load(object sender, EventArgs e)
-        {
-            roomsMenuTabs = roomsLoadFormsPanel;
-            backPictureBox.Hide();
-        }
-
-        private void room1Button_Click(object sender, EventArgs e)
-        {
-            OpenRoomsFunctionForm(room);
-            backPictureBox.Show();
-        }
-
-        private void room2Button_Click(object sender, EventArgs e)
-        {
-            OpenRoomsFunctionForm(room);
-            backPictureBox.Show();
-        }
-
-        private void doorOpenButton_Click(object sender, EventArgs e)
-        {
-            OpenRoomsFunctionForm(room);
-            backPictureBox.Show();
-        }
-
-        private void room4Button_Click(object sender, EventArgs e)
-        {
-            OpenRoomsFunctionForm(room);
-            backPictureBox.Show();
-        }
-
-        private void room5Button_Click(object sender, EventArgs e)
-        {
-            OpenRoomsFunctionForm(room);
-            backPictureBox.Show();
-        }
-
-        private void backPictureBox_Click(object sender, EventArgs e)
-        {
-            currentChildForm.Hide();
-            roomsLoadFormsPanel = roomsMenuTabs;
-            backPictureBox.Hide();
         }
     }
 }
