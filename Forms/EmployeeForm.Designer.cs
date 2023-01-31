@@ -43,10 +43,10 @@ namespace hotel_app.Forms
             this.label4 = new System.Windows.Forms.Label();
             this.childFormLabel = new System.Windows.Forms.Label();
             this.currentChildFormIcon = new FontAwesome.Sharp.IconPictureBox();
-            this.childFormPanel = new System.Windows.Forms.Panel();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.childFormPanel = new System.Windows.Forms.Panel();
             this.menuPanel.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -237,30 +237,18 @@ namespace hotel_app.Forms
             this.currentChildFormIcon.TabIndex = 0;
             this.currentChildFormIcon.TabStop = false;
             // 
-            // childFormPanel
+            // label1
             // 
-            this.childFormPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(144)))), ((int)(((byte)(191)))));
-            this.childFormPanel.Controls.Add(this.label3);
-            this.childFormPanel.Controls.Add(this.label2);
-            this.childFormPanel.Controls.Add(this.label1);
-            this.childFormPanel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.childFormPanel.Location = new System.Drawing.Point(300, 100);
-            this.childFormPanel.Name = "childFormPanel";
-            this.childFormPanel.Size = new System.Drawing.Size(1084, 661);
-            this.childFormPanel.TabIndex = 2;
-            // 
-            // label3
-            // 
-            this.label3.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label3.AutoSize = true;
-            this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.Font = new System.Drawing.Font("Comic Sans MS", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(189, 276);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(825, 203);
-            this.label3.TabIndex = 8;
-            this.label3.Text = resources.GetString("label3.Text");
+            this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Edwardian Script ITC", 54.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label1.ForeColor = System.Drawing.Color.Goldenrod;
+            this.label1.Location = new System.Drawing.Point(377, 113);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(318, 86);
+            this.label1.TabIndex = 6;
+            this.label1.Text = "Zeus Palace\r\n";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label2
             // 
@@ -275,18 +263,30 @@ namespace hotel_app.Forms
             this.label2.Text = "Staff Services";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label1
+            // label3
             // 
-            this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Edwardian Script ITC", 54.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label1.ForeColor = System.Drawing.Color.Goldenrod;
-            this.label1.Location = new System.Drawing.Point(377, 113);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(318, 86);
-            this.label1.TabIndex = 6;
-            this.label1.Text = "Zeus Palace\r\n";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label3.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.Transparent;
+            this.label3.Font = new System.Drawing.Font("Comic Sans MS", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label3.ForeColor = System.Drawing.Color.White;
+            this.label3.Location = new System.Drawing.Point(189, 276);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(825, 203);
+            this.label3.TabIndex = 8;
+            this.label3.Text = resources.GetString("label3.Text");
+            // 
+            // childFormPanel
+            // 
+            this.childFormPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(144)))), ((int)(((byte)(191)))));
+            this.childFormPanel.Controls.Add(this.label3);
+            this.childFormPanel.Controls.Add(this.label2);
+            this.childFormPanel.Controls.Add(this.label1);
+            this.childFormPanel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.childFormPanel.Location = new System.Drawing.Point(300, 100);
+            this.childFormPanel.Name = "childFormPanel";
+            this.childFormPanel.Size = new System.Drawing.Size(1084, 661);
+            this.childFormPanel.TabIndex = 2;
             // 
             // EmployeeForm
             // 
@@ -328,13 +328,13 @@ namespace hotel_app.Forms
         private Panel titlelabel;
         private FontAwesome.Sharp.IconPictureBox currentChildFormIcon;
         private Label childFormLabel;
-        private Panel childFormPanel;
-        private Label label3;
-        private Label label2;
-        private Label label1;
         private PictureBox pictureBox1;
         private PictureBox pictureBox3;
         private Label label4;
         private FontAwesome.Sharp.IconButton logoutButton;
+        private Label label1;
+        private Label label2;
+        private Label label3;
+        private Panel childFormPanel;
     }
 }

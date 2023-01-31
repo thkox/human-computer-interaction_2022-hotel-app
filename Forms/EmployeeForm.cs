@@ -16,7 +16,7 @@ namespace hotel_app.Forms
     public partial class EmployeeForm : Form
     {
         private IconButton currentBtn;
-        private readonly Panel leftBorderBtn;
+        private Panel leftBorderBtn;
         private Form currentChildForm;
 
         private Panel currentMenuPanel;
@@ -64,11 +64,6 @@ namespace hotel_app.Forms
             parking.parkingButton.Visible = false;
             parking.parkingButton2.Visible = false;
 
-            //reveal the names of the trojans
-            parking.label2.Visible = true;
-            parking.label3.Visible = true;
-            parking.label4.Visible = true;
-            parking.label5.Visible = true;
 
             //hide the logos for the clients menu
             foreach (Client1Form trojanForm in trojanForms)
@@ -86,6 +81,16 @@ namespace hotel_app.Forms
             parking.trojan3PictureBox.Click += new EventHandler(Trojan3PictureBox_Click);
             parking.trojan5PictureBox.Click += new EventHandler(Trojan5PictureBox_Click);
             parking.trojan6PictureBox.Click += new EventHandler(Trojan6PictureBox_Click);
+        }
+
+        private void EmployeeForm_Load(object sender, EventArgs e)
+        {
+
+            //reveal the names of the trojans
+            parking.label2.Visible = true;
+            parking.label3.Visible = true;
+            parking.label4.Visible = true;
+            parking.label5.Visible = true;
         }
         //activate a trojan
         private void Trojan2PictureBox_Click(object sender, EventArgs e)
@@ -271,5 +276,7 @@ namespace hotel_app.Forms
             Form signinForm = new SignInForm();
             signinForm.Show();
         }
+
+
     }
 }
