@@ -40,21 +40,22 @@ namespace hotel_app.Forms
             this.panel1 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.titlelabel = new System.Windows.Forms.Panel();
+            this.logoutButton = new FontAwesome.Sharp.IconButton();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.userNameLabel = new System.Windows.Forms.Label();
             this.childFormLabel = new System.Windows.Forms.Label();
             this.currentChildFormIcon = new FontAwesome.Sharp.IconPictureBox();
             this.childFormPanel = new System.Windows.Forms.Panel();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.userNameLabel = new System.Windows.Forms.Label();
             this.menuPanel.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.titlelabel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.currentChildFormIcon)).BeginInit();
             this.childFormPanel.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // menuPanel
@@ -212,6 +213,7 @@ namespace hotel_app.Forms
             // titlelabel
             // 
             this.titlelabel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(124)))), ((int)(((byte)(177)))));
+            this.titlelabel.Controls.Add(this.logoutButton);
             this.titlelabel.Controls.Add(this.pictureBox2);
             this.titlelabel.Controls.Add(this.userNameLabel);
             this.titlelabel.Controls.Add(this.childFormLabel);
@@ -221,6 +223,45 @@ namespace hotel_app.Forms
             this.titlelabel.Name = "titlelabel";
             this.titlelabel.Size = new System.Drawing.Size(1100, 100);
             this.titlelabel.TabIndex = 1;
+            // 
+            // logoutButton
+            // 
+            this.logoutButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.logoutButton.FlatAppearance.BorderSize = 0;
+            this.logoutButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.logoutButton.ForeColor = System.Drawing.Color.Cornsilk;
+            this.logoutButton.IconChar = FontAwesome.Sharp.IconChar.SignOutAlt;
+            this.logoutButton.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(228)))), ((int)(((byte)(238)))));
+            this.logoutButton.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.logoutButton.Location = new System.Drawing.Point(1041, 27);
+            this.logoutButton.Name = "logoutButton";
+            this.logoutButton.Size = new System.Drawing.Size(47, 44);
+            this.logoutButton.TabIndex = 23;
+            this.logoutButton.UseVisualStyleBackColor = true;
+            this.logoutButton.Click += new System.EventHandler(this.logoutButton_Click);
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = global::hotel_app.Properties.Resources.woman;
+            this.pictureBox2.Location = new System.Drawing.Point(977, 27);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(47, 44);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox2.TabIndex = 21;
+            this.pictureBox2.TabStop = false;
+            // 
+            // userNameLabel
+            // 
+            this.userNameLabel.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.userNameLabel.AutoSize = true;
+            this.userNameLabel.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.userNameLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(228)))), ((int)(((byte)(238)))));
+            this.userNameLabel.Location = new System.Drawing.Point(885, 27);
+            this.userNameLabel.Name = "userNameLabel";
+            this.userNameLabel.Size = new System.Drawing.Size(93, 42);
+            this.userNameLabel.TabIndex = 20;
+            this.userNameLabel.Text = "Helen\r\nRoom User";
+            this.userNameLabel.TextAlign = System.Drawing.ContentAlignment.TopRight;
             // 
             // childFormLabel
             // 
@@ -297,29 +338,6 @@ namespace hotel_app.Forms
             this.label1.Text = "Zeus Palace\r\n";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Image = global::hotel_app.Properties.Resources.woman;
-            this.pictureBox2.Location = new System.Drawing.Point(1018, 27);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(47, 44);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox2.TabIndex = 21;
-            this.pictureBox2.TabStop = false;
-            // 
-            // userNameLabel
-            // 
-            this.userNameLabel.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.userNameLabel.AutoSize = true;
-            this.userNameLabel.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.userNameLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(228)))), ((int)(((byte)(238)))));
-            this.userNameLabel.Location = new System.Drawing.Point(906, 29);
-            this.userNameLabel.Name = "userNameLabel";
-            this.userNameLabel.Size = new System.Drawing.Size(93, 42);
-            this.userNameLabel.TabIndex = 20;
-            this.userNameLabel.Text = "Helen\r\nRoom User";
-            this.userNameLabel.TextAlign = System.Drawing.ContentAlignment.TopRight;
-            // 
             // Client2Form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -342,10 +360,10 @@ namespace hotel_app.Forms
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.titlelabel.ResumeLayout(false);
             this.titlelabel.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.currentChildFormIcon)).EndInit();
             this.childFormPanel.ResumeLayout(false);
             this.childFormPanel.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -369,5 +387,6 @@ namespace hotel_app.Forms
         private PictureBox pictureBox1;
         private PictureBox pictureBox2;
         private Label userNameLabel;
+        private FontAwesome.Sharp.IconButton logoutButton;
     }
 }

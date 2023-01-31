@@ -142,5 +142,12 @@ namespace hotel_app.Forms
             ActivateButton(sender);
             OpenChildForm(radio);
         }
+
+        private void logoutButton_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Form signinForm = new SignInForm();
+            signinForm.Show();
+        }
     }
 }

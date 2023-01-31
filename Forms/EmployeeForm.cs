@@ -215,5 +215,12 @@ namespace hotel_app.Forms
         {
             Application.Exit();
         }
+
+        private void logoutButton_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Form signinForm = new SignInForm();
+            signinForm.Show();
+        }
     }
 }
