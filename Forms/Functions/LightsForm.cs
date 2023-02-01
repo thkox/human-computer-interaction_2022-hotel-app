@@ -13,6 +13,10 @@ namespace hotel_app.Forms.Functions
 {
     public partial class LightsForm : Form
     {
+        private Color light1Color;
+        private Color light2Color;
+        private Color light3Color;
+
         public LightsForm()
         {
             InitializeComponent();
@@ -35,11 +39,11 @@ namespace hotel_app.Forms.Functions
 
         private void changeStateOfLight(IconButton light)
         {
-            if (light.IconColor == Color.FromArgb(236, 241, 246))
+            if (light.IconColor == Color.FromArgb(236, 241, 246)) //if the light is off
             {
                 light.IconColor = Color.Yellow;
             }
-            else light.IconColor = Color.FromArgb(236, 241, 246);
+            else light.IconColor = Color.FromArgb(236, 241, 246); //if the light is on
         }
 
         private void lightButton1_MouseHover(object sender, EventArgs e)
@@ -60,6 +64,39 @@ namespace hotel_app.Forms.Functions
         private void changeBackcolorOnMouseHover(IconButton light)
         {
             light.BackColor = Color.FromArgb(96, 144, 191);
+        }
+
+        private void color1Button_Click(object sender, EventArgs e)
+        {
+            ColorDialog colorPicker = new ColorDialog();
+
+            if (colorPicker.ShowDialog() == DialogResult.OK)
+            {
+                light1Color = colorPicker.Color;
+                lightButton1.IconColor = light1Color;
+            }
+        }
+
+        private void color2Button_Click(object sender, EventArgs e)
+        {
+            ColorDialog colorPicker = new ColorDialog();
+
+            if (colorPicker.ShowDialog() == DialogResult.OK)
+            {
+                light2Color = colorPicker.Color;
+                lightButton2.IconColor = light2Color;
+            }
+        }
+
+        private void color3Button_Click(object sender, EventArgs e)
+        {
+            ColorDialog colorPicker = new ColorDialog();
+
+            if (colorPicker.ShowDialog() == DialogResult.OK)
+            {
+                light3Color = colorPicker.Color;
+                lightButton3.IconColor = light3Color;
+            }
         }
     }
 }
