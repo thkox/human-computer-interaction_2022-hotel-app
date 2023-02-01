@@ -8,6 +8,7 @@ using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Xml.Serialization;
 using FontAwesome.Sharp;
 using hotel_app.Forms.Functions;
 
@@ -16,21 +17,26 @@ namespace hotel_app.Forms
     public partial class EmployeeForm : Form
     {
         private IconButton currentBtn;
-        private Panel leftBorderBtn;
+        private readonly Panel leftBorderBtn;
         private Form currentChildForm;
 
         private Panel currentMenuPanel;
 
-        private static Client1Form trojan1Form = new();
-        private static Client1Form trojan2Form = new();
-        private static Client1Form trojan3Form = new();
-        private static Client1Form trojan4Form = new();
+        private static readonly Client1Form trojan1Form = new();
+        private static readonly Client1Form trojan2Form = new();
+        private static readonly Client1Form trojan3Form = new();
+        private static readonly Client1Form trojan4Form = new();
 
-        private static Client2Form room1Form = new();
+        private static readonly Client2Form room1Form = new();
+        private static readonly Client2Form room2Form = new();
+        private static readonly Client2Form room3Form = new();
+        private static readonly Client2Form room4Form = new();
+        private static readonly Client2Form suite1Form = new();
+        private static readonly Client2Form suite2Form = new();
 
-       
-        private Client1Form[] trojanForms = new Client1Form[] { trojan1Form, trojan2Form, trojan3Form, trojan4Form };
-        private Client2Form[] roomForms = new Client2Form[] { room1Form };
+
+        private readonly Client1Form[] trojanForms = new Client1Form[] { trojan1Form, trojan2Form, trojan3Form, trojan4Form };
+        private readonly Client2Form[] roomForms = new Client2Form[] { room1Form, room2Form, room3Form, room4Form, suite1Form, suite2Form };
 
 
         //forms that we can open now
@@ -69,6 +75,7 @@ namespace hotel_app.Forms
             foreach (Client1Form trojanForm in trojanForms)
             {
                 trojanForm.panel1.Visible = false;
+                trojanForm.gpsButton.Visible = false;
             }
             foreach (Client2Form roomForm in roomForms)
             {
@@ -77,19 +84,33 @@ namespace hotel_app.Forms
 
             currentNameLabel.Visible = false;
 
-            //add the click property for the pictureaboxes in the parking form
-
+            //add the click event for the pictureaboxes in the parking form
             parking.trojan2PictureBox.Click += new EventHandler(Trojan2PictureBox_Click);
             parking.trojan3PictureBox.Click += new EventHandler(Trojan3PictureBox_Click);
             parking.trojan5PictureBox.Click += new EventHandler(Trojan5PictureBox_Click);
             parking.trojan6PictureBox.Click += new EventHandler(Trojan6PictureBox_Click);
 
-            //load the names of the trojans
+            //add the click event for the iconButtons in the roomsForm
+            zeusPalaceMenu.rooms.room1Button.Click += new EventHandler(Room1PictureBox_Click);
+            zeusPalaceMenu.rooms.room2Button.Click += new EventHandler(Room2PictureBox_Click);
+            zeusPalaceMenu.rooms.room3Button.Click += new EventHandler(Room3PictureBox_Click);
+            zeusPalaceMenu.rooms.room4Button.Click += new EventHandler(Room4PictureBox_Click);
+            zeusPalaceMenu.rooms.suite1Button.Click += new EventHandler(Suite1PictureBox_Click);
+            zeusPalaceMenu.rooms.suite2Button.Click += new EventHandler(Suite2PictureBox_Click);
 
+            //load the names of the trojans
             trojanForms[0].currentName = "Trojan A1";
             trojanForms[1].currentName = "Trojan A2";
-            trojanForms[2].currentName = "Trojan C1";
-            trojanForms[3].currentName = "Trojan C2";
+            trojanForms[2].currentName = "Trojan B1";
+            trojanForms[3].currentName = "Trojan B2";
+
+            //load the names of the rooms
+            roomForms[0].currentName = "Room 1";
+            roomForms[1].currentName = "Room 2";
+            roomForms[2].currentName = "Room 3";
+            roomForms[3].currentName = "Room 4";
+            roomForms[4].currentName = "Suite 1";
+            roomForms[5].currentName = "Suite 2";
         }
 
         //activate a trojan
@@ -113,6 +134,41 @@ namespace hotel_app.Forms
             loadTrojanFunctions(trojan4Form);
         }
 
+        private void Room1PictureBox_Click(object sender, EventArgs e)
+        {
+            loadRoomFunctions(room1Form);
+        }
+
+        private void Room2PictureBox_Click(object sender, EventArgs e)
+        {
+            loadRoomFunctions(room2Form);
+
+        }
+
+        private void Room3PictureBox_Click(object sender, EventArgs e)
+        {
+            loadRoomFunctions(room3Form);
+
+        }
+
+        private void Room4PictureBox_Click(object sender, EventArgs e)
+        {
+            loadRoomFunctions(room4Form);
+
+        }
+
+        private void Suite1PictureBox_Click(object sender, EventArgs e)
+        {
+            loadRoomFunctions(suite1Form);
+
+        }
+
+        private void Suite2PictureBox_Click(object sender, EventArgs e)
+        {
+            loadRoomFunctions(suite2Form);
+
+        }
+
         private void loadTrojanFunctions(Client1Form trojanForm)
         {
             OpenChildMenu(trojanForm.menuPanel);
@@ -134,7 +190,21 @@ namespace hotel_app.Forms
 
         private void loadRoomFunctions(Client2Form roomForm)
         {
+            OpenChildMenu(roomForm.menuPanel);
 
+            label1.Hide();
+            label2.Hide();
+            label3.Hide();
+
+            currentNameLabel.Text = roomForm.currentName;
+            //center align the label
+            currentNameLabel.Left = (currentNameLabel.Parent.ClientSize.Width - currentNameLabel.Width) / 2;
+            currentNameLabel.Top = (currentNameLabel.Parent.ClientSize.Height - currentNameLabel.Height) / 2;
+
+            currentNameLabel.Visible = true;
+
+            currentChildForm.Hide();
+            childFormPanel.Controls.Add(roomForm.childFormPanel);
         }
 
         private void ActivateButton(object senderBtn)

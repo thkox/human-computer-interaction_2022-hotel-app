@@ -18,6 +18,8 @@ namespace hotel_app.Forms
         private Panel leftBorderBtn;
         private Form currentChildForm; //the second form that is loaded inside the main form
 
+        public string currentName = "";
+
         //forms that we can open now
         PoolMenuForm pool = new PoolMenuForm();
         ThermostatForm thermostat = new ThermostatForm();

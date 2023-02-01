@@ -12,7 +12,7 @@ namespace hotel_app.Forms.Functions
 {
     public partial class RoomsForm : Form
     {
-        private Panel roomsMenuTabs;
+        private readonly Panel roomsMenuTabs;
 
         private Form currentChildForm;
 
@@ -32,5 +32,6 @@ namespace hotel_app.Forms.Functions
             childForm.BringToFront();
             childForm.Show();
         }
+
     }
 }

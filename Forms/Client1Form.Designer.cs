@@ -406,12 +406,12 @@ namespace hotel_app.Forms
         private Label label1;
         private PictureBox logoPictureBox;
         private FontAwesome.Sharp.IconButton mainDoorButton;
-        private FontAwesome.Sharp.IconButton gpsButton;
         private PictureBox pictureBox2;
         private Label userNameLabel;
         private FontAwesome.Sharp.IconButton logoutButton;
         public Panel menuPanel;
         public Panel panel1;
         public Panel childFormPanel;
+        public FontAwesome.Sharp.IconButton gpsButton;
     }
 }

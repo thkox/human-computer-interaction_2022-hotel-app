@@ -20,7 +20,7 @@ namespace hotel_app.Forms.Functions
         private Panel ZeusPalaceMenuTabs = new Panel();
         private PoolMenuForm poolMenu = new PoolMenuForm();
         private Form currentChildForm = new Form();
-        private RoomsForm rooms = new RoomsForm();
+        public RoomsForm rooms = new RoomsForm();
 
         public ZeusPalaceMenuForm()
         {
