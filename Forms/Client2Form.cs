@@ -42,6 +42,11 @@ namespace hotel_app.Forms
             thermostat.thermostatLabel.Text = "Living Room Thermostat";
             pool.poolThermostat.thermostatLabel.Text = "Private Pool: Thermostat";
             pool.waterLevel.waterLevelLabel.Text = "Private Pool: Water Level";
+
+            //show only the room lights
+            lights.roomLightsPanel.Left = (lights.roomLightsPanel.Parent.ClientSize.Width - lights.roomLightsPanel.Width) / 2;
+            lights.roomLightsPanel.Top = (lights.roomLightsPanel.Parent.ClientSize.Height - lights.roomLightsPanel.Height) / 2;
+            lights.outdoorLightsPanel.Visible = false;
         }
 
         private void ActivateButton(object senderBtn)

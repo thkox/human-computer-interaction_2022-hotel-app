@@ -43,6 +43,7 @@ namespace hotel_app.Forms
 
             //Parameters for Room Forms
             thermostat.thermostatLabel.Text = "Living Room Thermostat";
+
         }
 
         private void ActivateButton(object senderBtn)
