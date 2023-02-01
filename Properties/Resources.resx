@@ -118,67 +118,139 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="StairsDown" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\StairsDown.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="pizza_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\pizza_1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="powerIdle" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\powerIdle.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="powerOn" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\powerOn.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Python movie" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Python movie.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="DoorOpen" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\DoorOpen.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="StairsUp" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\StairsUp.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="DoorAlmostOpen" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\DoorAlmostOpen.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="powerOff" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\powerOff.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="DoorClosed" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\DoorClosed.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="woman" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\woman.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="logoMenuFinal" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\logoMenuFinal.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="food_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\food_21.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="garden" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\garden.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="parking" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\parking.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="pizza_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\pizza_2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="MainLogo" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\MainLogo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="food_5" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\food_5.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="evolution_preview" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\evolution_preview.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="salad_4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\salad_4.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="food_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\food_12.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DoorClosed" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DoorClosed.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="pizza_3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\pizza_3.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="food_4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\food_4.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="salad_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\salad_1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="chocolate_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\chocolate_1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DoorOpen" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DoorOpen.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="salad_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\salad_2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="StairsDown" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\StairsDown.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="csharp movie" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\csharp movie.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="trojan-horse-reversed" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\trojan-horse-reversed.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="trojan" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\trojan.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="latte" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\latte.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="old-man1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\old-man1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="pizza_4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\pizza_4.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="chocolate_4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\chocolate_4.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="americano" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\americano.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="parking" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\parking.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="trojan" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\trojan.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="old-man" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\old-man.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="chocolate_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\chocolate_2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MainLogo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainLogo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="logoMenuFinal" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\logoMenuFinal.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="StairsUp" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\StairsUp.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="food_7" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\food_7.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="powerOn" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\powerOn.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="chocolate_3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\chocolate_3.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="food_3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\food_31.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="powerOff" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\powerOff.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Python movie" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Python movie.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="food_6" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\food_6.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="powerIdle" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\powerIdle.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="salad_3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\salad_3.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="trojan-horse-reversed" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\trojan-horse-reversed.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="man" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\man.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="woman" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\woman.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DoorAlmostOpen" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DoorAlmostOpen.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="evolution_preview" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\evolution_preview.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="cappuccino" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cappuccino.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="espresso" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\espresso.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="chocolate_5" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\chocolate_5.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
