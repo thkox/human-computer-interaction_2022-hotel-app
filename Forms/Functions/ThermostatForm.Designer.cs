@@ -97,8 +97,8 @@
             this.thermostatToggle.Name = "thermostatToggle";
             this.thermostatToggle.OffBackColor = System.Drawing.Color.DimGray;
             this.thermostatToggle.OffToggleColor = System.Drawing.Color.LightGray;
-            this.thermostatToggle.OnBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.thermostatToggle.OnToggleColor = System.Drawing.Color.Black;
+            this.thermostatToggle.OnBackColor = System.Drawing.Color.Green;
+            this.thermostatToggle.OnToggleColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(241)))), ((int)(((byte)(246)))));
             this.thermostatToggle.Size = new System.Drawing.Size(45, 22);
             this.thermostatToggle.TabIndex = 5;
             this.thermostatToggle.UseVisualStyleBackColor = true;
