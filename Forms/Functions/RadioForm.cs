@@ -22,7 +22,7 @@ namespace hotel_app.Forms.Functions
 
         private void TurnOFFRadio()
         {
-            radioValueLabel.Location = new Point(90, radioValueLabel.Location.Y);
+            radioValueLabel.Left = (radioPanel.Width - radioValueLabel.Width) / 2;
             radioState = false;
             radioUpButton.Enabled = false;
             radioDownButton.Enabled = false;
@@ -44,7 +44,11 @@ namespace hotel_app.Forms.Functions
         private void RadioForm_Load(object sender, EventArgs e)
         {
             TurnOFFRadio();
-            
+            radioLabel.Left = (this.ClientSize.Width - radioLabel.Width) / 2;
+            radioPanel.Left = (this.ClientSize.Width - radioPanel.Width) / 2;
+            radioDownButton.Left = radioPanel.Left;
+            radioUpButton.Left = radioDownButton.Left + 181;
+            radioToggle.Left = (this.ClientSize.Width - radioToggle.Width) / 2;
         }
 
         private void radioUpButton_Click(object sender, EventArgs e)
@@ -55,10 +59,7 @@ namespace hotel_app.Forms.Functions
                     radioValue = 87.7;
                 radioValue += 0.3;
                 radioValueLabel.Text = string.Format($"{radioValue.ToString("0.0")}MHz");
-                if (radioValue <= 99.7) 
-                    radioValueLabel.Location = new Point(20, radioValueLabel.Location.Y);
-                else radioValueLabel.Location = new Point(0, radioValueLabel.Location.Y);
-                
+                radioValueLabel.Left = (radioPanel.Width - radioValueLabel.Width) / 2;
             }
         }
 
@@ -68,9 +69,7 @@ namespace hotel_app.Forms.Functions
                 radioValue = 106.3;
             radioValue -= 0.3;
             radioValueLabel.Text = string.Format($"{radioValue.ToString("0.0")}MHz");
-            if (radioValue <= 100.0)
-                radioValueLabel.Location = new Point(20, radioValueLabel.Location.Y);
-            else radioValueLabel.Location = new Point(0, radioValueLabel.Location.Y);
+            radioValueLabel.Left = (radioPanel.Width - radioValueLabel.Width) / 2;
         }
 
         private void RadioToggle_CheckedChanged(object sender, EventArgs e)
@@ -78,14 +77,12 @@ namespace hotel_app.Forms.Functions
             if (radioState == false) 
             {
                 TurnONRadio();
-                if (radioValue >= 99.7)
-                    radioValueLabel.Location = new Point(0, radioValueLabel.Location.Y);
-                else radioValueLabel.Location = new Point(20, radioValueLabel.Location.Y);
+                radioValueLabel.Left = (radioPanel.Width - radioValueLabel.Width) / 2;
             }
             else
             {
                 TurnOFFRadio();
-                radioValueLabel.Location = new Point(90, radioValueLabel.Location.Y);
+                radioValueLabel.Left = (radioPanel.Width - radioValueLabel.Width) / 2;
             }
         }
 
