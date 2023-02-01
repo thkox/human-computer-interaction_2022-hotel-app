@@ -191,7 +191,7 @@
             this.dateOfBirth_richTextBox.Name = "dateOfBirth_richTextBox";
             this.dateOfBirth_richTextBox.Padding = new System.Windows.Forms.Padding(7);
             this.dateOfBirth_richTextBox.PasswordChar = false;
-            this.dateOfBirth_richTextBox.Size = new System.Drawing.Size(147, 39);
+            this.dateOfBirth_richTextBox.Size = new System.Drawing.Size(134, 39);
             this.dateOfBirth_richTextBox.TabIndex = 15;
             this.dateOfBirth_richTextBox.Texts = "";
             this.dateOfBirth_richTextBox.UnderlinedStyle = true;
@@ -225,7 +225,7 @@
             this.checkinDate_richTextBox.Name = "checkinDate_richTextBox";
             this.checkinDate_richTextBox.Padding = new System.Windows.Forms.Padding(7);
             this.checkinDate_richTextBox.PasswordChar = false;
-            this.checkinDate_richTextBox.Size = new System.Drawing.Size(147, 39);
+            this.checkinDate_richTextBox.Size = new System.Drawing.Size(134, 39);
             this.checkinDate_richTextBox.TabIndex = 17;
             this.checkinDate_richTextBox.Texts = "";
             this.checkinDate_richTextBox.UnderlinedStyle = true;
@@ -237,7 +237,7 @@
             this.checkoutDateLabel.AutoSize = true;
             this.checkoutDateLabel.Font = new System.Drawing.Font("Comic Sans MS", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.checkoutDateLabel.ForeColor = System.Drawing.Color.Goldenrod;
-            this.checkoutDateLabel.Location = new System.Drawing.Point(572, 432);
+            this.checkoutDateLabel.Location = new System.Drawing.Point(558, 432);
             this.checkoutDateLabel.Name = "checkoutDateLabel";
             this.checkoutDateLabel.Size = new System.Drawing.Size(115, 27);
             this.checkoutDateLabel.TabIndex = 20;
@@ -253,13 +253,13 @@
             this.checkoutDate_richTextBox.Cursor = System.Windows.Forms.Cursors.Hand;
             this.checkoutDate_richTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.checkoutDate_richTextBox.ForeColor = System.Drawing.Color.Goldenrod;
-            this.checkoutDate_richTextBox.Location = new System.Drawing.Point(572, 469);
+            this.checkoutDate_richTextBox.Location = new System.Drawing.Point(558, 469);
             this.checkoutDate_richTextBox.Margin = new System.Windows.Forms.Padding(4);
             this.checkoutDate_richTextBox.Multiline = false;
             this.checkoutDate_richTextBox.Name = "checkoutDate_richTextBox";
             this.checkoutDate_richTextBox.Padding = new System.Windows.Forms.Padding(7);
             this.checkoutDate_richTextBox.PasswordChar = false;
-            this.checkoutDate_richTextBox.Size = new System.Drawing.Size(147, 39);
+            this.checkoutDate_richTextBox.Size = new System.Drawing.Size(134, 39);
             this.checkoutDate_richTextBox.TabIndex = 19;
             this.checkoutDate_richTextBox.Texts = "";
             this.checkoutDate_richTextBox.UnderlinedStyle = true;
