@@ -50,5 +50,10 @@ namespace hotel_app.Forms.Functions
                 checkoutDate_richTextBox.Focus();
             }
         }
+
+        private void registerButton_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

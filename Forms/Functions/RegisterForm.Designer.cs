@@ -41,6 +41,8 @@
             this.checkinDate_richTextBox = new CustomControls.RichTextBox.RichTextBox();
             this.checkoutDateLabel = new System.Windows.Forms.Label();
             this.checkoutDate_richTextBox = new CustomControls.RichTextBox.RichTextBox();
+            this.room_radioButtonCustom = new hotel_app.Custom_Toolbox.RadioButtonCustom();
+            this.trojan_radioButtonCustom = new hotel_app.Custom_Toolbox.RadioButtonCustom();
             this.SuspendLayout();
             // 
             // registerButton
@@ -63,6 +65,7 @@
             this.registerButton.Text = "Register";
             this.registerButton.TextColor = System.Drawing.Color.White;
             this.registerButton.UseVisualStyleBackColor = false;
+            this.registerButton.Click += new System.EventHandler(this.registerButton_Click);
             // 
             // firstnameLabel
             // 
@@ -265,12 +268,46 @@
             this.checkoutDate_richTextBox.UnderlinedStyle = true;
             this.checkoutDate_richTextBox.Leave += new System.EventHandler(this.checkoutDate_richTextBox_Leave);
             // 
+            // room_radioButtonCustom
+            // 
+            this.room_radioButtonCustom.AutoSize = true;
+            this.room_radioButtonCustom.CheckedColor = System.Drawing.Color.Goldenrod;
+            this.room_radioButtonCustom.Font = new System.Drawing.Font("Comic Sans MS", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.room_radioButtonCustom.ForeColor = System.Drawing.Color.Goldenrod;
+            this.room_radioButtonCustom.Location = new System.Drawing.Point(391, 304);
+            this.room_radioButtonCustom.MinimumSize = new System.Drawing.Size(0, 21);
+            this.room_radioButtonCustom.Name = "room_radioButtonCustom";
+            this.room_radioButtonCustom.Size = new System.Drawing.Size(89, 31);
+            this.room_radioButtonCustom.TabIndex = 21;
+            this.room_radioButtonCustom.TabStop = true;
+            this.room_radioButtonCustom.Text = "Room";
+            this.room_radioButtonCustom.UnCheckedColor = System.Drawing.Color.Gray;
+            this.room_radioButtonCustom.UseVisualStyleBackColor = true;
+            // 
+            // trojan_radioButtonCustom
+            // 
+            this.trojan_radioButtonCustom.AutoSize = true;
+            this.trojan_radioButtonCustom.CheckedColor = System.Drawing.Color.Goldenrod;
+            this.trojan_radioButtonCustom.Font = new System.Drawing.Font("Comic Sans MS", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.trojan_radioButtonCustom.ForeColor = System.Drawing.Color.Goldenrod;
+            this.trojan_radioButtonCustom.Location = new System.Drawing.Point(498, 304);
+            this.trojan_radioButtonCustom.MinimumSize = new System.Drawing.Size(0, 21);
+            this.trojan_radioButtonCustom.Name = "trojan_radioButtonCustom";
+            this.trojan_radioButtonCustom.Size = new System.Drawing.Size(103, 31);
+            this.trojan_radioButtonCustom.TabIndex = 22;
+            this.trojan_radioButtonCustom.TabStop = true;
+            this.trojan_radioButtonCustom.Text = "Trojan";
+            this.trojan_radioButtonCustom.UnCheckedColor = System.Drawing.Color.Gray;
+            this.trojan_radioButtonCustom.UseVisualStyleBackColor = true;
+            // 
             // RegisterForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(124)))), ((int)(((byte)(177)))));
             this.ClientSize = new System.Drawing.Size(1084, 661);
+            this.Controls.Add(this.trojan_radioButtonCustom);
+            this.Controls.Add(this.room_radioButtonCustom);
             this.Controls.Add(this.checkoutDateLabel);
             this.Controls.Add(this.checkoutDate_richTextBox);
             this.Controls.Add(this.checkinDateLabel);
@@ -306,5 +343,7 @@
         private CustomControls.RichTextBox.RichTextBox checkinDate_richTextBox;
         private Label checkoutDateLabel;
         private CustomControls.RichTextBox.RichTextBox checkoutDate_richTextBox;
+        private Custom_Toolbox.RadioButtonCustom room_radioButtonCustom;
+        private Custom_Toolbox.RadioButtonCustom trojan_radioButtonCustom;
     }
 }
