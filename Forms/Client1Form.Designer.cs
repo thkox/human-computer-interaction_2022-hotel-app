@@ -251,6 +251,7 @@ namespace hotel_app.Forms
             // 
             // logoutButton
             // 
+            this.logoutButton.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.logoutButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.logoutButton.FlatAppearance.BorderSize = 0;
             this.logoutButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -267,6 +268,7 @@ namespace hotel_app.Forms
             // 
             // pictureBox2
             // 
+            this.pictureBox2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pictureBox2.Image = global::hotel_app.Properties.Resources.old_man;
             this.pictureBox2.Location = new System.Drawing.Point(977, 27);
             this.pictureBox2.Name = "pictureBox2";

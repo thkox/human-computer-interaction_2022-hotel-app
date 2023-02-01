@@ -15,24 +15,26 @@ namespace hotel_app.Forms
     public partial class Client1Form : Form
     {
         private IconButton currentBtn = new();
-        private Panel leftBorderBtn = new(); 
+        private readonly Panel leftBorderBtn = new(); 
         private Form currentChildForm = new(); //the second form that is loaded inside the main form
 
         //the name of the current form
         public string currentName = "";
 
-        ThermostatForm thermostat = new();
-        LightsForm lights = new();
-        TVForm tv = new();
-        RadioForm radio = new();  
-        GPSMenuForm gps = new();
-        MainDoorForm door = new();
+        private readonly ThermostatForm thermostat = new();
+        private readonly LightsForm lights = new();
+        private readonly TVForm tv = new();
+        private readonly RadioForm radio = new();
+        private readonly GPSMenuForm gps = new();
+        private readonly MainDoorForm door = new();
 
         public Client1Form()
         {
             InitializeComponent();
-            leftBorderBtn = new Panel();
-            leftBorderBtn.Size = new Size(10, 70); //70 is the height of the buttons
+            leftBorderBtn = new Panel
+            {
+                Size = new Size(10, 70) //70 is the height of the buttons
+            };
             menuPanel.Controls.Add(leftBorderBtn);
 
             //Form
@@ -85,10 +87,8 @@ namespace hotel_app.Forms
 
         private void OpenChildForm(Form childForm)
         {
-            if(currentChildForm != null) 
-            {
-                currentChildForm.Hide(); //show the main form and hide the current child form, if it exists
-            }
+
+            currentChildForm?.Hide(); //show the main form and hide the current child form, if it exists
             currentChildForm = childForm;
             childForm.TopLevel = false; 
             childForm.FormBorderStyle = FormBorderStyle.None; //hide the window controls
@@ -109,10 +109,8 @@ namespace hotel_app.Forms
         }
         private void pictureBox1_Click(object sender, EventArgs e)
         {
-            if (currentChildForm != null)
-            {
-                currentChildForm.Hide();
-            }
+
+            currentChildForm?.Hide();
             Reset();
         }
         private void Client1Form_FormClosed(object sender, FormClosedEventArgs e)
