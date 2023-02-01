@@ -30,6 +30,11 @@
         {
             this.totalLabel = new System.Windows.Forms.Label();
             this.paymentPanel = new System.Windows.Forms.Panel();
+            this.buttonCustom1 = new hotel_app.Custom_Toolbox.ButtonCustom();
+            this.richTextBox1 = new CustomControls.RichTextBox.RichTextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.cardNumber_richTextBox = new CustomControls.RichTextBox.RichTextBox();
+            this.cardNumberLabel = new System.Windows.Forms.Label();
             this.year_richTextBox = new CustomControls.RichTextBox.RichTextBox();
             this.month_richTextBox = new CustomControls.RichTextBox.RichTextBox();
             this.expirationDateLabel = new System.Windows.Forms.Label();
@@ -40,11 +45,6 @@
             this.mastercardButton = new FontAwesome.Sharp.IconButton();
             this.mastercardCheckBox = new System.Windows.Forms.CheckBox();
             this.paymentMethodLabel = new System.Windows.Forms.Label();
-            this.richTextBox1 = new CustomControls.RichTextBox.RichTextBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.cardNumber_richTextBox = new CustomControls.RichTextBox.RichTextBox();
-            this.cardNumberLabel = new System.Windows.Forms.Label();
-            this.buttonCustom1 = new hotel_app.Custom_Toolbox.ButtonCustom();
             this.paymentPanel.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -82,6 +82,92 @@
             this.paymentPanel.Size = new System.Drawing.Size(466, 355);
             this.paymentPanel.TabIndex = 1;
             // 
+            // buttonCustom1
+            // 
+            this.buttonCustom1.BackColor = System.Drawing.Color.Teal;
+            this.buttonCustom1.BackgroundColor = System.Drawing.Color.Teal;
+            this.buttonCustom1.BorderColor = System.Drawing.Color.Blue;
+            this.buttonCustom1.BorderRadius = 40;
+            this.buttonCustom1.BorderSize = 0;
+            this.buttonCustom1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.buttonCustom1.FlatAppearance.BorderSize = 0;
+            this.buttonCustom1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonCustom1.Font = new System.Drawing.Font("Comic Sans MS", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.buttonCustom1.ForeColor = System.Drawing.Color.White;
+            this.buttonCustom1.Location = new System.Drawing.Point(303, 294);
+            this.buttonCustom1.Name = "buttonCustom1";
+            this.buttonCustom1.Size = new System.Drawing.Size(150, 40);
+            this.buttonCustom1.TabIndex = 15;
+            this.buttonCustom1.Text = "Confirmation";
+            this.buttonCustom1.TextColor = System.Drawing.Color.White;
+            this.buttonCustom1.UseVisualStyleBackColor = false;
+            // 
+            // richTextBox1
+            // 
+            this.richTextBox1.BackColor = System.Drawing.SystemColors.Window;
+            this.richTextBox1.BorderColor = System.Drawing.Color.LightSlateGray;
+            this.richTextBox1.BorderFocusColor = System.Drawing.Color.SlateGray;
+            this.richTextBox1.BorderSize = 2;
+            this.richTextBox1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.richTextBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.richTextBox1.ForeColor = System.Drawing.Color.DimGray;
+            this.richTextBox1.Location = new System.Drawing.Point(284, 241);
+            this.richTextBox1.Margin = new System.Windows.Forms.Padding(4);
+            this.richTextBox1.Multiline = false;
+            this.richTextBox1.Name = "richTextBox1";
+            this.richTextBox1.Padding = new System.Windows.Forms.Padding(7);
+            this.richTextBox1.PasswordChar = false;
+            this.richTextBox1.Size = new System.Drawing.Size(44, 31);
+            this.richTextBox1.TabIndex = 14;
+            this.richTextBox1.Texts = "CVV";
+            this.richTextBox1.UnderlinedStyle = false;
+            this.richTextBox1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.richTextBox1_KeyPress);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Comic Sans MS", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(241)))), ((int)(((byte)(246)))));
+            this.label1.Location = new System.Drawing.Point(284, 207);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(109, 30);
+            this.label1.TabIndex = 13;
+            this.label1.Text = "CVV code";
+            // 
+            // cardNumber_richTextBox
+            // 
+            this.cardNumber_richTextBox.BackColor = System.Drawing.SystemColors.Window;
+            this.cardNumber_richTextBox.BorderColor = System.Drawing.Color.LightSlateGray;
+            this.cardNumber_richTextBox.BorderFocusColor = System.Drawing.Color.SlateGray;
+            this.cardNumber_richTextBox.BorderSize = 2;
+            this.cardNumber_richTextBox.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.cardNumber_richTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.cardNumber_richTextBox.ForeColor = System.Drawing.Color.DimGray;
+            this.cardNumber_richTextBox.Location = new System.Drawing.Point(15, 241);
+            this.cardNumber_richTextBox.Margin = new System.Windows.Forms.Padding(4);
+            this.cardNumber_richTextBox.Multiline = false;
+            this.cardNumber_richTextBox.Name = "cardNumber_richTextBox";
+            this.cardNumber_richTextBox.Padding = new System.Windows.Forms.Padding(7);
+            this.cardNumber_richTextBox.PasswordChar = false;
+            this.cardNumber_richTextBox.Size = new System.Drawing.Size(250, 31);
+            this.cardNumber_richTextBox.TabIndex = 12;
+            this.cardNumber_richTextBox.Texts = "";
+            this.cardNumber_richTextBox.UnderlinedStyle = false;
+            this.cardNumber_richTextBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.cardNumber_richTextBox_KeyPress);
+            // 
+            // cardNumberLabel
+            // 
+            this.cardNumberLabel.AutoSize = true;
+            this.cardNumberLabel.BackColor = System.Drawing.Color.Transparent;
+            this.cardNumberLabel.Font = new System.Drawing.Font("Comic Sans MS", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.cardNumberLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(241)))), ((int)(((byte)(246)))));
+            this.cardNumberLabel.Location = new System.Drawing.Point(15, 207);
+            this.cardNumberLabel.Name = "cardNumberLabel";
+            this.cardNumberLabel.Size = new System.Drawing.Size(147, 30);
+            this.cardNumberLabel.TabIndex = 11;
+            this.cardNumberLabel.Text = "Card Number";
+            // 
             // year_richTextBox
             // 
             this.year_richTextBox.BackColor = System.Drawing.SystemColors.Window;
@@ -101,6 +187,7 @@
             this.year_richTextBox.TabIndex = 10;
             this.year_richTextBox.Texts = "YYYY";
             this.year_richTextBox.UnderlinedStyle = false;
+            this.year_richTextBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.year_richTextBox_KeyPress);
             // 
             // month_richTextBox
             // 
@@ -121,6 +208,7 @@
             this.month_richTextBox.TabIndex = 9;
             this.month_richTextBox.Texts = "MM";
             this.month_richTextBox.UnderlinedStyle = false;
+            this.month_richTextBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.month_richTextBox_KeyPress);
             // 
             // expirationDateLabel
             // 
@@ -153,6 +241,7 @@
             this.cardholderName_richTextBox.TabIndex = 6;
             this.cardholderName_richTextBox.Texts = "";
             this.cardholderName_richTextBox.UnderlinedStyle = false;
+            this.cardholderName_richTextBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.cardholderName_richTextBox_KeyPress);
             // 
             // cardHolderNameLabel
             // 
@@ -229,90 +318,6 @@
             this.paymentMethodLabel.Size = new System.Drawing.Size(182, 30);
             this.paymentMethodLabel.TabIndex = 0;
             this.paymentMethodLabel.Text = "Payment Method";
-            // 
-            // richTextBox1
-            // 
-            this.richTextBox1.BackColor = System.Drawing.SystemColors.Window;
-            this.richTextBox1.BorderColor = System.Drawing.Color.LightSlateGray;
-            this.richTextBox1.BorderFocusColor = System.Drawing.Color.SlateGray;
-            this.richTextBox1.BorderSize = 2;
-            this.richTextBox1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.richTextBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.richTextBox1.ForeColor = System.Drawing.Color.DimGray;
-            this.richTextBox1.Location = new System.Drawing.Point(284, 241);
-            this.richTextBox1.Margin = new System.Windows.Forms.Padding(4);
-            this.richTextBox1.Multiline = false;
-            this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Padding = new System.Windows.Forms.Padding(7);
-            this.richTextBox1.PasswordChar = false;
-            this.richTextBox1.Size = new System.Drawing.Size(44, 31);
-            this.richTextBox1.TabIndex = 14;
-            this.richTextBox1.Texts = "CVV";
-            this.richTextBox1.UnderlinedStyle = false;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Comic Sans MS", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(241)))), ((int)(((byte)(246)))));
-            this.label1.Location = new System.Drawing.Point(284, 207);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(109, 30);
-            this.label1.TabIndex = 13;
-            this.label1.Text = "CVV code";
-            // 
-            // cardNumber_richTextBox
-            // 
-            this.cardNumber_richTextBox.BackColor = System.Drawing.SystemColors.Window;
-            this.cardNumber_richTextBox.BorderColor = System.Drawing.Color.LightSlateGray;
-            this.cardNumber_richTextBox.BorderFocusColor = System.Drawing.Color.SlateGray;
-            this.cardNumber_richTextBox.BorderSize = 2;
-            this.cardNumber_richTextBox.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.cardNumber_richTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.cardNumber_richTextBox.ForeColor = System.Drawing.Color.DimGray;
-            this.cardNumber_richTextBox.Location = new System.Drawing.Point(15, 241);
-            this.cardNumber_richTextBox.Margin = new System.Windows.Forms.Padding(4);
-            this.cardNumber_richTextBox.Multiline = false;
-            this.cardNumber_richTextBox.Name = "cardNumber_richTextBox";
-            this.cardNumber_richTextBox.Padding = new System.Windows.Forms.Padding(7);
-            this.cardNumber_richTextBox.PasswordChar = false;
-            this.cardNumber_richTextBox.Size = new System.Drawing.Size(250, 31);
-            this.cardNumber_richTextBox.TabIndex = 12;
-            this.cardNumber_richTextBox.Texts = "";
-            this.cardNumber_richTextBox.UnderlinedStyle = false;
-            // 
-            // cardNumberLabel
-            // 
-            this.cardNumberLabel.AutoSize = true;
-            this.cardNumberLabel.BackColor = System.Drawing.Color.Transparent;
-            this.cardNumberLabel.Font = new System.Drawing.Font("Comic Sans MS", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.cardNumberLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(241)))), ((int)(((byte)(246)))));
-            this.cardNumberLabel.Location = new System.Drawing.Point(15, 207);
-            this.cardNumberLabel.Name = "cardNumberLabel";
-            this.cardNumberLabel.Size = new System.Drawing.Size(147, 30);
-            this.cardNumberLabel.TabIndex = 11;
-            this.cardNumberLabel.Text = "Card Number";
-            // 
-            // buttonCustom1
-            // 
-            this.buttonCustom1.BackColor = System.Drawing.Color.Teal;
-            this.buttonCustom1.BackgroundColor = System.Drawing.Color.Teal;
-            this.buttonCustom1.BorderColor = System.Drawing.Color.Blue;
-            this.buttonCustom1.BorderRadius = 40;
-            this.buttonCustom1.BorderSize = 0;
-            this.buttonCustom1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.buttonCustom1.FlatAppearance.BorderSize = 0;
-            this.buttonCustom1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonCustom1.Font = new System.Drawing.Font("Comic Sans MS", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.buttonCustom1.ForeColor = System.Drawing.Color.White;
-            this.buttonCustom1.Location = new System.Drawing.Point(303, 294);
-            this.buttonCustom1.Name = "buttonCustom1";
-            this.buttonCustom1.Size = new System.Drawing.Size(150, 40);
-            this.buttonCustom1.TabIndex = 15;
-            this.buttonCustom1.Text = "Confirmation";
-            this.buttonCustom1.TextColor = System.Drawing.Color.White;
-            this.buttonCustom1.UseVisualStyleBackColor = false;
             // 
             // PaymentForm
             // 
