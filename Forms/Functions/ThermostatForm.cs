@@ -26,6 +26,11 @@ namespace hotel_app.Forms.Functions
         private void ThermostatForm_Load(object sender, EventArgs e)
         {
             TurnOFFThermostat();
+            thermostatLabel.Left = (this.ClientSize.Width - thermostatLabel.Width) / 2;
+            thermostatPanel.Left = (this.ClientSize.Width - thermostatPanel.Width) / 2;
+            thermostatDownButton.Left = thermostatPanel.Left;
+            thermostatUpButton.Left = thermostatDownButton.Left + 197;
+            thermostatToggle.Left = (this.ClientSize.Width - thermostatToggle.Width) / 2;
         }
 
         private void TurnOFFThermostat()

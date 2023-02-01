@@ -35,10 +35,10 @@
             this.thermostatToggle = new hotel_app.Custom_Toolbox.ToggleButtonCustom();
             this.currentTempValueLabel = new System.Windows.Forms.Label();
             this.thermostatPanel = new System.Windows.Forms.Panel();
+            this.estimatedTimeLabel = new System.Windows.Forms.Label();
             this.leafPictureBox = new FontAwesome.Sharp.IconPictureBox();
             this.setTempValueLabel = new System.Windows.Forms.Label();
             this.setValueTimer = new System.Windows.Forms.Timer(this.components);
-            this.estimatedTimeLabel = new System.Windows.Forms.Label();
             this.thermostatPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.leafPictureBox)).BeginInit();
             this.SuspendLayout();
@@ -51,7 +51,7 @@
             this.thermostatUpButton.IconChar = FontAwesome.Sharp.IconChar.ArrowCircleUp;
             this.thermostatUpButton.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(241)))), ((int)(((byte)(246)))));
             this.thermostatUpButton.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.thermostatUpButton.Location = new System.Drawing.Point(564, 215);
+            this.thermostatUpButton.Location = new System.Drawing.Point(519, 384);
             this.thermostatUpButton.Name = "thermostatUpButton";
             this.thermostatUpButton.Size = new System.Drawing.Size(175, 65);
             this.thermostatUpButton.TabIndex = 1;
@@ -68,7 +68,7 @@
             this.thermostatDownButton.IconChar = FontAwesome.Sharp.IconChar.ArrowCircleDown;
             this.thermostatDownButton.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(241)))), ((int)(((byte)(246)))));
             this.thermostatDownButton.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.thermostatDownButton.Location = new System.Drawing.Point(564, 303);
+            this.thermostatDownButton.Location = new System.Drawing.Point(322, 384);
             this.thermostatDownButton.Name = "thermostatDownButton";
             this.thermostatDownButton.Size = new System.Drawing.Size(175, 65);
             this.thermostatDownButton.TabIndex = 2;
@@ -93,7 +93,7 @@
             this.thermostatToggle.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.thermostatToggle.AutoSize = true;
             this.thermostatToggle.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.thermostatToggle.Location = new System.Drawing.Point(438, 397);
+            this.thermostatToggle.Location = new System.Drawing.Point(483, 470);
             this.thermostatToggle.MinimumSize = new System.Drawing.Size(45, 22);
             this.thermostatToggle.Name = "thermostatToggle";
             this.thermostatToggle.OffBackColor = System.Drawing.Color.DimGray;
@@ -124,10 +124,22 @@
             this.thermostatPanel.Controls.Add(this.leafPictureBox);
             this.thermostatPanel.Controls.Add(this.setTempValueLabel);
             this.thermostatPanel.Controls.Add(this.currentTempValueLabel);
-            this.thermostatPanel.Location = new System.Drawing.Point(186, 215);
+            this.thermostatPanel.Location = new System.Drawing.Point(322, 214);
             this.thermostatPanel.Name = "thermostatPanel";
             this.thermostatPanel.Size = new System.Drawing.Size(372, 153);
             this.thermostatPanel.TabIndex = 8;
+            // 
+            // estimatedTimeLabel
+            // 
+            this.estimatedTimeLabel.AutoSize = true;
+            this.estimatedTimeLabel.Font = new System.Drawing.Font("Comic Sans MS", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.estimatedTimeLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(241)))), ((int)(((byte)(246)))));
+            this.estimatedTimeLabel.Location = new System.Drawing.Point(136, 77);
+            this.estimatedTimeLabel.Name = "estimatedTimeLabel";
+            this.estimatedTimeLabel.Size = new System.Drawing.Size(60, 29);
+            this.estimatedTimeLabel.TabIndex = 10;
+            this.estimatedTimeLabel.Text = "[Val]";
+            this.estimatedTimeLabel.Visible = false;
             // 
             // leafPictureBox
             // 
@@ -159,18 +171,6 @@
             // 
             this.setValueTimer.Interval = 5000;
             this.setValueTimer.Tick += new System.EventHandler(this.timer1_Tick);
-            // 
-            // estimatedTimeLabel
-            // 
-            this.estimatedTimeLabel.AutoSize = true;
-            this.estimatedTimeLabel.Font = new System.Drawing.Font("Comic Sans MS", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.estimatedTimeLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(241)))), ((int)(((byte)(246)))));
-            this.estimatedTimeLabel.Location = new System.Drawing.Point(136, 77);
-            this.estimatedTimeLabel.Name = "estimatedTimeLabel";
-            this.estimatedTimeLabel.Size = new System.Drawing.Size(60, 29);
-            this.estimatedTimeLabel.TabIndex = 10;
-            this.estimatedTimeLabel.Text = "[Val]";
-            this.estimatedTimeLabel.Visible = false;
             // 
             // ThermostatForm
             // 
