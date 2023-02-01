@@ -49,7 +49,12 @@ namespace hotel_app.Forms.Functions
 
         private void cardholderName_richTextBox_KeyPress(object sender, KeyPressEventArgs e)
         {
-            e.Handled = !char.IsLetter(e.KeyChar) && !char.IsControl(e.KeyChar);
+            e.Handled = !char.IsLetter(e.KeyChar) && !char.IsSeparator(e.KeyChar) && !char.IsControl(e.KeyChar);
+        }
+
+        private void buttonCustom1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

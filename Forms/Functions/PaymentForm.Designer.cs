@@ -101,6 +101,7 @@
             this.buttonCustom1.Text = "Confirmation";
             this.buttonCustom1.TextColor = System.Drawing.Color.White;
             this.buttonCustom1.UseVisualStyleBackColor = false;
+            this.buttonCustom1.Click += new System.EventHandler(this.buttonCustom1_Click);
             // 
             // richTextBox1
             // 
