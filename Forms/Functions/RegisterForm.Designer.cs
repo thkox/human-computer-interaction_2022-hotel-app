@@ -271,6 +271,7 @@
             // room_radioButtonCustom
             // 
             this.room_radioButtonCustom.AutoSize = true;
+            this.room_radioButtonCustom.Checked = true;
             this.room_radioButtonCustom.CheckedColor = System.Drawing.Color.Goldenrod;
             this.room_radioButtonCustom.Font = new System.Drawing.Font("Comic Sans MS", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.room_radioButtonCustom.ForeColor = System.Drawing.Color.Goldenrod;
