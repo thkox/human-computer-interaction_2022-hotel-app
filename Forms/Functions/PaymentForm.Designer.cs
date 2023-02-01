@@ -31,7 +31,7 @@
             this.totalLabel = new System.Windows.Forms.Label();
             this.paymentPanel = new System.Windows.Forms.Panel();
             this.buttonCustom1 = new hotel_app.Custom_Toolbox.ButtonCustom();
-            this.richTextBox1 = new CustomControls.RichTextBox.RichTextBox();
+            this.cvv_richTextBox = new CustomControls.RichTextBox.RichTextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.cardNumber_richTextBox = new CustomControls.RichTextBox.RichTextBox();
             this.cardNumberLabel = new System.Windows.Forms.Label();
@@ -63,7 +63,7 @@
             // 
             this.paymentPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(129)))), ((int)(((byte)(164)))), ((int)(((byte)(205)))));
             this.paymentPanel.Controls.Add(this.buttonCustom1);
-            this.paymentPanel.Controls.Add(this.richTextBox1);
+            this.paymentPanel.Controls.Add(this.cvv_richTextBox);
             this.paymentPanel.Controls.Add(this.label1);
             this.paymentPanel.Controls.Add(this.cardNumber_richTextBox);
             this.paymentPanel.Controls.Add(this.cardNumberLabel);
@@ -103,26 +103,28 @@
             this.buttonCustom1.UseVisualStyleBackColor = false;
             this.buttonCustom1.Click += new System.EventHandler(this.buttonCustom1_Click);
             // 
-            // richTextBox1
+            // cvv_richTextBox
             // 
-            this.richTextBox1.BackColor = System.Drawing.SystemColors.Window;
-            this.richTextBox1.BorderColor = System.Drawing.Color.LightSlateGray;
-            this.richTextBox1.BorderFocusColor = System.Drawing.Color.SlateGray;
-            this.richTextBox1.BorderSize = 2;
-            this.richTextBox1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.richTextBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.richTextBox1.ForeColor = System.Drawing.Color.DimGray;
-            this.richTextBox1.Location = new System.Drawing.Point(284, 241);
-            this.richTextBox1.Margin = new System.Windows.Forms.Padding(4);
-            this.richTextBox1.Multiline = false;
-            this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Padding = new System.Windows.Forms.Padding(7);
-            this.richTextBox1.PasswordChar = false;
-            this.richTextBox1.Size = new System.Drawing.Size(44, 31);
-            this.richTextBox1.TabIndex = 14;
-            this.richTextBox1.Texts = "CVV";
-            this.richTextBox1.UnderlinedStyle = false;
-            this.richTextBox1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.richTextBox1_KeyPress);
+            this.cvv_richTextBox.BackColor = System.Drawing.SystemColors.Window;
+            this.cvv_richTextBox.BorderColor = System.Drawing.Color.LightSlateGray;
+            this.cvv_richTextBox.BorderFocusColor = System.Drawing.Color.SlateGray;
+            this.cvv_richTextBox.BorderSize = 2;
+            this.cvv_richTextBox.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.cvv_richTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.cvv_richTextBox.ForeColor = System.Drawing.Color.DimGray;
+            this.cvv_richTextBox.Location = new System.Drawing.Point(284, 241);
+            this.cvv_richTextBox.Margin = new System.Windows.Forms.Padding(4);
+            this.cvv_richTextBox.Multiline = false;
+            this.cvv_richTextBox.Name = "cvv_richTextBox";
+            this.cvv_richTextBox.Padding = new System.Windows.Forms.Padding(7);
+            this.cvv_richTextBox.PasswordChar = false;
+            this.cvv_richTextBox.Size = new System.Drawing.Size(44, 31);
+            this.cvv_richTextBox.TabIndex = 14;
+            this.cvv_richTextBox.Texts = "CVV";
+            this.cvv_richTextBox.UnderlinedStyle = false;
+            this.cvv_richTextBox.Enter += new System.EventHandler(this.cvv_richTextBox_Enter);
+            this.cvv_richTextBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.cvv_richTextBox_KeyPress);
+            this.cvv_richTextBox.Leave += new System.EventHandler(this.cvv_richTextBox_Leave);
             // 
             // label1
             // 
@@ -153,9 +155,11 @@
             this.cardNumber_richTextBox.PasswordChar = false;
             this.cardNumber_richTextBox.Size = new System.Drawing.Size(250, 31);
             this.cardNumber_richTextBox.TabIndex = 12;
-            this.cardNumber_richTextBox.Texts = "";
+            this.cardNumber_richTextBox.Texts = "Enter Card Number";
             this.cardNumber_richTextBox.UnderlinedStyle = false;
+            this.cardNumber_richTextBox.Enter += new System.EventHandler(this.cardNumber_richTextBox_Enter);
             this.cardNumber_richTextBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.cardNumber_richTextBox_KeyPress);
+            this.cardNumber_richTextBox.Leave += new System.EventHandler(this.cardNumber_richTextBox_Leave);
             // 
             // cardNumberLabel
             // 
@@ -188,7 +192,9 @@
             this.year_richTextBox.TabIndex = 10;
             this.year_richTextBox.Texts = "YYYY";
             this.year_richTextBox.UnderlinedStyle = false;
+            this.year_richTextBox.Enter += new System.EventHandler(this.year_richTextBox_Enter);
             this.year_richTextBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.year_richTextBox_KeyPress);
+            this.year_richTextBox.Leave += new System.EventHandler(this.year_richTextBox_Leave);
             // 
             // month_richTextBox
             // 
@@ -209,7 +215,9 @@
             this.month_richTextBox.TabIndex = 9;
             this.month_richTextBox.Texts = "MM";
             this.month_richTextBox.UnderlinedStyle = false;
+            this.month_richTextBox.Enter += new System.EventHandler(this.month_richTextBox_Enter);
             this.month_richTextBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.month_richTextBox_KeyPress);
+            this.month_richTextBox.Leave += new System.EventHandler(this.month_richTextBox_Leave);
             // 
             // expirationDateLabel
             // 
@@ -240,9 +248,11 @@
             this.cardholderName_richTextBox.PasswordChar = false;
             this.cardholderName_richTextBox.Size = new System.Drawing.Size(250, 31);
             this.cardholderName_richTextBox.TabIndex = 6;
-            this.cardholderName_richTextBox.Texts = "";
+            this.cardholderName_richTextBox.Texts = "Enter Cardholder name";
             this.cardholderName_richTextBox.UnderlinedStyle = false;
+            this.cardholderName_richTextBox.Enter += new System.EventHandler(this.cardholderName_richTextBox_Enter);
             this.cardholderName_richTextBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.cardholderName_richTextBox_KeyPress);
+            this.cardholderName_richTextBox.Leave += new System.EventHandler(this.cardholderName_richTextBox_Leave);
             // 
             // cardHolderNameLabel
             // 
@@ -352,7 +362,7 @@
         private Label expirationDateLabel;
         private CustomControls.RichTextBox.RichTextBox year_richTextBox;
         private Custom_Toolbox.ButtonCustom buttonCustom1;
-        private CustomControls.RichTextBox.RichTextBox richTextBox1;
+        private CustomControls.RichTextBox.RichTextBox cvv_richTextBox;
         private Label label1;
         private CustomControls.RichTextBox.RichTextBox cardNumber_richTextBox;
         private Label cardNumberLabel;
