@@ -38,6 +38,8 @@ namespace hotel_app.Forms.Functions
             downButtonClicked = false;
             setValueTimer.Stop();
 
+            leafPictureBox.Visible = false;
+            
             currentTempValueLabel.Text = "Current Temperature: " + currentThermostatValue + "°C";
             setTempValueLabel.Text = "OFF";
             setTempValueLabel.Left = (thermostatPanel.Width - setTempValueLabel.Width) / 2;
@@ -50,6 +52,11 @@ namespace hotel_app.Forms.Functions
             thermostatState = true;
 
             setValueTimer.Start();
+
+            if (currentThermostatValue == setThermostatValue)
+            {
+                estimatedTimeLabel.Visible = false;
+            }
 
             if (setThermostatValue == 10)
             {
@@ -101,6 +108,21 @@ namespace hotel_app.Forms.Functions
                 currentTempValueLabel.Text = "Current Temperature: " + currentThermostatValue + "°C";
                 setTempValueLabel.Text = string.Format($"{setThermostatValue.ToString().PadLeft(2, '0')}°C");
                 setTempValueLabel.Left = (thermostatPanel.Width - setTempValueLabel.Width) / 2;
+
+                if (currentThermostatValue > setThermostatValue)
+                {
+                    estimatedTimeLabel.Visible = true;
+                    estimatedTimeLabel.Text = "In: " + (currentThermostatValue - setThermostatValue) * 5 + "s";
+                }
+                else if (currentThermostatValue < setThermostatValue)
+                {
+                    estimatedTimeLabel.Visible = true;
+                    estimatedTimeLabel.Text = "In: " + (setThermostatValue - currentThermostatValue) * 5 + "s";
+                }
+                else
+                {
+                    estimatedTimeLabel.Visible = false;
+                }
             }
         }
 
@@ -127,7 +149,22 @@ namespace hotel_app.Forms.Functions
                 currentTempValueLabel.Text = "Current Temperature: " + currentThermostatValue + "°C";
                 setTempValueLabel.Text = string.Format($"{setThermostatValue.ToString().PadLeft(2, '0')}°C");
                 setTempValueLabel.Left = (thermostatPanel.Width - setTempValueLabel.Width) / 2;
-            }
+
+                if (currentThermostatValue > setThermostatValue)
+                {
+                    estimatedTimeLabel.Visible = true;
+                    estimatedTimeLabel.Text = "In: " + (currentThermostatValue - setThermostatValue) * 5 + "s";
+                }
+                else if (currentThermostatValue < setThermostatValue)
+                {
+                    estimatedTimeLabel.Visible = true;
+                    estimatedTimeLabel.Text = "In: " + (setThermostatValue - currentThermostatValue) * 5 + "s";
+                }
+                else
+                {
+                    estimatedTimeLabel.Visible = false;
+                }
+            }   
         }
 
         private void thermostatToggle_CheckedChanged(object sender, EventArgs e)
@@ -161,6 +198,7 @@ namespace hotel_app.Forms.Functions
             if (currentThermostatValue == setThermostatValue)
             {
                 setValueTimer.Stop();
+                estimatedTimeLabel.Visible = false;
             }
             if (downButtonClicked == true)
             {

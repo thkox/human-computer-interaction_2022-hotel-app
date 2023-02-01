@@ -38,6 +38,7 @@
             this.leafPictureBox = new FontAwesome.Sharp.IconPictureBox();
             this.setTempValueLabel = new System.Windows.Forms.Label();
             this.setValueTimer = new System.Windows.Forms.Timer(this.components);
+            this.estimatedTimeLabel = new System.Windows.Forms.Label();
             this.thermostatPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.leafPictureBox)).BeginInit();
             this.SuspendLayout();
@@ -119,6 +120,7 @@
             // 
             this.thermostatPanel.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.thermostatPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(129)))), ((int)(((byte)(164)))), ((int)(((byte)(205)))));
+            this.thermostatPanel.Controls.Add(this.estimatedTimeLabel);
             this.thermostatPanel.Controls.Add(this.leafPictureBox);
             this.thermostatPanel.Controls.Add(this.setTempValueLabel);
             this.thermostatPanel.Controls.Add(this.currentTempValueLabel);
@@ -149,14 +151,26 @@
             this.setTempValueLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(241)))), ((int)(((byte)(246)))));
             this.setTempValueLabel.Location = new System.Drawing.Point(108, 10);
             this.setTempValueLabel.Name = "setTempValueLabel";
-            this.setTempValueLabel.Size = new System.Drawing.Size(156, 67);
+            this.setTempValueLabel.Size = new System.Drawing.Size(134, 67);
             this.setTempValueLabel.TabIndex = 8;
-            this.setTempValueLabel.Text = "label1";
+            this.setTempValueLabel.Text = "[Val]";
             // 
             // setValueTimer
             // 
             this.setValueTimer.Interval = 5000;
             this.setValueTimer.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
+            // estimatedTimeLabel
+            // 
+            this.estimatedTimeLabel.AutoSize = true;
+            this.estimatedTimeLabel.Font = new System.Drawing.Font("Comic Sans MS", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.estimatedTimeLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(241)))), ((int)(((byte)(246)))));
+            this.estimatedTimeLabel.Location = new System.Drawing.Point(136, 77);
+            this.estimatedTimeLabel.Name = "estimatedTimeLabel";
+            this.estimatedTimeLabel.Size = new System.Drawing.Size(60, 29);
+            this.estimatedTimeLabel.TabIndex = 10;
+            this.estimatedTimeLabel.Text = "[Val]";
+            this.estimatedTimeLabel.Visible = false;
             // 
             // ThermostatForm
             // 
@@ -190,5 +204,6 @@
         private Label setTempValueLabel;
         private FontAwesome.Sharp.IconPictureBox leafPictureBox;
         private System.Windows.Forms.Timer setValueTimer;
+        private Label estimatedTimeLabel;
     }
 }
