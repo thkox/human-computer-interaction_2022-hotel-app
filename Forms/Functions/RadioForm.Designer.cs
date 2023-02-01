@@ -109,8 +109,8 @@
             this.radioToggle.Name = "radioToggle";
             this.radioToggle.OffBackColor = System.Drawing.Color.DimGray;
             this.radioToggle.OffToggleColor = System.Drawing.Color.LightGray;
-            this.radioToggle.OnBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.radioToggle.OnToggleColor = System.Drawing.Color.Black;
+            this.radioToggle.OnBackColor = System.Drawing.Color.Green;
+            this.radioToggle.OnToggleColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(241)))), ((int)(((byte)(246)))));
             this.radioToggle.Size = new System.Drawing.Size(45, 22);
             this.radioToggle.TabIndex = 4;
             this.radioToggle.UseVisualStyleBackColor = true;
