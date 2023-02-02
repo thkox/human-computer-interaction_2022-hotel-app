@@ -32,6 +32,7 @@
             this.menuLabel = new System.Windows.Forms.Label();
             this.menuTabControl = new System.Windows.Forms.TabControl();
             this.coffeeTabPage = new System.Windows.Forms.TabPage();
+            this.quantityCustomControl1 = new hotel_app.Custom_Toolbox.QuantityCustomControl();
             this.latteLabel = new System.Windows.Forms.Label();
             this.espressoLabel = new System.Windows.Forms.Label();
             this.capuccinoLabel = new System.Windows.Forms.Label();
@@ -137,6 +138,7 @@
             // coffeeTabPage
             // 
             this.coffeeTabPage.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(144)))), ((int)(((byte)(191)))));
+            this.coffeeTabPage.Controls.Add(this.quantityCustomControl1);
             this.coffeeTabPage.Controls.Add(this.latteLabel);
             this.coffeeTabPage.Controls.Add(this.espressoLabel);
             this.coffeeTabPage.Controls.Add(this.capuccinoLabel);
@@ -152,6 +154,13 @@
             this.coffeeTabPage.Size = new System.Drawing.Size(662, 422);
             this.coffeeTabPage.TabIndex = 0;
             this.coffeeTabPage.Text = "Coffee";
+            // 
+            // quantityCustomControl1
+            // 
+            this.quantityCustomControl1.Location = new System.Drawing.Point(60, 274);
+            this.quantityCustomControl1.Name = "quantityCustomControl1";
+            this.quantityCustomControl1.Size = new System.Drawing.Size(118, 28);
+            this.quantityCustomControl1.TabIndex = 20;
             // 
             // latteLabel
             // 
@@ -951,5 +960,6 @@
         private Button pastaButton;
         private Button souvlakiButton;
         private FontAwesome.Sharp.IconButton checkoutButton;
+        private Custom_Toolbox.QuantityCustomControl quantityCustomControl1;
     }
 }
