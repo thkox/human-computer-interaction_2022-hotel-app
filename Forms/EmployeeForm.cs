@@ -365,6 +365,11 @@ namespace hotel_app.Forms
             signinForm.Show();
         }
 
-
+        private void registerButton_Click(object sender, EventArgs e)
+        {
+            ActivateButton(sender);
+            RegisterForm registerForm = new RegisterForm();
+            OpenChildForm(registerForm);
+        }
     }
 }

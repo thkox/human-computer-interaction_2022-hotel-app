@@ -32,6 +32,7 @@ namespace hotel_app.Forms
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(EmployeeForm));
             this.menuPanel = new System.Windows.Forms.Panel();
+            this.registerButton = new FontAwesome.Sharp.IconButton();
             this.olymposGardensButton = new FontAwesome.Sharp.IconButton();
             this.courtyardZeusButton = new FontAwesome.Sharp.IconButton();
             this.zeusPalaceButton = new FontAwesome.Sharp.IconButton();
@@ -60,6 +61,7 @@ namespace hotel_app.Forms
             // menuPanel
             // 
             this.menuPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(99)))), ((int)(((byte)(161)))));
+            this.menuPanel.Controls.Add(this.registerButton);
             this.menuPanel.Controls.Add(this.olymposGardensButton);
             this.menuPanel.Controls.Add(this.courtyardZeusButton);
             this.menuPanel.Controls.Add(this.zeusPalaceButton);
@@ -70,6 +72,29 @@ namespace hotel_app.Forms
             this.menuPanel.Name = "menuPanel";
             this.menuPanel.Size = new System.Drawing.Size(300, 761);
             this.menuPanel.TabIndex = 0;
+            // 
+            // registerButton
+            // 
+            this.registerButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.registerButton.Dock = System.Windows.Forms.DockStyle.Top;
+            this.registerButton.FlatAppearance.BorderSize = 0;
+            this.registerButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.registerButton.Font = new System.Drawing.Font("Cooper Black", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.registerButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(228)))), ((int)(((byte)(238)))));
+            this.registerButton.IconChar = FontAwesome.Sharp.IconChar.AddressBook;
+            this.registerButton.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(228)))), ((int)(((byte)(238)))));
+            this.registerButton.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.registerButton.IconSize = 50;
+            this.registerButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.registerButton.Location = new System.Drawing.Point(0, 410);
+            this.registerButton.Name = "registerButton";
+            this.registerButton.Size = new System.Drawing.Size(300, 70);
+            this.registerButton.TabIndex = 10;
+            this.registerButton.Text = "Register Customer";
+            this.registerButton.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.registerButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.registerButton.UseVisualStyleBackColor = true;
+            this.registerButton.Click += new System.EventHandler(this.registerButton_Click);
             // 
             // olymposGardensButton
             // 
@@ -350,5 +375,6 @@ namespace hotel_app.Forms
         private Label label3;
         private Panel childFormPanel;
         private Label currentNameLabel;
+        private FontAwesome.Sharp.IconButton registerButton;
     }
 }
