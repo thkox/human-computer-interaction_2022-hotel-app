@@ -32,6 +32,8 @@
             this.menuLabel = new System.Windows.Forms.Label();
             this.menuTabControl = new System.Windows.Forms.TabControl();
             this.coffeeTabPage = new System.Windows.Forms.TabPage();
+            this.quantityLatte = new hotel_app.Custom_Toolbox.QuantityCustomControl();
+            this.quantityEspresso = new hotel_app.Custom_Toolbox.QuantityCustomControl();
             this.quantityCappuccino = new hotel_app.Custom_Toolbox.QuantityCustomControl();
             this.quantityAmericano = new hotel_app.Custom_Toolbox.QuantityCustomControl();
             this.latteLabel = new System.Windows.Forms.Label();
@@ -88,8 +90,7 @@
             this.souvlakiButton = new System.Windows.Forms.Button();
             this.cart_richTextBox = new System.Windows.Forms.RichTextBox();
             this.checkoutButton = new FontAwesome.Sharp.IconButton();
-            this.quantityEspresso = new hotel_app.Custom_Toolbox.QuantityCustomControl();
-            this.quantityLatte = new hotel_app.Custom_Toolbox.QuantityCustomControl();
+            this.quantityZeusHeart = new hotel_app.Custom_Toolbox.QuantityCustomControl();
             ((System.ComponentModel.ISupportInitialize)(this.cartButton)).BeginInit();
             this.menuTabControl.SuspendLayout();
             this.coffeeTabPage.SuspendLayout();
@@ -161,6 +162,22 @@
             this.coffeeTabPage.TabIndex = 0;
             this.coffeeTabPage.Text = "Coffee";
             // 
+            // quantityLatte
+            // 
+            this.quantityLatte.Location = new System.Drawing.Point(479, 274);
+            this.quantityLatte.Name = "quantityLatte";
+            this.quantityLatte.Size = new System.Drawing.Size(118, 28);
+            this.quantityLatte.TabIndex = 23;
+            this.quantityLatte.Tag = "0";
+            // 
+            // quantityEspresso
+            // 
+            this.quantityEspresso.Location = new System.Drawing.Point(337, 274);
+            this.quantityEspresso.Name = "quantityEspresso";
+            this.quantityEspresso.Size = new System.Drawing.Size(118, 28);
+            this.quantityEspresso.TabIndex = 22;
+            this.quantityEspresso.Tag = "0";
+            // 
             // quantityCappuccino
             // 
             this.quantityCappuccino.Location = new System.Drawing.Point(196, 274);
@@ -168,7 +185,6 @@
             this.quantityCappuccino.Size = new System.Drawing.Size(118, 28);
             this.quantityCappuccino.TabIndex = 21;
             this.quantityCappuccino.Tag = "0";
-            this.quantityCappuccino.TagChanged += new System.EventHandler(this.quantityCappuccino_TagChanged);
             // 
             // quantityAmericano
             // 
@@ -177,7 +193,6 @@
             this.quantityAmericano.Size = new System.Drawing.Size(118, 28);
             this.quantityAmericano.TabIndex = 20;
             this.quantityAmericano.Tag = "0";
-            this.quantityAmericano.TagChanged += new System.EventHandler(this.quantityAmericano_TagChanged);
             // 
             // latteLabel
             // 
@@ -283,6 +298,7 @@
             // chocolatesTabPage
             // 
             this.chocolatesTabPage.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(144)))), ((int)(((byte)(191)))));
+            this.chocolatesTabPage.Controls.Add(this.quantityZeusHeart);
             this.chocolatesTabPage.Controls.Add(this.specialLabel);
             this.chocolatesTabPage.Controls.Add(this.ferreroLabel);
             this.chocolatesTabPage.Controls.Add(this.hospitalityLabel);
@@ -305,7 +321,7 @@
             this.specialLabel.AutoSize = true;
             this.specialLabel.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.specialLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(241)))), ((int)(((byte)(246)))));
-            this.specialLabel.Location = new System.Drawing.Point(58, 331);
+            this.specialLabel.Location = new System.Drawing.Point(65, 338);
             this.specialLabel.Name = "specialLabel";
             this.specialLabel.Size = new System.Drawing.Size(108, 23);
             this.specialLabel.TabIndex = 32;
@@ -376,7 +392,7 @@
             this.specialButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.specialButton.Font = new System.Drawing.Font("Comic Sans MS", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.specialButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(241)))), ((int)(((byte)(246)))));
-            this.specialButton.Location = new System.Drawing.Point(58, 208);
+            this.specialButton.Location = new System.Drawing.Point(58, 215);
             this.specialButton.Name = "specialButton";
             this.specialButton.Size = new System.Drawing.Size(120, 120);
             this.specialButton.TabIndex = 25;
@@ -694,7 +710,7 @@
             this.fiestaLabel.AutoSize = true;
             this.fiestaLabel.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.fiestaLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(241)))), ((int)(((byte)(246)))));
-            this.fiestaLabel.Location = new System.Drawing.Point(345, 331);
+            this.fiestaLabel.Location = new System.Drawing.Point(345, 338);
             this.fiestaLabel.Name = "fiestaLabel";
             this.fiestaLabel.Size = new System.Drawing.Size(102, 23);
             this.fiestaLabel.TabIndex = 27;
@@ -705,7 +721,7 @@
             this.oceanLabel.AutoSize = true;
             this.oceanLabel.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.oceanLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(241)))), ((int)(((byte)(246)))));
-            this.oceanLabel.Location = new System.Drawing.Point(205, 331);
+            this.oceanLabel.Location = new System.Drawing.Point(205, 338);
             this.oceanLabel.Name = "oceanLabel";
             this.oceanLabel.Size = new System.Drawing.Size(101, 23);
             this.oceanLabel.TabIndex = 26;
@@ -716,7 +732,7 @@
             this.chickenLabel.AutoSize = true;
             this.chickenLabel.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.chickenLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(241)))), ((int)(((byte)(246)))));
-            this.chickenLabel.Location = new System.Drawing.Point(68, 331);
+            this.chickenLabel.Location = new System.Drawing.Point(68, 338);
             this.chickenLabel.Name = "chickenLabel";
             this.chickenLabel.Size = new System.Drawing.Size(101, 23);
             this.chickenLabel.TabIndex = 25;
@@ -728,7 +744,7 @@
             this.fiestaButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.fiestaButton.Font = new System.Drawing.Font("Comic Sans MS", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.fiestaButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(241)))), ((int)(((byte)(246)))));
-            this.fiestaButton.Location = new System.Drawing.Point(337, 208);
+            this.fiestaButton.Location = new System.Drawing.Point(337, 215);
             this.fiestaButton.Name = "fiestaButton";
             this.fiestaButton.Size = new System.Drawing.Size(120, 120);
             this.fiestaButton.TabIndex = 22;
@@ -742,7 +758,7 @@
             this.chickenButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.chickenButton.Font = new System.Drawing.Font("Comic Sans MS", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.chickenButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(241)))), ((int)(((byte)(246)))));
-            this.chickenButton.Location = new System.Drawing.Point(58, 208);
+            this.chickenButton.Location = new System.Drawing.Point(58, 215);
             this.chickenButton.Name = "chickenButton";
             this.chickenButton.Size = new System.Drawing.Size(120, 120);
             this.chickenButton.TabIndex = 23;
@@ -757,7 +773,7 @@
             this.oceanButton.Enabled = false;
             this.oceanButton.Font = new System.Drawing.Font("Comic Sans MS", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.oceanButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(241)))), ((int)(((byte)(246)))));
-            this.oceanButton.Location = new System.Drawing.Point(196, 208);
+            this.oceanButton.Location = new System.Drawing.Point(196, 215);
             this.oceanButton.Name = "oceanButton";
             this.oceanButton.Size = new System.Drawing.Size(120, 120);
             this.oceanButton.TabIndex = 24;
@@ -887,24 +903,13 @@
             this.checkoutButton.Text = "Checkout";
             this.checkoutButton.UseVisualStyleBackColor = true;
             // 
-            // quantityEspresso
+            // quantityZeusHeart
             // 
-            this.quantityEspresso.Location = new System.Drawing.Point(337, 274);
-            this.quantityEspresso.Name = "quantityEspresso";
-            this.quantityEspresso.Size = new System.Drawing.Size(118, 28);
-            this.quantityEspresso.TabIndex = 22;
-            this.quantityEspresso.Tag = "0";
-            this.quantityEspresso.TagChanged += new System.EventHandler(this.quantityEspresso_TagChanged);
-            // 
-            // quantityLatte
-            // 
-            this.quantityLatte.Location = new System.Drawing.Point(479, 274);
-            this.quantityLatte.Name = "quantityLatte";
-            this.quantityLatte.Size = new System.Drawing.Size(118, 28);
-            this.quantityLatte.TabIndex = 23;
-            this.quantityLatte.Tag = "0";
-            this.quantityLatte.TagChanged += new System.EventHandler(this.quantityLatte_TagChanged);
-
+            this.quantityZeusHeart.Location = new System.Drawing.Point(58, 181);
+            this.quantityZeusHeart.Name = "quantityZeusHeart";
+            this.quantityZeusHeart.Size = new System.Drawing.Size(118, 28);
+            this.quantityZeusHeart.TabIndex = 33;
+            this.quantityZeusHeart.Tag = "0";
             // 
             // RestaurantMenuForm
             // 
@@ -999,5 +1004,6 @@
         private Custom_Toolbox.QuantityCustomControl quantityCappuccino;
         private Custom_Toolbox.QuantityCustomControl quantityLatte;
         private Custom_Toolbox.QuantityCustomControl quantityEspresso;
+        private Custom_Toolbox.QuantityCustomControl quantityZeusHeart;
     }
 }

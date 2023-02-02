@@ -17,6 +17,7 @@ namespace hotel_app.Forms.Functions
             InitializeComponent();
         }
 
+        //Coffee
         private void quantityAmericano_TagChanged(object sender, EventArgs e)
         {
             cart_richTextBox.Text = cart_richTextBox.Text + "Americano x" + quantityAmericano.Tag + " " + (Convert.ToInt32(quantityAmericano.Tag) * Convert.ToInt32(americanoButton.Tag)) + "€" + Environment.NewLine;
@@ -37,9 +38,6 @@ namespace hotel_app.Forms.Functions
             cart_richTextBox.Text = cart_richTextBox.Text + "Latte x" + quantityLatte.Tag + " " + (Convert.ToInt32(quantityLatte.Tag) * Convert.ToInt32(latteButton.Tag)) + "€" + Environment.NewLine;
         }
 
-        //private string textToWrite()
-        //{
-
-        //}
+        //
     }
 }
