@@ -55,7 +55,6 @@
             this.greekCuisineTabPage = new System.Windows.Forms.TabPage();
             this.saladsTabPage = new System.Windows.Forms.TabPage();
             this.cart_richTextBox = new System.Windows.Forms.RichTextBox();
-            this.total_richTextBox = new CustomControls.RichTextBox.RichTextBox();
             this.palaceLabel = new System.Windows.Forms.Label();
             this.trojanLabel = new System.Windows.Forms.Label();
             this.athinaLabel = new System.Windows.Forms.Label();
@@ -86,6 +85,7 @@
             this.fiestaButton = new System.Windows.Forms.Button();
             this.chickenButton = new System.Windows.Forms.Button();
             this.oceanButton = new System.Windows.Forms.Button();
+            this.checkoutButton = new FontAwesome.Sharp.IconButton();
             ((System.ComponentModel.ISupportInitialize)(this.cartButton)).BeginInit();
             this.menuTabControl.SuspendLayout();
             this.coffeeTabPage.SuspendLayout();
@@ -247,8 +247,10 @@
             this.americanoButton.Name = "americanoButton";
             this.americanoButton.Size = new System.Drawing.Size(120, 120);
             this.americanoButton.TabIndex = 12;
+            this.americanoButton.Tag = "8";
             this.americanoButton.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.americanoButton.UseVisualStyleBackColor = true;
+            this.americanoButton.Click += new System.EventHandler(this.americanoButton_Click);
             // 
             // chocolatesTabPage
             // 
@@ -459,25 +461,6 @@
             this.cart_richTextBox.Size = new System.Drawing.Size(225, 376);
             this.cart_richTextBox.TabIndex = 7;
             this.cart_richTextBox.Text = "";
-            // 
-            // total_richTextBox
-            // 
-            this.total_richTextBox.BackColor = System.Drawing.SystemColors.Window;
-            this.total_richTextBox.BorderColor = System.Drawing.Color.MediumSlateBlue;
-            this.total_richTextBox.BorderFocusColor = System.Drawing.Color.HotPink;
-            this.total_richTextBox.BorderSize = 2;
-            this.total_richTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.total_richTextBox.ForeColor = System.Drawing.Color.DimGray;
-            this.total_richTextBox.Location = new System.Drawing.Point(777, 542);
-            this.total_richTextBox.Margin = new System.Windows.Forms.Padding(4);
-            this.total_richTextBox.Multiline = false;
-            this.total_richTextBox.Name = "total_richTextBox";
-            this.total_richTextBox.Padding = new System.Windows.Forms.Padding(7);
-            this.total_richTextBox.PasswordChar = false;
-            this.total_richTextBox.Size = new System.Drawing.Size(224, 31);
-            this.total_richTextBox.TabIndex = 8;
-            this.total_richTextBox.Texts = "";
-            this.total_richTextBox.UnderlinedStyle = false;
             // 
             // palaceLabel
             // 
@@ -842,13 +825,27 @@
             this.oceanButton.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.oceanButton.UseVisualStyleBackColor = true;
             // 
+            // checkoutButton
+            // 
+            this.checkoutButton.Font = new System.Drawing.Font("Comic Sans MS", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.checkoutButton.IconChar = FontAwesome.Sharp.IconChar.MoneyCheck;
+            this.checkoutButton.IconColor = System.Drawing.Color.Black;
+            this.checkoutButton.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.checkoutButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.checkoutButton.Location = new System.Drawing.Point(776, 529);
+            this.checkoutButton.Name = "checkoutButton";
+            this.checkoutButton.Size = new System.Drawing.Size(225, 44);
+            this.checkoutButton.TabIndex = 8;
+            this.checkoutButton.Text = "Checkout";
+            this.checkoutButton.UseVisualStyleBackColor = true;
+            // 
             // RestaurantMenuForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(144)))), ((int)(((byte)(191)))));
             this.ClientSize = new System.Drawing.Size(1084, 661);
-            this.Controls.Add(this.total_richTextBox);
+            this.Controls.Add(this.checkoutButton);
             this.Controls.Add(this.cart_richTextBox);
             this.Controls.Add(this.menuTabControl);
             this.Controls.Add(this.menuLabel);
@@ -890,7 +887,6 @@
         private Button espressoButton;
         private Button americanoButton;
         private RichTextBox cart_richTextBox;
-        private CustomControls.RichTextBox.RichTextBox total_richTextBox;
         private Label specialLabel;
         private Label ferreroLabel;
         private Label hospitalityLabel;
@@ -931,5 +927,6 @@
         private Button elGrecoButton;
         private Button pastaButton;
         private Button souvlakiButton;
+        private FontAwesome.Sharp.IconButton checkoutButton;
     }
 }
