@@ -17,9 +17,9 @@ namespace hotel_app.Forms.Functions
             InitializeComponent();
         }
 
-        private void americanoButton_Click(object sender, EventArgs e)
+        private void quantityAmericano_TagChanged(object sender, EventArgs e)
         {
-            
+            cart_richTextBox.Text = "Americano" + " " + quantityAmericano.Tag + " " + "x" + " " + "$" + " " + (quantityAmericano.Tag) + Environment.NewLine;
         }
     }
 }

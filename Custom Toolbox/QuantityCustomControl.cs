@@ -12,6 +12,8 @@ namespace hotel_app.Custom_Toolbox
 {
     public partial class QuantityCustomControl : UserControl
     {
+
+        public EventHandler TagChanged;
         public QuantityCustomControl()
         {
             InitializeComponent();
@@ -47,7 +49,8 @@ namespace hotel_app.Custom_Toolbox
                 minusButton.Enabled = true;
                 plusButton.Enabled = true;
             }
-                
+
+            TagChanged?.Invoke(this, e);
 
         }
 

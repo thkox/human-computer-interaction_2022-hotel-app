@@ -32,7 +32,7 @@
             this.menuLabel = new System.Windows.Forms.Label();
             this.menuTabControl = new System.Windows.Forms.TabControl();
             this.coffeeTabPage = new System.Windows.Forms.TabPage();
-            this.quantityCustomControl1 = new hotel_app.Custom_Toolbox.QuantityCustomControl();
+            this.quantityAmericano = new hotel_app.Custom_Toolbox.QuantityCustomControl();
             this.latteLabel = new System.Windows.Forms.Label();
             this.espressoLabel = new System.Windows.Forms.Label();
             this.capuccinoLabel = new System.Windows.Forms.Label();
@@ -87,7 +87,6 @@
             this.souvlakiButton = new System.Windows.Forms.Button();
             this.cart_richTextBox = new System.Windows.Forms.RichTextBox();
             this.checkoutButton = new FontAwesome.Sharp.IconButton();
-            this.quantityCustomControl2 = new hotel_app.Custom_Toolbox.QuantityCustomControl();
             ((System.ComponentModel.ISupportInitialize)(this.cartButton)).BeginInit();
             this.menuTabControl.SuspendLayout();
             this.coffeeTabPage.SuspendLayout();
@@ -139,8 +138,7 @@
             // coffeeTabPage
             // 
             this.coffeeTabPage.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(144)))), ((int)(((byte)(191)))));
-            this.coffeeTabPage.Controls.Add(this.quantityCustomControl2);
-            this.coffeeTabPage.Controls.Add(this.quantityCustomControl1);
+            this.coffeeTabPage.Controls.Add(this.quantityAmericano);
             this.coffeeTabPage.Controls.Add(this.latteLabel);
             this.coffeeTabPage.Controls.Add(this.espressoLabel);
             this.coffeeTabPage.Controls.Add(this.capuccinoLabel);
@@ -157,12 +155,14 @@
             this.coffeeTabPage.TabIndex = 0;
             this.coffeeTabPage.Text = "Coffee";
             // 
-            // quantityCustomControl1
+            // quantityAmericano
             // 
-            this.quantityCustomControl1.Location = new System.Drawing.Point(60, 274);
-            this.quantityCustomControl1.Name = "quantityCustomControl1";
-            this.quantityCustomControl1.Size = new System.Drawing.Size(118, 28);
-            this.quantityCustomControl1.TabIndex = 20;
+            this.quantityAmericano.Location = new System.Drawing.Point(60, 274);
+            this.quantityAmericano.Name = "quantityAmericano";
+            this.quantityAmericano.Size = new System.Drawing.Size(118, 28);
+            this.quantityAmericano.TabIndex = 20;
+            this.quantityAmericano.Tag = "0";
+            this.quantityAmericano.TagChanged += new System.EventHandler(this.quantityAmericano_TagChanged);
             // 
             // latteLabel
             // 
@@ -264,7 +264,6 @@
             this.americanoButton.Tag = "8";
             this.americanoButton.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.americanoButton.UseVisualStyleBackColor = true;
-            this.americanoButton.Click += new System.EventHandler(this.americanoButton_Click);
             // 
             // chocolatesTabPage
             // 
@@ -873,13 +872,6 @@
             this.checkoutButton.Text = "Checkout";
             this.checkoutButton.UseVisualStyleBackColor = true;
             // 
-            // quantityCustomControl2
-            // 
-            this.quantityCustomControl2.Location = new System.Drawing.Point(196, 274);
-            this.quantityCustomControl2.Name = "quantityCustomControl2";
-            this.quantityCustomControl2.Size = new System.Drawing.Size(118, 28);
-            this.quantityCustomControl2.TabIndex = 21;
-            // 
             // RestaurantMenuForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -969,7 +961,6 @@
         private Button pastaButton;
         private Button souvlakiButton;
         private FontAwesome.Sharp.IconButton checkoutButton;
-        private Custom_Toolbox.QuantityCustomControl quantityCustomControl1;
-        private Custom_Toolbox.QuantityCustomControl quantityCustomControl2;
+        private Custom_Toolbox.QuantityCustomControl quantityAmericano;
     }
 }
