@@ -33,7 +33,7 @@
             this.downBar = new System.Windows.Forms.Panel();
             this.sentMessagePictureBox = new FontAwesome.Sharp.IconPictureBox();
             this.inputRichTextBox = new CustomControls.RichTextBox.RichTextBox();
-            this.chatHistoryPanel = new System.Windows.Forms.Panel();
+            this.chatPanel = new System.Windows.Forms.Panel();
             this.charBarPanel.SuspendLayout();
             this.downBar.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.sentMessagePictureBox)).BeginInit();
@@ -78,6 +78,7 @@
             // sentMessagePictureBox
             // 
             this.sentMessagePictureBox.BackColor = System.Drawing.Color.OliveDrab;
+            this.sentMessagePictureBox.Cursor = System.Windows.Forms.Cursors.Hand;
             this.sentMessagePictureBox.ForeColor = System.Drawing.Color.Crimson;
             this.sentMessagePictureBox.IconChar = FontAwesome.Sharp.IconChar.PaperPlane;
             this.sentMessagePictureBox.IconColor = System.Drawing.Color.Crimson;
@@ -108,25 +109,26 @@
             this.inputRichTextBox.Texts = "";
             this.inputRichTextBox.UnderlinedStyle = false;
             // 
-            // chatHistoryPanel
+            // chatPanel
             // 
-            this.chatHistoryPanel.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.chatHistoryPanel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.chatHistoryPanel.Location = new System.Drawing.Point(0, 66);
-            this.chatHistoryPanel.Name = "chatHistoryPanel";
-            this.chatHistoryPanel.Size = new System.Drawing.Size(384, 454);
-            this.chatHistoryPanel.TabIndex = 2;
+            this.chatPanel.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.chatPanel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.chatPanel.Location = new System.Drawing.Point(0, 66);
+            this.chatPanel.Name = "chatPanel";
+            this.chatPanel.Size = new System.Drawing.Size(384, 454);
+            this.chatPanel.TabIndex = 2;
             // 
             // ChatForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(384, 561);
-            this.Controls.Add(this.chatHistoryPanel);
+            this.Controls.Add(this.chatPanel);
             this.Controls.Add(this.downBar);
             this.Controls.Add(this.charBarPanel);
             this.Name = "ChatForm";
             this.Text = "ChatForm";
+            this.Load += new System.EventHandler(this.ChatForm_Load);
             this.charBarPanel.ResumeLayout(false);
             this.downBar.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.sentMessagePictureBox)).EndInit();
@@ -141,6 +143,6 @@
         private Panel downBar;
         private CustomControls.RichTextBox.RichTextBox inputRichTextBox;
         private FontAwesome.Sharp.IconPictureBox sentMessagePictureBox;
-        private Panel chatHistoryPanel;
+        private Panel chatPanel;
     }
 }
