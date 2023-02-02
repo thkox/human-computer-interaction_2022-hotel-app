@@ -315,6 +315,7 @@ namespace hotel_app.Forms
             zeusPalaceButton.Hide();
             olymposGardensButton.Hide();
             courtyardZeusButton.Hide();
+            registerButton.Hide();
 
             menuPanel.Controls.Add(clientMenuForm);
             menuPanel.Tag = clientMenuForm;
@@ -382,6 +383,7 @@ namespace hotel_app.Forms
             zeusPalaceButton.Show();
             olymposGardensButton.Show();
             courtyardZeusButton.Show();
+            registerButton.Show();
 
             label1.Show();
             label2.Show();
