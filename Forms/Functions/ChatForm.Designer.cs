@@ -89,6 +89,7 @@
             this.sentMessagePictureBox.Size = new System.Drawing.Size(32, 31);
             this.sentMessagePictureBox.TabIndex = 1;
             this.sentMessagePictureBox.TabStop = false;
+            this.sentMessagePictureBox.Click += new System.EventHandler(this.sentMessagePictureBox_Click);
             // 
             // inputRichTextBox
             // 
