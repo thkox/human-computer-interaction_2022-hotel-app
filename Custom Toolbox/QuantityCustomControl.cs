@@ -28,6 +28,7 @@ namespace hotel_app.Custom_Toolbox
             }
             richTextBox.SelectAll();
             richTextBox.SelectionAlignment = HorizontalAlignment.Center;
+            this.Tag = richTextBox.Text;
         }
 
         private void MinusButton_Click(object sender, EventArgs e)

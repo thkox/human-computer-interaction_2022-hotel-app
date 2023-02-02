@@ -87,6 +87,7 @@
             this.souvlakiButton = new System.Windows.Forms.Button();
             this.cart_richTextBox = new System.Windows.Forms.RichTextBox();
             this.checkoutButton = new FontAwesome.Sharp.IconButton();
+            this.quantityCustomControl2 = new hotel_app.Custom_Toolbox.QuantityCustomControl();
             ((System.ComponentModel.ISupportInitialize)(this.cartButton)).BeginInit();
             this.menuTabControl.SuspendLayout();
             this.coffeeTabPage.SuspendLayout();
@@ -138,6 +139,7 @@
             // coffeeTabPage
             // 
             this.coffeeTabPage.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(144)))), ((int)(((byte)(191)))));
+            this.coffeeTabPage.Controls.Add(this.quantityCustomControl2);
             this.coffeeTabPage.Controls.Add(this.quantityCustomControl1);
             this.coffeeTabPage.Controls.Add(this.latteLabel);
             this.coffeeTabPage.Controls.Add(this.espressoLabel);
@@ -871,6 +873,13 @@
             this.checkoutButton.Text = "Checkout";
             this.checkoutButton.UseVisualStyleBackColor = true;
             // 
+            // quantityCustomControl2
+            // 
+            this.quantityCustomControl2.Location = new System.Drawing.Point(196, 274);
+            this.quantityCustomControl2.Name = "quantityCustomControl2";
+            this.quantityCustomControl2.Size = new System.Drawing.Size(118, 28);
+            this.quantityCustomControl2.TabIndex = 21;
+            // 
             // RestaurantMenuForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -961,5 +970,6 @@
         private Button souvlakiButton;
         private FontAwesome.Sharp.IconButton checkoutButton;
         private Custom_Toolbox.QuantityCustomControl quantityCustomControl1;
+        private Custom_Toolbox.QuantityCustomControl quantityCustomControl2;
     }
 }
