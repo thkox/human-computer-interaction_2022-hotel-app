@@ -13,6 +13,7 @@ namespace hotel_app.Forms.Functions
     public partial class ChatForm : Form
     {
         int height = 20; // Height of the chat
+        int tabIndex = 0; // Tab index of the chat
         public ChatForm()
         {
             InitializeComponent();
@@ -41,8 +42,9 @@ namespace hotel_app.Forms.Functions
             ancientGod.Name = "ancinetGod";
             ancientGod.TabIndex = 0;
             ancientGod.Parent = chatPanel;
-
+            tabIndex++;
             return ancientGod;
+            
         }
 
         private RichTextBox SetResponseBubble(string message, Point location, Size size)
@@ -55,7 +57,7 @@ namespace hotel_app.Forms.Functions
             rtb.BackColor = Color.FromArgb(255, 255, 250);
             rtb.SelectionAlignment = HorizontalAlignment.Left;
             rtb.Padding = new Padding(20, 20, 25, 20); //
-
+            tabIndex++;
             return rtb;
         }
 
