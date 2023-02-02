@@ -208,6 +208,7 @@
             this.capuccinoButton.Name = "capuccinoButton";
             this.capuccinoButton.Size = new System.Drawing.Size(120, 120);
             this.capuccinoButton.TabIndex = 15;
+            this.capuccinoButton.Tag = "10";
             this.capuccinoButton.TextAlign = System.Drawing.ContentAlignment.TopRight;
             this.capuccinoButton.UseVisualStyleBackColor = true;
             // 
@@ -221,6 +222,7 @@
             this.latteButton.Name = "latteButton";
             this.latteButton.Size = new System.Drawing.Size(120, 120);
             this.latteButton.TabIndex = 14;
+            this.latteButton.Tag = "12";
             this.latteButton.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.latteButton.UseVisualStyleBackColor = true;
             // 
@@ -234,6 +236,7 @@
             this.espressoButton.Name = "espressoButton";
             this.espressoButton.Size = new System.Drawing.Size(120, 120);
             this.espressoButton.TabIndex = 13;
+            this.espressoButton.Tag = "9";
             this.espressoButton.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.espressoButton.UseVisualStyleBackColor = true;
             // 
@@ -339,6 +342,7 @@
             this.chocolateButton.Name = "chocolateButton";
             this.chocolateButton.Size = new System.Drawing.Size(120, 120);
             this.chocolateButton.TabIndex = 27;
+            this.chocolateButton.Tag = "10";
             this.chocolateButton.UseVisualStyleBackColor = true;
             // 
             // specialButton
@@ -351,6 +355,7 @@
             this.specialButton.Name = "specialButton";
             this.specialButton.Size = new System.Drawing.Size(120, 120);
             this.specialButton.TabIndex = 25;
+            this.specialButton.Tag = "18";
             this.specialButton.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.specialButton.UseVisualStyleBackColor = true;
             // 
@@ -364,6 +369,7 @@
             this.ferreroButton.Name = "ferreroButton";
             this.ferreroButton.Size = new System.Drawing.Size(120, 120);
             this.ferreroButton.TabIndex = 26;
+            this.ferreroButton.Tag = "13";
             this.ferreroButton.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.ferreroButton.UseVisualStyleBackColor = true;
             // 
@@ -377,6 +383,7 @@
             this.hospitalityButton.Name = "hospitalityButton";
             this.hospitalityButton.Size = new System.Drawing.Size(120, 120);
             this.hospitalityButton.TabIndex = 24;
+            this.hospitalityButton.Tag = "15";
             this.hospitalityButton.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.hospitalityButton.UseVisualStyleBackColor = true;
             // 
@@ -390,6 +397,7 @@
             this.zeusHeartButton.Name = "zeusHeartButton";
             this.zeusHeartButton.Size = new System.Drawing.Size(120, 120);
             this.zeusHeartButton.TabIndex = 23;
+            this.zeusHeartButton.Tag = "20";
             this.zeusHeartButton.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.zeusHeartButton.UseVisualStyleBackColor = true;
             // 
@@ -517,6 +525,7 @@
             this.athinaButton.Name = "athinaButton";
             this.athinaButton.Size = new System.Drawing.Size(120, 120);
             this.athinaButton.TabIndex = 7;
+            this.athinaButton.Tag = "15";
             this.athinaButton.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.athinaButton.UseVisualStyleBackColor = true;
             // 
@@ -530,6 +539,7 @@
             this.palaceButton.Name = "palaceButton";
             this.palaceButton.Size = new System.Drawing.Size(120, 120);
             this.palaceButton.TabIndex = 5;
+            this.palaceButton.Tag = "40";
             this.palaceButton.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.palaceButton.UseVisualStyleBackColor = true;
             // 
@@ -543,6 +553,7 @@
             this.trojanButton.Name = "trojanButton";
             this.trojanButton.Size = new System.Drawing.Size(120, 120);
             this.trojanButton.TabIndex = 3;
+            this.trojanButton.Tag = "10";
             this.trojanButton.UseVisualStyleBackColor = true;
             // 
             // zeusSpecialButton
@@ -555,6 +566,7 @@
             this.zeusSpecialButton.Name = "zeusSpecialButton";
             this.zeusSpecialButton.Size = new System.Drawing.Size(120, 120);
             this.zeusSpecialButton.TabIndex = 1;
+            this.zeusSpecialButton.Tag = "30";
             this.zeusSpecialButton.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.zeusSpecialButton.UseVisualStyleBackColor = true;
             // 
@@ -614,6 +626,7 @@
             this.aegeanButton.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.aegeanButton.Size = new System.Drawing.Size(120, 120);
             this.aegeanButton.TabIndex = 24;
+            this.aegeanButton.Tag = "15";
             this.aegeanButton.UseVisualStyleBackColor = true;
             // 
             // chefButton
@@ -626,6 +639,7 @@
             this.chefButton.Name = "chefButton";
             this.chefButton.Size = new System.Drawing.Size(120, 120);
             this.chefButton.TabIndex = 23;
+            this.chefButton.Tag = "8";
             this.chefButton.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.chefButton.UseVisualStyleBackColor = true;
             // 
@@ -640,6 +654,7 @@
             this.tricoloreButton.Name = "tricoloreButton";
             this.tricoloreButton.Size = new System.Drawing.Size(120, 120);
             this.tricoloreButton.TabIndex = 22;
+            this.tricoloreButton.Tag = "10";
             this.tricoloreButton.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.tricoloreButton.UseVisualStyleBackColor = true;
             // 
@@ -653,6 +668,7 @@
             this.greekButton.Name = "greekButton";
             this.greekButton.Size = new System.Drawing.Size(120, 120);
             this.greekButton.TabIndex = 21;
+            this.greekButton.Tag = "10";
             this.greekButton.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.greekButton.UseVisualStyleBackColor = true;
             // 
@@ -711,6 +727,7 @@
             this.tyromezesButton.Name = "tyromezesButton";
             this.tyromezesButton.Size = new System.Drawing.Size(120, 120);
             this.tyromezesButton.TabIndex = 17;
+            this.tyromezesButton.Tag = "4";
             this.tyromezesButton.UseVisualStyleBackColor = true;
             // 
             // elGrecoButton
@@ -723,6 +740,7 @@
             this.elGrecoButton.Name = "elGrecoButton";
             this.elGrecoButton.Size = new System.Drawing.Size(120, 120);
             this.elGrecoButton.TabIndex = 16;
+            this.elGrecoButton.Tag = "20";
             this.elGrecoButton.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.elGrecoButton.UseVisualStyleBackColor = true;
             // 
@@ -736,6 +754,7 @@
             this.pastaButton.Name = "pastaButton";
             this.pastaButton.Size = new System.Drawing.Size(120, 120);
             this.pastaButton.TabIndex = 15;
+            this.pastaButton.Tag = "8";
             this.pastaButton.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.pastaButton.UseVisualStyleBackColor = true;
             // 
@@ -749,6 +768,7 @@
             this.souvlakiButton.Name = "souvlakiButton";
             this.souvlakiButton.Size = new System.Drawing.Size(120, 120);
             this.souvlakiButton.TabIndex = 14;
+            this.souvlakiButton.Tag = "5";
             this.souvlakiButton.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.souvlakiButton.UseVisualStyleBackColor = true;
             // 
@@ -795,6 +815,7 @@
             this.fiestaButton.Name = "fiestaButton";
             this.fiestaButton.Size = new System.Drawing.Size(120, 120);
             this.fiestaButton.TabIndex = 22;
+            this.fiestaButton.Tag = "24";
             this.fiestaButton.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.fiestaButton.UseVisualStyleBackColor = true;
             // 
@@ -808,6 +829,7 @@
             this.chickenButton.Name = "chickenButton";
             this.chickenButton.Size = new System.Drawing.Size(120, 120);
             this.chickenButton.TabIndex = 23;
+            this.chickenButton.Tag = "7";
             this.chickenButton.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.chickenButton.UseVisualStyleBackColor = true;
             // 
@@ -822,6 +844,7 @@
             this.oceanButton.Name = "oceanButton";
             this.oceanButton.Size = new System.Drawing.Size(120, 120);
             this.oceanButton.TabIndex = 24;
+            this.oceanButton.Tag = "30";
             this.oceanButton.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.oceanButton.UseVisualStyleBackColor = true;
             // 
