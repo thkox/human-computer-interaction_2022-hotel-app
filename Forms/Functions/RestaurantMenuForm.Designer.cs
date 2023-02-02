@@ -110,7 +110,7 @@
             this.souvlakiButton = new System.Windows.Forms.Button();
             this.cart_richTextBox = new System.Windows.Forms.RichTextBox();
             this.checkoutButton = new FontAwesome.Sharp.IconButton();
-            this.label1 = new System.Windows.Forms.Label();
+            this.total_richTextBox = new System.Windows.Forms.RichTextBox();
             ((System.ComponentModel.ISupportInitialize)(this.cartButton)).BeginInit();
             this.menuTabControl.SuspendLayout();
             this.coffeeTabPage.SuspendLayout();
@@ -128,7 +128,7 @@
             this.cartButton.IconChar = FontAwesome.Sharp.IconChar.CartShopping;
             this.cartButton.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(241)))), ((int)(((byte)(246)))));
             this.cartButton.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.cartButton.Location = new System.Drawing.Point(969, 108);
+            this.cartButton.Location = new System.Drawing.Point(969, 109);
             this.cartButton.Name = "cartButton";
             this.cartButton.Size = new System.Drawing.Size(32, 32);
             this.cartButton.TabIndex = 3;
@@ -1110,6 +1110,7 @@
             // checkoutButton
             // 
             this.checkoutButton.Font = new System.Drawing.Font("Comic Sans MS", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.checkoutButton.ForeColor = System.Drawing.SystemColors.ControlText;
             this.checkoutButton.IconChar = FontAwesome.Sharp.IconChar.MoneyCheck;
             this.checkoutButton.IconColor = System.Drawing.Color.Black;
             this.checkoutButton.IconFont = FontAwesome.Sharp.IconFont.Auto;
@@ -1121,14 +1122,18 @@
             this.checkoutButton.Text = "Checkout";
             this.checkoutButton.UseVisualStyleBackColor = true;
             // 
-            // label1
+            // total_richTextBox
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(925, 121);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(38, 15);
-            this.label1.TabIndex = 9;
-            this.label1.Text = "label1";
+            this.total_richTextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(144)))), ((int)(((byte)(191)))));
+            this.total_richTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.total_richTextBox.Font = new System.Drawing.Font("Comic Sans MS", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.total_richTextBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(241)))), ((int)(((byte)(246)))));
+            this.total_richTextBox.Location = new System.Drawing.Point(863, 109);
+            this.total_richTextBox.Name = "total_richTextBox";
+            this.total_richTextBox.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.total_richTextBox.Size = new System.Drawing.Size(100, 32);
+            this.total_richTextBox.TabIndex = 10;
+            this.total_richTextBox.Text = "[Total]";
             // 
             // RestaurantMenuForm
             // 
@@ -1136,7 +1141,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(144)))), ((int)(((byte)(191)))));
             this.ClientSize = new System.Drawing.Size(1084, 661);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.total_richTextBox);
             this.Controls.Add(this.checkoutButton);
             this.Controls.Add(this.cart_richTextBox);
             this.Controls.Add(this.menuTabControl);
@@ -1244,6 +1249,6 @@
         private Custom_Toolbox.QuantityCustomControl quantityPasta;
         private Custom_Toolbox.QuantityCustomControl quantityTyromezes;
         private Custom_Toolbox.QuantityCustomControl quantitySouvlaki;
-        private Label label1;
+        private RichTextBox total_richTextBox;
     }
 }

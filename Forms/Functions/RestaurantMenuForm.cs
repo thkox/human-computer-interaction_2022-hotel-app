@@ -17,6 +17,7 @@ namespace hotel_app.Forms.Functions
         public RestaurantMenuForm()
         {
             InitializeComponent();
+            cartTotal();
             //Coffee
             quantityAmericano.TagChanged += new System.EventHandler(quantityAmericano_TagChanged);
             quantityCappuccino.TagChanged += new System.EventHandler(quantityCappuccino_TagChanged);
@@ -188,7 +189,7 @@ namespace hotel_app.Forms.Functions
                 + (Convert.ToInt32(quantityGreek.Tag) * Convert.ToInt32(greekButton.Tag)) + (Convert.ToInt32(quantityAegean.Tag) * Convert.ToInt32(aegeanButton.Tag)) + (Convert.ToInt32(quantityTricolore.Tag) * Convert.ToInt32(tricoloreButton.Tag)) + (Convert.ToInt32(quantityChef.Tag) * Convert.ToInt32(chefButton.Tag)) //salads
                 + (Convert.ToInt32(quantityZeusSpecial.Tag) * Convert.ToInt32(zeusSpecialButton.Tag)) + (Convert.ToInt32(quantityAthina.Tag) * Convert.ToInt32(athinaButton.Tag)) + (Convert.ToInt32(quantityTrojan.Tag) * Convert.ToInt32(trojanButton.Tag)) + (Convert.ToInt32(quantityPalace.Tag) * Convert.ToInt32(palaceButton.Tag)) //pizza
                 + (Convert.ToInt32(quantitySouvlaki.Tag) * Convert.ToInt32(souvlakiButton.Tag)) + (Convert.ToInt32(quantityTyromezes.Tag) * Convert.ToInt32(tyromezesButton.Tag)) + (Convert.ToInt32(quantityPasta.Tag) * Convert.ToInt32(pastaButton.Tag)) + (Convert.ToInt32(quantityElGreco.Tag) * Convert.ToInt32(elGrecoButton.Tag)) + (Convert.ToInt32(quantityChicken.Tag) * Convert.ToInt32(chickenButton.Tag)) + (Convert.ToInt32(quantityOcean.Tag) * Convert.ToInt32(oceanButton.Tag)) + (Convert.ToInt32(quantityFiesta.Tag) * Convert.ToInt32(fiestaButton.Tag)); //greek cuisine
-            label1.Text = total.ToString() + "€";
+            total_richTextBox.Text = total.ToString() + "€";
         }
     }
 }
