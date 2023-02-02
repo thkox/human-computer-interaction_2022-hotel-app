@@ -14,6 +14,11 @@ namespace hotel_app.Forms.Functions
     public partial class RestaurantMenuForm : Form
     {
         int total;
+        List<string> menu = new List<string> {"Americano", "Cappuccino", "Espresso", "Latte",  //coffee
+        "Zeus Heart", "Chocolate", "Hospitality", "Ferrero", "Special", //chocolates
+        "Greek", "Aegean", "Tricolore", "Chef", //salads
+        "Zeus Special", "Athina", "Trojan", "Palace", //pizza
+        "Souvlaki", "Tyromezes", "Pasta", "El Greco", "Chicken", "Ocean", "Fiesta"}; //greek cuisine
         public RestaurantMenuForm()
         {
             InitializeComponent();
@@ -53,133 +58,157 @@ namespace hotel_app.Forms.Functions
         private void quantityAmericano_TagChanged(object sender, EventArgs e)
         {
             cartTotal();
-            cart_richTextBox.Text = cart_richTextBox.Text + "Americano x" + quantityAmericano.Tag + " " + (Convert.ToInt32(quantityAmericano.Tag) * Convert.ToInt32(americanoButton.Tag)) + "€" + Environment.NewLine;
+            cart_richTextBox.Text = "";
+            writeCartList();
         }
 
         private void quantityCappuccino_TagChanged(object sender, EventArgs e)
         {
             cartTotal();
-            cart_richTextBox.Text = cart_richTextBox.Text + "Cappuccino x" + quantityCappuccino.Tag + " " + (Convert.ToInt32(quantityCappuccino.Tag) * Convert.ToInt32(cappuccinoButton.Tag)) + "€" + Environment.NewLine;
+            cart_richTextBox.Text = "";
+            writeCartList();
         }
 
         private void quantityEspresso_TagChanged(object sender, EventArgs e)
         {
             cartTotal();
-            cart_richTextBox.Text = cart_richTextBox.Text + "Espresso x" + quantityEspresso.Tag + " " + (Convert.ToInt32(quantityEspresso.Tag) * Convert.ToInt32(espressoButton.Tag)) + "€" + Environment.NewLine;
+            cart_richTextBox.Text = "";
+            writeCartList();
         }
 
         private void quantityLatte_TagChanged(object sender, EventArgs e)
         {
             cartTotal();
-            cart_richTextBox.Text = cart_richTextBox.Text + "Latte x" + quantityLatte.Tag + " " + (Convert.ToInt32(quantityLatte.Tag) * Convert.ToInt32(latteButton.Tag)) + "€" + Environment.NewLine;
+            cart_richTextBox.Text = "";
+            writeCartList();
         }
 
         //Chocolates
         private void quantityZeusHeart_TagChanged(object sender, EventArgs e)
         {
             cartTotal();
-            cart_richTextBox.Text = cart_richTextBox.Text + "Zeus Heart x" + quantityZeusHeart.Tag + " " + (Convert.ToInt32(quantityZeusHeart.Tag) * Convert.ToInt32(zeusHeartButton.Tag)) + "€" + Environment.NewLine;
+            cart_richTextBox.Text = "";
+            writeCartList();
         }
         private void quantityChocolate_TagChanged(object sender, EventArgs e)
         {
             cartTotal();
-            cart_richTextBox.Text = cart_richTextBox.Text + "Chocolate x" + quantityChocolate.Tag + " " + (Convert.ToInt32(quantityChocolate.Tag) * Convert.ToInt32(chocolateButton.Tag)) + "€" + Environment.NewLine;
+            cart_richTextBox.Text = "";
+            writeCartList();
         }
         private void quantityHospitality_TagChanged(object sender, EventArgs e)
         {
             cartTotal();
-            cart_richTextBox.Text = cart_richTextBox.Text + "Hospitality x" + quantityHospitality.Tag + " " + (Convert.ToInt32(quantityHospitality.Tag) * Convert.ToInt32(hospitalityButton.Tag)) + "€" + Environment.NewLine;
+            cart_richTextBox.Text = "";
+            writeCartList();
         }
         private void quantityFerrero_TagChanged(object sender, EventArgs e)
         {
             cartTotal();
-            cart_richTextBox.Text = cart_richTextBox.Text + "Ferrero x" + quantityFerrero.Tag + " " + (Convert.ToInt32(quantityFerrero.Tag) * Convert.ToInt32(ferreroButton.Tag)) + "€" + Environment.NewLine;
+            cart_richTextBox.Text = "";
+            writeCartList();
         }
         private void quantitySpecial_TagChanged(object sender, EventArgs e)
         {
             cartTotal();
-            cart_richTextBox.Text = cart_richTextBox.Text + "Special x" + quantitySpecial.Tag + " " + (Convert.ToInt32(quantitySpecial.Tag) * Convert.ToInt32(specialButton.Tag)) + "€" + Environment.NewLine;
+            cart_richTextBox.Text = "";
+            writeCartList();
         }
 
         //Salads
         private void quantityGreek_TagChanged(object sender, EventArgs e)
         {
             cartTotal();
-            cart_richTextBox.Text = cart_richTextBox.Text + "Greek x" + quantityGreek.Tag + " " + (Convert.ToInt32(quantityGreek.Tag) * Convert.ToInt32(greekButton.Tag)) + "€" + Environment.NewLine;
+            cart_richTextBox.Text = "";
+            writeCartList();
         }
         private void quantityAegean_TagChanged(object sender, EventArgs e)
         {
             cartTotal();
-            cart_richTextBox.Text = cart_richTextBox.Text + "Aegean x" + quantityAegean.Tag + " " + (Convert.ToInt32(quantityAegean.Tag) * Convert.ToInt32(aegeanButton.Tag)) + "€" + Environment.NewLine;
+            cart_richTextBox.Text = "";
+            writeCartList();
         }
         private void quantityTricolore_TagChanged(object sender, EventArgs e)
         {
             cartTotal();
-            cart_richTextBox.Text = cart_richTextBox.Text + "Tricolore x" + quantityTricolore.Tag + " " + (Convert.ToInt32(quantityTricolore.Tag) * Convert.ToInt32(tricoloreButton.Tag)) + "€" + Environment.NewLine;
+            cart_richTextBox.Text = "";
+            writeCartList();
         }
         private void quantityChef_TagChanged(object sender, EventArgs e)
         {
             cartTotal();
-            cart_richTextBox.Text = cart_richTextBox.Text + "Chef x" + quantityChef.Tag + " " + (Convert.ToInt32(quantityChef.Tag) * Convert.ToInt32(chefButton.Tag)) + "€" + Environment.NewLine;
+            cart_richTextBox.Text = "";
+            writeCartList();
         }
 
         //Pizza
         private void quantityZeusSpecial_TagChanged(object sender, EventArgs e)
         {
             cartTotal();
-            cart_richTextBox.Text = cart_richTextBox.Text + "Zeus Special x" + quantityZeusSpecial.Tag + " " + (Convert.ToInt32(quantityZeusSpecial.Tag) * Convert.ToInt32(zeusSpecialButton.Tag)) + "€" + Environment.NewLine;
+            cart_richTextBox.Text = "";
+            writeCartList();
         }
         private void quantityAthina_TagChanged(object sender, EventArgs e)
         {
             cartTotal();
-            cart_richTextBox.Text = cart_richTextBox.Text + "Athina x" + quantityAthina.Tag + " " + (Convert.ToInt32(quantityAthina.Tag) * Convert.ToInt32(athinaButton.Tag)) + "€" + Environment.NewLine;
+            cart_richTextBox.Text = "";
+            writeCartList();
         }
         private void quantityTrojan_TagChanged(object sender, EventArgs e)
         {
             cartTotal();
-            cart_richTextBox.Text = cart_richTextBox.Text + "Trojan x" + quantityTrojan.Tag + " " + (Convert.ToInt32(quantityTrojan.Tag) * Convert.ToInt32(trojanButton.Tag)) + "€" + Environment.NewLine;
+            cart_richTextBox.Text = "";
+            writeCartList();
         }
         private void quantityPalace_TagChanged(object sender, EventArgs e)
         {
             cartTotal();
-            cart_richTextBox.Text = cart_richTextBox.Text + "Palace x" + quantityPalace.Tag + " " + (Convert.ToInt32(quantityPalace.Tag) * Convert.ToInt32(palaceButton.Tag)) + "€" + Environment.NewLine;
+            cart_richTextBox.Text = "";
+            writeCartList();
         }
 
         //Greek Cuisine
         private void quantitySouvlaki_TagChanged(object sender, EventArgs e)
         {
             cartTotal();
-            cart_richTextBox.Text = cart_richTextBox.Text + "Souvlaki x" + quantitySouvlaki.Tag + " " + (Convert.ToInt32(quantitySouvlaki.Tag) * Convert.ToInt32(souvlakiButton.Tag)) + "€" + Environment.NewLine;
+            cart_richTextBox.Text = "";
+            writeCartList();
         }
         private void quantityTyromezes_TagChanged(object sender, EventArgs e)
         {
             cartTotal();
-            cart_richTextBox.Text = cart_richTextBox.Text + "Tyromezes x" + quantityTyromezes.Tag + " " + (Convert.ToInt32(quantityTyromezes.Tag) * Convert.ToInt32(tyromezesButton.Tag)) + "€" + Environment.NewLine;
+            cart_richTextBox.Text = "";
+            writeCartList();
         }
         private void quantityPasta_TagChanged(object sender, EventArgs e)
         {
             cartTotal();
-            cart_richTextBox.Text = cart_richTextBox.Text + "Pasta x" + quantityPasta.Tag + " " + (Convert.ToInt32(quantityPasta.Tag) * Convert.ToInt32(pastaButton.Tag)) + "€" + Environment.NewLine;
+            cart_richTextBox.Text = "";
+            writeCartList();
         }
         private void quantityElGreco_TagChanged(object sender, EventArgs e)
         {
             cartTotal();
-            cart_richTextBox.Text = cart_richTextBox.Text + "El Greco x" + quantityElGreco.Tag + " " + (Convert.ToInt32(quantityElGreco.Tag) * Convert.ToInt32(elGrecoButton.Tag)) + "€" + Environment.NewLine;
+            cart_richTextBox.Text = "";
+            writeCartList();
         }
         private void quantityChicken_TagChanged(object sender, EventArgs e)
         {
             cartTotal();
-            cart_richTextBox.Text = cart_richTextBox.Text + "Chicken x" + quantityChicken.Tag + " " + (Convert.ToInt32(quantityChicken.Tag) * Convert.ToInt32(chickenButton.Tag)) + "€" + Environment.NewLine;
+            cart_richTextBox.Text = "";
+            writeCartList();
         }
         private void quantityOcean_TagChanged(object sender, EventArgs e)
         {
             cartTotal();
-            cart_richTextBox.Text = cart_richTextBox.Text + "Ocean x" + quantityOcean.Tag + " " + (Convert.ToInt32(quantityOcean.Tag) * Convert.ToInt32(oceanButton.Tag)) + "€" + Environment.NewLine;
+            cart_richTextBox.Text = "";
+            writeCartList();
         }
         private void quantityFiesta_TagChanged(object sender, EventArgs e)
         {
             cartTotal();
-            cart_richTextBox.Text = cart_richTextBox.Text + "Fiesta x" + quantityFiesta.Tag + " " + (Convert.ToInt32(quantityFiesta.Tag) * Convert.ToInt32(fiestaButton.Tag)) + "€" + Environment.NewLine;
+            cart_richTextBox.Text = "";
+            writeCartList();
         }
 
         private void cartTotal()
@@ -191,5 +220,27 @@ namespace hotel_app.Forms.Functions
                 + (Convert.ToInt32(quantitySouvlaki.Tag) * Convert.ToInt32(souvlakiButton.Tag)) + (Convert.ToInt32(quantityTyromezes.Tag) * Convert.ToInt32(tyromezesButton.Tag)) + (Convert.ToInt32(quantityPasta.Tag) * Convert.ToInt32(pastaButton.Tag)) + (Convert.ToInt32(quantityElGreco.Tag) * Convert.ToInt32(elGrecoButton.Tag)) + (Convert.ToInt32(quantityChicken.Tag) * Convert.ToInt32(chickenButton.Tag)) + (Convert.ToInt32(quantityOcean.Tag) * Convert.ToInt32(oceanButton.Tag)) + (Convert.ToInt32(quantityFiesta.Tag) * Convert.ToInt32(fiestaButton.Tag)); //greek cuisine
             total_richTextBox.Text = total.ToString() + "€";
         }
+        
+        private void writeCartList()
+        {
+            List<int> menu_quantity_tags = new List<int> {
+            Convert.ToInt32(quantityAmericano.Tag), Convert.ToInt32(quantityCappuccino.Tag), Convert.ToInt32(quantityEspresso.Tag), Convert.ToInt32(quantityLatte.Tag), //coffee
+            Convert.ToInt32(quantityZeusHeart.Tag), Convert.ToInt32(quantityChocolate.Tag), Convert.ToInt32(quantityHospitality.Tag), Convert.ToInt32(quantityFerrero.Tag), Convert.ToInt32(quantitySpecial.Tag), //chocolates
+            Convert.ToInt32(quantityGreek.Tag), Convert.ToInt32(quantityAegean.Tag), Convert.ToInt32(quantityTricolore.Tag), Convert.ToInt32(quantityChef.Tag), //salads
+            Convert.ToInt32(quantityZeusSpecial.Tag), Convert.ToInt32(quantityAthina.Tag), Convert.ToInt32(quantityTrojan.Tag), Convert.ToInt32(quantityPalace.Tag), //pizza
+            Convert.ToInt32(quantitySouvlaki.Tag), Convert.ToInt32(quantityTyromezes.Tag), Convert.ToInt32(quantityPasta.Tag), Convert.ToInt32(quantityElGreco.Tag), Convert.ToInt32(quantityChicken.Tag), Convert.ToInt32(quantityOcean.Tag), Convert.ToInt32(quantityFiesta.Tag)}; //greek cuisine
+            
+            for (int i = 0; i < menu_quantity_tags.Count; i++)
+            {
+                if (menu_quantity_tags[i] > 0)
+                {
+                    //cart_richTextBox.Text = cart_richTextBox.Text + menu[i] + "\t\tx" + menu_quantity_tags[i] + "" + Environment.NewLine;
+                    int padding = 50;
+                    string menuString = menu[i].PadRight(padding - menu[i].Length) + "x" + menu_quantity_tags[i];
+                    cart_richTextBox.Text = cart_richTextBox.Text + menuString + Environment.NewLine;
+                }
+            }
+        }
+        //make my code sorter
     }
 }
