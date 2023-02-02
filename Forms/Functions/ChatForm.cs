@@ -1,4 +1,5 @@
-﻿using System;
+﻿using hotel_app.Custom_Toolbox;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -24,7 +25,7 @@ namespace hotel_app.Forms.Functions
             Point location2 = new Point(10, height);
             chatPanel.Controls.Add(SetEmployeeIcon(location2));
             Point location = new Point(70, height + 10);
-            Size size = new Size(200, 40);
+            Size size = new Size(200, 50);
             chatPanel.Controls.Add(SetResponseBubble("Hello World", location, size));
             height = height + 50;
         }
@@ -47,16 +48,17 @@ namespace hotel_app.Forms.Functions
             
         }
 
-        private RichTextBox SetResponseBubble(string message, Point location, Size size)
+        private ChatRichTextBox SetResponseBubble(string message, Point location, Size size)
         {
-            RichTextBox rtb = new RichTextBox();
+            ChatRichTextBox rtb = new();
             rtb.Location = location;
             rtb.Size = size;
             rtb.Text = message;
             rtb.BorderStyle = BorderStyle.None;
-            rtb.BackColor = Color.FromArgb(255, 255, 250);
-            rtb.SelectionAlignment = HorizontalAlignment.Left;
-            rtb.Padding = new Padding(20, 20, 25, 20); //
+            rtb.Radius = 20;
+            //rtb.BackColor = Color.FromArgb(255, 255, 255);
+            //rtb.ForeColor = Color.White;
+            //rtb.ShadeColor = Color.White;
             tabIndex++;
             return rtb;
         }

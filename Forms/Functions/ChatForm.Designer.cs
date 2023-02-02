@@ -34,9 +34,11 @@
             this.sentMessagePictureBox = new FontAwesome.Sharp.IconPictureBox();
             this.inputRichTextBox = new CustomControls.RichTextBox.RichTextBox();
             this.chatPanel = new System.Windows.Forms.Panel();
+            this.chatRichTextBox1 = new hotel_app.Custom_Toolbox.ChatRichTextBox();
             this.charBarPanel.SuspendLayout();
             this.downBar.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.sentMessagePictureBox)).BeginInit();
+            this.chatPanel.SuspendLayout();
             this.SuspendLayout();
             // 
             // charBarPanel
@@ -112,12 +114,24 @@
             // 
             // chatPanel
             // 
-            this.chatPanel.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.chatPanel.BackColor = System.Drawing.SystemColors.ButtonShadow;
+            this.chatPanel.Controls.Add(this.chatRichTextBox1);
             this.chatPanel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.chatPanel.Location = new System.Drawing.Point(0, 66);
             this.chatPanel.Name = "chatPanel";
             this.chatPanel.Size = new System.Drawing.Size(384, 454);
             this.chatPanel.TabIndex = 2;
+            // 
+            // chatRichTextBox1
+            // 
+            this.chatRichTextBox1.BackColor = System.Drawing.Color.White;
+            this.chatRichTextBox1.Location = new System.Drawing.Point(140, 117);
+            this.chatRichTextBox1.Name = "chatRichTextBox1";
+            this.chatRichTextBox1.Radius = 50;
+            this.chatRichTextBox1.RichTextBoxSize = new System.Drawing.Size(172, 34);
+            this.chatRichTextBox1.ShadeColor = System.Drawing.Color.White;
+            this.chatRichTextBox1.Size = new System.Drawing.Size(221, 76);
+            this.chatRichTextBox1.TabIndex = 0;
             // 
             // ChatForm
             // 
@@ -133,6 +147,7 @@
             this.charBarPanel.ResumeLayout(false);
             this.downBar.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.sentMessagePictureBox)).EndInit();
+            this.chatPanel.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -145,5 +160,6 @@
         private CustomControls.RichTextBox.RichTextBox inputRichTextBox;
         private FontAwesome.Sharp.IconPictureBox sentMessagePictureBox;
         private Panel chatPanel;
+        private Custom_Toolbox.ChatRichTextBox chatRichTextBox1;
     }
 }
