@@ -45,6 +45,11 @@
             this.espressoButton = new System.Windows.Forms.Button();
             this.americanoButton = new System.Windows.Forms.Button();
             this.chocolatesTabPage = new System.Windows.Forms.TabPage();
+            this.quantitySpecial = new hotel_app.Custom_Toolbox.QuantityCustomControl();
+            this.quantityFerrero = new hotel_app.Custom_Toolbox.QuantityCustomControl();
+            this.quantityHospitality = new hotel_app.Custom_Toolbox.QuantityCustomControl();
+            this.quantityChocolate = new hotel_app.Custom_Toolbox.QuantityCustomControl();
+            this.quantityZeusHeart = new hotel_app.Custom_Toolbox.QuantityCustomControl();
             this.specialLabel = new System.Windows.Forms.Label();
             this.ferreroLabel = new System.Windows.Forms.Label();
             this.hospitalityLabel = new System.Windows.Forms.Label();
@@ -56,6 +61,10 @@
             this.hospitalityButton = new System.Windows.Forms.Button();
             this.zeusHeartButton = new System.Windows.Forms.Button();
             this.saladsTabPage = new System.Windows.Forms.TabPage();
+            this.quantityChef = new hotel_app.Custom_Toolbox.QuantityCustomControl();
+            this.quantityTricolore = new hotel_app.Custom_Toolbox.QuantityCustomControl();
+            this.quantityAegean = new hotel_app.Custom_Toolbox.QuantityCustomControl();
+            this.quantityGreek = new hotel_app.Custom_Toolbox.QuantityCustomControl();
             this.chefLabel = new System.Windows.Forms.Label();
             this.tricoloreLabel = new System.Windows.Forms.Label();
             this.aegeanLabel = new System.Windows.Forms.Label();
@@ -65,6 +74,10 @@
             this.tricoloreButton = new System.Windows.Forms.Button();
             this.greekButton = new System.Windows.Forms.Button();
             this.pizzaTabPage = new System.Windows.Forms.TabPage();
+            this.quantityPalace = new hotel_app.Custom_Toolbox.QuantityCustomControl();
+            this.quantityTrojan = new hotel_app.Custom_Toolbox.QuantityCustomControl();
+            this.quantityAthina = new hotel_app.Custom_Toolbox.QuantityCustomControl();
+            this.quantityZeusSpecial = new hotel_app.Custom_Toolbox.QuantityCustomControl();
             this.palaceLabel = new System.Windows.Forms.Label();
             this.zeusSpecialButton = new System.Windows.Forms.Button();
             this.trojanLabel = new System.Windows.Forms.Label();
@@ -90,7 +103,13 @@
             this.souvlakiButton = new System.Windows.Forms.Button();
             this.cart_richTextBox = new System.Windows.Forms.RichTextBox();
             this.checkoutButton = new FontAwesome.Sharp.IconButton();
-            this.quantityZeusHeart = new hotel_app.Custom_Toolbox.QuantityCustomControl();
+            this.quantitySouvlaki = new hotel_app.Custom_Toolbox.QuantityCustomControl();
+            this.quantityTyromezes = new hotel_app.Custom_Toolbox.QuantityCustomControl();
+            this.quantityPasta = new hotel_app.Custom_Toolbox.QuantityCustomControl();
+            this.quantityElGreco = new hotel_app.Custom_Toolbox.QuantityCustomControl();
+            this.quantityChicken = new hotel_app.Custom_Toolbox.QuantityCustomControl();
+            this.quantityOcean = new hotel_app.Custom_Toolbox.QuantityCustomControl();
+            this.quantityFiesta = new hotel_app.Custom_Toolbox.QuantityCustomControl();
             ((System.ComponentModel.ISupportInitialize)(this.cartButton)).BeginInit();
             this.menuTabControl.SuspendLayout();
             this.coffeeTabPage.SuspendLayout();
@@ -154,7 +173,6 @@
             this.coffeeTabPage.Controls.Add(this.latteButton);
             this.coffeeTabPage.Controls.Add(this.espressoButton);
             this.coffeeTabPage.Controls.Add(this.americanoButton);
-            this.coffeeTabPage.Cursor = System.Windows.Forms.Cursors.Hand;
             this.coffeeTabPage.Location = new System.Drawing.Point(4, 26);
             this.coffeeTabPage.Name = "coffeeTabPage";
             this.coffeeTabPage.Padding = new System.Windows.Forms.Padding(3);
@@ -164,6 +182,7 @@
             // 
             // quantityLatte
             // 
+            this.quantityLatte.Cursor = System.Windows.Forms.Cursors.Hand;
             this.quantityLatte.Location = new System.Drawing.Point(479, 274);
             this.quantityLatte.Name = "quantityLatte";
             this.quantityLatte.Size = new System.Drawing.Size(118, 28);
@@ -172,6 +191,7 @@
             // 
             // quantityEspresso
             // 
+            this.quantityEspresso.Cursor = System.Windows.Forms.Cursors.Hand;
             this.quantityEspresso.Location = new System.Drawing.Point(337, 274);
             this.quantityEspresso.Name = "quantityEspresso";
             this.quantityEspresso.Size = new System.Drawing.Size(118, 28);
@@ -180,6 +200,7 @@
             // 
             // quantityCappuccino
             // 
+            this.quantityCappuccino.Cursor = System.Windows.Forms.Cursors.Hand;
             this.quantityCappuccino.Location = new System.Drawing.Point(196, 274);
             this.quantityCappuccino.Name = "quantityCappuccino";
             this.quantityCappuccino.Size = new System.Drawing.Size(118, 28);
@@ -188,6 +209,7 @@
             // 
             // quantityAmericano
             // 
+            this.quantityAmericano.Cursor = System.Windows.Forms.Cursors.Hand;
             this.quantityAmericano.Location = new System.Drawing.Point(60, 274);
             this.quantityAmericano.Name = "quantityAmericano";
             this.quantityAmericano.Size = new System.Drawing.Size(118, 28);
@@ -298,6 +320,10 @@
             // chocolatesTabPage
             // 
             this.chocolatesTabPage.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(144)))), ((int)(((byte)(191)))));
+            this.chocolatesTabPage.Controls.Add(this.quantitySpecial);
+            this.chocolatesTabPage.Controls.Add(this.quantityFerrero);
+            this.chocolatesTabPage.Controls.Add(this.quantityHospitality);
+            this.chocolatesTabPage.Controls.Add(this.quantityChocolate);
             this.chocolatesTabPage.Controls.Add(this.quantityZeusHeart);
             this.chocolatesTabPage.Controls.Add(this.specialLabel);
             this.chocolatesTabPage.Controls.Add(this.ferreroLabel);
@@ -309,12 +335,56 @@
             this.chocolatesTabPage.Controls.Add(this.ferreroButton);
             this.chocolatesTabPage.Controls.Add(this.hospitalityButton);
             this.chocolatesTabPage.Controls.Add(this.zeusHeartButton);
-            this.chocolatesTabPage.Cursor = System.Windows.Forms.Cursors.Hand;
             this.chocolatesTabPage.Location = new System.Drawing.Point(4, 26);
             this.chocolatesTabPage.Name = "chocolatesTabPage";
             this.chocolatesTabPage.Size = new System.Drawing.Size(662, 422);
             this.chocolatesTabPage.TabIndex = 4;
             this.chocolatesTabPage.Text = "Chocolates";
+            // 
+            // quantitySpecial
+            // 
+            this.quantitySpecial.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.quantitySpecial.Location = new System.Drawing.Point(58, 364);
+            this.quantitySpecial.Name = "quantitySpecial";
+            this.quantitySpecial.Size = new System.Drawing.Size(118, 28);
+            this.quantitySpecial.TabIndex = 37;
+            this.quantitySpecial.Tag = "0";
+            // 
+            // quantityFerrero
+            // 
+            this.quantityFerrero.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.quantityFerrero.Location = new System.Drawing.Point(479, 181);
+            this.quantityFerrero.Name = "quantityFerrero";
+            this.quantityFerrero.Size = new System.Drawing.Size(118, 28);
+            this.quantityFerrero.TabIndex = 36;
+            this.quantityFerrero.Tag = "0";
+            // 
+            // quantityHospitality
+            // 
+            this.quantityHospitality.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.quantityHospitality.Location = new System.Drawing.Point(337, 181);
+            this.quantityHospitality.Name = "quantityHospitality";
+            this.quantityHospitality.Size = new System.Drawing.Size(118, 28);
+            this.quantityHospitality.TabIndex = 35;
+            this.quantityHospitality.Tag = "0";
+            // 
+            // quantityChocolate
+            // 
+            this.quantityChocolate.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.quantityChocolate.Location = new System.Drawing.Point(196, 181);
+            this.quantityChocolate.Name = "quantityChocolate";
+            this.quantityChocolate.Size = new System.Drawing.Size(118, 28);
+            this.quantityChocolate.TabIndex = 34;
+            this.quantityChocolate.Tag = "0";
+            // 
+            // quantityZeusHeart
+            // 
+            this.quantityZeusHeart.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.quantityZeusHeart.Location = new System.Drawing.Point(58, 181);
+            this.quantityZeusHeart.Name = "quantityZeusHeart";
+            this.quantityZeusHeart.Size = new System.Drawing.Size(118, 28);
+            this.quantityZeusHeart.TabIndex = 33;
+            this.quantityZeusHeart.Tag = "0";
             // 
             // specialLabel
             // 
@@ -445,6 +515,10 @@
             // saladsTabPage
             // 
             this.saladsTabPage.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(144)))), ((int)(((byte)(191)))));
+            this.saladsTabPage.Controls.Add(this.quantityChef);
+            this.saladsTabPage.Controls.Add(this.quantityTricolore);
+            this.saladsTabPage.Controls.Add(this.quantityAegean);
+            this.saladsTabPage.Controls.Add(this.quantityGreek);
             this.saladsTabPage.Controls.Add(this.chefLabel);
             this.saladsTabPage.Controls.Add(this.tricoloreLabel);
             this.saladsTabPage.Controls.Add(this.aegeanLabel);
@@ -453,12 +527,47 @@
             this.saladsTabPage.Controls.Add(this.chefButton);
             this.saladsTabPage.Controls.Add(this.tricoloreButton);
             this.saladsTabPage.Controls.Add(this.greekButton);
-            this.saladsTabPage.Cursor = System.Windows.Forms.Cursors.Hand;
             this.saladsTabPage.Location = new System.Drawing.Point(4, 26);
             this.saladsTabPage.Name = "saladsTabPage";
             this.saladsTabPage.Size = new System.Drawing.Size(662, 422);
             this.saladsTabPage.TabIndex = 3;
             this.saladsTabPage.Text = "Salads";
+            // 
+            // quantityChef
+            // 
+            this.quantityChef.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.quantityChef.Location = new System.Drawing.Point(479, 274);
+            this.quantityChef.Name = "quantityChef";
+            this.quantityChef.Size = new System.Drawing.Size(118, 28);
+            this.quantityChef.TabIndex = 32;
+            this.quantityChef.Tag = "0";
+            // 
+            // quantityTricolore
+            // 
+            this.quantityTricolore.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.quantityTricolore.Location = new System.Drawing.Point(337, 274);
+            this.quantityTricolore.Name = "quantityTricolore";
+            this.quantityTricolore.Size = new System.Drawing.Size(118, 28);
+            this.quantityTricolore.TabIndex = 31;
+            this.quantityTricolore.Tag = "0";
+            // 
+            // quantityAegean
+            // 
+            this.quantityAegean.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.quantityAegean.Location = new System.Drawing.Point(196, 274);
+            this.quantityAegean.Name = "quantityAegean";
+            this.quantityAegean.Size = new System.Drawing.Size(118, 28);
+            this.quantityAegean.TabIndex = 30;
+            this.quantityAegean.Tag = "0";
+            // 
+            // quantityGreek
+            // 
+            this.quantityGreek.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.quantityGreek.Location = new System.Drawing.Point(58, 274);
+            this.quantityGreek.Name = "quantityGreek";
+            this.quantityGreek.Size = new System.Drawing.Size(118, 28);
+            this.quantityGreek.TabIndex = 29;
+            this.quantityGreek.Tag = "0";
             // 
             // chefLabel
             // 
@@ -565,6 +674,10 @@
             // pizzaTabPage
             // 
             this.pizzaTabPage.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(144)))), ((int)(((byte)(191)))));
+            this.pizzaTabPage.Controls.Add(this.quantityPalace);
+            this.pizzaTabPage.Controls.Add(this.quantityTrojan);
+            this.pizzaTabPage.Controls.Add(this.quantityAthina);
+            this.pizzaTabPage.Controls.Add(this.quantityZeusSpecial);
             this.pizzaTabPage.Controls.Add(this.palaceLabel);
             this.pizzaTabPage.Controls.Add(this.zeusSpecialButton);
             this.pizzaTabPage.Controls.Add(this.trojanLabel);
@@ -573,13 +686,48 @@
             this.pizzaTabPage.Controls.Add(this.palaceButton);
             this.pizzaTabPage.Controls.Add(this.zeusSpecialLabel);
             this.pizzaTabPage.Controls.Add(this.athinaButton);
-            this.pizzaTabPage.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pizzaTabPage.Location = new System.Drawing.Point(4, 26);
             this.pizzaTabPage.Name = "pizzaTabPage";
             this.pizzaTabPage.Padding = new System.Windows.Forms.Padding(3);
             this.pizzaTabPage.Size = new System.Drawing.Size(662, 422);
             this.pizzaTabPage.TabIndex = 1;
             this.pizzaTabPage.Text = "Pizza";
+            // 
+            // quantityPalace
+            // 
+            this.quantityPalace.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.quantityPalace.Location = new System.Drawing.Point(479, 273);
+            this.quantityPalace.Name = "quantityPalace";
+            this.quantityPalace.Size = new System.Drawing.Size(118, 28);
+            this.quantityPalace.TabIndex = 16;
+            this.quantityPalace.Tag = "0";
+            // 
+            // quantityTrojan
+            // 
+            this.quantityTrojan.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.quantityTrojan.Location = new System.Drawing.Point(337, 274);
+            this.quantityTrojan.Name = "quantityTrojan";
+            this.quantityTrojan.Size = new System.Drawing.Size(118, 28);
+            this.quantityTrojan.TabIndex = 15;
+            this.quantityTrojan.Tag = "0";
+            // 
+            // quantityAthina
+            // 
+            this.quantityAthina.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.quantityAthina.Location = new System.Drawing.Point(196, 274);
+            this.quantityAthina.Name = "quantityAthina";
+            this.quantityAthina.Size = new System.Drawing.Size(118, 28);
+            this.quantityAthina.TabIndex = 14;
+            this.quantityAthina.Tag = "0";
+            // 
+            // quantityZeusSpecial
+            // 
+            this.quantityZeusSpecial.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.quantityZeusSpecial.Location = new System.Drawing.Point(58, 274);
+            this.quantityZeusSpecial.Name = "quantityZeusSpecial";
+            this.quantityZeusSpecial.Size = new System.Drawing.Size(118, 28);
+            this.quantityZeusSpecial.TabIndex = 13;
+            this.quantityZeusSpecial.Tag = "0";
             // 
             // palaceLabel
             // 
@@ -684,6 +832,13 @@
             // greekCuisineTabPage
             // 
             this.greekCuisineTabPage.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(144)))), ((int)(((byte)(191)))));
+            this.greekCuisineTabPage.Controls.Add(this.quantityFiesta);
+            this.greekCuisineTabPage.Controls.Add(this.quantityOcean);
+            this.greekCuisineTabPage.Controls.Add(this.quantityChicken);
+            this.greekCuisineTabPage.Controls.Add(this.quantityElGreco);
+            this.greekCuisineTabPage.Controls.Add(this.quantityPasta);
+            this.greekCuisineTabPage.Controls.Add(this.quantityTyromezes);
+            this.greekCuisineTabPage.Controls.Add(this.quantitySouvlaki);
             this.greekCuisineTabPage.Controls.Add(this.fiestaLabel);
             this.greekCuisineTabPage.Controls.Add(this.oceanLabel);
             this.greekCuisineTabPage.Controls.Add(this.chickenLabel);
@@ -698,7 +853,6 @@
             this.greekCuisineTabPage.Controls.Add(this.elGrecoButton);
             this.greekCuisineTabPage.Controls.Add(this.pastaButton);
             this.greekCuisineTabPage.Controls.Add(this.souvlakiButton);
-            this.greekCuisineTabPage.Cursor = System.Windows.Forms.Cursors.Hand;
             this.greekCuisineTabPage.Location = new System.Drawing.Point(4, 26);
             this.greekCuisineTabPage.Name = "greekCuisineTabPage";
             this.greekCuisineTabPage.Size = new System.Drawing.Size(662, 422);
@@ -903,13 +1057,68 @@
             this.checkoutButton.Text = "Checkout";
             this.checkoutButton.UseVisualStyleBackColor = true;
             // 
-            // quantityZeusHeart
+            // quantitySouvlaki
             // 
-            this.quantityZeusHeart.Location = new System.Drawing.Point(58, 181);
-            this.quantityZeusHeart.Name = "quantityZeusHeart";
-            this.quantityZeusHeart.Size = new System.Drawing.Size(118, 28);
-            this.quantityZeusHeart.TabIndex = 33;
-            this.quantityZeusHeart.Tag = "0";
+            this.quantitySouvlaki.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.quantitySouvlaki.Location = new System.Drawing.Point(58, 181);
+            this.quantitySouvlaki.Name = "quantitySouvlaki";
+            this.quantitySouvlaki.Size = new System.Drawing.Size(118, 28);
+            this.quantitySouvlaki.TabIndex = 28;
+            this.quantitySouvlaki.Tag = "0";
+            // 
+            // quantityTyromezes
+            // 
+            this.quantityTyromezes.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.quantityTyromezes.Location = new System.Drawing.Point(196, 181);
+            this.quantityTyromezes.Name = "quantityTyromezes";
+            this.quantityTyromezes.Size = new System.Drawing.Size(118, 28);
+            this.quantityTyromezes.TabIndex = 29;
+            this.quantityTyromezes.Tag = "0";
+            // 
+            // quantityPasta
+            // 
+            this.quantityPasta.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.quantityPasta.Location = new System.Drawing.Point(337, 181);
+            this.quantityPasta.Name = "quantityPasta";
+            this.quantityPasta.Size = new System.Drawing.Size(118, 28);
+            this.quantityPasta.TabIndex = 30;
+            this.quantityPasta.Tag = "0";
+            // 
+            // quantityElGreco
+            // 
+            this.quantityElGreco.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.quantityElGreco.Location = new System.Drawing.Point(479, 181);
+            this.quantityElGreco.Name = "quantityElGreco";
+            this.quantityElGreco.Size = new System.Drawing.Size(118, 28);
+            this.quantityElGreco.TabIndex = 31;
+            this.quantityElGreco.Tag = "0";
+            // 
+            // quantityChicken
+            // 
+            this.quantityChicken.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.quantityChicken.Location = new System.Drawing.Point(58, 364);
+            this.quantityChicken.Name = "quantityChicken";
+            this.quantityChicken.Size = new System.Drawing.Size(118, 28);
+            this.quantityChicken.TabIndex = 32;
+            this.quantityChicken.Tag = "0";
+            // 
+            // quantityOcean
+            // 
+            this.quantityOcean.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.quantityOcean.Location = new System.Drawing.Point(196, 364);
+            this.quantityOcean.Name = "quantityOcean";
+            this.quantityOcean.Size = new System.Drawing.Size(118, 28);
+            this.quantityOcean.TabIndex = 33;
+            this.quantityOcean.Tag = "0";
+            // 
+            // quantityFiesta
+            // 
+            this.quantityFiesta.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.quantityFiesta.Location = new System.Drawing.Point(337, 364);
+            this.quantityFiesta.Name = "quantityFiesta";
+            this.quantityFiesta.Size = new System.Drawing.Size(118, 28);
+            this.quantityFiesta.TabIndex = 34;
+            this.quantityFiesta.Tag = "0";
             // 
             // RestaurantMenuForm
             // 
@@ -1005,5 +1214,24 @@
         private Custom_Toolbox.QuantityCustomControl quantityLatte;
         private Custom_Toolbox.QuantityCustomControl quantityEspresso;
         private Custom_Toolbox.QuantityCustomControl quantityZeusHeart;
+        private Custom_Toolbox.QuantityCustomControl quantitySpecial;
+        private Custom_Toolbox.QuantityCustomControl quantityFerrero;
+        private Custom_Toolbox.QuantityCustomControl quantityHospitality;
+        private Custom_Toolbox.QuantityCustomControl quantityChocolate;
+        private Custom_Toolbox.QuantityCustomControl quantityChef;
+        private Custom_Toolbox.QuantityCustomControl quantityTricolore;
+        private Custom_Toolbox.QuantityCustomControl quantityAegean;
+        private Custom_Toolbox.QuantityCustomControl quantityGreek;
+        private Custom_Toolbox.QuantityCustomControl quantityPalace;
+        private Custom_Toolbox.QuantityCustomControl quantityTrojan;
+        private Custom_Toolbox.QuantityCustomControl quantityAthina;
+        private Custom_Toolbox.QuantityCustomControl quantityZeusSpecial;
+        private Custom_Toolbox.QuantityCustomControl quantityFiesta;
+        private Custom_Toolbox.QuantityCustomControl quantityOcean;
+        private Custom_Toolbox.QuantityCustomControl quantityChicken;
+        private Custom_Toolbox.QuantityCustomControl quantityElGreco;
+        private Custom_Toolbox.QuantityCustomControl quantityPasta;
+        private Custom_Toolbox.QuantityCustomControl quantityTyromezes;
+        private Custom_Toolbox.QuantityCustomControl quantitySouvlaki;
     }
 }
