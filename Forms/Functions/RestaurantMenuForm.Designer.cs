@@ -50,7 +50,7 @@
             this.cartButton.IconChar = FontAwesome.Sharp.IconChar.CartShopping;
             this.cartButton.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(241)))), ((int)(((byte)(246)))));
             this.cartButton.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.cartButton.Location = new System.Drawing.Point(854, 129);
+            this.cartButton.Location = new System.Drawing.Point(962, 121);
             this.cartButton.Name = "cartButton";
             this.cartButton.Size = new System.Drawing.Size(32, 32);
             this.cartButton.TabIndex = 3;

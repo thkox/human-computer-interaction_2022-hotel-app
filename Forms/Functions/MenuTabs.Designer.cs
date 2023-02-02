@@ -158,6 +158,7 @@
             // 
             this.button6.BackgroundImage = global::hotel_app.Properties.Resources.food_6;
             this.button6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button6.Enabled = false;
             this.button6.Font = new System.Drawing.Font("Comic Sans MS", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.button6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(241)))), ((int)(((byte)(246)))));
             this.button6.Location = new System.Drawing.Point(678, 38);
@@ -429,6 +430,7 @@
             // 
             this.button18.BackgroundImage = global::hotel_app.Properties.Resources.salad_3;
             this.button18.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button18.Enabled = false;
             this.button18.Font = new System.Drawing.Font("Comic Sans MS", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.button18.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(241)))), ((int)(((byte)(246)))));
             this.button18.Location = new System.Drawing.Point(501, 44);
@@ -486,6 +488,7 @@
             // 
             this.button23.BackgroundImage = global::hotel_app.Properties.Resources.chocolate_2;
             this.button23.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button23.Enabled = false;
             this.button23.Font = new System.Drawing.Font("Comic Sans MS", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.button23.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(241)))), ((int)(((byte)(246)))));
             this.button23.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -707,7 +710,7 @@
             // 
             this.label19.AutoSize = true;
             this.label19.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label19.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(241)))), ((int)(((byte)(246)))));
+            this.label19.ForeColor = System.Drawing.Color.Black;
             this.label19.Location = new System.Drawing.Point(682, 170);
             this.label19.Name = "label19";
             this.label19.Size = new System.Drawing.Size(101, 23);
@@ -751,7 +754,7 @@
             // 
             this.label23.AutoSize = true;
             this.label23.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label23.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(241)))), ((int)(((byte)(246)))));
+            this.label23.ForeColor = System.Drawing.Color.Black;
             this.label23.Location = new System.Drawing.Point(498, 167);
             this.label23.Name = "label23";
             this.label23.Size = new System.Drawing.Size(122, 23);
@@ -784,12 +787,12 @@
             // 
             this.label26.AutoSize = true;
             this.label26.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label26.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(241)))), ((int)(((byte)(246)))));
+            this.label26.ForeColor = System.Drawing.Color.Black;
             this.label26.Location = new System.Drawing.Point(246, 181);
             this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(137, 23);
+            this.label26.Size = new System.Drawing.Size(127, 23);
             this.label26.TabIndex = 19;
-            this.label26.Text = "Hospitality, 10€";
+            this.label26.Text = "Chocolate, 10€";
             // 
             // label27
             // 
