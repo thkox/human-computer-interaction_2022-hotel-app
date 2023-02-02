@@ -28,19 +28,41 @@ namespace hotel_app.Custom_Toolbox
             }
             richTextBox.SelectAll();
             richTextBox.SelectionAlignment = HorizontalAlignment.Center;
+            richTextBox.DeselectAll();
             this.Tag = richTextBox.Text;
+
+            int quantity = int.Parse(richTextBox.Text);
+            if (quantity == 0)
+            {
+                minusButton.Enabled = false;
+                plusButton.Enabled = true;
+            }
+            else if (quantity == 10)
+            {
+                minusButton.Enabled = true;
+                plusButton.Enabled = false;
+            }
+            else
+            {
+                minusButton.Enabled = true;
+                plusButton.Enabled = true;
+            }
+                
+
         }
 
         private void MinusButton_Click(object sender, EventArgs e)
         {
             int value = int.Parse(richTextBox.Text);
-            richTextBox.Text = (value - 1).ToString();
+            if (value > 0)
+                richTextBox.Text = (value - 1).ToString();
         }
 
         private void PlusButton_Click(object sender, EventArgs e)
         {
             int value = int.Parse(richTextBox.Text);
-            richTextBox.Text = (value + 1).ToString();
+            if (value < 10)
+                richTextBox.Text = (value + 1).ToString();
         }
     }
 }
