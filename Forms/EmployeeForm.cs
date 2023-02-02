@@ -84,11 +84,23 @@ namespace hotel_app.Forms
 
             currentNameLabel.Visible = false;
 
-            //add the click event for the pictureaboxes in the parking form
+            //add the click event for the pictureboxes in the parking form
             parking.trojan2PictureBox.Click += new EventHandler(Trojan2PictureBox_Click);
             parking.trojan3PictureBox.Click += new EventHandler(Trojan3PictureBox_Click);
             parking.trojan5PictureBox.Click += new EventHandler(Trojan5PictureBox_Click);
             parking.trojan6PictureBox.Click += new EventHandler(Trojan6PictureBox_Click);
+
+            //add the mouse enter event for the pictureboxes in the parking form
+            parking.trojan2PictureBox.MouseEnter += new EventHandler(Trojan2PictureBox_MouseEnter);
+            parking.trojan3PictureBox.MouseEnter += new EventHandler(Trojan3PictureBox_MouseEnter);
+            parking.trojan5PictureBox.MouseEnter += new EventHandler(Trojan5PictureBox_MouseEnter);
+            parking.trojan6PictureBox.MouseEnter += new EventHandler(Trojan6PictureBox_MouseEnter);
+
+            //add the mouse leave event for the pictureboxes in the parking form
+            parking.trojan2PictureBox.MouseLeave += new EventHandler(Trojan2PictureBox_MouseLeave);
+            parking.trojan3PictureBox.MouseLeave += new EventHandler(Trojan3PictureBox_MouseLeave);
+            parking.trojan5PictureBox.MouseLeave += new EventHandler(Trojan5PictureBox_MouseLeave);
+            parking.trojan6PictureBox.MouseLeave += new EventHandler(Trojan6PictureBox_MouseLeave);
 
             //add the click event for the iconButtons in the roomsForm
             zeusPalaceMenu.rooms.room1Button.Click += new EventHandler(Room1PictureBox_Click);
@@ -104,6 +116,16 @@ namespace hotel_app.Forms
             trojanForms[2].currentName = "Trojan B1";
             trojanForms[3].currentName = "Trojan B2";
 
+            //change trojan cursor
+            parking.trojan2PictureBox.Cursor = Cursors.Hand;
+            parking.trojan3PictureBox.Cursor = Cursors.Hand;
+            parking.trojan5PictureBox.Cursor = Cursors.Hand;
+            parking.trojan6PictureBox.Cursor = Cursors.Hand;
+
+            //disable taken trojans
+            parking.trojan2PictureBox.Enabled = false;
+            parking.trojan5PictureBox.Enabled = false;
+
             //load the names of the rooms
             roomForms[0].currentName = "Room 1";
             roomForms[1].currentName = "Room 2";
@@ -112,7 +134,7 @@ namespace hotel_app.Forms
             roomForms[4].currentName = "Suite 1";
             roomForms[5].currentName = "Suite 2";
         }
-
+        
         //activate a trojan
         private void Trojan2PictureBox_Click(object sender, EventArgs e)
         {
@@ -134,6 +156,43 @@ namespace hotel_app.Forms
             loadTrojanFunctions(trojan4Form);
         }
 
+        //Mouse Enter events for the trojans
+        private void Trojan2PictureBox_MouseEnter(object? sender, EventArgs e)
+        {
+            parking.trojan2PictureBox.BackColor = Color.White;
+        }
+        private void Trojan3PictureBox_MouseEnter(object? sender, EventArgs e)
+        {
+            parking.trojan3PictureBox.BackColor = Color.White;
+        }
+        private void Trojan5PictureBox_MouseEnter(object? sender, EventArgs e)
+        {
+            parking.trojan5PictureBox.BackColor = Color.White;
+        }
+        private void Trojan6PictureBox_MouseEnter(object? sender, EventArgs e)
+        {
+            parking.trojan6PictureBox.BackColor = Color.White;
+        }
+
+        //Mouse Leave events for the trojans
+        private void Trojan2PictureBox_MouseLeave(object? sender, EventArgs e)
+        {
+            parking.trojan2PictureBox.BackColor = Color.Silver;
+        }
+        private void Trojan3PictureBox_MouseLeave(object? sender, EventArgs e)
+        {
+            parking.trojan3PictureBox.BackColor = Color.Silver;
+        }
+        private void Trojan5PictureBox_MouseLeave(object? sender, EventArgs e)
+        {
+            parking.trojan5PictureBox.BackColor = Color.Silver;
+        }
+        private void Trojan6PictureBox_MouseLeave(object? sender, EventArgs e)
+        {
+            parking.trojan6PictureBox.BackColor = Color.Silver;
+        }
+
+        //activate a room
         private void Room1PictureBox_Click(object sender, EventArgs e)
         {
             loadRoomFunctions(room1Form);
