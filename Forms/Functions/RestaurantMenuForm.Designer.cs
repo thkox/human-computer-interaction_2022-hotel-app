@@ -51,18 +51,7 @@
             this.ferreroButton = new System.Windows.Forms.Button();
             this.hospitalityButton = new System.Windows.Forms.Button();
             this.zeusHeartButton = new System.Windows.Forms.Button();
-            this.pizzaTabPage = new System.Windows.Forms.TabPage();
-            this.greekCuisineTabPage = new System.Windows.Forms.TabPage();
             this.saladsTabPage = new System.Windows.Forms.TabPage();
-            this.cart_richTextBox = new System.Windows.Forms.RichTextBox();
-            this.palaceLabel = new System.Windows.Forms.Label();
-            this.trojanLabel = new System.Windows.Forms.Label();
-            this.athinaLabel = new System.Windows.Forms.Label();
-            this.zeusSpecialLabel = new System.Windows.Forms.Label();
-            this.athinaButton = new System.Windows.Forms.Button();
-            this.palaceButton = new System.Windows.Forms.Button();
-            this.trojanButton = new System.Windows.Forms.Button();
-            this.zeusSpecialButton = new System.Windows.Forms.Button();
             this.chefLabel = new System.Windows.Forms.Label();
             this.tricoloreLabel = new System.Windows.Forms.Label();
             this.aegeanLabel = new System.Windows.Forms.Label();
@@ -71,6 +60,22 @@
             this.chefButton = new System.Windows.Forms.Button();
             this.tricoloreButton = new System.Windows.Forms.Button();
             this.greekButton = new System.Windows.Forms.Button();
+            this.pizzaTabPage = new System.Windows.Forms.TabPage();
+            this.palaceLabel = new System.Windows.Forms.Label();
+            this.zeusSpecialButton = new System.Windows.Forms.Button();
+            this.trojanLabel = new System.Windows.Forms.Label();
+            this.trojanButton = new System.Windows.Forms.Button();
+            this.athinaLabel = new System.Windows.Forms.Label();
+            this.palaceButton = new System.Windows.Forms.Button();
+            this.zeusSpecialLabel = new System.Windows.Forms.Label();
+            this.athinaButton = new System.Windows.Forms.Button();
+            this.greekCuisineTabPage = new System.Windows.Forms.TabPage();
+            this.fiestaLabel = new System.Windows.Forms.Label();
+            this.oceanLabel = new System.Windows.Forms.Label();
+            this.chickenLabel = new System.Windows.Forms.Label();
+            this.fiestaButton = new System.Windows.Forms.Button();
+            this.chickenButton = new System.Windows.Forms.Button();
+            this.oceanButton = new System.Windows.Forms.Button();
             this.elGrecoLabel = new System.Windows.Forms.Label();
             this.pastaLabel = new System.Windows.Forms.Label();
             this.tyromezesLabel = new System.Windows.Forms.Label();
@@ -79,20 +84,15 @@
             this.elGrecoButton = new System.Windows.Forms.Button();
             this.pastaButton = new System.Windows.Forms.Button();
             this.souvlakiButton = new System.Windows.Forms.Button();
-            this.fiestaLabel = new System.Windows.Forms.Label();
-            this.oceanLabel = new System.Windows.Forms.Label();
-            this.chickenLabel = new System.Windows.Forms.Label();
-            this.fiestaButton = new System.Windows.Forms.Button();
-            this.chickenButton = new System.Windows.Forms.Button();
-            this.oceanButton = new System.Windows.Forms.Button();
+            this.cart_richTextBox = new System.Windows.Forms.RichTextBox();
             this.checkoutButton = new FontAwesome.Sharp.IconButton();
             ((System.ComponentModel.ISupportInitialize)(this.cartButton)).BeginInit();
             this.menuTabControl.SuspendLayout();
             this.coffeeTabPage.SuspendLayout();
             this.chocolatesTabPage.SuspendLayout();
+            this.saladsTabPage.SuspendLayout();
             this.pizzaTabPage.SuspendLayout();
             this.greekCuisineTabPage.SuspendLayout();
-            this.saladsTabPage.SuspendLayout();
             this.SuspendLayout();
             // 
             // cartButton
@@ -401,49 +401,6 @@
             this.zeusHeartButton.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.zeusHeartButton.UseVisualStyleBackColor = true;
             // 
-            // pizzaTabPage
-            // 
-            this.pizzaTabPage.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(144)))), ((int)(((byte)(191)))));
-            this.pizzaTabPage.Controls.Add(this.palaceLabel);
-            this.pizzaTabPage.Controls.Add(this.zeusSpecialButton);
-            this.pizzaTabPage.Controls.Add(this.trojanLabel);
-            this.pizzaTabPage.Controls.Add(this.trojanButton);
-            this.pizzaTabPage.Controls.Add(this.athinaLabel);
-            this.pizzaTabPage.Controls.Add(this.palaceButton);
-            this.pizzaTabPage.Controls.Add(this.zeusSpecialLabel);
-            this.pizzaTabPage.Controls.Add(this.athinaButton);
-            this.pizzaTabPage.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pizzaTabPage.Location = new System.Drawing.Point(4, 26);
-            this.pizzaTabPage.Name = "pizzaTabPage";
-            this.pizzaTabPage.Padding = new System.Windows.Forms.Padding(3);
-            this.pizzaTabPage.Size = new System.Drawing.Size(662, 422);
-            this.pizzaTabPage.TabIndex = 1;
-            this.pizzaTabPage.Text = "Pizza";
-            // 
-            // greekCuisineTabPage
-            // 
-            this.greekCuisineTabPage.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(144)))), ((int)(((byte)(191)))));
-            this.greekCuisineTabPage.Controls.Add(this.fiestaLabel);
-            this.greekCuisineTabPage.Controls.Add(this.oceanLabel);
-            this.greekCuisineTabPage.Controls.Add(this.chickenLabel);
-            this.greekCuisineTabPage.Controls.Add(this.fiestaButton);
-            this.greekCuisineTabPage.Controls.Add(this.chickenButton);
-            this.greekCuisineTabPage.Controls.Add(this.oceanButton);
-            this.greekCuisineTabPage.Controls.Add(this.elGrecoLabel);
-            this.greekCuisineTabPage.Controls.Add(this.pastaLabel);
-            this.greekCuisineTabPage.Controls.Add(this.tyromezesLabel);
-            this.greekCuisineTabPage.Controls.Add(this.souvlakiLabel);
-            this.greekCuisineTabPage.Controls.Add(this.tyromezesButton);
-            this.greekCuisineTabPage.Controls.Add(this.elGrecoButton);
-            this.greekCuisineTabPage.Controls.Add(this.pastaButton);
-            this.greekCuisineTabPage.Controls.Add(this.souvlakiButton);
-            this.greekCuisineTabPage.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.greekCuisineTabPage.Location = new System.Drawing.Point(4, 26);
-            this.greekCuisineTabPage.Name = "greekCuisineTabPage";
-            this.greekCuisineTabPage.Size = new System.Drawing.Size(662, 422);
-            this.greekCuisineTabPage.TabIndex = 2;
-            this.greekCuisineTabPage.Text = "Greek Cuisine";
-            // 
             // saladsTabPage
             // 
             this.saladsTabPage.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(144)))), ((int)(((byte)(191)))));
@@ -461,114 +418,6 @@
             this.saladsTabPage.Size = new System.Drawing.Size(662, 422);
             this.saladsTabPage.TabIndex = 3;
             this.saladsTabPage.Text = "Salads";
-            // 
-            // cart_richTextBox
-            // 
-            this.cart_richTextBox.Location = new System.Drawing.Point(776, 147);
-            this.cart_richTextBox.Name = "cart_richTextBox";
-            this.cart_richTextBox.Size = new System.Drawing.Size(225, 376);
-            this.cart_richTextBox.TabIndex = 7;
-            this.cart_richTextBox.Text = "";
-            // 
-            // palaceLabel
-            // 
-            this.palaceLabel.AutoSize = true;
-            this.palaceLabel.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.palaceLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(241)))), ((int)(((byte)(246)))));
-            this.palaceLabel.Location = new System.Drawing.Point(488, 247);
-            this.palaceLabel.Name = "palaceLabel";
-            this.palaceLabel.Size = new System.Drawing.Size(102, 23);
-            this.palaceLabel.TabIndex = 12;
-            this.palaceLabel.Text = "Palace, 40€";
-            // 
-            // trojanLabel
-            // 
-            this.trojanLabel.AutoSize = true;
-            this.trojanLabel.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.trojanLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(241)))), ((int)(((byte)(246)))));
-            this.trojanLabel.Location = new System.Drawing.Point(347, 248);
-            this.trojanLabel.Name = "trojanLabel";
-            this.trojanLabel.Size = new System.Drawing.Size(104, 23);
-            this.trojanLabel.TabIndex = 11;
-            this.trojanLabel.Text = "Trojan, 10€";
-            // 
-            // athinaLabel
-            // 
-            this.athinaLabel.AutoSize = true;
-            this.athinaLabel.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.athinaLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(241)))), ((int)(((byte)(246)))));
-            this.athinaLabel.Location = new System.Drawing.Point(203, 247);
-            this.athinaLabel.Name = "athinaLabel";
-            this.athinaLabel.Size = new System.Drawing.Size(104, 23);
-            this.athinaLabel.TabIndex = 10;
-            this.athinaLabel.Text = "Athina, 15€";
-            // 
-            // zeusSpecialLabel
-            // 
-            this.zeusSpecialLabel.AutoSize = true;
-            this.zeusSpecialLabel.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.zeusSpecialLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(241)))), ((int)(((byte)(246)))));
-            this.zeusSpecialLabel.Location = new System.Drawing.Point(42, 248);
-            this.zeusSpecialLabel.Name = "zeusSpecialLabel";
-            this.zeusSpecialLabel.Size = new System.Drawing.Size(151, 23);
-            this.zeusSpecialLabel.TabIndex = 9;
-            this.zeusSpecialLabel.Text = "Zeus Special, 30€";
-            // 
-            // athinaButton
-            // 
-            this.athinaButton.BackgroundImage = global::hotel_app.Properties.Resources.pizza_2;
-            this.athinaButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.athinaButton.Font = new System.Drawing.Font("Comic Sans MS", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.athinaButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(241)))), ((int)(((byte)(246)))));
-            this.athinaButton.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.athinaButton.Location = new System.Drawing.Point(196, 125);
-            this.athinaButton.Name = "athinaButton";
-            this.athinaButton.Size = new System.Drawing.Size(120, 120);
-            this.athinaButton.TabIndex = 7;
-            this.athinaButton.Tag = "15";
-            this.athinaButton.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.athinaButton.UseVisualStyleBackColor = true;
-            // 
-            // palaceButton
-            // 
-            this.palaceButton.BackgroundImage = global::hotel_app.Properties.Resources.pizza_4;
-            this.palaceButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.palaceButton.Font = new System.Drawing.Font("Comic Sans MS", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.palaceButton.ForeColor = System.Drawing.Color.Blue;
-            this.palaceButton.Location = new System.Drawing.Point(479, 125);
-            this.palaceButton.Name = "palaceButton";
-            this.palaceButton.Size = new System.Drawing.Size(120, 120);
-            this.palaceButton.TabIndex = 5;
-            this.palaceButton.Tag = "40";
-            this.palaceButton.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.palaceButton.UseVisualStyleBackColor = true;
-            // 
-            // trojanButton
-            // 
-            this.trojanButton.BackgroundImage = global::hotel_app.Properties.Resources.pizza_3;
-            this.trojanButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.trojanButton.Font = new System.Drawing.Font("Comic Sans MS", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.trojanButton.ForeColor = System.Drawing.Color.Black;
-            this.trojanButton.Location = new System.Drawing.Point(337, 125);
-            this.trojanButton.Name = "trojanButton";
-            this.trojanButton.Size = new System.Drawing.Size(120, 120);
-            this.trojanButton.TabIndex = 3;
-            this.trojanButton.Tag = "10";
-            this.trojanButton.UseVisualStyleBackColor = true;
-            // 
-            // zeusSpecialButton
-            // 
-            this.zeusSpecialButton.BackgroundImage = global::hotel_app.Properties.Resources.pizza_1;
-            this.zeusSpecialButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.zeusSpecialButton.Font = new System.Drawing.Font("Comic Sans MS", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.zeusSpecialButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(241)))), ((int)(((byte)(246)))));
-            this.zeusSpecialButton.Location = new System.Drawing.Point(58, 125);
-            this.zeusSpecialButton.Name = "zeusSpecialButton";
-            this.zeusSpecialButton.Size = new System.Drawing.Size(120, 120);
-            this.zeusSpecialButton.TabIndex = 1;
-            this.zeusSpecialButton.Tag = "30";
-            this.zeusSpecialButton.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.zeusSpecialButton.UseVisualStyleBackColor = true;
             // 
             // chefLabel
             // 
@@ -672,6 +521,225 @@
             this.greekButton.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.greekButton.UseVisualStyleBackColor = true;
             // 
+            // pizzaTabPage
+            // 
+            this.pizzaTabPage.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(144)))), ((int)(((byte)(191)))));
+            this.pizzaTabPage.Controls.Add(this.palaceLabel);
+            this.pizzaTabPage.Controls.Add(this.zeusSpecialButton);
+            this.pizzaTabPage.Controls.Add(this.trojanLabel);
+            this.pizzaTabPage.Controls.Add(this.trojanButton);
+            this.pizzaTabPage.Controls.Add(this.athinaLabel);
+            this.pizzaTabPage.Controls.Add(this.palaceButton);
+            this.pizzaTabPage.Controls.Add(this.zeusSpecialLabel);
+            this.pizzaTabPage.Controls.Add(this.athinaButton);
+            this.pizzaTabPage.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pizzaTabPage.Location = new System.Drawing.Point(4, 26);
+            this.pizzaTabPage.Name = "pizzaTabPage";
+            this.pizzaTabPage.Padding = new System.Windows.Forms.Padding(3);
+            this.pizzaTabPage.Size = new System.Drawing.Size(662, 422);
+            this.pizzaTabPage.TabIndex = 1;
+            this.pizzaTabPage.Text = "Pizza";
+            // 
+            // palaceLabel
+            // 
+            this.palaceLabel.AutoSize = true;
+            this.palaceLabel.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.palaceLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(241)))), ((int)(((byte)(246)))));
+            this.palaceLabel.Location = new System.Drawing.Point(488, 247);
+            this.palaceLabel.Name = "palaceLabel";
+            this.palaceLabel.Size = new System.Drawing.Size(102, 23);
+            this.palaceLabel.TabIndex = 12;
+            this.palaceLabel.Text = "Palace, 40€";
+            // 
+            // zeusSpecialButton
+            // 
+            this.zeusSpecialButton.BackgroundImage = global::hotel_app.Properties.Resources.pizza_1;
+            this.zeusSpecialButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.zeusSpecialButton.Font = new System.Drawing.Font("Comic Sans MS", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.zeusSpecialButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(241)))), ((int)(((byte)(246)))));
+            this.zeusSpecialButton.Location = new System.Drawing.Point(58, 125);
+            this.zeusSpecialButton.Name = "zeusSpecialButton";
+            this.zeusSpecialButton.Size = new System.Drawing.Size(120, 120);
+            this.zeusSpecialButton.TabIndex = 1;
+            this.zeusSpecialButton.Tag = "30";
+            this.zeusSpecialButton.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.zeusSpecialButton.UseVisualStyleBackColor = true;
+            // 
+            // trojanLabel
+            // 
+            this.trojanLabel.AutoSize = true;
+            this.trojanLabel.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.trojanLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(241)))), ((int)(((byte)(246)))));
+            this.trojanLabel.Location = new System.Drawing.Point(347, 248);
+            this.trojanLabel.Name = "trojanLabel";
+            this.trojanLabel.Size = new System.Drawing.Size(104, 23);
+            this.trojanLabel.TabIndex = 11;
+            this.trojanLabel.Text = "Trojan, 10€";
+            // 
+            // trojanButton
+            // 
+            this.trojanButton.BackgroundImage = global::hotel_app.Properties.Resources.pizza_3;
+            this.trojanButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.trojanButton.Font = new System.Drawing.Font("Comic Sans MS", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.trojanButton.ForeColor = System.Drawing.Color.Black;
+            this.trojanButton.Location = new System.Drawing.Point(337, 125);
+            this.trojanButton.Name = "trojanButton";
+            this.trojanButton.Size = new System.Drawing.Size(120, 120);
+            this.trojanButton.TabIndex = 3;
+            this.trojanButton.Tag = "10";
+            this.trojanButton.UseVisualStyleBackColor = true;
+            // 
+            // athinaLabel
+            // 
+            this.athinaLabel.AutoSize = true;
+            this.athinaLabel.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.athinaLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(241)))), ((int)(((byte)(246)))));
+            this.athinaLabel.Location = new System.Drawing.Point(203, 247);
+            this.athinaLabel.Name = "athinaLabel";
+            this.athinaLabel.Size = new System.Drawing.Size(104, 23);
+            this.athinaLabel.TabIndex = 10;
+            this.athinaLabel.Text = "Athina, 15€";
+            // 
+            // palaceButton
+            // 
+            this.palaceButton.BackgroundImage = global::hotel_app.Properties.Resources.pizza_4;
+            this.palaceButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.palaceButton.Font = new System.Drawing.Font("Comic Sans MS", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.palaceButton.ForeColor = System.Drawing.Color.Blue;
+            this.palaceButton.Location = new System.Drawing.Point(479, 125);
+            this.palaceButton.Name = "palaceButton";
+            this.palaceButton.Size = new System.Drawing.Size(120, 120);
+            this.palaceButton.TabIndex = 5;
+            this.palaceButton.Tag = "40";
+            this.palaceButton.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.palaceButton.UseVisualStyleBackColor = true;
+            // 
+            // zeusSpecialLabel
+            // 
+            this.zeusSpecialLabel.AutoSize = true;
+            this.zeusSpecialLabel.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.zeusSpecialLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(241)))), ((int)(((byte)(246)))));
+            this.zeusSpecialLabel.Location = new System.Drawing.Point(42, 248);
+            this.zeusSpecialLabel.Name = "zeusSpecialLabel";
+            this.zeusSpecialLabel.Size = new System.Drawing.Size(151, 23);
+            this.zeusSpecialLabel.TabIndex = 9;
+            this.zeusSpecialLabel.Text = "Zeus Special, 30€";
+            // 
+            // athinaButton
+            // 
+            this.athinaButton.BackgroundImage = global::hotel_app.Properties.Resources.pizza_2;
+            this.athinaButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.athinaButton.Font = new System.Drawing.Font("Comic Sans MS", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.athinaButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(241)))), ((int)(((byte)(246)))));
+            this.athinaButton.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.athinaButton.Location = new System.Drawing.Point(196, 125);
+            this.athinaButton.Name = "athinaButton";
+            this.athinaButton.Size = new System.Drawing.Size(120, 120);
+            this.athinaButton.TabIndex = 7;
+            this.athinaButton.Tag = "15";
+            this.athinaButton.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.athinaButton.UseVisualStyleBackColor = true;
+            // 
+            // greekCuisineTabPage
+            // 
+            this.greekCuisineTabPage.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(144)))), ((int)(((byte)(191)))));
+            this.greekCuisineTabPage.Controls.Add(this.fiestaLabel);
+            this.greekCuisineTabPage.Controls.Add(this.oceanLabel);
+            this.greekCuisineTabPage.Controls.Add(this.chickenLabel);
+            this.greekCuisineTabPage.Controls.Add(this.fiestaButton);
+            this.greekCuisineTabPage.Controls.Add(this.chickenButton);
+            this.greekCuisineTabPage.Controls.Add(this.oceanButton);
+            this.greekCuisineTabPage.Controls.Add(this.elGrecoLabel);
+            this.greekCuisineTabPage.Controls.Add(this.pastaLabel);
+            this.greekCuisineTabPage.Controls.Add(this.tyromezesLabel);
+            this.greekCuisineTabPage.Controls.Add(this.souvlakiLabel);
+            this.greekCuisineTabPage.Controls.Add(this.tyromezesButton);
+            this.greekCuisineTabPage.Controls.Add(this.elGrecoButton);
+            this.greekCuisineTabPage.Controls.Add(this.pastaButton);
+            this.greekCuisineTabPage.Controls.Add(this.souvlakiButton);
+            this.greekCuisineTabPage.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.greekCuisineTabPage.Location = new System.Drawing.Point(4, 26);
+            this.greekCuisineTabPage.Name = "greekCuisineTabPage";
+            this.greekCuisineTabPage.Size = new System.Drawing.Size(662, 422);
+            this.greekCuisineTabPage.TabIndex = 2;
+            this.greekCuisineTabPage.Text = "Greek Cuisine";
+            // 
+            // fiestaLabel
+            // 
+            this.fiestaLabel.AutoSize = true;
+            this.fiestaLabel.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.fiestaLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(241)))), ((int)(((byte)(246)))));
+            this.fiestaLabel.Location = new System.Drawing.Point(345, 331);
+            this.fiestaLabel.Name = "fiestaLabel";
+            this.fiestaLabel.Size = new System.Drawing.Size(102, 23);
+            this.fiestaLabel.TabIndex = 27;
+            this.fiestaLabel.Text = "Fiesta, 24€";
+            // 
+            // oceanLabel
+            // 
+            this.oceanLabel.AutoSize = true;
+            this.oceanLabel.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.oceanLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(241)))), ((int)(((byte)(246)))));
+            this.oceanLabel.Location = new System.Drawing.Point(205, 331);
+            this.oceanLabel.Name = "oceanLabel";
+            this.oceanLabel.Size = new System.Drawing.Size(101, 23);
+            this.oceanLabel.TabIndex = 26;
+            this.oceanLabel.Text = "Ocean, 30€";
+            // 
+            // chickenLabel
+            // 
+            this.chickenLabel.AutoSize = true;
+            this.chickenLabel.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.chickenLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(241)))), ((int)(((byte)(246)))));
+            this.chickenLabel.Location = new System.Drawing.Point(68, 331);
+            this.chickenLabel.Name = "chickenLabel";
+            this.chickenLabel.Size = new System.Drawing.Size(101, 23);
+            this.chickenLabel.TabIndex = 25;
+            this.chickenLabel.Text = "Chicken, 7€";
+            // 
+            // fiestaButton
+            // 
+            this.fiestaButton.BackgroundImage = global::hotel_app.Properties.Resources.food_2;
+            this.fiestaButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.fiestaButton.Font = new System.Drawing.Font("Comic Sans MS", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.fiestaButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(241)))), ((int)(((byte)(246)))));
+            this.fiestaButton.Location = new System.Drawing.Point(337, 208);
+            this.fiestaButton.Name = "fiestaButton";
+            this.fiestaButton.Size = new System.Drawing.Size(120, 120);
+            this.fiestaButton.TabIndex = 22;
+            this.fiestaButton.Tag = "24";
+            this.fiestaButton.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.fiestaButton.UseVisualStyleBackColor = true;
+            // 
+            // chickenButton
+            // 
+            this.chickenButton.BackgroundImage = global::hotel_app.Properties.Resources.food_4;
+            this.chickenButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.chickenButton.Font = new System.Drawing.Font("Comic Sans MS", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.chickenButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(241)))), ((int)(((byte)(246)))));
+            this.chickenButton.Location = new System.Drawing.Point(58, 208);
+            this.chickenButton.Name = "chickenButton";
+            this.chickenButton.Size = new System.Drawing.Size(120, 120);
+            this.chickenButton.TabIndex = 23;
+            this.chickenButton.Tag = "7";
+            this.chickenButton.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.chickenButton.UseVisualStyleBackColor = true;
+            // 
+            // oceanButton
+            // 
+            this.oceanButton.BackgroundImage = global::hotel_app.Properties.Resources.food_6;
+            this.oceanButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.oceanButton.Enabled = false;
+            this.oceanButton.Font = new System.Drawing.Font("Comic Sans MS", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.oceanButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(241)))), ((int)(((byte)(246)))));
+            this.oceanButton.Location = new System.Drawing.Point(196, 208);
+            this.oceanButton.Name = "oceanButton";
+            this.oceanButton.Size = new System.Drawing.Size(120, 120);
+            this.oceanButton.TabIndex = 24;
+            this.oceanButton.Tag = "30";
+            this.oceanButton.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.oceanButton.UseVisualStyleBackColor = true;
+            // 
             // elGrecoLabel
             // 
             this.elGrecoLabel.AutoSize = true;
@@ -772,81 +840,13 @@
             this.souvlakiButton.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.souvlakiButton.UseVisualStyleBackColor = true;
             // 
-            // fiestaLabel
+            // cart_richTextBox
             // 
-            this.fiestaLabel.AutoSize = true;
-            this.fiestaLabel.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.fiestaLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(241)))), ((int)(((byte)(246)))));
-            this.fiestaLabel.Location = new System.Drawing.Point(345, 331);
-            this.fiestaLabel.Name = "fiestaLabel";
-            this.fiestaLabel.Size = new System.Drawing.Size(102, 23);
-            this.fiestaLabel.TabIndex = 27;
-            this.fiestaLabel.Text = "Fiesta, 24€";
-            // 
-            // oceanLabel
-            // 
-            this.oceanLabel.AutoSize = true;
-            this.oceanLabel.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.oceanLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(241)))), ((int)(((byte)(246)))));
-            this.oceanLabel.Location = new System.Drawing.Point(205, 331);
-            this.oceanLabel.Name = "oceanLabel";
-            this.oceanLabel.Size = new System.Drawing.Size(101, 23);
-            this.oceanLabel.TabIndex = 26;
-            this.oceanLabel.Text = "Ocean, 30€";
-            // 
-            // chickenLabel
-            // 
-            this.chickenLabel.AutoSize = true;
-            this.chickenLabel.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.chickenLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(241)))), ((int)(((byte)(246)))));
-            this.chickenLabel.Location = new System.Drawing.Point(68, 331);
-            this.chickenLabel.Name = "chickenLabel";
-            this.chickenLabel.Size = new System.Drawing.Size(101, 23);
-            this.chickenLabel.TabIndex = 25;
-            this.chickenLabel.Text = "Chicken, 7€";
-            // 
-            // fiestaButton
-            // 
-            this.fiestaButton.BackgroundImage = global::hotel_app.Properties.Resources.food_2;
-            this.fiestaButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.fiestaButton.Font = new System.Drawing.Font("Comic Sans MS", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.fiestaButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(241)))), ((int)(((byte)(246)))));
-            this.fiestaButton.Location = new System.Drawing.Point(337, 208);
-            this.fiestaButton.Name = "fiestaButton";
-            this.fiestaButton.Size = new System.Drawing.Size(120, 120);
-            this.fiestaButton.TabIndex = 22;
-            this.fiestaButton.Tag = "24";
-            this.fiestaButton.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.fiestaButton.UseVisualStyleBackColor = true;
-            // 
-            // chickenButton
-            // 
-            this.chickenButton.BackgroundImage = global::hotel_app.Properties.Resources.food_4;
-            this.chickenButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.chickenButton.Font = new System.Drawing.Font("Comic Sans MS", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.chickenButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(241)))), ((int)(((byte)(246)))));
-            this.chickenButton.Location = new System.Drawing.Point(58, 208);
-            this.chickenButton.Name = "chickenButton";
-            this.chickenButton.Size = new System.Drawing.Size(120, 120);
-            this.chickenButton.TabIndex = 23;
-            this.chickenButton.Tag = "7";
-            this.chickenButton.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.chickenButton.UseVisualStyleBackColor = true;
-            // 
-            // oceanButton
-            // 
-            this.oceanButton.BackgroundImage = global::hotel_app.Properties.Resources.food_6;
-            this.oceanButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.oceanButton.Enabled = false;
-            this.oceanButton.Font = new System.Drawing.Font("Comic Sans MS", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.oceanButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(241)))), ((int)(((byte)(246)))));
-            this.oceanButton.Location = new System.Drawing.Point(196, 208);
-            this.oceanButton.Name = "oceanButton";
-            this.oceanButton.Size = new System.Drawing.Size(120, 120);
-            this.oceanButton.TabIndex = 24;
-            this.oceanButton.Tag = "30";
-            this.oceanButton.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.oceanButton.UseVisualStyleBackColor = true;
+            this.cart_richTextBox.Location = new System.Drawing.Point(776, 147);
+            this.cart_richTextBox.Name = "cart_richTextBox";
+            this.cart_richTextBox.Size = new System.Drawing.Size(225, 376);
+            this.cart_richTextBox.TabIndex = 7;
+            this.cart_richTextBox.Text = "";
             // 
             // checkoutButton
             // 
@@ -881,12 +881,12 @@
             this.coffeeTabPage.PerformLayout();
             this.chocolatesTabPage.ResumeLayout(false);
             this.chocolatesTabPage.PerformLayout();
+            this.saladsTabPage.ResumeLayout(false);
+            this.saladsTabPage.PerformLayout();
             this.pizzaTabPage.ResumeLayout(false);
             this.pizzaTabPage.PerformLayout();
             this.greekCuisineTabPage.ResumeLayout(false);
             this.greekCuisineTabPage.PerformLayout();
-            this.saladsTabPage.ResumeLayout(false);
-            this.saladsTabPage.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
