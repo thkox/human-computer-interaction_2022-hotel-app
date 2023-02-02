@@ -32,12 +32,13 @@
             this.menuLabel = new System.Windows.Forms.Label();
             this.menuTabControl = new System.Windows.Forms.TabControl();
             this.coffeeTabPage = new System.Windows.Forms.TabPage();
+            this.quantityCappuccino = new hotel_app.Custom_Toolbox.QuantityCustomControl();
             this.quantityAmericano = new hotel_app.Custom_Toolbox.QuantityCustomControl();
             this.latteLabel = new System.Windows.Forms.Label();
             this.espressoLabel = new System.Windows.Forms.Label();
             this.capuccinoLabel = new System.Windows.Forms.Label();
             this.americanoLabel = new System.Windows.Forms.Label();
-            this.capuccinoButton = new System.Windows.Forms.Button();
+            this.cappuccinoButton = new System.Windows.Forms.Button();
             this.latteButton = new System.Windows.Forms.Button();
             this.espressoButton = new System.Windows.Forms.Button();
             this.americanoButton = new System.Windows.Forms.Button();
@@ -87,6 +88,8 @@
             this.souvlakiButton = new System.Windows.Forms.Button();
             this.cart_richTextBox = new System.Windows.Forms.RichTextBox();
             this.checkoutButton = new FontAwesome.Sharp.IconButton();
+            this.quantityEspresso = new hotel_app.Custom_Toolbox.QuantityCustomControl();
+            this.quantityLatte = new hotel_app.Custom_Toolbox.QuantityCustomControl();
             ((System.ComponentModel.ISupportInitialize)(this.cartButton)).BeginInit();
             this.menuTabControl.SuspendLayout();
             this.coffeeTabPage.SuspendLayout();
@@ -138,12 +141,15 @@
             // coffeeTabPage
             // 
             this.coffeeTabPage.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(144)))), ((int)(((byte)(191)))));
+            this.coffeeTabPage.Controls.Add(this.quantityLatte);
+            this.coffeeTabPage.Controls.Add(this.quantityEspresso);
+            this.coffeeTabPage.Controls.Add(this.quantityCappuccino);
             this.coffeeTabPage.Controls.Add(this.quantityAmericano);
             this.coffeeTabPage.Controls.Add(this.latteLabel);
             this.coffeeTabPage.Controls.Add(this.espressoLabel);
             this.coffeeTabPage.Controls.Add(this.capuccinoLabel);
             this.coffeeTabPage.Controls.Add(this.americanoLabel);
-            this.coffeeTabPage.Controls.Add(this.capuccinoButton);
+            this.coffeeTabPage.Controls.Add(this.cappuccinoButton);
             this.coffeeTabPage.Controls.Add(this.latteButton);
             this.coffeeTabPage.Controls.Add(this.espressoButton);
             this.coffeeTabPage.Controls.Add(this.americanoButton);
@@ -154,6 +160,15 @@
             this.coffeeTabPage.Size = new System.Drawing.Size(662, 422);
             this.coffeeTabPage.TabIndex = 0;
             this.coffeeTabPage.Text = "Coffee";
+            // 
+            // quantityCappuccino
+            // 
+            this.quantityCappuccino.Location = new System.Drawing.Point(196, 274);
+            this.quantityCappuccino.Name = "quantityCappuccino";
+            this.quantityCappuccino.Size = new System.Drawing.Size(118, 28);
+            this.quantityCappuccino.TabIndex = 21;
+            this.quantityCappuccino.Tag = "0";
+            this.quantityCappuccino.TagChanged += new System.EventHandler(this.quantityCappuccino_TagChanged);
             // 
             // quantityAmericano
             // 
@@ -208,20 +223,20 @@
             this.americanoLabel.TabIndex = 16;
             this.americanoLabel.Text = "Americano, 8€";
             // 
-            // capuccinoButton
+            // cappuccinoButton
             // 
-            this.capuccinoButton.BackgroundImage = global::hotel_app.Properties.Resources.cappuccino;
-            this.capuccinoButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.capuccinoButton.Font = new System.Drawing.Font("Comic Sans MS", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.capuccinoButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(241)))), ((int)(((byte)(246)))));
-            this.capuccinoButton.ImageAlign = System.Drawing.ContentAlignment.TopRight;
-            this.capuccinoButton.Location = new System.Drawing.Point(196, 125);
-            this.capuccinoButton.Name = "capuccinoButton";
-            this.capuccinoButton.Size = new System.Drawing.Size(120, 120);
-            this.capuccinoButton.TabIndex = 15;
-            this.capuccinoButton.Tag = "10";
-            this.capuccinoButton.TextAlign = System.Drawing.ContentAlignment.TopRight;
-            this.capuccinoButton.UseVisualStyleBackColor = true;
+            this.cappuccinoButton.BackgroundImage = global::hotel_app.Properties.Resources.cappuccino;
+            this.cappuccinoButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.cappuccinoButton.Font = new System.Drawing.Font("Comic Sans MS", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.cappuccinoButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(241)))), ((int)(((byte)(246)))));
+            this.cappuccinoButton.ImageAlign = System.Drawing.ContentAlignment.TopRight;
+            this.cappuccinoButton.Location = new System.Drawing.Point(196, 125);
+            this.cappuccinoButton.Name = "cappuccinoButton";
+            this.cappuccinoButton.Size = new System.Drawing.Size(120, 120);
+            this.cappuccinoButton.TabIndex = 15;
+            this.cappuccinoButton.Tag = "10";
+            this.cappuccinoButton.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            this.cappuccinoButton.UseVisualStyleBackColor = true;
             // 
             // latteButton
             // 
@@ -872,6 +887,25 @@
             this.checkoutButton.Text = "Checkout";
             this.checkoutButton.UseVisualStyleBackColor = true;
             // 
+            // quantityEspresso
+            // 
+            this.quantityEspresso.Location = new System.Drawing.Point(337, 274);
+            this.quantityEspresso.Name = "quantityEspresso";
+            this.quantityEspresso.Size = new System.Drawing.Size(118, 28);
+            this.quantityEspresso.TabIndex = 22;
+            this.quantityEspresso.Tag = "0";
+            this.quantityEspresso.TagChanged += new System.EventHandler(this.quantityEspresso_TagChanged);
+            // 
+            // quantityLatte
+            // 
+            this.quantityLatte.Location = new System.Drawing.Point(479, 274);
+            this.quantityLatte.Name = "quantityLatte";
+            this.quantityLatte.Size = new System.Drawing.Size(118, 28);
+            this.quantityLatte.TabIndex = 23;
+            this.quantityLatte.Tag = "0";
+            this.quantityLatte.TagChanged += new System.EventHandler(this.quantityLatte_TagChanged);
+
+            // 
             // RestaurantMenuForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -915,7 +949,7 @@
         private Label espressoLabel;
         private Label capuccinoLabel;
         private Label americanoLabel;
-        private Button capuccinoButton;
+        private Button cappuccinoButton;
         private Button latteButton;
         private Button espressoButton;
         private Button americanoButton;
@@ -962,5 +996,8 @@
         private Button souvlakiButton;
         private FontAwesome.Sharp.IconButton checkoutButton;
         private Custom_Toolbox.QuantityCustomControl quantityAmericano;
+        private Custom_Toolbox.QuantityCustomControl quantityCappuccino;
+        private Custom_Toolbox.QuantityCustomControl quantityLatte;
+        private Custom_Toolbox.QuantityCustomControl quantityEspresso;
     }
 }
