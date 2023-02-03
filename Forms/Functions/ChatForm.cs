@@ -75,6 +75,7 @@ namespace hotel_app.Forms.Functions
 
         private void sentMessagePictureBox_Click(object sender, EventArgs e)
         {
+            chatPanel.AutoScrollPosition = new Point(0, 0);
             Point bubbleLocation = new Point(150, height + 15);
             Size bubbleSize = new Size(200, 40);
             Point textBoxLocation = new Point(10, 10);
@@ -87,6 +88,7 @@ namespace hotel_app.Forms.Functions
 
         private void TriggerResponse()
         {
+            chatPanel.AutoScrollPosition = new Point(0, 0);
             if (inputChatTextBox.Text == "Order Food")
             {
                 Point location2 = new Point(10, height);
@@ -107,9 +109,9 @@ namespace hotel_app.Forms.Functions
 
                 string message = "I do not understand you.";
                 Point bubbleLocation = new Point(70, height + 10);
-                Size bubbleSize = new Size(160, 40);
+                Size bubbleSize = new Size(180, 40);
                 Point textBoxLoaction = new Point(10, 10);
-                Size textBoxSize = new Size(130, 20);
+                Size textBoxSize = new Size(160, 20);
                 chatPanel.Controls.Add(SetResponseBubble(message, bubbleLocation, bubbleSize, textBoxLoaction, textBoxSize));
                 height += bubbleSize.Height + 3;
                 MainMenuMessage();
@@ -119,13 +121,15 @@ namespace hotel_app.Forms.Functions
 
         private void MainMenuMessage()
         {
+            chatPanel.AutoScrollPosition = new Point(0, 0);
+            
             string message = "What you would like to do?";
             Point bubbleLocation = new Point(70, height + 10);
             Size bubbleSize = new Size(190, 40);
             Point textBoxLoaction = new Point(10, 10);
             Size textBoxSize = new Size(170, 20);
             chatPanel.Controls.Add(SetResponseBubble(message, bubbleLocation, bubbleSize, textBoxLoaction, textBoxSize));
-            //height += chatPanel.AutoScrollPosition.Y + bubbleSize.Height + 3;
+            height += bubbleSize.Height + 3;
 
             string message2 = "1. Order Food";
             Point bubbleLocation2 = new Point(70, height + 10);
@@ -142,6 +146,7 @@ namespace hotel_app.Forms.Functions
             Size textBoxSize3 = new Size(130, 20);
             chatPanel.Controls.Add(SetResponseBubble(message3, bubbleLocation3, bubbleSize3, textBoxLoaction3, textBoxSize3));
             height += bubbleSize3.Height + 10;
+            
         }
 
         private void inputChatTextBox_MessageChanged(object sender, EventArgs e)
