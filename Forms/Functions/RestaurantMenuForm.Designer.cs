@@ -1113,6 +1113,7 @@
             // 
             // checkoutButton
             // 
+            this.checkoutButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.checkoutButton.Font = new System.Drawing.Font("Comic Sans MS", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.checkoutButton.ForeColor = System.Drawing.SystemColors.ControlText;
             this.checkoutButton.IconChar = FontAwesome.Sharp.IconChar.MoneyCheck;

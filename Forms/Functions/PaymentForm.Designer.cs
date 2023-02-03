@@ -80,9 +80,9 @@
             // iconPictureBox1
             // 
             this.iconPictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(129)))), ((int)(((byte)(164)))), ((int)(((byte)(205)))));
-            this.iconPictureBox1.ForeColor = System.Drawing.SystemColors.Highlight;
+            this.iconPictureBox1.ForeColor = System.Drawing.SystemColors.ControlText;
             this.iconPictureBox1.IconChar = FontAwesome.Sharp.IconChar.CcVisa;
-            this.iconPictureBox1.IconColor = System.Drawing.SystemColors.Highlight;
+            this.iconPictureBox1.IconColor = System.Drawing.SystemColors.ControlText;
             this.iconPictureBox1.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconPictureBox1.IconSize = 80;
             this.iconPictureBox1.Location = new System.Drawing.Point(161, 33);
@@ -94,9 +94,9 @@
             // mastercardPictureBox
             // 
             this.mastercardPictureBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(129)))), ((int)(((byte)(164)))), ((int)(((byte)(205)))));
-            this.mastercardPictureBox.ForeColor = System.Drawing.Color.DarkRed;
+            this.mastercardPictureBox.ForeColor = System.Drawing.SystemColors.ControlText;
             this.mastercardPictureBox.IconChar = FontAwesome.Sharp.IconChar.CcMastercard;
-            this.mastercardPictureBox.IconColor = System.Drawing.Color.DarkRed;
+            this.mastercardPictureBox.IconColor = System.Drawing.SystemColors.ControlText;
             this.mastercardPictureBox.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.mastercardPictureBox.IconSize = 80;
             this.mastercardPictureBox.Location = new System.Drawing.Point(53, 33);
@@ -109,6 +109,7 @@
             // 
             this.visaRadioButton.AutoSize = true;
             this.visaRadioButton.CheckedColor = System.Drawing.SystemColors.HotTrack;
+            this.visaRadioButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.visaRadioButton.Location = new System.Drawing.Point(139, 42);
             this.visaRadioButton.MinimumSize = new System.Drawing.Size(0, 21);
             this.visaRadioButton.Name = "visaRadioButton";
@@ -122,6 +123,7 @@
             this.mastercardRadioButton.AutoSize = true;
             this.mastercardRadioButton.Checked = true;
             this.mastercardRadioButton.CheckedColor = System.Drawing.SystemColors.HotTrack;
+            this.mastercardRadioButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.mastercardRadioButton.Location = new System.Drawing.Point(29, 42);
             this.mastercardRadioButton.MinimumSize = new System.Drawing.Size(0, 21);
             this.mastercardRadioButton.Name = "mastercardRadioButton";
