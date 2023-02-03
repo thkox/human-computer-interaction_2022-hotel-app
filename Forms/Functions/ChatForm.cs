@@ -473,7 +473,7 @@ namespace hotel_app.Forms.Functions
         private void QuestionUser()
         {
             Point location2 = new Point(10, height);
-            chatPanel.Controls.Add(SetEmployeeIcon(location2));
+            chatPanel.Controls.Add(SetEmployeeIcon(location2)); 
 
             string message = "Do you want to order something else?";
             Point bubbleLocation = new Point(70, height + 10);
