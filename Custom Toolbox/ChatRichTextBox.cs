@@ -13,6 +13,7 @@ namespace hotel_app.Custom_Toolbox
 {
     public partial class ChatRichTextBox : UserControl
     {
+        public EventHandler MessageChanged;
 
         public ChatRichTextBox()
         {
@@ -121,6 +122,11 @@ namespace hotel_app.Custom_Toolbox
 
             path.CloseFigure();
             return path;
+        }
+
+        private void richTextBox1_TextChanged(object sender, EventArgs e)
+        {
+            MessageChanged?.Invoke(this, e);
         }
     }
 }

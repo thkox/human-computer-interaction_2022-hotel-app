@@ -143,5 +143,19 @@ namespace hotel_app.Forms.Functions
             chatPanel.Controls.Add(SetResponseBubble(message3, bubbleLocation3, bubbleSize3, textBoxLoaction3, textBoxSize3));
             height += bubbleSize3.Height + 10;
         }
+
+        private void inputChatTextBox_MessageChanged(object sender, EventArgs e)
+        {
+            if (inputChatTextBox.Text == "")
+            {
+                sentMessagePictureBox.Enabled = false;
+                sentMessagePictureBox.IconColor = Color.FromArgb(96, 144, 191);
+            }
+            else
+            {
+                sentMessagePictureBox.Enabled = true;
+                sentMessagePictureBox.IconColor = Color.FromArgb(232, 238, 244);
+            }
+        }
     }
 }

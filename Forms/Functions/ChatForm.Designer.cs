@@ -82,6 +82,7 @@
             // inputChatTextBox
             // 
             this.inputChatTextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(124)))), ((int)(((byte)(177)))));
+            this.inputChatTextBox.ForeColor = System.Drawing.Color.White;
             this.inputChatTextBox.Location = new System.Drawing.Point(12, 6);
             this.inputChatTextBox.MaxLegthSize = 15;
             this.inputChatTextBox.Name = "inputChatTextBox";
@@ -91,6 +92,7 @@
             this.inputChatTextBox.ShadeColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(245)))), ((int)(((byte)(250)))));
             this.inputChatTextBox.Size = new System.Drawing.Size(300, 40);
             this.inputChatTextBox.TabIndex = 0;
+            this.inputChatTextBox.MessageChanged += new System.EventHandler(this.inputChatTextBox_MessageChanged);
             // 
             // sentMessagePictureBox
             // 
