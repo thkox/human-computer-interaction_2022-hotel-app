@@ -66,7 +66,6 @@ namespace hotel_app.Forms.Functions
             ancientGod.Parent = chatPanel;
             tabIndex++;
             return ancientGod;
-            
         }
 
         private ChatRichTextBox SetResponseBubble(string message, Point bubbleLocation, Size bubbleSize, Point textBoxLocation, Size textBoxSize)

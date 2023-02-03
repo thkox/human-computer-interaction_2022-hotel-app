@@ -41,7 +41,7 @@
             // 
             // charBarPanel
             // 
-            this.charBarPanel.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.charBarPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(82)))), ((int)(((byte)(133)))));
             this.charBarPanel.Controls.Add(this.iconButton1);
             this.charBarPanel.Dock = System.Windows.Forms.DockStyle.Top;
             this.charBarPanel.Location = new System.Drawing.Point(0, 0);
@@ -51,9 +51,12 @@
             // 
             // iconButton1
             // 
+            this.iconButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(82)))), ((int)(((byte)(133)))));
+            this.iconButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.iconButton1.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.iconButton1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(238)))), ((int)(((byte)(244)))));
             this.iconButton1.IconChar = FontAwesome.Sharp.IconChar.Headset;
-            this.iconButton1.IconColor = System.Drawing.Color.Black;
+            this.iconButton1.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(238)))), ((int)(((byte)(244)))));
             this.iconButton1.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconButton1.IconSize = 40;
             this.iconButton1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -63,11 +66,11 @@
             this.iconButton1.TabIndex = 0;
             this.iconButton1.Text = "Chat with an Agent";
             this.iconButton1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.iconButton1.UseVisualStyleBackColor = true;
+            this.iconButton1.UseVisualStyleBackColor = false;
             // 
             // downBar
             // 
-            this.downBar.BackColor = System.Drawing.Color.OliveDrab;
+            this.downBar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(124)))), ((int)(((byte)(177)))));
             this.downBar.Controls.Add(this.inputChatTextBox);
             this.downBar.Controls.Add(this.sentMessagePictureBox);
             this.downBar.Dock = System.Windows.Forms.DockStyle.Bottom;
@@ -78,24 +81,24 @@
             // 
             // inputChatTextBox
             // 
-            this.inputChatTextBox.BackColor = System.Drawing.Color.OliveDrab;
+            this.inputChatTextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(124)))), ((int)(((byte)(177)))));
             this.inputChatTextBox.Location = new System.Drawing.Point(12, 6);
             this.inputChatTextBox.MaxLegthSize = 15;
             this.inputChatTextBox.Name = "inputChatTextBox";
             this.inputChatTextBox.Radius = 20;
             this.inputChatTextBox.RichTextBoxLocation = new System.Drawing.Point(20, 6);
             this.inputChatTextBox.RichTextBoxSize = new System.Drawing.Size(200, 30);
-            this.inputChatTextBox.ShadeColor = System.Drawing.Color.Silver;
+            this.inputChatTextBox.ShadeColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(245)))), ((int)(((byte)(250)))));
             this.inputChatTextBox.Size = new System.Drawing.Size(300, 40);
             this.inputChatTextBox.TabIndex = 0;
             // 
             // sentMessagePictureBox
             // 
-            this.sentMessagePictureBox.BackColor = System.Drawing.Color.OliveDrab;
+            this.sentMessagePictureBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(124)))), ((int)(((byte)(177)))));
             this.sentMessagePictureBox.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.sentMessagePictureBox.ForeColor = System.Drawing.Color.Crimson;
+            this.sentMessagePictureBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(238)))), ((int)(((byte)(244)))));
             this.sentMessagePictureBox.IconChar = FontAwesome.Sharp.IconChar.PaperPlane;
-            this.sentMessagePictureBox.IconColor = System.Drawing.Color.Crimson;
+            this.sentMessagePictureBox.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(238)))), ((int)(((byte)(244)))));
             this.sentMessagePictureBox.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.sentMessagePictureBox.IconSize = 31;
             this.sentMessagePictureBox.Location = new System.Drawing.Point(330, 11);
@@ -108,7 +111,7 @@
             // chatPanel
             // 
             this.chatPanel.AutoScroll = true;
-            this.chatPanel.BackColor = System.Drawing.SystemColors.ButtonShadow;
+            this.chatPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(129)))), ((int)(((byte)(164)))), ((int)(((byte)(205)))));
             this.chatPanel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.chatPanel.Location = new System.Drawing.Point(0, 66);
             this.chatPanel.Name = "chatPanel";
