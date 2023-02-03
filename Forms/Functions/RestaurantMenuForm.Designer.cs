@@ -1143,6 +1143,7 @@
             // 
             // menuLoadFormsPanel
             // 
+            this.menuLoadFormsPanel.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.menuLoadFormsPanel.Controls.Add(this.menuLabel);
             this.menuLoadFormsPanel.Controls.Add(this.total_richTextBox);
             this.menuLoadFormsPanel.Controls.Add(this.cartButton);

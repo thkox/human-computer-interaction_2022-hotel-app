@@ -84,7 +84,7 @@
             this.iconPictureBox1.IconChar = FontAwesome.Sharp.IconChar.CcVisa;
             this.iconPictureBox1.IconColor = System.Drawing.SystemColors.ControlText;
             this.iconPictureBox1.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconPictureBox1.IconSize = 80;
+            this.iconPictureBox1.IconSize = 69;
             this.iconPictureBox1.Location = new System.Drawing.Point(161, 33);
             this.iconPictureBox1.Name = "iconPictureBox1";
             this.iconPictureBox1.Size = new System.Drawing.Size(70, 69);
@@ -98,7 +98,7 @@
             this.mastercardPictureBox.IconChar = FontAwesome.Sharp.IconChar.CcMastercard;
             this.mastercardPictureBox.IconColor = System.Drawing.SystemColors.ControlText;
             this.mastercardPictureBox.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.mastercardPictureBox.IconSize = 80;
+            this.mastercardPictureBox.IconSize = 69;
             this.mastercardPictureBox.Location = new System.Drawing.Point(53, 33);
             this.mastercardPictureBox.Name = "mastercardPictureBox";
             this.mastercardPictureBox.Size = new System.Drawing.Size(70, 69);
