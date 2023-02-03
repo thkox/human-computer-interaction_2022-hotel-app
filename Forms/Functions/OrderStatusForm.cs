@@ -12,6 +12,7 @@ namespace hotel_app.Forms.Functions
 {
     public partial class OrderStatusForm : Form
     {
+        int steps = 1;
         public OrderStatusForm()
         {
             InitializeComponent();
@@ -19,7 +20,41 @@ namespace hotel_app.Forms.Functions
 
         private void OrderStatusForm_Load(object sender, EventArgs e)
         {
+            progressTimer.Start();
+        }
 
+        private void progressTimer_Tick(object sender, EventArgs e)
+        {
+            steps += 1;
+            if (steps == 2)
+            {
+                step2PictureBox.IconChar = FontAwesome.Sharp.IconChar.CheckCircle;
+                progressPictureBox.Size = new Size(130, 28);
+            }
+            else if (steps == 3)
+            {
+                step3PictureBox.IconChar = FontAwesome.Sharp.IconChar.CheckCircle;
+                progressPictureBox.Size = new Size(260, 28);
+            }
+            else if (steps == 4)
+            {
+                step4PictureBox.IconChar = FontAwesome.Sharp.IconChar.CheckCircle;
+                progressPictureBox.Size = new Size(390, 28);
+            }
+            else if (steps == 5)
+            {
+                step5PictureBox.IconChar = FontAwesome.Sharp.IconChar.CheckCircle;
+                progressPictureBox.Size = new Size(520, 28);
+            }
+            else if (steps == 6)
+            {
+                step6PictureBox.IconChar = FontAwesome.Sharp.IconChar.CheckCircle;
+                progressPictureBox.Size = new Size(650, 28);
+            }
+            else
+            {
+                progressTimer.Stop();
+            }
         }
     }
 }

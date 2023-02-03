@@ -59,7 +59,7 @@
             this.progressPictureBox.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.progressPictureBox.Location = new System.Drawing.Point(225, 490);
             this.progressPictureBox.Name = "progressPictureBox";
-            this.progressPictureBox.Size = new System.Drawing.Size(101, 28);
+            this.progressPictureBox.Size = new System.Drawing.Size(0, 28);
             this.progressPictureBox.TabIndex = 3;
             this.progressPictureBox.TabStop = false;
             // 
@@ -76,7 +76,7 @@
             // 
             this.step1PictureBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(144)))), ((int)(((byte)(191)))));
             this.step1PictureBox.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.step1PictureBox.IconChar = FontAwesome.Sharp.IconChar.Circle;
+            this.step1PictureBox.IconChar = FontAwesome.Sharp.IconChar.CheckCircle;
             this.step1PictureBox.IconColor = System.Drawing.SystemColors.ControlText;
             this.step1PictureBox.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.step1PictureBox.Location = new System.Drawing.Point(318, 119);
@@ -213,6 +213,7 @@
             // progressTimer
             // 
             this.progressTimer.Interval = 5000;
+            this.progressTimer.Tick += new System.EventHandler(this.progressTimer_Tick);
             // 
             // OrderStatusForm
             // 
