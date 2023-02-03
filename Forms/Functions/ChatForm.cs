@@ -139,7 +139,7 @@ namespace hotel_app.Forms.Functions
                 if (inputChatTextBox.Text != "I am ready")
                     foodList.Add(inputChatTextBox.Text);
                 else
-                    stateOfConversation = 5;
+                    AskForPayment();
             }
             else if (stateOfConversation == 111) // coffee menu order
             {
