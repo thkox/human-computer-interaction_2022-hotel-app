@@ -113,7 +113,7 @@
             this.total_richTextBox = new System.Windows.Forms.RichTextBox();
             this.menuLoadFormsPanel = new System.Windows.Forms.Panel();
             this.backPictureBox = new FontAwesome.Sharp.IconPictureBox();
-            this.chatButton = new FontAwesome.Sharp.IconButton();
+            this.iconButton1 = new FontAwesome.Sharp.IconButton();
             ((System.ComponentModel.ISupportInitialize)(this.cartButton)).BeginInit();
             this.menuTabControl.SuspendLayout();
             this.coffeeTabPage.SuspendLayout();
@@ -144,7 +144,7 @@
             this.menuLabel.AutoSize = true;
             this.menuLabel.Font = new System.Drawing.Font("Comic Sans MS", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.menuLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(241)))), ((int)(((byte)(246)))));
-            this.menuLabel.Location = new System.Drawing.Point(149, 51);
+            this.menuLabel.Location = new System.Drawing.Point(89, 50);
             this.menuLabel.Name = "menuLabel";
             this.menuLabel.Size = new System.Drawing.Size(140, 35);
             this.menuLabel.TabIndex = 5;
@@ -1114,11 +1114,12 @@
             // 
             // checkoutButton
             // 
+            this.checkoutButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(144)))), ((int)(((byte)(199)))));
             this.checkoutButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.checkoutButton.Font = new System.Drawing.Font("Comic Sans MS", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.checkoutButton.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.checkoutButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(241)))), ((int)(((byte)(246)))));
             this.checkoutButton.IconChar = FontAwesome.Sharp.IconChar.MoneyCheck;
-            this.checkoutButton.IconColor = System.Drawing.Color.Black;
+            this.checkoutButton.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(241)))), ((int)(((byte)(246)))));
             this.checkoutButton.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.checkoutButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.checkoutButton.Location = new System.Drawing.Point(761, 517);
@@ -1126,7 +1127,7 @@
             this.checkoutButton.Size = new System.Drawing.Size(225, 44);
             this.checkoutButton.TabIndex = 8;
             this.checkoutButton.Text = "Checkout";
-            this.checkoutButton.UseVisualStyleBackColor = true;
+            this.checkoutButton.UseVisualStyleBackColor = false;
             this.checkoutButton.Click += new System.EventHandler(this.checkoutButton_Click);
             // 
             // total_richTextBox
@@ -1145,7 +1146,7 @@
             // menuLoadFormsPanel
             // 
             this.menuLoadFormsPanel.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.menuLoadFormsPanel.Controls.Add(this.chatButton);
+            this.menuLoadFormsPanel.Controls.Add(this.iconButton1);
             this.menuLoadFormsPanel.Controls.Add(this.menuLabel);
             this.menuLoadFormsPanel.Controls.Add(this.total_richTextBox);
             this.menuLoadFormsPanel.Controls.Add(this.cartButton);
@@ -1173,28 +1174,22 @@
             this.backPictureBox.TabStop = false;
             this.backPictureBox.Click += new System.EventHandler(this.backPictureBox_Click);
             // 
-            // chatButton
+            // iconButton1
             // 
-            this.chatButton.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.chatButton.BackColor = System.Drawing.Color.Transparent;
-            this.chatButton.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.chatButton.FlatAppearance.BorderSize = 0;
-            this.chatButton.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(144)))), ((int)(((byte)(191)))));
-            this.chatButton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(144)))), ((int)(((byte)(191)))));
-            this.chatButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(144)))), ((int)(((byte)(191)))));
-            this.chatButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.chatButton.Font = new System.Drawing.Font("Comic Sans MS", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.chatButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(241)))), ((int)(((byte)(246)))));
-            this.chatButton.IconChar = FontAwesome.Sharp.IconChar.CommentsDollar;
-            this.chatButton.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(241)))), ((int)(((byte)(246)))));
-            this.chatButton.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.chatButton.Location = new System.Drawing.Point(798, 567);
-            this.chatButton.Name = "chatButton";
-            this.chatButton.Size = new System.Drawing.Size(150, 89);
-            this.chatButton.TabIndex = 18;
-            this.chatButton.Text = "Chat Order";
-            this.chatButton.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.chatButton.UseVisualStyleBackColor = false;
+            this.iconButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(144)))), ((int)(((byte)(199)))));
+            this.iconButton1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.iconButton1.Font = new System.Drawing.Font("Comic Sans MS", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.iconButton1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(241)))), ((int)(((byte)(246)))));
+            this.iconButton1.IconChar = FontAwesome.Sharp.IconChar.CommentsDollar;
+            this.iconButton1.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(241)))), ((int)(((byte)(246)))));
+            this.iconButton1.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconButton1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.iconButton1.Location = new System.Drawing.Point(761, 567);
+            this.iconButton1.Name = "iconButton1";
+            this.iconButton1.Size = new System.Drawing.Size(225, 59);
+            this.iconButton1.TabIndex = 19;
+            this.iconButton1.Text = "Chat Support";
+            this.iconButton1.UseVisualStyleBackColor = false;
             // 
             // RestaurantMenuForm
             // 
@@ -1312,6 +1307,6 @@
         private RichTextBox total_richTextBox;
         private Panel menuLoadFormsPanel;
         public FontAwesome.Sharp.IconPictureBox backPictureBox;
-        private FontAwesome.Sharp.IconButton chatButton;
+        private FontAwesome.Sharp.IconButton iconButton1;
     }
 }
