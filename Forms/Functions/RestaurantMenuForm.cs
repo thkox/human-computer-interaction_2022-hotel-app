@@ -234,10 +234,18 @@ namespace hotel_app.Forms.Functions
             {
                 if (menu_quantity_tags[i] > 0)
                 {
-                    //cart_richTextBox.Text = cart_richTextBox.Text + menu[i] + "\t\tx" + menu_quantity_tags[i] + "" + Environment.NewLine;
-                    int padding = 50;
-                    string menuString = menu[i].PadRight(padding - menu[i].Length) + "x" + menu_quantity_tags[i];
-                    cart_richTextBox.Text = cart_richTextBox.Text + menuString + Environment.NewLine;
+                    if (menu[i] == "Tricolore")
+                    {
+                        cart_richTextBox.Text = cart_richTextBox.Text + menu[i] + "\t\tx" + menu_quantity_tags[i] + "" + Environment.NewLine;
+                    }
+                    else if (menu[i].Length > 8)
+                    {
+                        cart_richTextBox.Text = cart_richTextBox.Text + menu[i] + "\tx" + menu_quantity_tags[i] + "" + Environment.NewLine;
+                    }
+                    else
+                    {
+                        cart_richTextBox.Text = cart_richTextBox.Text + menu[i] + "\t\tx" + menu_quantity_tags[i] + "" + Environment.NewLine;
+                    }
                 }
             }
         }
