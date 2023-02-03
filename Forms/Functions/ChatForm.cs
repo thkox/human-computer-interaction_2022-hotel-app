@@ -507,18 +507,18 @@ namespace hotel_app.Forms.Functions
 
             string message = "This is your final order:";
             Point bubbleLocation = new Point(70, height + 10);
-            Size bubbleSize = new Size(250, 40);
+            Size bubbleSize = new Size(200, 40);
             Point textBoxLoaction = new Point(10, 10);
-            Size textBoxSize = new Size(230, 20);
+            Size textBoxSize = new Size(180, 20);
             chatPanel.Controls.Add(SetResponseBubble(message, bubbleLocation, bubbleSize, textBoxLoaction, textBoxSize, Color.White));
             height += bubbleSize.Height + 3;
 
             foreach (string productWithValue in coffeesList)
             {
                 Point bubbleLocation1 = new Point(70, height + 10);
-                Size bubbleSize1 = new Size(250, 40);
+                Size bubbleSize1 = new Size(150, 40);
                 Point textBoxLoaction1 = new Point(10, 10);
-                Size textBoxSize1 = new Size(230, 20);
+                Size textBoxSize1 = new Size(130, 20);
                 chatPanel.Controls.Add(SetResponseBubble(productWithValue, bubbleLocation1, bubbleSize1, textBoxLoaction1, textBoxSize1, Color.White));
                 height += bubbleSize.Height + 3;
             }
@@ -526,9 +526,9 @@ namespace hotel_app.Forms.Functions
             foreach (string productWithValue in chocolateList)
             {
                 Point bubbleLocation1 = new Point(70, height + 10);
-                Size bubbleSize1 = new Size(250, 40);
+                Size bubbleSize1 = new Size(150, 40);
                 Point textBoxLoaction1 = new Point(10, 10);
-                Size textBoxSize1 = new Size(230, 20);
+                Size textBoxSize1 = new Size(130, 20);
                 chatPanel.Controls.Add(SetResponseBubble(productWithValue, bubbleLocation1, bubbleSize1, textBoxLoaction1, textBoxSize1, Color.White));
                 height += bubbleSize.Height + 3;
             }
@@ -536,9 +536,9 @@ namespace hotel_app.Forms.Functions
             foreach (string productWithValue in saladsList)
             {
                 Point bubbleLocation1 = new Point(70, height + 10);
-                Size bubbleSize1 = new Size(250, 40);
+                Size bubbleSize1 = new Size(150, 40);
                 Point textBoxLoaction1 = new Point(10, 10);
-                Size textBoxSize1 = new Size(230, 20);
+                Size textBoxSize1 = new Size(130, 20);
                 chatPanel.Controls.Add(SetResponseBubble(productWithValue, bubbleLocation1, bubbleSize1, textBoxLoaction1, textBoxSize1, Color.White));
                 height += bubbleSize.Height + 3;
             }
@@ -546,18 +546,18 @@ namespace hotel_app.Forms.Functions
             foreach (string productWithValue in foodList)
             {
                 Point bubbleLocation1 = new Point(70, height + 10);
-                Size bubbleSize1 = new Size(250, 40);
+                Size bubbleSize1 = new Size(150, 40);
                 Point textBoxLoaction1 = new Point(10, 10);
-                Size textBoxSize1 = new Size(230, 20);
+                Size textBoxSize1 = new Size(130, 20);
                 chatPanel.Controls.Add(SetResponseBubble(productWithValue, bubbleLocation1, bubbleSize1, textBoxLoaction1, textBoxSize1, Color.White));
                 height += bubbleSize.Height + 3;
             }
 
             string message2 = "I am transfering you to the payment page";
             Point bubbleLocation2 = new Point(70, height + 10);
-            Size bubbleSize2 = new Size(250, 40);
+            Size bubbleSize2 = new Size(280, 40);
             Point textBoxLoaction2 = new Point(10, 10);
-            Size textBoxSize2 = new Size(230, 20);
+            Size textBoxSize2 = new Size(260, 20);
             chatPanel.Controls.Add(SetResponseBubble(message2, bubbleLocation2, bubbleSize2, textBoxLoaction2, textBoxSize2, Color.White));
             height += bubbleSize.Height + 10;
 
