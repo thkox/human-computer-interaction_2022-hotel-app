@@ -18,9 +18,12 @@ namespace hotel_app.Forms.Functions
 
         private OrderStatusForm orderStatus = new OrderStatusForm();
 
+        bool allRichTextBoxesHaveText = true;
+
         public PaymentForm()
         {
             InitializeComponent();
+            errorLabel.Visible = false;
         }
 
         private void mastercardCheckBox_CheckedChanged(object sender, EventArgs e)
@@ -166,7 +169,43 @@ namespace hotel_app.Forms.Functions
 
         private void confirmationButton_Click(object sender, EventArgs e)
         {
-            OpenOrderStatusForm(orderStatus);
+            if (cardholderName_richTextBox.Texts == "Enter Cardholder name")
+            {
+                allRichTextBoxesHaveText = false;
+            }
+            else if (cardNumber_richTextBox.Texts == "Enter Card Number")
+            {
+                allRichTextBoxesHaveText = false;
+            }
+            else if (cvv_richTextBox.Texts == "CVV")
+            {
+                allRichTextBoxesHaveText = false;
+            }
+            else if (month_richTextBox.Texts == "MM")
+            {
+                allRichTextBoxesHaveText = false;
+            }
+            else if (year_richTextBox.Texts == "YYYY")
+            {
+                allRichTextBoxesHaveText = false;
+            }
+
+            if (allRichTextBoxesHaveText == true)
+            {
+                OpenOrderStatusForm(orderStatus);
+            }
+            else
+            {
+                errorLabel.Visible = true;
+                errorLabel.Text = "Please fill in all the fields";
+                allRichTextBoxesHaveText = true;
+            }
+
+        }
+
+        private void confirmationButton_Leave(object sender, EventArgs e)
+        {
+            errorLabel.Visible = false;
         }
     }
 }

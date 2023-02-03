@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.paymentPanel = new System.Windows.Forms.Panel();
+            this.errorLabel = new System.Windows.Forms.Label();
             this.confirmationButton = new hotel_app.Custom_Toolbox.ButtonCustom();
             this.cvv_richTextBox = new CustomControls.RichTextBox.RichTextBox();
             this.label1 = new System.Windows.Forms.Label();
@@ -53,6 +54,7 @@
             // paymentPanel
             // 
             this.paymentPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(129)))), ((int)(((byte)(164)))), ((int)(((byte)(205)))));
+            this.paymentPanel.Controls.Add(this.errorLabel);
             this.paymentPanel.Controls.Add(this.confirmationButton);
             this.paymentPanel.Controls.Add(this.cvv_richTextBox);
             this.paymentPanel.Controls.Add(this.label1);
@@ -72,6 +74,20 @@
             this.paymentPanel.Name = "paymentPanel";
             this.paymentPanel.Size = new System.Drawing.Size(466, 355);
             this.paymentPanel.TabIndex = 1;
+            // 
+            // errorLabel
+            // 
+            this.errorLabel.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.errorLabel.AutoSize = true;
+            this.errorLabel.Font = new System.Drawing.Font("Comic Sans MS", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.errorLabel.ForeColor = System.Drawing.Color.OrangeRed;
+            this.errorLabel.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.errorLabel.Location = new System.Drawing.Point(14, 307);
+            this.errorLabel.Name = "errorLabel";
+            this.errorLabel.Size = new System.Drawing.Size(109, 19);
+            this.errorLabel.TabIndex = 16;
+            this.errorLabel.Text = "[Error Message]";
+            this.errorLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // confirmationButton
             // 
@@ -93,6 +109,7 @@
             this.confirmationButton.TextColor = System.Drawing.Color.White;
             this.confirmationButton.UseVisualStyleBackColor = false;
             this.confirmationButton.Click += new System.EventHandler(this.confirmationButton_Click);
+            this.confirmationButton.Leave += new System.EventHandler(this.confirmationButton_Leave);
             // 
             // cvv_richTextBox
             // 
@@ -379,5 +396,6 @@
         private Label cardNumberLabel;
         public RichTextBox total_richTextBox;
         private Panel paymentLoadFormsPanel;
+        private Label errorLabel;
     }
 }
