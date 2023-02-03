@@ -23,6 +23,13 @@ namespace hotel_app.Custom_Toolbox
         private int _radius = 5;
         private Color _shadeColor = Color.White;
 
+        public bool TextMultiline
+        {
+            get => richTextBox1.Multiline;
+            set => richTextBox1.Multiline = value;
+        }
+
+
         public bool TextReadonly
         {
             get => richTextBox1.ReadOnly;
