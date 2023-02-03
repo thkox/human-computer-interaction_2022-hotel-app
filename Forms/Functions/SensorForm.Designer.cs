@@ -94,6 +94,7 @@
             this.statusRichTextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(144)))), ((int)(((byte)(191)))));
             this.statusRichTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.statusRichTextBox.Font = new System.Drawing.Font("Comic Sans MS", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.statusRichTextBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(241)))), ((int)(((byte)(246)))));
             this.statusRichTextBox.Location = new System.Drawing.Point(554, 163);
             this.statusRichTextBox.Name = "statusRichTextBox";
             this.statusRichTextBox.Size = new System.Drawing.Size(374, 179);

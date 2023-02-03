@@ -75,7 +75,7 @@
             this.changeParkingSlotButton.IconChar = FontAwesome.Sharp.IconChar.Parking;
             this.changeParkingSlotButton.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(241)))), ((int)(((byte)(246)))));
             this.changeParkingSlotButton.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.changeParkingSlotButton.Location = new System.Drawing.Point(331, 248);
+            this.changeParkingSlotButton.Location = new System.Drawing.Point(338, 248);
             this.changeParkingSlotButton.Name = "changeParkingSlotButton";
             this.changeParkingSlotButton.Size = new System.Drawing.Size(150, 131);
             this.changeParkingSlotButton.TabIndex = 1;
