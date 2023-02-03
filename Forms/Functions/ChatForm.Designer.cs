@@ -28,45 +28,30 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ChatForm));
             this.charBarPanel = new System.Windows.Forms.Panel();
-            this.iconButton1 = new FontAwesome.Sharp.IconButton();
             this.downBar = new System.Windows.Forms.Panel();
             this.inputChatTextBox = new hotel_app.Custom_Toolbox.ChatRichTextBox();
             this.sentMessagePictureBox = new FontAwesome.Sharp.IconPictureBox();
             this.chatPanel = new System.Windows.Forms.Panel();
+            this.iconPictureBox1 = new FontAwesome.Sharp.IconPictureBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.charBarPanel.SuspendLayout();
             this.downBar.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.sentMessagePictureBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // charBarPanel
             // 
             this.charBarPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(82)))), ((int)(((byte)(133)))));
-            this.charBarPanel.Controls.Add(this.iconButton1);
+            this.charBarPanel.Controls.Add(this.label1);
+            this.charBarPanel.Controls.Add(this.iconPictureBox1);
             this.charBarPanel.Dock = System.Windows.Forms.DockStyle.Top;
             this.charBarPanel.Location = new System.Drawing.Point(0, 0);
             this.charBarPanel.Name = "charBarPanel";
             this.charBarPanel.Size = new System.Drawing.Size(400, 60);
             this.charBarPanel.TabIndex = 0;
-            // 
-            // iconButton1
-            // 
-            this.iconButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(82)))), ((int)(((byte)(133)))));
-            this.iconButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconButton1.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.iconButton1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(238)))), ((int)(((byte)(244)))));
-            this.iconButton1.IconChar = FontAwesome.Sharp.IconChar.Headset;
-            this.iconButton1.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(238)))), ((int)(((byte)(244)))));
-            this.iconButton1.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton1.IconSize = 40;
-            this.iconButton1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButton1.Location = new System.Drawing.Point(63, 12);
-            this.iconButton1.Name = "iconButton1";
-            this.iconButton1.Size = new System.Drawing.Size(260, 41);
-            this.iconButton1.TabIndex = 0;
-            this.iconButton1.Text = "Chat with an Employee";
-            this.iconButton1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.iconButton1.UseVisualStyleBackColor = false;
             // 
             // downBar
             // 
@@ -94,7 +79,6 @@
             this.inputChatTextBox.TabIndex = 0;
             this.inputChatTextBox.TextMultiline = false;
             this.inputChatTextBox.TextReadonly = false;
-            this.inputChatTextBox.MessageChanged += new System.EventHandler(this.inputChatTextBox_MessageChanged);
             // 
             // sentMessagePictureBox
             // 
@@ -122,6 +106,30 @@
             this.chatPanel.Size = new System.Drawing.Size(400, 490);
             this.chatPanel.TabIndex = 2;
             // 
+            // iconPictureBox1
+            // 
+            this.iconPictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(82)))), ((int)(((byte)(133)))));
+            this.iconPictureBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(238)))), ((int)(((byte)(244)))));
+            this.iconPictureBox1.IconChar = FontAwesome.Sharp.IconChar.Commenting;
+            this.iconPictureBox1.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(238)))), ((int)(((byte)(244)))));
+            this.iconPictureBox1.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconPictureBox1.Location = new System.Drawing.Point(263, 18);
+            this.iconPictureBox1.Name = "iconPictureBox1";
+            this.iconPictureBox1.Size = new System.Drawing.Size(32, 32);
+            this.iconPictureBox1.TabIndex = 1;
+            this.iconPictureBox1.TabStop = false;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Comic Sans MS", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(238)))), ((int)(((byte)(244)))));
+            this.label1.Location = new System.Drawing.Point(84, 18);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(173, 26);
+            this.label1.TabIndex = 2;
+            this.label1.Text = "Chat with an agent";
+            // 
             // ChatForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -130,12 +138,17 @@
             this.Controls.Add(this.chatPanel);
             this.Controls.Add(this.downBar);
             this.Controls.Add(this.charBarPanel);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "ChatForm";
-            this.Text = "ChatForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Chat Support";
             this.Load += new System.EventHandler(this.ChatForm_Load);
             this.charBarPanel.ResumeLayout(false);
+            this.charBarPanel.PerformLayout();
             this.downBar.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.sentMessagePictureBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -143,10 +156,11 @@
         #endregion
 
         private Panel charBarPanel;
-        private FontAwesome.Sharp.IconButton iconButton1;
         private Panel downBar;
         private FontAwesome.Sharp.IconPictureBox sentMessagePictureBox;
         private Panel chatPanel;
         private Custom_Toolbox.ChatRichTextBox inputChatTextBox;
+        private Label label1;
+        private FontAwesome.Sharp.IconPictureBox iconPictureBox1;
     }
 }

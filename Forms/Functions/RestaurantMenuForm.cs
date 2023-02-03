@@ -286,6 +286,11 @@ namespace hotel_app.Forms.Functions
             menuLoadFormsPanel = restaurantMenuTabs;
             backPictureBox.Hide();
         }
-        
+
+        private void chatButton_Click(object sender, EventArgs e)
+        {
+            ChatForm chatSupport = new ChatForm();
+            chatSupport.Show();
+        }
     }
 }
