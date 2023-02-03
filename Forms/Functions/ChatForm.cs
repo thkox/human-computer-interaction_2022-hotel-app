@@ -93,12 +93,8 @@ namespace hotel_app.Forms.Functions
             inputChatTextBox.Text = ""; // Clear the input text box
         }
 
-
-        List<string> coffeesList = new List<string>();
-        List<string> chocolateList = new List<string>();
-        List<string> saladsList = new List<string>();
-
         List<string> foodList = new List<string>();
+        
         private void TriggerResponse()
         {
             chatPanel.AutoScrollPosition = new Point(0, 0);
@@ -144,7 +140,7 @@ namespace hotel_app.Forms.Functions
             else if (stateOfConversation == 111) // coffee menu order
             {
                 if (inputChatTextBox.Text != "I am ready")
-                    coffeesList.Add(inputChatTextBox.Text);
+                    foodList.Add(inputChatTextBox.Text);
                 else
                 {
                     if (menusSelected.Count != 3)
@@ -159,7 +155,7 @@ namespace hotel_app.Forms.Functions
             else if (stateOfConversation == 112) // coffee menu order
             {
                 if (inputChatTextBox.Text != "I am ready")
-                    chocolateList.Add(inputChatTextBox.Text);
+                    foodList.Add(inputChatTextBox.Text);
                 else
                 {
                     if (menusSelected.Count != 3)
@@ -174,7 +170,7 @@ namespace hotel_app.Forms.Functions
             else if (stateOfConversation == 113) // coffee menu order
             {
                 if (inputChatTextBox.Text != "I am ready")
-                    saladsList.Add(inputChatTextBox.Text);
+                    foodList.Add(inputChatTextBox.Text);
                 else
                 {
                     if (menusSelected.Count != 3)
@@ -513,7 +509,7 @@ namespace hotel_app.Forms.Functions
             chatPanel.Controls.Add(SetResponseBubble(message, bubbleLocation, bubbleSize, textBoxLoaction, textBoxSize, Color.White));
             height += bubbleSize.Height + 3;
 
-            foreach (string productWithValue in coffeesList)
+            foreach (string productWithValue in foodList)
             {
                 Point bubbleLocation1 = new Point(70, height + 10);
                 Size bubbleSize1 = new Size(150, 40);
@@ -523,7 +519,7 @@ namespace hotel_app.Forms.Functions
                 height += bubbleSize.Height + 3;
             }
 
-            foreach (string productWithValue in chocolateList)
+            foreach (string productWithValue in foodList)
             {
                 Point bubbleLocation1 = new Point(70, height + 10);
                 Size bubbleSize1 = new Size(150, 40);
@@ -533,7 +529,7 @@ namespace hotel_app.Forms.Functions
                 height += bubbleSize.Height + 3;
             }
 
-            foreach (string productWithValue in saladsList)
+            foreach (string productWithValue in foodList)
             {
                 Point bubbleLocation1 = new Point(70, height + 10);
                 Size bubbleSize1 = new Size(150, 40);
