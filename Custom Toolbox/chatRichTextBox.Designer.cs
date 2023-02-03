@@ -50,8 +50,9 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.White;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(129)))), ((int)(((byte)(164)))), ((int)(((byte)(205)))));
             this.Controls.Add(this.richTextBox1);
+            this.ForeColor = System.Drawing.Color.White;
             this.Name = "ChatRichTextBox";
             this.Size = new System.Drawing.Size(181, 47);
             this.ResumeLayout(false);
