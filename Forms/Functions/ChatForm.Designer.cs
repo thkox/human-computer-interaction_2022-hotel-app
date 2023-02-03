@@ -46,7 +46,7 @@
             this.charBarPanel.Dock = System.Windows.Forms.DockStyle.Top;
             this.charBarPanel.Location = new System.Drawing.Point(0, 0);
             this.charBarPanel.Name = "charBarPanel";
-            this.charBarPanel.Size = new System.Drawing.Size(384, 60);
+            this.charBarPanel.Size = new System.Drawing.Size(400, 60);
             this.charBarPanel.TabIndex = 0;
             // 
             // iconButton1
@@ -74,9 +74,9 @@
             this.downBar.Controls.Add(this.inputChatTextBox);
             this.downBar.Controls.Add(this.sentMessagePictureBox);
             this.downBar.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.downBar.Location = new System.Drawing.Point(0, 511);
+            this.downBar.Location = new System.Drawing.Point(0, 550);
             this.downBar.Name = "downBar";
-            this.downBar.Size = new System.Drawing.Size(384, 50);
+            this.downBar.Size = new System.Drawing.Size(400, 50);
             this.downBar.TabIndex = 1;
             // 
             // inputChatTextBox
@@ -92,6 +92,7 @@
             this.inputChatTextBox.ShadeColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(245)))), ((int)(((byte)(250)))));
             this.inputChatTextBox.Size = new System.Drawing.Size(300, 40);
             this.inputChatTextBox.TabIndex = 0;
+            this.inputChatTextBox.MessageChanged += new System.EventHandler(this.inputChatTextBox_MessageChanged);
             // 
             // sentMessagePictureBox
             // 
@@ -116,14 +117,14 @@
             this.chatPanel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.chatPanel.Location = new System.Drawing.Point(0, 60);
             this.chatPanel.Name = "chatPanel";
-            this.chatPanel.Size = new System.Drawing.Size(384, 451);
+            this.chatPanel.Size = new System.Drawing.Size(400, 490);
             this.chatPanel.TabIndex = 2;
             // 
             // ChatForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(384, 561);
+            this.ClientSize = new System.Drawing.Size(400, 600);
             this.Controls.Add(this.chatPanel);
             this.Controls.Add(this.downBar);
             this.Controls.Add(this.charBarPanel);

@@ -5,6 +5,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Security.Policy;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -33,7 +34,7 @@ namespace hotel_app.Forms.Functions
             Size bubbleSize = new Size(250, 40);
             Point textBoxLoaction = new Point(10, 10);
             Size textBoxSize = new Size(200, 20);
-            chatPanel.Controls.Add(SetResponseBubble(message1, bubbleLocation, bubbleSize, textBoxLoaction, textBoxSize));
+            chatPanel.Controls.Add(SetResponseBubble(message1, bubbleLocation, bubbleSize, textBoxLoaction, textBoxSize, Color.White));
             height += bubbleSize.Height + 3;
 
             MainMenuMessage();
@@ -56,7 +57,7 @@ namespace hotel_app.Forms.Functions
             return ancientGod;
         }
 
-        private ChatRichTextBox SetResponseBubble(string message, Point bubbleLocation, Size bubbleSize, Point textBoxLocation, Size textBoxSize)
+        private ChatRichTextBox SetResponseBubble(string message, Point bubbleLocation, Size bubbleSize, Point textBoxLocation, Size textBoxSize, Color color)
         {
             ChatRichTextBox rtb = new();
             rtb.Location = bubbleLocation;
@@ -66,9 +67,10 @@ namespace hotel_app.Forms.Functions
             rtb.Text = message;
             rtb.BorderStyle = BorderStyle.None;
             rtb.Radius = 20;
+            rtb.TabIndex = tabIndex;
             //rtb.BackColor = Color.Black;
             //rtb.ForeColor = Color.White;
-            //rtb.ShadeColor = Color.White;
+            rtb.ShadeColor = color;
             tabIndex++;
             return rtb;
         }
@@ -80,8 +82,8 @@ namespace hotel_app.Forms.Functions
             Size bubbleSize = new Size(200, 40);
             Point textBoxLocation = new Point(10, 10);
             Size textBoxSize = new Size(100, 20);
-            chatPanel.Controls.Add(SetResponseBubble(inputChatTextBox.Text, bubbleLocation, bubbleSize, textBoxLocation, textBoxSize));
-            height += 50;
+            chatPanel.Controls.Add(SetResponseBubble(inputChatTextBox.Text, bubbleLocation, bubbleSize, textBoxLocation, textBoxSize, Color.FromArgb(197, 212, 230)));
+            height += bubbleSize.Height + 20;
             TriggerResponse();
             inputChatTextBox.Text = ""; // Clear the input text box
         }
@@ -99,7 +101,7 @@ namespace hotel_app.Forms.Functions
                 Size bubbleSize = new Size(160, 40);
                 Point textBoxLoaction = new Point(10, 10);
                 Size textBoxSize = new Size(130, 20);
-                chatPanel.Controls.Add(SetResponseBubble(message, bubbleLocation, bubbleSize, textBoxLoaction, textBoxSize));
+                chatPanel.Controls.Add(SetResponseBubble(message, bubbleLocation, bubbleSize, textBoxLoaction, textBoxSize, Color.White));
                 height += bubbleSize.Height + 3;
             }
             else
@@ -112,23 +114,24 @@ namespace hotel_app.Forms.Functions
                 Size bubbleSize = new Size(180, 40);
                 Point textBoxLoaction = new Point(10, 10);
                 Size textBoxSize = new Size(160, 20);
-                chatPanel.Controls.Add(SetResponseBubble(message, bubbleLocation, bubbleSize, textBoxLoaction, textBoxSize));
+                chatPanel.Controls.Add(SetResponseBubble(message, bubbleLocation, bubbleSize, textBoxLoaction, textBoxSize, Color.White));
                 height += bubbleSize.Height + 3;
                 MainMenuMessage();
             }
+            chatPanel.AutoScrollPosition = new Point(0, 0);
 
         }
 
         private void MainMenuMessage()
         {
             chatPanel.AutoScrollPosition = new Point(0, 0);
-            chatPanel.Clip = new Rectangle(0, 0, width, height);
+            
             string message = "What you would like to do?";
             Point bubbleLocation = new Point(70, height + 10);
             Size bubbleSize = new Size(190, 40);
             Point textBoxLoaction = new Point(10, 10);
             Size textBoxSize = new Size(170, 20);
-            chatPanel.Controls.Add(SetResponseBubble(message, bubbleLocation, bubbleSize, textBoxLoaction, textBoxSize));
+            chatPanel.Controls.Add(SetResponseBubble(message, bubbleLocation, bubbleSize, textBoxLoaction, textBoxSize, Color.White));
             height += bubbleSize.Height + 3;
 
             string message2 = "1. Order Food";
@@ -136,7 +139,7 @@ namespace hotel_app.Forms.Functions
             Size bubbleSize2 = new Size(160, 40);
             Point textBoxLoaction2 = new Point(10, 10);
             Size textBoxSize2 = new Size(130, 20);
-            chatPanel.Controls.Add(SetResponseBubble(message2, bubbleLocation2, bubbleSize2, textBoxLoaction2, textBoxSize2));
+            chatPanel.Controls.Add(SetResponseBubble(message2, bubbleLocation2, bubbleSize2, textBoxLoaction2, textBoxSize2, Color.White));
             height += bubbleSize2.Height + 3;
 
             string message3 = "2. Pay Bill";
@@ -144,9 +147,10 @@ namespace hotel_app.Forms.Functions
             Size bubbleSize3 = new Size(160, 40);
             Point textBoxLoaction3 = new Point(10, 10);
             Size textBoxSize3 = new Size(130, 20);
-            chatPanel.Controls.Add(SetResponseBubble(message3, bubbleLocation3, bubbleSize3, textBoxLoaction3, textBoxSize3));
+            chatPanel.Controls.Add(SetResponseBubble(message3, bubbleLocation3, bubbleSize3, textBoxLoaction3, textBoxSize3, Color.White));
             height += bubbleSize3.Height + 10;
             
+            chatPanel.AutoScrollPosition = new Point(0, height);
         }
 
         private void inputChatTextBox_MessageChanged(object sender, EventArgs e)
