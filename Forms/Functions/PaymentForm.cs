@@ -26,16 +26,6 @@ namespace hotel_app.Forms.Functions
             errorLabel.Visible = false;
         }
 
-        private void mastercardCheckBox_CheckedChanged(object sender, EventArgs e)
-        {
-            visaCheckBox.Checked = false;
-        }
-
-        private void visaCheckBox_CheckedChanged(object sender, EventArgs e)
-        {
-            mastercardCheckBox.Checked = false;
-        }
-
         private void cardNumber_richTextBox_KeyPress(object sender, KeyPressEventArgs e)
         {
             e.Handled = !char.IsDigit(e.KeyChar) && !char.IsControl(e.KeyChar);

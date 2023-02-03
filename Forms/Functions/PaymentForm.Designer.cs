@@ -29,6 +29,10 @@
         private void InitializeComponent()
         {
             this.paymentPanel = new System.Windows.Forms.Panel();
+            this.iconPictureBox1 = new FontAwesome.Sharp.IconPictureBox();
+            this.mastercardPictureBox = new FontAwesome.Sharp.IconPictureBox();
+            this.visaRadioButton = new hotel_app.Custom_Toolbox.RadioButtonCustom();
+            this.mastercardRadioButton = new hotel_app.Custom_Toolbox.RadioButtonCustom();
             this.errorLabel = new System.Windows.Forms.Label();
             this.confirmationButton = new hotel_app.Custom_Toolbox.ButtonCustom();
             this.cvv_richTextBox = new CustomControls.RichTextBox.RichTextBox();
@@ -40,20 +44,22 @@
             this.expirationDateLabel = new System.Windows.Forms.Label();
             this.cardholderName_richTextBox = new CustomControls.RichTextBox.RichTextBox();
             this.cardHolderNameLabel = new System.Windows.Forms.Label();
-            this.iconButton1 = new FontAwesome.Sharp.IconButton();
-            this.visaCheckBox = new System.Windows.Forms.CheckBox();
-            this.mastercardButton = new FontAwesome.Sharp.IconButton();
-            this.mastercardCheckBox = new System.Windows.Forms.CheckBox();
             this.paymentMethodLabel = new System.Windows.Forms.Label();
             this.total_richTextBox = new System.Windows.Forms.RichTextBox();
             this.paymentLoadFormsPanel = new System.Windows.Forms.Panel();
             this.paymentPanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.mastercardPictureBox)).BeginInit();
             this.paymentLoadFormsPanel.SuspendLayout();
             this.SuspendLayout();
             // 
             // paymentPanel
             // 
             this.paymentPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(129)))), ((int)(((byte)(164)))), ((int)(((byte)(205)))));
+            this.paymentPanel.Controls.Add(this.iconPictureBox1);
+            this.paymentPanel.Controls.Add(this.mastercardPictureBox);
+            this.paymentPanel.Controls.Add(this.visaRadioButton);
+            this.paymentPanel.Controls.Add(this.mastercardRadioButton);
             this.paymentPanel.Controls.Add(this.errorLabel);
             this.paymentPanel.Controls.Add(this.confirmationButton);
             this.paymentPanel.Controls.Add(this.cvv_richTextBox);
@@ -65,15 +71,65 @@
             this.paymentPanel.Controls.Add(this.expirationDateLabel);
             this.paymentPanel.Controls.Add(this.cardholderName_richTextBox);
             this.paymentPanel.Controls.Add(this.cardHolderNameLabel);
-            this.paymentPanel.Controls.Add(this.iconButton1);
-            this.paymentPanel.Controls.Add(this.visaCheckBox);
-            this.paymentPanel.Controls.Add(this.mastercardButton);
-            this.paymentPanel.Controls.Add(this.mastercardCheckBox);
             this.paymentPanel.Controls.Add(this.paymentMethodLabel);
             this.paymentPanel.Location = new System.Drawing.Point(293, 155);
             this.paymentPanel.Name = "paymentPanel";
             this.paymentPanel.Size = new System.Drawing.Size(466, 355);
             this.paymentPanel.TabIndex = 1;
+            // 
+            // iconPictureBox1
+            // 
+            this.iconPictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(129)))), ((int)(((byte)(164)))), ((int)(((byte)(205)))));
+            this.iconPictureBox1.ForeColor = System.Drawing.SystemColors.Highlight;
+            this.iconPictureBox1.IconChar = FontAwesome.Sharp.IconChar.CcVisa;
+            this.iconPictureBox1.IconColor = System.Drawing.SystemColors.Highlight;
+            this.iconPictureBox1.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconPictureBox1.IconSize = 80;
+            this.iconPictureBox1.Location = new System.Drawing.Point(161, 33);
+            this.iconPictureBox1.Name = "iconPictureBox1";
+            this.iconPictureBox1.Size = new System.Drawing.Size(70, 69);
+            this.iconPictureBox1.TabIndex = 17;
+            this.iconPictureBox1.TabStop = false;
+            // 
+            // mastercardPictureBox
+            // 
+            this.mastercardPictureBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(129)))), ((int)(((byte)(164)))), ((int)(((byte)(205)))));
+            this.mastercardPictureBox.ForeColor = System.Drawing.Color.DarkRed;
+            this.mastercardPictureBox.IconChar = FontAwesome.Sharp.IconChar.CcMastercard;
+            this.mastercardPictureBox.IconColor = System.Drawing.Color.DarkRed;
+            this.mastercardPictureBox.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.mastercardPictureBox.IconSize = 80;
+            this.mastercardPictureBox.Location = new System.Drawing.Point(53, 33);
+            this.mastercardPictureBox.Name = "mastercardPictureBox";
+            this.mastercardPictureBox.Size = new System.Drawing.Size(70, 69);
+            this.mastercardPictureBox.TabIndex = 17;
+            this.mastercardPictureBox.TabStop = false;
+            // 
+            // visaRadioButton
+            // 
+            this.visaRadioButton.AutoSize = true;
+            this.visaRadioButton.CheckedColor = System.Drawing.SystemColors.HotTrack;
+            this.visaRadioButton.Location = new System.Drawing.Point(139, 42);
+            this.visaRadioButton.MinimumSize = new System.Drawing.Size(0, 21);
+            this.visaRadioButton.Name = "visaRadioButton";
+            this.visaRadioButton.Size = new System.Drawing.Size(30, 21);
+            this.visaRadioButton.TabIndex = 18;
+            this.visaRadioButton.UnCheckedColor = System.Drawing.Color.Gray;
+            this.visaRadioButton.UseVisualStyleBackColor = true;
+            // 
+            // mastercardRadioButton
+            // 
+            this.mastercardRadioButton.AutoSize = true;
+            this.mastercardRadioButton.Checked = true;
+            this.mastercardRadioButton.CheckedColor = System.Drawing.SystemColors.HotTrack;
+            this.mastercardRadioButton.Location = new System.Drawing.Point(29, 42);
+            this.mastercardRadioButton.MinimumSize = new System.Drawing.Size(0, 21);
+            this.mastercardRadioButton.Name = "mastercardRadioButton";
+            this.mastercardRadioButton.Size = new System.Drawing.Size(30, 21);
+            this.mastercardRadioButton.TabIndex = 17;
+            this.mastercardRadioButton.TabStop = true;
+            this.mastercardRadioButton.UnCheckedColor = System.Drawing.Color.Gray;
+            this.mastercardRadioButton.UseVisualStyleBackColor = true;
             // 
             // errorLabel
             // 
@@ -274,58 +330,6 @@
             this.cardHolderNameLabel.TabIndex = 5;
             this.cardHolderNameLabel.Text = "Cardholder name";
             // 
-            // iconButton1
-            // 
-            this.iconButton1.FlatAppearance.BorderSize = 0;
-            this.iconButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconButton1.IconChar = FontAwesome.Sharp.IconChar.CcVisa;
-            this.iconButton1.IconColor = System.Drawing.Color.Black;
-            this.iconButton1.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton1.IconSize = 80;
-            this.iconButton1.Location = new System.Drawing.Point(160, 42);
-            this.iconButton1.Name = "iconButton1";
-            this.iconButton1.Size = new System.Drawing.Size(80, 54);
-            this.iconButton1.TabIndex = 4;
-            this.iconButton1.UseVisualStyleBackColor = true;
-            // 
-            // visaCheckBox
-            // 
-            this.visaCheckBox.AutoSize = true;
-            this.visaCheckBox.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.visaCheckBox.Location = new System.Drawing.Point(139, 42);
-            this.visaCheckBox.Name = "visaCheckBox";
-            this.visaCheckBox.Size = new System.Drawing.Size(15, 14);
-            this.visaCheckBox.TabIndex = 3;
-            this.visaCheckBox.UseVisualStyleBackColor = true;
-            this.visaCheckBox.CheckedChanged += new System.EventHandler(this.visaCheckBox_CheckedChanged);
-            // 
-            // mastercardButton
-            // 
-            this.mastercardButton.FlatAppearance.BorderSize = 0;
-            this.mastercardButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.mastercardButton.IconChar = FontAwesome.Sharp.IconChar.CcMastercard;
-            this.mastercardButton.IconColor = System.Drawing.Color.Black;
-            this.mastercardButton.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.mastercardButton.IconSize = 80;
-            this.mastercardButton.Location = new System.Drawing.Point(53, 42);
-            this.mastercardButton.Name = "mastercardButton";
-            this.mastercardButton.Size = new System.Drawing.Size(80, 54);
-            this.mastercardButton.TabIndex = 2;
-            this.mastercardButton.UseVisualStyleBackColor = true;
-            // 
-            // mastercardCheckBox
-            // 
-            this.mastercardCheckBox.AutoSize = true;
-            this.mastercardCheckBox.Checked = true;
-            this.mastercardCheckBox.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.mastercardCheckBox.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.mastercardCheckBox.Location = new System.Drawing.Point(32, 42);
-            this.mastercardCheckBox.Name = "mastercardCheckBox";
-            this.mastercardCheckBox.Size = new System.Drawing.Size(15, 14);
-            this.mastercardCheckBox.TabIndex = 1;
-            this.mastercardCheckBox.UseVisualStyleBackColor = true;
-            this.mastercardCheckBox.CheckedChanged += new System.EventHandler(this.mastercardCheckBox_CheckedChanged);
-            // 
             // paymentMethodLabel
             // 
             this.paymentMethodLabel.AutoSize = true;
@@ -372,6 +376,8 @@
             this.Load += new System.EventHandler(this.PaymentForm_Load);
             this.paymentPanel.ResumeLayout(false);
             this.paymentPanel.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.mastercardPictureBox)).EndInit();
             this.paymentLoadFormsPanel.ResumeLayout(false);
             this.ResumeLayout(false);
 
@@ -380,10 +386,6 @@
         #endregion
         private Panel paymentPanel;
         private Label paymentMethodLabel;
-        private FontAwesome.Sharp.IconButton mastercardButton;
-        private CheckBox mastercardCheckBox;
-        private FontAwesome.Sharp.IconButton iconButton1;
-        private CheckBox visaCheckBox;
         private Label cardHolderNameLabel;
         private CustomControls.RichTextBox.RichTextBox cardholderName_richTextBox;
         private CustomControls.RichTextBox.RichTextBox month_richTextBox;
@@ -397,5 +399,9 @@
         public RichTextBox total_richTextBox;
         private Panel paymentLoadFormsPanel;
         private Label errorLabel;
+        private Custom_Toolbox.RadioButtonCustom visaRadioButton;
+        private Custom_Toolbox.RadioButtonCustom mastercardRadioButton;
+        private FontAwesome.Sharp.IconPictureBox iconPictureBox1;
+        private FontAwesome.Sharp.IconPictureBox mastercardPictureBox;
     }
 }
