@@ -60,11 +60,11 @@
             this.iconButton1.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconButton1.IconSize = 40;
             this.iconButton1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButton1.Location = new System.Drawing.Point(77, 12);
+            this.iconButton1.Location = new System.Drawing.Point(63, 12);
             this.iconButton1.Name = "iconButton1";
-            this.iconButton1.Size = new System.Drawing.Size(223, 41);
+            this.iconButton1.Size = new System.Drawing.Size(260, 41);
             this.iconButton1.TabIndex = 0;
-            this.iconButton1.Text = "Chat with an Agent";
+            this.iconButton1.Text = "Chat with an Employee";
             this.iconButton1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.iconButton1.UseVisualStyleBackColor = false;
             // 
@@ -92,7 +92,6 @@
             this.inputChatTextBox.ShadeColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(245)))), ((int)(((byte)(250)))));
             this.inputChatTextBox.Size = new System.Drawing.Size(300, 40);
             this.inputChatTextBox.TabIndex = 0;
-            this.inputChatTextBox.MessageChanged += new System.EventHandler(this.inputChatTextBox_MessageChanged);
             // 
             // sentMessagePictureBox
             // 
