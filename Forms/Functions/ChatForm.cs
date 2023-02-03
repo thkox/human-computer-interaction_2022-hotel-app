@@ -114,16 +114,19 @@ namespace hotel_app.Forms.Functions
             else if (stateOfConversation == 11 && (inputChatTextBox.Text == "1" || inputChatTextBox.Text == "Coffee"))
             {
                 CoffeeMenu();
+                menusSelected.Add(1);
                 stateOfConversation = 111; //the user order coffee
             }
             else if (stateOfConversation == 11 && (inputChatTextBox.Text == "2" || inputChatTextBox.Text == "Chocolate"))
             {
                 ChocolateMenu();
+                menusSelected.Add(2);
                 stateOfConversation = 112; //the user order chocolate
             }
             else if (stateOfConversation == 11 && (inputChatTextBox.Text == "3" || inputChatTextBox.Text == "Salad"))
             {
                 SaladsMenu();
+                menusSelected.Add(3);
                 stateOfConversation = 113; //the user order chocolate
             }
             else if (stateOfConversation == 11)
@@ -249,7 +252,6 @@ namespace hotel_app.Forms.Functions
                 Size textBoxSize1 = new Size(100, 20);
                 chatPanel.Controls.Add(SetResponseBubble(message1, bubbleLocation1, bubbleSize1, textBoxLoaction1, textBoxSize1, Color.White));
                 height += bubbleSize.Height + 3;
-                menusSelected.Add(1);
             }
 
             if (!menusSelected.Contains(2))
@@ -261,7 +263,6 @@ namespace hotel_app.Forms.Functions
                 Size textBoxSize1 = new Size(100, 20);
                 chatPanel.Controls.Add(SetResponseBubble(message1, bubbleLocation1, bubbleSize1, textBoxLoaction1, textBoxSize1, Color.White));
                 height += bubbleSize.Height + 3;
-                menusSelected.Add(2);
             }
 
             if (!menusSelected.Contains(3))
@@ -273,7 +274,6 @@ namespace hotel_app.Forms.Functions
                 Size textBoxSize1 = new Size(100, 20);
                 chatPanel.Controls.Add(SetResponseBubble(message1, bubbleLocation1, bubbleSize1, textBoxLoaction1, textBoxSize1, Color.White));
                 height += bubbleSize.Height + 10;
-                menusSelected.Add(3);
             }
         }
 
