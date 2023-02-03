@@ -36,6 +36,12 @@ namespace hotel_app.Custom_Toolbox
             }
         }
 
+        public int MaxLegthSize
+        {
+            get => richTextBox1.MaxLength;
+            set => richTextBox1.MaxLength = value;
+        }
+
         public string Text
         {
             get => richTextBox1.Text;

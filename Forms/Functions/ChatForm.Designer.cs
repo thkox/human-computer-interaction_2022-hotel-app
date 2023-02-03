@@ -80,6 +80,7 @@
             // 
             this.inputChatTextBox.BackColor = System.Drawing.Color.OliveDrab;
             this.inputChatTextBox.Location = new System.Drawing.Point(12, 6);
+            this.inputChatTextBox.MaxLegthSize = 15;
             this.inputChatTextBox.Name = "inputChatTextBox";
             this.inputChatTextBox.Radius = 20;
             this.inputChatTextBox.RichTextBoxLocation = new System.Drawing.Point(20, 6);
