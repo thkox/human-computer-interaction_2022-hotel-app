@@ -38,6 +38,7 @@
             // 
             // gpsLoadFormsPanel
             // 
+            this.gpsLoadFormsPanel.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.gpsLoadFormsPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(144)))), ((int)(((byte)(191)))));
             this.gpsLoadFormsPanel.Controls.Add(this.availableFacilitiesButton);
             this.gpsLoadFormsPanel.Controls.Add(this.changeParkingSlotButton);

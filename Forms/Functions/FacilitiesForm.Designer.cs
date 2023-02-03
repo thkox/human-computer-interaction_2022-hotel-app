@@ -169,6 +169,7 @@ namespace hotel_app.Forms.Functions
             // 
             // panel1
             // 
+            this.panel1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(129)))), ((int)(((byte)(164)))), ((int)(((byte)(205)))));
             this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.golfPictureBox);
