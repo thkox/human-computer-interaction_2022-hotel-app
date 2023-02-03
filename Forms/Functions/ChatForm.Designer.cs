@@ -125,11 +125,12 @@
             // chatRichTextBox1
             // 
             this.chatRichTextBox1.BackColor = System.Drawing.Color.White;
-            this.chatRichTextBox1.Location = new System.Drawing.Point(140, 117);
+            this.chatRichTextBox1.Location = new System.Drawing.Point(97, 173);
             this.chatRichTextBox1.Name = "chatRichTextBox1";
-            this.chatRichTextBox1.Radius = 50;
+            this.chatRichTextBox1.Radius = 40;
+            this.chatRichTextBox1.RichTextBoxLocation = new System.Drawing.Point(10, 10);
             this.chatRichTextBox1.RichTextBoxSize = new System.Drawing.Size(172, 34);
-            this.chatRichTextBox1.ShadeColor = System.Drawing.Color.White;
+            this.chatRichTextBox1.ShadeColor = System.Drawing.Color.DarkGray;
             this.chatRichTextBox1.Size = new System.Drawing.Size(221, 76);
             this.chatRichTextBox1.TabIndex = 0;
             // 

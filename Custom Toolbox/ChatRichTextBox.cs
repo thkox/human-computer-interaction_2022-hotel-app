@@ -72,7 +72,9 @@ namespace hotel_app.Custom_Toolbox
                 Rectangle r = new Rectangle(0, 0, Width - 1, Height - 1);
                 g.FillPath(brush, GetRoundedRectangle(r, Radius));
             }
-
+            
+            richTextBox1.BackColor = ShadeColor;
+            
             using (Pen pen = new Pen(Color.Black))
             {
                 pen.Alignment = System.Drawing.Drawing2D.PenAlignment.Inset;

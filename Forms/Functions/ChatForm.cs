@@ -56,7 +56,7 @@ namespace hotel_app.Forms.Functions
             rtb.Text = message;
             rtb.BorderStyle = BorderStyle.None;
             rtb.Radius = 20;
-            //rtb.BackColor = Color.FromArgb(255, 255, 255);
+            rtb.BackColor = Color.Black;
             //rtb.ForeColor = Color.White;
             //rtb.ShadeColor = Color.White;
             tabIndex++;
