@@ -286,6 +286,6 @@ namespace hotel_app.Forms.Functions
             menuLoadFormsPanel = restaurantMenuTabs;
             backPictureBox.Hide();
         }
-        //make my code sorter
+        
     }
 }

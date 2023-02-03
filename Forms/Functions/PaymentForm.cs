@@ -12,6 +12,12 @@ namespace hotel_app.Forms.Functions
 {
     public partial class PaymentForm : Form
     {
+        private Panel paymentMenuTabs;
+
+        private Form currentChildForm;
+
+        private OrderStatusForm orderStatus = new OrderStatusForm();
+
         public PaymentForm()
         {
             InitializeComponent();
@@ -50,11 +56,6 @@ namespace hotel_app.Forms.Functions
         private void cvv_richTextBox_KeyPress(object sender, KeyPressEventArgs e)
         {
             e.Handled = !char.IsDigit(e.KeyChar) && !char.IsControl(e.KeyChar);
-        }
-
-        private void buttonCustom1_Click(object sender, EventArgs e)
-        {
-            //Show message after confirmation
         }
 
         private void month_richTextBox_Enter(object sender, EventArgs e)
@@ -145,6 +146,27 @@ namespace hotel_app.Forms.Functions
                 cardNumber_richTextBox.Texts = "Enter Card Number";
                 cardNumber_richTextBox.ForeColor = Color.Gray;
             }
+        }
+
+        private void OpenOrderStatusForm(Form childForm)
+        {
+            currentChildForm = childForm;
+            childForm.TopLevel = false;
+            childForm.FormBorderStyle = FormBorderStyle.None;
+            childForm.Dock = DockStyle.Fill;
+            paymentLoadFormsPanel.Controls.Add(childForm);
+            paymentLoadFormsPanel.Tag = childForm;
+            childForm.BringToFront();
+            childForm.Show();
+        }
+        private void PaymentForm_Load(object sender, EventArgs e)
+        {
+            paymentMenuTabs = paymentLoadFormsPanel;
+        }
+
+        private void confirmationButton_Click(object sender, EventArgs e)
+        {
+            OpenOrderStatusForm(orderStatus);
         }
     }
 }

@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.paymentPanel = new System.Windows.Forms.Panel();
-            this.buttonCustom1 = new hotel_app.Custom_Toolbox.ButtonCustom();
+            this.confirmationButton = new hotel_app.Custom_Toolbox.ButtonCustom();
             this.cvv_richTextBox = new CustomControls.RichTextBox.RichTextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.cardNumber_richTextBox = new CustomControls.RichTextBox.RichTextBox();
@@ -45,13 +45,15 @@
             this.mastercardCheckBox = new System.Windows.Forms.CheckBox();
             this.paymentMethodLabel = new System.Windows.Forms.Label();
             this.total_richTextBox = new System.Windows.Forms.RichTextBox();
+            this.paymentLoadFormsPanel = new System.Windows.Forms.Panel();
             this.paymentPanel.SuspendLayout();
+            this.paymentLoadFormsPanel.SuspendLayout();
             this.SuspendLayout();
             // 
             // paymentPanel
             // 
             this.paymentPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(129)))), ((int)(((byte)(164)))), ((int)(((byte)(205)))));
-            this.paymentPanel.Controls.Add(this.buttonCustom1);
+            this.paymentPanel.Controls.Add(this.confirmationButton);
             this.paymentPanel.Controls.Add(this.cvv_richTextBox);
             this.paymentPanel.Controls.Add(this.label1);
             this.paymentPanel.Controls.Add(this.cardNumber_richTextBox);
@@ -66,31 +68,31 @@
             this.paymentPanel.Controls.Add(this.mastercardButton);
             this.paymentPanel.Controls.Add(this.mastercardCheckBox);
             this.paymentPanel.Controls.Add(this.paymentMethodLabel);
-            this.paymentPanel.Location = new System.Drawing.Point(307, 133);
+            this.paymentPanel.Location = new System.Drawing.Point(293, 155);
             this.paymentPanel.Name = "paymentPanel";
             this.paymentPanel.Size = new System.Drawing.Size(466, 355);
             this.paymentPanel.TabIndex = 1;
             // 
-            // buttonCustom1
+            // confirmationButton
             // 
-            this.buttonCustom1.BackColor = System.Drawing.Color.Teal;
-            this.buttonCustom1.BackgroundColor = System.Drawing.Color.Teal;
-            this.buttonCustom1.BorderColor = System.Drawing.Color.Blue;
-            this.buttonCustom1.BorderRadius = 40;
-            this.buttonCustom1.BorderSize = 0;
-            this.buttonCustom1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.buttonCustom1.FlatAppearance.BorderSize = 0;
-            this.buttonCustom1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonCustom1.Font = new System.Drawing.Font("Comic Sans MS", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.buttonCustom1.ForeColor = System.Drawing.Color.White;
-            this.buttonCustom1.Location = new System.Drawing.Point(303, 294);
-            this.buttonCustom1.Name = "buttonCustom1";
-            this.buttonCustom1.Size = new System.Drawing.Size(150, 40);
-            this.buttonCustom1.TabIndex = 15;
-            this.buttonCustom1.Text = "Confirmation";
-            this.buttonCustom1.TextColor = System.Drawing.Color.White;
-            this.buttonCustom1.UseVisualStyleBackColor = false;
-            this.buttonCustom1.Click += new System.EventHandler(this.buttonCustom1_Click);
+            this.confirmationButton.BackColor = System.Drawing.Color.Teal;
+            this.confirmationButton.BackgroundColor = System.Drawing.Color.Teal;
+            this.confirmationButton.BorderColor = System.Drawing.Color.Blue;
+            this.confirmationButton.BorderRadius = 40;
+            this.confirmationButton.BorderSize = 0;
+            this.confirmationButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.confirmationButton.FlatAppearance.BorderSize = 0;
+            this.confirmationButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.confirmationButton.Font = new System.Drawing.Font("Comic Sans MS", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.confirmationButton.ForeColor = System.Drawing.Color.White;
+            this.confirmationButton.Location = new System.Drawing.Point(303, 294);
+            this.confirmationButton.Name = "confirmationButton";
+            this.confirmationButton.Size = new System.Drawing.Size(150, 40);
+            this.confirmationButton.TabIndex = 15;
+            this.confirmationButton.Text = "Confirmation";
+            this.confirmationButton.TextColor = System.Drawing.Color.White;
+            this.confirmationButton.UseVisualStyleBackColor = false;
+            this.confirmationButton.Click += new System.EventHandler(this.confirmationButton_Click);
             // 
             // cvv_richTextBox
             // 
@@ -325,12 +327,21 @@
             this.total_richTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.total_richTextBox.Font = new System.Drawing.Font("Comic Sans MS", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.total_richTextBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(241)))), ((int)(((byte)(246)))));
-            this.total_richTextBox.Location = new System.Drawing.Point(664, 82);
+            this.total_richTextBox.Location = new System.Drawing.Point(650, 104);
             this.total_richTextBox.Name = "total_richTextBox";
             this.total_richTextBox.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.total_richTextBox.Size = new System.Drawing.Size(109, 45);
             this.total_richTextBox.TabIndex = 16;
             this.total_richTextBox.Text = "[Total]";
+            // 
+            // paymentLoadFormsPanel
+            // 
+            this.paymentLoadFormsPanel.Controls.Add(this.total_richTextBox);
+            this.paymentLoadFormsPanel.Controls.Add(this.paymentPanel);
+            this.paymentLoadFormsPanel.Location = new System.Drawing.Point(4, -3);
+            this.paymentLoadFormsPanel.Name = "paymentLoadFormsPanel";
+            this.paymentLoadFormsPanel.Size = new System.Drawing.Size(1079, 672);
+            this.paymentLoadFormsPanel.TabIndex = 17;
             // 
             // PaymentForm
             // 
@@ -338,12 +349,13 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(144)))), ((int)(((byte)(191)))));
             this.ClientSize = new System.Drawing.Size(1084, 661);
-            this.Controls.Add(this.total_richTextBox);
-            this.Controls.Add(this.paymentPanel);
+            this.Controls.Add(this.paymentLoadFormsPanel);
             this.Name = "PaymentForm";
             this.Text = "PaymentForm";
+            this.Load += new System.EventHandler(this.PaymentForm_Load);
             this.paymentPanel.ResumeLayout(false);
             this.paymentPanel.PerformLayout();
+            this.paymentLoadFormsPanel.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -360,11 +372,12 @@
         private CustomControls.RichTextBox.RichTextBox month_richTextBox;
         private Label expirationDateLabel;
         private CustomControls.RichTextBox.RichTextBox year_richTextBox;
-        private Custom_Toolbox.ButtonCustom buttonCustom1;
+        private Custom_Toolbox.ButtonCustom confirmationButton;
         private CustomControls.RichTextBox.RichTextBox cvv_richTextBox;
         private Label label1;
         private CustomControls.RichTextBox.RichTextBox cardNumber_richTextBox;
         private Label cardNumberLabel;
         public RichTextBox total_richTextBox;
+        private Panel paymentLoadFormsPanel;
     }
 }
