@@ -150,18 +150,55 @@ namespace hotel_app.Forms.Functions
             height += bubbleSize3.Height + 10;
         }
 
+        List<int> menusSelected = new List<int>();
         private void OrderMenu()
         {
             Point location2 = new Point(10, height);
             chatPanel.Controls.Add(SetEmployeeIcon(location2));
 
-            string message = "What would you like to order?";
+            string message = "Type the menu that you want to see:";
             Point bubbleLocation = new Point(70, height + 10);
-            Size bubbleSize = new Size(220, 40);
+            Size bubbleSize = new Size(250, 40);
             Point textBoxLoaction = new Point(10, 10);
-            Size textBoxSize = new Size(200, 20);
+            Size textBoxSize = new Size(230, 20);
             chatPanel.Controls.Add(SetResponseBubble(message, bubbleLocation, bubbleSize, textBoxLoaction, textBoxSize, Color.White));
             height += bubbleSize.Height + 3;
+
+            if(!menusSelected.Contains(1))
+            {
+                string message1 = "1. Coffee:";
+                Point bubbleLocation1 = new Point(70, height + 10);
+                Size bubbleSize1 = new Size(120, 40);
+                Point textBoxLoaction1 = new Point(10, 10);
+                Size textBoxSize1 = new Size(100, 20);
+                chatPanel.Controls.Add(SetResponseBubble(message1, bubbleLocation1, bubbleSize1, textBoxLoaction1, textBoxSize1, Color.White));
+                height += bubbleSize.Height + 3;
+                menusSelected.Add(1);
+            }
+
+            if (!menusSelected.Contains(2))
+            {
+                string message1 = "2. Chocolates:";
+                Point bubbleLocation1 = new Point(70, height + 10);
+                Size bubbleSize1 = new Size(120, 40);
+                Point textBoxLoaction1 = new Point(10, 10);
+                Size textBoxSize1 = new Size(100, 20);
+                chatPanel.Controls.Add(SetResponseBubble(message1, bubbleLocation1, bubbleSize1, textBoxLoaction1, textBoxSize1, Color.White));
+                height += bubbleSize.Height + 3;
+                menusSelected.Add(1);
+            }
+
+            if (!menusSelected.Contains(3))
+            {
+                string message1 = "3. Salads:";
+                Point bubbleLocation1 = new Point(70, height + 10);
+                Size bubbleSize1 = new Size(120, 40);
+                Point textBoxLoaction1 = new Point(10, 10);
+                Size textBoxSize1 = new Size(100, 20);
+                chatPanel.Controls.Add(SetResponseBubble(message1, bubbleLocation1, bubbleSize1, textBoxLoaction1, textBoxSize1, Color.White));
+                height += bubbleSize.Height + 3;
+                menusSelected.Add(1);
+            }
         }
 
         private void inputChatTextBox_MessageChanged(object sender, EventArgs e)
