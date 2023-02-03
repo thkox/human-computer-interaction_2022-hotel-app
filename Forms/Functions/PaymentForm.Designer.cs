@@ -366,9 +366,9 @@
             // 
             this.paymentLoadFormsPanel.Controls.Add(this.total_richTextBox);
             this.paymentLoadFormsPanel.Controls.Add(this.paymentPanel);
-            this.paymentLoadFormsPanel.Location = new System.Drawing.Point(4, -3);
+            this.paymentLoadFormsPanel.Location = new System.Drawing.Point(1, -3);
             this.paymentLoadFormsPanel.Name = "paymentLoadFormsPanel";
-            this.paymentLoadFormsPanel.Size = new System.Drawing.Size(1079, 672);
+            this.paymentLoadFormsPanel.Size = new System.Drawing.Size(1082, 672);
             this.paymentLoadFormsPanel.TabIndex = 17;
             // 
             // PaymentForm
