@@ -32,7 +32,7 @@ namespace hotel_app.Forms.Functions
 
             string message1 = "Welcome to Zeus Hotel Palace!";
             Point bubbleLocation = new Point(70, height + 10);
-            Size bubbleSize = new Size(250, 40);
+            Size bubbleSize = new Size(220, 40);
             Point textBoxLoaction = new Point(10, 10);
             Size textBoxSize = new Size(200, 20);
             chatPanel.Controls.Add(SetResponseBubble(message1, bubbleLocation, bubbleSize, textBoxLoaction, textBoxSize, Color.White));
@@ -126,6 +126,10 @@ namespace hotel_app.Forms.Functions
                 SaladsMenu();
                 stateOfConversation = 113; //the user order chocolate
             }
+            else if (stateOfConversation == 11)
+            {
+                OrderMenu();
+            }
             else if (stateOfConversation == 12) // coffee menu order
             {
                 if (inputChatTextBox.Text != "I am ready")
@@ -197,11 +201,11 @@ namespace hotel_app.Forms.Functions
 
         private void MainMenuMessage()
         {
-            string message = "How can I assist you today?";
+            string message = "How can i help you today?";
             Point bubbleLocation = new Point(70, height + 10);
-            Size bubbleSize = new Size(220, 40);
+            Size bubbleSize = new Size(200, 40);
             Point textBoxLoaction = new Point(10, 10);
-            Size textBoxSize = new Size(200, 20);
+            Size textBoxSize = new Size(180, 20);
             chatPanel.Controls.Add(SetResponseBubble(message, bubbleLocation, bubbleSize, textBoxLoaction, textBoxSize, Color.White));
             height += bubbleSize.Height + 3;
 
