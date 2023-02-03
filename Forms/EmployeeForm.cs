@@ -416,14 +416,12 @@ namespace hotel_app.Forms
 
         private void EmployeeForm_FormClosed(object sender, FormClosedEventArgs e)
         {
-            Application.Exit();
+            this.Hide();
         }
 
         private void logoutButton_Click(object sender, EventArgs e)
         {
             this.Hide();
-            Form signinForm = new SignInForm();
-            signinForm.Show();
         }
 
         private void registerButton_Click(object sender, EventArgs e)

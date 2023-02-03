@@ -122,7 +122,7 @@ namespace hotel_app.Forms
         }
         private void Client2Form_FormClosed(object sender, FormClosedEventArgs e)
         {
-            Application.Exit();
+            this.Hide();
         }
         private void poolButton_Click(object sender, EventArgs e)
         {
@@ -153,8 +153,6 @@ namespace hotel_app.Forms
         private void logoutButton_Click(object sender, EventArgs e)
         {
             this.Hide();
-            Form signinForm = new SignInForm();
-            signinForm.Show();
         }
     }
 }

@@ -110,13 +110,12 @@ namespace hotel_app.Forms
         }
         private void pictureBox1_Click(object sender, EventArgs e)
         {
-
             currentChildForm?.Hide();
             Reset();
         }
         private void Client1Form_FormClosed(object sender, FormClosedEventArgs e)
         {
-            Application.Exit();
+            this.Hide();
         }
         private void privateThermostatButton_Click(object sender, EventArgs e)
         {
@@ -152,8 +151,6 @@ namespace hotel_app.Forms
         private void logoutButton_Click(object sender, EventArgs e)
         {
             this.Hide();
-            Form signinForm = new SignInForm();
-            signinForm.Show();
         }
     }
 }
