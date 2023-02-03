@@ -125,7 +125,7 @@ namespace hotel_app.Forms.Functions
             Point textBoxLoaction = new Point(10, 10);
             Size textBoxSize = new Size(170, 20);
             chatPanel.Controls.Add(SetResponseBubble(message, bubbleLocation, bubbleSize, textBoxLoaction, textBoxSize));
-            height += bubbleSize.Height + 3;
+            //height += chatPanel.AutoScrollPosition.Y + bubbleSize.Height + 3;
 
             string message2 = "1. Order Food";
             Point bubbleLocation2 = new Point(70, height + 10);
