@@ -27,6 +27,7 @@ namespace hotel_app.Forms
         private readonly RadioForm radio = new();
         private readonly GPSMenuForm gps = new();
         private readonly MainDoorForm door = new();
+        private readonly RestaurantMenuForm restaurant = new();
 
         public Client1Form()
         {
@@ -151,6 +152,12 @@ namespace hotel_app.Forms
         private void logoutButton_Click(object sender, EventArgs e)
         {
             this.Hide();
+        }
+
+        private void foodButton_Click(object sender, EventArgs e)
+        {
+            ActivateButton(sender);
+            OpenChildForm(restaurant);
         }
     }
 }

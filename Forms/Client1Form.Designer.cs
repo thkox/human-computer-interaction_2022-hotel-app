@@ -32,6 +32,7 @@ namespace hotel_app.Forms
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Client1Form));
             this.menuPanel = new System.Windows.Forms.Panel();
+            this.foodButton = new FontAwesome.Sharp.IconButton();
             this.gpsButton = new FontAwesome.Sharp.IconButton();
             this.mainDoorButton = new FontAwesome.Sharp.IconButton();
             this.radioButton = new FontAwesome.Sharp.IconButton();
@@ -62,6 +63,7 @@ namespace hotel_app.Forms
             // menuPanel
             // 
             this.menuPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(99)))), ((int)(((byte)(161)))));
+            this.menuPanel.Controls.Add(this.foodButton);
             this.menuPanel.Controls.Add(this.gpsButton);
             this.menuPanel.Controls.Add(this.mainDoorButton);
             this.menuPanel.Controls.Add(this.radioButton);
@@ -75,6 +77,29 @@ namespace hotel_app.Forms
             this.menuPanel.Name = "menuPanel";
             this.menuPanel.Size = new System.Drawing.Size(300, 800);
             this.menuPanel.TabIndex = 0;
+            // 
+            // foodButton
+            // 
+            this.foodButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.foodButton.Dock = System.Windows.Forms.DockStyle.Top;
+            this.foodButton.FlatAppearance.BorderSize = 0;
+            this.foodButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.foodButton.Font = new System.Drawing.Font("Cooper Black", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.foodButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(228)))), ((int)(((byte)(238)))));
+            this.foodButton.IconChar = FontAwesome.Sharp.IconChar.Cutlery;
+            this.foodButton.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(228)))), ((int)(((byte)(238)))));
+            this.foodButton.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.foodButton.IconSize = 50;
+            this.foodButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.foodButton.Location = new System.Drawing.Point(0, 620);
+            this.foodButton.Name = "foodButton";
+            this.foodButton.Size = new System.Drawing.Size(300, 70);
+            this.foodButton.TabIndex = 14;
+            this.foodButton.Text = "Restaurant";
+            this.foodButton.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.foodButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.foodButton.UseVisualStyleBackColor = true;
+            this.foodButton.Click += new System.EventHandler(this.foodButton_Click);
             // 
             // gpsButton
             // 
@@ -415,5 +440,6 @@ namespace hotel_app.Forms
         public Panel panel1;
         public Panel childFormPanel;
         public FontAwesome.Sharp.IconButton gpsButton;
+        public FontAwesome.Sharp.IconButton foodButton;
     }
 }
