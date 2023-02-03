@@ -32,13 +32,11 @@
             this.iconButton1 = new FontAwesome.Sharp.IconButton();
             this.downBar = new System.Windows.Forms.Panel();
             this.sentMessagePictureBox = new FontAwesome.Sharp.IconPictureBox();
-            this.inputRichTextBox = new CustomControls.RichTextBox.RichTextBox();
             this.chatPanel = new System.Windows.Forms.Panel();
             this.chatRichTextBox1 = new hotel_app.Custom_Toolbox.ChatRichTextBox();
             this.charBarPanel.SuspendLayout();
             this.downBar.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.sentMessagePictureBox)).BeginInit();
-            this.chatPanel.SuspendLayout();
             this.SuspendLayout();
             // 
             // charBarPanel
@@ -69,12 +67,12 @@
             // downBar
             // 
             this.downBar.BackColor = System.Drawing.Color.OliveDrab;
+            this.downBar.Controls.Add(this.chatRichTextBox1);
             this.downBar.Controls.Add(this.sentMessagePictureBox);
-            this.downBar.Controls.Add(this.inputRichTextBox);
             this.downBar.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.downBar.Location = new System.Drawing.Point(0, 520);
+            this.downBar.Location = new System.Drawing.Point(0, 507);
             this.downBar.Name = "downBar";
-            this.downBar.Size = new System.Drawing.Size(384, 41);
+            this.downBar.Size = new System.Drawing.Size(384, 54);
             this.downBar.TabIndex = 1;
             // 
             // sentMessagePictureBox
@@ -86,52 +84,32 @@
             this.sentMessagePictureBox.IconColor = System.Drawing.Color.Crimson;
             this.sentMessagePictureBox.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.sentMessagePictureBox.IconSize = 31;
-            this.sentMessagePictureBox.Location = new System.Drawing.Point(340, 6);
+            this.sentMessagePictureBox.Location = new System.Drawing.Point(330, 11);
             this.sentMessagePictureBox.Name = "sentMessagePictureBox";
             this.sentMessagePictureBox.Size = new System.Drawing.Size(32, 31);
             this.sentMessagePictureBox.TabIndex = 1;
             this.sentMessagePictureBox.TabStop = false;
             this.sentMessagePictureBox.Click += new System.EventHandler(this.sentMessagePictureBox_Click);
             // 
-            // inputRichTextBox
-            // 
-            this.inputRichTextBox.BackColor = System.Drawing.SystemColors.Window;
-            this.inputRichTextBox.BorderColor = System.Drawing.Color.MidnightBlue;
-            this.inputRichTextBox.BorderFocusColor = System.Drawing.Color.HotPink;
-            this.inputRichTextBox.BorderSize = 2;
-            this.inputRichTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.inputRichTextBox.ForeColor = System.Drawing.Color.DimGray;
-            this.inputRichTextBox.Location = new System.Drawing.Point(13, 6);
-            this.inputRichTextBox.Margin = new System.Windows.Forms.Padding(4);
-            this.inputRichTextBox.Multiline = false;
-            this.inputRichTextBox.Name = "inputRichTextBox";
-            this.inputRichTextBox.Padding = new System.Windows.Forms.Padding(7);
-            this.inputRichTextBox.PasswordChar = false;
-            this.inputRichTextBox.Size = new System.Drawing.Size(305, 31);
-            this.inputRichTextBox.TabIndex = 0;
-            this.inputRichTextBox.Texts = "";
-            this.inputRichTextBox.UnderlinedStyle = false;
-            // 
             // chatPanel
             // 
             this.chatPanel.BackColor = System.Drawing.SystemColors.ButtonShadow;
-            this.chatPanel.Controls.Add(this.chatRichTextBox1);
             this.chatPanel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.chatPanel.Location = new System.Drawing.Point(0, 66);
             this.chatPanel.Name = "chatPanel";
-            this.chatPanel.Size = new System.Drawing.Size(384, 454);
+            this.chatPanel.Size = new System.Drawing.Size(384, 441);
             this.chatPanel.TabIndex = 2;
             // 
             // chatRichTextBox1
             // 
             this.chatRichTextBox1.BackColor = System.Drawing.Color.White;
-            this.chatRichTextBox1.Location = new System.Drawing.Point(97, 173);
+            this.chatRichTextBox1.Location = new System.Drawing.Point(12, 6);
             this.chatRichTextBox1.Name = "chatRichTextBox1";
-            this.chatRichTextBox1.Radius = 40;
-            this.chatRichTextBox1.RichTextBoxLocation = new System.Drawing.Point(10, 10);
-            this.chatRichTextBox1.RichTextBoxSize = new System.Drawing.Size(172, 34);
-            this.chatRichTextBox1.ShadeColor = System.Drawing.Color.DarkGray;
-            this.chatRichTextBox1.Size = new System.Drawing.Size(221, 76);
+            this.chatRichTextBox1.Radius = 20;
+            this.chatRichTextBox1.RichTextBoxLocation = new System.Drawing.Point(20, 3);
+            this.chatRichTextBox1.RichTextBoxSize = new System.Drawing.Size(200, 30);
+            this.chatRichTextBox1.ShadeColor = System.Drawing.Color.Silver;
+            this.chatRichTextBox1.Size = new System.Drawing.Size(300, 40);
             this.chatRichTextBox1.TabIndex = 0;
             // 
             // ChatForm
@@ -148,7 +126,6 @@
             this.charBarPanel.ResumeLayout(false);
             this.downBar.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.sentMessagePictureBox)).EndInit();
-            this.chatPanel.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -158,7 +135,6 @@
         private Panel charBarPanel;
         private FontAwesome.Sharp.IconButton iconButton1;
         private Panel downBar;
-        private CustomControls.RichTextBox.RichTextBox inputRichTextBox;
         private FontAwesome.Sharp.IconPictureBox sentMessagePictureBox;
         private Panel chatPanel;
         private Custom_Toolbox.ChatRichTextBox chatRichTextBox1;
