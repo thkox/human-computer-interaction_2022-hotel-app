@@ -557,8 +557,22 @@ namespace hotel_app.Forms.Functions
             chatPanel.Controls.Add(SetResponseBubble(message2, bubbleLocation2, bubbleSize2, textBoxLoaction2, textBoxSize2, Color.White));
             height += bubbleSize.Height + 10;
 
-            //this where we are going to trandfer the user to another page
+            List<string[]> splitList = new List<string[]>();
+            for (int i = 0; i < foodList.Count; i++)
+            {
+                splitList.Add(foodList[i].Split('x'));
+            }
+            List<string> names = new List<string>();
+            List<int> quantities = new List<int>();
+            foreach (string[] split in splitList)
+            {
+                int length = split[0].Length-1;
+                string name = split[0].Substring(0, length);
+                names.Add(name);
+                quantities.Add(int.Parse(split[1]));
+            }
 
+            //this where we are going to trandfer the user to another page
         }
 
         private void inputChatTextBox_MessageChanged(object sender, EventArgs e)
