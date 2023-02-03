@@ -333,7 +333,7 @@ namespace hotel_app.Forms.Functions
             chatPanel.Controls.Add(SetResponseBubble(message3, bubbleLocation3, bubbleSize3, textBoxLoaction3, textBoxSize3, Color.White));
             height += bubbleSize3.Height + 3;
 
-            string message4 = "3. Latte";
+            string message4 = "4. Latte";
             Point bubbleLocation4 = new Point(70, height + 10);
             Size bubbleSize4 = new Size(120, 40);
             Point textBoxLoaction4 = new Point(10, 10);
@@ -387,7 +387,7 @@ namespace hotel_app.Forms.Functions
             chatPanel.Controls.Add(SetResponseBubble(message3, bubbleLocation3, bubbleSize3, textBoxLoaction3, textBoxSize3, Color.White));
             height += bubbleSize3.Height + 3;
 
-            string message4 = "3. Ferrero";
+            string message4 = "4. Ferrero";
             Point bubbleLocation4 = new Point(70, height + 10);
             Size bubbleSize4 = new Size(120, 40);
             Point textBoxLoaction4 = new Point(10, 10);
@@ -395,7 +395,7 @@ namespace hotel_app.Forms.Functions
             chatPanel.Controls.Add(SetResponseBubble(message4, bubbleLocation4, bubbleSize4, textBoxLoaction4, textBoxSize4, Color.White));
             height += bubbleSize4.Height + 3;
 
-            string message5 = "3. Special";
+            string message5 = "5. Special";
             Point bubbleLocation5 = new Point(70, height + 10);
             Size bubbleSize5 = new Size(120, 40);
             Point textBoxLoaction5 = new Point(10, 10);
@@ -449,7 +449,7 @@ namespace hotel_app.Forms.Functions
             chatPanel.Controls.Add(SetResponseBubble(message3, bubbleLocation3, bubbleSize3, textBoxLoaction3, textBoxSize3, Color.White));
             height += bubbleSize3.Height + 3;
 
-            string message4 = "3. Chef";
+            string message4 = "4. Chef";
             Point bubbleLocation4 = new Point(70, height + 10);
             Size bubbleSize4 = new Size(120, 40);
             Point textBoxLoaction4 = new Point(10, 10);
