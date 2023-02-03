@@ -23,6 +23,12 @@ namespace hotel_app.Custom_Toolbox
         private int _radius = 5;
         private Color _shadeColor = Color.White;
 
+        public bool TextReadonly
+        {
+            get => richTextBox1.ReadOnly;
+            set => richTextBox1.ReadOnly = value;
+        }
+
         public System.Drawing.Size RichTextBoxSize
         {
             get => richTextBox1.Size;

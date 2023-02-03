@@ -92,6 +92,7 @@
             this.inputChatTextBox.ShadeColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(245)))), ((int)(((byte)(250)))));
             this.inputChatTextBox.Size = new System.Drawing.Size(300, 40);
             this.inputChatTextBox.TabIndex = 0;
+            this.inputChatTextBox.TextReadonly = false;
             this.inputChatTextBox.MessageChanged += new System.EventHandler(this.inputChatTextBox_MessageChanged);
             // 
             // sentMessagePictureBox
