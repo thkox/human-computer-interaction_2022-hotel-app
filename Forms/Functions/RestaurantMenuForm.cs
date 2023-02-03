@@ -292,5 +292,9 @@ namespace hotel_app.Forms.Functions
             ChatForm chatSupport = new ChatForm();
             chatSupport.Show();
         }
+
+        private void menuLoadFormsPanel_Paint(object sender, PaintEventArgs e)
+        {
+        }
     }
 }

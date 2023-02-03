@@ -152,14 +152,19 @@
             // 
             // menuTabControl
             // 
+            this.menuTabControl.Alignment = System.Windows.Forms.TabAlignment.Bottom;
+            this.menuTabControl.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.menuTabControl.Controls.Add(this.coffeeTabPage);
             this.menuTabControl.Controls.Add(this.chocolatesTabPage);
             this.menuTabControl.Controls.Add(this.saladsTabPage);
             this.menuTabControl.Controls.Add(this.pizzaTabPage);
             this.menuTabControl.Controls.Add(this.greekCuisineTabPage);
             this.menuTabControl.Font = new System.Drawing.Font("Comic Sans MS", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.menuTabControl.Location = new System.Drawing.Point(85, 109);
+            this.menuTabControl.HotTrack = true;
+            this.menuTabControl.Location = new System.Drawing.Point(85, 135);
+            this.menuTabControl.Multiline = true;
             this.menuTabControl.Name = "menuTabControl";
+            this.menuTabControl.Padding = new System.Drawing.Point(10, 4);
             this.menuTabControl.SelectedIndex = 0;
             this.menuTabControl.Size = new System.Drawing.Size(670, 452);
             this.menuTabControl.TabIndex = 6;
@@ -179,10 +184,10 @@
             this.coffeeTabPage.Controls.Add(this.latteButton);
             this.coffeeTabPage.Controls.Add(this.espressoButton);
             this.coffeeTabPage.Controls.Add(this.americanoButton);
-            this.coffeeTabPage.Location = new System.Drawing.Point(4, 26);
+            this.coffeeTabPage.Location = new System.Drawing.Point(4, 4);
             this.coffeeTabPage.Name = "coffeeTabPage";
             this.coffeeTabPage.Padding = new System.Windows.Forms.Padding(3);
-            this.coffeeTabPage.Size = new System.Drawing.Size(662, 422);
+            this.coffeeTabPage.Size = new System.Drawing.Size(662, 420);
             this.coffeeTabPage.TabIndex = 0;
             this.coffeeTabPage.Text = "Coffee";
             // 
@@ -341,9 +346,9 @@
             this.chocolatesTabPage.Controls.Add(this.ferreroButton);
             this.chocolatesTabPage.Controls.Add(this.hospitalityButton);
             this.chocolatesTabPage.Controls.Add(this.zeusHeartButton);
-            this.chocolatesTabPage.Location = new System.Drawing.Point(4, 26);
+            this.chocolatesTabPage.Location = new System.Drawing.Point(4, 4);
             this.chocolatesTabPage.Name = "chocolatesTabPage";
-            this.chocolatesTabPage.Size = new System.Drawing.Size(662, 422);
+            this.chocolatesTabPage.Size = new System.Drawing.Size(662, 420);
             this.chocolatesTabPage.TabIndex = 4;
             this.chocolatesTabPage.Text = "Chocolates";
             // 
@@ -533,9 +538,9 @@
             this.saladsTabPage.Controls.Add(this.chefButton);
             this.saladsTabPage.Controls.Add(this.tricoloreButton);
             this.saladsTabPage.Controls.Add(this.greekButton);
-            this.saladsTabPage.Location = new System.Drawing.Point(4, 26);
+            this.saladsTabPage.Location = new System.Drawing.Point(4, 4);
             this.saladsTabPage.Name = "saladsTabPage";
-            this.saladsTabPage.Size = new System.Drawing.Size(662, 422);
+            this.saladsTabPage.Size = new System.Drawing.Size(662, 420);
             this.saladsTabPage.TabIndex = 3;
             this.saladsTabPage.Text = "Salads";
             // 
@@ -692,10 +697,10 @@
             this.pizzaTabPage.Controls.Add(this.palaceButton);
             this.pizzaTabPage.Controls.Add(this.zeusSpecialLabel);
             this.pizzaTabPage.Controls.Add(this.athinaButton);
-            this.pizzaTabPage.Location = new System.Drawing.Point(4, 26);
+            this.pizzaTabPage.Location = new System.Drawing.Point(4, 4);
             this.pizzaTabPage.Name = "pizzaTabPage";
             this.pizzaTabPage.Padding = new System.Windows.Forms.Padding(3);
-            this.pizzaTabPage.Size = new System.Drawing.Size(662, 422);
+            this.pizzaTabPage.Size = new System.Drawing.Size(662, 420);
             this.pizzaTabPage.TabIndex = 1;
             this.pizzaTabPage.Text = "Pizza";
             // 
@@ -859,9 +864,9 @@
             this.greekCuisineTabPage.Controls.Add(this.elGrecoButton);
             this.greekCuisineTabPage.Controls.Add(this.pastaButton);
             this.greekCuisineTabPage.Controls.Add(this.souvlakiButton);
-            this.greekCuisineTabPage.Location = new System.Drawing.Point(4, 26);
+            this.greekCuisineTabPage.Location = new System.Drawing.Point(4, 4);
             this.greekCuisineTabPage.Name = "greekCuisineTabPage";
-            this.greekCuisineTabPage.Size = new System.Drawing.Size(662, 422);
+            this.greekCuisineTabPage.Size = new System.Drawing.Size(662, 420);
             this.greekCuisineTabPage.TabIndex = 2;
             this.greekCuisineTabPage.Text = "Greek Cuisine";
             // 
@@ -1157,6 +1162,7 @@
             this.menuLoadFormsPanel.Name = "menuLoadFormsPanel";
             this.menuLoadFormsPanel.Size = new System.Drawing.Size(1079, 672);
             this.menuLoadFormsPanel.TabIndex = 11;
+            this.menuLoadFormsPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.menuLoadFormsPanel_Paint);
             // 
             // chatButton
             // 
