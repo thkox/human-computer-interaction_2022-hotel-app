@@ -46,7 +46,7 @@
             this.charBarPanel.Dock = System.Windows.Forms.DockStyle.Top;
             this.charBarPanel.Location = new System.Drawing.Point(0, 0);
             this.charBarPanel.Name = "charBarPanel";
-            this.charBarPanel.Size = new System.Drawing.Size(384, 66);
+            this.charBarPanel.Size = new System.Drawing.Size(384, 60);
             this.charBarPanel.TabIndex = 0;
             // 
             // iconButton1
@@ -60,7 +60,7 @@
             this.iconButton1.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconButton1.IconSize = 40;
             this.iconButton1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButton1.Location = new System.Drawing.Point(72, 12);
+            this.iconButton1.Location = new System.Drawing.Point(77, 12);
             this.iconButton1.Name = "iconButton1";
             this.iconButton1.Size = new System.Drawing.Size(223, 41);
             this.iconButton1.TabIndex = 0;
@@ -74,16 +74,16 @@
             this.downBar.Controls.Add(this.inputChatTextBox);
             this.downBar.Controls.Add(this.sentMessagePictureBox);
             this.downBar.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.downBar.Location = new System.Drawing.Point(0, 507);
+            this.downBar.Location = new System.Drawing.Point(0, 511);
             this.downBar.Name = "downBar";
-            this.downBar.Size = new System.Drawing.Size(384, 54);
+            this.downBar.Size = new System.Drawing.Size(384, 50);
             this.downBar.TabIndex = 1;
             // 
             // inputChatTextBox
             // 
             this.inputChatTextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(124)))), ((int)(((byte)(177)))));
             this.inputChatTextBox.ForeColor = System.Drawing.Color.White;
-            this.inputChatTextBox.Location = new System.Drawing.Point(12, 6);
+            this.inputChatTextBox.Location = new System.Drawing.Point(12, 4);
             this.inputChatTextBox.MaxLegthSize = 15;
             this.inputChatTextBox.Name = "inputChatTextBox";
             this.inputChatTextBox.Radius = 20;
@@ -92,7 +92,6 @@
             this.inputChatTextBox.ShadeColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(245)))), ((int)(((byte)(250)))));
             this.inputChatTextBox.Size = new System.Drawing.Size(300, 40);
             this.inputChatTextBox.TabIndex = 0;
-            this.inputChatTextBox.MessageChanged = new System.EventHandler(this.inputChatTextBox_MessageChanged);
             // 
             // sentMessagePictureBox
             // 
@@ -103,7 +102,7 @@
             this.sentMessagePictureBox.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(238)))), ((int)(((byte)(244)))));
             this.sentMessagePictureBox.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.sentMessagePictureBox.IconSize = 31;
-            this.sentMessagePictureBox.Location = new System.Drawing.Point(330, 11);
+            this.sentMessagePictureBox.Location = new System.Drawing.Point(335, 8);
             this.sentMessagePictureBox.Name = "sentMessagePictureBox";
             this.sentMessagePictureBox.Size = new System.Drawing.Size(32, 31);
             this.sentMessagePictureBox.TabIndex = 1;
@@ -115,9 +114,9 @@
             this.chatPanel.AutoScroll = true;
             this.chatPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(129)))), ((int)(((byte)(164)))), ((int)(((byte)(205)))));
             this.chatPanel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.chatPanel.Location = new System.Drawing.Point(0, 66);
+            this.chatPanel.Location = new System.Drawing.Point(0, 60);
             this.chatPanel.Name = "chatPanel";
-            this.chatPanel.Size = new System.Drawing.Size(384, 441);
+            this.chatPanel.Size = new System.Drawing.Size(384, 451);
             this.chatPanel.TabIndex = 2;
             // 
             // ChatForm

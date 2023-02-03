@@ -122,7 +122,7 @@ namespace hotel_app.Forms.Functions
         private void MainMenuMessage()
         {
             chatPanel.AutoScrollPosition = new Point(0, 0);
-            
+            chatPanel.Clip = new Rectangle(0, 0, width, height);
             string message = "What you would like to do?";
             Point bubbleLocation = new Point(70, height + 10);
             Size bubbleSize = new Size(190, 40);
