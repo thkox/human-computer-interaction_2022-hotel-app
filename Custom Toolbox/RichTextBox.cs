@@ -125,6 +125,14 @@ namespace CustomControls.RichTextBox
             set { borderFocusColor = value; }
         }
 
+        [Category("Hotel App RichTextBox")]
+        public int MaxLength
+        {
+            get { return textBox1.MaxLength; }
+            set { textBox1.MaxLength = value; }
+        }
+
+
         //Overridden methods
 
         protected override void OnPaint(PaintEventArgs e)

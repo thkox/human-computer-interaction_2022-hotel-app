@@ -29,26 +29,36 @@ namespace hotel_app.Forms.Functions
             if (steps == 2)
             {
                 step2PictureBox.IconChar = FontAwesome.Sharp.IconChar.CheckCircle;
+                step2PictureBox.IconColor = Color.Green;
+                step2Label.ForeColor = Color.Green;
                 progressPictureBox.Size = new Size(130, 28);
             }
             else if (steps == 3)
             {
                 step3PictureBox.IconChar = FontAwesome.Sharp.IconChar.CheckCircle;
+                step3Label.ForeColor = Color.Green;
+                step3PictureBox.IconColor = Color.Green;
                 progressPictureBox.Size = new Size(260, 28);
             }
             else if (steps == 4)
             {
                 step4PictureBox.IconChar = FontAwesome.Sharp.IconChar.CheckCircle;
+                step4Label.ForeColor = Color.Green;
+                step4PictureBox.IconColor = Color.Green;
                 progressPictureBox.Size = new Size(390, 28);
             }
             else if (steps == 5)
             {
                 step5PictureBox.IconChar = FontAwesome.Sharp.IconChar.CheckCircle;
+                step5Label.ForeColor = Color.Green;
+                step5PictureBox.IconColor = Color.Green;
                 progressPictureBox.Size = new Size(520, 28);
             }
             else if (steps == 6)
             {
                 step6PictureBox.IconChar = FontAwesome.Sharp.IconChar.CheckCircle;
+                step6Label.ForeColor = Color.Green;
+                step6PictureBox.IconColor = Color.Green;
                 progressPictureBox.Size = new Size(650, 28);
             }
             else

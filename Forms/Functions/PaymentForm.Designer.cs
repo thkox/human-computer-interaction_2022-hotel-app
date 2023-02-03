@@ -180,6 +180,7 @@
             this.cvv_richTextBox.ForeColor = System.Drawing.Color.DimGray;
             this.cvv_richTextBox.Location = new System.Drawing.Point(284, 241);
             this.cvv_richTextBox.Margin = new System.Windows.Forms.Padding(4);
+            this.cvv_richTextBox.MaxLength = 3;
             this.cvv_richTextBox.Multiline = false;
             this.cvv_richTextBox.Name = "cvv_richTextBox";
             this.cvv_richTextBox.Padding = new System.Windows.Forms.Padding(7);
@@ -215,6 +216,7 @@
             this.cardNumber_richTextBox.ForeColor = System.Drawing.Color.DimGray;
             this.cardNumber_richTextBox.Location = new System.Drawing.Point(15, 241);
             this.cardNumber_richTextBox.Margin = new System.Windows.Forms.Padding(4);
+            this.cardNumber_richTextBox.MaxLength = 16;
             this.cardNumber_richTextBox.Multiline = false;
             this.cardNumber_richTextBox.Name = "cardNumber_richTextBox";
             this.cardNumber_richTextBox.Padding = new System.Windows.Forms.Padding(7);
@@ -250,6 +252,7 @@
             this.year_richTextBox.ForeColor = System.Drawing.Color.DimGray;
             this.year_richTextBox.Location = new System.Drawing.Point(335, 150);
             this.year_richTextBox.Margin = new System.Windows.Forms.Padding(4);
+            this.year_richTextBox.MaxLength = 4;
             this.year_richTextBox.Multiline = false;
             this.year_richTextBox.Name = "year_richTextBox";
             this.year_richTextBox.Padding = new System.Windows.Forms.Padding(7);
@@ -273,6 +276,7 @@
             this.month_richTextBox.ForeColor = System.Drawing.Color.DimGray;
             this.month_richTextBox.Location = new System.Drawing.Point(283, 150);
             this.month_richTextBox.Margin = new System.Windows.Forms.Padding(4);
+            this.month_richTextBox.MaxLength = 2;
             this.month_richTextBox.Multiline = false;
             this.month_richTextBox.Name = "month_richTextBox";
             this.month_richTextBox.Padding = new System.Windows.Forms.Padding(7);
@@ -308,6 +312,7 @@
             this.cardholderName_richTextBox.ForeColor = System.Drawing.Color.DimGray;
             this.cardholderName_richTextBox.Location = new System.Drawing.Point(14, 150);
             this.cardholderName_richTextBox.Margin = new System.Windows.Forms.Padding(4);
+            this.cardholderName_richTextBox.MaxLength = 30;
             this.cardholderName_richTextBox.Multiline = false;
             this.cardholderName_richTextBox.Name = "cardholderName_richTextBox";
             this.cardholderName_richTextBox.Padding = new System.Windows.Forms.Padding(7);
