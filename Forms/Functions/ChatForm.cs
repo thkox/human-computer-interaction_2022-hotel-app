@@ -561,6 +561,8 @@ namespace hotel_app.Forms.Functions
             chatPanel.Controls.Add(SetResponseBubble(message2, bubbleLocation2, bubbleSize2, textBoxLoaction2, textBoxSize2, Color.White));
             height += bubbleSize.Height + 10;
 
+            //this where we are going to trandfer the user to another page
+
         }
 
         private void inputChatTextBox_MessageChanged(object sender, EventArgs e)
