@@ -16,6 +16,7 @@ namespace hotel_app.Forms.Functions
     {
         int height = 20; // Height of the chat
         int tabIndex = 0; // Tab index of the chat
+        private int stateOfConversation = 0;
         public ChatForm()
         {
             InitializeComponent();
@@ -38,6 +39,8 @@ namespace hotel_app.Forms.Functions
             height += bubbleSize.Height + 3;
 
             MainMenuMessage();
+
+            stateOfConversation++;
         }
 
         private PictureBox SetEmployeeIcon(Point location)
@@ -88,19 +91,21 @@ namespace hotel_app.Forms.Functions
             inputChatTextBox.Text = ""; // Clear the input text box
         }
 
+
+
         private void TriggerResponse()
         {
             chatPanel.AutoScrollPosition = new Point(0, 0);
-            if (inputChatTextBox.Text == "Order Food")
+            if (stateOfConversation == 1 && inputChatTextBox.Text == "Order Food")
             {
                 Point location2 = new Point(10, height);
                 chatPanel.Controls.Add(SetEmployeeIcon(location2));
 
                 string message = "What would you like to order?";
                 Point bubbleLocation = new Point(70, height + 10);
-                Size bubbleSize = new Size(160, 40);
+                Size bubbleSize = new Size(220, 40);
                 Point textBoxLoaction = new Point(10, 10);
-                Size textBoxSize = new Size(130, 20);
+                Size textBoxSize = new Size(200, 20);
                 chatPanel.Controls.Add(SetResponseBubble(message, bubbleLocation, bubbleSize, textBoxLoaction, textBoxSize, Color.White));
                 height += bubbleSize.Height + 3;
             }
@@ -151,6 +156,11 @@ namespace hotel_app.Forms.Functions
             height += bubbleSize3.Height + 10;
             
             chatPanel.AutoScrollPosition = new Point(0, height);
+        }
+
+        private void OrderMenu()
+        {
+
         }
 
         private void inputChatTextBox_MessageChanged(object sender, EventArgs e)
