@@ -348,8 +348,6 @@
         }
 
         #endregion
-
-        private Label totalLabel;
         private Panel paymentPanel;
         private Label paymentMethodLabel;
         private FontAwesome.Sharp.IconButton mastercardButton;
@@ -366,5 +364,6 @@
         private Label label1;
         private CustomControls.RichTextBox.RichTextBox cardNumber_richTextBox;
         private Label cardNumberLabel;
+        public Label totalLabel;
     }
 }

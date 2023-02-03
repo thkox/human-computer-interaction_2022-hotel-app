@@ -13,6 +13,10 @@ namespace hotel_app.Forms.Functions
 {
     public partial class RestaurantMenuForm : Form
     {
+        private Panel restaurantMenuTabs;
+
+        private Form currentChildForm;
+
         int total;
         List<string> menu = new List<string> {"Americano", "Cappuccino", "Espresso", "Latte",  //coffee
         "Zeus Heart", "Chocolate", "Hospitality", "Ferrero", "Special", //chocolates
@@ -248,6 +252,32 @@ namespace hotel_app.Forms.Functions
                     }
                 }
             }
+        }
+
+        private void OpenPaymentForm(Form childForm)
+        {
+            currentChildForm = childForm;
+            childForm.TopLevel = false;
+            childForm.FormBorderStyle = FormBorderStyle.None;
+            childForm.Dock = DockStyle.Fill;
+            menuLoadFormsPanel.Controls.Add(childForm);
+            menuLoadFormsPanel.Tag = childForm;
+            childForm.BringToFront();
+            childForm.Show();
+        }
+
+        private void RestaurantMenuForm_Load(object sender, EventArgs e)
+        {
+            restaurantMenuTabs = menuLoadFormsPanel;
+            backPictureBox.Hide();
+        }
+
+        private void checkoutButton_Click(object sender, EventArgs e)
+        {
+            PaymentForm payment = new PaymentForm();
+            payment.totalLabel.Text = total_richTextBox.Text;
+            OpenPaymentForm(payment);
+            backPictureBox.Show();
         }
         //make my code sorter
     }

@@ -111,6 +111,8 @@
             this.cart_richTextBox = new System.Windows.Forms.RichTextBox();
             this.checkoutButton = new FontAwesome.Sharp.IconButton();
             this.total_richTextBox = new System.Windows.Forms.RichTextBox();
+            this.menuLoadFormsPanel = new System.Windows.Forms.Panel();
+            this.backPictureBox = new FontAwesome.Sharp.IconPictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.cartButton)).BeginInit();
             this.menuTabControl.SuspendLayout();
             this.coffeeTabPage.SuspendLayout();
@@ -118,6 +120,8 @@
             this.saladsTabPage.SuspendLayout();
             this.pizzaTabPage.SuspendLayout();
             this.greekCuisineTabPage.SuspendLayout();
+            this.menuLoadFormsPanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.backPictureBox)).BeginInit();
             this.SuspendLayout();
             // 
             // cartButton
@@ -128,7 +132,7 @@
             this.cartButton.IconChar = FontAwesome.Sharp.IconChar.CartShopping;
             this.cartButton.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(241)))), ((int)(((byte)(246)))));
             this.cartButton.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.cartButton.Location = new System.Drawing.Point(969, 109);
+            this.cartButton.Location = new System.Drawing.Point(957, 126);
             this.cartButton.Name = "cartButton";
             this.cartButton.Size = new System.Drawing.Size(32, 32);
             this.cartButton.TabIndex = 3;
@@ -139,7 +143,7 @@
             this.menuLabel.AutoSize = true;
             this.menuLabel.Font = new System.Drawing.Font("Comic Sans MS", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.menuLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(241)))), ((int)(((byte)(246)))));
-            this.menuLabel.Location = new System.Drawing.Point(100, 30);
+            this.menuLabel.Location = new System.Drawing.Point(88, 47);
             this.menuLabel.Name = "menuLabel";
             this.menuLabel.Size = new System.Drawing.Size(140, 35);
             this.menuLabel.TabIndex = 5;
@@ -153,7 +157,7 @@
             this.menuTabControl.Controls.Add(this.pizzaTabPage);
             this.menuTabControl.Controls.Add(this.greekCuisineTabPage);
             this.menuTabControl.Font = new System.Drawing.Font("Comic Sans MS", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.menuTabControl.Location = new System.Drawing.Point(100, 121);
+            this.menuTabControl.Location = new System.Drawing.Point(88, 138);
             this.menuTabControl.Name = "menuTabControl";
             this.menuTabControl.SelectedIndex = 0;
             this.menuTabControl.Size = new System.Drawing.Size(670, 452);
@@ -1101,7 +1105,7 @@
             // 
             // cart_richTextBox
             // 
-            this.cart_richTextBox.Location = new System.Drawing.Point(776, 147);
+            this.cart_richTextBox.Location = new System.Drawing.Point(764, 164);
             this.cart_richTextBox.Name = "cart_richTextBox";
             this.cart_richTextBox.Size = new System.Drawing.Size(225, 376);
             this.cart_richTextBox.TabIndex = 7;
@@ -1115,12 +1119,13 @@
             this.checkoutButton.IconColor = System.Drawing.Color.Black;
             this.checkoutButton.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.checkoutButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.checkoutButton.Location = new System.Drawing.Point(776, 529);
+            this.checkoutButton.Location = new System.Drawing.Point(764, 546);
             this.checkoutButton.Name = "checkoutButton";
             this.checkoutButton.Size = new System.Drawing.Size(225, 44);
             this.checkoutButton.TabIndex = 8;
             this.checkoutButton.Text = "Checkout";
             this.checkoutButton.UseVisualStyleBackColor = true;
+            this.checkoutButton.Click += new System.EventHandler(this.checkoutButton_Click);
             // 
             // total_richTextBox
             // 
@@ -1128,12 +1133,41 @@
             this.total_richTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.total_richTextBox.Font = new System.Drawing.Font("Comic Sans MS", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.total_richTextBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(241)))), ((int)(((byte)(246)))));
-            this.total_richTextBox.Location = new System.Drawing.Point(863, 109);
+            this.total_richTextBox.Location = new System.Drawing.Point(851, 126);
             this.total_richTextBox.Name = "total_richTextBox";
             this.total_richTextBox.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.total_richTextBox.Size = new System.Drawing.Size(100, 32);
             this.total_richTextBox.TabIndex = 10;
             this.total_richTextBox.Text = "[Total]";
+            // 
+            // menuLoadFormsPanel
+            // 
+            this.menuLoadFormsPanel.Controls.Add(this.backPictureBox);
+            this.menuLoadFormsPanel.Controls.Add(this.menuLabel);
+            this.menuLoadFormsPanel.Controls.Add(this.total_richTextBox);
+            this.menuLoadFormsPanel.Controls.Add(this.cartButton);
+            this.menuLoadFormsPanel.Controls.Add(this.checkoutButton);
+            this.menuLoadFormsPanel.Controls.Add(this.menuTabControl);
+            this.menuLoadFormsPanel.Controls.Add(this.cart_richTextBox);
+            this.menuLoadFormsPanel.Location = new System.Drawing.Point(4, -6);
+            this.menuLoadFormsPanel.Name = "menuLoadFormsPanel";
+            this.menuLoadFormsPanel.Size = new System.Drawing.Size(1079, 672);
+            this.menuLoadFormsPanel.TabIndex = 11;
+            // 
+            // backPictureBox
+            // 
+            this.backPictureBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(144)))), ((int)(((byte)(191)))));
+            this.backPictureBox.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.backPictureBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(241)))), ((int)(((byte)(246)))));
+            this.backPictureBox.IconChar = FontAwesome.Sharp.IconChar.CircleArrowLeft;
+            this.backPictureBox.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(241)))), ((int)(((byte)(246)))));
+            this.backPictureBox.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.backPictureBox.IconSize = 42;
+            this.backPictureBox.Location = new System.Drawing.Point(25, 12);
+            this.backPictureBox.Name = "backPictureBox";
+            this.backPictureBox.Size = new System.Drawing.Size(42, 42);
+            this.backPictureBox.TabIndex = 11;
+            this.backPictureBox.TabStop = false;
             // 
             // RestaurantMenuForm
             // 
@@ -1141,14 +1175,10 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(144)))), ((int)(((byte)(191)))));
             this.ClientSize = new System.Drawing.Size(1084, 661);
-            this.Controls.Add(this.total_richTextBox);
-            this.Controls.Add(this.checkoutButton);
-            this.Controls.Add(this.cart_richTextBox);
-            this.Controls.Add(this.menuTabControl);
-            this.Controls.Add(this.menuLabel);
-            this.Controls.Add(this.cartButton);
+            this.Controls.Add(this.menuLoadFormsPanel);
             this.Name = "RestaurantMenuForm";
             this.Text = "RestaurantMenuForm";
+            this.Load += new System.EventHandler(this.RestaurantMenuForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.cartButton)).EndInit();
             this.menuTabControl.ResumeLayout(false);
             this.coffeeTabPage.ResumeLayout(false);
@@ -1161,8 +1191,10 @@
             this.pizzaTabPage.PerformLayout();
             this.greekCuisineTabPage.ResumeLayout(false);
             this.greekCuisineTabPage.PerformLayout();
+            this.menuLoadFormsPanel.ResumeLayout(false);
+            this.menuLoadFormsPanel.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.backPictureBox)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -1250,5 +1282,7 @@
         private Custom_Toolbox.QuantityCustomControl quantityTyromezes;
         private Custom_Toolbox.QuantityCustomControl quantitySouvlaki;
         private RichTextBox total_richTextBox;
+        private Panel menuLoadFormsPanel;
+        public FontAwesome.Sharp.IconPictureBox backPictureBox;
     }
 }
