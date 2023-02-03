@@ -26,6 +26,7 @@ namespace hotel_app.Forms
         LightsForm lights = new LightsForm();
         TVForm tv = new TVForm();
         RadioForm radio = new RadioForm();  
+        RestaurantMenuForm restaurant = new RestaurantMenuForm();
 
         public Client2Form()
         {
@@ -153,6 +154,12 @@ namespace hotel_app.Forms
         private void logoutButton_Click(object sender, EventArgs e)
         {
             this.Hide();
+        }
+
+        private void foodButton_Click(object sender, EventArgs e)
+        {
+            ActivateButton(sender);
+            OpenChildForm(restaurant);
         }
     }
 }

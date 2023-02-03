@@ -57,6 +57,7 @@
             this.suite2Button.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.suite2Button.BackColor = System.Drawing.Color.Transparent;
             this.suite2Button.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.suite2Button.Enabled = false;
             this.suite2Button.FlatAppearance.BorderSize = 0;
             this.suite2Button.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(144)))), ((int)(((byte)(191)))));
             this.suite2Button.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(144)))), ((int)(((byte)(191)))));
@@ -105,6 +106,7 @@
             this.room4Button.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.room4Button.BackColor = System.Drawing.Color.Transparent;
             this.room4Button.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.room4Button.Enabled = false;
             this.room4Button.FlatAppearance.BorderSize = 0;
             this.room4Button.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(144)))), ((int)(((byte)(191)))));
             this.room4Button.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(144)))), ((int)(((byte)(191)))));
@@ -153,6 +155,7 @@
             this.room2Button.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.room2Button.BackColor = System.Drawing.Color.Transparent;
             this.room2Button.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.room2Button.Enabled = false;
             this.room2Button.FlatAppearance.BorderSize = 0;
             this.room2Button.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(144)))), ((int)(((byte)(191)))));
             this.room2Button.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(144)))), ((int)(((byte)(191)))));
