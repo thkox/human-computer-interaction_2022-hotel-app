@@ -81,6 +81,7 @@ namespace hotel_app.Forms.Functions
         private void sentMessagePictureBox_Click(object sender, EventArgs e)
         {
             chatPanel.AutoScrollPosition = new Point(0, 0);
+
             Point bubbleLocation = new Point(150, height + 15);
             Size bubbleSize = new Size(200, 40);
             Point textBoxLocation = new Point(10, 10);
@@ -124,8 +125,6 @@ namespace hotel_app.Forms.Functions
 
         private void MainMenuMessage()
         {
-            chatPanel.AutoScrollPosition = new Point(0, 0);
-            
             string message = "What you would like to do?";
             Point bubbleLocation = new Point(70, height + 10);
             Size bubbleSize = new Size(190, 40);
