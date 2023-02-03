@@ -5,6 +5,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Net.Mail;
 using System.Security.Policy;
 using System.Text;
 using System.Threading.Tasks;
@@ -146,8 +147,13 @@ namespace hotel_app.Forms.Functions
                     coffeesList.Add(inputChatTextBox.Text);
                 else
                 {
-                    QuestionUser();
-                    stateOfConversation = 3;
+                    if (menusSelected.Count != 3)
+                    {
+                        QuestionUser();
+                        stateOfConversation = 3;
+                    }
+                    else
+                        AskForPayment();
                 }
             }
             else if (stateOfConversation == 112) // coffee menu order
@@ -156,8 +162,13 @@ namespace hotel_app.Forms.Functions
                     chocolateList.Add(inputChatTextBox.Text);
                 else
                 {
-                    QuestionUser();
-                    stateOfConversation = 3;
+                    if (menusSelected.Count != 3)
+                    {
+                        QuestionUser();
+                        stateOfConversation = 3;
+                    }
+                    else
+                        AskForPayment();
                 }
             }
             else if (stateOfConversation == 113) // coffee menu order
@@ -166,8 +177,14 @@ namespace hotel_app.Forms.Functions
                     saladsList.Add(inputChatTextBox.Text);
                 else
                 {
-                    QuestionUser();
-                    stateOfConversation = 3;
+                    if (menusSelected.Count != 3)
+                    {
+                        QuestionUser();
+                        stateOfConversation = 3;
+                    }
+                    else
+                        AskForPayment();
+
                 }
             }
             else if (stateOfConversation == 3 && inputChatTextBox.Text == "Yes") // coffee menu order
@@ -482,6 +499,11 @@ namespace hotel_app.Forms.Functions
             Size textBoxSize = new Size(230, 20);
             chatPanel.Controls.Add(SetResponseBubble(message, bubbleLocation, bubbleSize, textBoxLoaction, textBoxSize, Color.White));
             height += bubbleSize.Height + 10;
+        }
+
+        private void AskForPayment()
+        {
+
         }
 
         private void inputChatTextBox_MessageChanged(object sender, EventArgs e)
