@@ -1142,7 +1142,6 @@
             // 
             // menuLoadFormsPanel
             // 
-            this.menuLoadFormsPanel.Controls.Add(this.backPictureBox);
             this.menuLoadFormsPanel.Controls.Add(this.menuLabel);
             this.menuLoadFormsPanel.Controls.Add(this.total_richTextBox);
             this.menuLoadFormsPanel.Controls.Add(this.cartButton);
@@ -1176,6 +1175,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(144)))), ((int)(((byte)(191)))));
             this.ClientSize = new System.Drawing.Size(1084, 661);
+            this.Controls.Add(this.backPictureBox);
             this.Controls.Add(this.menuLoadFormsPanel);
             this.Name = "RestaurantMenuForm";
             this.Text = "RestaurantMenuForm";
