@@ -56,6 +56,7 @@
             // 
             // progressPictureBox
             // 
+            this.progressPictureBox.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.progressPictureBox.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.progressPictureBox.Location = new System.Drawing.Point(225, 490);
             this.progressPictureBox.Name = "progressPictureBox";
@@ -65,6 +66,7 @@
             // 
             // allStepsPictureBox
             // 
+            this.allStepsPictureBox.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.allStepsPictureBox.BackColor = System.Drawing.SystemColors.ScrollBar;
             this.allStepsPictureBox.Location = new System.Drawing.Point(225, 490);
             this.allStepsPictureBox.Name = "allStepsPictureBox";
@@ -74,6 +76,7 @@
             // 
             // step1PictureBox
             // 
+            this.step1PictureBox.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.step1PictureBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(144)))), ((int)(((byte)(191)))));
             this.step1PictureBox.ForeColor = System.Drawing.SystemColors.ControlText;
             this.step1PictureBox.IconChar = FontAwesome.Sharp.IconChar.CheckCircle;
@@ -87,6 +90,7 @@
             // 
             // step2PictureBox
             // 
+            this.step2PictureBox.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.step2PictureBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(144)))), ((int)(((byte)(191)))));
             this.step2PictureBox.ForeColor = System.Drawing.SystemColors.ControlText;
             this.step2PictureBox.IconChar = FontAwesome.Sharp.IconChar.Circle;
@@ -100,6 +104,7 @@
             // 
             // step6PictureBox
             // 
+            this.step6PictureBox.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.step6PictureBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(144)))), ((int)(((byte)(191)))));
             this.step6PictureBox.ForeColor = System.Drawing.SystemColors.ControlText;
             this.step6PictureBox.IconChar = FontAwesome.Sharp.IconChar.Circle;
@@ -113,6 +118,7 @@
             // 
             // step5PictureBox
             // 
+            this.step5PictureBox.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.step5PictureBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(144)))), ((int)(((byte)(191)))));
             this.step5PictureBox.ForeColor = System.Drawing.SystemColors.ControlText;
             this.step5PictureBox.IconChar = FontAwesome.Sharp.IconChar.Circle;
@@ -126,6 +132,7 @@
             // 
             // step4PictureBox
             // 
+            this.step4PictureBox.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.step4PictureBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(144)))), ((int)(((byte)(191)))));
             this.step4PictureBox.ForeColor = System.Drawing.SystemColors.ControlText;
             this.step4PictureBox.IconChar = FontAwesome.Sharp.IconChar.Circle;
@@ -139,6 +146,7 @@
             // 
             // step3PictureBox
             // 
+            this.step3PictureBox.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.step3PictureBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(144)))), ((int)(((byte)(191)))));
             this.step3PictureBox.ForeColor = System.Drawing.SystemColors.ControlText;
             this.step3PictureBox.IconChar = FontAwesome.Sharp.IconChar.Circle;
@@ -152,6 +160,7 @@
             // 
             // step1Label
             // 
+            this.step1Label.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.step1Label.AutoSize = true;
             this.step1Label.Font = new System.Drawing.Font("Comic Sans MS", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.step1Label.Location = new System.Drawing.Point(381, 121);
@@ -162,6 +171,7 @@
             // 
             // step2Label
             // 
+            this.step2Label.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.step2Label.AutoSize = true;
             this.step2Label.Font = new System.Drawing.Font("Comic Sans MS", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.step2Label.Location = new System.Drawing.Point(381, 176);
@@ -172,6 +182,7 @@
             // 
             // step4Label
             // 
+            this.step4Label.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.step4Label.AutoSize = true;
             this.step4Label.Font = new System.Drawing.Font("Comic Sans MS", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.step4Label.Location = new System.Drawing.Point(381, 283);
@@ -182,6 +193,7 @@
             // 
             // step3Label
             // 
+            this.step3Label.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.step3Label.AutoSize = true;
             this.step3Label.Font = new System.Drawing.Font("Comic Sans MS", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.step3Label.Location = new System.Drawing.Point(381, 230);
@@ -192,6 +204,7 @@
             // 
             // step6Label
             // 
+            this.step6Label.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.step6Label.AutoSize = true;
             this.step6Label.Font = new System.Drawing.Font("Comic Sans MS", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.step6Label.Location = new System.Drawing.Point(381, 395);
@@ -202,6 +215,7 @@
             // 
             // step5Label
             // 
+            this.step5Label.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.step5Label.AutoSize = true;
             this.step5Label.Font = new System.Drawing.Font("Comic Sans MS", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.step5Label.Location = new System.Drawing.Point(381, 339);

@@ -39,6 +39,7 @@
             // 
             // radioLabel
             // 
+            this.radioLabel.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.radioLabel.Font = new System.Drawing.Font("Segoe UI", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.radioLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(241)))), ((int)(((byte)(246)))));
             this.radioLabel.Location = new System.Drawing.Point(370, 144);
@@ -50,6 +51,7 @@
             // 
             // radioPanel
             // 
+            this.radioPanel.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.radioPanel.Controls.Add(this.radioValueLabel);
             this.radioPanel.Location = new System.Drawing.Point(300, 215);
             this.radioPanel.Name = "radioPanel";
@@ -69,6 +71,7 @@
             // 
             // radioUpButton
             // 
+            this.radioUpButton.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.radioUpButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(79)))), ((int)(((byte)(134)))), ((int)(((byte)(184)))));
             this.radioUpButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.radioUpButton.Enabled = false;
@@ -85,6 +88,7 @@
             // 
             // radioDownButton
             // 
+            this.radioDownButton.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.radioDownButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(79)))), ((int)(((byte)(134)))), ((int)(((byte)(184)))));
             this.radioDownButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.radioDownButton.Enabled = false;
@@ -102,6 +106,7 @@
             // 
             // radioToggle
             // 
+            this.radioToggle.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.radioToggle.AutoSize = true;
             this.radioToggle.Cursor = System.Windows.Forms.Cursors.Hand;
             this.radioToggle.Location = new System.Drawing.Point(457, 445);

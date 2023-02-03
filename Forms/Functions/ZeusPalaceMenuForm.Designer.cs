@@ -38,6 +38,7 @@
             // 
             // zeusPalaceLoadFormsPanel
             // 
+            this.zeusPalaceLoadFormsPanel.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.zeusPalaceLoadFormsPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(144)))), ((int)(((byte)(191)))));
             this.zeusPalaceLoadFormsPanel.Controls.Add(this.roomButton);
             this.zeusPalaceLoadFormsPanel.Controls.Add(this.publicPoolButton);

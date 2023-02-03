@@ -37,6 +37,7 @@
             // 
             // sensorButton
             // 
+            this.sensorButton.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.sensorButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(79)))), ((int)(((byte)(134)))), ((int)(((byte)(184)))));
             this.sensorButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.sensorButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -57,6 +58,7 @@
             // 
             // alarmButton
             // 
+            this.alarmButton.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.alarmButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(79)))), ((int)(((byte)(134)))), ((int)(((byte)(184)))));
             this.alarmButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.alarmButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -77,6 +79,7 @@
             // 
             // statusPictureBox
             // 
+            this.statusPictureBox.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.statusPictureBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(144)))), ((int)(((byte)(191)))));
             this.statusPictureBox.ForeColor = System.Drawing.SystemColors.ControlText;
             this.statusPictureBox.IconChar = FontAwesome.Sharp.IconChar.ShieldBlank;
@@ -91,6 +94,7 @@
             // 
             // statusRichTextBox
             // 
+            this.statusRichTextBox.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.statusRichTextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(144)))), ((int)(((byte)(191)))));
             this.statusRichTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.statusRichTextBox.Font = new System.Drawing.Font("Comic Sans MS", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
