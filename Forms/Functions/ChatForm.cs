@@ -98,33 +98,28 @@ namespace hotel_app.Forms.Functions
             chatPanel.AutoScrollPosition = new Point(0, 0);
             if (stateOfConversation == 1 && inputChatTextBox.Text == "Order Food")
             {
-                Point location2 = new Point(10, height);
-                chatPanel.Controls.Add(SetEmployeeIcon(location2));
-
-                string message = "What would you like to order?";
-                Point bubbleLocation = new Point(70, height + 10);
-                Size bubbleSize = new Size(220, 40);
-                Point textBoxLoaction = new Point(10, 10);
-                Size textBoxSize = new Size(200, 20);
-                chatPanel.Controls.Add(SetResponseBubble(message, bubbleLocation, bubbleSize, textBoxLoaction, textBoxSize, Color.White));
-                height += bubbleSize.Height + 3;
+                OrderMenu();
             }
             else
             {
-                Point location2 = new Point(10, height);
-                chatPanel.Controls.Add(SetEmployeeIcon(location2));
-
-                string message = "I do not understand you.";
-                Point bubbleLocation = new Point(70, height + 10);
-                Size bubbleSize = new Size(180, 40);
-                Point textBoxLoaction = new Point(10, 10);
-                Size textBoxSize = new Size(160, 20);
-                chatPanel.Controls.Add(SetResponseBubble(message, bubbleLocation, bubbleSize, textBoxLoaction, textBoxSize, Color.White));
-                height += bubbleSize.Height + 3;
+                ErrorChatMessage();
                 MainMenuMessage();
             }
-            chatPanel.AutoScrollPosition = new Point(0, 0);
+            chatPanel.AutoScrollPosition = new Point(0, height);
+        }
 
+        private void ErrorChatMessage()
+        {
+            Point location2 = new Point(10, height);
+            chatPanel.Controls.Add(SetEmployeeIcon(location2));
+
+            string message = "I do not understand you.";
+            Point bubbleLocation = new Point(70, height + 10);
+            Size bubbleSize = new Size(180, 40);
+            Point textBoxLoaction = new Point(10, 10);
+            Size textBoxSize = new Size(160, 20);
+            chatPanel.Controls.Add(SetResponseBubble(message, bubbleLocation, bubbleSize, textBoxLoaction, textBoxSize, Color.White));
+            height += bubbleSize.Height + 3;
         }
 
         private void MainMenuMessage()
@@ -154,13 +149,20 @@ namespace hotel_app.Forms.Functions
             Size textBoxSize3 = new Size(130, 20);
             chatPanel.Controls.Add(SetResponseBubble(message3, bubbleLocation3, bubbleSize3, textBoxLoaction3, textBoxSize3, Color.White));
             height += bubbleSize3.Height + 10;
-            
-            chatPanel.AutoScrollPosition = new Point(0, height);
         }
 
         private void OrderMenu()
         {
+            Point location2 = new Point(10, height);
+            chatPanel.Controls.Add(SetEmployeeIcon(location2));
 
+            string message = "What would you like to order?";
+            Point bubbleLocation = new Point(70, height + 10);
+            Size bubbleSize = new Size(220, 40);
+            Point textBoxLoaction = new Point(10, 10);
+            Size textBoxSize = new Size(200, 20);
+            chatPanel.Controls.Add(SetResponseBubble(message, bubbleLocation, bubbleSize, textBoxLoaction, textBoxSize, Color.White));
+            height += bubbleSize.Height + 3;
         }
 
         private void inputChatTextBox_MessageChanged(object sender, EventArgs e)
