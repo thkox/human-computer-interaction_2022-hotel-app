@@ -24,10 +24,31 @@ namespace hotel_app.Forms.Functions
         {
             Point location2 = new Point(10, height);
             chatPanel.Controls.Add(SetEmployeeIcon(location2));
-            Point location = new Point(70, height + 10);
-            Size size = new Size(200, 50);
-            chatPanel.Controls.Add(SetResponseBubble("Hello World", location, size));
+
+            string message1 = "Welcome to Zeus Hotel Palace! What you would like to do?";
+            Point bubbleLocation = new Point(70, height + 10);
+            Size bubbleSize = new Size(250, 50);
+            Point textBoxLoaction = new Point(10, 10);
+            Size textBoxSize = new Size(200, 36);
+            chatPanel.Controls.Add(SetResponseBubble(message1, bubbleLocation, bubbleSize, textBoxLoaction, textBoxSize));
             height = height + 50;
+            
+            string message2 = "1. Order Food";
+            Point bubbleLocation2 = new Point(70, height + 10);
+            Size bubbleSize2 = new Size(160, 40);
+            Point textBoxLoaction2 = new Point(10, 10);
+            Size textBoxSize2 = new Size(130, 20);
+            chatPanel.Controls.Add(SetResponseBubble(message2, bubbleLocation2, bubbleSize2, textBoxLoaction2, textBoxSize2));
+            height = height + 40;
+
+            string message3 = "2. Pay Bill";
+            Point bubbleLocation3 = new Point(70, height + 10);
+            Size bubbleSize3 = new Size(160, 40);
+            Point textBoxLoaction3 = new Point(10, 10);
+            Size textBoxSize3 = new Size(130, 20);
+            chatPanel.Controls.Add(SetResponseBubble(message3, bubbleLocation3, bubbleSize3, textBoxLoaction3, textBoxSize3));
+            height = height + 50;
+
         }
 
         private PictureBox SetEmployeeIcon(Point location)
@@ -48,11 +69,13 @@ namespace hotel_app.Forms.Functions
             
         }
 
-        private ChatRichTextBox SetResponseBubble(string message, Point location, Size size)
+        private ChatRichTextBox SetResponseBubble(string message, Point bubbleLocation, Size bubbleSize, Point textBoxLocation, Size textBoxSize)
         {
             ChatRichTextBox rtb = new();
-            rtb.Location = location;
-            rtb.Size = size;
+            rtb.Location = bubbleLocation;
+            rtb.Size = bubbleSize;
+            rtb.RichTextBoxLocation = textBoxLocation;
+            rtb.RichTextBoxSize = textBoxSize;
             rtb.Text = message;
             rtb.BorderStyle = BorderStyle.None;
             rtb.Radius = 20;
@@ -65,9 +88,11 @@ namespace hotel_app.Forms.Functions
 
         private void sentMessagePictureBox_Click(object sender, EventArgs e)
         {
-            Point location = new Point(150, height + 10);
-            Size size = new Size(200, 40);
-            chatPanel.Controls.Add(SetResponseBubble("Morning", location, size));
+            Point bubbleLocation = new Point(150, height + 15);
+            Size bubbleSize = new Size(200, 40);
+            Point textBoxLocation = new Point(10, 10);
+            Size textBoxSize = new Size(200, 30);
+            chatPanel.Controls.Add(SetResponseBubble(inputChatTextBox.Text, bubbleLocation, bubbleSize, textBoxLocation, textBoxSize));
             height = height + 50;
         }
     }
