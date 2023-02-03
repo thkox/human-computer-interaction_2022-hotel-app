@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.totalLabel = new System.Windows.Forms.Label();
             this.paymentPanel = new System.Windows.Forms.Panel();
             this.buttonCustom1 = new hotel_app.Custom_Toolbox.ButtonCustom();
             this.cvv_richTextBox = new CustomControls.RichTextBox.RichTextBox();
@@ -45,19 +44,9 @@
             this.mastercardButton = new FontAwesome.Sharp.IconButton();
             this.mastercardCheckBox = new System.Windows.Forms.CheckBox();
             this.paymentMethodLabel = new System.Windows.Forms.Label();
+            this.total_richTextBox = new System.Windows.Forms.RichTextBox();
             this.paymentPanel.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // totalLabel
-            // 
-            this.totalLabel.AutoSize = true;
-            this.totalLabel.Font = new System.Drawing.Font("Segoe UI", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.totalLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(241)))), ((int)(((byte)(246)))));
-            this.totalLabel.Location = new System.Drawing.Point(652, 85);
-            this.totalLabel.Name = "totalLabel";
-            this.totalLabel.Size = new System.Drawing.Size(118, 45);
-            this.totalLabel.TabIndex = 0;
-            this.totalLabel.Text = "[Total]";
             // 
             // paymentPanel
             // 
@@ -330,20 +319,32 @@
             this.paymentMethodLabel.TabIndex = 0;
             this.paymentMethodLabel.Text = "Payment Method";
             // 
+            // total_richTextBox
+            // 
+            this.total_richTextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(144)))), ((int)(((byte)(191)))));
+            this.total_richTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.total_richTextBox.Font = new System.Drawing.Font("Comic Sans MS", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.total_richTextBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(241)))), ((int)(((byte)(246)))));
+            this.total_richTextBox.Location = new System.Drawing.Point(664, 82);
+            this.total_richTextBox.Name = "total_richTextBox";
+            this.total_richTextBox.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.total_richTextBox.Size = new System.Drawing.Size(109, 45);
+            this.total_richTextBox.TabIndex = 16;
+            this.total_richTextBox.Text = "[Total]";
+            // 
             // PaymentForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(144)))), ((int)(((byte)(191)))));
             this.ClientSize = new System.Drawing.Size(1084, 661);
+            this.Controls.Add(this.total_richTextBox);
             this.Controls.Add(this.paymentPanel);
-            this.Controls.Add(this.totalLabel);
             this.Name = "PaymentForm";
             this.Text = "PaymentForm";
             this.paymentPanel.ResumeLayout(false);
             this.paymentPanel.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -364,6 +365,6 @@
         private Label label1;
         private CustomControls.RichTextBox.RichTextBox cardNumber_richTextBox;
         private Label cardNumberLabel;
-        public Label totalLabel;
+        public RichTextBox total_richTextBox;
     }
 }

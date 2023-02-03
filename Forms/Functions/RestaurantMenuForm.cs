@@ -275,9 +275,16 @@ namespace hotel_app.Forms.Functions
         private void checkoutButton_Click(object sender, EventArgs e)
         {
             PaymentForm payment = new PaymentForm();
-            payment.totalLabel.Text = total_richTextBox.Text;
+            payment.total_richTextBox.Text = total_richTextBox.Text;
             OpenPaymentForm(payment);
             backPictureBox.Show();
+        }
+
+        private void backPictureBox_Click(object sender, EventArgs e)
+        {
+            currentChildForm.Hide();
+            menuLoadFormsPanel = restaurantMenuTabs;
+            backPictureBox.Hide();
         }
         //make my code sorter
     }

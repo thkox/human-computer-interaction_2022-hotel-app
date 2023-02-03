@@ -1168,6 +1168,7 @@
             this.backPictureBox.Size = new System.Drawing.Size(42, 42);
             this.backPictureBox.TabIndex = 11;
             this.backPictureBox.TabStop = false;
+            this.backPictureBox.Click += new System.EventHandler(this.backPictureBox_Click);
             // 
             // RestaurantMenuForm
             // 
