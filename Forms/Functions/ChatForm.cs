@@ -280,9 +280,9 @@ namespace hotel_app.Forms.Functions
 
             string message = "Please type each the products that you want per message like 'Souvlaki x2'";
             Point bubbleLocation = new Point(70, height + 10);
-            Size bubbleSize = new Size(250, 40);
+            Size bubbleSize = new Size(280, 60);
             Point textBoxLoaction = new Point(10, 10);
-            Size textBoxSize = new Size(230, 20);
+            Size textBoxSize = new Size(260, 40);
             chatPanel.Controls.Add(SetResponseBubble(message, bubbleLocation, bubbleSize, textBoxLoaction, textBoxSize, Color.White));
             height += bubbleSize.Height + 3;
 
@@ -303,9 +303,9 @@ namespace hotel_app.Forms.Functions
 
             string message = "Please type each the products that you want per message like 'Souvlaki x2'";
             Point bubbleLocation = new Point(70, height + 10);
-            Size bubbleSize = new Size(250, 40);
+            Size bubbleSize = new Size(280, 60);
             Point textBoxLoaction = new Point(10, 10);
-            Size textBoxSize = new Size(230, 20);
+            Size textBoxSize = new Size(260, 40);
             chatPanel.Controls.Add(SetResponseBubble(message, bubbleLocation, bubbleSize, textBoxLoaction, textBoxSize, Color.White));
             height += bubbleSize.Height + 3;
 
@@ -357,9 +357,9 @@ namespace hotel_app.Forms.Functions
 
             string message = "Please type each the products that you want per message like 'Souvlaki x2'";
             Point bubbleLocation = new Point(70, height + 10);
-            Size bubbleSize = new Size(250, 40);
+            Size bubbleSize = new Size(280, 60);
             Point textBoxLoaction = new Point(10, 10);
-            Size textBoxSize = new Size(230, 20);
+            Size textBoxSize = new Size(260, 40);
             chatPanel.Controls.Add(SetResponseBubble(message, bubbleLocation, bubbleSize, textBoxLoaction, textBoxSize, Color.White));
             height += bubbleSize.Height + 3;
 
@@ -419,9 +419,9 @@ namespace hotel_app.Forms.Functions
 
             string message = "Please type each the products that you want per message like 'Souvlaki x2'";
             Point bubbleLocation = new Point(70, height + 10);
-            Size bubbleSize = new Size(250, 40);
+            Size bubbleSize = new Size(280, 60);
             Point textBoxLoaction = new Point(10, 10);
-            Size textBoxSize = new Size(230, 20);
+            Size textBoxSize = new Size(260, 40);
             chatPanel.Controls.Add(SetResponseBubble(message, bubbleLocation, bubbleSize, textBoxLoaction, textBoxSize, Color.White));
             height += bubbleSize.Height + 3;
 
