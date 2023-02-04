@@ -27,7 +27,7 @@ namespace hotel_app.Forms.Functions
             InitializeComponent();
         }
 
-        public delegate void CustomEventHandler(object sender, EventArgs e);
+        public delegate void CustomEventHandler(ChatForm sender, EventArgs e);
         public event CustomEventHandler OrderedCompleted;
 
         private void ChatForm_Load(object sender, EventArgs e)
