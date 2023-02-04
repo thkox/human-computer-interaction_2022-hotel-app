@@ -562,6 +562,12 @@ namespace hotel_app.Forms.Functions
             10, 15, 10, 8, //salads prices
             30, 15, 10, 40, //pizza prices
             5, 4, 8, 20, 7, 30, 24}; //greek cuisine prices
+
+            List<string> menu = new List<string> {"Americano", "Cappuccino", "Espresso", "Latte",  //coffee
+            "Zeus Heart", "Chocolate", "Hospitality", "Ferrero", "Special", //chocolates
+            "Greek", "Aegean", "Tricolore", "Chef", //salads
+            "Zeus Special", "Athina", "Trojan", "Palace", //pizza
+            "Souvlaki", "Tyromezes", "Pasta", "El Greco", "Chicken", "Ocean", "Fiesta"}; //greek cuisine
             List<string[]> splitList = new List<string[]>();
             
             for (int i = 0; i < foodList.Count; i++)
@@ -578,6 +584,16 @@ namespace hotel_app.Forms.Functions
                 string name = split[0].Substring(0, length);
                 names.Add(name);
                 quantities.Add(int.Parse(split[1]));
+            }
+
+            int total = 0;
+
+            for (int i = 0; i < menu.Count; i++)
+            {
+                if (names[i] == menu[i])
+                {
+                    total = total + prices[i] * quantities[i];
+                }
             }
 
             //this where we are going to trandfer the user to another page
