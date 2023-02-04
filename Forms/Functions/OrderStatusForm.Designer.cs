@@ -44,6 +44,7 @@
             this.step6Label = new System.Windows.Forms.Label();
             this.step5Label = new System.Windows.Forms.Label();
             this.progressTimer = new System.Windows.Forms.Timer(this.components);
+            this.chatRichTextBox1 = new hotel_app.Custom_Toolbox.ChatRichTextBox();
             ((System.ComponentModel.ISupportInitialize)(this.progressPictureBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.allStepsPictureBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.step1PictureBox)).BeginInit();
@@ -67,7 +68,7 @@
             // allStepsPictureBox
             // 
             this.allStepsPictureBox.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.allStepsPictureBox.BackColor = System.Drawing.SystemColors.ScrollBar;
+            this.allStepsPictureBox.BackColor = System.Drawing.Color.DarkGray;
             this.allStepsPictureBox.Location = new System.Drawing.Point(225, 490);
             this.allStepsPictureBox.Name = "allStepsPictureBox";
             this.allStepsPictureBox.Size = new System.Drawing.Size(650, 28);
@@ -229,6 +230,23 @@
             this.progressTimer.Interval = 5000;
             this.progressTimer.Tick += new System.EventHandler(this.progressTimer_Tick);
             // 
+            // chatRichTextBox1
+            // 
+            this.chatRichTextBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.chatRichTextBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(144)))), ((int)(((byte)(191)))));
+            this.chatRichTextBox1.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.chatRichTextBox1.Location = new System.Drawing.Point(207, 471);
+            this.chatRichTextBox1.MaxLegthSize = 30;
+            this.chatRichTextBox1.Name = "chatRichTextBox1";
+            this.chatRichTextBox1.Radius = 35;
+            this.chatRichTextBox1.RichTextBoxLocation = new System.Drawing.Point(20, 20);
+            this.chatRichTextBox1.RichTextBoxSize = new System.Drawing.Size(1, 1);
+            this.chatRichTextBox1.ShadeColor = System.Drawing.Color.FromArgb(((int)(((byte)(121)))), ((int)(((byte)(159)))), ((int)(((byte)(202)))));
+            this.chatRichTextBox1.Size = new System.Drawing.Size(688, 66);
+            this.chatRichTextBox1.TabIndex = 22;
+            this.chatRichTextBox1.TextMultiline = true;
+            this.chatRichTextBox1.TextReadonly = true;
+            // 
             // OrderStatusForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -249,6 +267,7 @@
             this.Controls.Add(this.step1PictureBox);
             this.Controls.Add(this.progressPictureBox);
             this.Controls.Add(this.allStepsPictureBox);
+            this.Controls.Add(this.chatRichTextBox1);
             this.Name = "OrderStatusForm";
             this.Text = "OrderStatusForm";
             this.Load += new System.EventHandler(this.OrderStatusForm_Load);
@@ -282,5 +301,6 @@
         private Label step6Label;
         private Label step5Label;
         private System.Windows.Forms.Timer progressTimer;
+        private Custom_Toolbox.ChatRichTextBox chatRichTextBox1;
     }
 }

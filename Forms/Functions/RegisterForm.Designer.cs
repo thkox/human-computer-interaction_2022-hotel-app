@@ -91,6 +91,7 @@
             this.firstname_richTextBox.ForeColor = System.Drawing.Color.Goldenrod;
             this.firstname_richTextBox.Location = new System.Drawing.Point(392, 66);
             this.firstname_richTextBox.Margin = new System.Windows.Forms.Padding(4);
+            this.firstname_richTextBox.MaxLength = 32767;
             this.firstname_richTextBox.Multiline = false;
             this.firstname_richTextBox.Name = "firstname_richTextBox";
             this.firstname_richTextBox.Padding = new System.Windows.Forms.Padding(7);
@@ -124,6 +125,7 @@
             this.lastname_richTextBox.ForeColor = System.Drawing.Color.Goldenrod;
             this.lastname_richTextBox.Location = new System.Drawing.Point(392, 155);
             this.lastname_richTextBox.Margin = new System.Windows.Forms.Padding(4);
+            this.lastname_richTextBox.MaxLength = 32767;
             this.lastname_richTextBox.Multiline = false;
             this.lastname_richTextBox.Name = "lastname_richTextBox";
             this.lastname_richTextBox.Padding = new System.Windows.Forms.Padding(7);
@@ -157,6 +159,7 @@
             this.id_richTextBox.ForeColor = System.Drawing.Color.Goldenrod;
             this.id_richTextBox.Location = new System.Drawing.Point(392, 376);
             this.id_richTextBox.Margin = new System.Windows.Forms.Padding(4);
+            this.id_richTextBox.MaxLength = 32767;
             this.id_richTextBox.Multiline = false;
             this.id_richTextBox.Name = "id_richTextBox";
             this.id_richTextBox.Padding = new System.Windows.Forms.Padding(7);
@@ -190,6 +193,7 @@
             this.dateOfBirth_richTextBox.ForeColor = System.Drawing.Color.Goldenrod;
             this.dateOfBirth_richTextBox.Location = new System.Drawing.Point(392, 239);
             this.dateOfBirth_richTextBox.Margin = new System.Windows.Forms.Padding(4);
+            this.dateOfBirth_richTextBox.MaxLength = 32767;
             this.dateOfBirth_richTextBox.Multiline = false;
             this.dateOfBirth_richTextBox.Name = "dateOfBirth_richTextBox";
             this.dateOfBirth_richTextBox.Padding = new System.Windows.Forms.Padding(7);
@@ -224,6 +228,7 @@
             this.checkinDate_richTextBox.ForeColor = System.Drawing.Color.Goldenrod;
             this.checkinDate_richTextBox.Location = new System.Drawing.Point(392, 469);
             this.checkinDate_richTextBox.Margin = new System.Windows.Forms.Padding(4);
+            this.checkinDate_richTextBox.MaxLength = 32767;
             this.checkinDate_richTextBox.Multiline = false;
             this.checkinDate_richTextBox.Name = "checkinDate_richTextBox";
             this.checkinDate_richTextBox.Padding = new System.Windows.Forms.Padding(7);
@@ -258,6 +263,7 @@
             this.checkoutDate_richTextBox.ForeColor = System.Drawing.Color.Goldenrod;
             this.checkoutDate_richTextBox.Location = new System.Drawing.Point(558, 469);
             this.checkoutDate_richTextBox.Margin = new System.Windows.Forms.Padding(4);
+            this.checkoutDate_richTextBox.MaxLength = 32767;
             this.checkoutDate_richTextBox.Multiline = false;
             this.checkoutDate_richTextBox.Name = "checkoutDate_richTextBox";
             this.checkoutDate_richTextBox.Padding = new System.Windows.Forms.Padding(7);
