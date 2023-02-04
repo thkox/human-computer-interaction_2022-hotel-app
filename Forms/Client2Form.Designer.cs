@@ -32,6 +32,7 @@ namespace hotel_app.Forms
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Client2Form));
             this.menuPanel = new System.Windows.Forms.Panel();
+            this.foodButton = new FontAwesome.Sharp.IconButton();
             this.radioButton = new FontAwesome.Sharp.IconButton();
             this.tvButton = new FontAwesome.Sharp.IconButton();
             this.lightsButton = new FontAwesome.Sharp.IconButton();
@@ -46,10 +47,9 @@ namespace hotel_app.Forms
             this.childFormLabel = new System.Windows.Forms.Label();
             this.currentChildFormIcon = new FontAwesome.Sharp.IconPictureBox();
             this.childFormPanel = new System.Windows.Forms.Panel();
-            this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.foodButton = new FontAwesome.Sharp.IconButton();
+            this.label3 = new System.Windows.Forms.Label();
             this.menuPanel.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -75,6 +75,29 @@ namespace hotel_app.Forms
             this.menuPanel.Name = "menuPanel";
             this.menuPanel.Size = new System.Drawing.Size(300, 800);
             this.menuPanel.TabIndex = 0;
+            // 
+            // foodButton
+            // 
+            this.foodButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.foodButton.Dock = System.Windows.Forms.DockStyle.Top;
+            this.foodButton.FlatAppearance.BorderSize = 0;
+            this.foodButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.foodButton.Font = new System.Drawing.Font("Cooper Black", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.foodButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(228)))), ((int)(((byte)(238)))));
+            this.foodButton.IconChar = FontAwesome.Sharp.IconChar.Cutlery;
+            this.foodButton.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(228)))), ((int)(((byte)(238)))));
+            this.foodButton.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.foodButton.IconSize = 50;
+            this.foodButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.foodButton.Location = new System.Drawing.Point(0, 550);
+            this.foodButton.Name = "foodButton";
+            this.foodButton.Size = new System.Drawing.Size(300, 70);
+            this.foodButton.TabIndex = 15;
+            this.foodButton.Text = "Restaurant";
+            this.foodButton.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.foodButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.foodButton.UseVisualStyleBackColor = true;
+            this.foodButton.Click += new System.EventHandler(this.foodButton_Click);
             // 
             // radioButton
             // 
@@ -303,26 +326,13 @@ namespace hotel_app.Forms
             this.childFormPanel.Size = new System.Drawing.Size(1100, 700);
             this.childFormPanel.TabIndex = 2;
             // 
-            // label3
-            // 
-            this.label3.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label3.AutoSize = true;
-            this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.Font = new System.Drawing.Font("Comic Sans MS", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(260, 270);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(692, 232);
-            this.label3.TabIndex = 8;
-            this.label3.Text = resources.GetString("label3.Text");
-            // 
             // label2
             // 
             this.label2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Edwardian Script ITC", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label2.ForeColor = System.Drawing.Color.Goldenrod;
-            this.label2.Location = new System.Drawing.Point(513, 169);
+            this.label2.Location = new System.Drawing.Point(504, 81);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(257, 57);
             this.label2.TabIndex = 7;
@@ -335,35 +345,25 @@ namespace hotel_app.Forms
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Edwardian Script ITC", 54.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label1.ForeColor = System.Drawing.Color.Goldenrod;
-            this.label1.Location = new System.Drawing.Point(371, 102);
+            this.label1.Location = new System.Drawing.Point(362, 14);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(318, 86);
             this.label1.TabIndex = 6;
             this.label1.Text = "Zeus Palace\r\n";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // foodButton
+            // label3
             // 
-            this.foodButton.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.foodButton.Dock = System.Windows.Forms.DockStyle.Top;
-            this.foodButton.FlatAppearance.BorderSize = 0;
-            this.foodButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.foodButton.Font = new System.Drawing.Font("Cooper Black", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.foodButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(228)))), ((int)(((byte)(238)))));
-            this.foodButton.IconChar = FontAwesome.Sharp.IconChar.Cutlery;
-            this.foodButton.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(228)))), ((int)(((byte)(238)))));
-            this.foodButton.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.foodButton.IconSize = 50;
-            this.foodButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.foodButton.Location = new System.Drawing.Point(0, 550);
-            this.foodButton.Name = "foodButton";
-            this.foodButton.Size = new System.Drawing.Size(300, 70);
-            this.foodButton.TabIndex = 15;
-            this.foodButton.Text = "Restaurant";
-            this.foodButton.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.foodButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.foodButton.UseVisualStyleBackColor = true;
-            this.foodButton.Click += new System.EventHandler(this.foodButton_Click);
+            this.label3.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.Transparent;
+            this.label3.Font = new System.Drawing.Font("Comic Sans MS", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label3.ForeColor = System.Drawing.Color.White;
+            this.label3.Location = new System.Drawing.Point(194, 299);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(692, 232);
+            this.label3.TabIndex = 8;
+            this.label3.Text = resources.GetString("label3.Text");
             // 
             // Client2Form
             // 
@@ -404,7 +404,6 @@ namespace hotel_app.Forms
         private Panel titlelabel;
         private FontAwesome.Sharp.IconPictureBox currentChildFormIcon;
         private Label childFormLabel;
-        private Label label3;
         private Label label2;
         private Label label1;
         private PictureBox pictureBox1;
@@ -415,5 +414,6 @@ namespace hotel_app.Forms
         public Panel panel1;
         public Panel childFormPanel;
         public FontAwesome.Sharp.IconButton foodButton;
+        private Label label3;
     }
 }
