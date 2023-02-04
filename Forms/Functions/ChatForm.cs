@@ -18,10 +18,17 @@ namespace hotel_app.Forms.Functions
         int height = 20; // Height of the chat
         int tabIndex = 0; // Tab index of the chat
         private int stateOfConversation = 0;
+
+        //total price of the order
+        public int total = 0;
+
         public ChatForm()
         {
             InitializeComponent();
         }
+
+        public delegate void CustomEventHandler(object sender, EventArgs e);
+        public event CustomEventHandler OrderedCompleted;
 
         private void ChatForm_Load(object sender, EventArgs e)
         {
@@ -143,26 +150,6 @@ namespace hotel_app.Forms.Functions
             else if (stateOfConversation == 11)
             {
                 OrderMenu();
-            }
-            else if (stateOfConversation == 111)
-            {
-                CoffeeMenu();
-            }
-            else if (stateOfConversation == 112)
-            {
-                ChocolateMenu();
-            }
-            else if (stateOfConversation == 113)
-            {
-                SaladsMenu();
-            }
-            else if (stateOfConversation == 114)
-            {
-                PizzaMenu();
-            }
-            else if (stateOfConversation == 115)
-            {
-                GreekCuisineMenu();
             }
             else if (stateOfConversation == 12) // coffee menu order
             {
@@ -677,14 +664,6 @@ namespace hotel_app.Forms.Functions
                 height += bubbleSize1.Height + 3;
             }
 
-            string message2 = "I am transfering you to the payment page";
-            Point bubbleLocation2 = new Point(70, height + 10);
-            Size bubbleSize2 = new Size(280, 40);
-            Point textBoxLocaction2 = new Point(10, 10);
-            Size textBoxSize2 = new Size(260, 20);
-            chatPanel.Controls.Add(SetResponseBubble(message2, bubbleLocation2, bubbleSize2, textBoxLocaction2, textBoxSize2, Color.White));
-            height += bubbleSize2.Height + 10;
-
             List<int> prices = new List<int> { 8, 10, 9, 12, //coffee prices
             20, 10, 15, 13, 18, //chocolates prices
             10, 15, 10, 8, //salads prices
@@ -714,8 +693,6 @@ namespace hotel_app.Forms.Functions
                 quantities.Add(int.Parse(split[1]));
             }
 
-            int total = 0;
-
             for (int i = 0; i < menu.Count; i++)
             {
                 for (int j = 0; j < names.Count; j++)
@@ -727,7 +704,32 @@ namespace hotel_app.Forms.Functions
                 }
             }
 
-            //this where we are going to trandfer the user to another page
+
+            string message2 = $"The total cost is: {total}€";
+            Point bubbleLocation2 = new Point(70, height + 10);
+            Size bubbleSize2 = new Size(280, 40);
+            Point textBoxLocaction2 = new Point(10, 10);
+            Size textBoxSize2 = new Size(260, 20);
+            chatPanel.Controls.Add(SetResponseBubble(message2, bubbleLocation2, bubbleSize2, textBoxLocaction2, textBoxSize2, Color.White));
+            height += bubbleSize2.Height + 3;
+
+            string message3 = "I am transfering you to the payment page";
+            Point bubbleLocation3 = new Point(70, height + 10);
+            Size bubbleSize3 = new Size(280, 40);
+            Point textBoxLocaction3 = new Point(10, 10);
+            Size textBoxSize3 = new Size(260, 20);
+            chatPanel.Controls.Add(SetResponseBubble(message3, bubbleLocation3, bubbleSize3, textBoxLocaction3, textBoxSize3, Color.White));
+            height += bubbleSize3.Height + 3;
+
+            string message4 = "You can now close the chat";
+            Point bubbleLocation4 = new Point(70, height + 10);
+            Size bubbleSize4 = new Size(280, 40);
+            Point textBoxLocaction4 = new Point(10, 10);
+            Size textBoxSize4 = new Size(260, 20);
+            chatPanel.Controls.Add(SetResponseBubble(message4, bubbleLocation4, bubbleSize4, textBoxLocaction4, textBoxSize4, Color.White));
+            height += bubbleSize4.Height + 10;
+
+            OrderedCompleted?.Invoke(this, EventArgs.Empty);
         }
 
         private void inputChatTextBox_MessageChanged(object sender, EventArgs e)

@@ -17,6 +17,8 @@ namespace hotel_app.Forms.Functions
 
         private Form currentChildForm;
 
+        private ChatForm chatSupport = new ChatForm();
+
         int total;
         private List<string> menu = new List<string> {"Americano", "Cappuccino", "Espresso", "Latte",  //coffee
         "Zeus Heart", "Chocolate", "Hospitality", "Ferrero", "Special", //chocolates
@@ -56,6 +58,16 @@ namespace hotel_app.Forms.Functions
             quantityChicken.TagChanged += new System.EventHandler(quantityChicken_TagChanged);
             quantityOcean.TagChanged += new System.EventHandler(quantityOcean_TagChanged);
             quantityFiesta.TagChanged += new System.EventHandler(quantityFiesta_TagChanged);
+
+            //if the user completes the order using the chat
+            chatSupport.OrderedCompleted += new ChatForm.CustomEventHandler(chatSupport_OrderedCompleted);
+        }
+
+        private void chatSupport_OrderedCompleted(object sender, EventArgs e)
+        {
+            PaymentForm payment = new PaymentForm();
+            payment.total_richTextBox.Text = $"{chatSupport.total}€";
+            OpenPaymentForm(payment);
         }
 
         //Coffee
@@ -294,7 +306,6 @@ namespace hotel_app.Forms.Functions
 
         private void chatButton_Click(object sender, EventArgs e)
         {
-            ChatForm chatSupport = new ChatForm();
             chatSupport.Show();
         }
 
