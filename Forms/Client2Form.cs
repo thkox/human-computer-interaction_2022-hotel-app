@@ -161,5 +161,21 @@ namespace hotel_app.Forms
             ActivateButton(sender);
             OpenChildForm(restaurant);
         }
+
+        private void chatRichTextBox1_Load(object sender, EventArgs e)
+        {
+            chatRichTextBox1.Text = "Welcome to our Zeus Hotel!\r\n\r\nYou can control the basic functions of your room from the left menu.\r\nIf you have any question, do not hesitate to ask us as soon as possible.\r\n\r\nHave a wonderful visit,\r\n                           the stuff";
+        }
+
+        private void chatRichTextBox2_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void chatRichTextBox3_Load(object sender, EventArgs e)
+        {
+            chatRichTextBox3.Text = "The restaurant is now open for lunch!";
+
+        }
     }
 }
