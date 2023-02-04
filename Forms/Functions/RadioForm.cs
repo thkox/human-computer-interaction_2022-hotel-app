@@ -29,6 +29,8 @@ namespace hotel_app.Forms.Functions
             radioValueLabel.Text = "OFF";
             radioValueLabel.ForeColor = Color.Red;
             radioPanel.BackColor = Color.FromArgb(129, 164, 205);
+
+            starPictureBox.Visible= false;
         }
 
         private void TurnONRadio() 
@@ -97,6 +99,36 @@ namespace hotel_app.Forms.Functions
             {
                 button.BackColor = Color.FromArgb(79, 134, 184);
             }
+        }
+
+        private void radioStation1_Click(object sender, EventArgs e)
+        {
+            ChangeChannelToFavorite(radioStation1.Text);
+
+        }
+
+        private void iconButton1_Click(object sender, EventArgs e)
+        {
+            ChangeChannelToFavorite(iconButton1.Text);
+
+        }
+
+        private void iconButton2_Click(object sender, EventArgs e)
+        {
+            ChangeChannelToFavorite(iconButton2.Text);
+
+        }
+
+        private void iconButton3_Click(object sender, EventArgs e)
+        {
+            ChangeChannelToFavorite(iconButton3.Text);
+        }
+
+        private void ChangeChannelToFavorite(string channel)
+        {
+            starPictureBox.Visible = true;
+            radioValueLabel.Text = channel;
+
         }
     }
 }
