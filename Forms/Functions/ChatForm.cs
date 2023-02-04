@@ -28,7 +28,8 @@ namespace hotel_app.Forms.Functions
         //bubbles sizes
         private Size categoriesAndFoodBubbleSize = new Size(120, 40);
         private Size mainMenuBubbleSize = new Size(200, 40);
-        private Size souvlakiExampleBubbleSize = new Size(280, 60);    
+        private Size souvlakiExampleBubbleSize = new Size(280, 60);
+        private Size readyBubbleSize = new Size(260, 60);
         
         public ChatForm()
         {
@@ -274,9 +275,8 @@ namespace hotel_app.Forms.Functions
             height += souvlakiExampleBubbleSize.Height + 3;
 
             string message5 = "When you have typed your order, please write “I am ready”.";
-            Size bubbleSize5 = new Size(260, 60);
-            chatPanel.Controls.Add(SetResponseBubble(message5, new Point(70, height + 10), bubbleSize5, textPoint, new Size(240, 40), Color.White));
-            height += bubbleSize5.Height + 10;
+            chatPanel.Controls.Add(SetResponseBubble(message5, new Point(70, height + 10), readyBubbleSize, textPoint, new Size(240, 40), Color.White));
+            height += readyBubbleSize.Height + 10;
         }
 
 
@@ -307,9 +307,8 @@ namespace hotel_app.Forms.Functions
             height += categoriesAndFoodBubbleSize.Height + 3;
 
             string message5 = "When you have typed your order, please write “I am ready”.";
-            Size bubbleSize5 = new Size(260, 60);
-            chatPanel.Controls.Add(SetResponseBubble(message5, new Point(70, height + 10), bubbleSize5, textPoint, new Size(240, 40), Color.White));
-            height += bubbleSize5.Height + 10;
+            chatPanel.Controls.Add(SetResponseBubble(message5, new Point(70, height + 10), readyBubbleSize, textPoint, new Size(240, 40), Color.White));
+            height += readyBubbleSize.Height + 10;
         }
 
         private void ChocolateMenu()
@@ -342,9 +341,8 @@ namespace hotel_app.Forms.Functions
             height += categoriesAndFoodBubbleSize.Height + 3;
 
             string message6 = "When you have typed your order, please write “I am ready”.";
-            Size bubbleSize6 = new Size(260, 60);
-            chatPanel.Controls.Add(SetResponseBubble(message6, new Point(70, height + 10), bubbleSize6, textPoint, new Size(240, 40), Color.White));
-            height += bubbleSize6.Height + 10;
+            chatPanel.Controls.Add(SetResponseBubble(message6, new Point(70, height + 10), readyBubbleSize, textPoint, new Size(240, 40), Color.White));
+            height += readyBubbleSize.Height + 10;
         }
 
         private void SaladsMenu()
@@ -373,9 +371,8 @@ namespace hotel_app.Forms.Functions
             height += categoriesAndFoodBubbleSize.Height + 3;
 
             string message5 = "When you have typed your order, please write “I am ready”.";
-            Size bubbleSize5 = new Size(260, 60);
-            chatPanel.Controls.Add(SetResponseBubble(message5, new Point(70, height + 10), bubbleSize5, textPoint, new Size(240, 40), Color.White));
-            height += bubbleSize5.Height + 10;
+            chatPanel.Controls.Add(SetResponseBubble(message5, new Point(70, height + 10), readyBubbleSize, textPoint, new Size(240, 40), Color.White));
+            height += readyBubbleSize.Height + 10;
         }
 
         private void PizzaMenu()
@@ -404,9 +401,8 @@ namespace hotel_app.Forms.Functions
             height += categoriesAndFoodBubbleSize.Height + 3;
 
             string message5 = "When you have typed your order, please write “I am ready”.";
-            Size bubbleSize5 = new Size(260, 60);
-            chatPanel.Controls.Add(SetResponseBubble(message5, new Point(70, height + 10), bubbleSize5, textPoint, new Size(240, 40), Color.White));
-            height += bubbleSize5.Height + 10;
+            chatPanel.Controls.Add(SetResponseBubble(message5, new Point(70, height + 10), readyBubbleSize, textPoint, new Size(240, 40), Color.White));
+            height += readyBubbleSize.Height + 10;
         }
         
         private void GreekCuisineMenu()
@@ -447,9 +443,8 @@ namespace hotel_app.Forms.Functions
             height += categoriesAndFoodBubbleSize.Height + 3;
 
             string message8 = "When you have typed your order, please write “I am ready”.";
-            Size bubbleSize8 = new Size(260, 60);
-            chatPanel.Controls.Add(SetResponseBubble(message8, new Point(70, height + 10), bubbleSize8, textPoint, new Size(240, 40), Color.White));
-            height += bubbleSize8.Height + 10;
+            chatPanel.Controls.Add(SetResponseBubble(message8, new Point(70, height + 10), readyBubbleSize, textPoint, new Size(240, 40), Color.White));
+            height += readyBubbleSize.Height + 10;
         }
         
         private void QuestionUser()
