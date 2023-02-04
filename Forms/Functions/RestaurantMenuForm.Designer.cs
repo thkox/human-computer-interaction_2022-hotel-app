@@ -1162,7 +1162,6 @@
             this.menuLoadFormsPanel.Name = "menuLoadFormsPanel";
             this.menuLoadFormsPanel.Size = new System.Drawing.Size(1079, 672);
             this.menuLoadFormsPanel.TabIndex = 11;
-            this.menuLoadFormsPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.menuLoadFormsPanel_Paint);
             // 
             // chatButton
             // 
