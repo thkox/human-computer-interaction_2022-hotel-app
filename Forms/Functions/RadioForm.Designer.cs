@@ -102,7 +102,7 @@
             this.radioUpButton.IconChar = FontAwesome.Sharp.IconChar.ArrowCircleUp;
             this.radioUpButton.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(241)))), ((int)(((byte)(246)))));
             this.radioUpButton.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.radioUpButton.Location = new System.Drawing.Point(327, 359);
+            this.radioUpButton.Location = new System.Drawing.Point(344, 339);
             this.radioUpButton.Name = "radioUpButton";
             this.radioUpButton.Size = new System.Drawing.Size(175, 65);
             this.radioUpButton.TabIndex = 2;
@@ -119,7 +119,7 @@
             this.radioDownButton.IconChar = FontAwesome.Sharp.IconChar.ArrowCircleDown;
             this.radioDownButton.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(241)))), ((int)(((byte)(246)))));
             this.radioDownButton.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.radioDownButton.Location = new System.Drawing.Point(508, 359);
+            this.radioDownButton.Location = new System.Drawing.Point(525, 339);
             this.radioDownButton.Name = "radioDownButton";
             this.radioDownButton.Size = new System.Drawing.Size(175, 65);
             this.radioDownButton.TabIndex = 3;
@@ -133,14 +133,14 @@
             this.radioToggle.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.radioToggle.AutoSize = true;
             this.radioToggle.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.radioToggle.Location = new System.Drawing.Point(484, 430);
-            this.radioToggle.MinimumSize = new System.Drawing.Size(45, 22);
+            this.radioToggle.Location = new System.Drawing.Point(468, 418);
+            this.radioToggle.MinimumSize = new System.Drawing.Size(100, 50);
             this.radioToggle.Name = "radioToggle";
             this.radioToggle.OffBackColor = System.Drawing.Color.DimGray;
             this.radioToggle.OffToggleColor = System.Drawing.Color.LightGray;
             this.radioToggle.OnBackColor = System.Drawing.Color.Green;
             this.radioToggle.OnToggleColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(241)))), ((int)(((byte)(246)))));
-            this.radioToggle.Size = new System.Drawing.Size(45, 22);
+            this.radioToggle.Size = new System.Drawing.Size(100, 50);
             this.radioToggle.TabIndex = 4;
             this.radioToggle.UseVisualStyleBackColor = true;
             this.radioToggle.CheckedChanged += new System.EventHandler(this.RadioToggle_CheckedChanged);

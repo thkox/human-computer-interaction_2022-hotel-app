@@ -94,14 +94,14 @@
             this.thermostatToggle.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.thermostatToggle.AutoSize = true;
             this.thermostatToggle.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.thermostatToggle.Location = new System.Drawing.Point(483, 490);
-            this.thermostatToggle.MinimumSize = new System.Drawing.Size(45, 22);
+            this.thermostatToggle.Location = new System.Drawing.Point(458, 488);
+            this.thermostatToggle.MinimumSize = new System.Drawing.Size(100, 50);
             this.thermostatToggle.Name = "thermostatToggle";
             this.thermostatToggle.OffBackColor = System.Drawing.Color.DimGray;
             this.thermostatToggle.OffToggleColor = System.Drawing.Color.LightGray;
             this.thermostatToggle.OnBackColor = System.Drawing.Color.Green;
             this.thermostatToggle.OnToggleColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(241)))), ((int)(((byte)(246)))));
-            this.thermostatToggle.Size = new System.Drawing.Size(45, 22);
+            this.thermostatToggle.Size = new System.Drawing.Size(100, 50);
             this.thermostatToggle.TabIndex = 5;
             this.thermostatToggle.UseVisualStyleBackColor = true;
             this.thermostatToggle.CheckedChanged += new System.EventHandler(this.thermostatToggle_CheckedChanged);
