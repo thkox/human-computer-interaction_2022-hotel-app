@@ -28,7 +28,7 @@ namespace hotel_app.Forms.Functions
         }
 
         public delegate void CustomEventHandler(ChatForm sender, EventArgs e);
-        public event CustomEventHandler OrderedCompleted;
+        public event CustomEventHandler orderCompleted;
 
         private void ChatForm_Load(object sender, EventArgs e)
         {
@@ -41,11 +41,8 @@ namespace hotel_app.Forms.Functions
             chatPanel.Controls.Add(SetEmployeeIcon(location2));
 
             string message1 = "Welcome to Zeus Hotel Palace!";
-            Point bubbleLocation = new Point(70, height + 10);
             Size bubbleSize = new Size(220, 40);
-            Point textBoxLocaction = new Point(10, 10);
-            Size textBoxSize = new Size(200, 20);
-            chatPanel.Controls.Add(SetResponseBubble(message1, bubbleLocation, bubbleSize, textBoxLocaction, textBoxSize, Color.White));
+            chatPanel.Controls.Add(SetResponseBubble(message1, new Point(70, height + 10), bubbleSize, new Point(10, 10), new Size(200, 20), Color.White));
             height += bubbleSize.Height + 3;
 
             MainMenuMessage();
@@ -281,7 +278,7 @@ namespace hotel_app.Forms.Functions
             chatPanel.Controls.Add(SetResponseBubble(message, new Point(70, height + 10), bubbleSize, new Point(10, 10), new Size(260, 40), Color.White));
             height += bubbleSize.Height + 3;
 
-            string message5 = "When you have typed your ordered, please write “I am ready”.";
+            string message5 = "When you have typed your order, please write “I am ready”.";
             Size bubbleSize5 = new Size(260, 60);
             chatPanel.Controls.Add(SetResponseBubble(message5, new Point(70, height + 10), bubbleSize5, new Point(10, 10), new Size(240, 40), Color.White));
             height += bubbleSize5.Height + 10;
@@ -319,7 +316,7 @@ namespace hotel_app.Forms.Functions
             chatPanel.Controls.Add(SetResponseBubble(message4, new Point(70, height + 10), bubbleSize4, new Point(10, 10), new Size(100, 20), Color.White));
             height += bubbleSize4.Height + 3;
 
-            string message5 = "When you have typed your ordered, please write “I am ready”.";
+            string message5 = "When you have typed your order, please write “I am ready”.";
             Size bubbleSize5 = new Size(260, 60);
             chatPanel.Controls.Add(SetResponseBubble(message5, new Point(70, height + 10), bubbleSize5, new Point(10, 10), new Size(240, 40), Color.White));
             height += bubbleSize5.Height + 10;
@@ -360,7 +357,7 @@ namespace hotel_app.Forms.Functions
             chatPanel.Controls.Add(SetResponseBubble(message5, new Point(70, height + 10), bubbleSize5, new Point(10, 10), new Size(100, 20), Color.White));
             height += bubbleSize5.Height + 3;
 
-            string message6 = "When you have typed your ordered, please write “I am ready”.";
+            string message6 = "When you have typed your order, please write “I am ready”.";
             Size bubbleSize6 = new Size(260, 60);
             chatPanel.Controls.Add(SetResponseBubble(message6, new Point(70, height + 10), bubbleSize6, new Point(10, 10), new Size(240, 40), Color.White));
             height += bubbleSize6.Height + 10;
@@ -396,7 +393,7 @@ namespace hotel_app.Forms.Functions
             chatPanel.Controls.Add(SetResponseBubble(message4, new Point(70, height + 10), bubbleSize4, new Point(10, 10), new Size(100, 20), Color.White));
             height += bubbleSize4.Height + 3;
 
-            string message5 = "When you have typed your ordered, please write “I am ready”.";
+            string message5 = "When you have typed your order, please write “I am ready”.";
             Size bubbleSize5 = new Size(260, 60);
             chatPanel.Controls.Add(SetResponseBubble(message5, new Point(70, height + 10), bubbleSize5, new Point(10, 10), new Size(240, 40), Color.White));
             height += bubbleSize5.Height + 10;
@@ -432,7 +429,7 @@ namespace hotel_app.Forms.Functions
             chatPanel.Controls.Add(SetResponseBubble(message4, new Point(70, height + 10), bubbleSize4, new Point(10, 10), new Size(100, 20), Color.White));
             height += bubbleSize4.Height + 3;
 
-            string message5 = "When you have typed your ordered, please write “I am ready”.";
+            string message5 = "When you have typed your order, please write “I am ready”.";
             Size bubbleSize5 = new Size(260, 60);
             chatPanel.Controls.Add(SetResponseBubble(message5, new Point(70, height + 10), bubbleSize5, new Point(10, 10), new Size(240, 40), Color.White));
             height += bubbleSize5.Height + 10;
@@ -483,7 +480,7 @@ namespace hotel_app.Forms.Functions
             chatPanel.Controls.Add(SetResponseBubble(message7, new Point(70, height + 10), bubbleSize7, new Point(10, 10), new Size(100, 20), Color.White));
             height += bubbleSize7.Height + 3;
 
-            string message8 = "When you have typed your ordered, please write “I am ready”.";
+            string message8 = "When you have typed your order, please write “I am ready”.";
             Size bubbleSize8 = new Size(260, 60);
             chatPanel.Controls.Add(SetResponseBubble(message8, new Point(70, height + 10), bubbleSize8, new Point(10, 10), new Size(240, 40), Color.White));
             height += bubbleSize8.Height + 10;
@@ -557,7 +554,6 @@ namespace hotel_app.Forms.Functions
                 }
             }
 
-
             string message2 = $"The total cost is: {total}€";
             Size bubbleSize2 = new Size(280, 40);
             chatPanel.Controls.Add(SetResponseBubble(message2, new Point(70, height + 10), bubbleSize2, new Point(10, 10), new Size(260, 20), Color.White));
@@ -573,7 +569,7 @@ namespace hotel_app.Forms.Functions
             chatPanel.Controls.Add(SetResponseBubble(message4, new Point(70, height + 10), bubbleSize4, new Point(10, 10), new Size(260, 20), Color.White));
             height += bubbleSize4.Height + 10;
 
-            OrderedCompleted?.Invoke(this, EventArgs.Empty);
+            orderCompleted?.Invoke(this, EventArgs.Empty);
         }
 
         private void inputChatTextBox_MessageChanged(object sender, EventArgs e)
