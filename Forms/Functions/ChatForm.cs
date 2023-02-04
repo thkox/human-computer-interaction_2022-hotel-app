@@ -25,6 +25,8 @@ namespace hotel_app.Forms.Functions
 
         private void ChatForm_Load(object sender, EventArgs e)
         {
+            this.inputChatTextBox.MessageChanged += new System.EventHandler(this.inputChatTextBox_MessageChanged);
+
             sentMessagePictureBox.Enabled = false;
             sentMessagePictureBox.IconColor = Color.FromArgb(96, 144, 191);
 
@@ -280,6 +282,28 @@ namespace hotel_app.Forms.Functions
             if (!menusSelected.Contains(3))
             {
                 string message1 = "3. Salad";
+                Point bubbleLocation1 = new Point(70, height + 10);
+                Size bubbleSize1 = new Size(120, 40);
+                Point textBoxLoaction1 = new Point(10, 10);
+                Size textBoxSize1 = new Size(100, 20);
+                chatPanel.Controls.Add(SetResponseBubble(message1, bubbleLocation1, bubbleSize1, textBoxLoaction1, textBoxSize1, Color.White));
+                height += bubbleSize.Height + 3;
+            }
+
+            if (!menusSelected.Contains(4))
+            {
+                string message1 = "4. Pizza";
+                Point bubbleLocation1 = new Point(70, height + 10);
+                Size bubbleSize1 = new Size(120, 40);
+                Point textBoxLoaction1 = new Point(10, 10);
+                Size textBoxSize1 = new Size(100, 20);
+                chatPanel.Controls.Add(SetResponseBubble(message1, bubbleLocation1, bubbleSize1, textBoxLoaction1, textBoxSize1, Color.White));
+                height += bubbleSize.Height + 3;
+            }
+
+            if (!menusSelected.Contains(5))
+            {
+                string message1 = "5. Greek Cuisine";
                 Point bubbleLocation1 = new Point(70, height + 10);
                 Size bubbleSize1 = new Size(120, 40);
                 Point textBoxLoaction1 = new Point(10, 10);
