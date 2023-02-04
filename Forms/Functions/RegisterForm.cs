@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Text.RegularExpressions;
@@ -20,34 +21,40 @@ namespace hotel_app.Forms.Functions
 
         private void dateOfBirth_richTextBox_Leave(object sender, EventArgs e)
         {
-            Regex datePattern = new Regex(@"^(0[1-9]|1[0-2])/(0[1-9]|[1-2][0-9]|3[0-1])/\d{4}$");
-
-            if (!datePattern.IsMatch(dateOfBirth_richTextBox.Text))
+            if (dateOfBirth_richTextBox.Text.Length == 10)
             {
-                MessageBox.Show("Invalid date format. Use MM/dd/yyyy.");
-                dateOfBirth_richTextBox.Focus();
+                DateTime date;
+                if (!DateTime.TryParseExact(dateOfBirth_richTextBox.Text, "MM/dd/yyyy", CultureInfo.InvariantCulture, DateTimeStyles.None, out date))
+                {
+                    dateOfBirth_richTextBox.Text = "";
+                    MessageBox.Show("Invalid date format. Use MM/DD/YYYY.");
+                }
             }
         }
 
         private void checkinDate_richTextBox_Leave(object sender, EventArgs e)
         {
-            Regex datePattern = new Regex(@"^(0[1-9]|1[0-2])/(0[1-9]|[1-2][0-9]|3[0-1])/\d{4}$");
-
-            if (!datePattern.IsMatch(checkinDate_richTextBox.Text))
+            if (checkinDate_richTextBox.Text.Length == 10)
             {
-                MessageBox.Show("Invalid date format. Use MM/dd/yyyy.");
-                checkinDate_richTextBox.Focus();
+                DateTime date;
+                if (!DateTime.TryParseExact(checkinDate_richTextBox.Text, "MM/dd/yyyy", CultureInfo.InvariantCulture, DateTimeStyles.None, out date))
+                {
+                    checkinDate_richTextBox.Text = "";
+                    MessageBox.Show("Invalid date format. Use MM/DD/YYYY.");
+                }
             }
         }
 
         private void checkoutDate_richTextBox_Leave(object sender, EventArgs e)
         {
-            Regex datePattern = new Regex(@"^(0[1-9]|1[0-2])/(0[1-9]|[1-2][0-9]|3[0-1])/\d{4}$");
-
-            if (!datePattern.IsMatch(checkoutDate_richTextBox.Text))
+            if (checkoutDate_richTextBox.Text.Length == 10)
             {
-                MessageBox.Show("Invalid date format. Use MM/dd/yyyy.");
-                checkoutDate_richTextBox.Focus();
+                DateTime date;
+                if (!DateTime.TryParseExact(checkoutDate_richTextBox.Text, "MM/dd/yyyy", CultureInfo.InvariantCulture, DateTimeStyles.None, out date))
+                {
+                    checkoutDate_richTextBox.Text = "";
+                    MessageBox.Show("Invalid date format. Use MM/DD/YYYY.");
+                }
             }
         }
 
