@@ -68,9 +68,9 @@ namespace hotel_app.Forms.Functions
                 if (radioValue >= 105.7)
                     radioValue = 87.7;
                 radioValue += 0.3;
-                if (radioValue == 97.3)
+                if (Math.Abs(radioValue - 97.3) < 0.1)
                     starPictureBox.Visible = true;
-                else if (radioValue == 99.7)
+                else if (radioValue == 99.6)
                     starPictureBox.Visible = true;
                 else if (radioValue == 100.3)
                     starPictureBox.Visible = true;
@@ -88,9 +88,9 @@ namespace hotel_app.Forms.Functions
             if (radioValue <= 88.3)
                 radioValue = 106.3;
             radioValue -= 0.3;
-            if (radioValue == 97.3)
+            if (Math.Abs(radioValue - 97.3) < 0.1)
                 starPictureBox.Visible = true;
-            else if (radioValue == 99.7)
+            else if (radioValue == 99.6)
                 starPictureBox.Visible = true;
             else if (radioValue == 100.3)
                 starPictureBox.Visible = true;
@@ -146,7 +146,7 @@ namespace hotel_app.Forms.Functions
         private void favRadioStation2_Click(object sender, EventArgs e)
         {
             favRadioStation(favRadioStation2.Text);
-            radioValue = 99.7;
+            radioValue = 99.6;
             radioValueLabel.Text = string.Format($"{radioValue.ToString("0.0")}MHz");
             radioValueLabel.Left = (radioPanel.Width - radioValueLabel.Width) / 2;
         }
