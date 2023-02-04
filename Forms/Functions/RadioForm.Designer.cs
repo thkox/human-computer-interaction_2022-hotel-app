@@ -68,10 +68,10 @@
             // 
             // starPictureBox
             // 
-            this.starPictureBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(144)))), ((int)(((byte)(191)))));
-            this.starPictureBox.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.starPictureBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(129)))), ((int)(((byte)(164)))), ((int)(((byte)(205)))));
+            this.starPictureBox.ForeColor = System.Drawing.Color.Yellow;
             this.starPictureBox.IconChar = FontAwesome.Sharp.IconChar.Star;
-            this.starPictureBox.IconColor = System.Drawing.SystemColors.ControlText;
+            this.starPictureBox.IconColor = System.Drawing.Color.Yellow;
             this.starPictureBox.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.starPictureBox.Location = new System.Drawing.Point(321, 3);
             this.starPictureBox.Name = "starPictureBox";
