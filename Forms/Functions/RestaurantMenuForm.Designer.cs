@@ -1109,7 +1109,7 @@
             // cart_richTextBox
             // 
             this.cart_richTextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(144)))), ((int)(((byte)(191)))));
-            this.cart_richTextBox.Font = new System.Drawing.Font("Comic Sans MS", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.cart_richTextBox.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.cart_richTextBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(241)))), ((int)(((byte)(246)))));
             this.cart_richTextBox.Location = new System.Drawing.Point(761, 135);
             this.cart_richTextBox.Name = "cart_richTextBox";
