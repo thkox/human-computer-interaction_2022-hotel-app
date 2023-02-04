@@ -71,10 +71,12 @@ namespace hotel_app.Forms
             {
                 trojanForm.panel1.Visible = false;
                 trojanForm.gpsButton.Visible = false;
+                trojanForm.foodButton.Visible = false;
             }
             foreach (Client2Form roomForm in roomForms)
             {
                 roomForm.panel1.Visible = false;
+                roomForm.foodButton.Visible=false;
             }
 
             currentNameLabel.Visible = false;
