@@ -95,7 +95,6 @@ namespace hotel_app.Forms.Functions
         {
             upButtonClicked = true;
             downButtonClicked = false;
-            setValueTimer.Start();
 
             if (thermostatState == true)
             {
@@ -130,14 +129,14 @@ namespace hotel_app.Forms.Functions
                     estimatedTimeLabel.Visible = false;
                 }
             }
+            setValueTimer.Enabled = true;
         }
 
         private void thermostatDownButton_Click(object sender, EventArgs e)
         {
             upButtonClicked = false;
             downButtonClicked = true;
-            setValueTimer.Start();
-
+            
             if (thermostatState == true)
             {
                 if (setThermostatValue <= 11)
@@ -170,7 +169,8 @@ namespace hotel_app.Forms.Functions
                 {
                     estimatedTimeLabel.Visible = false;
                 }
-            }   
+            }
+            setValueTimer.Enabled = true;
         }
 
         private void thermostatToggle_CheckedChanged(object sender, EventArgs e)
@@ -200,17 +200,17 @@ namespace hotel_app.Forms.Functions
 
         private void timer1_Tick(object sender, EventArgs e)
         {
-            currentTempValueLabel.Text = "Current Temperature: " + currentThermostatValue + "°C";
             if (currentThermostatValue == setThermostatValue)
             {
                 setValueTimer.Stop();
                 estimatedTimeLabel.Visible = false;
             }
-            if (downButtonClicked == true)
+            currentTempValueLabel.Text = "Current Temperature: " + currentThermostatValue + "°C";
+            if (downButtonClicked == true && currentThermostatValue != setThermostatValue)
             {
                 currentThermostatValue -= 1;
             }
-            else if (upButtonClicked == true)
+            else if (upButtonClicked == true && currentThermostatValue != setThermostatValue)
             {
                 currentThermostatValue += 1;
             }
