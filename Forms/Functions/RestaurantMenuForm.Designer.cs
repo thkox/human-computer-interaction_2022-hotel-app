@@ -113,6 +113,9 @@
             this.total_richTextBox = new System.Windows.Forms.RichTextBox();
             this.menuLoadFormsPanel = new System.Windows.Forms.Panel();
             this.chatButton = new FontAwesome.Sharp.IconButton();
+            this.tabControl1 = new System.Windows.Forms.TabControl();
+            this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.tabPage2 = new System.Windows.Forms.TabPage();
             ((System.ComponentModel.ISupportInitialize)(this.cartButton)).BeginInit();
             this.menuTabControl.SuspendLayout();
             this.coffeeTabPage.SuspendLayout();
@@ -121,6 +124,7 @@
             this.pizzaTabPage.SuspendLayout();
             this.greekCuisineTabPage.SuspendLayout();
             this.menuLoadFormsPanel.SuspendLayout();
+            this.tabControl1.SuspendLayout();
             this.SuspendLayout();
             // 
             // cartButton
@@ -1151,6 +1155,7 @@
             // menuLoadFormsPanel
             // 
             this.menuLoadFormsPanel.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.menuLoadFormsPanel.Controls.Add(this.tabControl1);
             this.menuLoadFormsPanel.Controls.Add(this.chatButton);
             this.menuLoadFormsPanel.Controls.Add(this.menuLabel);
             this.menuLoadFormsPanel.Controls.Add(this.total_richTextBox);
@@ -1181,6 +1186,36 @@
             this.chatButton.UseVisualStyleBackColor = false;
             this.chatButton.Click += new System.EventHandler(this.chatButton_Click);
             // 
+            // tabControl1
+            // 
+            this.tabControl1.Controls.Add(this.tabPage1);
+            this.tabControl1.Controls.Add(this.tabPage2);
+            this.tabControl1.Location = new System.Drawing.Point(798, 665);
+            this.tabControl1.Name = "tabControl1";
+            this.tabControl1.SelectedIndex = 0;
+            this.tabControl1.Size = new System.Drawing.Size(200, 100);
+            this.tabControl1.TabIndex = 20;
+            // 
+            // tabPage1
+            // 
+            this.tabPage1.Location = new System.Drawing.Point(4, 24);
+            this.tabPage1.Name = "tabPage1";
+            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage1.Size = new System.Drawing.Size(192, 72);
+            this.tabPage1.TabIndex = 0;
+            this.tabPage1.Text = "tabPage1";
+            this.tabPage1.UseVisualStyleBackColor = true;
+            // 
+            // tabPage2
+            // 
+            this.tabPage2.Location = new System.Drawing.Point(4, 24);
+            this.tabPage2.Name = "tabPage2";
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage2.Size = new System.Drawing.Size(192, 72);
+            this.tabPage2.TabIndex = 1;
+            this.tabPage2.Text = "tabPage2";
+            this.tabPage2.UseVisualStyleBackColor = true;
+            // 
             // RestaurantMenuForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -1205,6 +1240,7 @@
             this.greekCuisineTabPage.PerformLayout();
             this.menuLoadFormsPanel.ResumeLayout(false);
             this.menuLoadFormsPanel.PerformLayout();
+            this.tabControl1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -1295,5 +1331,8 @@
         private RichTextBox total_richTextBox;
         private Panel menuLoadFormsPanel;
         private FontAwesome.Sharp.IconButton chatButton;
+        private TabControl tabControl1;
+        private TabPage tabPage1;
+        private TabPage tabPage2;
     }
 }
