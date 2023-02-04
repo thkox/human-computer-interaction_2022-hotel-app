@@ -167,31 +167,14 @@ namespace hotel_app.Forms.Functions
 
         private void confirmationButton_Click(object sender, EventArgs e)
         {
-            if (cardholderName_richTextBox.Texts == "Enter Cardholder name")
-            {
-                allRichTextBoxesHaveText = false;
-            }
-            else if (cardNumber_richTextBox.Texts == "Enter Card Number")
-            {
-                allRichTextBoxesHaveText = false;
-            }
-            else if (cvv_richTextBox.Texts == "CVV")
-            {
-                allRichTextBoxesHaveText = false;
-            }
-            else if (month_richTextBox.Texts == "MM")
-            {
-                allRichTextBoxesHaveText = false;
-            }
-            else if (year_richTextBox.Texts == "YYYY")
+            if (cardholderName_richTextBox.Texts == "Enter Cardholder name" || cardNumber_richTextBox.Texts == "Enter Card Number" || cvv_richTextBox.Texts == "CVV" || month_richTextBox.Texts == "MM" || year_richTextBox.Texts == "YYYY" || year_richTextBox.Texts == "YYYY")
             {
                 allRichTextBoxesHaveText = false;
             }
 
-            if (allRichTextBoxesHaveText == true)
+            if (allRichTextBoxesHaveText)
             {
                 OpenOrderStatusForm(orderStatus);
-
             }
             else
             {
