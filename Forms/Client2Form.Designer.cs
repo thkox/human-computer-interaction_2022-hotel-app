@@ -355,6 +355,7 @@ namespace hotel_app.Forms
             // 
             // panel2
             // 
+            this.panel2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(144)))), ((int)(((byte)(191)))));
             this.panel2.Controls.Add(this.label8);
             this.panel2.Controls.Add(this.label7);

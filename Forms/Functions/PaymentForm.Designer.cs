@@ -48,6 +48,7 @@
             this.paymentMethodLabel = new System.Windows.Forms.Label();
             this.total_richTextBox = new System.Windows.Forms.RichTextBox();
             this.paymentLoadFormsPanel = new System.Windows.Forms.Panel();
+            this.chatRichTextBox1 = new hotel_app.Custom_Toolbox.ChatRichTextBox();
             this.paymentPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.mastercardPictureBox)).BeginInit();
@@ -91,7 +92,7 @@
             this.cancelButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.cancelButton.Font = new System.Drawing.Font("Comic Sans MS", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.cancelButton.ForeColor = System.Drawing.Color.White;
-            this.cancelButton.Location = new System.Drawing.Point(12, 298);
+            this.cancelButton.Location = new System.Drawing.Point(12, 312);
             this.cancelButton.Name = "cancelButton";
             this.cancelButton.Size = new System.Drawing.Size(111, 40);
             this.cancelButton.TabIndex = 17;
@@ -182,7 +183,7 @@
             this.confirmationButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.confirmationButton.Font = new System.Drawing.Font("Comic Sans MS", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.confirmationButton.ForeColor = System.Drawing.Color.White;
-            this.confirmationButton.Location = new System.Drawing.Point(303, 298);
+            this.confirmationButton.Location = new System.Drawing.Point(303, 312);
             this.confirmationButton.Name = "confirmationButton";
             this.confirmationButton.Size = new System.Drawing.Size(150, 40);
             this.confirmationButton.TabIndex = 15;
@@ -374,11 +375,11 @@
             // 
             // total_richTextBox
             // 
-            this.total_richTextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(144)))), ((int)(((byte)(191)))));
+            this.total_richTextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(129)))), ((int)(((byte)(164)))), ((int)(((byte)(205)))));
             this.total_richTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.total_richTextBox.Font = new System.Drawing.Font("Comic Sans MS", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.total_richTextBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(241)))), ((int)(((byte)(246)))));
-            this.total_richTextBox.Location = new System.Drawing.Point(650, 104);
+            this.total_richTextBox.Location = new System.Drawing.Point(650, 86);
             this.total_richTextBox.Name = "total_richTextBox";
             this.total_richTextBox.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.total_richTextBox.Size = new System.Drawing.Size(109, 45);
@@ -389,10 +390,28 @@
             // 
             this.paymentLoadFormsPanel.Controls.Add(this.total_richTextBox);
             this.paymentLoadFormsPanel.Controls.Add(this.paymentPanel);
+            this.paymentLoadFormsPanel.Controls.Add(this.chatRichTextBox1);
             this.paymentLoadFormsPanel.Location = new System.Drawing.Point(1, -3);
             this.paymentLoadFormsPanel.Name = "paymentLoadFormsPanel";
             this.paymentLoadFormsPanel.Size = new System.Drawing.Size(1082, 672);
             this.paymentLoadFormsPanel.TabIndex = 17;
+            // 
+            // chatRichTextBox1
+            // 
+            this.chatRichTextBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.chatRichTextBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(144)))), ((int)(((byte)(191)))));
+            this.chatRichTextBox1.ForeColor = System.Drawing.Color.White;
+            this.chatRichTextBox1.Location = new System.Drawing.Point(261, 72);
+            this.chatRichTextBox1.MaxLegthSize = 30;
+            this.chatRichTextBox1.Name = "chatRichTextBox1";
+            this.chatRichTextBox1.Radius = 20;
+            this.chatRichTextBox1.RichTextBoxLocation = new System.Drawing.Point(10, 10);
+            this.chatRichTextBox1.RichTextBoxSize = new System.Drawing.Size(160, 25);
+            this.chatRichTextBox1.ShadeColor = System.Drawing.Color.FromArgb(((int)(((byte)(129)))), ((int)(((byte)(164)))), ((int)(((byte)(205)))));
+            this.chatRichTextBox1.Size = new System.Drawing.Size(518, 473);
+            this.chatRichTextBox1.TabIndex = 17;
+            this.chatRichTextBox1.TextMultiline = true;
+            this.chatRichTextBox1.TextReadonly = true;
             // 
             // PaymentForm
             // 
@@ -434,5 +453,6 @@
         private FontAwesome.Sharp.IconPictureBox iconPictureBox1;
         private FontAwesome.Sharp.IconPictureBox mastercardPictureBox;
         private Custom_Toolbox.ButtonCustom cancelButton;
+        private Custom_Toolbox.ChatRichTextBox chatRichTextBox1;
     }
 }
