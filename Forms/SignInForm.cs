@@ -16,30 +16,33 @@ namespace hotel_app
 
         private void login_button_Click(object sender, EventArgs e)
         {
-            if(username_richTextBox.Texts == "3" && password_richTextBox.Texts == "3")
+            if(username_richTextBox.Text == "3" && password_richTextBox.Text == "3")
             {
+                username_richTextBox.Text = "";
+                password_richTextBox.Text = "";
                 this.Hide();
                 Form menuForm = new EmployeeForm();
                 menuForm.ShowDialog();
-                menuForm = null;
                 this.Show();
 
             }
-            else if(username_richTextBox.Texts == "2" && password_richTextBox.Texts == "2")
+            else if(username_richTextBox.Text == "2" && password_richTextBox.Text == "2")
             {
+                username_richTextBox.Text = "";
+                password_richTextBox.Text = "";
                 this.Hide();
                 Form menuForm = new Client2Form();
                 menuForm.ShowDialog();
-                menuForm = null;
                 this.Show();
             }
-            else if (username_richTextBox.Texts == "1" && password_richTextBox.Texts == "1")
+            else if (username_richTextBox.Text == "1" && password_richTextBox.Text == "1")
             {
                 //MessageBox.Show("You are a Client and you have closed room");
+                username_richTextBox.Text = "";
+                password_richTextBox.Text = "";
                 this.Hide();
                 Form menuForm = new Client1Form();
                 menuForm.ShowDialog();
-                menuForm = null;
                 this.Show();
             }
             else
