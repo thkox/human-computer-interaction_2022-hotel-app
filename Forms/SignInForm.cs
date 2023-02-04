@@ -18,28 +18,31 @@ namespace hotel_app
         {
             if(username_richTextBox.Texts == "3" && password_richTextBox.Texts == "3")
             {
+                username_richTextBox.Texts = "";
+                password_richTextBox.Texts = "";
                 this.Hide();
                 Form menuForm = new EmployeeForm();
                 menuForm.ShowDialog();
-                menuForm = null;
                 this.Show();
 
             }
             else if(username_richTextBox.Texts == "2" && password_richTextBox.Texts == "2")
             {
+                username_richTextBox.Texts = "";
+                password_richTextBox.Texts = "";
                 this.Hide();
                 Form menuForm = new Client2Form();
                 menuForm.ShowDialog();
-                menuForm = null;
                 this.Show();
             }
             else if (username_richTextBox.Texts == "1" && password_richTextBox.Texts == "1")
             {
                 //MessageBox.Show("You are a Client and you have closed room");
+                username_richTextBox.Texts = "";
+                password_richTextBox.Texts = "";
                 this.Hide();
                 Form menuForm = new Client1Form();
                 menuForm.ShowDialog();
-                menuForm = null;
                 this.Show();
             }
             else
