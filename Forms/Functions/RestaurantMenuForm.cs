@@ -58,7 +58,7 @@ namespace hotel_app.Forms.Functions
             quantityFiesta.TagChanged += new System.EventHandler(quantityFiesta_TagChanged);
         }
 
-        private void chatSupport_OrderedCompleted(ChatForm sender, EventArgs e)
+        private void chatSupport_OrderCompleted(ChatForm sender, EventArgs e)
         {
             PaymentForm payment = new PaymentForm();
             payment.total_richTextBox.Text = $"{sender.total}€";
@@ -303,7 +303,7 @@ namespace hotel_app.Forms.Functions
         {
             ChatForm chatSupport = new ChatForm();
             //if the user completes the order using the chat
-            chatSupport.OrderedCompleted += new ChatForm.CustomEventHandler(chatSupport_OrderedCompleted);
+            chatSupport.OrderCompleted += new ChatForm.CustomEventHandler(chatSupport_OrderCompleted);
             chatSupport.Show();
         }
     }

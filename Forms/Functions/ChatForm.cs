@@ -31,7 +31,7 @@ namespace hotel_app.Forms.Functions
         }
 
         public delegate void CustomEventHandler(ChatForm sender, EventArgs e);
-        public event CustomEventHandler orderCompleted;
+        public event CustomEventHandler OrderCompleted;
 
         private void ChatForm_Load(object sender, EventArgs e)
         {
@@ -569,7 +569,7 @@ namespace hotel_app.Forms.Functions
             chatPanel.Controls.Add(SetResponseBubble(message4, new Point(70, height + 10), bubbleSize4, textPoint, new Size(260, 20), Color.White));
             height += bubbleSize4.Height + 10;
 
-            orderCompleted?.Invoke(this, EventArgs.Empty);
+            OrderCompleted?.Invoke(this, EventArgs.Empty);
         }
 
         private void inputChatTextBox_MessageChanged(object sender, EventArgs e)
