@@ -171,7 +171,6 @@ namespace hotel_app.Forms.Functions
                 else
                     AskForPayment();
             }
-            GreekCuisineMenu
             else if (stateOfConversation == 111 || stateOfConversation == 113 || stateOfConversation == 114 || stateOfConversation == 115) // coffee menu order
             {
                 if (inputChatTextBox.Text != "I am ready")
