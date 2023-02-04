@@ -15,7 +15,11 @@ namespace hotel_app.Forms.Functions
     public partial class RegisterForm : Form
     {
         bool allRichTextBoxesHaveText = true;
-        
+
+        public delegate void RegisterEventHandler(object sender, EventArgs e);
+        public event RegisterEventHandler RegisterCompleted;
+
+
         public RegisterForm()
         {
             InitializeComponent();
@@ -69,7 +73,8 @@ namespace hotel_app.Forms.Functions
             }
             if (allRichTextBoxesHaveText)
             {
-                //transition
+                RegisterCompleted?.Invoke(this, EventArgs.Empty);
+                this.Hide();
             }
             else
             {

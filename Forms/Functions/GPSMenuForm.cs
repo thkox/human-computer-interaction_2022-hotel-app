@@ -27,6 +27,13 @@ namespace hotel_app.Forms.Functions
         public GPSMenuForm()
         {
             InitializeComponent();
+
+            parking.Parking += new ParkingForm.TrojanParkingEventHandler(this.TrojanIsParkedSuccessfully);
+        }
+
+        private void TrojanIsParkedSuccessfully(object sender, EventArgs e)
+        {
+            backPictureBox.Visible= false;
         }
 
         private void  OpenGPSMenuFunctionForm(Form childForm) 

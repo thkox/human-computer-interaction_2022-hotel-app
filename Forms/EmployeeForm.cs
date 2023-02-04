@@ -377,7 +377,22 @@ namespace hotel_app.Forms
         {
             ActivateButton(sender);
             RegisterForm registerForm = new RegisterForm();
+            registerForm.RegisterCompleted += new RegisterForm.RegisterEventHandler(this.registerForm_RegisterCompleted);
             OpenChildForm(registerForm);
+        }
+
+        private void registerForm_RegisterCompleted(object sender, EventArgs e)
+        {
+            registrationLabel.Visible = true;
+            Reset();
+            hideMessageTimer.Start();
+        }
+
+        private void hideMessageTimer_Tick(object sender, EventArgs e)
+        {
+
+            registrationLabel.Visible = false;
+            hideMessageTimer.Stop();
         }
     }
 }

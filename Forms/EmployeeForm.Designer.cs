@@ -30,6 +30,7 @@ namespace hotel_app.Forms
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(EmployeeForm));
             this.menuPanel = new System.Windows.Forms.Panel();
             this.registerButton = new FontAwesome.Sharp.IconButton();
@@ -48,6 +49,8 @@ namespace hotel_app.Forms
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.childFormPanel = new System.Windows.Forms.Panel();
+            this.registrationLabel = new System.Windows.Forms.Label();
+            this.hideMessageTimer = new System.Windows.Forms.Timer(this.components);
             this.menuPanel.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -305,6 +308,7 @@ namespace hotel_app.Forms
             // childFormPanel
             // 
             this.childFormPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(144)))), ((int)(((byte)(191)))));
+            this.childFormPanel.Controls.Add(this.registrationLabel);
             this.childFormPanel.Controls.Add(this.label2);
             this.childFormPanel.Controls.Add(this.label1);
             this.childFormPanel.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -312,6 +316,23 @@ namespace hotel_app.Forms
             this.childFormPanel.Name = "childFormPanel";
             this.childFormPanel.Size = new System.Drawing.Size(1084, 661);
             this.childFormPanel.TabIndex = 2;
+            // 
+            // registrationLabel
+            // 
+            this.registrationLabel.AutoSize = true;
+            this.registrationLabel.Font = new System.Drawing.Font("Segoe UI", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.registrationLabel.ForeColor = System.Drawing.Color.Green;
+            this.registrationLabel.Location = new System.Drawing.Point(179, 477);
+            this.registrationLabel.Name = "registrationLabel";
+            this.registrationLabel.Size = new System.Drawing.Size(752, 86);
+            this.registrationLabel.TabIndex = 8;
+            this.registrationLabel.Text = "Registration Completed";
+            this.registrationLabel.Visible = false;
+            // 
+            // hideMessageTimer
+            // 
+            this.hideMessageTimer.Interval = 3000;
+            this.hideMessageTimer.Tick += new System.EventHandler(this.hideMessageTimer_Tick);
             // 
             // EmployeeForm
             // 
@@ -362,5 +383,7 @@ namespace hotel_app.Forms
         private Panel childFormPanel;
         private Label currentNameLabel;
         private FontAwesome.Sharp.IconButton registerButton;
+        private Label registrationLabel;
+        private System.Windows.Forms.Timer hideMessageTimer;
     }
 }

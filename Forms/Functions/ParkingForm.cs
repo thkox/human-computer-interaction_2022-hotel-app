@@ -16,6 +16,9 @@ namespace hotel_app.Forms.Functions
         bool moveRight, moveLeft, moveUp, moveDown;//if we delete the timer then we can delete these bools
         int speed = 12;
 
+        public delegate void TrojanParkingEventHandler(object sender, EventArgs e);
+        public event TrojanParkingEventHandler Parking;
+
         public ParkingForm()
         {
             InitializeComponent();
@@ -192,6 +195,7 @@ namespace hotel_app.Forms.Functions
             {
                 trojan4PictureBox.Location = new Point(467, 505);
             }
+            Parking?.Invoke(this, EventArgs.Empty);
             this.Hide();
         }
 
@@ -209,7 +213,9 @@ namespace hotel_app.Forms.Functions
             {
                 trojan1PictureBox.Location = new Point(882, 542);
             }
+            Parking?.Invoke(this, EventArgs.Empty);
             this.Hide();
         }
+
     }
 }
