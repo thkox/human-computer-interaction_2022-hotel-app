@@ -698,9 +698,12 @@ namespace hotel_app.Forms.Functions
 
             for (int i = 0; i < menu.Count; i++)
             {
-                if (names[i] == menu[i])
+                for (int j = 0; j < names.Count; j++)
                 {
-                    total = total + prices[i] * quantities[i];
+                    if (menu[i] == names[j])
+                    {
+                        total += prices[i] * quantities[j];
+                    }
                 }
             }
 
