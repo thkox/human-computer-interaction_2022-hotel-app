@@ -30,6 +30,7 @@ namespace hotel_app.Forms.Functions
         private Size mainMenuBubbleSize = new Size(200, 40);
         private Size souvlakiExampleBubbleSize = new Size(280, 60);
         private Size readyBubbleSize = new Size(260, 60);
+        private Size askForPaymentBubbleSize = new Size(280, 40);
         
         public ChatForm()
         {
@@ -515,19 +516,16 @@ namespace hotel_app.Forms.Functions
             }
 
             string message2 = $"The total cost is: {total}€";
-            Size bubbleSize2 = new Size(280, 40);
-            chatPanel.Controls.Add(SetResponseBubble(message2, new Point(70, height + 10), bubbleSize2, textPoint, new Size(260, 20), Color.White));
-            height += bubbleSize2.Height + 3;
+            chatPanel.Controls.Add(SetResponseBubble(message2, new Point(70, height + 10), askForPaymentBubbleSize, textPoint, new Size(260, 20), Color.White));
+            height += askForPaymentBubbleSize.Height + 3;
 
             string message3 = "I am transfering you to the payment page";
-            Size bubbleSize3 = new Size(280, 40);
-            chatPanel.Controls.Add(SetResponseBubble(message3, new Point(70, height + 10), bubbleSize3, textPoint, new Size(260, 20), Color.White));
-            height += bubbleSize3.Height + 3;
+            chatPanel.Controls.Add(SetResponseBubble(message3, new Point(70, height + 10), askForPaymentBubbleSize, textPoint, new Size(260, 20), Color.White));
+            height += askForPaymentBubbleSize.Height + 3;
 
             string message4 = "You can now close the chat";
-            Size bubbleSize4 = new Size(280, 40);
-            chatPanel.Controls.Add(SetResponseBubble(message4, new Point(70, height + 10), bubbleSize4, textPoint, new Size(260, 20), Color.White));
-            height += bubbleSize4.Height + 10;
+            chatPanel.Controls.Add(SetResponseBubble(message4, new Point(70, height + 10), askForPaymentBubbleSize, textPoint, new Size(260, 20), Color.White));
+            height += askForPaymentBubbleSize.Height + 10;
 
             OrderCompleted?.Invoke(this, EventArgs.Empty);
         }
