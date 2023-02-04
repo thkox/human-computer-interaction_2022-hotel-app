@@ -90,7 +90,7 @@ namespace hotel_app.Forms.Functions
             Point textBoxLocation = new Point(10, 10);
             Size textBoxSize = new Size(180, 20);
             chatPanel.Controls.Add(SetResponseBubble(inputChatTextBox.Text, bubbleLocation, bubbleSize, textBoxLocation, textBoxSize, Color.FromArgb(197, 212, 230)));
-            height += bubbleSize.Height + 20;
+            height += bubbleSize.Height + 10;
             TriggerResponse();
             inputChatTextBox.Text = ""; // Clear the input text box
         }
