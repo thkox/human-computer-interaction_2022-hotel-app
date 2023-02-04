@@ -40,6 +40,7 @@
             this.favRadioStation2 = new FontAwesome.Sharp.IconButton();
             this.favRadioStation3 = new FontAwesome.Sharp.IconButton();
             this.favRadioStation4 = new FontAwesome.Sharp.IconButton();
+            this.radioScreen = new hotel_app.Custom_Toolbox.ChatRichTextBox();
             this.radioPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.starPictureBox)).BeginInit();
             this.SuspendLayout();
@@ -59,6 +60,7 @@
             // radioPanel
             // 
             this.radioPanel.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.radioPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(129)))), ((int)(((byte)(164)))), ((int)(((byte)(205)))));
             this.radioPanel.Controls.Add(this.starPictureBox);
             this.radioPanel.Controls.Add(this.radioValueLabel);
             this.radioPanel.Location = new System.Drawing.Point(327, 145);
@@ -82,6 +84,7 @@
             // radioValueLabel
             // 
             this.radioValueLabel.AutoSize = true;
+            this.radioValueLabel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(129)))), ((int)(((byte)(164)))), ((int)(((byte)(205)))));
             this.radioValueLabel.Font = new System.Drawing.Font("Segoe UI", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.radioValueLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(241)))), ((int)(((byte)(246)))));
             this.radioValueLabel.Location = new System.Drawing.Point(0, 30);
@@ -99,7 +102,7 @@
             this.radioUpButton.IconChar = FontAwesome.Sharp.IconChar.ArrowCircleUp;
             this.radioUpButton.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(241)))), ((int)(((byte)(246)))));
             this.radioUpButton.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.radioUpButton.Location = new System.Drawing.Point(327, 304);
+            this.radioUpButton.Location = new System.Drawing.Point(327, 359);
             this.radioUpButton.Name = "radioUpButton";
             this.radioUpButton.Size = new System.Drawing.Size(175, 65);
             this.radioUpButton.TabIndex = 2;
@@ -116,7 +119,7 @@
             this.radioDownButton.IconChar = FontAwesome.Sharp.IconChar.ArrowCircleDown;
             this.radioDownButton.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(241)))), ((int)(((byte)(246)))));
             this.radioDownButton.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.radioDownButton.Location = new System.Drawing.Point(508, 304);
+            this.radioDownButton.Location = new System.Drawing.Point(508, 359);
             this.radioDownButton.Name = "radioDownButton";
             this.radioDownButton.Size = new System.Drawing.Size(175, 65);
             this.radioDownButton.TabIndex = 3;
@@ -130,7 +133,7 @@
             this.radioToggle.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.radioToggle.AutoSize = true;
             this.radioToggle.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.radioToggle.Location = new System.Drawing.Point(484, 375);
+            this.radioToggle.Location = new System.Drawing.Point(484, 430);
             this.radioToggle.MinimumSize = new System.Drawing.Size(45, 22);
             this.radioToggle.Name = "radioToggle";
             this.radioToggle.OffBackColor = System.Drawing.Color.DimGray;
@@ -238,6 +241,23 @@
             this.favRadioStation4.UseVisualStyleBackColor = false;
             this.favRadioStation4.Click += new System.EventHandler(this.favRadioStation4_Click);
             // 
+            // radioScreen
+            // 
+            this.radioScreen.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.radioScreen.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(144)))), ((int)(((byte)(191)))));
+            this.radioScreen.ForeColor = System.Drawing.Color.White;
+            this.radioScreen.Location = new System.Drawing.Point(303, 122);
+            this.radioScreen.MaxLegthSize = 30;
+            this.radioScreen.Name = "radioScreen";
+            this.radioScreen.Radius = 30;
+            this.radioScreen.RichTextBoxLocation = new System.Drawing.Point(10, 10);
+            this.radioScreen.RichTextBoxSize = new System.Drawing.Size(160, 25);
+            this.radioScreen.ShadeColor = System.Drawing.Color.FromArgb(((int)(((byte)(129)))), ((int)(((byte)(164)))), ((int)(((byte)(205)))));
+            this.radioScreen.Size = new System.Drawing.Size(428, 200);
+            this.radioScreen.TabIndex = 10;
+            this.radioScreen.TextMultiline = true;
+            this.radioScreen.TextReadonly = true;
+            // 
             // RadioForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -254,6 +274,7 @@
             this.Controls.Add(this.radioUpButton);
             this.Controls.Add(this.radioPanel);
             this.Controls.Add(this.radioLabel);
+            this.Controls.Add(this.radioScreen);
             this.Name = "RadioForm";
             this.Text = "  ";
             this.Load += new System.EventHandler(this.RadioForm_Load);
@@ -279,5 +300,6 @@
         private FontAwesome.Sharp.IconButton favRadioStation2;
         private FontAwesome.Sharp.IconButton favRadioStation3;
         private FontAwesome.Sharp.IconButton favRadioStation4;
+        private Custom_Toolbox.ChatRichTextBox radioScreen;
     }
 }
