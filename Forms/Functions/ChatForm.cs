@@ -246,7 +246,7 @@ namespace hotel_app.Forms.Functions
                 Point textBoxLocaction1 = new Point(10, 10);
                 Size textBoxSize1 = new Size(100, 20);
                 chatPanel.Controls.Add(SetResponseBubble(message1, bubbleLocation1, bubbleSize1, textBoxLocaction1, textBoxSize1, Color.White));
-                height += bubbleSize.Height + 3;
+                height += bubbleSize1.Height + 3;
             }
 
             if (!menusSelected.Contains(2))
@@ -257,7 +257,7 @@ namespace hotel_app.Forms.Functions
                 Point textBoxLocaction1 = new Point(10, 10);
                 Size textBoxSize1 = new Size(100, 20);
                 chatPanel.Controls.Add(SetResponseBubble(message1, bubbleLocation1, bubbleSize1, textBoxLocaction1, textBoxSize1, Color.White));
-                height += bubbleSize.Height + 3;
+                height += bubbleSize1.Height + 3;
             }
 
             if (!menusSelected.Contains(3))
@@ -268,7 +268,7 @@ namespace hotel_app.Forms.Functions
                 Point textBoxLocaction1 = new Point(10, 10);
                 Size textBoxSize1 = new Size(100, 20);
                 chatPanel.Controls.Add(SetResponseBubble(message1, bubbleLocation1, bubbleSize1, textBoxLocaction1, textBoxSize1, Color.White));
-                height += bubbleSize.Height + 3;
+                height += bubbleSize1.Height + 3;
             }
 
             if (!menusSelected.Contains(4))
@@ -279,7 +279,7 @@ namespace hotel_app.Forms.Functions
                 Point textBoxLocaction1 = new Point(10, 10);
                 Size textBoxSize1 = new Size(100, 20);
                 chatPanel.Controls.Add(SetResponseBubble(message1, bubbleLocation1, bubbleSize1, textBoxLocaction1, textBoxSize1, Color.White));
-                height += bubbleSize.Height + 3;
+                height += bubbleSize1.Height + 3;
             }
 
             if (!menusSelected.Contains(5))
@@ -290,7 +290,7 @@ namespace hotel_app.Forms.Functions
                 Point textBoxLocaction1 = new Point(10, 10);
                 Size textBoxSize1 = new Size(100, 20);
                 chatPanel.Controls.Add(SetResponseBubble(message1, bubbleLocation1, bubbleSize1, textBoxLocaction1, textBoxSize1, Color.White));
-                height += bubbleSize.Height + 10;
+                height += bubbleSize1.Height + 10;
             }
         }
 
