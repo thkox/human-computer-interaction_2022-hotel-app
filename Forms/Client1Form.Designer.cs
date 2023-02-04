@@ -379,7 +379,7 @@ namespace hotel_app.Forms
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(121)))), ((int)(((byte)(159)))), ((int)(((byte)(202)))));
-            this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel2.Controls.Add(this.pictureBox1);
             this.panel2.Controls.Add(this.label8);
             this.panel2.Controls.Add(this.label7);
@@ -497,17 +497,17 @@ namespace hotel_app.Forms
             this.label6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(201)))), ((int)(((byte)(215)))), ((int)(((byte)(232)))));
             this.label6.Font = new System.Drawing.Font("Comic Sans MS", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label6.ForeColor = System.Drawing.Color.Black;
-            this.label6.Location = new System.Drawing.Point(153, 91);
+            this.label6.Location = new System.Drawing.Point(168, 101);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(274, 26);
+            this.label6.Size = new System.Drawing.Size(242, 26);
             this.label6.TabIndex = 19;
-            this.label6.Text = "Pool Sensor is on, alarm is off";
+            this.label6.Text = "Meteor Strike, Stay inside";
             // 
             // iconPictureBox2
             // 
             this.iconPictureBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(201)))), ((int)(((byte)(215)))), ((int)(((byte)(232)))));
             this.iconPictureBox2.ForeColor = System.Drawing.Color.Orange;
-            this.iconPictureBox2.IconChar = FontAwesome.Sharp.IconChar.ShieldHalved;
+            this.iconPictureBox2.IconChar = FontAwesome.Sharp.IconChar.Meteor;
             this.iconPictureBox2.IconColor = System.Drawing.Color.Orange;
             this.iconPictureBox2.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconPictureBox2.IconSize = 50;
@@ -590,14 +590,14 @@ namespace hotel_app.Forms
             // chatRichTextBox2
             // 
             this.chatRichTextBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(121)))), ((int)(((byte)(159)))), ((int)(((byte)(202)))));
-            this.chatRichTextBox2.ForeColor = System.Drawing.Color.RoyalBlue;
+            this.chatRichTextBox2.ForeColor = System.Drawing.Color.Salmon;
             this.chatRichTextBox2.Location = new System.Drawing.Point(545, 287);
             this.chatRichTextBox2.MaxLegthSize = 30;
             this.chatRichTextBox2.Name = "chatRichTextBox2";
             this.chatRichTextBox2.Radius = 40;
             this.chatRichTextBox2.RichTextBoxLocation = new System.Drawing.Point(30, 30);
             this.chatRichTextBox2.RichTextBoxSize = new System.Drawing.Size(450, 160);
-            this.chatRichTextBox2.ShadeColor = System.Drawing.SystemColors.ControlLight;
+            this.chatRichTextBox2.ShadeColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(228)))), ((int)(((byte)(238)))));
             this.chatRichTextBox2.Size = new System.Drawing.Size(500, 200);
             this.chatRichTextBox2.TabIndex = 12;
             this.chatRichTextBox2.TextMultiline = true;
@@ -613,7 +613,7 @@ namespace hotel_app.Forms
             this.chatRichTextBox1.Radius = 40;
             this.chatRichTextBox1.RichTextBoxLocation = new System.Drawing.Point(30, 30);
             this.chatRichTextBox1.RichTextBoxSize = new System.Drawing.Size(450, 160);
-            this.chatRichTextBox1.ShadeColor = System.Drawing.Color.White;
+            this.chatRichTextBox1.ShadeColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(228)))), ((int)(((byte)(238)))));
             this.chatRichTextBox1.Size = new System.Drawing.Size(500, 200);
             this.chatRichTextBox1.TabIndex = 2;
             this.chatRichTextBox1.TextMultiline = true;
