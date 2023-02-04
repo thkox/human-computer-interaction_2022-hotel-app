@@ -25,6 +25,8 @@ namespace hotel_app.Forms.Functions
 
         private void ChatForm_Load(object sender, EventArgs e)
         {
+            this.inputChatTextBox.MessageChanged += new System.EventHandler(this.inputChatTextBox_MessageChanged);
+
             sentMessagePictureBox.Enabled = false;
             sentMessagePictureBox.IconColor = Color.FromArgb(96, 144, 191);
 
@@ -285,6 +287,28 @@ namespace hotel_app.Forms.Functions
                 Point textBoxLoaction1 = new Point(10, 10);
                 Size textBoxSize1 = new Size(100, 20);
                 chatPanel.Controls.Add(SetResponseBubble(message1, bubbleLocation1, bubbleSize1, textBoxLoaction1, textBoxSize1, Color.White));
+                height += bubbleSize.Height + 3;
+            }
+
+            if (!menusSelected.Contains(4))
+            {
+                string message1 = "4. Pizza";
+                Point bubbleLocation1 = new Point(70, height + 10);
+                Size bubbleSize1 = new Size(120, 40);
+                Point textBoxLoaction1 = new Point(10, 10);
+                Size textBoxSize1 = new Size(100, 20);
+                chatPanel.Controls.Add(SetResponseBubble(message1, bubbleLocation1, bubbleSize1, textBoxLoaction1, textBoxSize1, Color.White));
+                height += bubbleSize.Height + 3;
+            }
+
+            if (!menusSelected.Contains(5))
+            {
+                string message1 = "5. Greek Cuisine";
+                Point bubbleLocation1 = new Point(70, height + 10);
+                Size bubbleSize1 = new Size(120, 40);
+                Point textBoxLoaction1 = new Point(10, 10);
+                Size textBoxSize1 = new Size(100, 20);
+                chatPanel.Controls.Add(SetResponseBubble(message1, bubbleLocation1, bubbleSize1, textBoxLoaction1, textBoxSize1, Color.White));
                 height += bubbleSize.Height + 10;
             }
         }
@@ -482,6 +506,16 @@ namespace hotel_app.Forms.Functions
             height += bubbleSize5.Height + 10;
         }
 
+        private void PizzaMenu()
+        {
+            
+        }
+        
+        private void GreekCuisineMenu()
+        {
+            
+        }
+        
         private void QuestionUser()
         {
             Point location2 = new Point(10, height);
@@ -519,36 +553,6 @@ namespace hotel_app.Forms.Functions
                 height += bubbleSize.Height + 3;
             }
 
-            foreach (string productWithValue in foodList)
-            {
-                Point bubbleLocation1 = new Point(70, height + 10);
-                Size bubbleSize1 = new Size(150, 40);
-                Point textBoxLoaction1 = new Point(10, 10);
-                Size textBoxSize1 = new Size(130, 20);
-                chatPanel.Controls.Add(SetResponseBubble(productWithValue, bubbleLocation1, bubbleSize1, textBoxLoaction1, textBoxSize1, Color.White));
-                height += bubbleSize.Height + 3;
-            }
-
-            foreach (string productWithValue in foodList)
-            {
-                Point bubbleLocation1 = new Point(70, height + 10);
-                Size bubbleSize1 = new Size(150, 40);
-                Point textBoxLoaction1 = new Point(10, 10);
-                Size textBoxSize1 = new Size(130, 20);
-                chatPanel.Controls.Add(SetResponseBubble(productWithValue, bubbleLocation1, bubbleSize1, textBoxLoaction1, textBoxSize1, Color.White));
-                height += bubbleSize.Height + 3;
-            }
-
-            foreach (string productWithValue in foodList)
-            {
-                Point bubbleLocation1 = new Point(70, height + 10);
-                Size bubbleSize1 = new Size(150, 40);
-                Point textBoxLoaction1 = new Point(10, 10);
-                Size textBoxSize1 = new Size(130, 20);
-                chatPanel.Controls.Add(SetResponseBubble(productWithValue, bubbleLocation1, bubbleSize1, textBoxLoaction1, textBoxSize1, Color.White));
-                height += bubbleSize.Height + 3;
-            }
-
             string message2 = "I am transfering you to the payment page";
             Point bubbleLocation2 = new Point(70, height + 10);
             Size bubbleSize2 = new Size(280, 40);
@@ -562,6 +566,12 @@ namespace hotel_app.Forms.Functions
             10, 15, 10, 8, //salads prices
             30, 15, 10, 40, //pizza prices
             5, 4, 8, 20, 7, 30, 24}; //greek cuisine prices
+
+            List<string> menu = new List<string> {"Americano", "Cappuccino", "Espresso", "Latte",  //coffee
+            "Zeus Heart", "Chocolate", "Hospitality", "Ferrero", "Special", //chocolates
+            "Greek", "Aegean", "Tricolore", "Chef", //salads
+            "Zeus Special", "Athina", "Trojan", "Palace", //pizza
+            "Souvlaki", "Tyromezes", "Pasta", "El Greco", "Chicken", "Ocean", "Fiesta"}; //greek cuisine
             List<string[]> splitList = new List<string[]>();
             
             for (int i = 0; i < foodList.Count; i++)
@@ -578,6 +588,16 @@ namespace hotel_app.Forms.Functions
                 string name = split[0].Substring(0, length);
                 names.Add(name);
                 quantities.Add(int.Parse(split[1]));
+            }
+
+            int total = 0;
+
+            for (int i = 0; i < menu.Count; i++)
+            {
+                if (names[i] == menu[i])
+                {
+                    total = total + prices[i] * quantities[i];
+                }
             }
 
             //this where we are going to trandfer the user to another page

@@ -18,7 +18,7 @@ namespace hotel_app.Forms.Functions
         private Form currentChildForm;
 
         int total;
-        public List<string> menu = new List<string> {"Americano", "Cappuccino", "Espresso", "Latte",  //coffee
+        private List<string> menu = new List<string> {"Americano", "Cappuccino", "Espresso", "Latte",  //coffee
         "Zeus Heart", "Chocolate", "Hospitality", "Ferrero", "Special", //chocolates
         "Greek", "Aegean", "Tricolore", "Chef", //salads
         "Zeus Special", "Athina", "Trojan", "Palace", //pizza
