@@ -175,7 +175,6 @@ namespace hotel_app.Forms
         private void chatRichTextBox3_Load(object sender, EventArgs e)
         {
             chatRichTextBox3.Text = "The restaurant is now open for lunch!";
-
         }
     }
 }
