@@ -144,6 +144,26 @@ namespace hotel_app.Forms.Functions
             {
                 OrderMenu();
             }
+            else if (stateOfConversation == 111)
+            {
+                CoffeeMenu();
+            }
+            else if (stateOfConversation == 112)
+            {
+                ChocolateMenu();
+            }
+            else if (stateOfConversation == 113)
+            {
+                SaladsMenu();
+            }
+            else if (stateOfConversation == 114)
+            {
+                PizzaMenu();
+            }
+            else if (stateOfConversation == 115)
+            {
+                GreekCuisineMenu();
+            }
             else if (stateOfConversation == 12) // coffee menu order
             {
                 if (inputChatTextBox.Text != "I am ready")
@@ -151,6 +171,7 @@ namespace hotel_app.Forms.Functions
                 else
                     AskForPayment();
             }
+            GreekCuisineMenu
             else if (stateOfConversation == 111 || stateOfConversation == 113 || stateOfConversation == 114 || stateOfConversation == 115) // coffee menu order
             {
                 if (inputChatTextBox.Text != "I am ready")
