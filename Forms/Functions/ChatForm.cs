@@ -654,16 +654,6 @@ namespace hotel_app.Forms.Functions
             chatPanel.Controls.Add(SetResponseBubble(message, bubbleLocation, bubbleSize, textBoxLocaction, textBoxSize, Color.White));
             height += bubbleSize.Height + 3;
 
-            foreach (string productWithValue in foodList)
-            {
-                Point bubbleLocation1 = new Point(70, height + 10);
-                Size bubbleSize1 = new Size(150, 40);
-                Point textBoxLocaction1 = new Point(10, 10);
-                Size textBoxSize1 = new Size(130, 20);
-                chatPanel.Controls.Add(SetResponseBubble(productWithValue, bubbleLocation1, bubbleSize1, textBoxLocaction1, textBoxSize1, Color.White));
-                height += bubbleSize1.Height + 3;
-            }
-
             List<int> prices = new List<int> { 8, 10, 9, 12, //coffee prices
             20, 10, 15, 13, 18, //chocolates prices
             10, 15, 10, 8, //salads prices
@@ -700,6 +690,13 @@ namespace hotel_app.Forms.Functions
                     if (menu[i] == names[j])
                     {
                         total += prices[i] * quantities[j];
+
+                        Point bubbleLocation1 = new Point(70, height + 10);
+                        Size bubbleSize1 = new Size(150, 40);
+                        Point textBoxLocaction1 = new Point(10, 10);
+                        Size textBoxSize1 = new Size(130, 20);
+                        chatPanel.Controls.Add(SetResponseBubble(foodList[j], bubbleLocation1, bubbleSize1, textBoxLocaction1, textBoxSize1, Color.White));
+                        height += bubbleSize1.Height + 3;
                     }
                 }
             }
