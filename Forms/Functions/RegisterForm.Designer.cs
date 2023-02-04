@@ -43,6 +43,7 @@
             this.checkoutDate_richTextBox = new CustomControls.RichTextBox.RichTextBox();
             this.room_radioButtonCustom = new hotel_app.Custom_Toolbox.RadioButtonCustom();
             this.trojan_radioButtonCustom = new hotel_app.Custom_Toolbox.RadioButtonCustom();
+            this.errorLabel = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // registerButton
@@ -66,6 +67,7 @@
             this.registerButton.TextColor = System.Drawing.Color.White;
             this.registerButton.UseVisualStyleBackColor = false;
             this.registerButton.Click += new System.EventHandler(this.registerButton_Click);
+            this.registerButton.Leave += new System.EventHandler(this.registerButton_Leave);
             // 
             // firstnameLabel
             // 
@@ -309,12 +311,27 @@
             this.trojan_radioButtonCustom.UnCheckedColor = System.Drawing.Color.Gray;
             this.trojan_radioButtonCustom.UseVisualStyleBackColor = true;
             // 
+            // errorLabel
+            // 
+            this.errorLabel.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.errorLabel.AutoSize = true;
+            this.errorLabel.Font = new System.Drawing.Font("Comic Sans MS", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.errorLabel.ForeColor = System.Drawing.Color.OrangeRed;
+            this.errorLabel.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.errorLabel.Location = new System.Drawing.Point(392, 522);
+            this.errorLabel.Name = "errorLabel";
+            this.errorLabel.Size = new System.Drawing.Size(109, 19);
+            this.errorLabel.TabIndex = 23;
+            this.errorLabel.Text = "[Error Message]";
+            this.errorLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // RegisterForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(144)))), ((int)(((byte)(191)))));
             this.ClientSize = new System.Drawing.Size(1084, 661);
+            this.Controls.Add(this.errorLabel);
             this.Controls.Add(this.trojan_radioButtonCustom);
             this.Controls.Add(this.room_radioButtonCustom);
             this.Controls.Add(this.checkoutDateLabel);
@@ -354,5 +371,6 @@
         private CustomControls.RichTextBox.RichTextBox checkoutDate_richTextBox;
         private Custom_Toolbox.RadioButtonCustom room_radioButtonCustom;
         private Custom_Toolbox.RadioButtonCustom trojan_radioButtonCustom;
+        private Label errorLabel;
     }
 }
