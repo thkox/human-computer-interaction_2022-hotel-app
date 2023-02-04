@@ -27,6 +27,7 @@ namespace hotel_app.Forms.Functions
 
         //bubbles sizes
         private Size categoriesAndFoodBubbleSize = new Size(120, 40);
+        private Size mainMenuBubbleSize = new Size(200, 40);
             
         public ChatForm()
         {
@@ -95,9 +96,8 @@ namespace hotel_app.Forms.Functions
         {
             chatPanel.AutoScrollPosition = new Point(0, 0);
 
-            Size bubbleSize = new Size(200, 40);
-            chatPanel.Controls.Add(SetResponseBubble(inputChatTextBox.Text, new Point(150, height + 15), bubbleSize, textPoint, new Size(180, 20), Color.FromArgb(197, 212, 230)));
-            height += bubbleSize.Height + 10;
+            chatPanel.Controls.Add(SetResponseBubble(inputChatTextBox.Text, new Point(150, height + 15), mainMenuBubbleSize, textPoint, new Size(180, 20), Color.FromArgb(197, 212, 230)));
+            height += mainMenuBubbleSize.Height + 10;
             TriggerResponse();
             inputChatTextBox.Text = ""; // Clear the input text box
         }
@@ -204,19 +204,16 @@ namespace hotel_app.Forms.Functions
         private void MainMenuMessage()
         {
             string message = "How can i help you today?";
-            Size bubbleSize = new Size(200, 40);
-            chatPanel.Controls.Add(SetResponseBubble(message, new Point(70, height + 10), bubbleSize, textPoint, new Size(180, 20), Color.White));
-            height += bubbleSize.Height + 3;
+            chatPanel.Controls.Add(SetResponseBubble(message, new Point(70, height + 10), mainMenuBubbleSize, textPoint, new Size(180, 20), Color.White));
+            height += mainMenuBubbleSize.Height + 3;
 
             string message2 = "1. I want to see the menu";
-            Size bubbleSize2 = new Size(200, 40);
-            chatPanel.Controls.Add(SetResponseBubble(message2, new Point(70, height + 10), bubbleSize2, textPoint, new Size(180, 20), Color.White));
-            height += bubbleSize2.Height + 3;
+            chatPanel.Controls.Add(SetResponseBubble(message2, new Point(70, height + 10), mainMenuBubbleSize, textPoint, new Size(180, 20), Color.White));
+            height += mainMenuBubbleSize.Height + 3;
 
             string message3 = "2. I have already decided";
-            Size bubbleSize3 = new Size(200, 40);
-            chatPanel.Controls.Add(SetResponseBubble(message3, new Point(70, height + 10), bubbleSize3, textPoint, new Size(180, 20), Color.White));
-            height += bubbleSize3.Height + 10;
+            chatPanel.Controls.Add(SetResponseBubble(message3, new Point(70, height + 10), mainMenuBubbleSize, textPoint, new Size(180, 20), Color.White));
+            height += mainMenuBubbleSize.Height + 10;
         }
         
         List<int> menusSelected = new List<int>();
@@ -477,9 +474,8 @@ namespace hotel_app.Forms.Functions
             chatPanel.Controls.Add(SetEmployeeIcon(location2));
 
             string message = "This is your final order:";
-            Size bubbleSize = new Size(200, 40);
-            chatPanel.Controls.Add(SetResponseBubble(message, new Point(70, height + 10), bubbleSize, textPoint, new Size(180, 20), Color.White));
-            height += bubbleSize.Height + 3;
+            chatPanel.Controls.Add(SetResponseBubble(message, new Point(70, height + 10), mainMenuBubbleSize, textPoint, new Size(180, 20), Color.White));
+            height += mainMenuBubbleSize.Height + 3;
 
             List<int> prices = new List<int> { 8, 10, 9, 12, //coffee prices
             20, 10, 15, 13, 18, //chocolates prices
