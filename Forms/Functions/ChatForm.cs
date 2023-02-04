@@ -126,7 +126,19 @@ namespace hotel_app.Forms.Functions
             {
                 SaladsMenu();
                 menusSelected.Add(3);
-                stateOfConversation = 113; //the user order chocolate
+                stateOfConversation = 113; //the user order salad
+            }
+            else if (stateOfConversation == 11 && (inputChatTextBox.Text == "4" || inputChatTextBox.Text == "Pizza"))
+            {
+                PizzaMenu();
+                menusSelected.Add(4);
+                stateOfConversation = 114; //the user order pizza
+            }
+            else if (stateOfConversation == 11 && (inputChatTextBox.Text == "5" || inputChatTextBox.Text == "Greek Cuisine"))
+            {
+                GreekCuisineMenu();
+                menusSelected.Add(5);
+                stateOfConversation = 115; //the user order greek cuisine
             }
             else if (stateOfConversation == 11)
             {
