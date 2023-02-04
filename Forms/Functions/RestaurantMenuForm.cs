@@ -306,9 +306,5 @@ namespace hotel_app.Forms.Functions
             chatSupport.OrderedCompleted += new ChatForm.CustomEventHandler(chatSupport_OrderedCompleted);
             chatSupport.Show();
         }
-
-        private void menuLoadFormsPanel_Paint(object sender, PaintEventArgs e)
-        {
-        }
     }
 }
