@@ -53,7 +53,7 @@ namespace hotel_app.Forms.Functions
             this.facilitiesLabel.AutoSize = true;
             this.facilitiesLabel.Font = new System.Drawing.Font("Segoe UI", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.facilitiesLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(241)))), ((int)(((byte)(246)))));
-            this.facilitiesLabel.Location = new System.Drawing.Point(443, 81);
+            this.facilitiesLabel.Location = new System.Drawing.Point(443, 78);
             this.facilitiesLabel.Name = "facilitiesLabel";
             this.facilitiesLabel.Size = new System.Drawing.Size(147, 45);
             this.facilitiesLabel.TabIndex = 5;
