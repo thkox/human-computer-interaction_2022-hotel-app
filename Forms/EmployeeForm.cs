@@ -181,9 +181,10 @@ namespace hotel_app.Forms
         {
             OpenChildMenu(trojanForm.menuPanel);
 
+            backButton.Visible = true;
+
             label1.Hide();
             label2.Hide();
-            //label3.Hide();
 
             currentNameLabel.Text = trojanForm.currentName;
             //center align the label
@@ -200,9 +201,12 @@ namespace hotel_app.Forms
         {
             OpenChildMenu(roomForm.menuPanel);
 
+            backButton.Visible = true;
+
             label1.Hide();
             label2.Hide();
-            //label3.Hide();
+
+
 
             currentNameLabel.Text = roomForm.currentName;
             //center align the label
@@ -291,6 +295,7 @@ namespace hotel_app.Forms
             currentChildForm?.Hide();
             currentMenuPanel?.Hide();
             currentNameLabel?.Hide();
+            backButton?.Hide();
         }
         private void courtyardZeusButton_Click(object sender, EventArgs e)
         {
@@ -333,6 +338,7 @@ namespace hotel_app.Forms
             olymposGardensButton.Show();
             courtyardZeusButton.Show();
             registerButton.Show();
+            backButton.Hide();
 
             label1.Show();
             label2.Show();
@@ -393,6 +399,36 @@ namespace hotel_app.Forms
 
             registrationLabel.Visible = false;
             hideMessageTimer.Stop();
+        }
+
+        private void backButton_Click(object sender, EventArgs e)
+        {
+            CloseFunctionsForm();
+
+            zeusPalaceButton.Show();
+            olymposGardensButton.Show();
+            courtyardZeusButton.Show();
+            registerButton.Show();
+            backButton.Hide();
+
+            label1.Show();
+            label2.Show();
+
+                        //for every possible panel loaded inside the childFormPanel
+            foreach (Client1Form trojanForm in trojanForms)
+            {
+                if (childFormPanel.Controls.Contains(trojanForm.childFormPanel))
+                {
+                    OpenChildForm(parking);
+                }
+            }
+            foreach (Client2Form roomForm in roomForms)
+            {
+                if (childFormPanel.Controls.Contains(roomForm.childFormPanel))
+                {
+                    OpenChildForm(zeusPalaceMenu);
+                }
+            }
         }
     }
 }

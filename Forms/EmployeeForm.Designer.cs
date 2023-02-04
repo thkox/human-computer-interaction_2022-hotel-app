@@ -33,6 +33,7 @@ namespace hotel_app.Forms
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(EmployeeForm));
             this.menuPanel = new System.Windows.Forms.Panel();
+            this.backButton = new FontAwesome.Sharp.IconButton();
             this.registerButton = new FontAwesome.Sharp.IconButton();
             this.olymposGardensButton = new FontAwesome.Sharp.IconButton();
             this.courtyardZeusButton = new FontAwesome.Sharp.IconButton();
@@ -63,6 +64,7 @@ namespace hotel_app.Forms
             // menuPanel
             // 
             this.menuPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(99)))), ((int)(((byte)(161)))));
+            this.menuPanel.Controls.Add(this.backButton);
             this.menuPanel.Controls.Add(this.registerButton);
             this.menuPanel.Controls.Add(this.olymposGardensButton);
             this.menuPanel.Controls.Add(this.courtyardZeusButton);
@@ -74,6 +76,30 @@ namespace hotel_app.Forms
             this.menuPanel.Name = "menuPanel";
             this.menuPanel.Size = new System.Drawing.Size(300, 761);
             this.menuPanel.TabIndex = 0;
+            // 
+            // backButton
+            // 
+            this.backButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.backButton.Dock = System.Windows.Forms.DockStyle.Top;
+            this.backButton.FlatAppearance.BorderSize = 0;
+            this.backButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.backButton.Font = new System.Drawing.Font("Cooper Black", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.backButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(228)))), ((int)(((byte)(238)))));
+            this.backButton.IconChar = FontAwesome.Sharp.IconChar.ArrowAltCircleLeft;
+            this.backButton.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(228)))), ((int)(((byte)(238)))));
+            this.backButton.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.backButton.IconSize = 50;
+            this.backButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.backButton.Location = new System.Drawing.Point(0, 480);
+            this.backButton.Name = "backButton";
+            this.backButton.Size = new System.Drawing.Size(300, 70);
+            this.backButton.TabIndex = 11;
+            this.backButton.Text = "Go Back";
+            this.backButton.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.backButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.backButton.UseVisualStyleBackColor = true;
+            this.backButton.Visible = false;
+            this.backButton.Click += new System.EventHandler(this.backButton_Click);
             // 
             // registerButton
             // 
@@ -385,5 +411,6 @@ namespace hotel_app.Forms
         private FontAwesome.Sharp.IconButton registerButton;
         private Label registrationLabel;
         private System.Windows.Forms.Timer hideMessageTimer;
+        private FontAwesome.Sharp.IconButton backButton;
     }
 }
