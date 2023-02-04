@@ -654,7 +654,7 @@ namespace hotel_app.Forms.Functions
                 Point textBoxLocaction1 = new Point(10, 10);
                 Size textBoxSize1 = new Size(130, 20);
                 chatPanel.Controls.Add(SetResponseBubble(productWithValue, bubbleLocation1, bubbleSize1, textBoxLocaction1, textBoxSize1, Color.White));
-                height += bubbleSize.Height + 3;
+                height += bubbleSize1.Height + 3;
             }
 
             string message2 = "I am transfering you to the payment page";
@@ -663,7 +663,7 @@ namespace hotel_app.Forms.Functions
             Point textBoxLocaction2 = new Point(10, 10);
             Size textBoxSize2 = new Size(260, 20);
             chatPanel.Controls.Add(SetResponseBubble(message2, bubbleLocation2, bubbleSize2, textBoxLocaction2, textBoxSize2, Color.White));
-            height += bubbleSize.Height + 10;
+            height += bubbleSize2.Height + 10;
 
             List<int> prices = new List<int> { 8, 10, 9, 12, //coffee prices
             20, 10, 15, 13, 18, //chocolates prices
