@@ -175,6 +175,7 @@ namespace hotel_app.Forms.Functions
             if (allRichTextBoxesHaveText)
             {
                 OpenOrderStatusForm(orderStatus);
+                
             }
             else
             {
