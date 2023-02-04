@@ -23,6 +23,7 @@ namespace hotel_app.Forms.Functions
         private void TurnOFFRadio()
         {
             radioValueLabel.Left = (radioPanel.Width - radioValueLabel.Width) / 2;
+            radioScreen.Left = (this.Width - radioScreen.Width) / 2;
             radioState = false;
             radioUpButton.Enabled = false;
             radioDownButton.Enabled = false;
