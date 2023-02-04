@@ -26,6 +26,10 @@ namespace hotel_app.Forms.Functions
             radioState = false;
             radioUpButton.Enabled = false;
             radioDownButton.Enabled = false;
+            favRadioStation1.Enabled = false;
+            favRadioStation2.Enabled = false;
+            favRadioStation3.Enabled = false;
+            favRadioStation4.Enabled = false;
             radioValueLabel.Text = "OFF";
             radioValueLabel.ForeColor = Color.Red;
             radioPanel.BackColor = Color.FromArgb(129, 164, 205);
@@ -38,6 +42,10 @@ namespace hotel_app.Forms.Functions
             radioState = true;
             radioUpButton.Enabled = true;
             radioDownButton.Enabled = true;
+            favRadioStation1.Enabled = true;
+            favRadioStation2.Enabled = true;
+            favRadioStation3.Enabled = true;
+            favRadioStation4.Enabled = true;
             radioPanel.BackColor = Color.FromArgb(129, 164, 205);
             radioValueLabel.ForeColor = Color.FromArgb(236, 241, 246);
             radioValueLabel.Text = string.Format($"{radioValue.ToString("0.0")}MHz");
@@ -60,6 +68,16 @@ namespace hotel_app.Forms.Functions
                 if (radioValue >= 105.7)
                     radioValue = 87.7;
                 radioValue += 0.3;
+                if (radioValue == 97.3)
+                    starPictureBox.Visible = true;
+                else if (radioValue == 99.7)
+                    starPictureBox.Visible = true;
+                else if (radioValue == 100.3)
+                    starPictureBox.Visible = true;
+                else if (radioValue == 102.1)
+                    starPictureBox.Visible = true;
+                else
+                    starPictureBox.Visible = false;
                 radioValueLabel.Text = string.Format($"{radioValue.ToString("0.0")}MHz");
                 radioValueLabel.Left = (radioPanel.Width - radioValueLabel.Width) / 2;
             }
@@ -70,6 +88,16 @@ namespace hotel_app.Forms.Functions
             if (radioValue <= 88.3)
                 radioValue = 106.3;
             radioValue -= 0.3;
+            if (radioValue == 97.3)
+                starPictureBox.Visible = true;
+            else if (radioValue == 99.7)
+                starPictureBox.Visible = true;
+            else if (radioValue == 100.3)
+                starPictureBox.Visible = true;
+            else if (radioValue == 102.1)
+                starPictureBox.Visible = true;
+            else
+                starPictureBox.Visible = false;
             radioValueLabel.Text = string.Format($"{radioValue.ToString("0.0")}MHz");
             radioValueLabel.Left = (radioPanel.Width - radioValueLabel.Width) / 2;
         }
@@ -101,34 +129,42 @@ namespace hotel_app.Forms.Functions
             }
         }
 
-        private void radioStation1_Click(object sender, EventArgs e)
-        {
-            ChangeChannelToFavorite(radioStation1.Text);
-
-        }
-
-        private void iconButton1_Click(object sender, EventArgs e)
-        {
-            ChangeChannelToFavorite(iconButton1.Text);
-
-        }
-
-        private void iconButton2_Click(object sender, EventArgs e)
-        {
-            ChangeChannelToFavorite(iconButton2.Text);
-
-        }
-
-        private void iconButton3_Click(object sender, EventArgs e)
-        {
-            ChangeChannelToFavorite(iconButton3.Text);
-        }
-
-        private void ChangeChannelToFavorite(string channel)
+        private void favRadioStation(string channel)
         {
             starPictureBox.Visible = true;
             radioValueLabel.Text = channel;
+        }
 
+        private void favRadioStation1_Click(object sender, EventArgs e)
+        {
+            favRadioStation(favRadioStation1.Text);
+            radioValue = 97.3;
+            radioValueLabel.Text = string.Format($"{radioValue.ToString("0.0")}MHz");
+            radioValueLabel.Left = (radioPanel.Width - radioValueLabel.Width) / 2;
+        }
+
+        private void favRadioStation2_Click(object sender, EventArgs e)
+        {
+            favRadioStation(favRadioStation2.Text);
+            radioValue = 99.7;
+            radioValueLabel.Text = string.Format($"{radioValue.ToString("0.0")}MHz");
+            radioValueLabel.Left = (radioPanel.Width - radioValueLabel.Width) / 2;
+        }
+
+        private void favRadioStation3_Click(object sender, EventArgs e)
+        {
+            favRadioStation(favRadioStation3.Text);
+            radioValue = 100.3;
+            radioValueLabel.Text = string.Format($"{radioValue.ToString("0.0")}MHz");
+            radioValueLabel.Left = (radioPanel.Width - radioValueLabel.Width) / 2;
+        }
+
+        private void favRadioStation4_Click(object sender, EventArgs e)
+        {
+            favRadioStation(favRadioStation4.Text);
+            radioValue = 102.1;
+            radioValueLabel.Text = string.Format($"{radioValue.ToString("0.0")}MHz");
+            radioValueLabel.Left = (radioPanel.Width - radioValueLabel.Width) / 2;
         }
     }
 }

@@ -36,10 +36,10 @@
             this.radioDownButton = new FontAwesome.Sharp.IconButton();
             this.radioToggle = new hotel_app.Custom_Toolbox.ToggleButtonCustom();
             this.label1 = new System.Windows.Forms.Label();
-            this.radioStation1 = new FontAwesome.Sharp.IconButton();
-            this.iconButton1 = new FontAwesome.Sharp.IconButton();
-            this.iconButton2 = new FontAwesome.Sharp.IconButton();
-            this.iconButton3 = new FontAwesome.Sharp.IconButton();
+            this.favRadioStation1 = new FontAwesome.Sharp.IconButton();
+            this.favRadioStation2 = new FontAwesome.Sharp.IconButton();
+            this.favRadioStation3 = new FontAwesome.Sharp.IconButton();
+            this.favRadioStation4 = new FontAwesome.Sharp.IconButton();
             this.radioPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.starPictureBox)).BeginInit();
             this.SuspendLayout();
@@ -154,89 +154,89 @@
             this.label1.Text = "List of Local Radio Stations:";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // radioStation1
+            // favRadioStation1
             // 
-            this.radioStation1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.radioStation1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(79)))), ((int)(((byte)(134)))), ((int)(((byte)(184)))));
-            this.radioStation1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.radioStation1.Enabled = false;
-            this.radioStation1.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.radioStation1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(241)))), ((int)(((byte)(246)))));
-            this.radioStation1.IconChar = FontAwesome.Sharp.IconChar.TowerCell;
-            this.radioStation1.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(241)))), ((int)(((byte)(246)))));
-            this.radioStation1.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.radioStation1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.radioStation1.Location = new System.Drawing.Point(116, 542);
-            this.radioStation1.Name = "radioStation1";
-            this.radioStation1.Size = new System.Drawing.Size(175, 65);
-            this.radioStation1.TabIndex = 6;
-            this.radioStation1.Text = "97.2 MHz";
-            this.radioStation1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.radioStation1.UseVisualStyleBackColor = false;
-            this.radioStation1.Click += new System.EventHandler(this.radioStation1_Click);
+            this.favRadioStation1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.favRadioStation1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(79)))), ((int)(((byte)(134)))), ((int)(((byte)(184)))));
+            this.favRadioStation1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.favRadioStation1.Enabled = false;
+            this.favRadioStation1.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.favRadioStation1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(241)))), ((int)(((byte)(246)))));
+            this.favRadioStation1.IconChar = FontAwesome.Sharp.IconChar.TowerCell;
+            this.favRadioStation1.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(241)))), ((int)(((byte)(246)))));
+            this.favRadioStation1.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.favRadioStation1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.favRadioStation1.Location = new System.Drawing.Point(116, 542);
+            this.favRadioStation1.Name = "favRadioStation1";
+            this.favRadioStation1.Size = new System.Drawing.Size(175, 65);
+            this.favRadioStation1.TabIndex = 6;
+            this.favRadioStation1.Text = "97.3 MHz";
+            this.favRadioStation1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.favRadioStation1.UseVisualStyleBackColor = false;
+            this.favRadioStation1.Click += new System.EventHandler(this.favRadioStation1_Click);
             // 
-            // iconButton1
+            // favRadioStation2
             // 
-            this.iconButton1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.iconButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(79)))), ((int)(((byte)(134)))), ((int)(((byte)(184)))));
-            this.iconButton1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.iconButton1.Enabled = false;
-            this.iconButton1.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.iconButton1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(241)))), ((int)(((byte)(246)))));
-            this.iconButton1.IconChar = FontAwesome.Sharp.IconChar.TowerCell;
-            this.iconButton1.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(241)))), ((int)(((byte)(246)))));
-            this.iconButton1.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButton1.Location = new System.Drawing.Point(318, 542);
-            this.iconButton1.Name = "iconButton1";
-            this.iconButton1.Size = new System.Drawing.Size(175, 65);
-            this.iconButton1.TabIndex = 7;
-            this.iconButton1.Text = "99.8 MHz";
-            this.iconButton1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.iconButton1.UseVisualStyleBackColor = false;
-            this.iconButton1.Click += new System.EventHandler(this.iconButton1_Click);
+            this.favRadioStation2.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.favRadioStation2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(79)))), ((int)(((byte)(134)))), ((int)(((byte)(184)))));
+            this.favRadioStation2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.favRadioStation2.Enabled = false;
+            this.favRadioStation2.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.favRadioStation2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(241)))), ((int)(((byte)(246)))));
+            this.favRadioStation2.IconChar = FontAwesome.Sharp.IconChar.TowerCell;
+            this.favRadioStation2.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(241)))), ((int)(((byte)(246)))));
+            this.favRadioStation2.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.favRadioStation2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.favRadioStation2.Location = new System.Drawing.Point(318, 542);
+            this.favRadioStation2.Name = "favRadioStation2";
+            this.favRadioStation2.Size = new System.Drawing.Size(175, 65);
+            this.favRadioStation2.TabIndex = 7;
+            this.favRadioStation2.Text = "99.7 MHz";
+            this.favRadioStation2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.favRadioStation2.UseVisualStyleBackColor = false;
+            this.favRadioStation2.Click += new System.EventHandler(this.favRadioStation2_Click);
             // 
-            // iconButton2
+            // favRadioStation3
             // 
-            this.iconButton2.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.iconButton2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(79)))), ((int)(((byte)(134)))), ((int)(((byte)(184)))));
-            this.iconButton2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.iconButton2.Enabled = false;
-            this.iconButton2.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.iconButton2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(241)))), ((int)(((byte)(246)))));
-            this.iconButton2.IconChar = FontAwesome.Sharp.IconChar.TowerCell;
-            this.iconButton2.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(241)))), ((int)(((byte)(246)))));
-            this.iconButton2.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButton2.Location = new System.Drawing.Point(520, 542);
-            this.iconButton2.Name = "iconButton2";
-            this.iconButton2.Size = new System.Drawing.Size(175, 65);
-            this.iconButton2.TabIndex = 8;
-            this.iconButton2.Text = "100.3 MHz";
-            this.iconButton2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.iconButton2.UseVisualStyleBackColor = false;
-            this.iconButton2.Click += new System.EventHandler(this.iconButton2_Click);
+            this.favRadioStation3.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.favRadioStation3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(79)))), ((int)(((byte)(134)))), ((int)(((byte)(184)))));
+            this.favRadioStation3.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.favRadioStation3.Enabled = false;
+            this.favRadioStation3.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.favRadioStation3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(241)))), ((int)(((byte)(246)))));
+            this.favRadioStation3.IconChar = FontAwesome.Sharp.IconChar.TowerCell;
+            this.favRadioStation3.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(241)))), ((int)(((byte)(246)))));
+            this.favRadioStation3.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.favRadioStation3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.favRadioStation3.Location = new System.Drawing.Point(520, 542);
+            this.favRadioStation3.Name = "favRadioStation3";
+            this.favRadioStation3.Size = new System.Drawing.Size(175, 65);
+            this.favRadioStation3.TabIndex = 8;
+            this.favRadioStation3.Text = "100.3 MHz";
+            this.favRadioStation3.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.favRadioStation3.UseVisualStyleBackColor = false;
+            this.favRadioStation3.Click += new System.EventHandler(this.favRadioStation3_Click);
             // 
-            // iconButton3
+            // favRadioStation4
             // 
-            this.iconButton3.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.iconButton3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(79)))), ((int)(((byte)(134)))), ((int)(((byte)(184)))));
-            this.iconButton3.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.iconButton3.Enabled = false;
-            this.iconButton3.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.iconButton3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(241)))), ((int)(((byte)(246)))));
-            this.iconButton3.IconChar = FontAwesome.Sharp.IconChar.TowerCell;
-            this.iconButton3.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(241)))), ((int)(((byte)(246)))));
-            this.iconButton3.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButton3.Location = new System.Drawing.Point(721, 542);
-            this.iconButton3.Name = "iconButton3";
-            this.iconButton3.Size = new System.Drawing.Size(175, 65);
-            this.iconButton3.TabIndex = 9;
-            this.iconButton3.Text = "102.1MHz";
-            this.iconButton3.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.iconButton3.UseVisualStyleBackColor = false;
-            this.iconButton3.Click += new System.EventHandler(this.iconButton3_Click);
+            this.favRadioStation4.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.favRadioStation4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(79)))), ((int)(((byte)(134)))), ((int)(((byte)(184)))));
+            this.favRadioStation4.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.favRadioStation4.Enabled = false;
+            this.favRadioStation4.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.favRadioStation4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(241)))), ((int)(((byte)(246)))));
+            this.favRadioStation4.IconChar = FontAwesome.Sharp.IconChar.TowerCell;
+            this.favRadioStation4.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(241)))), ((int)(((byte)(246)))));
+            this.favRadioStation4.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.favRadioStation4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.favRadioStation4.Location = new System.Drawing.Point(721, 542);
+            this.favRadioStation4.Name = "favRadioStation4";
+            this.favRadioStation4.Size = new System.Drawing.Size(175, 65);
+            this.favRadioStation4.TabIndex = 9;
+            this.favRadioStation4.Text = "102.1MHz";
+            this.favRadioStation4.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.favRadioStation4.UseVisualStyleBackColor = false;
+            this.favRadioStation4.Click += new System.EventHandler(this.favRadioStation4_Click);
             // 
             // RadioForm
             // 
@@ -244,10 +244,10 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(144)))), ((int)(((byte)(191)))));
             this.ClientSize = new System.Drawing.Size(1084, 661);
-            this.Controls.Add(this.iconButton3);
-            this.Controls.Add(this.iconButton2);
-            this.Controls.Add(this.iconButton1);
-            this.Controls.Add(this.radioStation1);
+            this.Controls.Add(this.favRadioStation4);
+            this.Controls.Add(this.favRadioStation3);
+            this.Controls.Add(this.favRadioStation2);
+            this.Controls.Add(this.favRadioStation1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.radioToggle);
             this.Controls.Add(this.radioDownButton);
@@ -275,9 +275,9 @@
         private Custom_Toolbox.ToggleButtonCustom radioToggle;
         private FontAwesome.Sharp.IconPictureBox starPictureBox;
         private Label label1;
-        private FontAwesome.Sharp.IconButton radioStation1;
-        private FontAwesome.Sharp.IconButton iconButton1;
-        private FontAwesome.Sharp.IconButton iconButton2;
-        private FontAwesome.Sharp.IconButton iconButton3;
+        private FontAwesome.Sharp.IconButton favRadioStation1;
+        private FontAwesome.Sharp.IconButton favRadioStation2;
+        private FontAwesome.Sharp.IconButton favRadioStation3;
+        private FontAwesome.Sharp.IconButton favRadioStation4;
     }
 }
