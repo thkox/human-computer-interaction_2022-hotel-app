@@ -666,8 +666,6 @@
             this.Name = "ParkingForm";
             this.Text = "CourtyardZeusForm";
             this.Load += new System.EventHandler(this.ParkingForm_Load);
-            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.keyIsDown);
-            this.KeyUp += new System.Windows.Forms.KeyEventHandler(this.keyIsUp);
             this.olymbosGardensPanel.ResumeLayout(false);
             this.olymbosGardensPanel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.trojan6PictureBox)).EndInit();

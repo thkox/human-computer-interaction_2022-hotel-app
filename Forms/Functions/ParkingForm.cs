@@ -211,47 +211,5 @@ namespace hotel_app.Forms.Functions
             }
             this.Hide();
         }
-
-        private void keyIsDown(object sender, KeyEventArgs e)
-        {
-            if (e.KeyCode == Keys.Left) 
-            {
-                moveLeft = true;
-                trojan1PictureBox.Image = hotel_app.Properties.Resources.trojan_horse_reversed;
-            }
-            if (e.KeyCode == Keys.Right) 
-            {
-                moveRight = true;
-                trojan1PictureBox.Image = hotel_app.Properties.Resources.trojan;
-            }
-            if (e.KeyCode == Keys.Down) 
-            {
-                moveDown = true;
-            }
-            if (e.KeyCode == Keys.Up)
-            {
-                moveUp = true;
-            }
-        }
-
-        private void keyIsUp(object sender, KeyEventArgs e)
-        {
-            if (e.KeyCode == Keys.Left)
-            {
-                moveLeft = false;
-            }
-            if (e.KeyCode == Keys.Right)
-            {
-                moveRight = false;
-            }
-            if (e.KeyCode == Keys.Down)
-            {
-                moveDown = false;
-            }
-            if (e.KeyCode == Keys.Up)
-            {
-                moveUp = false;
-            }
-        }
     }
 }
