@@ -180,7 +180,7 @@ namespace hotel_app.Forms
         private void loadTrojanFunctions(Client1Form trojanForm)
         {
             OpenChildMenu(trojanForm.menuPanel);
-
+            leftBorderBtn.Visible = false;
             backButton.Visible = true;
 
             label1.Hide();
@@ -200,7 +200,7 @@ namespace hotel_app.Forms
         private void loadRoomFunctions(Client2Form roomForm)
         {
             OpenChildMenu(roomForm.menuPanel);
-
+            leftBorderBtn.Visible = false;
             backButton.Visible = true;
 
             label1.Hide();
@@ -296,6 +296,7 @@ namespace hotel_app.Forms
             currentMenuPanel?.Hide();
             currentNameLabel?.Hide();
             backButton?.Hide();
+            leftBorderBtn.Visible = true;
         }
         private void courtyardZeusButton_Click(object sender, EventArgs e)
         {
@@ -342,7 +343,6 @@ namespace hotel_app.Forms
 
             label1.Show();
             label2.Show();
-            //label3.Show();
 
             //for every possible panel loaded inside the childFormPanel
             foreach (Client1Form trojanForm in trojanForms)
@@ -414,11 +414,12 @@ namespace hotel_app.Forms
             label1.Show();
             label2.Show();
 
-                        //for every possible panel loaded inside the childFormPanel
+            //for every possible panel loaded inside the childFormPanel
             foreach (Client1Form trojanForm in trojanForms)
             {
                 if (childFormPanel.Controls.Contains(trojanForm.childFormPanel))
                 {
+                    childFormPanel.Controls.Remove(trojanForm.childFormPanel);
                     OpenChildForm(parking);
                 }
             }
@@ -426,6 +427,7 @@ namespace hotel_app.Forms
             {
                 if (childFormPanel.Controls.Contains(roomForm.childFormPanel))
                 {
+                    childFormPanel.Controls.Remove(roomForm.childFormPanel);
                     OpenChildForm(zeusPalaceMenu);
                 }
             }
