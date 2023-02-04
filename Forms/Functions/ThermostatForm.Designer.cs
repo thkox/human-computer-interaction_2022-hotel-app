@@ -39,6 +39,7 @@
             this.leafPictureBox = new FontAwesome.Sharp.IconPictureBox();
             this.setTempValueLabel = new System.Windows.Forms.Label();
             this.setValueTimer = new System.Windows.Forms.Timer(this.components);
+            this.thermostatScreen = new hotel_app.Custom_Toolbox.ChatRichTextBox();
             this.thermostatPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.leafPictureBox)).BeginInit();
             this.SuspendLayout();
@@ -51,7 +52,7 @@
             this.thermostatUpButton.IconChar = FontAwesome.Sharp.IconChar.ArrowCircleUp;
             this.thermostatUpButton.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(241)))), ((int)(((byte)(246)))));
             this.thermostatUpButton.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.thermostatUpButton.Location = new System.Drawing.Point(519, 384);
+            this.thermostatUpButton.Location = new System.Drawing.Point(519, 404);
             this.thermostatUpButton.Name = "thermostatUpButton";
             this.thermostatUpButton.Size = new System.Drawing.Size(175, 65);
             this.thermostatUpButton.TabIndex = 1;
@@ -68,7 +69,7 @@
             this.thermostatDownButton.IconChar = FontAwesome.Sharp.IconChar.ArrowCircleDown;
             this.thermostatDownButton.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(241)))), ((int)(((byte)(246)))));
             this.thermostatDownButton.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.thermostatDownButton.Location = new System.Drawing.Point(322, 384);
+            this.thermostatDownButton.Location = new System.Drawing.Point(322, 404);
             this.thermostatDownButton.Name = "thermostatDownButton";
             this.thermostatDownButton.Size = new System.Drawing.Size(175, 65);
             this.thermostatDownButton.TabIndex = 2;
@@ -82,7 +83,7 @@
             this.thermostatLabel.AutoSize = true;
             this.thermostatLabel.Font = new System.Drawing.Font("Segoe UI", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.thermostatLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(241)))), ((int)(((byte)(246)))));
-            this.thermostatLabel.Location = new System.Drawing.Point(350, 147);
+            this.thermostatLabel.Location = new System.Drawing.Point(353, 137);
             this.thermostatLabel.Name = "thermostatLabel";
             this.thermostatLabel.Size = new System.Drawing.Size(303, 45);
             this.thermostatLabel.TabIndex = 4;
@@ -93,7 +94,7 @@
             this.thermostatToggle.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.thermostatToggle.AutoSize = true;
             this.thermostatToggle.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.thermostatToggle.Location = new System.Drawing.Point(483, 470);
+            this.thermostatToggle.Location = new System.Drawing.Point(483, 490);
             this.thermostatToggle.MinimumSize = new System.Drawing.Size(45, 22);
             this.thermostatToggle.Name = "thermostatToggle";
             this.thermostatToggle.OffBackColor = System.Drawing.Color.DimGray;
@@ -172,6 +173,23 @@
             this.setValueTimer.Interval = 5000;
             this.setValueTimer.Tick += new System.EventHandler(this.timer1_Tick);
             // 
+            // thermostatScreen
+            // 
+            this.thermostatScreen.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.thermostatScreen.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(144)))), ((int)(((byte)(191)))));
+            this.thermostatScreen.ForeColor = System.Drawing.Color.White;
+            this.thermostatScreen.Location = new System.Drawing.Point(307, 195);
+            this.thermostatScreen.MaxLegthSize = 30;
+            this.thermostatScreen.Name = "thermostatScreen";
+            this.thermostatScreen.Radius = 30;
+            this.thermostatScreen.RichTextBoxLocation = new System.Drawing.Point(10, 10);
+            this.thermostatScreen.RichTextBoxSize = new System.Drawing.Size(160, 25);
+            this.thermostatScreen.ShadeColor = System.Drawing.Color.FromArgb(((int)(((byte)(129)))), ((int)(((byte)(164)))), ((int)(((byte)(205)))));
+            this.thermostatScreen.Size = new System.Drawing.Size(403, 191);
+            this.thermostatScreen.TabIndex = 9;
+            this.thermostatScreen.TextMultiline = true;
+            this.thermostatScreen.TextReadonly = true;
+            // 
             // ThermostatForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -183,6 +201,7 @@
             this.Controls.Add(this.thermostatLabel);
             this.Controls.Add(this.thermostatDownButton);
             this.Controls.Add(this.thermostatUpButton);
+            this.Controls.Add(this.thermostatScreen);
             this.Name = "ThermostatForm";
             this.Text = "Thermostat";
             this.Load += new System.EventHandler(this.ThermostatForm_Load);
@@ -205,5 +224,6 @@
         private FontAwesome.Sharp.IconPictureBox leafPictureBox;
         private System.Windows.Forms.Timer setValueTimer;
         private Label estimatedTimeLabel;
+        private Custom_Toolbox.ChatRichTextBox thermostatScreen;
     }
 }
