@@ -557,13 +557,21 @@ namespace hotel_app.Forms.Functions
             chatPanel.Controls.Add(SetResponseBubble(message2, bubbleLocation2, bubbleSize2, textBoxLoaction2, textBoxSize2, Color.White));
             height += bubbleSize.Height + 10;
 
+            List<int> prices = new List<int> { 8, 10, 9, 12, //coffee prices
+            20, 10, 15, 13, 18, //chocolates prices
+            10, 15, 10, 8, //salads prices
+            30, 15, 10, 40, //pizza prices
+            5, 4, 8, 20, 7, 30, 24}; //greek cuisine prices
             List<string[]> splitList = new List<string[]>();
+            
             for (int i = 0; i < foodList.Count; i++)
             {
                 splitList.Add(foodList[i].Split('x'));
             }
+            
             List<string> names = new List<string>();
             List<int> quantities = new List<int>();
+            
             foreach (string[] split in splitList)
             {
                 int length = split[0].Length-1;
