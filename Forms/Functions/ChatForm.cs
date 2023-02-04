@@ -151,7 +151,7 @@ namespace hotel_app.Forms.Functions
                 else
                     AskForPayment();
             }
-            else if (stateOfConversation == 111) // coffee menu order
+            else if (stateOfConversation == 111 || stateOfConversation == 113 || stateOfConversation == 114 || stateOfConversation == 115) // coffee menu order
             {
                 if (inputChatTextBox.Text != "I am ready")
                     foodList.Add(inputChatTextBox.Text);
@@ -164,37 +164,6 @@ namespace hotel_app.Forms.Functions
                     }
                     else
                         AskForPayment();
-                }
-            }
-            else if (stateOfConversation == 112) // coffee menu order
-            {
-                if (inputChatTextBox.Text != "I am ready")
-                    foodList.Add(inputChatTextBox.Text);
-                else
-                {
-                    if (menusSelected.Count != 3)
-                    {
-                        QuestionUser();
-                        stateOfConversation = 3;
-                    }
-                    else
-                        AskForPayment();
-                }
-            }
-            else if (stateOfConversation == 113) // coffee menu order
-            {
-                if (inputChatTextBox.Text != "I am ready")
-                    foodList.Add(inputChatTextBox.Text);
-                else
-                {
-                    if (menusSelected.Count != 3)
-                    {
-                        QuestionUser();
-                        stateOfConversation = 3;
-                    }
-                    else
-                        AskForPayment();
-
                 }
             }
             else if (stateOfConversation == 3 && inputChatTextBox.Text == "Yes") // coffee menu order
