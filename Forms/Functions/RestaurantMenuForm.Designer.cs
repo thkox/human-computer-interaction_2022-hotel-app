@@ -158,7 +158,7 @@
             this.menuTabControl.Controls.Add(this.greekCuisineTabPage);
             this.menuTabControl.Font = new System.Drawing.Font("Comic Sans MS", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.menuTabControl.HotTrack = true;
-            this.menuTabControl.Location = new System.Drawing.Point(85, 135);
+            this.menuTabControl.Location = new System.Drawing.Point(85, 109);
             this.menuTabControl.Multiline = true;
             this.menuTabControl.Name = "menuTabControl";
             this.menuTabControl.Padding = new System.Drawing.Point(10, 4);
@@ -168,7 +168,7 @@
             // 
             // coffeeTabPage
             // 
-            this.coffeeTabPage.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(144)))), ((int)(((byte)(191)))));
+            this.coffeeTabPage.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(98)))), ((int)(((byte)(155)))), ((int)(((byte)(191)))));
             this.coffeeTabPage.Controls.Add(this.quantityLatte);
             this.coffeeTabPage.Controls.Add(this.quantityEspresso);
             this.coffeeTabPage.Controls.Add(this.quantityCappuccino);
@@ -1108,9 +1108,12 @@
             // 
             // cart_richTextBox
             // 
+            this.cart_richTextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(144)))), ((int)(((byte)(191)))));
+            this.cart_richTextBox.Font = new System.Drawing.Font("Comic Sans MS", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.cart_richTextBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(241)))), ((int)(((byte)(246)))));
             this.cart_richTextBox.Location = new System.Drawing.Point(761, 135);
             this.cart_richTextBox.Name = "cart_richTextBox";
-            this.cart_richTextBox.Size = new System.Drawing.Size(225, 376);
+            this.cart_richTextBox.Size = new System.Drawing.Size(225, 304);
             this.cart_richTextBox.TabIndex = 7;
             this.cart_richTextBox.Text = "";
             // 
@@ -1124,7 +1127,7 @@
             this.checkoutButton.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(241)))), ((int)(((byte)(246)))));
             this.checkoutButton.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.checkoutButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.checkoutButton.Location = new System.Drawing.Point(761, 517);
+            this.checkoutButton.Location = new System.Drawing.Point(761, 453);
             this.checkoutButton.Name = "checkoutButton";
             this.checkoutButton.Size = new System.Drawing.Size(225, 44);
             this.checkoutButton.TabIndex = 8;
@@ -1171,7 +1174,7 @@
             this.chatButton.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(241)))), ((int)(((byte)(246)))));
             this.chatButton.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.chatButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.chatButton.Location = new System.Drawing.Point(761, 567);
+            this.chatButton.Location = new System.Drawing.Point(761, 503);
             this.chatButton.Name = "chatButton";
             this.chatButton.Size = new System.Drawing.Size(225, 59);
             this.chatButton.TabIndex = 19;
