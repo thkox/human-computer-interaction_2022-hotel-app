@@ -22,6 +22,9 @@ namespace hotel_app.Forms.Functions
         //total price of the order
         public int total = 0;
 
+        //bubble texts
+        private Point textPoint = new Point(10, 10);
+
         public ChatForm()
         {
             InitializeComponent();
@@ -42,7 +45,7 @@ namespace hotel_app.Forms.Functions
 
             string message1 = "Welcome to Zeus Hotel Palace!";
             Size bubbleSize = new Size(220, 40);
-            chatPanel.Controls.Add(SetResponseBubble(message1, new Point(70, height + 10), bubbleSize, new Point(10, 10), new Size(200, 20), Color.White));
+            chatPanel.Controls.Add(SetResponseBubble(message1, new Point(70, height + 10), bubbleSize, textPoint, new Size(200, 20), Color.White));
             height += bubbleSize.Height + 3;
 
             MainMenuMessage();
@@ -89,11 +92,8 @@ namespace hotel_app.Forms.Functions
         {
             chatPanel.AutoScrollPosition = new Point(0, 0);
 
-            Point bubbleLocation = new Point(150, height + 15);
             Size bubbleSize = new Size(200, 40);
-            Point textBoxLocation = new Point(10, 10);
-            Size textBoxSize = new Size(180, 20);
-            chatPanel.Controls.Add(SetResponseBubble(inputChatTextBox.Text, bubbleLocation, bubbleSize, textBoxLocation, textBoxSize, Color.FromArgb(197, 212, 230)));
+            chatPanel.Controls.Add(SetResponseBubble(inputChatTextBox.Text, new Point(150, height + 15), bubbleSize, textPoint, new Size(180, 20), Color.FromArgb(197, 212, 230)));
             height += bubbleSize.Height + 10;
             TriggerResponse();
             inputChatTextBox.Text = ""; // Clear the input text box
@@ -194,7 +194,7 @@ namespace hotel_app.Forms.Functions
 
             string message = "I do not understand you.";
             Size bubbleSize = new Size(180, 40);
-            chatPanel.Controls.Add(SetResponseBubble(message, new Point(70, height + 10), bubbleSize, new Point(10, 10), new Size(160, 20), Color.White));
+            chatPanel.Controls.Add(SetResponseBubble(message, new Point(70, height + 10), bubbleSize, textPoint, new Size(160, 20), Color.White));
             height += bubbleSize.Height + 3;
         }
 
@@ -202,17 +202,17 @@ namespace hotel_app.Forms.Functions
         {
             string message = "How can i help you today?";
             Size bubbleSize = new Size(200, 40);
-            chatPanel.Controls.Add(SetResponseBubble(message, new Point(70, height + 10), bubbleSize, new Point(10, 10), new Size(180, 20), Color.White));
+            chatPanel.Controls.Add(SetResponseBubble(message, new Point(70, height + 10), bubbleSize, textPoint, new Size(180, 20), Color.White));
             height += bubbleSize.Height + 3;
 
             string message2 = "1. I want to see the menu";
             Size bubbleSize2 = new Size(200, 40);
-            chatPanel.Controls.Add(SetResponseBubble(message2, new Point(70, height + 10), bubbleSize2, new Point(10, 10), new Size(180, 20), Color.White));
+            chatPanel.Controls.Add(SetResponseBubble(message2, new Point(70, height + 10), bubbleSize2, textPoint, new Size(180, 20), Color.White));
             height += bubbleSize2.Height + 3;
 
             string message3 = "2. I have already decided";
             Size bubbleSize3 = new Size(200, 40);
-            chatPanel.Controls.Add(SetResponseBubble(message3, new Point(70, height + 10), bubbleSize3, new Point(10, 10), new Size(180, 20), Color.White));
+            chatPanel.Controls.Add(SetResponseBubble(message3, new Point(70, height + 10), bubbleSize3, textPoint, new Size(180, 20), Color.White));
             height += bubbleSize3.Height + 10;
         }
 
@@ -224,14 +224,14 @@ namespace hotel_app.Forms.Functions
 
             string message = "Type the menu that you want to see:";
             Size bubbleSize = new Size(250, 40);
-            chatPanel.Controls.Add(SetResponseBubble(message, new Point(70, height + 10), bubbleSize, new Point(10, 10), new Size(230, 20), Color.White));
+            chatPanel.Controls.Add(SetResponseBubble(message, new Point(70, height + 10), bubbleSize, textPoint, new Size(230, 20), Color.White));
             height += bubbleSize.Height + 3;
 
             if(!menusSelected.Contains(1))
             {
                 string message1 = "1. Coffee";
                 Size bubbleSize1 = new Size(120, 40);
-                chatPanel.Controls.Add(SetResponseBubble(message1, new Point(70, height + 10), bubbleSize1, new Point(10, 10), new Size(100, 20), Color.White));
+                chatPanel.Controls.Add(SetResponseBubble(message1, new Point(70, height + 10), bubbleSize1, textPoint, new Size(100, 20), Color.White));
                 height += bubbleSize1.Height + 3;
             }
 
@@ -239,7 +239,7 @@ namespace hotel_app.Forms.Functions
             {
                 string message1 = "2. Chocolate";
                 Size bubbleSize1 = new Size(120, 40);
-                chatPanel.Controls.Add(SetResponseBubble(message1, new Point(70, height + 10), bubbleSize1, new Point(10, 10), new Size(100, 20), Color.White));
+                chatPanel.Controls.Add(SetResponseBubble(message1, new Point(70, height + 10), bubbleSize1, textPoint, new Size(100, 20), Color.White));
                 height += bubbleSize1.Height + 3;
             }
 
@@ -247,7 +247,7 @@ namespace hotel_app.Forms.Functions
             {
                 string message1 = "3. Salad";
                 Size bubbleSize1 = new Size(120, 40);
-                chatPanel.Controls.Add(SetResponseBubble(message1, new Point(70, height + 10), bubbleSize1, new Point(10, 10), new Size(100, 20), Color.White));
+                chatPanel.Controls.Add(SetResponseBubble(message1, new Point(70, height + 10), bubbleSize1, textPoint, new Size(100, 20), Color.White));
                 height += bubbleSize1.Height + 3;
             }
 
@@ -255,7 +255,7 @@ namespace hotel_app.Forms.Functions
             {
                 string message1 = "4. Pizza";
                 Size bubbleSize1 = new Size(120, 40);
-                chatPanel.Controls.Add(SetResponseBubble(message1, new Point(70, height + 10), bubbleSize1, new Point(10, 10), new Size(100, 20), Color.White));
+                chatPanel.Controls.Add(SetResponseBubble(message1, new Point(70, height + 10), bubbleSize1, textPoint, new Size(100, 20), Color.White));
                 height += bubbleSize1.Height + 3;
             }
 
@@ -263,7 +263,7 @@ namespace hotel_app.Forms.Functions
             {
                 string message1 = "5. Greek Cuisine";
                 Size bubbleSize1 = new Size(120, 40);
-                chatPanel.Controls.Add(SetResponseBubble(message1, new Point(70, height + 10), bubbleSize1, new Point(10, 10), new Size(100, 20), Color.White));
+                chatPanel.Controls.Add(SetResponseBubble(message1, new Point(70, height + 10), bubbleSize1, textPoint, new Size(100, 20), Color.White));
                 height += bubbleSize1.Height + 10;
             }
         }
@@ -275,12 +275,12 @@ namespace hotel_app.Forms.Functions
 
             string message = "Please type each the products that you want per message like 'Souvlaki x2'";
             Size bubbleSize = new Size(280, 60);;
-            chatPanel.Controls.Add(SetResponseBubble(message, new Point(70, height + 10), bubbleSize, new Point(10, 10), new Size(260, 40), Color.White));
+            chatPanel.Controls.Add(SetResponseBubble(message, new Point(70, height + 10), bubbleSize, textPoint, new Size(260, 40), Color.White));
             height += bubbleSize.Height + 3;
 
             string message5 = "When you have typed your order, please write “I am ready”.";
             Size bubbleSize5 = new Size(260, 60);
-            chatPanel.Controls.Add(SetResponseBubble(message5, new Point(70, height + 10), bubbleSize5, new Point(10, 10), new Size(240, 40), Color.White));
+            chatPanel.Controls.Add(SetResponseBubble(message5, new Point(70, height + 10), bubbleSize5, textPoint, new Size(240, 40), Color.White));
             height += bubbleSize5.Height + 10;
         }
 
@@ -293,32 +293,32 @@ namespace hotel_app.Forms.Functions
 
             string message = "Please type each the products that you want per message like 'Souvlaki x2'";
             Size bubbleSize = new Size(280, 60);
-            chatPanel.Controls.Add(SetResponseBubble(message, new Point(70, height + 10), bubbleSize, new Point(10, 10), new Size(260, 40), Color.White));
+            chatPanel.Controls.Add(SetResponseBubble(message, new Point(70, height + 10), bubbleSize, textPoint, new Size(260, 40), Color.White));
             height += bubbleSize.Height + 3;
 
             string message1 = "1. Americano";
             Size bubbleSize1 = new Size(120, 40);
-            chatPanel.Controls.Add(SetResponseBubble(message1, new Point(70, height + 10), bubbleSize1, new Point(10, 10), new Size(100, 20), Color.White));
+            chatPanel.Controls.Add(SetResponseBubble(message1, new Point(70, height + 10), bubbleSize1, textPoint, new Size(100, 20), Color.White));
             height += bubbleSize1.Height + 3;
 
             string message2 = "2. Cappuccino";
             Size bubbleSize2 = new Size(120, 40);
-            chatPanel.Controls.Add(SetResponseBubble(message2, new Point(70, height + 10), bubbleSize2, new Point(10, 10), new Size(100, 20), Color.White));
+            chatPanel.Controls.Add(SetResponseBubble(message2, new Point(70, height + 10), bubbleSize2, textPoint, new Size(100, 20), Color.White));
             height += bubbleSize2.Height + 3;
 
             string message3 = "3. Espresso";
             Size bubbleSize3 = new Size(120, 40);
-            chatPanel.Controls.Add(SetResponseBubble(message3, new Point(70, height + 10), bubbleSize3, new Point(10, 10), new Size(100, 20), Color.White));
+            chatPanel.Controls.Add(SetResponseBubble(message3, new Point(70, height + 10), bubbleSize3, textPoint, new Size(100, 20), Color.White));
             height += bubbleSize3.Height + 3;
 
             string message4 = "4. Latte";
             Size bubbleSize4 = new Size(120, 40);
-            chatPanel.Controls.Add(SetResponseBubble(message4, new Point(70, height + 10), bubbleSize4, new Point(10, 10), new Size(100, 20), Color.White));
+            chatPanel.Controls.Add(SetResponseBubble(message4, new Point(70, height + 10), bubbleSize4, textPoint, new Size(100, 20), Color.White));
             height += bubbleSize4.Height + 3;
 
             string message5 = "When you have typed your order, please write “I am ready”.";
             Size bubbleSize5 = new Size(260, 60);
-            chatPanel.Controls.Add(SetResponseBubble(message5, new Point(70, height + 10), bubbleSize5, new Point(10, 10), new Size(240, 40), Color.White));
+            chatPanel.Controls.Add(SetResponseBubble(message5, new Point(70, height + 10), bubbleSize5, textPoint, new Size(240, 40), Color.White));
             height += bubbleSize5.Height + 10;
         }
 
@@ -329,37 +329,37 @@ namespace hotel_app.Forms.Functions
 
             string message = "Please type each the products that you want per message like 'Souvlaki x2'";
             Size bubbleSize = new Size(280, 60);
-            chatPanel.Controls.Add(SetResponseBubble(message, new Point(70, height + 10), bubbleSize, new Point(10, 10), new Size(260, 40), Color.White));
+            chatPanel.Controls.Add(SetResponseBubble(message, new Point(70, height + 10), bubbleSize, textPoint, new Size(260, 40), Color.White));
             height += bubbleSize.Height + 3;
 
             string message1 = "1. Zeus Heart";
             Size bubbleSize1 = new Size(120, 40);
-            chatPanel.Controls.Add(SetResponseBubble(message1, new Point(70, height + 10), bubbleSize1, new Point(10, 10), new Size(100, 20), Color.White));
+            chatPanel.Controls.Add(SetResponseBubble(message1, new Point(70, height + 10), bubbleSize1, textPoint, new Size(100, 20), Color.White));
             height += bubbleSize1.Height + 3;
 
             string message2 = "2. Chocolate";
             Size bubbleSize2 = new Size(120, 40);
-            chatPanel.Controls.Add(SetResponseBubble(message2, new Point(70, height + 10), bubbleSize2, new Point(10, 10), new Size(100, 20), Color.White));
+            chatPanel.Controls.Add(SetResponseBubble(message2, new Point(70, height + 10), bubbleSize2, textPoint, new Size(100, 20), Color.White));
             height += bubbleSize2.Height + 3;
 
             string message3 = "3. Hospitality";
             Size bubbleSize3 = new Size(120, 40);
-            chatPanel.Controls.Add(SetResponseBubble(message3, new Point(70, height + 10), bubbleSize3, new Point(10, 10), new Size(100, 20), Color.White));
+            chatPanel.Controls.Add(SetResponseBubble(message3, new Point(70, height + 10), bubbleSize3, textPoint, new Size(100, 20), Color.White));
             height += bubbleSize3.Height + 3;
 
             string message4 = "4. Ferrero";
             Size bubbleSize4 = new Size(120, 40);
-            chatPanel.Controls.Add(SetResponseBubble(message4, new Point(70, height + 10), bubbleSize4, new Point(10, 10), new Size(100, 20), Color.White));
+            chatPanel.Controls.Add(SetResponseBubble(message4, new Point(70, height + 10), bubbleSize4, textPoint, new Size(100, 20), Color.White));
             height += bubbleSize4.Height + 3;
 
             string message5 = "5. Special";
             Size bubbleSize5 = new Size(120, 40);
-            chatPanel.Controls.Add(SetResponseBubble(message5, new Point(70, height + 10), bubbleSize5, new Point(10, 10), new Size(100, 20), Color.White));
+            chatPanel.Controls.Add(SetResponseBubble(message5, new Point(70, height + 10), bubbleSize5, textPoint, new Size(100, 20), Color.White));
             height += bubbleSize5.Height + 3;
 
             string message6 = "When you have typed your order, please write “I am ready”.";
             Size bubbleSize6 = new Size(260, 60);
-            chatPanel.Controls.Add(SetResponseBubble(message6, new Point(70, height + 10), bubbleSize6, new Point(10, 10), new Size(240, 40), Color.White));
+            chatPanel.Controls.Add(SetResponseBubble(message6, new Point(70, height + 10), bubbleSize6, textPoint, new Size(240, 40), Color.White));
             height += bubbleSize6.Height + 10;
         }
 
@@ -370,32 +370,32 @@ namespace hotel_app.Forms.Functions
 
             string message = "Please type each the products that you want per message like 'Souvlaki x2'";
             Size bubbleSize = new Size(280, 60);
-            chatPanel.Controls.Add(SetResponseBubble(message, new Point(70, height + 10), bubbleSize, new Point(10, 10), new Size(260, 40), Color.White));
+            chatPanel.Controls.Add(SetResponseBubble(message, new Point(70, height + 10), bubbleSize, textPoint, new Size(260, 40), Color.White));
             height += bubbleSize.Height + 3;
 
             string message1 = "1. Greek";
             Size bubbleSize1 = new Size(120, 40);
-            chatPanel.Controls.Add(SetResponseBubble(message1, new Point(70, height + 10), bubbleSize1, new Point(10, 10), new Size(100, 20), Color.White));
+            chatPanel.Controls.Add(SetResponseBubble(message1, new Point(70, height + 10), bubbleSize1, textPoint, new Size(100, 20), Color.White));
             height += bubbleSize1.Height + 3;
 
             string message2 = "2. Aegean";
             Size bubbleSize2 = new Size(120, 40);
-            chatPanel.Controls.Add(SetResponseBubble(message2, new Point(70, height + 10), bubbleSize2, new Point(10, 10), new Size(100, 20), Color.White));
+            chatPanel.Controls.Add(SetResponseBubble(message2, new Point(70, height + 10), bubbleSize2, textPoint, new Size(100, 20), Color.White));
             height += bubbleSize2.Height + 3;
 
             string message3 = "3. Tricolore";
             Size bubbleSize3 = new Size(120, 40);
-            chatPanel.Controls.Add(SetResponseBubble(message3, new Point(70, height + 10), bubbleSize3, new Point(10, 10), new Size(100, 20), Color.White));
+            chatPanel.Controls.Add(SetResponseBubble(message3, new Point(70, height + 10), bubbleSize3, textPoint, new Size(100, 20), Color.White));
             height += bubbleSize3.Height + 3;
 
             string message4 = "4. Chef";
             Size bubbleSize4 = new Size(120, 40);
-            chatPanel.Controls.Add(SetResponseBubble(message4, new Point(70, height + 10), bubbleSize4, new Point(10, 10), new Size(100, 20), Color.White));
+            chatPanel.Controls.Add(SetResponseBubble(message4, new Point(70, height + 10), bubbleSize4, textPoint, new Size(100, 20), Color.White));
             height += bubbleSize4.Height + 3;
 
             string message5 = "When you have typed your order, please write “I am ready”.";
             Size bubbleSize5 = new Size(260, 60);
-            chatPanel.Controls.Add(SetResponseBubble(message5, new Point(70, height + 10), bubbleSize5, new Point(10, 10), new Size(240, 40), Color.White));
+            chatPanel.Controls.Add(SetResponseBubble(message5, new Point(70, height + 10), bubbleSize5, textPoint, new Size(240, 40), Color.White));
             height += bubbleSize5.Height + 10;
         }
 
@@ -406,32 +406,32 @@ namespace hotel_app.Forms.Functions
 
             string message = "Please type each the products that you want per message like 'Souvlaki x2'";
             Size bubbleSize = new Size(280, 60);
-            chatPanel.Controls.Add(SetResponseBubble(message, new Point(70, height + 10), bubbleSize, new Point(10, 10), new Size(260, 40), Color.White));
+            chatPanel.Controls.Add(SetResponseBubble(message, new Point(70, height + 10), bubbleSize, textPoint, new Size(260, 40), Color.White));
             height += bubbleSize.Height + 3;
 
             string message1 = "1. Zeus Special";
             Size bubbleSize1 = new Size(120, 40);
-            chatPanel.Controls.Add(SetResponseBubble(message1, new Point(70, height + 10), bubbleSize1, new Point(10, 10), new Size(100, 20), Color.White));
+            chatPanel.Controls.Add(SetResponseBubble(message1, new Point(70, height + 10), bubbleSize1, textPoint, new Size(100, 20), Color.White));
             height += bubbleSize1.Height + 3;
 
             string message2 = "2. Athina";
             Size bubbleSize2 = new Size(120, 40);
-            chatPanel.Controls.Add(SetResponseBubble(message2, new Point(70, height + 10), bubbleSize2, new Point(10, 10), new Size(100, 20), Color.White));
+            chatPanel.Controls.Add(SetResponseBubble(message2, new Point(70, height + 10), bubbleSize2, textPoint, new Size(100, 20), Color.White));
             height += bubbleSize2.Height + 3;
 
             string message3 = "3. Trojan";
             Size bubbleSize3 = new Size(120, 40);
-            chatPanel.Controls.Add(SetResponseBubble(message3, new Point(70, height + 10), bubbleSize3, new Point(10, 10), new Size(100, 20), Color.White));
+            chatPanel.Controls.Add(SetResponseBubble(message3, new Point(70, height + 10), bubbleSize3, textPoint, new Size(100, 20), Color.White));
             height += bubbleSize3.Height + 3;
 
             string message4 = "4. Palace";
             Size bubbleSize4 = new Size(120, 40);
-            chatPanel.Controls.Add(SetResponseBubble(message4, new Point(70, height + 10), bubbleSize4, new Point(10, 10), new Size(100, 20), Color.White));
+            chatPanel.Controls.Add(SetResponseBubble(message4, new Point(70, height + 10), bubbleSize4, textPoint, new Size(100, 20), Color.White));
             height += bubbleSize4.Height + 3;
 
             string message5 = "When you have typed your order, please write “I am ready”.";
             Size bubbleSize5 = new Size(260, 60);
-            chatPanel.Controls.Add(SetResponseBubble(message5, new Point(70, height + 10), bubbleSize5, new Point(10, 10), new Size(240, 40), Color.White));
+            chatPanel.Controls.Add(SetResponseBubble(message5, new Point(70, height + 10), bubbleSize5, textPoint, new Size(240, 40), Color.White));
             height += bubbleSize5.Height + 10;
         }
         
@@ -442,47 +442,47 @@ namespace hotel_app.Forms.Functions
 
             string message = "Please type each the products that you want per message like 'Souvlaki x2'";
             Size bubbleSize = new Size(280, 60);
-            chatPanel.Controls.Add(SetResponseBubble(message, new Point(70, height + 10), bubbleSize, new Point(10, 10), new Size(260, 40), Color.White));
+            chatPanel.Controls.Add(SetResponseBubble(message, new Point(70, height + 10), bubbleSize, textPoint, new Size(260, 40), Color.White));
             height += bubbleSize.Height + 3;
 
             string message1 = "1. Souvlaki";
             Size bubbleSize1 = new Size(120, 40);
-            chatPanel.Controls.Add(SetResponseBubble(message1, new Point(70, height + 10), bubbleSize1, new Point(10, 10), new Size(100, 20), Color.White));
+            chatPanel.Controls.Add(SetResponseBubble(message1, new Point(70, height + 10), bubbleSize1, textPoint, new Size(100, 20), Color.White));
             height += bubbleSize1.Height + 3;
 
             string message2 = "2. Tyromezes";
             Size bubbleSize2 = new Size(120, 40);
-            chatPanel.Controls.Add(SetResponseBubble(message2, new Point(70, height + 10), bubbleSize2, new Point(10, 10), new Size(100, 20), Color.White));
+            chatPanel.Controls.Add(SetResponseBubble(message2, new Point(70, height + 10), bubbleSize2, textPoint, new Size(100, 20), Color.White));
             height += bubbleSize2.Height + 3;
 
             string message3 = "3. Pasta";
             Size bubbleSize3 = new Size(120, 40);
-            chatPanel.Controls.Add(SetResponseBubble(message3, new Point(70, height + 10), bubbleSize3, new Point(10, 10), new Size(100, 20), Color.White));
+            chatPanel.Controls.Add(SetResponseBubble(message3, new Point(70, height + 10), bubbleSize3, textPoint, new Size(100, 20), Color.White));
             height += bubbleSize3.Height + 3;
 
             string message4 = "4. El Greco";
             Size bubbleSize4 = new Size(120, 40);
-            chatPanel.Controls.Add(SetResponseBubble(message4, new Point(70, height + 10), bubbleSize4, new Point(10, 10), new Size(100, 20), Color.White));
+            chatPanel.Controls.Add(SetResponseBubble(message4, new Point(70, height + 10), bubbleSize4, textPoint, new Size(100, 20), Color.White));
             height += bubbleSize4.Height + 3;
 
             string message5 = "5. Chicken";
             Size bubbleSize5 = new Size(120, 40);
-            chatPanel.Controls.Add(SetResponseBubble(message5, new Point(70, height + 10), bubbleSize5, new Point(10, 10), new Size(100, 20), Color.White));
+            chatPanel.Controls.Add(SetResponseBubble(message5, new Point(70, height + 10), bubbleSize5, textPoint, new Size(100, 20), Color.White));
             height += bubbleSize5.Height + 3;
 
             string message6 = "6. Ocean";
             Size bubbleSize6 = new Size(120, 40);
-            chatPanel.Controls.Add(SetResponseBubble(message6, new Point(70, height + 10), bubbleSize6, new Point(10, 10), new Size(100, 20), Color.White));
+            chatPanel.Controls.Add(SetResponseBubble(message6, new Point(70, height + 10), bubbleSize6, textPoint, new Size(100, 20), Color.White));
             height += bubbleSize6.Height + 3;
 
             string message7 = "7. Fiesta";
             Size bubbleSize7 = new Size(120, 40);
-            chatPanel.Controls.Add(SetResponseBubble(message7, new Point(70, height + 10), bubbleSize7, new Point(10, 10), new Size(100, 20), Color.White));
+            chatPanel.Controls.Add(SetResponseBubble(message7, new Point(70, height + 10), bubbleSize7, textPoint, new Size(100, 20), Color.White));
             height += bubbleSize7.Height + 3;
 
             string message8 = "When you have typed your order, please write “I am ready”.";
             Size bubbleSize8 = new Size(260, 60);
-            chatPanel.Controls.Add(SetResponseBubble(message8, new Point(70, height + 10), bubbleSize8, new Point(10, 10), new Size(240, 40), Color.White));
+            chatPanel.Controls.Add(SetResponseBubble(message8, new Point(70, height + 10), bubbleSize8, textPoint, new Size(240, 40), Color.White));
             height += bubbleSize8.Height + 10;
         }
         
@@ -493,7 +493,7 @@ namespace hotel_app.Forms.Functions
 
             string message = "Do you want to order something else?";
             Size bubbleSize = new Size(250, 40);
-            chatPanel.Controls.Add(SetResponseBubble(message, new Point(70, height + 10), bubbleSize, new Point(10, 10), new Size(230, 20), Color.White));
+            chatPanel.Controls.Add(SetResponseBubble(message, new Point(70, height + 10), bubbleSize, textPoint, new Size(230, 20), Color.White));
             height += bubbleSize.Height + 10;
         }
 
@@ -504,7 +504,7 @@ namespace hotel_app.Forms.Functions
 
             string message = "This is your final order:";
             Size bubbleSize = new Size(200, 40);
-            chatPanel.Controls.Add(SetResponseBubble(message, new Point(70, height + 10), bubbleSize, new Point(10, 10), new Size(180, 20), Color.White));
+            chatPanel.Controls.Add(SetResponseBubble(message, new Point(70, height + 10), bubbleSize, textPoint, new Size(180, 20), Color.White));
             height += bubbleSize.Height + 3;
 
             List<int> prices = new List<int> { 8, 10, 9, 12, //coffee prices
@@ -546,7 +546,7 @@ namespace hotel_app.Forms.Functions
 
                         Point bubbleLocation1 = new Point(70, height + 10);
                         Size bubbleSize1 = new Size(150, 40);
-                        Point textBoxLocaction1 = new Point(10, 10);
+                        Point textBoxLocaction1 = textPoint;
                         Size textBoxSize1 = new Size(130, 20);
                         chatPanel.Controls.Add(SetResponseBubble(foodList[j], bubbleLocation1, bubbleSize1, textBoxLocaction1, textBoxSize1, Color.White));
                         height += bubbleSize1.Height + 3;
@@ -556,17 +556,17 @@ namespace hotel_app.Forms.Functions
 
             string message2 = $"The total cost is: {total}€";
             Size bubbleSize2 = new Size(280, 40);
-            chatPanel.Controls.Add(SetResponseBubble(message2, new Point(70, height + 10), bubbleSize2, new Point(10, 10), new Size(260, 20), Color.White));
+            chatPanel.Controls.Add(SetResponseBubble(message2, new Point(70, height + 10), bubbleSize2, textPoint, new Size(260, 20), Color.White));
             height += bubbleSize2.Height + 3;
 
             string message3 = "I am transfering you to the payment page";
             Size bubbleSize3 = new Size(280, 40);
-            chatPanel.Controls.Add(SetResponseBubble(message3, new Point(70, height + 10), bubbleSize3, new Point(10, 10), new Size(260, 20), Color.White));
+            chatPanel.Controls.Add(SetResponseBubble(message3, new Point(70, height + 10), bubbleSize3, textPoint, new Size(260, 20), Color.White));
             height += bubbleSize3.Height + 3;
 
             string message4 = "You can now close the chat";
             Size bubbleSize4 = new Size(280, 40);
-            chatPanel.Controls.Add(SetResponseBubble(message4, new Point(70, height + 10), bubbleSize4, new Point(10, 10), new Size(260, 20), Color.White));
+            chatPanel.Controls.Add(SetResponseBubble(message4, new Point(70, height + 10), bubbleSize4, textPoint, new Size(260, 20), Color.White));
             height += bubbleSize4.Height + 10;
 
             orderCompleted?.Invoke(this, EventArgs.Empty);
