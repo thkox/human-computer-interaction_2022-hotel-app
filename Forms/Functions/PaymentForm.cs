@@ -24,6 +24,14 @@ namespace hotel_app.Forms.Functions
         {
             InitializeComponent();
             errorLabel.Visible = false;
+
+            orderStatus.EventCompletedEnd += new OrderStatusForm.EventCompleted(this.CloseThisForm);
+
+        }
+
+        private void CloseThisForm(object sender, EventArgs e)
+        {
+            this.Hide();
         }
 
         private void cardNumber_richTextBox_KeyPress(object sender, KeyPressEventArgs e)
@@ -183,6 +191,7 @@ namespace hotel_app.Forms.Functions
             if (allRichTextBoxesHaveText == true)
             {
                 OpenOrderStatusForm(orderStatus);
+
             }
             else
             {
@@ -196,6 +205,11 @@ namespace hotel_app.Forms.Functions
         private void confirmationButton_Leave(object sender, EventArgs e)
         {
             errorLabel.Visible = false;
+        }
+
+        private void cancelButton_Click(object sender, EventArgs e)
+        {
+            this.Hide();
         }
     }
 }

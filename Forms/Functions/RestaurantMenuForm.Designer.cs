@@ -113,7 +113,6 @@
             this.total_richTextBox = new System.Windows.Forms.RichTextBox();
             this.menuLoadFormsPanel = new System.Windows.Forms.Panel();
             this.chatButton = new FontAwesome.Sharp.IconButton();
-            this.backPictureBox = new FontAwesome.Sharp.IconPictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.cartButton)).BeginInit();
             this.menuTabControl.SuspendLayout();
             this.coffeeTabPage.SuspendLayout();
@@ -122,7 +121,6 @@
             this.pizzaTabPage.SuspendLayout();
             this.greekCuisineTabPage.SuspendLayout();
             this.menuLoadFormsPanel.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.backPictureBox)).BeginInit();
             this.SuspendLayout();
             // 
             // cartButton
@@ -1182,29 +1180,12 @@
             this.chatButton.UseVisualStyleBackColor = false;
             this.chatButton.Click += new System.EventHandler(this.chatButton_Click);
             // 
-            // backPictureBox
-            // 
-            this.backPictureBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(144)))), ((int)(((byte)(191)))));
-            this.backPictureBox.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.backPictureBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(241)))), ((int)(((byte)(246)))));
-            this.backPictureBox.IconChar = FontAwesome.Sharp.IconChar.CircleArrowLeft;
-            this.backPictureBox.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(241)))), ((int)(((byte)(246)))));
-            this.backPictureBox.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.backPictureBox.IconSize = 42;
-            this.backPictureBox.Location = new System.Drawing.Point(25, 12);
-            this.backPictureBox.Name = "backPictureBox";
-            this.backPictureBox.Size = new System.Drawing.Size(42, 42);
-            this.backPictureBox.TabIndex = 11;
-            this.backPictureBox.TabStop = false;
-            this.backPictureBox.Click += new System.EventHandler(this.backPictureBox_Click);
-            // 
             // RestaurantMenuForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(144)))), ((int)(((byte)(191)))));
             this.ClientSize = new System.Drawing.Size(1084, 661);
-            this.Controls.Add(this.backPictureBox);
             this.Controls.Add(this.menuLoadFormsPanel);
             this.Name = "RestaurantMenuForm";
             this.Text = "RestaurantMenuForm";
@@ -1223,7 +1204,6 @@
             this.greekCuisineTabPage.PerformLayout();
             this.menuLoadFormsPanel.ResumeLayout(false);
             this.menuLoadFormsPanel.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.backPictureBox)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1313,7 +1293,6 @@
         private Custom_Toolbox.QuantityCustomControl quantitySouvlaki;
         private RichTextBox total_richTextBox;
         private Panel menuLoadFormsPanel;
-        public FontAwesome.Sharp.IconPictureBox backPictureBox;
         private FontAwesome.Sharp.IconButton chatButton;
     }
 }

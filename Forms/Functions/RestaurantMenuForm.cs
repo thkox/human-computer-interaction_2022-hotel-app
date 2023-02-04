@@ -269,7 +269,6 @@ namespace hotel_app.Forms.Functions
         private void RestaurantMenuForm_Load(object sender, EventArgs e)
         {
             restaurantMenuTabs = menuLoadFormsPanel;
-            backPictureBox.Hide();
         }
 
         private void checkoutButton_Click(object sender, EventArgs e)
@@ -277,14 +276,12 @@ namespace hotel_app.Forms.Functions
             PaymentForm payment = new PaymentForm();
             payment.total_richTextBox.Text = total_richTextBox.Text;
             OpenPaymentForm(payment);
-            backPictureBox.Show();
         }
 
         private void backPictureBox_Click(object sender, EventArgs e)
         {
             currentChildForm.Hide();
             menuLoadFormsPanel = restaurantMenuTabs;
-            backPictureBox.Hide();
         }
 
         private void chatButton_Click(object sender, EventArgs e)

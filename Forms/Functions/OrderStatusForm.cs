@@ -13,6 +13,10 @@ namespace hotel_app.Forms.Functions
     public partial class OrderStatusForm : Form
     {
         int steps = 1;
+
+        public delegate void EventCompleted(object sender, EventArgs e);
+        public event EventCompleted EventCompletedEnd;
+
         public OrderStatusForm()
         {
             InitializeComponent();
@@ -64,6 +68,8 @@ namespace hotel_app.Forms.Functions
             else
             {
                 progressTimer.Stop();
+                EventCompletedEnd?.Invoke(this, EventArgs.Empty);
+                this.Hide();
             }
         }
     }
