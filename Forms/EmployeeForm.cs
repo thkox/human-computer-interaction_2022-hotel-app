@@ -183,7 +183,7 @@ namespace hotel_app.Forms
 
             label1.Hide();
             label2.Hide();
-            label3.Hide();
+            //label3.Hide();
 
             currentNameLabel.Text = trojanForm.currentName;
             //center align the label
@@ -202,7 +202,7 @@ namespace hotel_app.Forms
 
             label1.Hide();
             label2.Hide();
-            label3.Hide();
+            //label3.Hide();
 
             currentNameLabel.Text = roomForm.currentName;
             //center align the label
@@ -336,7 +336,7 @@ namespace hotel_app.Forms
 
             label1.Show();
             label2.Show();
-            label3.Show();
+            //label3.Show();
 
             //for every possible panel loaded inside the childFormPanel
             foreach (Client1Form trojanForm in trojanForms)
