@@ -72,6 +72,7 @@ namespace hotel_app
             this.password_richTextBox.ForeColor = System.Drawing.Color.Goldenrod;
             this.password_richTextBox.Location = new System.Drawing.Point(553, 491);
             this.password_richTextBox.Margin = new System.Windows.Forms.Padding(4);
+            this.password_richTextBox.MaxLength = 32767;
             this.password_richTextBox.Multiline = false;
             this.password_richTextBox.Name = "password_richTextBox";
             this.password_richTextBox.Padding = new System.Windows.Forms.Padding(7);
@@ -85,6 +86,7 @@ namespace hotel_app
             // 
             this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Comic Sans MS", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label1.ForeColor = System.Drawing.Color.Goldenrod;
             this.label1.Location = new System.Drawing.Point(553, 359);
@@ -97,6 +99,7 @@ namespace hotel_app
             // 
             this.label2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Comic Sans MS", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label2.ForeColor = System.Drawing.Color.Goldenrod;
             this.label2.Location = new System.Drawing.Point(553, 460);
@@ -131,6 +134,7 @@ namespace hotel_app
             // 
             this.errorLabel.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.errorLabel.AutoSize = true;
+            this.errorLabel.BackColor = System.Drawing.Color.Transparent;
             this.errorLabel.Font = new System.Drawing.Font("Comic Sans MS", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.errorLabel.ForeColor = System.Drawing.Color.OrangeRed;
             this.errorLabel.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -144,6 +148,7 @@ namespace hotel_app
             // pictureBox1
             // 
             this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.Image = global::hotel_app.Properties.Resources.MainLogo;
             this.pictureBox1.Location = new System.Drawing.Point(454, 71);
             this.pictureBox1.Name = "pictureBox1";
