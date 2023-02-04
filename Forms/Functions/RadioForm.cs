@@ -64,6 +64,8 @@ namespace hotel_app.Forms.Functions
 
         private void RadioForm_Load(object sender, EventArgs e)
         {
+            RadioToggle_CheckedChanged(radioUpButton, EventArgs.Empty);
+            RadioToggle_CheckedChanged(radioUpButton, EventArgs.Empty);
             TurnOFFRadio();
             radioLabel.Left = (this.ClientSize.Width - radioLabel.Width) / 2;
             radioPanel.Left = (this.ClientSize.Width - radioPanel.Width) / 2;
