@@ -168,5 +168,10 @@ namespace hotel_app.Forms
         {
             chatRichTextBox3.Text = "The restaurant is now open for lunch!";
         }
+
+        private void helpButton_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -48,7 +48,9 @@ namespace hotel_app.Forms
             this.childFormLabel = new System.Windows.Forms.Label();
             this.currentChildFormIcon = new FontAwesome.Sharp.IconPictureBox();
             this.childFormPanel = new System.Windows.Forms.Panel();
+            this.helpButton = new FontAwesome.Sharp.IconPictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.iconPictureBox5 = new FontAwesome.Sharp.IconPictureBox();
@@ -63,7 +65,6 @@ namespace hotel_app.Forms
             this.chatRichTextBox3 = new hotel_app.Custom_Toolbox.ChatRichTextBox();
             this.label9 = new System.Windows.Forms.Label();
             this.chatRichTextBox2 = new hotel_app.Custom_Toolbox.ChatRichTextBox();
-            this.iconPictureBox1 = new FontAwesome.Sharp.IconPictureBox();
             this.chatRichTextBox1 = new hotel_app.Custom_Toolbox.ChatRichTextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -77,13 +78,14 @@ namespace hotel_app.Forms
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.currentChildFormIcon)).BeginInit();
             this.childFormPanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.helpButton)).BeginInit();
             this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox6)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // menuPanel
@@ -368,6 +370,7 @@ namespace hotel_app.Forms
             // childFormPanel
             // 
             this.childFormPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(144)))), ((int)(((byte)(191)))));
+            this.childFormPanel.Controls.Add(this.helpButton);
             this.childFormPanel.Controls.Add(this.panel2);
             this.childFormPanel.Controls.Add(this.label2);
             this.childFormPanel.Controls.Add(this.label1);
@@ -377,10 +380,27 @@ namespace hotel_app.Forms
             this.childFormPanel.Size = new System.Drawing.Size(1100, 700);
             this.childFormPanel.TabIndex = 2;
             // 
+            // helpButton
+            // 
+            this.helpButton.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.helpButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(144)))), ((int)(((byte)(191)))));
+            this.helpButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(228)))), ((int)(((byte)(238)))));
+            this.helpButton.IconChar = FontAwesome.Sharp.IconChar.QuestionCircle;
+            this.helpButton.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(228)))), ((int)(((byte)(238)))));
+            this.helpButton.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.helpButton.IconSize = 50;
+            this.helpButton.Location = new System.Drawing.Point(1041, 14);
+            this.helpButton.Name = "helpButton";
+            this.helpButton.Size = new System.Drawing.Size(50, 50);
+            this.helpButton.TabIndex = 10;
+            this.helpButton.TabStop = false;
+            this.helpButton.Click += new System.EventHandler(this.helpButton_Click);
+            // 
             // panel2
             // 
             this.panel2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(144)))), ((int)(((byte)(191)))));
+            this.panel2.Controls.Add(this.pictureBox1);
             this.panel2.Controls.Add(this.label8);
             this.panel2.Controls.Add(this.label7);
             this.panel2.Controls.Add(this.iconPictureBox5);
@@ -395,7 +415,6 @@ namespace hotel_app.Forms
             this.panel2.Controls.Add(this.chatRichTextBox3);
             this.panel2.Controls.Add(this.label9);
             this.panel2.Controls.Add(this.chatRichTextBox2);
-            this.panel2.Controls.Add(this.iconPictureBox1);
             this.panel2.Controls.Add(this.chatRichTextBox1);
             this.panel2.Controls.Add(this.label4);
             this.panel2.Controls.Add(this.label3);
@@ -404,6 +423,17 @@ namespace hotel_app.Forms
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1071, 534);
             this.panel2.TabIndex = 9;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(121)))), ((int)(((byte)(159)))), ((int)(((byte)(202)))));
+            this.pictureBox1.Image = global::hotel_app.Properties.Resources.trojan_horse_reversed;
+            this.pictureBox1.Location = new System.Drawing.Point(461, 24);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(54, 42);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 23;
+            this.pictureBox1.TabStop = false;
             // 
             // label8
             // 
@@ -596,18 +626,6 @@ namespace hotel_app.Forms
             this.chatRichTextBox2.TextMultiline = true;
             this.chatRichTextBox2.TextReadonly = true;
             // 
-            // iconPictureBox1
-            // 
-            this.iconPictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(121)))), ((int)(((byte)(159)))), ((int)(((byte)(202)))));
-            this.iconPictureBox1.IconChar = FontAwesome.Sharp.IconChar.Bed;
-            this.iconPictureBox1.IconColor = System.Drawing.Color.White;
-            this.iconPictureBox1.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconPictureBox1.Location = new System.Drawing.Point(448, 31);
-            this.iconPictureBox1.Name = "iconPictureBox1";
-            this.iconPictureBox1.Size = new System.Drawing.Size(32, 32);
-            this.iconPictureBox1.TabIndex = 3;
-            this.iconPictureBox1.TabStop = false;
-            // 
             // chatRichTextBox1
             // 
             this.chatRichTextBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(121)))), ((int)(((byte)(159)))), ((int)(((byte)(202)))));
@@ -643,11 +661,11 @@ namespace hotel_app.Forms
             this.label3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(121)))), ((int)(((byte)(159)))), ((int)(((byte)(202)))));
             this.label3.Font = new System.Drawing.Font("Comic Sans MS", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(486, 34);
+            this.label3.Location = new System.Drawing.Point(512, 29);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(137, 29);
+            this.label3.Size = new System.Drawing.Size(151, 29);
             this.label3.TabIndex = 0;
-            this.label3.Text = "Room Status";
+            this.label3.Text = "Trojan Status";
             // 
             // chatRichTextBox5
             // 
@@ -717,14 +735,15 @@ namespace hotel_app.Forms
             ((System.ComponentModel.ISupportInitialize)(this.currentChildFormIcon)).EndInit();
             this.childFormPanel.ResumeLayout(false);
             this.childFormPanel.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.helpButton)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -764,10 +783,11 @@ namespace hotel_app.Forms
         private Custom_Toolbox.ChatRichTextBox chatRichTextBox3;
         private Label label9;
         private Custom_Toolbox.ChatRichTextBox chatRichTextBox2;
-        private FontAwesome.Sharp.IconPictureBox iconPictureBox1;
         private Custom_Toolbox.ChatRichTextBox chatRichTextBox1;
         private Label label4;
         private Label label3;
         private Custom_Toolbox.ChatRichTextBox chatRichTextBox5;
+        private PictureBox pictureBox1;
+        private FontAwesome.Sharp.IconPictureBox helpButton;
     }
 }
