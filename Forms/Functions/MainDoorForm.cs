@@ -135,14 +135,14 @@ namespace hotel_app.Forms.Functions
 
         private void MainDoorForm_Load(object sender, EventArgs e)
         {
-            doorStateList.Add("Door is Closed");
-            doorStateList.Add("Door is half Opened");
-            doorStateList.Add("Door is opened");
+            doorStateList.Add("Door is Close");
+            doorStateList.Add("Door is half Open");
+            doorStateList.Add("Door is Open");
 
             doorStateLabel.Text = doorStateList[doorStateListIndex];
 
-            stairsStateList.Add("Stairs are Opened");
-            stairsStateList.Add("Stairs are Closed");
+            stairsStateList.Add("Stairs are Open");
+            stairsStateList.Add("Stairs are Clos");
 
             stairsStateLabel.Text = stairsStateList[stairsStateListIndex];
 
