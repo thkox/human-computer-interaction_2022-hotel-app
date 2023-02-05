@@ -82,6 +82,7 @@
             this.doorClosed.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.doorClosed.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(79)))), ((int)(((byte)(134)))), ((int)(((byte)(184)))));
             this.doorClosed.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.doorClosed.Enabled = false;
             this.doorClosed.Image = global::hotel_app.Properties.Resources.DoorClosed;
             this.doorClosed.Location = new System.Drawing.Point(282, 116);
             this.doorClosed.Name = "doorClosed";
@@ -110,6 +111,7 @@
             this.stairsDownButton.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.stairsDownButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(79)))), ((int)(((byte)(134)))), ((int)(((byte)(184)))));
             this.stairsDownButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.stairsDownButton.Enabled = false;
             this.stairsDownButton.Image = global::hotel_app.Properties.Resources.StairsDown;
             this.stairsDownButton.Location = new System.Drawing.Point(566, 399);
             this.stairsDownButton.Name = "stairsDownButton";

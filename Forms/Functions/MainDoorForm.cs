@@ -145,6 +145,9 @@ namespace hotel_app.Forms.Functions
             stairsStateList.Add("Stairs are Closed");
 
             stairsStateLabel.Text = stairsStateList[stairsStateListIndex];
+
+            doorClosed_Click(doorClosed, EventArgs.Empty);
+            stairsDownButton_Click(stairsDownButton, EventArgs.Empty);  
         }
 
         private void chatRichTextBox1_Load(object sender, EventArgs e)
