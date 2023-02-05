@@ -38,6 +38,7 @@ namespace hotel_app
             this.login_button = new hotel_app.Custom_Toolbox.ButtonCustom();
             this.errorLabel = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.helpButton = new FontAwesome.Sharp.IconButton();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -52,6 +53,7 @@ namespace hotel_app
             this.username_richTextBox.ForeColor = System.Drawing.Color.Goldenrod;
             this.username_richTextBox.Location = new System.Drawing.Point(553, 390);
             this.username_richTextBox.Margin = new System.Windows.Forms.Padding(4);
+            this.username_richTextBox.MaxLength = 32767;
             this.username_richTextBox.Multiline = false;
             this.username_richTextBox.Name = "username_richTextBox";
             this.username_richTextBox.Padding = new System.Windows.Forms.Padding(7);
@@ -157,6 +159,24 @@ namespace hotel_app
             this.pictureBox1.TabIndex = 8;
             this.pictureBox1.TabStop = false;
             // 
+            // helpButton
+            // 
+            this.helpButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(121)))), ((int)(((byte)(159)))), ((int)(((byte)(202)))));
+            this.helpButton.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.helpButton.ForeColor = System.Drawing.Color.Black;
+            this.helpButton.IconChar = FontAwesome.Sharp.IconChar.QuestionCircle;
+            this.helpButton.IconColor = System.Drawing.Color.Black;
+            this.helpButton.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.helpButton.IconSize = 40;
+            this.helpButton.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.helpButton.Location = new System.Drawing.Point(1311, 12);
+            this.helpButton.Name = "helpButton";
+            this.helpButton.Size = new System.Drawing.Size(60, 60);
+            this.helpButton.TabIndex = 23;
+            this.helpButton.Text = "Help";
+            this.helpButton.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.helpButton.UseVisualStyleBackColor = false;
+            // 
             // SignInForm
             // 
             this.AcceptButton = this.login_button;
@@ -164,6 +184,7 @@ namespace hotel_app
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(124)))), ((int)(((byte)(177)))));
             this.ClientSize = new System.Drawing.Size(1400, 800);
+            this.Controls.Add(this.helpButton);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.errorLabel);
             this.Controls.Add(this.login_button);
@@ -194,5 +215,6 @@ namespace hotel_app
         private Custom_Toolbox.ButtonCustom login_button;
         private Label errorLabel;
         private PictureBox pictureBox1;
+        private FontAwesome.Sharp.IconButton helpButton;
     }
 }

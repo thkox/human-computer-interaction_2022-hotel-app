@@ -35,11 +35,13 @@
             this.room3Button = new FontAwesome.Sharp.IconButton();
             this.room2Button = new FontAwesome.Sharp.IconButton();
             this.room1Button = new FontAwesome.Sharp.IconButton();
+            this.helpButton = new FontAwesome.Sharp.IconButton();
             this.roomsLoadFormsPanel.SuspendLayout();
             this.SuspendLayout();
             // 
             // roomsLoadFormsPanel
             // 
+            this.roomsLoadFormsPanel.Controls.Add(this.helpButton);
             this.roomsLoadFormsPanel.Controls.Add(this.suite2Button);
             this.roomsLoadFormsPanel.Controls.Add(this.suite1Button);
             this.roomsLoadFormsPanel.Controls.Add(this.room4Button);
@@ -200,6 +202,24 @@
             this.room1Button.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.room1Button.UseVisualStyleBackColor = false;
             // 
+            // helpButton
+            // 
+            this.helpButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(121)))), ((int)(((byte)(159)))), ((int)(((byte)(202)))));
+            this.helpButton.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.helpButton.ForeColor = System.Drawing.Color.Black;
+            this.helpButton.IconChar = FontAwesome.Sharp.IconChar.QuestionCircle;
+            this.helpButton.IconColor = System.Drawing.Color.Black;
+            this.helpButton.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.helpButton.IconSize = 40;
+            this.helpButton.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.helpButton.Location = new System.Drawing.Point(1012, 12);
+            this.helpButton.Name = "helpButton";
+            this.helpButton.Size = new System.Drawing.Size(60, 60);
+            this.helpButton.TabIndex = 23;
+            this.helpButton.Text = "Help";
+            this.helpButton.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.helpButton.UseVisualStyleBackColor = false;
+            // 
             // RoomsForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -222,5 +242,6 @@
         public FontAwesome.Sharp.IconButton suite2Button;
         public FontAwesome.Sharp.IconButton suite1Button;
         public Panel roomsLoadFormsPanel;
+        private FontAwesome.Sharp.IconButton helpButton;
     }
 }

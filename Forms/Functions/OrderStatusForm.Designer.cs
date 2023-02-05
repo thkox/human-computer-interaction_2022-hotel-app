@@ -45,6 +45,7 @@
             this.step5Label = new System.Windows.Forms.Label();
             this.progressTimer = new System.Windows.Forms.Timer(this.components);
             this.chatRichTextBox1 = new hotel_app.Custom_Toolbox.ChatRichTextBox();
+            this.helpButton = new FontAwesome.Sharp.IconButton();
             ((System.ComponentModel.ISupportInitialize)(this.progressPictureBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.allStepsPictureBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.step1PictureBox)).BeginInit();
@@ -247,12 +248,31 @@
             this.chatRichTextBox1.TextMultiline = true;
             this.chatRichTextBox1.TextReadonly = true;
             // 
+            // helpButton
+            // 
+            this.helpButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(121)))), ((int)(((byte)(159)))), ((int)(((byte)(202)))));
+            this.helpButton.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.helpButton.ForeColor = System.Drawing.Color.Black;
+            this.helpButton.IconChar = FontAwesome.Sharp.IconChar.QuestionCircle;
+            this.helpButton.IconColor = System.Drawing.Color.Black;
+            this.helpButton.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.helpButton.IconSize = 40;
+            this.helpButton.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.helpButton.Location = new System.Drawing.Point(1012, 12);
+            this.helpButton.Name = "helpButton";
+            this.helpButton.Size = new System.Drawing.Size(60, 60);
+            this.helpButton.TabIndex = 23;
+            this.helpButton.Text = "Help";
+            this.helpButton.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.helpButton.UseVisualStyleBackColor = false;
+            // 
             // OrderStatusForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(144)))), ((int)(((byte)(191)))));
             this.ClientSize = new System.Drawing.Size(1084, 661);
+            this.Controls.Add(this.helpButton);
             this.Controls.Add(this.step6Label);
             this.Controls.Add(this.step5Label);
             this.Controls.Add(this.step4Label);
@@ -302,5 +322,6 @@
         private Label step5Label;
         private System.Windows.Forms.Timer progressTimer;
         private Custom_Toolbox.ChatRichTextBox chatRichTextBox1;
+        private FontAwesome.Sharp.IconButton helpButton;
     }
 }

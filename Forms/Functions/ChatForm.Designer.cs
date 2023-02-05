@@ -36,6 +36,7 @@
             this.inputChatTextBox = new hotel_app.Custom_Toolbox.ChatRichTextBox();
             this.sentMessagePictureBox = new FontAwesome.Sharp.IconPictureBox();
             this.chatPanel = new System.Windows.Forms.Panel();
+            this.helpButton = new FontAwesome.Sharp.IconButton();
             this.charBarPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox1)).BeginInit();
             this.downBar.SuspendLayout();
@@ -45,6 +46,7 @@
             // charBarPanel
             // 
             this.charBarPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(82)))), ((int)(((byte)(133)))));
+            this.charBarPanel.Controls.Add(this.helpButton);
             this.charBarPanel.Controls.Add(this.label1);
             this.charBarPanel.Controls.Add(this.iconPictureBox1);
             this.charBarPanel.Dock = System.Windows.Forms.DockStyle.Top;
@@ -130,6 +132,24 @@
             this.chatPanel.Size = new System.Drawing.Size(400, 490);
             this.chatPanel.TabIndex = 2;
             // 
+            // helpButton
+            // 
+            this.helpButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(124)))), ((int)(((byte)(177)))));
+            this.helpButton.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.helpButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(238)))), ((int)(((byte)(244)))));
+            this.helpButton.IconChar = FontAwesome.Sharp.IconChar.QuestionCircle;
+            this.helpButton.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(238)))), ((int)(((byte)(244)))));
+            this.helpButton.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.helpButton.IconSize = 40;
+            this.helpButton.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.helpButton.Location = new System.Drawing.Point(344, 3);
+            this.helpButton.Name = "helpButton";
+            this.helpButton.Size = new System.Drawing.Size(53, 54);
+            this.helpButton.TabIndex = 12;
+            this.helpButton.Text = "Help";
+            this.helpButton.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.helpButton.UseVisualStyleBackColor = false;
+            // 
             // ChatForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -164,5 +184,6 @@
         private Custom_Toolbox.ChatRichTextBox inputChatTextBox;
         private Label label1;
         private FontAwesome.Sharp.IconPictureBox iconPictureBox1;
+        private FontAwesome.Sharp.IconButton helpButton;
     }
 }

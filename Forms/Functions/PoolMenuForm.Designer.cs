@@ -33,6 +33,7 @@
             this.sensorButton = new FontAwesome.Sharp.IconButton();
             this.poolLoadFormsPanel = new System.Windows.Forms.Panel();
             this.backPictureBox = new FontAwesome.Sharp.IconPictureBox();
+            this.helpButton = new FontAwesome.Sharp.IconButton();
             this.poolLoadFormsPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.backPictureBox)).BeginInit();
             this.SuspendLayout();
@@ -97,6 +98,7 @@
             // poolLoadFormsPanel
             // 
             this.poolLoadFormsPanel.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.poolLoadFormsPanel.Controls.Add(this.helpButton);
             this.poolLoadFormsPanel.Controls.Add(this.waterLevelButton);
             this.poolLoadFormsPanel.Controls.Add(this.sensorButton);
             this.poolLoadFormsPanel.Controls.Add(this.thermostatButton);
@@ -121,6 +123,24 @@
             this.backPictureBox.TabStop = false;
             this.backPictureBox.Click += new System.EventHandler(this.backPictureBox_Click);
             // 
+            // helpButton
+            // 
+            this.helpButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(121)))), ((int)(((byte)(159)))), ((int)(((byte)(202)))));
+            this.helpButton.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.helpButton.ForeColor = System.Drawing.Color.Black;
+            this.helpButton.IconChar = FontAwesome.Sharp.IconChar.QuestionCircle;
+            this.helpButton.IconColor = System.Drawing.Color.Black;
+            this.helpButton.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.helpButton.IconSize = 40;
+            this.helpButton.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.helpButton.Location = new System.Drawing.Point(1008, 18);
+            this.helpButton.Name = "helpButton";
+            this.helpButton.Size = new System.Drawing.Size(60, 60);
+            this.helpButton.TabIndex = 23;
+            this.helpButton.Text = "Help";
+            this.helpButton.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.helpButton.UseVisualStyleBackColor = false;
+            // 
             // PoolMenuForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -144,5 +164,6 @@
         public FontAwesome.Sharp.IconPictureBox backPictureBox;
         public FontAwesome.Sharp.IconButton thermostatButton;
         public FontAwesome.Sharp.IconButton sensorButton;
+        private FontAwesome.Sharp.IconButton helpButton;
     }
 }

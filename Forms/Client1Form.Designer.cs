@@ -48,7 +48,7 @@ namespace hotel_app.Forms
             this.childFormLabel = new System.Windows.Forms.Label();
             this.currentChildFormIcon = new FontAwesome.Sharp.IconPictureBox();
             this.childFormPanel = new System.Windows.Forms.Panel();
-            this.helpButton = new FontAwesome.Sharp.IconPictureBox();
+            this.helpButton = new FontAwesome.Sharp.IconButton();
             this.panel2 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label8 = new System.Windows.Forms.Label();
@@ -78,7 +78,6 @@ namespace hotel_app.Forms
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.currentChildFormIcon)).BeginInit();
             this.childFormPanel.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.helpButton)).BeginInit();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox5)).BeginInit();
@@ -382,18 +381,21 @@ namespace hotel_app.Forms
             // 
             // helpButton
             // 
-            this.helpButton.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.helpButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(144)))), ((int)(((byte)(191)))));
-            this.helpButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(228)))), ((int)(((byte)(238)))));
+            this.helpButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(121)))), ((int)(((byte)(159)))), ((int)(((byte)(202)))));
+            this.helpButton.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.helpButton.ForeColor = System.Drawing.Color.Black;
             this.helpButton.IconChar = FontAwesome.Sharp.IconChar.QuestionCircle;
-            this.helpButton.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(228)))), ((int)(((byte)(238)))));
+            this.helpButton.IconColor = System.Drawing.Color.Black;
             this.helpButton.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.helpButton.IconSize = 50;
-            this.helpButton.Location = new System.Drawing.Point(1041, 14);
+            this.helpButton.IconSize = 40;
+            this.helpButton.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.helpButton.Location = new System.Drawing.Point(1028, 6);
             this.helpButton.Name = "helpButton";
-            this.helpButton.Size = new System.Drawing.Size(50, 50);
-            this.helpButton.TabIndex = 10;
-            this.helpButton.TabStop = false;
+            this.helpButton.Size = new System.Drawing.Size(60, 60);
+            this.helpButton.TabIndex = 11;
+            this.helpButton.Text = "Help";
+            this.helpButton.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.helpButton.UseVisualStyleBackColor = false;
             this.helpButton.Click += new System.EventHandler(this.helpButton_Click);
             // 
             // panel2
@@ -735,7 +737,6 @@ namespace hotel_app.Forms
             ((System.ComponentModel.ISupportInitialize)(this.currentChildFormIcon)).EndInit();
             this.childFormPanel.ResumeLayout(false);
             this.childFormPanel.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.helpButton)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -788,6 +789,6 @@ namespace hotel_app.Forms
         private Label label3;
         private Custom_Toolbox.ChatRichTextBox chatRichTextBox5;
         private PictureBox pictureBox1;
-        private FontAwesome.Sharp.IconPictureBox helpButton;
+        private FontAwesome.Sharp.IconButton helpButton;
     }
 }

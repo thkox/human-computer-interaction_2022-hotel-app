@@ -44,6 +44,7 @@
             this.room_radioButtonCustom = new hotel_app.Custom_Toolbox.RadioButtonCustom();
             this.trojan_radioButtonCustom = new hotel_app.Custom_Toolbox.RadioButtonCustom();
             this.errorLabel = new System.Windows.Forms.Label();
+            this.helpButton = new FontAwesome.Sharp.IconButton();
             this.SuspendLayout();
             // 
             // registerButton
@@ -325,12 +326,31 @@
             this.errorLabel.Text = "[Error Message]";
             this.errorLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // helpButton
+            // 
+            this.helpButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(121)))), ((int)(((byte)(159)))), ((int)(((byte)(202)))));
+            this.helpButton.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.helpButton.ForeColor = System.Drawing.Color.Black;
+            this.helpButton.IconChar = FontAwesome.Sharp.IconChar.QuestionCircle;
+            this.helpButton.IconColor = System.Drawing.Color.Black;
+            this.helpButton.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.helpButton.IconSize = 40;
+            this.helpButton.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.helpButton.Location = new System.Drawing.Point(1012, 12);
+            this.helpButton.Name = "helpButton";
+            this.helpButton.Size = new System.Drawing.Size(60, 60);
+            this.helpButton.TabIndex = 24;
+            this.helpButton.Text = "Help";
+            this.helpButton.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.helpButton.UseVisualStyleBackColor = false;
+            // 
             // RegisterForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(144)))), ((int)(((byte)(191)))));
             this.ClientSize = new System.Drawing.Size(1084, 661);
+            this.Controls.Add(this.helpButton);
             this.Controls.Add(this.errorLabel);
             this.Controls.Add(this.trojan_radioButtonCustom);
             this.Controls.Add(this.room_radioButtonCustom);
@@ -372,5 +392,6 @@
         private Custom_Toolbox.RadioButtonCustom room_radioButtonCustom;
         private Custom_Toolbox.RadioButtonCustom trojan_radioButtonCustom;
         private Label errorLabel;
+        private FontAwesome.Sharp.IconButton helpButton;
     }
 }

@@ -52,6 +52,7 @@ namespace hotel_app.Forms
             this.childFormPanel = new System.Windows.Forms.Panel();
             this.registrationLabel = new System.Windows.Forms.Label();
             this.hideMessageTimer = new System.Windows.Forms.Timer(this.components);
+            this.helpButton = new FontAwesome.Sharp.IconButton();
             this.menuPanel.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -334,6 +335,7 @@ namespace hotel_app.Forms
             // childFormPanel
             // 
             this.childFormPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(144)))), ((int)(((byte)(191)))));
+            this.childFormPanel.Controls.Add(this.helpButton);
             this.childFormPanel.Controls.Add(this.registrationLabel);
             this.childFormPanel.Controls.Add(this.label2);
             this.childFormPanel.Controls.Add(this.label1);
@@ -359,6 +361,24 @@ namespace hotel_app.Forms
             // 
             this.hideMessageTimer.Interval = 3000;
             this.hideMessageTimer.Tick += new System.EventHandler(this.hideMessageTimer_Tick);
+            // 
+            // helpButton
+            // 
+            this.helpButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(121)))), ((int)(((byte)(159)))), ((int)(((byte)(202)))));
+            this.helpButton.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.helpButton.ForeColor = System.Drawing.Color.Black;
+            this.helpButton.IconChar = FontAwesome.Sharp.IconChar.QuestionCircle;
+            this.helpButton.IconColor = System.Drawing.Color.Black;
+            this.helpButton.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.helpButton.IconSize = 40;
+            this.helpButton.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.helpButton.Location = new System.Drawing.Point(1012, 15);
+            this.helpButton.Name = "helpButton";
+            this.helpButton.Size = new System.Drawing.Size(60, 60);
+            this.helpButton.TabIndex = 23;
+            this.helpButton.Text = "Help";
+            this.helpButton.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.helpButton.UseVisualStyleBackColor = false;
             // 
             // EmployeeForm
             // 
@@ -412,5 +432,6 @@ namespace hotel_app.Forms
         private Label registrationLabel;
         private System.Windows.Forms.Timer hideMessageTimer;
         private FontAwesome.Sharp.IconButton backButton;
+        private FontAwesome.Sharp.IconButton helpButton;
     }
 }

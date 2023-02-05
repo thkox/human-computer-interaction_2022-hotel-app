@@ -40,6 +40,7 @@
             this.setTempValueLabel = new System.Windows.Forms.Label();
             this.setValueTimer = new System.Windows.Forms.Timer(this.components);
             this.thermostatScreen = new hotel_app.Custom_Toolbox.ChatRichTextBox();
+            this.helpButton = new FontAwesome.Sharp.IconButton();
             this.thermostatPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.leafPictureBox)).BeginInit();
             this.SuspendLayout();
@@ -190,12 +191,31 @@
             this.thermostatScreen.TextMultiline = true;
             this.thermostatScreen.TextReadonly = true;
             // 
+            // helpButton
+            // 
+            this.helpButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(121)))), ((int)(((byte)(159)))), ((int)(((byte)(202)))));
+            this.helpButton.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.helpButton.ForeColor = System.Drawing.Color.Black;
+            this.helpButton.IconChar = FontAwesome.Sharp.IconChar.QuestionCircle;
+            this.helpButton.IconColor = System.Drawing.Color.Black;
+            this.helpButton.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.helpButton.IconSize = 40;
+            this.helpButton.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.helpButton.Location = new System.Drawing.Point(1012, 12);
+            this.helpButton.Name = "helpButton";
+            this.helpButton.Size = new System.Drawing.Size(60, 60);
+            this.helpButton.TabIndex = 23;
+            this.helpButton.Text = "Help";
+            this.helpButton.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.helpButton.UseVisualStyleBackColor = false;
+            // 
             // ThermostatForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(144)))), ((int)(((byte)(191)))));
             this.ClientSize = new System.Drawing.Size(1084, 661);
+            this.Controls.Add(this.helpButton);
             this.Controls.Add(this.thermostatPanel);
             this.Controls.Add(this.thermostatToggle);
             this.Controls.Add(this.thermostatLabel);
@@ -225,5 +245,6 @@
         private System.Windows.Forms.Timer setValueTimer;
         private Label estimatedTimeLabel;
         private Custom_Toolbox.ChatRichTextBox thermostatScreen;
+        private FontAwesome.Sharp.IconButton helpButton;
     }
 }

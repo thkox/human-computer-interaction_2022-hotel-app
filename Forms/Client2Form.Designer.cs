@@ -69,6 +69,7 @@ namespace hotel_app.Forms
             this.chatRichTextBox5 = new hotel_app.Custom_Toolbox.ChatRichTextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.helpButton = new FontAwesome.Sharp.IconButton();
             this.menuPanel.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -344,6 +345,7 @@ namespace hotel_app.Forms
             // 
             this.childFormPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(144)))), ((int)(((byte)(191)))));
             this.childFormPanel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.childFormPanel.Controls.Add(this.helpButton);
             this.childFormPanel.Controls.Add(this.panel2);
             this.childFormPanel.Controls.Add(this.label2);
             this.childFormPanel.Controls.Add(this.label1);
@@ -668,6 +670,24 @@ namespace hotel_app.Forms
             this.label1.Text = "Zeus Palace\r\n";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // helpButton
+            // 
+            this.helpButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(121)))), ((int)(((byte)(159)))), ((int)(((byte)(202)))));
+            this.helpButton.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.helpButton.ForeColor = System.Drawing.Color.Black;
+            this.helpButton.IconChar = FontAwesome.Sharp.IconChar.QuestionCircle;
+            this.helpButton.IconColor = System.Drawing.Color.Black;
+            this.helpButton.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.helpButton.IconSize = 40;
+            this.helpButton.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.helpButton.Location = new System.Drawing.Point(1027, 13);
+            this.helpButton.Name = "helpButton";
+            this.helpButton.Size = new System.Drawing.Size(60, 60);
+            this.helpButton.TabIndex = 23;
+            this.helpButton.Text = "Help";
+            this.helpButton.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.helpButton.UseVisualStyleBackColor = false;
+            // 
             // Client2Form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -745,5 +765,6 @@ namespace hotel_app.Forms
         private FontAwesome.Sharp.IconPictureBox iconPictureBox2;
         private Custom_Toolbox.ChatRichTextBox chatRichTextBox4;
         private Custom_Toolbox.ChatRichTextBox chatRichTextBox5;
+        private FontAwesome.Sharp.IconButton helpButton;
     }
 }

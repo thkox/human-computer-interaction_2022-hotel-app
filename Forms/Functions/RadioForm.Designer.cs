@@ -41,6 +41,7 @@
             this.favRadioStation3 = new FontAwesome.Sharp.IconButton();
             this.favRadioStation4 = new FontAwesome.Sharp.IconButton();
             this.radioScreen = new hotel_app.Custom_Toolbox.ChatRichTextBox();
+            this.helpButton = new FontAwesome.Sharp.IconButton();
             this.radioPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.starPictureBox)).BeginInit();
             this.SuspendLayout();
@@ -258,12 +259,31 @@
             this.radioScreen.TextMultiline = true;
             this.radioScreen.TextReadonly = true;
             // 
+            // helpButton
+            // 
+            this.helpButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(121)))), ((int)(((byte)(159)))), ((int)(((byte)(202)))));
+            this.helpButton.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.helpButton.ForeColor = System.Drawing.Color.Black;
+            this.helpButton.IconChar = FontAwesome.Sharp.IconChar.QuestionCircle;
+            this.helpButton.IconColor = System.Drawing.Color.Black;
+            this.helpButton.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.helpButton.IconSize = 40;
+            this.helpButton.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.helpButton.Location = new System.Drawing.Point(1012, 12);
+            this.helpButton.Name = "helpButton";
+            this.helpButton.Size = new System.Drawing.Size(60, 60);
+            this.helpButton.TabIndex = 23;
+            this.helpButton.Text = "Help";
+            this.helpButton.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.helpButton.UseVisualStyleBackColor = false;
+            // 
             // RadioForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(144)))), ((int)(((byte)(191)))));
             this.ClientSize = new System.Drawing.Size(1084, 661);
+            this.Controls.Add(this.helpButton);
             this.Controls.Add(this.favRadioStation4);
             this.Controls.Add(this.favRadioStation3);
             this.Controls.Add(this.favRadioStation2);
@@ -301,5 +321,6 @@
         private FontAwesome.Sharp.IconButton favRadioStation3;
         private FontAwesome.Sharp.IconButton favRadioStation4;
         private Custom_Toolbox.ChatRichTextBox radioScreen;
+        private FontAwesome.Sharp.IconButton helpButton;
     }
 }
