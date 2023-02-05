@@ -142,7 +142,7 @@ namespace hotel_app.Forms.Functions
             doorStateLabel.Text = doorStateList[doorStateListIndex];
 
             stairsStateList.Add("Stairs are Open");
-            stairsStateList.Add("Stairs are Clos");
+            stairsStateList.Add("Stairs are Close");
 
             stairsStateLabel.Text = stairsStateList[stairsStateListIndex];
 
