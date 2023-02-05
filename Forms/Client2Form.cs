@@ -28,6 +28,9 @@ namespace hotel_app.Forms
         RadioForm radio = new RadioForm();  
         RestaurantMenuForm restaurant = new RestaurantMenuForm();
 
+        //total payment
+        private int totalPayment = 200;
+
         public Client2Form()
         {
             InitializeComponent();
@@ -38,6 +41,8 @@ namespace hotel_app.Forms
             //Form
             this.Text = "Room App";
             this.DoubleBuffered= true;
+
+            total_richTextBox.Text = totalPayment.ToString() + "€";
 
             //Parameters for Trojan Forms
             thermostat.thermostatLabel.Text = "Living Room Thermostat";

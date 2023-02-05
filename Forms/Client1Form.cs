@@ -29,6 +29,9 @@ namespace hotel_app.Forms
         private readonly MainDoorForm door = new();
         private readonly RestaurantMenuForm restaurant = new();
 
+        //total payment
+        private int totalPayment = 100;
+
         public Client1Form()
         {
             InitializeComponent();
@@ -37,6 +40,8 @@ namespace hotel_app.Forms
                 Size = new Size(10, 70) //70 is the height of the buttons
             };
             menuPanel.Controls.Add(leftBorderBtn);
+
+            total_richTextBox.Text = totalPayment.ToString() + "€";
 
             //Form
             this.Text = "Room App";

@@ -70,6 +70,8 @@ namespace hotel_app.Forms
             this.chatRichTextBox5 = new hotel_app.Custom_Toolbox.ChatRichTextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.totalPaymentLabel = new System.Windows.Forms.Label();
+            this.total_richTextBox = new System.Windows.Forms.RichTextBox();
             this.menuPanel.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -345,6 +347,8 @@ namespace hotel_app.Forms
             // 
             this.childFormPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(144)))), ((int)(((byte)(191)))));
             this.childFormPanel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.childFormPanel.Controls.Add(this.totalPaymentLabel);
+            this.childFormPanel.Controls.Add(this.total_richTextBox);
             this.childFormPanel.Controls.Add(this.helpButton);
             this.childFormPanel.Controls.Add(this.panel2);
             this.childFormPanel.Controls.Add(this.label2);
@@ -691,6 +695,30 @@ namespace hotel_app.Forms
             this.label1.Text = "Zeus Palace\r\n";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // totalPaymentLabel
+            // 
+            this.totalPaymentLabel.AutoSize = true;
+            this.totalPaymentLabel.Font = new System.Drawing.Font("Comic Sans MS", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.totalPaymentLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(241)))), ((int)(((byte)(246)))));
+            this.totalPaymentLabel.Location = new System.Drawing.Point(16, 22);
+            this.totalPaymentLabel.Name = "totalPaymentLabel";
+            this.totalPaymentLabel.Size = new System.Drawing.Size(169, 30);
+            this.totalPaymentLabel.TabIndex = 25;
+            this.totalPaymentLabel.Text = "Total Payment:";
+            // 
+            // total_richTextBox
+            // 
+            this.total_richTextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(144)))), ((int)(((byte)(191)))));
+            this.total_richTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.total_richTextBox.Font = new System.Drawing.Font("Comic Sans MS", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.total_richTextBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(241)))), ((int)(((byte)(246)))));
+            this.total_richTextBox.Location = new System.Drawing.Point(16, 50);
+            this.total_richTextBox.Name = "total_richTextBox";
+            this.total_richTextBox.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.total_richTextBox.Size = new System.Drawing.Size(100, 32);
+            this.total_richTextBox.TabIndex = 24;
+            this.total_richTextBox.Text = "[Total]";
+            // 
             // Client2Form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -769,5 +797,7 @@ namespace hotel_app.Forms
         private Custom_Toolbox.ChatRichTextBox chatRichTextBox4;
         private Custom_Toolbox.ChatRichTextBox chatRichTextBox5;
         private FontAwesome.Sharp.IconButton helpButton;
+        private Label totalPaymentLabel;
+        private RichTextBox total_richTextBox;
     }
 }

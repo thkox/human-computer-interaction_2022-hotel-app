@@ -16,7 +16,7 @@ namespace hotel_app.Forms.Functions
         private Panel restaurantMenuTabs;
 
         private Form currentChildForm;
-
+        
         int total;
         private List<string> menu = new List<string> {"Americano", "Cappuccino", "Espresso", "Latte",  //coffee
         "Zeus Heart", "Chocolate", "Hospitality", "Ferrero", "Special", //chocolates
