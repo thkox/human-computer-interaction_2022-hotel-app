@@ -391,7 +391,7 @@ namespace hotel_app.Forms
             this.helpButton.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.helpButton.IconSize = 40;
             this.helpButton.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.helpButton.Location = new System.Drawing.Point(1028, 6);
+            this.helpButton.Location = new System.Drawing.Point(1028, 23);
             this.helpButton.Name = "helpButton";
             this.helpButton.Size = new System.Drawing.Size(60, 60);
             this.helpButton.TabIndex = 11;
