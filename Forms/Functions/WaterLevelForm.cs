@@ -111,5 +111,10 @@ namespace hotel_app.Forms.Functions
                 waterLevelEmptyButton.BackColor = Color.FromArgb(79, 134, 184);
             }
         }
+
+        private void helpButton_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

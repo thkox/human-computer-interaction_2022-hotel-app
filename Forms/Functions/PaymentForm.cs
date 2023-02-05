@@ -195,5 +195,10 @@ namespace hotel_app.Forms.Functions
         {
             this.Hide();
         }
+
+        private void helpButton_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

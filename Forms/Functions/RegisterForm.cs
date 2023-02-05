@@ -88,5 +88,10 @@ namespace hotel_app.Forms.Functions
         {
             errorLabel.Visible = false;
         }
+
+        private void helpButton_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

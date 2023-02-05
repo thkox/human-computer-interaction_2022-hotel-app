@@ -68,5 +68,10 @@ namespace hotel_app.Forms.Functions
             poolLoadFormsPanel = poolMenuTabs;
             backPictureBox.Hide();
         }
+
+        private void helpButton_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

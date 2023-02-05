@@ -306,5 +306,10 @@ namespace hotel_app.Forms.Functions
             chatSupport.OrderCompleted += new ChatForm.CustomEventHandler(chatSupport_OrderCompleted);
             chatSupport.Show();
         }
+
+        private void helpButton_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

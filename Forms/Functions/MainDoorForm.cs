@@ -156,5 +156,10 @@ namespace hotel_app.Forms.Functions
         {
             stairsStateLabel.Left = (panel2.Width - stairsStateLabel.Width) / 2;
         }
+
+        private void helpButton_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

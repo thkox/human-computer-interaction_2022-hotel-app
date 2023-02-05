@@ -543,5 +543,10 @@ namespace hotel_app.Forms.Functions
                 sentMessagePictureBox.IconColor = Color.FromArgb(232, 238, 244);
             }
         }
+
+        private void helpButton_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

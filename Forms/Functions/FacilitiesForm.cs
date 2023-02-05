@@ -16,5 +16,10 @@ namespace hotel_app.Forms.Functions
         {
             InitializeComponent();
         }
+
+        private void helpButton_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

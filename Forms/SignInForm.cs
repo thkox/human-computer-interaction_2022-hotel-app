@@ -56,5 +56,10 @@ namespace hotel_app
         {
             Application.Exit();
         }
+
+        private void helpButton_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

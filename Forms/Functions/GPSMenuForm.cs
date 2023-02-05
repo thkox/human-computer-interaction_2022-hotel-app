@@ -72,5 +72,10 @@ namespace hotel_app.Forms.Functions
             OpenGPSMenuFunctionForm(facilities);
             backPictureBox.Show();
         }
+
+        private void helpButton_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -129,5 +129,10 @@ namespace hotel_app.Forms.Functions
             }
             tvStatusTimer.Start();
         }
+
+        private void helpButton_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

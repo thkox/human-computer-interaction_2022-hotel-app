@@ -179,5 +179,10 @@ namespace hotel_app.Forms.Functions
             radioValueLabel.Text = string.Format($"{radioValue.ToString("0.0")}MHz");
             radioValueLabel.Left = (radioPanel.Width - radioValueLabel.Width) / 2;
         }
+
+        private void helpButton_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

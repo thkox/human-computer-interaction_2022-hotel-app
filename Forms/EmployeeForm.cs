@@ -185,6 +185,7 @@ namespace hotel_app.Forms
 
             label1.Hide();
             label2.Hide();
+            helpButton.Hide();
 
             currentNameLabel.Text = trojanForm.currentName;
             //center align the label
@@ -205,7 +206,7 @@ namespace hotel_app.Forms
 
             label1.Hide();
             label2.Hide();
-
+            helpButton.Hide();
 
 
             currentNameLabel.Text = roomForm.currentName;
@@ -343,6 +344,7 @@ namespace hotel_app.Forms
 
             label1.Show();
             label2.Show();
+            helpButton.Show();
 
             //for every possible panel loaded inside the childFormPanel
             foreach (Client1Form trojanForm in trojanForms)
@@ -413,6 +415,7 @@ namespace hotel_app.Forms
 
             label1.Show();
             label2.Show();
+            helpButton.Show();
 
             //for every possible panel loaded inside the childFormPanel
             foreach (Client1Form trojanForm in trojanForms)
@@ -431,6 +434,11 @@ namespace hotel_app.Forms
                     OpenChildForm(zeusPalaceMenu);
                 }
             }
+        }
+
+        private void helpButton_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
