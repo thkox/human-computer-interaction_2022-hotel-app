@@ -99,8 +99,8 @@ namespace hotel_app.Forms
             zeusPalaceMenu.rooms.suite1Button.Click += new EventHandler(Suite1PictureBox_Click);
 
             //load the names of the trojans
-            trojanForms[0].currentName = "Trojan A2";
-            trojanForms[1].currentName = "Trojan B2";
+            trojanForms[0].currentName = "Trojan B2";
+            trojanForms[1].currentName = "Trojan A2";
 
             //change trojan cursor
             parking.trojan3PictureBox.Cursor = Cursors.Hand;
