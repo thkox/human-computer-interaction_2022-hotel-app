@@ -84,7 +84,7 @@
             this.roomButton.Name = "roomButton";
             this.roomButton.Size = new System.Drawing.Size(150, 131);
             this.roomButton.TabIndex = 2;
-            this.roomButton.Text = "Room";
+            this.roomButton.Text = "Rooms";
             this.roomButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.roomButton.UseVisualStyleBackColor = false;
             this.roomButton.Click += new System.EventHandler(this.roomButton_Click);
