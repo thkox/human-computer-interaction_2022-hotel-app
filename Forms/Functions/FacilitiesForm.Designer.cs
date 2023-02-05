@@ -204,6 +204,7 @@ namespace hotel_app.Forms.Functions
             // 
             this.helpButton.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.helpButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(121)))), ((int)(((byte)(159)))), ((int)(((byte)(202)))));
+            this.helpButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.helpButton.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.helpButton.ForeColor = System.Drawing.Color.Black;
             this.helpButton.IconChar = FontAwesome.Sharp.IconChar.QuestionCircle;

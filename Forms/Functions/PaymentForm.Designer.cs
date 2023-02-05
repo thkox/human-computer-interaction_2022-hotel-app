@@ -48,8 +48,8 @@
             this.paymentMethodLabel = new System.Windows.Forms.Label();
             this.total_richTextBox = new System.Windows.Forms.RichTextBox();
             this.paymentLoadFormsPanel = new System.Windows.Forms.Panel();
-            this.chatRichTextBox1 = new hotel_app.Custom_Toolbox.ChatRichTextBox();
             this.helpButton = new FontAwesome.Sharp.IconButton();
+            this.chatRichTextBox1 = new hotel_app.Custom_Toolbox.ChatRichTextBox();
             this.paymentPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.mastercardPictureBox)).BeginInit();
@@ -398,6 +398,26 @@
             this.paymentLoadFormsPanel.Size = new System.Drawing.Size(1082, 672);
             this.paymentLoadFormsPanel.TabIndex = 17;
             // 
+            // helpButton
+            // 
+            this.helpButton.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.helpButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(121)))), ((int)(((byte)(159)))), ((int)(((byte)(202)))));
+            this.helpButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.helpButton.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.helpButton.ForeColor = System.Drawing.Color.Black;
+            this.helpButton.IconChar = FontAwesome.Sharp.IconChar.QuestionCircle;
+            this.helpButton.IconColor = System.Drawing.Color.Black;
+            this.helpButton.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.helpButton.IconSize = 40;
+            this.helpButton.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.helpButton.Location = new System.Drawing.Point(1011, 15);
+            this.helpButton.Name = "helpButton";
+            this.helpButton.Size = new System.Drawing.Size(60, 60);
+            this.helpButton.TabIndex = 23;
+            this.helpButton.Text = "Help";
+            this.helpButton.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.helpButton.UseVisualStyleBackColor = false;
+            // 
             // chatRichTextBox1
             // 
             this.chatRichTextBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
@@ -414,24 +434,6 @@
             this.chatRichTextBox1.TabIndex = 17;
             this.chatRichTextBox1.TextMultiline = true;
             this.chatRichTextBox1.TextReadonly = true;
-            // 
-            // helpButton
-            // 
-            this.helpButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(121)))), ((int)(((byte)(159)))), ((int)(((byte)(202)))));
-            this.helpButton.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.helpButton.ForeColor = System.Drawing.Color.Black;
-            this.helpButton.IconChar = FontAwesome.Sharp.IconChar.QuestionCircle;
-            this.helpButton.IconColor = System.Drawing.Color.Black;
-            this.helpButton.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.helpButton.IconSize = 40;
-            this.helpButton.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.helpButton.Location = new System.Drawing.Point(1011, 15);
-            this.helpButton.Name = "helpButton";
-            this.helpButton.Size = new System.Drawing.Size(60, 60);
-            this.helpButton.TabIndex = 23;
-            this.helpButton.Text = "Help";
-            this.helpButton.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.helpButton.UseVisualStyleBackColor = false;
             // 
             // PaymentForm
             // 

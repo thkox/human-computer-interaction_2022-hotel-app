@@ -365,7 +365,9 @@
             // 
             // helpButton
             // 
+            this.helpButton.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.helpButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(121)))), ((int)(((byte)(159)))), ((int)(((byte)(202)))));
+            this.helpButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.helpButton.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.helpButton.ForeColor = System.Drawing.Color.Black;
             this.helpButton.IconChar = FontAwesome.Sharp.IconChar.QuestionCircle;
@@ -375,7 +377,7 @@
             this.helpButton.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.helpButton.Location = new System.Drawing.Point(1012, 10);
             this.helpButton.Name = "helpButton";
-            this.helpButton.Size = new System.Drawing.Size(60, 60);
+            this.helpButton.Size = new System.Drawing.Size(60, 55);
             this.helpButton.TabIndex = 23;
             this.helpButton.Text = "Help";
             this.helpButton.TextAlign = System.Drawing.ContentAlignment.BottomCenter;

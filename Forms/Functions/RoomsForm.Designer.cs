@@ -29,13 +29,13 @@
         private void InitializeComponent()
         {
             this.roomsLoadFormsPanel = new System.Windows.Forms.Panel();
+            this.helpButton = new FontAwesome.Sharp.IconButton();
             this.suite2Button = new FontAwesome.Sharp.IconButton();
             this.suite1Button = new FontAwesome.Sharp.IconButton();
             this.room4Button = new FontAwesome.Sharp.IconButton();
             this.room3Button = new FontAwesome.Sharp.IconButton();
             this.room2Button = new FontAwesome.Sharp.IconButton();
             this.room1Button = new FontAwesome.Sharp.IconButton();
-            this.helpButton = new FontAwesome.Sharp.IconButton();
             this.roomsLoadFormsPanel.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -53,6 +53,26 @@
             this.roomsLoadFormsPanel.Name = "roomsLoadFormsPanel";
             this.roomsLoadFormsPanel.Size = new System.Drawing.Size(1086, 662);
             this.roomsLoadFormsPanel.TabIndex = 10;
+            // 
+            // helpButton
+            // 
+            this.helpButton.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.helpButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(121)))), ((int)(((byte)(159)))), ((int)(((byte)(202)))));
+            this.helpButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.helpButton.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.helpButton.ForeColor = System.Drawing.Color.Black;
+            this.helpButton.IconChar = FontAwesome.Sharp.IconChar.QuestionCircle;
+            this.helpButton.IconColor = System.Drawing.Color.Black;
+            this.helpButton.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.helpButton.IconSize = 40;
+            this.helpButton.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.helpButton.Location = new System.Drawing.Point(1012, 12);
+            this.helpButton.Name = "helpButton";
+            this.helpButton.Size = new System.Drawing.Size(60, 60);
+            this.helpButton.TabIndex = 23;
+            this.helpButton.Text = "Help";
+            this.helpButton.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.helpButton.UseVisualStyleBackColor = false;
             // 
             // suite2Button
             // 
@@ -201,24 +221,6 @@
             this.room1Button.Text = "Room 1";
             this.room1Button.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.room1Button.UseVisualStyleBackColor = false;
-            // 
-            // helpButton
-            // 
-            this.helpButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(121)))), ((int)(((byte)(159)))), ((int)(((byte)(202)))));
-            this.helpButton.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.helpButton.ForeColor = System.Drawing.Color.Black;
-            this.helpButton.IconChar = FontAwesome.Sharp.IconChar.QuestionCircle;
-            this.helpButton.IconColor = System.Drawing.Color.Black;
-            this.helpButton.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.helpButton.IconSize = 40;
-            this.helpButton.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.helpButton.Location = new System.Drawing.Point(1012, 12);
-            this.helpButton.Name = "helpButton";
-            this.helpButton.Size = new System.Drawing.Size(60, 60);
-            this.helpButton.TabIndex = 23;
-            this.helpButton.Text = "Help";
-            this.helpButton.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.helpButton.UseVisualStyleBackColor = false;
             // 
             // RoomsForm
             // 

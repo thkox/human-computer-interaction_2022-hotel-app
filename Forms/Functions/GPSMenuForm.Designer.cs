@@ -29,10 +29,10 @@
         private void InitializeComponent()
         {
             this.gpsLoadFormsPanel = new System.Windows.Forms.Panel();
+            this.helpButton = new FontAwesome.Sharp.IconButton();
             this.availableFacilitiesButton = new FontAwesome.Sharp.IconButton();
             this.changeParkingSlotButton = new FontAwesome.Sharp.IconButton();
             this.backPictureBox = new FontAwesome.Sharp.IconPictureBox();
-            this.helpButton = new FontAwesome.Sharp.IconButton();
             this.gpsLoadFormsPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.backPictureBox)).BeginInit();
             this.SuspendLayout();
@@ -48,6 +48,26 @@
             this.gpsLoadFormsPanel.Name = "gpsLoadFormsPanel";
             this.gpsLoadFormsPanel.Size = new System.Drawing.Size(1079, 672);
             this.gpsLoadFormsPanel.TabIndex = 0;
+            // 
+            // helpButton
+            // 
+            this.helpButton.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.helpButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(121)))), ((int)(((byte)(159)))), ((int)(((byte)(202)))));
+            this.helpButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.helpButton.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.helpButton.ForeColor = System.Drawing.Color.Black;
+            this.helpButton.IconChar = FontAwesome.Sharp.IconChar.QuestionCircle;
+            this.helpButton.IconColor = System.Drawing.Color.Black;
+            this.helpButton.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.helpButton.IconSize = 40;
+            this.helpButton.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.helpButton.Location = new System.Drawing.Point(1008, 18);
+            this.helpButton.Name = "helpButton";
+            this.helpButton.Size = new System.Drawing.Size(60, 60);
+            this.helpButton.TabIndex = 12;
+            this.helpButton.Text = "Help";
+            this.helpButton.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.helpButton.UseVisualStyleBackColor = false;
             // 
             // availableFacilitiesButton
             // 
@@ -103,24 +123,6 @@
             this.backPictureBox.TabIndex = 4;
             this.backPictureBox.TabStop = false;
             this.backPictureBox.Click += new System.EventHandler(this.backPictureBox_Click);
-            // 
-            // helpButton
-            // 
-            this.helpButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(121)))), ((int)(((byte)(159)))), ((int)(((byte)(202)))));
-            this.helpButton.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.helpButton.ForeColor = System.Drawing.Color.Black;
-            this.helpButton.IconChar = FontAwesome.Sharp.IconChar.QuestionCircle;
-            this.helpButton.IconColor = System.Drawing.Color.Black;
-            this.helpButton.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.helpButton.IconSize = 40;
-            this.helpButton.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.helpButton.Location = new System.Drawing.Point(1008, 18);
-            this.helpButton.Name = "helpButton";
-            this.helpButton.Size = new System.Drawing.Size(60, 60);
-            this.helpButton.TabIndex = 12;
-            this.helpButton.Text = "Help";
-            this.helpButton.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.helpButton.UseVisualStyleBackColor = false;
             // 
             // GPSMenuForm
             // 
