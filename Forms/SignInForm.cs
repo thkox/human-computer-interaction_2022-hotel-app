@@ -1,4 +1,5 @@
 ﻿using hotel_app.Forms;
+using System.Reflection;
 
 namespace hotel_app
 {
@@ -59,10 +60,10 @@ namespace hotel_app
         {
             Application.Exit();
         }
-
+        
         private void helpButton_Click(object sender, EventArgs e)
         {
-            
+            Help.ShowHelp(this, @"..\Hotel-app-Documentation.chm");
         }
     }
 }

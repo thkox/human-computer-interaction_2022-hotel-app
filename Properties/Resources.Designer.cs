@@ -271,16 +271,6 @@ namespace hotel_app.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized resource of type System.Byte[].
-        /// </summary>
-        internal static byte[] Hotel_app_Documentation {
-            get {
-                object obj = ResourceManager.GetObject("Hotel_app_Documentation", resourceCulture);
-                return ((byte[])(obj));
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
         internal static System.Drawing.Bitmap latte {
