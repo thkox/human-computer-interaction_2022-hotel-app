@@ -43,11 +43,13 @@
             this.movie2PictureBox = new System.Windows.Forms.PictureBox();
             this.movie1PictureBox = new System.Windows.Forms.PictureBox();
             this.wathLaterLabel = new System.Windows.Forms.Label();
+            this.chatRichTextBox1 = new hotel_app.Custom_Toolbox.ChatRichTextBox();
             this.centerButton = new FontAwesome.Sharp.IconButton();
             this.tvStatusLabel = new System.Windows.Forms.Label();
             this.tvStatusTimer = new System.Windows.Forms.Timer(this.components);
             this.checkTVPictureBox = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.helpButton = new FontAwesome.Sharp.IconButton();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.movie3PictureBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.movie2PictureBox)).BeginInit();
@@ -211,11 +213,12 @@
             // panel1
             // 
             this.panel1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(14)))), ((int)(((byte)(55)))));
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(144)))), ((int)(((byte)(191)))));
             this.panel1.Controls.Add(this.movie3PictureBox);
             this.panel1.Controls.Add(this.movie2PictureBox);
             this.panel1.Controls.Add(this.movie1PictureBox);
             this.panel1.Controls.Add(this.wathLaterLabel);
+            this.panel1.Controls.Add(this.chatRichTextBox1);
             this.panel1.Location = new System.Drawing.Point(24, 57);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1029, 334);
@@ -276,6 +279,7 @@
             // 
             this.wathLaterLabel.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.wathLaterLabel.AutoSize = true;
+            this.wathLaterLabel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(14)))), ((int)(((byte)(55)))));
             this.wathLaterLabel.Font = new System.Drawing.Font("Comic Sans MS", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.wathLaterLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(241)))), ((int)(((byte)(246)))));
             this.wathLaterLabel.Location = new System.Drawing.Point(261, 25);
@@ -283,6 +287,22 @@
             this.wathLaterLabel.Size = new System.Drawing.Size(518, 30);
             this.wathLaterLabel.TabIndex = 12;
             this.wathLaterLabel.Text = "Free Movies and Shows from our Hotel Partners:";
+            // 
+            // chatRichTextBox1
+            // 
+            this.chatRichTextBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(144)))), ((int)(((byte)(191)))));
+            this.chatRichTextBox1.ForeColor = System.Drawing.Color.White;
+            this.chatRichTextBox1.Location = new System.Drawing.Point(10, 8);
+            this.chatRichTextBox1.MaxLegthSize = 30;
+            this.chatRichTextBox1.Name = "chatRichTextBox1";
+            this.chatRichTextBox1.Radius = 20;
+            this.chatRichTextBox1.RichTextBoxLocation = new System.Drawing.Point(20, 20);
+            this.chatRichTextBox1.RichTextBoxSize = new System.Drawing.Size(1, 1);
+            this.chatRichTextBox1.ShadeColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(14)))), ((int)(((byte)(55)))));
+            this.chatRichTextBox1.Size = new System.Drawing.Size(1004, 312);
+            this.chatRichTextBox1.TabIndex = 13;
+            this.chatRichTextBox1.TextMultiline = true;
+            this.chatRichTextBox1.TextReadonly = true;
             // 
             // centerButton
             // 
@@ -343,12 +363,34 @@
             this.label1.TabIndex = 17;
             this.label1.Text = "Living Room TV";
             // 
+            // helpButton
+            // 
+            this.helpButton.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.helpButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(121)))), ((int)(((byte)(159)))), ((int)(((byte)(202)))));
+            this.helpButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.helpButton.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.helpButton.ForeColor = System.Drawing.Color.Black;
+            this.helpButton.IconChar = FontAwesome.Sharp.IconChar.QuestionCircle;
+            this.helpButton.IconColor = System.Drawing.Color.Black;
+            this.helpButton.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.helpButton.IconSize = 40;
+            this.helpButton.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.helpButton.Location = new System.Drawing.Point(1012, 10);
+            this.helpButton.Name = "helpButton";
+            this.helpButton.Size = new System.Drawing.Size(60, 55);
+            this.helpButton.TabIndex = 23;
+            this.helpButton.Text = "Help";
+            this.helpButton.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.helpButton.UseVisualStyleBackColor = false;
+            this.helpButton.Click += new System.EventHandler(this.helpButton_Click);
+            // 
             // TVForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(144)))), ((int)(((byte)(191)))));
             this.ClientSize = new System.Drawing.Size(1084, 661);
+            this.Controls.Add(this.helpButton);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.checkTVPictureBox);
             this.Controls.Add(this.tvStatusLabel);
@@ -398,5 +440,7 @@
         private System.Windows.Forms.Timer tvStatusTimer;
         private PictureBox checkTVPictureBox;
         private Label label1;
+        private Custom_Toolbox.ChatRichTextBox chatRichTextBox1;
+        public FontAwesome.Sharp.IconButton helpButton;
     }
 }

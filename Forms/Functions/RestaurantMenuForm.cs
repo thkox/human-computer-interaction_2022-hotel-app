@@ -16,9 +16,9 @@ namespace hotel_app.Forms.Functions
         private Panel restaurantMenuTabs;
 
         private Form currentChildForm;
-
+        
         int total;
-        List<string> menu = new List<string> {"Americano", "Cappuccino", "Espresso", "Latte",  //coffee
+        private List<string> menu = new List<string> {"Americano", "Cappuccino", "Espresso", "Latte",  //coffee
         "Zeus Heart", "Chocolate", "Hospitality", "Ferrero", "Special", //chocolates
         "Greek", "Aegean", "Tricolore", "Chef", //salads
         "Zeus Special", "Athina", "Trojan", "Palace", //pizza
@@ -56,6 +56,13 @@ namespace hotel_app.Forms.Functions
             quantityChicken.TagChanged += new System.EventHandler(quantityChicken_TagChanged);
             quantityOcean.TagChanged += new System.EventHandler(quantityOcean_TagChanged);
             quantityFiesta.TagChanged += new System.EventHandler(quantityFiesta_TagChanged);
+        }
+
+        private void chatSupport_OrderCompleted(ChatForm sender, EventArgs e)
+        {
+            PaymentForm payment = new PaymentForm();
+            payment.total_richTextBox.Text = $"{sender.total}€";
+            OpenPaymentForm(payment);
         }
 
         //Coffee
@@ -223,6 +230,14 @@ namespace hotel_app.Forms.Functions
                 + (Convert.ToInt32(quantityZeusSpecial.Tag) * Convert.ToInt32(zeusSpecialButton.Tag)) + (Convert.ToInt32(quantityAthina.Tag) * Convert.ToInt32(athinaButton.Tag)) + (Convert.ToInt32(quantityTrojan.Tag) * Convert.ToInt32(trojanButton.Tag)) + (Convert.ToInt32(quantityPalace.Tag) * Convert.ToInt32(palaceButton.Tag)) //pizza
                 + (Convert.ToInt32(quantitySouvlaki.Tag) * Convert.ToInt32(souvlakiButton.Tag)) + (Convert.ToInt32(quantityTyromezes.Tag) * Convert.ToInt32(tyromezesButton.Tag)) + (Convert.ToInt32(quantityPasta.Tag) * Convert.ToInt32(pastaButton.Tag)) + (Convert.ToInt32(quantityElGreco.Tag) * Convert.ToInt32(elGrecoButton.Tag)) + (Convert.ToInt32(quantityChicken.Tag) * Convert.ToInt32(chickenButton.Tag)) + (Convert.ToInt32(quantityOcean.Tag) * Convert.ToInt32(oceanButton.Tag)) + (Convert.ToInt32(quantityFiesta.Tag) * Convert.ToInt32(fiestaButton.Tag)); //greek cuisine
             total_richTextBox.Text = total.ToString() + "€";
+            if (total == 0)
+            {
+                checkoutButton.Enabled = false;
+            }
+            else
+            {
+                checkoutButton.Enabled = true;
+            }
         }
         
         private void writeCartList()
@@ -269,7 +284,6 @@ namespace hotel_app.Forms.Functions
         private void RestaurantMenuForm_Load(object sender, EventArgs e)
         {
             restaurantMenuTabs = menuLoadFormsPanel;
-            backPictureBox.Hide();
         }
 
         private void checkoutButton_Click(object sender, EventArgs e)
@@ -277,15 +291,25 @@ namespace hotel_app.Forms.Functions
             PaymentForm payment = new PaymentForm();
             payment.total_richTextBox.Text = total_richTextBox.Text;
             OpenPaymentForm(payment);
-            backPictureBox.Show();
         }
 
         private void backPictureBox_Click(object sender, EventArgs e)
         {
             currentChildForm.Hide();
             menuLoadFormsPanel = restaurantMenuTabs;
-            backPictureBox.Hide();
         }
-        
+
+        private void chatButton_Click(object sender, EventArgs e)
+        {
+            ChatForm chatSupport = new ChatForm();
+            //if the user completes the order using the chat
+            chatSupport.OrderCompleted += new ChatForm.CustomEventHandler(chatSupport_OrderCompleted);
+            chatSupport.Show();
+        }
+
+        private void helpButton_Click(object sender, EventArgs e)
+        {
+            Help.ShowHelp(this, @"..\Hotel-app-Documentation.chm", HelpNavigator.TopicId, "27");
+        }
     }
 }

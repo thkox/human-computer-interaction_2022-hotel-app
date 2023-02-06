@@ -16,6 +16,9 @@ namespace hotel_app.Forms.Functions
         bool moveRight, moveLeft, moveUp, moveDown;//if we delete the timer then we can delete these bools
         int speed = 12;
 
+        public delegate void TrojanParkingEventHandler(object sender, EventArgs e);
+        public event TrojanParkingEventHandler Parking;
+
         public ParkingForm()
         {
             InitializeComponent();
@@ -192,6 +195,7 @@ namespace hotel_app.Forms.Functions
             {
                 trojan4PictureBox.Location = new Point(467, 505);
             }
+            Parking?.Invoke(this, EventArgs.Empty);
             this.Hide();
         }
 
@@ -209,49 +213,9 @@ namespace hotel_app.Forms.Functions
             {
                 trojan1PictureBox.Location = new Point(882, 542);
             }
+            Parking?.Invoke(this, EventArgs.Empty);
             this.Hide();
         }
 
-        private void keyIsDown(object sender, KeyEventArgs e)
-        {
-            if (e.KeyCode == Keys.Left) 
-            {
-                moveLeft = true;
-                trojan1PictureBox.Image = hotel_app.Properties.Resources.trojan_horse_reversed;
-            }
-            if (e.KeyCode == Keys.Right) 
-            {
-                moveRight = true;
-                trojan1PictureBox.Image = hotel_app.Properties.Resources.trojan;
-            }
-            if (e.KeyCode == Keys.Down) 
-            {
-                moveDown = true;
-            }
-            if (e.KeyCode == Keys.Up)
-            {
-                moveUp = true;
-            }
-        }
-
-        private void keyIsUp(object sender, KeyEventArgs e)
-        {
-            if (e.KeyCode == Keys.Left)
-            {
-                moveLeft = false;
-            }
-            if (e.KeyCode == Keys.Right)
-            {
-                moveRight = false;
-            }
-            if (e.KeyCode == Keys.Down)
-            {
-                moveDown = false;
-            }
-            if (e.KeyCode == Keys.Up)
-            {
-                moveUp = false;
-            }
-        }
     }
 }

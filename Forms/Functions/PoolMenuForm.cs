@@ -24,6 +24,14 @@ namespace hotel_app.Forms.Functions
         public PoolMenuForm()
         {
             InitializeComponent();
+
+            //helpButton Event
+            poolThermostat.helpButton.Click += new System.EventHandler(this.Thermostat_helpButton_Clicked);
+        }
+
+        private void Thermostat_helpButton_Clicked(object sender, EventArgs e)
+        {
+            Help.ShowHelp(this, @"..\Hotel-app-Documentation.chm", HelpNavigator.TopicId, "25");
         }
 
         private void OpenPoolFunctionForm(Form childForm)
@@ -67,6 +75,11 @@ namespace hotel_app.Forms.Functions
             currentChildForm.Hide();
             poolLoadFormsPanel = poolMenuTabs;
             backPictureBox.Hide();
+        }
+
+        private void helpButton_Click(object sender, EventArgs e)
+        {
+            Help.ShowHelp(this, @"..\Hotel-app-Documentation.chm", HelpNavigator.TopicId, "24");
         }
     }
 }

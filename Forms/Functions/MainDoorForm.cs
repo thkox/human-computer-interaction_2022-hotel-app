@@ -37,6 +37,8 @@ namespace hotel_app.Forms.Functions
             doorTimer.Start();
             doorStateLabel.Text = "Door will be half opened";
             doorStateListIndex = 1;
+            doorStateLabel.Left = (panel1.Width - doorStateLabel.Width) / 2;
+
         }
 
         private void doorOpenButton_Click(object sender, EventArgs e)
@@ -49,6 +51,8 @@ namespace hotel_app.Forms.Functions
             doorTimer.Start();
             doorStateLabel.Text = "Door will be opened";
             doorStateListIndex = 2;
+            doorStateLabel.Left = (panel1.Width - doorStateLabel.Width) / 2;
+
         }
 
         private void stairsUpButton_Click(object sender, EventArgs e)
@@ -60,6 +64,8 @@ namespace hotel_app.Forms.Functions
             stairsTimer.Start();
             stairsStateLabel.Text = "Stairs will be closed";
             stairsStateListIndex = 1;
+            stairsStateLabel.Left = (panel2.Width - stairsStateLabel.Width) / 2;
+
         }
 
         private void stairsDownButton_Click(object sender, EventArgs e)
@@ -71,6 +77,8 @@ namespace hotel_app.Forms.Functions
             stairsTimer.Start();
             stairsStateLabel.Text = "Stairs will be opened";
             stairsStateListIndex = 0;
+            stairsStateLabel.Left = (panel2.Width - stairsStateLabel.Width) / 2;
+
         }
 
         private void Button_EnabledChanged(object sender, EventArgs e)
@@ -96,6 +104,8 @@ namespace hotel_app.Forms.Functions
             doorTimer.Start();
             doorStateLabel.Text = "Door will be closed";
             doorStateListIndex = 0;
+            doorStateLabel.Left = (panel1.Width - doorStateLabel.Width) / 2;
+
         }
 
 
@@ -107,6 +117,8 @@ namespace hotel_app.Forms.Functions
                 doorStateLabel.Text = doorStateList[doorStateListIndex];
                 doorTimer.Stop();
             }
+            doorStateLabel.Left = (panel1.Width - doorStateLabel.Width) / 2;
+
         }
 
         private void stairsTimer_Tick(object sender, EventArgs e)
@@ -117,20 +129,40 @@ namespace hotel_app.Forms.Functions
                 stairsStateLabel.Text = stairsStateList[stairsStateListIndex];
                 stairsTimer.Stop();
             }
+            stairsStateLabel.Left = (panel2.Width - stairsStateLabel.Width) / 2;
+
         }
 
         private void MainDoorForm_Load(object sender, EventArgs e)
         {
-            doorStateList.Add("Door is Closed");
-            doorStateList.Add("Door is half Opened");
-            doorStateList.Add("Door is opened");
+            doorStateList.Add("Door is Close");
+            doorStateList.Add("Door is half Open");
+            doorStateList.Add("Door is Open");
 
             doorStateLabel.Text = doorStateList[doorStateListIndex];
 
-            stairsStateList.Add("Stairs are Opened");
-            stairsStateList.Add("Stairs are Closed");
+            stairsStateList.Add("Stairs are Open");
+            stairsStateList.Add("Stairs are Close");
 
             stairsStateLabel.Text = stairsStateList[stairsStateListIndex];
+
+            doorClosed_Click(doorClosed, EventArgs.Empty);
+            stairsDownButton_Click(stairsDownButton, EventArgs.Empty);  
+        }
+
+        private void chatRichTextBox1_Load(object sender, EventArgs e)
+        {
+            doorStateLabel.Left = (panel1.Width - doorStateLabel.Width) / 2;
+        }
+
+        private void stairsStateLabel_Click(object sender, EventArgs e)
+        {
+            stairsStateLabel.Left = (panel2.Width - stairsStateLabel.Width) / 2;
+        }
+
+        private void helpButton_Click(object sender, EventArgs e)
+        {
+            Help.ShowHelp(this, @"..\Hotel-app-Documentation.chm", HelpNavigator.TopicId, "8");
         }
     }
 }

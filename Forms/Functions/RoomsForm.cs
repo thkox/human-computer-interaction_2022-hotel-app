@@ -33,5 +33,9 @@ namespace hotel_app.Forms.Functions
             childForm.Show();
         }
 
+        private void helpButton_Click(object sender, EventArgs e)
+        {
+            Help.ShowHelp(this, @"..\Hotel-app-Documentation.chm", HelpNavigator.TopicId, "18");
+        }
     }
 }

@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.roomsLoadFormsPanel = new System.Windows.Forms.Panel();
+            this.helpButton = new FontAwesome.Sharp.IconButton();
             this.suite2Button = new FontAwesome.Sharp.IconButton();
             this.suite1Button = new FontAwesome.Sharp.IconButton();
             this.room4Button = new FontAwesome.Sharp.IconButton();
@@ -40,6 +41,7 @@
             // 
             // roomsLoadFormsPanel
             // 
+            this.roomsLoadFormsPanel.Controls.Add(this.helpButton);
             this.roomsLoadFormsPanel.Controls.Add(this.suite2Button);
             this.roomsLoadFormsPanel.Controls.Add(this.suite1Button);
             this.roomsLoadFormsPanel.Controls.Add(this.room4Button);
@@ -52,11 +54,33 @@
             this.roomsLoadFormsPanel.Size = new System.Drawing.Size(1086, 662);
             this.roomsLoadFormsPanel.TabIndex = 10;
             // 
+            // helpButton
+            // 
+            this.helpButton.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.helpButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(121)))), ((int)(((byte)(159)))), ((int)(((byte)(202)))));
+            this.helpButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.helpButton.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.helpButton.ForeColor = System.Drawing.Color.Black;
+            this.helpButton.IconChar = FontAwesome.Sharp.IconChar.QuestionCircle;
+            this.helpButton.IconColor = System.Drawing.Color.Black;
+            this.helpButton.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.helpButton.IconSize = 40;
+            this.helpButton.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.helpButton.Location = new System.Drawing.Point(1012, 12);
+            this.helpButton.Name = "helpButton";
+            this.helpButton.Size = new System.Drawing.Size(60, 60);
+            this.helpButton.TabIndex = 23;
+            this.helpButton.Text = "Help";
+            this.helpButton.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.helpButton.UseVisualStyleBackColor = false;
+            this.helpButton.Click += new System.EventHandler(this.helpButton_Click);
+            // 
             // suite2Button
             // 
             this.suite2Button.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.suite2Button.BackColor = System.Drawing.Color.Transparent;
             this.suite2Button.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.suite2Button.Enabled = false;
             this.suite2Button.FlatAppearance.BorderSize = 0;
             this.suite2Button.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(144)))), ((int)(((byte)(191)))));
             this.suite2Button.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(144)))), ((int)(((byte)(191)))));
@@ -105,6 +129,7 @@
             this.room4Button.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.room4Button.BackColor = System.Drawing.Color.Transparent;
             this.room4Button.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.room4Button.Enabled = false;
             this.room4Button.FlatAppearance.BorderSize = 0;
             this.room4Button.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(144)))), ((int)(((byte)(191)))));
             this.room4Button.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(144)))), ((int)(((byte)(191)))));
@@ -153,6 +178,7 @@
             this.room2Button.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.room2Button.BackColor = System.Drawing.Color.Transparent;
             this.room2Button.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.room2Button.Enabled = false;
             this.room2Button.FlatAppearance.BorderSize = 0;
             this.room2Button.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(144)))), ((int)(((byte)(191)))));
             this.room2Button.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(144)))), ((int)(((byte)(191)))));
@@ -219,5 +245,6 @@
         public FontAwesome.Sharp.IconButton suite2Button;
         public FontAwesome.Sharp.IconButton suite1Button;
         public Panel roomsLoadFormsPanel;
+        private FontAwesome.Sharp.IconButton helpButton;
     }
 }

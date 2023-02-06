@@ -112,7 +112,8 @@
             this.checkoutButton = new FontAwesome.Sharp.IconButton();
             this.total_richTextBox = new System.Windows.Forms.RichTextBox();
             this.menuLoadFormsPanel = new System.Windows.Forms.Panel();
-            this.backPictureBox = new FontAwesome.Sharp.IconPictureBox();
+            this.helpButton = new FontAwesome.Sharp.IconButton();
+            this.chatButton = new FontAwesome.Sharp.IconButton();
             ((System.ComponentModel.ISupportInitialize)(this.cartButton)).BeginInit();
             this.menuTabControl.SuspendLayout();
             this.coffeeTabPage.SuspendLayout();
@@ -121,7 +122,6 @@
             this.pizzaTabPage.SuspendLayout();
             this.greekCuisineTabPage.SuspendLayout();
             this.menuLoadFormsPanel.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.backPictureBox)).BeginInit();
             this.SuspendLayout();
             // 
             // cartButton
@@ -132,7 +132,7 @@
             this.cartButton.IconChar = FontAwesome.Sharp.IconChar.CartShopping;
             this.cartButton.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(241)))), ((int)(((byte)(246)))));
             this.cartButton.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.cartButton.Location = new System.Drawing.Point(957, 126);
+            this.cartButton.Location = new System.Drawing.Point(954, 97);
             this.cartButton.Name = "cartButton";
             this.cartButton.Size = new System.Drawing.Size(32, 32);
             this.cartButton.TabIndex = 3;
@@ -143,7 +143,7 @@
             this.menuLabel.AutoSize = true;
             this.menuLabel.Font = new System.Drawing.Font("Comic Sans MS", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.menuLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(241)))), ((int)(((byte)(246)))));
-            this.menuLabel.Location = new System.Drawing.Point(88, 47);
+            this.menuLabel.Location = new System.Drawing.Point(89, 50);
             this.menuLabel.Name = "menuLabel";
             this.menuLabel.Size = new System.Drawing.Size(140, 35);
             this.menuLabel.TabIndex = 5;
@@ -151,21 +151,25 @@
             // 
             // menuTabControl
             // 
+            this.menuTabControl.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.menuTabControl.Controls.Add(this.coffeeTabPage);
             this.menuTabControl.Controls.Add(this.chocolatesTabPage);
             this.menuTabControl.Controls.Add(this.saladsTabPage);
             this.menuTabControl.Controls.Add(this.pizzaTabPage);
             this.menuTabControl.Controls.Add(this.greekCuisineTabPage);
             this.menuTabControl.Font = new System.Drawing.Font("Comic Sans MS", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.menuTabControl.Location = new System.Drawing.Point(88, 138);
+            this.menuTabControl.HotTrack = true;
+            this.menuTabControl.Location = new System.Drawing.Point(85, 109);
+            this.menuTabControl.Multiline = true;
             this.menuTabControl.Name = "menuTabControl";
+            this.menuTabControl.Padding = new System.Drawing.Point(10, 4);
             this.menuTabControl.SelectedIndex = 0;
             this.menuTabControl.Size = new System.Drawing.Size(670, 452);
             this.menuTabControl.TabIndex = 6;
             // 
             // coffeeTabPage
             // 
-            this.coffeeTabPage.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(144)))), ((int)(((byte)(191)))));
+            this.coffeeTabPage.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(98)))), ((int)(((byte)(155)))), ((int)(((byte)(191)))));
             this.coffeeTabPage.Controls.Add(this.quantityLatte);
             this.coffeeTabPage.Controls.Add(this.quantityEspresso);
             this.coffeeTabPage.Controls.Add(this.quantityCappuccino);
@@ -178,10 +182,10 @@
             this.coffeeTabPage.Controls.Add(this.latteButton);
             this.coffeeTabPage.Controls.Add(this.espressoButton);
             this.coffeeTabPage.Controls.Add(this.americanoButton);
-            this.coffeeTabPage.Location = new System.Drawing.Point(4, 26);
+            this.coffeeTabPage.Location = new System.Drawing.Point(4, 28);
             this.coffeeTabPage.Name = "coffeeTabPage";
             this.coffeeTabPage.Padding = new System.Windows.Forms.Padding(3);
-            this.coffeeTabPage.Size = new System.Drawing.Size(662, 422);
+            this.coffeeTabPage.Size = new System.Drawing.Size(662, 420);
             this.coffeeTabPage.TabIndex = 0;
             this.coffeeTabPage.Text = "Coffee";
             // 
@@ -340,9 +344,9 @@
             this.chocolatesTabPage.Controls.Add(this.ferreroButton);
             this.chocolatesTabPage.Controls.Add(this.hospitalityButton);
             this.chocolatesTabPage.Controls.Add(this.zeusHeartButton);
-            this.chocolatesTabPage.Location = new System.Drawing.Point(4, 26);
+            this.chocolatesTabPage.Location = new System.Drawing.Point(4, 28);
             this.chocolatesTabPage.Name = "chocolatesTabPage";
-            this.chocolatesTabPage.Size = new System.Drawing.Size(662, 422);
+            this.chocolatesTabPage.Size = new System.Drawing.Size(662, 420);
             this.chocolatesTabPage.TabIndex = 4;
             this.chocolatesTabPage.Text = "Chocolates";
             // 
@@ -532,9 +536,9 @@
             this.saladsTabPage.Controls.Add(this.chefButton);
             this.saladsTabPage.Controls.Add(this.tricoloreButton);
             this.saladsTabPage.Controls.Add(this.greekButton);
-            this.saladsTabPage.Location = new System.Drawing.Point(4, 26);
+            this.saladsTabPage.Location = new System.Drawing.Point(4, 28);
             this.saladsTabPage.Name = "saladsTabPage";
-            this.saladsTabPage.Size = new System.Drawing.Size(662, 422);
+            this.saladsTabPage.Size = new System.Drawing.Size(662, 420);
             this.saladsTabPage.TabIndex = 3;
             this.saladsTabPage.Text = "Salads";
             // 
@@ -691,10 +695,10 @@
             this.pizzaTabPage.Controls.Add(this.palaceButton);
             this.pizzaTabPage.Controls.Add(this.zeusSpecialLabel);
             this.pizzaTabPage.Controls.Add(this.athinaButton);
-            this.pizzaTabPage.Location = new System.Drawing.Point(4, 26);
+            this.pizzaTabPage.Location = new System.Drawing.Point(4, 28);
             this.pizzaTabPage.Name = "pizzaTabPage";
             this.pizzaTabPage.Padding = new System.Windows.Forms.Padding(3);
-            this.pizzaTabPage.Size = new System.Drawing.Size(662, 422);
+            this.pizzaTabPage.Size = new System.Drawing.Size(662, 420);
             this.pizzaTabPage.TabIndex = 1;
             this.pizzaTabPage.Text = "Pizza";
             // 
@@ -858,9 +862,9 @@
             this.greekCuisineTabPage.Controls.Add(this.elGrecoButton);
             this.greekCuisineTabPage.Controls.Add(this.pastaButton);
             this.greekCuisineTabPage.Controls.Add(this.souvlakiButton);
-            this.greekCuisineTabPage.Location = new System.Drawing.Point(4, 26);
+            this.greekCuisineTabPage.Location = new System.Drawing.Point(4, 28);
             this.greekCuisineTabPage.Name = "greekCuisineTabPage";
-            this.greekCuisineTabPage.Size = new System.Drawing.Size(662, 422);
+            this.greekCuisineTabPage.Size = new System.Drawing.Size(662, 420);
             this.greekCuisineTabPage.TabIndex = 2;
             this.greekCuisineTabPage.Text = "Greek Cuisine";
             // 
@@ -1105,27 +1109,31 @@
             // 
             // cart_richTextBox
             // 
-            this.cart_richTextBox.Location = new System.Drawing.Point(764, 164);
+            this.cart_richTextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(144)))), ((int)(((byte)(191)))));
+            this.cart_richTextBox.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.cart_richTextBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(241)))), ((int)(((byte)(246)))));
+            this.cart_richTextBox.Location = new System.Drawing.Point(761, 135);
             this.cart_richTextBox.Name = "cart_richTextBox";
-            this.cart_richTextBox.Size = new System.Drawing.Size(225, 376);
+            this.cart_richTextBox.Size = new System.Drawing.Size(225, 304);
             this.cart_richTextBox.TabIndex = 7;
             this.cart_richTextBox.Text = "";
             // 
             // checkoutButton
             // 
+            this.checkoutButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(144)))), ((int)(((byte)(199)))));
             this.checkoutButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.checkoutButton.Font = new System.Drawing.Font("Comic Sans MS", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.checkoutButton.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.checkoutButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(241)))), ((int)(((byte)(246)))));
             this.checkoutButton.IconChar = FontAwesome.Sharp.IconChar.MoneyCheck;
-            this.checkoutButton.IconColor = System.Drawing.Color.Black;
+            this.checkoutButton.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(241)))), ((int)(((byte)(246)))));
             this.checkoutButton.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.checkoutButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.checkoutButton.Location = new System.Drawing.Point(764, 546);
+            this.checkoutButton.Location = new System.Drawing.Point(761, 453);
             this.checkoutButton.Name = "checkoutButton";
             this.checkoutButton.Size = new System.Drawing.Size(225, 44);
             this.checkoutButton.TabIndex = 8;
             this.checkoutButton.Text = "Checkout";
-            this.checkoutButton.UseVisualStyleBackColor = true;
+            this.checkoutButton.UseVisualStyleBackColor = false;
             this.checkoutButton.Click += new System.EventHandler(this.checkoutButton_Click);
             // 
             // total_richTextBox
@@ -1134,7 +1142,7 @@
             this.total_richTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.total_richTextBox.Font = new System.Drawing.Font("Comic Sans MS", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.total_richTextBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(241)))), ((int)(((byte)(246)))));
-            this.total_richTextBox.Location = new System.Drawing.Point(851, 126);
+            this.total_richTextBox.Location = new System.Drawing.Point(848, 97);
             this.total_richTextBox.Name = "total_richTextBox";
             this.total_richTextBox.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.total_richTextBox.Size = new System.Drawing.Size(100, 32);
@@ -1144,6 +1152,8 @@
             // menuLoadFormsPanel
             // 
             this.menuLoadFormsPanel.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.menuLoadFormsPanel.Controls.Add(this.helpButton);
+            this.menuLoadFormsPanel.Controls.Add(this.chatButton);
             this.menuLoadFormsPanel.Controls.Add(this.menuLabel);
             this.menuLoadFormsPanel.Controls.Add(this.total_richTextBox);
             this.menuLoadFormsPanel.Controls.Add(this.cartButton);
@@ -1155,21 +1165,44 @@
             this.menuLoadFormsPanel.Size = new System.Drawing.Size(1079, 672);
             this.menuLoadFormsPanel.TabIndex = 11;
             // 
-            // backPictureBox
+            // helpButton
             // 
-            this.backPictureBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(144)))), ((int)(((byte)(191)))));
-            this.backPictureBox.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.backPictureBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(241)))), ((int)(((byte)(246)))));
-            this.backPictureBox.IconChar = FontAwesome.Sharp.IconChar.CircleArrowLeft;
-            this.backPictureBox.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(241)))), ((int)(((byte)(246)))));
-            this.backPictureBox.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.backPictureBox.IconSize = 42;
-            this.backPictureBox.Location = new System.Drawing.Point(25, 12);
-            this.backPictureBox.Name = "backPictureBox";
-            this.backPictureBox.Size = new System.Drawing.Size(42, 42);
-            this.backPictureBox.TabIndex = 11;
-            this.backPictureBox.TabStop = false;
-            this.backPictureBox.Click += new System.EventHandler(this.backPictureBox_Click);
+            this.helpButton.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.helpButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(121)))), ((int)(((byte)(159)))), ((int)(((byte)(202)))));
+            this.helpButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.helpButton.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.helpButton.ForeColor = System.Drawing.Color.Black;
+            this.helpButton.IconChar = FontAwesome.Sharp.IconChar.QuestionCircle;
+            this.helpButton.IconColor = System.Drawing.Color.Black;
+            this.helpButton.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.helpButton.IconSize = 40;
+            this.helpButton.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.helpButton.Location = new System.Drawing.Point(1008, 18);
+            this.helpButton.Name = "helpButton";
+            this.helpButton.Size = new System.Drawing.Size(60, 60);
+            this.helpButton.TabIndex = 23;
+            this.helpButton.Text = "Help";
+            this.helpButton.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.helpButton.UseVisualStyleBackColor = false;
+            this.helpButton.Click += new System.EventHandler(this.helpButton_Click);
+            // 
+            // chatButton
+            // 
+            this.chatButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(144)))), ((int)(((byte)(199)))));
+            this.chatButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.chatButton.Font = new System.Drawing.Font("Comic Sans MS", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.chatButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(241)))), ((int)(((byte)(246)))));
+            this.chatButton.IconChar = FontAwesome.Sharp.IconChar.CommentsDollar;
+            this.chatButton.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(241)))), ((int)(((byte)(246)))));
+            this.chatButton.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.chatButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.chatButton.Location = new System.Drawing.Point(761, 503);
+            this.chatButton.Name = "chatButton";
+            this.chatButton.Size = new System.Drawing.Size(225, 59);
+            this.chatButton.TabIndex = 19;
+            this.chatButton.Text = "Chat Support";
+            this.chatButton.UseVisualStyleBackColor = false;
+            this.chatButton.Click += new System.EventHandler(this.chatButton_Click);
             // 
             // RestaurantMenuForm
             // 
@@ -1177,7 +1210,6 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(144)))), ((int)(((byte)(191)))));
             this.ClientSize = new System.Drawing.Size(1084, 661);
-            this.Controls.Add(this.backPictureBox);
             this.Controls.Add(this.menuLoadFormsPanel);
             this.Name = "RestaurantMenuForm";
             this.Text = "RestaurantMenuForm";
@@ -1196,7 +1228,6 @@
             this.greekCuisineTabPage.PerformLayout();
             this.menuLoadFormsPanel.ResumeLayout(false);
             this.menuLoadFormsPanel.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.backPictureBox)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1286,6 +1317,7 @@
         private Custom_Toolbox.QuantityCustomControl quantitySouvlaki;
         private RichTextBox total_richTextBox;
         private Panel menuLoadFormsPanel;
-        public FontAwesome.Sharp.IconPictureBox backPictureBox;
+        private FontAwesome.Sharp.IconButton chatButton;
+        private FontAwesome.Sharp.IconButton helpButton;
     }
 }

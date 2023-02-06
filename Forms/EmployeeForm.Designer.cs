@@ -30,8 +30,10 @@ namespace hotel_app.Forms
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(EmployeeForm));
             this.menuPanel = new System.Windows.Forms.Panel();
+            this.backButton = new FontAwesome.Sharp.IconButton();
             this.registerButton = new FontAwesome.Sharp.IconButton();
             this.olymposGardensButton = new FontAwesome.Sharp.IconButton();
             this.courtyardZeusButton = new FontAwesome.Sharp.IconButton();
@@ -47,8 +49,10 @@ namespace hotel_app.Forms
             this.currentChildFormIcon = new FontAwesome.Sharp.IconPictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
             this.childFormPanel = new System.Windows.Forms.Panel();
+            this.helpButton = new FontAwesome.Sharp.IconButton();
+            this.registrationLabel = new System.Windows.Forms.Label();
+            this.hideMessageTimer = new System.Windows.Forms.Timer(this.components);
             this.menuPanel.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -61,6 +65,7 @@ namespace hotel_app.Forms
             // menuPanel
             // 
             this.menuPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(99)))), ((int)(((byte)(161)))));
+            this.menuPanel.Controls.Add(this.backButton);
             this.menuPanel.Controls.Add(this.registerButton);
             this.menuPanel.Controls.Add(this.olymposGardensButton);
             this.menuPanel.Controls.Add(this.courtyardZeusButton);
@@ -72,6 +77,30 @@ namespace hotel_app.Forms
             this.menuPanel.Name = "menuPanel";
             this.menuPanel.Size = new System.Drawing.Size(300, 761);
             this.menuPanel.TabIndex = 0;
+            // 
+            // backButton
+            // 
+            this.backButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.backButton.Dock = System.Windows.Forms.DockStyle.Top;
+            this.backButton.FlatAppearance.BorderSize = 0;
+            this.backButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.backButton.Font = new System.Drawing.Font("Cooper Black", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.backButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(228)))), ((int)(((byte)(238)))));
+            this.backButton.IconChar = FontAwesome.Sharp.IconChar.ArrowAltCircleLeft;
+            this.backButton.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(228)))), ((int)(((byte)(238)))));
+            this.backButton.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.backButton.IconSize = 50;
+            this.backButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.backButton.Location = new System.Drawing.Point(0, 480);
+            this.backButton.Name = "backButton";
+            this.backButton.Size = new System.Drawing.Size(300, 70);
+            this.backButton.TabIndex = 11;
+            this.backButton.Text = "Go Back";
+            this.backButton.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.backButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.backButton.UseVisualStyleBackColor = true;
+            this.backButton.Visible = false;
+            this.backButton.Click += new System.EventHandler(this.backButton_Click);
             // 
             // registerButton
             // 
@@ -281,11 +310,11 @@ namespace hotel_app.Forms
             // 
             this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Edwardian Script ITC", 54.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label1.Font = new System.Drawing.Font("Edwardian Script ITC", 72F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label1.ForeColor = System.Drawing.Color.Goldenrod;
-            this.label1.Location = new System.Drawing.Point(377, 113);
+            this.label1.Location = new System.Drawing.Point(321, 227);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(318, 86);
+            this.label1.Size = new System.Drawing.Size(414, 113);
             this.label1.TabIndex = 6;
             this.label1.Text = "Zeus Palace\r\n";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -294,32 +323,20 @@ namespace hotel_app.Forms
             // 
             this.label2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Edwardian Script ITC", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label2.Font = new System.Drawing.Font("Edwardian Script ITC", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label2.ForeColor = System.Drawing.Color.Goldenrod;
-            this.label2.Location = new System.Drawing.Point(464, 183);
+            this.label2.Location = new System.Drawing.Point(511, 314);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(231, 57);
+            this.label2.Size = new System.Drawing.Size(304, 76);
             this.label2.TabIndex = 7;
             this.label2.Text = "Staff Services";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label3
-            // 
-            this.label3.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label3.AutoSize = true;
-            this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.Font = new System.Drawing.Font("Comic Sans MS", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(189, 276);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(825, 203);
-            this.label3.TabIndex = 8;
-            this.label3.Text = resources.GetString("label3.Text");
-            // 
             // childFormPanel
             // 
             this.childFormPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(144)))), ((int)(((byte)(191)))));
-            this.childFormPanel.Controls.Add(this.label3);
+            this.childFormPanel.Controls.Add(this.helpButton);
+            this.childFormPanel.Controls.Add(this.registrationLabel);
             this.childFormPanel.Controls.Add(this.label2);
             this.childFormPanel.Controls.Add(this.label1);
             this.childFormPanel.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -327,6 +344,44 @@ namespace hotel_app.Forms
             this.childFormPanel.Name = "childFormPanel";
             this.childFormPanel.Size = new System.Drawing.Size(1084, 661);
             this.childFormPanel.TabIndex = 2;
+            // 
+            // helpButton
+            // 
+            this.helpButton.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.helpButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(121)))), ((int)(((byte)(159)))), ((int)(((byte)(202)))));
+            this.helpButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.helpButton.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.helpButton.ForeColor = System.Drawing.Color.Black;
+            this.helpButton.IconChar = FontAwesome.Sharp.IconChar.QuestionCircle;
+            this.helpButton.IconColor = System.Drawing.Color.Black;
+            this.helpButton.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.helpButton.IconSize = 40;
+            this.helpButton.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.helpButton.Location = new System.Drawing.Point(1012, 15);
+            this.helpButton.Name = "helpButton";
+            this.helpButton.Size = new System.Drawing.Size(60, 60);
+            this.helpButton.TabIndex = 23;
+            this.helpButton.Text = "Help";
+            this.helpButton.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.helpButton.UseVisualStyleBackColor = false;
+            this.helpButton.Click += new System.EventHandler(this.helpButton_Click);
+            // 
+            // registrationLabel
+            // 
+            this.registrationLabel.AutoSize = true;
+            this.registrationLabel.Font = new System.Drawing.Font("Segoe UI", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.registrationLabel.ForeColor = System.Drawing.Color.Green;
+            this.registrationLabel.Location = new System.Drawing.Point(179, 477);
+            this.registrationLabel.Name = "registrationLabel";
+            this.registrationLabel.Size = new System.Drawing.Size(752, 86);
+            this.registrationLabel.TabIndex = 8;
+            this.registrationLabel.Text = "Registration Completed";
+            this.registrationLabel.Visible = false;
+            // 
+            // hideMessageTimer
+            // 
+            this.hideMessageTimer.Interval = 3000;
+            this.hideMessageTimer.Tick += new System.EventHandler(this.hideMessageTimer_Tick);
             // 
             // EmployeeForm
             // 
@@ -374,9 +429,12 @@ namespace hotel_app.Forms
         private FontAwesome.Sharp.IconButton logoutButton;
         private Label label1;
         private Label label2;
-        private Label label3;
         private Panel childFormPanel;
         private Label currentNameLabel;
         private FontAwesome.Sharp.IconButton registerButton;
+        private Label registrationLabel;
+        private System.Windows.Forms.Timer hideMessageTimer;
+        private FontAwesome.Sharp.IconButton backButton;
+        private FontAwesome.Sharp.IconButton helpButton;
     }
 }

@@ -121,5 +121,10 @@ namespace hotel_app.Forms.Functions
                 alarmButton.BackColor = Color.FromArgb(79, 134, 184);
             }
         }
+
+        private void helpButton_Click(object sender, EventArgs e)
+        {
+            Help.ShowHelp(this, @"..\Hotel-app-Documentation.chm", HelpNavigator.TopicId, "26");
+        }
     }
 }

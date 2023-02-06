@@ -89,6 +89,11 @@ namespace hotel_app.Forms.Functions
             backPictureBox2.Show();
         }
 
+        private void helpButton_Click(object sender, EventArgs e)
+        {
+            Help.ShowHelp(this, @"..\Hotel-app-Documentation.chm", HelpNavigator.TopicId, "18");
+        }
+
         //create an Event Listener to Hide the ZeusPalaceMenuForm.backPictureBox when the publicPoolButton_Click is triggered.
     }
 }

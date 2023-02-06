@@ -26,6 +26,10 @@ namespace hotel_app.Forms
         LightsForm lights = new LightsForm();
         TVForm tv = new TVForm();
         RadioForm radio = new RadioForm();  
+        RestaurantMenuForm restaurant = new RestaurantMenuForm();
+
+        //total payment
+        private int totalPayment = 200;
 
         public Client2Form()
         {
@@ -38,6 +42,8 @@ namespace hotel_app.Forms
             this.Text = "Room App";
             this.DoubleBuffered= true;
 
+            total_richTextBox.Text = totalPayment.ToString() + "€";
+
             //Parameters for Trojan Forms
             thermostat.thermostatLabel.Text = "Living Room Thermostat";
             pool.poolThermostat.thermostatLabel.Text = "Private Pool: Thermostat";
@@ -47,8 +53,33 @@ namespace hotel_app.Forms
             lights.roomLightsPanel.Left = (lights.roomLightsPanel.Parent.ClientSize.Width - lights.roomLightsPanel.Width) / 2;
             lights.roomLightsPanel.Top = (lights.roomLightsPanel.Parent.ClientSize.Height - lights.roomLightsPanel.Height) / 2;
             lights.outdoorLightsPanel.Visible = false;
+            //create custom events for help buttons in the childform
+            tv.helpButton.Click += new System.EventHandler(this.TV_helpButton_Clicked);
+            lights.helpButton.Click += new System.EventHandler(this.Lights_helpButton_Clicked);
+            radio.helpButton.Click += new System.EventHandler(this.Radio_helpButton_Clicked);
+            thermostat.helpButton.Click += new System.EventHandler(this.Thermostat_helpButton_Clicked);
+
         }
 
+        private void Thermostat_helpButton_Clicked(object sender, System.EventArgs e)
+        {
+            Help.ShowHelp(this, @"..\Hotel-app-Documentation.chm", HelpNavigator.TopicId, "11");
+        }
+
+        private void Radio_helpButton_Clicked(object sender, System.EventArgs e)
+        {
+            Help.ShowHelp(this, @"..\Hotel-app-Documentation.chm", HelpNavigator.TopicId, "14");
+        }
+
+        private void TV_helpButton_Clicked(object sender, System.EventArgs e)
+        {
+            Help.ShowHelp(this, @"..\Hotel-app-Documentation.chm", HelpNavigator.TopicId, "13");
+        }
+
+        private void Lights_helpButton_Clicked(Object sender, System.EventArgs e)
+        {
+            Help.ShowHelp(this, @"..\Hotel-app-Documentation.chm", HelpNavigator.TopicId, "12");
+        }
         private void ActivateButton(object senderBtn)
         {
             if (senderBtn != null)
@@ -153,6 +184,32 @@ namespace hotel_app.Forms
         private void logoutButton_Click(object sender, EventArgs e)
         {
             this.Hide();
+        }
+
+        private void foodButton_Click(object sender, EventArgs e)
+        {
+            ActivateButton(sender);
+            OpenChildForm(restaurant);
+        }
+
+        private void chatRichTextBox1_Load(object sender, EventArgs e)
+        {
+            chatRichTextBox1.Text = "Welcome to our Zeus Hotel!\r\n\r\nYou can control the basic functions of your room from the left menu.\r\nIf you have any question, do not hesitate to ask us as soon as possible.\r\n\r\nHave a wonderful visit,\r\n                           the stuff";
+        }
+
+        private void chatRichTextBox2_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void chatRichTextBox3_Load(object sender, EventArgs e)
+        {
+            chatRichTextBox3.Text = "The restaurant is now open for lunch!";
+        }
+
+        private void helpButton_Click(object sender, EventArgs e)
+        {
+            Help.ShowHelp(this, @"..\Hotel-app-Documentation.chm", HelpNavigator.TopicId, "2");
         }
     }
 }

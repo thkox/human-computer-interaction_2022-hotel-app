@@ -38,6 +38,7 @@ namespace hotel_app
             this.login_button = new hotel_app.Custom_Toolbox.ButtonCustom();
             this.errorLabel = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.helpButton = new FontAwesome.Sharp.IconButton();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -52,6 +53,7 @@ namespace hotel_app
             this.username_richTextBox.ForeColor = System.Drawing.Color.Goldenrod;
             this.username_richTextBox.Location = new System.Drawing.Point(553, 390);
             this.username_richTextBox.Margin = new System.Windows.Forms.Padding(4);
+            this.username_richTextBox.MaxLength = 32767;
             this.username_richTextBox.Multiline = false;
             this.username_richTextBox.Name = "username_richTextBox";
             this.username_richTextBox.Padding = new System.Windows.Forms.Padding(7);
@@ -72,6 +74,7 @@ namespace hotel_app
             this.password_richTextBox.ForeColor = System.Drawing.Color.Goldenrod;
             this.password_richTextBox.Location = new System.Drawing.Point(553, 491);
             this.password_richTextBox.Margin = new System.Windows.Forms.Padding(4);
+            this.password_richTextBox.MaxLength = 32767;
             this.password_richTextBox.Multiline = false;
             this.password_richTextBox.Name = "password_richTextBox";
             this.password_richTextBox.Padding = new System.Windows.Forms.Padding(7);
@@ -85,6 +88,7 @@ namespace hotel_app
             // 
             this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Comic Sans MS", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label1.ForeColor = System.Drawing.Color.Goldenrod;
             this.label1.Location = new System.Drawing.Point(553, 359);
@@ -97,6 +101,7 @@ namespace hotel_app
             // 
             this.label2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Comic Sans MS", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label2.ForeColor = System.Drawing.Color.Goldenrod;
             this.label2.Location = new System.Drawing.Point(553, 460);
@@ -131,6 +136,7 @@ namespace hotel_app
             // 
             this.errorLabel.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.errorLabel.AutoSize = true;
+            this.errorLabel.BackColor = System.Drawing.Color.Transparent;
             this.errorLabel.Font = new System.Drawing.Font("Comic Sans MS", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.errorLabel.ForeColor = System.Drawing.Color.OrangeRed;
             this.errorLabel.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -144,6 +150,7 @@ namespace hotel_app
             // pictureBox1
             // 
             this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.Image = global::hotel_app.Properties.Resources.MainLogo;
             this.pictureBox1.Location = new System.Drawing.Point(454, 71);
             this.pictureBox1.Name = "pictureBox1";
@@ -152,6 +159,27 @@ namespace hotel_app
             this.pictureBox1.TabIndex = 8;
             this.pictureBox1.TabStop = false;
             // 
+            // helpButton
+            // 
+            this.helpButton.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.helpButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(121)))), ((int)(((byte)(159)))), ((int)(((byte)(202)))));
+            this.helpButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.helpButton.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.helpButton.ForeColor = System.Drawing.Color.Black;
+            this.helpButton.IconChar = FontAwesome.Sharp.IconChar.QuestionCircle;
+            this.helpButton.IconColor = System.Drawing.Color.Black;
+            this.helpButton.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.helpButton.IconSize = 40;
+            this.helpButton.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.helpButton.Location = new System.Drawing.Point(1311, 12);
+            this.helpButton.Name = "helpButton";
+            this.helpButton.Size = new System.Drawing.Size(60, 60);
+            this.helpButton.TabIndex = 23;
+            this.helpButton.Text = "Help";
+            this.helpButton.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.helpButton.UseVisualStyleBackColor = false;
+            this.helpButton.Click += new System.EventHandler(this.helpButton_Click);
+            // 
             // SignInForm
             // 
             this.AcceptButton = this.login_button;
@@ -159,6 +187,7 @@ namespace hotel_app
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(124)))), ((int)(((byte)(177)))));
             this.ClientSize = new System.Drawing.Size(1400, 800);
+            this.Controls.Add(this.helpButton);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.errorLabel);
             this.Controls.Add(this.login_button);
@@ -189,5 +218,6 @@ namespace hotel_app
         private Custom_Toolbox.ButtonCustom login_button;
         private Label errorLabel;
         private PictureBox pictureBox1;
+        private FontAwesome.Sharp.IconButton helpButton;
     }
 }

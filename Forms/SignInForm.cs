@@ -1,4 +1,5 @@
 ﻿using hotel_app.Forms;
+using System.Reflection;
 
 namespace hotel_app
 {
@@ -16,30 +17,36 @@ namespace hotel_app
 
         private void login_button_Click(object sender, EventArgs e)
         {
-            if(username_richTextBox.Texts == "3" && password_richTextBox.Texts == "3")
+            if(username_richTextBox.Texts == "employeeuser" && password_richTextBox.Texts == "employeeuser")
             {
+                username_richTextBox.Texts = "";
+                password_richTextBox.Texts = "";
+                errorLabel.Text = "";
                 this.Hide();
                 Form menuForm = new EmployeeForm();
                 menuForm.ShowDialog();
-                menuForm = null;
                 this.Show();
 
             }
-            else if(username_richTextBox.Texts == "2" && password_richTextBox.Texts == "2")
+            else if(username_richTextBox.Texts == "roomuser" && password_richTextBox.Texts == "roomuser")
             {
+                username_richTextBox.Texts = "";
+                password_richTextBox.Texts = "";
+                errorLabel.Text = "";
                 this.Hide();
                 Form menuForm = new Client2Form();
                 menuForm.ShowDialog();
-                menuForm = null;
                 this.Show();
             }
-            else if (username_richTextBox.Texts == "1" && password_richTextBox.Texts == "1")
+            else if (username_richTextBox.Texts == "trojanuser" && password_richTextBox.Texts == "trojanuser")
             {
                 //MessageBox.Show("You are a Client and you have closed room");
+                username_richTextBox.Texts = "";
+                password_richTextBox.Texts = "";
+                errorLabel.Text = "";
                 this.Hide();
                 Form menuForm = new Client1Form();
                 menuForm.ShowDialog();
-                menuForm = null;
                 this.Show();
             }
             else
@@ -52,6 +59,11 @@ namespace hotel_app
         private void exit_button_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+        
+        private void helpButton_Click(object sender, EventArgs e)
+        {
+            Help.ShowHelp(this, @"..\Hotel-app-Documentation.chm");
         }
     }
 }

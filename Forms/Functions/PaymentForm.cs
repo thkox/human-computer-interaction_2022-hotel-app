@@ -24,6 +24,14 @@ namespace hotel_app.Forms.Functions
         {
             InitializeComponent();
             errorLabel.Visible = false;
+
+            orderStatus.EventCompletedEnd += new OrderStatusForm.EventCompleted(this.CloseThisForm);
+
+        }
+
+        private void CloseThisForm(object sender, EventArgs e)
+        {
+            this.Hide();
         }
 
         private void cardNumber_richTextBox_KeyPress(object sender, KeyPressEventArgs e)
@@ -159,30 +167,15 @@ namespace hotel_app.Forms.Functions
 
         private void confirmationButton_Click(object sender, EventArgs e)
         {
-            if (cardholderName_richTextBox.Texts == "Enter Cardholder name")
-            {
-                allRichTextBoxesHaveText = false;
-            }
-            else if (cardNumber_richTextBox.Texts == "Enter Card Number")
-            {
-                allRichTextBoxesHaveText = false;
-            }
-            else if (cvv_richTextBox.Texts == "CVV")
-            {
-                allRichTextBoxesHaveText = false;
-            }
-            else if (month_richTextBox.Texts == "MM")
-            {
-                allRichTextBoxesHaveText = false;
-            }
-            else if (year_richTextBox.Texts == "YYYY")
+            if (cardholderName_richTextBox.Texts == "Enter Cardholder name" || cardNumber_richTextBox.Texts == "Enter Card Number" || cvv_richTextBox.Texts == "CVV" || month_richTextBox.Texts == "MM" || year_richTextBox.Texts == "YYYY" || year_richTextBox.Texts == "YYYY")
             {
                 allRichTextBoxesHaveText = false;
             }
 
-            if (allRichTextBoxesHaveText == true)
+            if (allRichTextBoxesHaveText)
             {
                 OpenOrderStatusForm(orderStatus);
+                
             }
             else
             {
@@ -196,6 +189,16 @@ namespace hotel_app.Forms.Functions
         private void confirmationButton_Leave(object sender, EventArgs e)
         {
             errorLabel.Visible = false;
+        }
+
+        private void cancelButton_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+        }
+
+        private void helpButton_Click(object sender, EventArgs e)
+        {
+            Help.ShowHelp(this, @"..\Hotel-app-Documentation.chm", HelpNavigator.TopicId, "27");
         }
     }
 }

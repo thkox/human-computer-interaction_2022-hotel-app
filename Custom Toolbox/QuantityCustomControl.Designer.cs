@@ -35,6 +35,7 @@
             // 
             // richTextBox
             // 
+            this.richTextBox.BackColor = System.Drawing.SystemColors.ControlLight;
             this.richTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.richTextBox.DetectUrls = false;
             this.richTextBox.Dock = System.Windows.Forms.DockStyle.Fill;

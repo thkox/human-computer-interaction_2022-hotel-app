@@ -43,6 +43,8 @@
             this.checkoutDate_richTextBox = new CustomControls.RichTextBox.RichTextBox();
             this.room_radioButtonCustom = new hotel_app.Custom_Toolbox.RadioButtonCustom();
             this.trojan_radioButtonCustom = new hotel_app.Custom_Toolbox.RadioButtonCustom();
+            this.errorLabel = new System.Windows.Forms.Label();
+            this.helpButton = new FontAwesome.Sharp.IconButton();
             this.SuspendLayout();
             // 
             // registerButton
@@ -66,6 +68,7 @@
             this.registerButton.TextColor = System.Drawing.Color.White;
             this.registerButton.UseVisualStyleBackColor = false;
             this.registerButton.Click += new System.EventHandler(this.registerButton_Click);
+            this.registerButton.Leave += new System.EventHandler(this.registerButton_Leave);
             // 
             // firstnameLabel
             // 
@@ -91,6 +94,7 @@
             this.firstname_richTextBox.ForeColor = System.Drawing.Color.Goldenrod;
             this.firstname_richTextBox.Location = new System.Drawing.Point(392, 66);
             this.firstname_richTextBox.Margin = new System.Windows.Forms.Padding(4);
+            this.firstname_richTextBox.MaxLength = 32767;
             this.firstname_richTextBox.Multiline = false;
             this.firstname_richTextBox.Name = "firstname_richTextBox";
             this.firstname_richTextBox.Padding = new System.Windows.Forms.Padding(7);
@@ -124,6 +128,7 @@
             this.lastname_richTextBox.ForeColor = System.Drawing.Color.Goldenrod;
             this.lastname_richTextBox.Location = new System.Drawing.Point(392, 155);
             this.lastname_richTextBox.Margin = new System.Windows.Forms.Padding(4);
+            this.lastname_richTextBox.MaxLength = 32767;
             this.lastname_richTextBox.Multiline = false;
             this.lastname_richTextBox.Name = "lastname_richTextBox";
             this.lastname_richTextBox.Padding = new System.Windows.Forms.Padding(7);
@@ -157,6 +162,7 @@
             this.id_richTextBox.ForeColor = System.Drawing.Color.Goldenrod;
             this.id_richTextBox.Location = new System.Drawing.Point(392, 376);
             this.id_richTextBox.Margin = new System.Windows.Forms.Padding(4);
+            this.id_richTextBox.MaxLength = 32767;
             this.id_richTextBox.Multiline = false;
             this.id_richTextBox.Name = "id_richTextBox";
             this.id_richTextBox.Padding = new System.Windows.Forms.Padding(7);
@@ -190,6 +196,7 @@
             this.dateOfBirth_richTextBox.ForeColor = System.Drawing.Color.Goldenrod;
             this.dateOfBirth_richTextBox.Location = new System.Drawing.Point(392, 239);
             this.dateOfBirth_richTextBox.Margin = new System.Windows.Forms.Padding(4);
+            this.dateOfBirth_richTextBox.MaxLength = 32767;
             this.dateOfBirth_richTextBox.Multiline = false;
             this.dateOfBirth_richTextBox.Name = "dateOfBirth_richTextBox";
             this.dateOfBirth_richTextBox.Padding = new System.Windows.Forms.Padding(7);
@@ -224,6 +231,7 @@
             this.checkinDate_richTextBox.ForeColor = System.Drawing.Color.Goldenrod;
             this.checkinDate_richTextBox.Location = new System.Drawing.Point(392, 469);
             this.checkinDate_richTextBox.Margin = new System.Windows.Forms.Padding(4);
+            this.checkinDate_richTextBox.MaxLength = 32767;
             this.checkinDate_richTextBox.Multiline = false;
             this.checkinDate_richTextBox.Name = "checkinDate_richTextBox";
             this.checkinDate_richTextBox.Padding = new System.Windows.Forms.Padding(7);
@@ -258,6 +266,7 @@
             this.checkoutDate_richTextBox.ForeColor = System.Drawing.Color.Goldenrod;
             this.checkoutDate_richTextBox.Location = new System.Drawing.Point(558, 469);
             this.checkoutDate_richTextBox.Margin = new System.Windows.Forms.Padding(4);
+            this.checkoutDate_richTextBox.MaxLength = 32767;
             this.checkoutDate_richTextBox.Multiline = false;
             this.checkoutDate_richTextBox.Name = "checkoutDate_richTextBox";
             this.checkoutDate_richTextBox.Padding = new System.Windows.Forms.Padding(7);
@@ -303,12 +312,49 @@
             this.trojan_radioButtonCustom.UnCheckedColor = System.Drawing.Color.Gray;
             this.trojan_radioButtonCustom.UseVisualStyleBackColor = true;
             // 
+            // errorLabel
+            // 
+            this.errorLabel.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.errorLabel.AutoSize = true;
+            this.errorLabel.Font = new System.Drawing.Font("Comic Sans MS", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.errorLabel.ForeColor = System.Drawing.Color.OrangeRed;
+            this.errorLabel.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.errorLabel.Location = new System.Drawing.Point(392, 522);
+            this.errorLabel.Name = "errorLabel";
+            this.errorLabel.Size = new System.Drawing.Size(109, 19);
+            this.errorLabel.TabIndex = 23;
+            this.errorLabel.Text = "[Error Message]";
+            this.errorLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // helpButton
+            // 
+            this.helpButton.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.helpButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(121)))), ((int)(((byte)(159)))), ((int)(((byte)(202)))));
+            this.helpButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.helpButton.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.helpButton.ForeColor = System.Drawing.Color.Black;
+            this.helpButton.IconChar = FontAwesome.Sharp.IconChar.QuestionCircle;
+            this.helpButton.IconColor = System.Drawing.Color.Black;
+            this.helpButton.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.helpButton.IconSize = 40;
+            this.helpButton.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.helpButton.Location = new System.Drawing.Point(1012, 12);
+            this.helpButton.Name = "helpButton";
+            this.helpButton.Size = new System.Drawing.Size(60, 60);
+            this.helpButton.TabIndex = 24;
+            this.helpButton.Text = "Help";
+            this.helpButton.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.helpButton.UseVisualStyleBackColor = false;
+            this.helpButton.Click += new System.EventHandler(this.helpButton_Click);
+            // 
             // RegisterForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(144)))), ((int)(((byte)(191)))));
             this.ClientSize = new System.Drawing.Size(1084, 661);
+            this.Controls.Add(this.helpButton);
+            this.Controls.Add(this.errorLabel);
             this.Controls.Add(this.trojan_radioButtonCustom);
             this.Controls.Add(this.room_radioButtonCustom);
             this.Controls.Add(this.checkoutDateLabel);
@@ -348,5 +394,7 @@
         private CustomControls.RichTextBox.RichTextBox checkoutDate_richTextBox;
         private Custom_Toolbox.RadioButtonCustom room_radioButtonCustom;
         private Custom_Toolbox.RadioButtonCustom trojan_radioButtonCustom;
+        private Label errorLabel;
+        private FontAwesome.Sharp.IconButton helpButton;
     }
 }

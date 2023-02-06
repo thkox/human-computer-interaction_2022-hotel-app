@@ -32,6 +32,8 @@
             this.alarmButton = new FontAwesome.Sharp.IconButton();
             this.statusPictureBox = new FontAwesome.Sharp.IconPictureBox();
             this.statusRichTextBox = new System.Windows.Forms.RichTextBox();
+            this.chatRichTextBox1 = new hotel_app.Custom_Toolbox.ChatRichTextBox();
+            this.helpButton = new FontAwesome.Sharp.IconButton();
             ((System.ComponentModel.ISupportInitialize)(this.statusPictureBox)).BeginInit();
             this.SuspendLayout();
             // 
@@ -80,13 +82,13 @@
             // statusPictureBox
             // 
             this.statusPictureBox.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.statusPictureBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(144)))), ((int)(((byte)(191)))));
+            this.statusPictureBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(129)))), ((int)(((byte)(164)))), ((int)(((byte)(205)))));
             this.statusPictureBox.ForeColor = System.Drawing.SystemColors.ControlText;
             this.statusPictureBox.IconChar = FontAwesome.Sharp.IconChar.ShieldBlank;
             this.statusPictureBox.IconColor = System.Drawing.SystemColors.ControlText;
             this.statusPictureBox.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.statusPictureBox.IconSize = 146;
-            this.statusPictureBox.Location = new System.Drawing.Point(399, 196);
+            this.statusPictureBox.Location = new System.Drawing.Point(356, 193);
             this.statusPictureBox.Name = "statusPictureBox";
             this.statusPictureBox.Size = new System.Drawing.Size(149, 146);
             this.statusPictureBox.TabIndex = 2;
@@ -95,15 +97,52 @@
             // statusRichTextBox
             // 
             this.statusRichTextBox.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.statusRichTextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(144)))), ((int)(((byte)(191)))));
+            this.statusRichTextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(129)))), ((int)(((byte)(164)))), ((int)(((byte)(205)))));
             this.statusRichTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.statusRichTextBox.Font = new System.Drawing.Font("Comic Sans MS", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.statusRichTextBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(241)))), ((int)(((byte)(246)))));
-            this.statusRichTextBox.Location = new System.Drawing.Point(554, 163);
+            this.statusRichTextBox.Location = new System.Drawing.Point(511, 160);
             this.statusRichTextBox.Name = "statusRichTextBox";
             this.statusRichTextBox.Size = new System.Drawing.Size(374, 179);
             this.statusRichTextBox.TabIndex = 3;
             this.statusRichTextBox.Text = "";
+            // 
+            // chatRichTextBox1
+            // 
+            this.chatRichTextBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(144)))), ((int)(((byte)(191)))));
+            this.chatRichTextBox1.ForeColor = System.Drawing.Color.White;
+            this.chatRichTextBox1.Location = new System.Drawing.Point(246, 97);
+            this.chatRichTextBox1.MaxLegthSize = 30;
+            this.chatRichTextBox1.Name = "chatRichTextBox1";
+            this.chatRichTextBox1.Radius = 45;
+            this.chatRichTextBox1.RichTextBoxLocation = new System.Drawing.Point(20, 20);
+            this.chatRichTextBox1.RichTextBoxSize = new System.Drawing.Size(1, 1);
+            this.chatRichTextBox1.ShadeColor = System.Drawing.Color.FromArgb(((int)(((byte)(129)))), ((int)(((byte)(164)))), ((int)(((byte)(205)))));
+            this.chatRichTextBox1.Size = new System.Drawing.Size(649, 323);
+            this.chatRichTextBox1.TabIndex = 4;
+            this.chatRichTextBox1.TextMultiline = true;
+            this.chatRichTextBox1.TextReadonly = true;
+            // 
+            // helpButton
+            // 
+            this.helpButton.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.helpButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(121)))), ((int)(((byte)(159)))), ((int)(((byte)(202)))));
+            this.helpButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.helpButton.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.helpButton.ForeColor = System.Drawing.Color.Black;
+            this.helpButton.IconChar = FontAwesome.Sharp.IconChar.QuestionCircle;
+            this.helpButton.IconColor = System.Drawing.Color.Black;
+            this.helpButton.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.helpButton.IconSize = 40;
+            this.helpButton.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.helpButton.Location = new System.Drawing.Point(1012, 12);
+            this.helpButton.Name = "helpButton";
+            this.helpButton.Size = new System.Drawing.Size(60, 60);
+            this.helpButton.TabIndex = 23;
+            this.helpButton.Text = "Help";
+            this.helpButton.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.helpButton.UseVisualStyleBackColor = false;
+            this.helpButton.Click += new System.EventHandler(this.helpButton_Click);
             // 
             // SensorForm
             // 
@@ -111,10 +150,12 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(144)))), ((int)(((byte)(191)))));
             this.ClientSize = new System.Drawing.Size(1084, 661);
+            this.Controls.Add(this.helpButton);
             this.Controls.Add(this.statusRichTextBox);
             this.Controls.Add(this.statusPictureBox);
             this.Controls.Add(this.alarmButton);
             this.Controls.Add(this.sensorButton);
+            this.Controls.Add(this.chatRichTextBox1);
             this.Name = "SensorForm";
             this.Text = "SensorForm";
             this.Load += new System.EventHandler(this.SensorForm_Load);
@@ -129,5 +170,7 @@
         private FontAwesome.Sharp.IconButton alarmButton;
         private FontAwesome.Sharp.IconPictureBox statusPictureBox;
         private RichTextBox statusRichTextBox;
+        private Custom_Toolbox.ChatRichTextBox chatRichTextBox1;
+        private FontAwesome.Sharp.IconButton helpButton;
     }
 }
