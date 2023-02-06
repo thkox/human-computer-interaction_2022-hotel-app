@@ -215,10 +215,5 @@ namespace hotel_app.Forms.Functions
                 currentThermostatValue += 1;
             }
         }
-
-        private void helpButton_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 }

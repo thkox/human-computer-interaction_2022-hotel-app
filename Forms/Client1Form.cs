@@ -50,8 +50,33 @@ namespace hotel_app.Forms
             //Parameters for Room Forms
             thermostat.thermostatLabel.Text = "Living Room Thermostat";
 
+            //create custom events for help buttons in the childform
+            tv.helpButton.Click += new System.EventHandler(this.TV_helpButton_Clicked);
+            lights.helpButton.Click += new System.EventHandler(this.Lights_helpButton_Clicked);
+            radio.helpButton.Click += new System.EventHandler(this.Radio_helpButton_Clicked);
+            thermostat.helpButton.Click += new System.EventHandler(this.Thermostat_helpButton_Clicked);
+
         }
 
+        private void Thermostat_helpButton_Clicked(object sender, System.EventArgs e)
+        {
+            Help.ShowHelp(this, @"..\Hotel-app-Documentation.chm", HelpNavigator.TopicId, "30");
+        }
+
+        private void Radio_helpButton_Clicked(object sender, System.EventArgs e)
+        {
+            Help.ShowHelp(this, @"..\Hotel-app-Documentation.chm", HelpNavigator.TopicId, "5");
+        }
+
+        private void TV_helpButton_Clicked(object sender, System.EventArgs e)
+        {
+            Help.ShowHelp(this, @"..\Hotel-app-Documentation.chm", HelpNavigator.TopicId, "1");
+        }
+
+        private void Lights_helpButton_Clicked(Object sender, System.EventArgs e)
+        {
+            Help.ShowHelp(this, @"..\Hotel-app-Documentation.chm", HelpNavigator.TopicId, "23");
+        }
         private void ActivateButton(object senderBtn)
         {
             if (senderBtn != null)
@@ -175,6 +200,11 @@ namespace hotel_app.Forms
         }
 
         private void helpButton_Click(object sender, EventArgs e)
+        {
+            Help.ShowHelp(this, @"..\Hotel-app-Documentation.chm", HelpNavigator.TopicId, "7");
+        }
+
+        private void Client1Form_Load(object sender, EventArgs e)
         {
 
         }

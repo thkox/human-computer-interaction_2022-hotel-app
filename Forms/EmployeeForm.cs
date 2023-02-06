@@ -110,8 +110,20 @@ namespace hotel_app.Forms
             roomForms[0].currentName = "Room 1";
             roomForms[1].currentName = "Room 3";
             roomForms[2].currentName = "Suite 1";
+
+            //helpButtons events
+            parking.helpButton1.Click += new System.EventHandler(this.Parking_helpButton_Clicked);
+            parking.helpButton2.Click += new System.EventHandler(this.Parking_helpButton2_Clicked);
         }
-        
+
+        private void Parking_helpButton_Clicked(object sender, System.EventArgs e)
+        {
+            Help.ShowHelp(this, @"..\Hotel-app-Documentation.chm", HelpNavigator.TopicId, "19");
+        }
+        private void Parking_helpButton2_Clicked(object sender, System.EventArgs e)
+        {
+            Help.ShowHelp(this, @"..\Hotel-app-Documentation.chm", HelpNavigator.TopicId, "20");
+        }
         //activate a trojan
         private void Trojan3PictureBox_Click(object sender, EventArgs e)
         {
@@ -438,7 +450,7 @@ namespace hotel_app.Forms
 
         private void helpButton_Click(object sender, EventArgs e)
         {
-
+            Help.ShowHelp(this, @"..\Hotel-app-Documentation.chm", HelpNavigator.TopicId, "9");
         }
     }
 }

@@ -210,7 +210,6 @@
             this.helpButton.Text = "Help";
             this.helpButton.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.helpButton.UseVisualStyleBackColor = false;
-            this.helpButton.Click += new System.EventHandler(this.helpButton_Click);
             // 
             // ThermostatForm
             // 
@@ -218,13 +217,13 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(144)))), ((int)(((byte)(191)))));
             this.ClientSize = new System.Drawing.Size(1084, 661);
-            this.Controls.Add(this.helpButton);
             this.Controls.Add(this.thermostatPanel);
             this.Controls.Add(this.thermostatToggle);
             this.Controls.Add(this.thermostatLabel);
             this.Controls.Add(this.thermostatDownButton);
             this.Controls.Add(this.thermostatUpButton);
             this.Controls.Add(this.thermostatScreen);
+            this.Controls.Add(this.helpButton);
             this.Name = "ThermostatForm";
             this.Text = "Thermostat";
             this.Load += new System.EventHandler(this.ThermostatForm_Load);
@@ -248,6 +247,6 @@
         private System.Windows.Forms.Timer setValueTimer;
         private Label estimatedTimeLabel;
         private Custom_Toolbox.ChatRichTextBox thermostatScreen;
-        private FontAwesome.Sharp.IconButton helpButton;
+        public FontAwesome.Sharp.IconButton helpButton;
     }
 }

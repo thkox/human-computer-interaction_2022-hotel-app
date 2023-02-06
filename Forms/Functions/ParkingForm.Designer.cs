@@ -70,7 +70,8 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.zeusCourtyardPanel = new System.Windows.Forms.Panel();
-            this.helpButton = new FontAwesome.Sharp.IconButton();
+            this.helpButton1 = new FontAwesome.Sharp.IconButton();
+            this.helpButton2 = new FontAwesome.Sharp.IconButton();
             this.olymbosGardensPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.trojan6PictureBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.trojan5PictureBox)).BeginInit();
@@ -100,6 +101,7 @@
             // olymbosGardensPanel
             // 
             this.olymbosGardensPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(144)))), ((int)(((byte)(191)))));
+            this.olymbosGardensPanel.Controls.Add(this.helpButton2);
             this.olymbosGardensPanel.Controls.Add(this.label5);
             this.olymbosGardensPanel.Controls.Add(this.label4);
             this.olymbosGardensPanel.Controls.Add(this.upOButton);
@@ -634,6 +636,7 @@
             // 
             // zeusCourtyardPanel
             // 
+            this.zeusCourtyardPanel.Controls.Add(this.helpButton1);
             this.zeusCourtyardPanel.Controls.Add(this.label3);
             this.zeusCourtyardPanel.Controls.Add(this.label2);
             this.zeusCourtyardPanel.Controls.Add(this.upZButton);
@@ -656,26 +659,45 @@
             this.zeusCourtyardPanel.Size = new System.Drawing.Size(1083, 662);
             this.zeusCourtyardPanel.TabIndex = 0;
             // 
-            // helpButton
+            // helpButton1
             // 
-            this.helpButton.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.helpButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(121)))), ((int)(((byte)(159)))), ((int)(((byte)(202)))));
-            this.helpButton.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.helpButton.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.helpButton.ForeColor = System.Drawing.Color.Black;
-            this.helpButton.IconChar = FontAwesome.Sharp.IconChar.QuestionCircle;
-            this.helpButton.IconColor = System.Drawing.Color.Black;
-            this.helpButton.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.helpButton.IconSize = 40;
-            this.helpButton.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.helpButton.Location = new System.Drawing.Point(1008, 18);
-            this.helpButton.Name = "helpButton";
-            this.helpButton.Size = new System.Drawing.Size(60, 60);
-            this.helpButton.TabIndex = 18;
-            this.helpButton.Text = "Help";
-            this.helpButton.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.helpButton.UseVisualStyleBackColor = false;
-            this.helpButton.Click += new System.EventHandler(this.helpButton_Click);
+            this.helpButton1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.helpButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(121)))), ((int)(((byte)(159)))), ((int)(((byte)(202)))));
+            this.helpButton1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.helpButton1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.helpButton1.ForeColor = System.Drawing.Color.Black;
+            this.helpButton1.IconChar = FontAwesome.Sharp.IconChar.QuestionCircle;
+            this.helpButton1.IconColor = System.Drawing.Color.Black;
+            this.helpButton1.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.helpButton1.IconSize = 40;
+            this.helpButton1.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.helpButton1.Location = new System.Drawing.Point(1023, 3);
+            this.helpButton1.Name = "helpButton1";
+            this.helpButton1.Size = new System.Drawing.Size(60, 60);
+            this.helpButton1.TabIndex = 18;
+            this.helpButton1.Text = "Help";
+            this.helpButton1.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.helpButton1.UseVisualStyleBackColor = false;
+            // 
+            // helpButton2
+            // 
+            this.helpButton2.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.helpButton2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(121)))), ((int)(((byte)(159)))), ((int)(((byte)(202)))));
+            this.helpButton2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.helpButton2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.helpButton2.ForeColor = System.Drawing.Color.Black;
+            this.helpButton2.IconChar = FontAwesome.Sharp.IconChar.QuestionCircle;
+            this.helpButton2.IconColor = System.Drawing.Color.Black;
+            this.helpButton2.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.helpButton2.IconSize = 40;
+            this.helpButton2.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.helpButton2.Location = new System.Drawing.Point(1023, 3);
+            this.helpButton2.Name = "helpButton2";
+            this.helpButton2.Size = new System.Drawing.Size(60, 60);
+            this.helpButton2.TabIndex = 32;
+            this.helpButton2.Text = "Help";
+            this.helpButton2.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.helpButton2.UseVisualStyleBackColor = false;
             // 
             // ParkingForm
             // 
@@ -683,7 +705,6 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(144)))), ((int)(((byte)(191)))));
             this.ClientSize = new System.Drawing.Size(1868, 1421);
-            this.Controls.Add(this.helpButton);
             this.Controls.Add(this.olymbosGardensPanel);
             this.Controls.Add(this.zeusCourtyardPanel);
             this.Name = "ParkingForm";
@@ -755,6 +776,7 @@
         public PictureBox trojan5PictureBox;
         public PictureBox trojan2PictureBox;
         public PictureBox trojan3PictureBox;
-        private FontAwesome.Sharp.IconButton helpButton;
+        public FontAwesome.Sharp.IconButton helpButton1;
+        public FontAwesome.Sharp.IconButton helpButton2;
     }
 }

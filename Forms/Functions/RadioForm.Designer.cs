@@ -278,7 +278,6 @@
             this.helpButton.Text = "Help";
             this.helpButton.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.helpButton.UseVisualStyleBackColor = false;
-            this.helpButton.Click += new System.EventHandler(this.helpButton_Click);
             // 
             // RadioForm
             // 
@@ -324,6 +323,6 @@
         private FontAwesome.Sharp.IconButton favRadioStation3;
         private FontAwesome.Sharp.IconButton favRadioStation4;
         private Custom_Toolbox.ChatRichTextBox radioScreen;
-        private FontAwesome.Sharp.IconButton helpButton;
+        public FontAwesome.Sharp.IconButton helpButton;
     }
 }

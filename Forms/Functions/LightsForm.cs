@@ -166,10 +166,5 @@ namespace hotel_app.Forms.Functions
             changeBackcolorOnMouseHover((IconButton)sender);
 
         }
-
-        private void helpButton_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 }

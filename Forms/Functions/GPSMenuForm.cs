@@ -29,6 +29,19 @@ namespace hotel_app.Forms.Functions
             InitializeComponent();
 
             parking.Parking += new ParkingForm.TrojanParkingEventHandler(this.TrojanIsParkedSuccessfully);
+
+            //helpButtons events
+            parking.helpButton1.Click += new System.EventHandler(this.Parking_helpButton_Clicked);
+            parking.helpButton2.Click += new System.EventHandler(this.Parking_helpButton2_Clicked);
+        }
+
+        private void Parking_helpButton_Clicked(object sender, System.EventArgs e)
+        {
+            Help.ShowHelp(this, @"..\Hotel-app-Documentation.chm", HelpNavigator.TopicId, "28");
+        }
+        private void Parking_helpButton2_Clicked(object sender, System.EventArgs e)
+        {
+            Help.ShowHelp(this, @"..\Hotel-app-Documentation.chm", HelpNavigator.TopicId, "28");
         }
 
         private void TrojanIsParkedSuccessfully(object sender, EventArgs e)
@@ -75,7 +88,7 @@ namespace hotel_app.Forms.Functions
 
         private void helpButton_Click(object sender, EventArgs e)
         {
-
+            Help.ShowHelp(this, @"..\Hotel-app-Documentation.chm", HelpNavigator.TopicId, "16");
         }
     }
 }

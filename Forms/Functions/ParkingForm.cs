@@ -172,11 +172,6 @@ namespace hotel_app.Forms.Functions
             }
         }
 
-        private void helpButton_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void leftOButton_Click(object sender, EventArgs e)
         {
             if (trojan4PictureBox.Left > 60)

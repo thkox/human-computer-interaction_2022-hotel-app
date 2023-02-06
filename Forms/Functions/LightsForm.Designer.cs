@@ -411,7 +411,6 @@
             this.helpButton.Text = "Help";
             this.helpButton.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.helpButton.UseVisualStyleBackColor = false;
-            this.helpButton.Click += new System.EventHandler(this.helpButton_Click);
             // 
             // LightsForm
             // 
@@ -451,6 +450,6 @@
         private Label vehicleLabel;
         public Panel roomLightsPanel;
         public Panel outdoorLightsPanel;
-        private FontAwesome.Sharp.IconButton helpButton;
+        public FontAwesome.Sharp.IconButton helpButton;
     }
 }

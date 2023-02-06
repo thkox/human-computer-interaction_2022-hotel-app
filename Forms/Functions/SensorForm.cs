@@ -124,7 +124,7 @@ namespace hotel_app.Forms.Functions
 
         private void helpButton_Click(object sender, EventArgs e)
         {
-
+            Help.ShowHelp(this, @"..\Hotel-app-Documentation.chm", HelpNavigator.TopicId, "26");
         }
     }
 }

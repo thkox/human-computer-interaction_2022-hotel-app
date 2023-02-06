@@ -441,6 +441,6 @@
         private PictureBox checkTVPictureBox;
         private Label label1;
         private Custom_Toolbox.ChatRichTextBox chatRichTextBox1;
-        private FontAwesome.Sharp.IconButton helpButton;
+        public FontAwesome.Sharp.IconButton helpButton;
     }
 }
