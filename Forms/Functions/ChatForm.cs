@@ -229,36 +229,36 @@ namespace hotel_app.Forms.Functions
             Size bubbleSize = new Size(250, 40);
             chatPanel.Controls.Add(SetResponseBubble(message, new Point(70, height + 10), bubbleSize, textPoint, new Size(230, 20), Color.White));
             height += bubbleSize.Height + 3;
-
-            if(!menusSelected.Contains(1))
+            TimeSpan currentTime = DateTime.Now.TimeOfDay;
+            if (!menusSelected.Contains(1) && currentTime >= new TimeSpan(7, 0, 0) && currentTime <= new TimeSpan(11, 59, 59))
             {
                 string message1 = "1. Coffee";
                 chatPanel.Controls.Add(SetResponseBubble(message1, new Point(70, height + 10), categoriesAndFoodBubbleSize, textPoint, new Size(100, 20), Color.White));
                 height += categoriesAndFoodBubbleSize.Height + 3;
             }
 
-            if (!menusSelected.Contains(2))
+            if (!menusSelected.Contains(2) && currentTime >= new TimeSpan(7, 0, 0) && currentTime <= new TimeSpan(18, 59, 59))
             {
                 string message1 = "2. Chocolate";
                 chatPanel.Controls.Add(SetResponseBubble(message1, new Point(70, height + 10), categoriesAndFoodBubbleSize, textPoint, new Size(100, 20), Color.White));
                 height += categoriesAndFoodBubbleSize.Height + 3;
             }
 
-            if (!menusSelected.Contains(3))
+            if (!menusSelected.Contains(3) && currentTime >= new TimeSpan(12, 0, 0))
             {
                 string message1 = "3. Salad";
                 chatPanel.Controls.Add(SetResponseBubble(message1, new Point(70, height + 10), categoriesAndFoodBubbleSize, textPoint, new Size(100, 20), Color.White));
                 height += categoriesAndFoodBubbleSize.Height + 3;
             }
 
-            if (!menusSelected.Contains(4))
+            if (!menusSelected.Contains(4) && currentTime >= new TimeSpan(12, 0, 0))
             {
                 string message1 = "4. Pizza";
                 chatPanel.Controls.Add(SetResponseBubble(message1, new Point(70, height + 10), categoriesAndFoodBubbleSize, textPoint, new Size(100, 20), Color.White));
                 height += categoriesAndFoodBubbleSize.Height + 3;
             }
 
-            if (!menusSelected.Contains(5))
+            if (!menusSelected.Contains(5) && currentTime >= new TimeSpan(12, 0, 0))
             {
                 string message1 = "5. Greek Cuisine";
                 chatPanel.Controls.Add(SetResponseBubble(message1, new Point(70, height + 10), categoriesAndFoodBubbleSize, textPoint, new Size(100, 20), Color.White));
