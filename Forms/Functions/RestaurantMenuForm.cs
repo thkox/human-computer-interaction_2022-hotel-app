@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -284,6 +285,59 @@ namespace hotel_app.Forms.Functions
         private void RestaurantMenuForm_Load(object sender, EventArgs e)
         {
             restaurantMenuTabs = menuLoadFormsPanel;
+            TimeSpan currentTime = DateTime.Now.TimeOfDay;
+            if (currentTime >= new TimeSpan(7, 0, 0) && currentTime <= new TimeSpan(11, 59, 59))
+            {
+                coffeeTabPage.Enabled = true;
+                coffeeTabPage.BackColor = Color.FromArgb(((int)(((byte)(98)))), ((int)(((byte)(155)))), ((int)(((byte)(191)))));
+
+                chocolatesTabPage.Enabled = true;
+                chocolatesTabPage.BackColor = Color.FromArgb(((int)(((byte)(98)))), ((int)(((byte)(155)))), ((int)(((byte)(191)))));
+
+                saladsTabPage.Enabled = false;
+                saladsTabPage.BackColor = Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(228)))), ((int)(((byte)(238)))));
+
+                pizzaTabPage.Enabled = false;
+                pizzaTabPage.BackColor = Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(228)))), ((int)(((byte)(238)))));
+
+                greekCuisineTabPage.Enabled = false;
+                greekCuisineTabPage.BackColor = Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(228)))), ((int)(((byte)(238)))));
+
+            }
+            else if (currentTime >= new TimeSpan(12, 0, 0) && currentTime <= new TimeSpan(18, 59, 59))
+            {
+                coffeeTabPage.Enabled = false;
+                coffeeTabPage.BackColor = Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(228)))), ((int)(((byte)(238)))));
+
+                chocolatesTabPage.Enabled = true;
+                chocolatesTabPage.BackColor = Color.FromArgb(((int)(((byte)(98)))), ((int)(((byte)(155)))), ((int)(((byte)(191)))));
+
+                saladsTabPage.Enabled = true;
+                saladsTabPage.BackColor = Color.FromArgb(((int)(((byte)(98)))), ((int)(((byte)(155)))), ((int)(((byte)(191)))));
+
+                pizzaTabPage.Enabled = true;
+                pizzaTabPage.BackColor = Color.FromArgb(((int)(((byte)(98)))), ((int)(((byte)(155)))), ((int)(((byte)(191)))));
+
+                greekCuisineTabPage.Enabled = true;
+                greekCuisineTabPage.BackColor = Color.FromArgb(((int)(((byte)(98)))), ((int)(((byte)(155)))), ((int)(((byte)(191)))));
+            }
+            else
+            {
+                coffeeTabPage.Enabled = false;
+                coffeeTabPage.BackColor = Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(228)))), ((int)(((byte)(238)))));
+
+                chocolatesTabPage.Enabled = false;
+                chocolatesTabPage.BackColor = Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(228)))), ((int)(((byte)(238)))));
+
+                saladsTabPage.Enabled = true;
+                saladsTabPage.BackColor = Color.FromArgb(((int)(((byte)(98)))), ((int)(((byte)(155)))), ((int)(((byte)(191)))));
+
+                pizzaTabPage.Enabled = true;
+                pizzaTabPage.BackColor = Color.FromArgb(((int)(((byte)(98)))), ((int)(((byte)(155)))), ((int)(((byte)(191)))));
+
+                greekCuisineTabPage.Enabled = true;
+                greekCuisineTabPage.BackColor = Color.FromArgb(((int)(((byte)(98)))), ((int)(((byte)(155)))), ((int)(((byte)(191)))));
+            }
         }
 
         private void checkoutButton_Click(object sender, EventArgs e)
