@@ -328,7 +328,7 @@
             // 
             // chocolatesTabPage
             // 
-            this.chocolatesTabPage.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(144)))), ((int)(((byte)(191)))));
+            this.chocolatesTabPage.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(98)))), ((int)(((byte)(155)))), ((int)(((byte)(191)))));
             this.chocolatesTabPage.Controls.Add(this.quantitySpecial);
             this.chocolatesTabPage.Controls.Add(this.quantityFerrero);
             this.chocolatesTabPage.Controls.Add(this.quantityHospitality);
@@ -523,7 +523,7 @@
             // 
             // saladsTabPage
             // 
-            this.saladsTabPage.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(144)))), ((int)(((byte)(191)))));
+            this.saladsTabPage.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(98)))), ((int)(((byte)(155)))), ((int)(((byte)(191)))));
             this.saladsTabPage.Controls.Add(this.quantityChef);
             this.saladsTabPage.Controls.Add(this.quantityTricolore);
             this.saladsTabPage.Controls.Add(this.quantityAegean);
@@ -682,7 +682,7 @@
             // 
             // pizzaTabPage
             // 
-            this.pizzaTabPage.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(144)))), ((int)(((byte)(191)))));
+            this.pizzaTabPage.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(98)))), ((int)(((byte)(155)))), ((int)(((byte)(191)))));
             this.pizzaTabPage.Controls.Add(this.quantityPalace);
             this.pizzaTabPage.Controls.Add(this.quantityTrojan);
             this.pizzaTabPage.Controls.Add(this.quantityAthina);
@@ -840,7 +840,7 @@
             // 
             // greekCuisineTabPage
             // 
-            this.greekCuisineTabPage.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(144)))), ((int)(((byte)(191)))));
+            this.greekCuisineTabPage.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(98)))), ((int)(((byte)(155)))), ((int)(((byte)(191)))));
             this.greekCuisineTabPage.Controls.Add(this.quantityFiesta);
             this.greekCuisineTabPage.Controls.Add(this.quantityOcean);
             this.greekCuisineTabPage.Controls.Add(this.quantityChicken);
