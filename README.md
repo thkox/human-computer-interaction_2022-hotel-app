@@ -1,14 +1,6 @@
-University Of Piraeus
-Department of Informatics
-Undergraduate Course: Human-Computer Interaction
-Academic Year: 2022-2023
-Semester: 5th
-
-Hotel App: UI project
-
-This project created for academic purposes only.
-
-Team:
-Theodoros Koxanoglou, P20094
-
-Apostolis Siampanis, P20173
+# hotel-app
+## [University of Piraeus](https://www.unipi.gr/unipi/en/)<br>[Department of Informatics](https://www.cs.unipi.gr/index.php?lang=en)
+### Course: Human-Computer Interaction
+### Semester: 5
+### Project Completion Year: 2023
+### Project Team: [Apostolis Siampanis](https://github.com/ApostolisSiampanis) | [Theodoros Koxanoglou](https://github.com/thkox)
