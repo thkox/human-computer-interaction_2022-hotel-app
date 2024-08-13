@@ -46,53 +46,53 @@ Users can control various devices within the ancient-themed rooms and Trojan Hor
 
 - **Controlling Lighting:** Users can turn lights on and off or adjust their brightness through the device control interface.
 
-![Alt text](./images/device_control_lighting.png)
+  ![Device control lighting](./images/device_control_lighting.png)
 
 - **Adjusting Temperature:** Users can set heating or cooling preferences for their rooms or RV.
 
-![Alt text](./images/device_control_temperature.png)
+  ![Device control temperature](./images/device_control_temperature.png)
 
 - **Managing Entertainment Systems:** Users can operate the TV or radio through the interface.
 
-![Alt text](./images/device_control_entertainment.png)
-![Alt text](./images/device_control_radio.png)
+  ![Device control entertainment](./images/device_control_entertainment.png)
+  ![Device control radio](./images/device_control_radio.png)
 
 ### 2. Pool Management
 Users can monitor and manage the pools.
 
 - **Adjusting Water Levels:** Users can fill or drain the pools through the management console.
 
-![Alt text](./images/pool_management_water_levels.png)
+  ![Pool management water levels](./images/pool_management_water_levels.png)
 
 - **Controlling Water Temperature:** Users can set the desired temperature for the pools.
 
-![Alt text](./images/pool_management_temperature.png)
+  ![Pool management temperature](./images/pool_management_temperature.png)
 
 - **Activating Safety Sensors:** Users can activate or deactivate sensors and set alarms for safety.
 
-![Alt text](./images/pool_management_sensors.png)
+  ![Pool management sensors](./images/pool_management_sensors.png)
 
 ### 3. Trojan Horse RV Management
 Users can navigate and control the Trojan Horse RV.
 
 - **Navigating the RV:** Users can move the RV in various directions and park it within designated areas.
 
-![Alt text](./images/rv_navigation.png)
+  ![RV navigation](./images/rv_navigation.png)
 
 - **Controlling RV Doors and Ladder:** Users can open or close doors and manage the ladder functionality.
 
-![Alt text](./images/rv_doors_ladder.png)
+  ![RV doors ladder](./images/rv_doors_ladder.png)
 
 ### 4. Customer-Service Interaction
 Users can interact with staff to place and manage orders.
 
 - **Placing Orders:** Customers can order food and beverages from the thematic restaurant.
 
-![Alt text](./images/customer_service_order.png)
+  ![Customer service order](./images/customer_service_order.png)
 
 - **Viewing and Managing Orders:** Staff can process and manage customer orders.
 
-![Alt text](./images/customer_service_manage_orders.png)
+  ![Customer service manage orders](./images/customer_service_manage_orders.png)
 
 ## Setup Instructions
 
