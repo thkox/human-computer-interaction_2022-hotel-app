@@ -9,7 +9,7 @@ This project is a team assignment for creating an electronic thematic hotel-park
 - **Institution:** University of Piraeus
 - **Department:** Department of Informatics
 - **Course:** Human-Computer Interaction (2022)
-- **Semester:** 4th
+- **Semester:** 5th
 
 ## Technologies Used
 
