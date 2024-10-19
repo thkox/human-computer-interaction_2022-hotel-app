@@ -5,9 +5,8 @@
 This project is a team assignment for creating an electronic thematic hotel-park interface, designed for the "Human-Computer Interaction" course, offered in the 5th semester of the 2022 academic year at the University of Piraeus, Department of Informatics. The project involves the development of a user interface system for managing various aspects of the thematic park, including ancient-themed accommodations, pools, and interactive features.
 
 ## Course Information
-
-- **Institution:** University of Piraeus
-- **Department:** Department of Informatics
+- **Institution:** [University of Piraeus](https://www.unipi.gr/en/)
+- **Department:** [Department of Informatics](https://cs.unipi.gr/en/)
 - **Course:** Human-Computer Interaction (2022)
 - **Semester:** 5th
 
